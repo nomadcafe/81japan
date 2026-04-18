@@ -3,7 +3,7 @@ import sitemap from '@astrojs/sitemap';
 import vercel from '@astrojs/vercel';
 
 export default defineConfig({
-  site: 'https://81japan.com',
+  site: 'https://www.81japan.com',
   adapter: vercel(),
   trailingSlash: 'never',
   redirects: {
