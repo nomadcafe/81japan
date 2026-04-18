@@ -1,5 +1,4 @@
 User-agent: *
 Allow: /
-Disallow:
 
 Sitemap: https://81japan.com/sitemap.xml
