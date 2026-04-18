@@ -101,10 +101,10 @@ function injectHospitalSchema(data) {
   const schema = {
     '@context': 'https://schema.org',
     '@type': 'ItemList',
-    '@id': 'https://81japan.com/#hospital-list',
+    '@id': 'https://www.81japan.com/#hospital-list',
     'name': '在日中文医院列表',
     'description': '日本全国提供中文医疗服务的医院与诊所',
-    'url': 'https://81japan.com/',
+    'url': 'https://www.81japan.com/',
     'numberOfItems': data.length,
     'itemListElement': data.map((h, i) => ({
       '@type': 'ListItem',
