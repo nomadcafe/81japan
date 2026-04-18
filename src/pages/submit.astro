@@ -8,7 +8,7 @@ const year = new Date().getFullYear();
 <Layout
   title="投稿・信息纠错 | 81日本"
   description="向81日本提交新医院信息、纠正现有错误，或提供其他建议，共同完善在日中文医疗信息库。"
-  path="/submit.html"
+  path="/submit"
   noindex={true}
 >
   <NavSimple />
@@ -80,9 +80,9 @@ const year = new Date().getFullYear();
           </button>
         </div>
 
-        <form class="form" id="submitForm" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
-          <input type="hidden" name="_subject" id="emailSubject" value="[81日本] 新增医院投稿" />
+        <form class="form" id="submitForm" action="/api/submit" method="POST">
           <input type="hidden" name="投稿类型" id="typeHidden" value="新增医院" />
+          <input type="text" name="_honey" tabindex="-1" autocomplete="off" aria-hidden="true" style="position:absolute; left:-9999px; opacity:0" />
 
           <div id="fields-new">
             <div class="form-row">

@@ -7,9 +7,7 @@ function switchType(type, btn) {
   document.getElementById('fields-new').style.display = type === 'new' ? '' : 'none';
   document.getElementById('fields-fix').style.display = type === 'fix' ? '' : 'none';
   document.getElementById('fields-other').style.display = type === 'other' ? '' : 'none';
-  const subjects = { new: '[81日本] 新增医院投稿', fix: '[81日本] 信息纠错', other: '[81日本] 其他建议' };
   const types = { new: '新增医院', fix: '纠错/补充', other: '其他建议' };
-  document.getElementById('emailSubject').value = subjects[type];
   document.getElementById('typeHidden').value = types[type];
 }
 
