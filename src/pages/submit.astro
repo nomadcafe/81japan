@@ -1,0 +1,202 @@
+---
+import Layout from '../layouts/Layout.astro';
+import NavSimple from '../components/NavSimple.astro';
+import '../styles/submit.css';
+
+const year = new Date().getFullYear();
+---
+<Layout
+  title="投稿・信息纠错 | 81日本"
+  description="向81日本提交新医院信息、纠正现有错误，或提供其他建议，共同完善在日中文医疗信息库。"
+  path="/submit.html"
+  noindex={true}
+>
+  <NavSimple />
+
+  <div class="page-hero">
+    <div class="eyebrow">
+      <span class="zh-only">投稿</span>
+      <span class="en-only">Contribute</span>
+    </div>
+    <h1 class="zh-only">帮我们<em>完善</em>这份指南</h1>
+    <h1 class="en-only">Help us <em>improve</em> this guide</h1>
+    <p class="zh-only">知道某家提供中文服务的医院还没收录？或者发现信息有误？都欢迎告诉我们。</p>
+    <p class="en-only">Know a hospital with Chinese-speaking staff that we haven't listed? Or spotted an error? Let us know.</p>
+  </div>
+
+  <div class="page-main">
+    <aside class="side-info">
+      <h3 class="zh-only">投稿流程</h3>
+      <h3 class="en-only">How it works</h3>
+      <div class="steps">
+        <div class="step">
+          <div class="step-num">1</div>
+          <div class="step-body">
+            <div class="step-title zh-only">填写表单</div>
+            <div class="step-title en-only">Fill in the form</div>
+            <div class="step-desc zh-only">告诉我们医院名称、地址及语言服务等信息</div>
+            <div class="step-desc en-only">Tell us the hospital name, location and language services</div>
+          </div>
+        </div>
+        <div class="step">
+          <div class="step-num">2</div>
+          <div class="step-body">
+            <div class="step-title zh-only">人工核实</div>
+            <div class="step-title en-only">Manual review</div>
+            <div class="step-desc zh-only">我们收到通知后会核实信息的准确性</div>
+            <div class="step-desc en-only">We'll verify the information after receiving your submission</div>
+          </div>
+        </div>
+        <div class="step">
+          <div class="step-num">3</div>
+          <div class="step-body">
+            <div class="step-title zh-only">更新上线</div>
+            <div class="step-title en-only">Published</div>
+            <div class="step-desc zh-only">确认无误后更新到网站，通常1–3天内完成</div>
+            <div class="step-desc en-only">Once confirmed, we'll add it to the site within 1–3 days</div>
+          </div>
+        </div>
+      </div>
+      <div class="side-note">
+        <span class="zh-only">纠错请注明具体问题及信息来源，这样我们能更快处理。</span>
+        <span class="en-only">For corrections, please include the specific issue and a source if possible.</span>
+      </div>
+    </aside>
+
+    <div>
+      <div class="form-card" id="formCard">
+        <div class="type-row">
+          <button class="type-btn active" onclick="switchType('new', this)">
+            <span class="zh-only">＋ 新增医院</span>
+            <span class="en-only">＋ Add hospital</span>
+          </button>
+          <button class="type-btn" onclick="switchType('fix', this)">
+            <span class="zh-only">✎ 纠错/补充</span>
+            <span class="en-only">✎ Correction</span>
+          </button>
+          <button class="type-btn" onclick="switchType('other', this)">
+            <span class="zh-only">⊙ 其他建议</span>
+            <span class="en-only">⊙ Other</span>
+          </button>
+        </div>
+
+        <form class="form" id="submitForm" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+          <input type="hidden" name="_subject" id="emailSubject" value="[81日本] 新增医院投稿" />
+          <input type="hidden" name="投稿类型" id="typeHidden" value="新增医院" />
+
+          <div id="fields-new">
+            <div class="form-row">
+              <div class="form-field">
+                <label class="form-label"><span class="zh-only">医院名称</span><span class="en-only">Hospital name</span> <span class="req">*</span></label>
+                <input class="form-input" type="text" name="医院名称" id="f-name" placeholder="中文或日文均可" />
+              </div>
+              <div class="form-field">
+                <label class="form-label"><span class="zh-only">所在地</span><span class="en-only">Location</span> <span class="req">*</span></label>
+                <input class="form-input" type="text" name="所在地" id="f-location" placeholder="都道府县・城市" />
+              </div>
+            </div>
+            <div class="form-row" style="margin-top:0">
+              <div class="form-field">
+                <label class="form-label"><span class="zh-only">语言服务</span><span class="en-only">Language</span> <span class="req">*</span></label>
+                <select class="form-input form-select" name="语言服务" id="f-lang">
+                  <option value="">请选择…</option>
+                  <option value="中文（普通话）">中文（普通话）</option>
+                  <option value="中文（广东话）">中文（广东话）</option>
+                  <option value="中文＋英文">中文＋英文</option>
+                  <option value="英文">英文</option>
+                  <option value="其他">其他</option>
+                </select>
+              </div>
+              <div class="form-field">
+                <label class="form-label"><span class="zh-only">科室</span><span class="en-only">Department</span></label>
+                <input class="form-input" type="text" name="科室" placeholder="内科、産科、歯科…" />
+              </div>
+            </div>
+            <div class="form-row" style="margin-top:0">
+              <div class="form-field">
+                <label class="form-label"><span class="zh-only">电话号码</span><span class="en-only">Phone</span></label>
+                <input class="form-input" type="text" name="电话" placeholder="03-XXXX-XXXX" />
+              </div>
+              <div class="form-field">
+                <label class="form-label"><span class="zh-only">官网 / SNS</span><span class="en-only">Website</span></label>
+                <input class="form-input" type="text" name="网址" placeholder="https://…" />
+              </div>
+            </div>
+            <div class="form-field">
+              <label class="form-label"><span class="zh-only">营业时间・备注</span><span class="en-only">Hours / Notes</span></label>
+              <textarea class="form-input form-textarea" name="备注" id="f-note"
+                placeholder="营业时间、是否需要预约、注意事项等…"
+                oninput="updateChar(this,'c1')"></textarea>
+              <div class="char-count" id="c1">0 / 300</div>
+            </div>
+          </div>
+
+          <div id="fields-fix" style="display:none">
+            <div class="form-field">
+              <label class="form-label"><span class="zh-only">哪家医院</span><span class="en-only">Hospital name</span> <span class="req">*</span></label>
+              <input class="form-input" type="text" name="纠错-医院名称" id="f-fix-name" placeholder="医院名称" />
+            </div>
+            <div class="form-field">
+              <label class="form-label"><span class="zh-only">问题描述</span><span class="en-only">Describe the issue</span> <span class="req">*</span></label>
+              <textarea class="form-input form-textarea" name="纠错-问题描述" id="f-fix-desc"
+                placeholder="哪里有误？正确信息是什么？如有来源请附上。"
+                style="min-height:110px" oninput="updateChar(this,'c2')"></textarea>
+              <div class="char-count" id="c2">0 / 300</div>
+            </div>
+          </div>
+
+          <div id="fields-other" style="display:none">
+            <div class="form-field">
+              <label class="form-label"><span class="zh-only">你的建议</span><span class="en-only">Your suggestion</span> <span class="req">*</span></label>
+              <textarea class="form-input form-textarea" name="建议内容" id="f-other"
+                placeholder="功能建议、内容补充、合作意向等…"
+                style="min-height:110px" oninput="updateChar(this,'c3')"></textarea>
+              <div class="char-count" id="c3">0 / 300</div>
+            </div>
+          </div>
+
+          <div class="form-divider"></div>
+
+          <div class="form-field">
+            <label class="form-label"><span class="zh-only">联系方式（选填）</span><span class="en-only">Contact (optional)</span></label>
+            <input class="form-input" type="text" name="联系方式" placeholder="邮箱、微信、LINE ID 均可" />
+          </div>
+
+          <button class="submit-btn" type="submit" id="submitBtn">
+            <span id="btnText"><span class="zh-only">提交投稿</span><span class="en-only">Submit</span></span>
+          </button>
+          <p class="form-note zh-only">提交即表示您同意我们将信息用于网站内容更新</p>
+          <p class="form-note en-only">By submitting you agree to your information being used for site updates</p>
+        </form>
+      </div>
+
+      <div class="success-card" id="successCard">
+        <div class="success-icon">✓</div>
+        <h3 class="zh-only">已收到，谢谢！</h3>
+        <h3 class="en-only">Received, thank you!</h3>
+        <p class="zh-only">我们会尽快核实并更新。<br>如果你留了联系方式，有疑问时我们会回复你。</p>
+        <p class="en-only">We'll verify and update soon.<br>If you left contact info, we'll reach out if we have questions.</p>
+        <div class="success-actions">
+          <button class="success-btn success-btn-primary" onclick="resetForm()">
+            <span class="zh-only">再提交一条</span>
+            <span class="en-only">Submit another</span>
+          </button>
+          <a href="/" class="success-btn success-btn-secondary">
+            <span class="zh-only">返回首页</span>
+            <span class="en-only">Back to home</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <div>© {year} 81日本 · 由81Japan维护</div>
+    <a href="/" style="color:var(--ink-3); text-decoration:none; font-size:12px;">
+      <span class="zh-only">← 返回首页</span>
+      <span class="en-only">← Home</span>
+    </a>
+  </footer>
+
+  <script is:inline src="/submit.js" defer></script>
+</Layout>

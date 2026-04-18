@@ -1,0 +1,65 @@
+---
+import Layout from '../layouts/Layout.astro';
+import NavSimple from '../components/NavSimple.astro';
+import '../styles/submit.css';
+---
+<Layout
+  title="页面未找到 · 404 | 81日本"
+  description="抱歉，你访问的页面不存在。返回 81日本 首页查看在日中文医院信息。"
+  path="/404.html"
+  noindex={true}
+>
+  <Fragment slot="head">
+    <style is:global>
+      .nf-wrap {
+        flex: 1;
+        display: flex; flex-direction: column; align-items: center; justify-content: center;
+        padding: 80px 24px;
+        text-align: center;
+      }
+      .nf-code {
+        font-family: var(--serif);
+        font-size: clamp(96px, 18vw, 180px);
+        line-height: 1;
+        color: var(--red);
+        letter-spacing: 0.02em;
+        margin-bottom: 16px;
+      }
+      .nf-title {
+        font-family: var(--serif);
+        font-size: 28px;
+        font-weight: 600;
+        color: var(--ink);
+        margin-bottom: 12px;
+      }
+      .nf-desc {
+        color: var(--ink-2);
+        max-width: 480px;
+        margin-bottom: 32px;
+      }
+      .nf-actions { display: flex; gap: 12px; flex-wrap: wrap; justify-content: center; }
+      .nf-btn {
+        display: inline-flex; align-items: center; gap: 6px;
+        padding: 10px 20px; border-radius: var(--radius-sm);
+        font-size: 14px; text-decoration: none;
+        transition: all 0.15s;
+      }
+      .nf-btn-primary { background: var(--red); color: var(--white); }
+      .nf-btn-primary:hover { background: #A83224; }
+      .nf-btn-ghost { border: 1px solid var(--paper-3); color: var(--ink-2); }
+      .nf-btn-ghost:hover { background: var(--paper-2); color: var(--ink); }
+    </style>
+  </Fragment>
+
+  <NavSimple showLang={false} />
+
+  <main class="nf-wrap">
+    <div class="nf-code">404</div>
+    <div class="nf-title">页面走丢了</div>
+    <p class="nf-desc">你访问的页面不存在，或者已经被移动。可以回首页继续查找在日中文医院信息。</p>
+    <div class="nf-actions">
+      <a href="/" class="nf-btn nf-btn-primary">回到首页</a>
+      <a href="/submit.html" class="nf-btn nf-btn-ghost">投稿・纠错</a>
+    </div>
+  </main>
+</Layout>

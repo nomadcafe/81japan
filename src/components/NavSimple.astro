@@ -1,0 +1,23 @@
+---
+interface Props {
+  backLabelZh?: string;
+  backLabelEn?: string;
+  showLang?: boolean;
+}
+const { backLabelZh = '返回首页', backLabelEn = 'Back', showLang = true } = Astro.props;
+---
+<nav>
+  <a class="logo" href="/"><span class="logo-dot"></span>81日本</a>
+  {showLang && (
+    <div class="lang-switcher">
+      <button class="lang-opt active" onclick="switchLang('zh', this)">中文</button>
+      <span class="lang-sep">/</span>
+      <button class="lang-opt" onclick="switchLang('en', this)">EN</button>
+    </div>
+  )}
+  <a href="/" class="back-btn">
+    <span>←</span>
+    <span class="zh-only">{backLabelZh}</span>
+    <span class="en-only">{backLabelEn}</span>
+  </a>
+</nav>
