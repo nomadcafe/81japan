@@ -9,7 +9,6 @@ function switchLang(lang, btn) {
     document.getElementById('searchInput').placeholder = 'Search by hospital name, city, department…';
     document.querySelectorAll('#sortSelect option').forEach(o => { if(o.dataset.en) o.textContent = o.dataset.en; });
     document.title = '81Japan | Chinese Living Guide in Japan';
-    // 同步两个shownCount
     const n = document.getElementById('shownCount');
     const ne = document.getElementById('shownCountEn');
     if (n && ne) ne.textContent = n.textContent;
@@ -30,18 +29,108 @@ const LANG_CONFIG = {
   '韩文': { cls: 'lang-en', sub: 'Korean' },
   '俄文': { cls: 'lang-en', sub: 'Russian' },
 };
+const LANG_TOKEN_RE = /中文|英文|粤语|台语|韩文|俄文/g;
 
-function openModal(name, nameJa, addr, phone, langs, depts, hours, closed, note) {
-  document.getElementById('mTitle').textContent = name;
-  document.getElementById('mTitleJa').textContent = nameJa;
-  document.getElementById('mAddr').textContent = addr;
-  document.getElementById('mPhone').textContent = phone;
-  document.getElementById('mHours').textContent = hours;
-  document.getElementById('mClosed').textContent = closed;
+// ── 渲染 ──
+function escapeHtml(s) {
+  return String(s ?? '').replace(/[&<>"']/g, c =>
+    ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+}
+
+function formatUpdated(s) {
+  const m = (s || '').match(/^(\d{4})-(\d{1,2})$/);
+  return m ? `${m[1]}年${parseInt(m[2], 10)}月` : (s || '');
+}
+
+function createHospitalCard(h) {
+  const card = document.createElement('div');
+  card.className = 'hospital-card fade-in';
+  card.setAttribute('role', 'listitem');
+  card.dataset.name = h.searchKeys || h.name;
+  card.dataset.region = h.region || '';
+  card.dataset.lang = (h.langDetail || (h.langs || []).join(' '));
+  card.dataset.depts = (h.depts || []).join(' ');
+
+  const badges = [];
+  const langSet = new Set(h.langs || []);
+  if (langSet.has('中文')) badges.push('<span class="badge badge-cn">中文</span>');
+  if (langSet.has('英文')) badges.push('<span class="badge badge-en">英文</span>');
+  (h.extraBadges || []).forEach(b =>
+    badges.push(`<span class="badge badge-new">${escapeHtml(b.label)}</span>`));
+
+  const info = [];
+  if (h.addressShort) info.push(`<div class="info-item"><span class="info-icon">📍</span>${escapeHtml(h.addressShort)}</div>`);
+  if (h.warning) info.push(`<div class="info-item"><span class="info-icon">⚠️</span>${escapeHtml(h.warning)}</div>`);
+  else if (h.hoursShort) info.push(`<div class="info-item"><span class="info-icon">🕐</span>${escapeHtml(h.hoursShort)}</div>`);
+
+  const depts = (h.depts || []).map(d => `<span class="dept-tag">${escapeHtml(d)}</span>`).join('');
+
+  card.innerHTML = `
+    <div class="card-row1">
+      <div>
+        <div class="hospital-name">${escapeHtml(h.name)}</div>
+        <div class="hospital-name-ja">${escapeHtml(h.jpName || '')}</div>
+      </div>
+      <div class="badges">${badges.join('')}</div>
+    </div>
+    <div class="card-info">
+      <div class="card-info-row">${info.join('')}</div>
+    </div>
+    <div class="card-depts">${depts}</div>
+    <div class="card-footer">
+      <span>更新：${escapeHtml(formatUpdated(h.updated))}</span>
+      <span class="view-detail"><span class="zh-only">查看详情</span><span class="en-only">Details</span> →</span>
+    </div>
+  `;
+  card.addEventListener('click', () => openModal(h));
+  return card;
+}
+
+function renderHospitals(data) {
+  const list = document.getElementById('cardList');
+  if (!list) return;
+  list.innerHTML = '';
+  const frag = document.createDocumentFragment();
+  data.forEach(h => frag.appendChild(createHospitalCard(h)));
+  list.appendChild(frag);
+}
+
+function injectHospitalSchema(data) {
+  const old = document.getElementById('hospital-list-schema');
+  if (old) old.remove();
+  const schema = {
+    '@context': 'https://schema.org',
+    '@type': 'ItemList',
+    '@id': 'https://81japan.com/#hospital-list',
+    'name': '在日中文医院列表',
+    'description': '日本全国提供中文医疗服务的医院与诊所',
+    'url': 'https://81japan.com/',
+    'numberOfItems': data.length,
+    'itemListElement': data.map((h, i) => ({
+      '@type': 'ListItem',
+      'position': i + 1,
+      'name': h.name,
+    })),
+  };
+  const s = document.createElement('script');
+  s.type = 'application/ld+json';
+  s.id = 'hospital-list-schema';
+  s.textContent = JSON.stringify(schema);
+  document.head.appendChild(s);
+}
+
+// ── 详情弹窗 ──
+function openModal(h) {
+  document.getElementById('mTitle').textContent = h.name || '';
+  document.getElementById('mTitleJa').textContent = h.jpName || '';
+  document.getElementById('mAddr').textContent = h.address || h.addressShort || '—';
+  document.getElementById('mPhone').textContent = h.phone || '—';
+  document.getElementById('mHours').textContent = h.hours || h.hoursShort || '—';
+  document.getElementById('mClosed').textContent = h.closed || '—';
 
   const noteEl = document.getElementById('mNote');
-  if (note && note.trim()) {
-    noteEl.textContent = '⚠ 注意：' + note;
+  if (h.note && h.note.trim()) {
+    noteEl.textContent = '⚠ 注意：' + h.note;
     noteEl.style.display = '';
   } else {
     noteEl.textContent = '';
@@ -50,7 +139,12 @@ function openModal(name, nameJa, addr, phone, langs, depts, hours, closed, note)
 
   const langsEl = document.getElementById('mLangs');
   langsEl.innerHTML = '';
-  langs.split(' ').forEach(lang => {
+  const src = h.langDetail || (h.langs || []).join(' ');
+  const tokens = src.match(LANG_TOKEN_RE) || [];
+  const seen = new Set();
+  tokens.forEach(lang => {
+    if (seen.has(lang)) return;
+    seen.add(lang);
     const cfg = LANG_CONFIG[lang];
     if (!cfg) return;
     const div = document.createElement('div');
@@ -64,7 +158,7 @@ function openModal(name, nameJa, addr, phone, langs, depts, hours, closed, note)
 
   const deptsEl = document.getElementById('mDepts');
   deptsEl.innerHTML = '';
-  depts.split(' / ').forEach(d => {
+  (h.depts || []).forEach(d => {
     const div = document.createElement('div');
     div.className = 'dept-item';
     div.textContent = d;
@@ -91,6 +185,7 @@ function closeModalOnBg(e) {
   if (e.target === document.getElementById('modalOverlay')) closeModal();
 }
 
+// ── 搜索 / 筛选 / 排序 ──
 function setSearch(val) {
   document.getElementById('searchInput').value = val;
   filterCards();
@@ -126,13 +221,8 @@ function sortCards(method) {
   const cards = Array.from(list.querySelectorAll('.hospital-card'));
 
   cards.sort((a, b) => {
-    if (method === 'region') {
-      return (a.dataset.region || '').localeCompare(b.dataset.region || '', 'zh');
-    }
-    if (method === 'dept') {
-      return (a.dataset.depts || '').localeCompare(b.dataset.depts || '', 'zh');
-    }
-    // 默认：最近更新，按卡片footer里的更新时间倒序
+    if (method === 'region') return (a.dataset.region || '').localeCompare(b.dataset.region || '', 'zh');
+    if (method === 'dept')   return (a.dataset.depts  || '').localeCompare(b.dataset.depts  || '', 'zh');
     const parseDate = c => {
       const t = c.querySelector('.card-footer span') ? c.querySelector('.card-footer span').textContent : '';
       const m = t.match(/(\d{4})年(\d{1,2})月/);
@@ -142,7 +232,6 @@ function sortCards(method) {
   });
 
   cards.forEach(c => list.appendChild(c));
-  // 重新触发fade动画
   cards.forEach((c, i) => {
     c.style.opacity = '0';
     c.style.transform = 'translateY(8px)';
@@ -168,7 +257,6 @@ function handleRegionSelect(val) {
 function filterRegion(region, el) {
   document.querySelectorAll('[data-region-filter]').forEach(o => o.classList.remove('active'));
   el.classList.add('active');
-  // 同步顶部下拉菜单
   const sel = document.querySelector('.search-select');
   if (sel) sel.value = region === '全部' ? '全部地区' : region;
   if (region === '全部') {
@@ -190,22 +278,19 @@ function filterLang(lang, el) {
   }
 }
 
-// ── 自动统计数字 ──
+// ── 统计数字 ──
 function updateStats() {
   const cards = document.querySelectorAll('#cardList .hospital-card');
   const total = cards.length;
 
-  // 顶部统计
   const totalEl = document.getElementById('totalCount');
   if (totalEl) totalEl.textContent = total;
 
-  // 都道府县去重
   const regions = new Set();
   cards.forEach(c => { if (c.dataset.region) regions.add(c.dataset.region.trim()); });
   const regionEl = document.getElementById('regionCount');
   if (regionEl) regionEl.textContent = regions.size;
 
-  // 专科去重
   const depts = new Set();
   cards.forEach(c => {
     if (c.dataset.depts) c.dataset.depts.split(' ').forEach(d => { if (d) depts.add(d.trim()); });
@@ -213,7 +298,6 @@ function updateStats() {
   const deptEl = document.getElementById('deptCount');
   if (deptEl) deptEl.textContent = depts.size;
 
-  // 侧边栏地区计数
   const regionMap = { 'fc-all': '全部', 'fc-tokyo': '东京', 'fc-osaka': '大阪',
     'fc-fukuoka': '福冈', 'fc-sapporo': '札幌', 'fc-nagoya': '名古屋', 'fc-kobe': '神户' };
   Object.entries(regionMap).forEach(([id, key]) => {
@@ -222,11 +306,9 @@ function updateStats() {
     if (key === '全部') { el.textContent = total; return; }
     const count = Array.from(cards).filter(c => c.dataset.region === key).length;
     el.textContent = count;
-    // 隐藏0条的地区
     el.closest('.filter-option').style.display = count === 0 ? 'none' : '';
   });
 
-  // 侧边栏语言计数
   const cnCount = Array.from(cards).filter(c => c.dataset.lang && c.dataset.lang.includes('中文')).length;
   const enCount = Array.from(cards).filter(c => c.dataset.lang && c.dataset.lang.includes('英文')).length;
   const flAll = document.getElementById('fl-all');
@@ -235,18 +317,38 @@ function updateStats() {
   if (flAll) flAll.textContent = total;
   if (flCn) flCn.textContent = cnCount;
   if (flEn) flEn.textContent = enCount;
+
+  // 同步英文视图的计数
+  const shown = document.getElementById('shownCount');
+  const shownEn = document.getElementById('shownCountEn');
+  if (shown && shownEn) {
+    shown.textContent = total;
+    shownEn.textContent = total;
+  }
 }
 
-// 页面加载后立即统计 + 恢复语言设置
-document.addEventListener('DOMContentLoaded', () => {
-  updateStats();
+// ── 初始化 ──
+async function init() {
+  try {
+    const res = await fetch('hospitals.json', { cache: 'no-cache' });
+    if (!res.ok) throw new Error('HTTP ' + res.status);
+    const data = await res.json();
+    renderHospitals(data);
+    injectHospitalSchema(data);
+    updateStats();
+  } catch (err) {
+    console.error('Failed to load hospitals.json:', err);
+    const list = document.getElementById('cardList');
+    if (list) list.innerHTML = '<div style="padding:40px;text-align:center;color:var(--ink-3);">加载医院数据失败，请刷新页面重试。</div>';
+  }
+
   const savedLang = localStorage.getItem('lang');
   if (savedLang === 'en') {
-    const langBtns = document.querySelectorAll('.lang-opt');
-    if (langBtns.length >= 2) switchLang('en', langBtns[1]);
+    const btns = document.querySelectorAll('.lang-opt');
+    if (btns.length >= 2) switchLang('en', btns[1]);
   }
-});
-window.addEventListener('load', updateStats);
+}
 
+document.addEventListener('DOMContentLoaded', init);
 document.addEventListener('keydown', e => { if (e.key === 'Escape') closeModal(); });
 document.querySelectorAll('.copy-year').forEach(el => el.textContent = new Date().getFullYear());
