@@ -1,4 +1,0 @@
-User-agent: *
-Allow: /
-
-Sitemap: https://81japan.com/sitemap.xml

@@ -1,0 +1,32 @@
+---
+interface Props {
+  active?: 'hospitals' | 'admin' | 'life' | 'rules' | 'about' | null;
+}
+const { active = null } = Astro.props;
+
+const items = [
+  { key: 'hospitals', href: '/',           zh: '医院诊所',   en: 'Hospitals' },
+  { key: 'admin',     href: '#',           zh: '行政手续',   en: 'Admin' },
+  { key: 'life',      href: '#',           zh: '生活服务',   en: 'Life' },
+  { key: 'rules',     href: '#',           zh: '日本ルール', en: 'Rules' },
+  { key: 'about',     href: '#',           zh: '关于我们',   en: 'About' },
+];
+---
+<nav aria-label="主导航">
+  <a class="logo" href="/"><span class="logo-dot"></span>81日本</a>
+  <div class="nav-links" role="menubar">
+    {items.map(i => (
+      <a href={i.href} class={active === i.key ? 'active' : ''}>
+        <span class="zh-only">{i.zh}</span><span class="en-only">{i.en}</span>
+      </a>
+    ))}
+  </div>
+  <div class="nav-right">
+    <div class="lang-switcher">
+      <button class="lang-opt active" onclick="switchLang('zh', this)">中文</button>
+      <span class="lang-sep">/</span>
+      <button class="lang-opt" onclick="switchLang('en', this)">EN</button>
+    </div>
+    <button class="submit-nav-btn" onclick="window.location='/submit.html'"><span class="zh-only">投稿</span><span class="en-only">Contribute</span></button>
+  </div>
+</nav>
