@@ -1,0 +1,2101 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>81日本 | 在日中文医院・诊所查询指南</title>
+<meta name="description" content="收录日本全国23家提供中文医疗服务的医院与诊所，涵盖东京、大阪、福冈、神户、名古屋、北海道等地区，支持按科室、语言、地区筛选。">
+<meta name="keywords" content="在日中文医院,日本中文诊所,日本看病,中文医疗,日本华人医院,东京中文医院,大阪中文医院,在日生活,中文医生,华人医疗">
+<meta name="author" content="81Japan">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://81japan.com/">
+
+<!-- Open Graph -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://81japan.com/">
+<meta property="og:title" content="81日本 | 在日中文医院・诊所查询指南">
+<meta property="og:description" content="收录日本全国23家提供中文医疗服务的医院与诊所，涵盖东京、大阪、福冈、神户、名古屋、北海道等地区，支持按科室、语言、地区筛选。">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:site_name" content="81日本">
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="81日本 | 在日中文医院・诊所查询指南">
+<meta name="twitter:description" content="收录日本全国23家提供中文医疗服务的医院与诊所，支持按科室、语言、地区筛选。">
+
+<link rel="icon" type="image/png" href="81japan.png">
+<link rel="apple-touch-icon" href="81japan.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@300;400;600&family=Noto+Sans+SC:wght@300;400;500&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --red: #C0392B;
+    --red-light: #FDECEA;
+    --red-mid: #E8746A;
+    --ink: #1A1A1A;
+    --ink-2: #444;
+    --ink-3: #888;
+    --paper: #FAFAF8;
+    --paper-2: #F2F1ED;
+    --paper-3: #E8E6DF;
+    --white: #FFFFFF;
+    --green: #1D7A55;
+    --green-light: #E3F4EC;
+    --amber: #B06A00;
+    --amber-light: #FEF3E2;
+    --serif: 'Noto Serif SC', serif;
+    --sans: 'Noto Sans SC', sans-serif;
+    --mono: 'DM Mono', monospace;
+    --radius: 10px;
+    --radius-sm: 6px;
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  .visually-hidden { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; border: 0; }
+  html { scroll-behavior: smooth; }
+
+  body {
+    font-family: var(--sans);
+    background: var(--paper);
+    color: var(--ink);
+    font-size: 15px;
+    line-height: 1.7;
+  }
+
+  /* ── NAV ── */
+  nav {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background: rgba(250,250,248,0.92);
+    backdrop-filter: blur(12px);
+    border-bottom: 1px solid var(--paper-3);
+    padding: 0 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 58px;
+  }
+  .logo {
+    font-family: var(--serif);
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--ink);
+    letter-spacing: 0.03em;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    text-decoration: none;
+  }
+  .logo-dot {
+    width: 8px; height: 8px;
+    background: var(--red);
+    border-radius: 50%;
+    display: inline-block;
+  }
+  .nav-links {
+    display: flex;
+    gap: 28px;
+    font-size: 13px;
+    color: var(--ink-2);
+  }
+  .nav-links a {
+    text-decoration: none;
+    color: inherit;
+    transition: color 0.15s;
+  }
+  .nav-links a:hover, .nav-links a.active { color: var(--red); }
+  .nav-right {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+  .lang-switcher {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    border: 1px solid var(--paper-3);
+    border-radius: 999px;
+    padding: 3px 10px;
+    background: transparent;
+  }
+  .lang-opt {
+    font-size: 11px;
+    font-family: var(--mono);
+    background: none;
+    border: none;
+    color: var(--ink-3);
+    cursor: pointer;
+    padding: 1px 4px;
+    border-radius: 4px;
+    transition: all 0.15s;
+    letter-spacing: 0.04em;
+  }
+  .lang-opt:hover { color: var(--ink); }
+  .lang-opt.active {
+    color: var(--ink);
+    background: var(--paper-2);
+    font-weight: 500;
+  }
+  .lang-sep { font-size: 10px; color: var(--paper-3); }
+  .en-only { display: none; }
+  .zh-only { display: block; }
+  body.lang-en .en-only { display: block; }
+  body.lang-en .zh-only { display: none; }
+  .submit-nav-btn {
+    font-size: 12px;
+    padding: 6px 14px;
+    border-radius: 999px;
+    border: 1px solid var(--red);
+    background: transparent;
+    color: var(--red);
+    cursor: pointer;
+    font-family: var(--sans);
+    transition: all 0.15s;
+  }
+  .submit-nav-btn:hover { background: var(--red); color: white; }
+
+  /* ── HERO ── */
+  .hero {
+    padding: 40px 40px 36px;
+    max-width: 860px;
+    margin: 0 auto;
+  }
+  .hero-eyebrow {
+    font-family: var(--mono);
+    font-size: 11px;
+    letter-spacing: 0.12em;
+    color: var(--red);
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  .hero-eyebrow::before {
+    content: '';
+    display: block;
+    width: 24px; height: 1px;
+    background: var(--red);
+  }
+  .hero h1 {
+    font-family: var(--serif);
+    font-size: 42px;
+    font-weight: 300;
+    line-height: 1.35;
+    color: var(--ink);
+    margin-bottom: 16px;
+    letter-spacing: 0.02em;
+  }
+  .hero h1 em {
+    font-style: normal;
+    color: var(--red);
+  }
+  .hero-sub {
+    font-size: 15px;
+    color: var(--ink-3);
+    max-width: 520px;
+    margin-bottom: 36px;
+    line-height: 1.8;
+  }
+
+  /* ── SEARCH ── */
+  .search-wrap {
+    display: flex;
+    gap: 0;
+    max-width: 540px;
+    border: 1.5px solid var(--ink);
+    border-radius: var(--radius);
+    overflow: hidden;
+    background: var(--white);
+    transition: border-color 0.2s, box-shadow 0.2s;
+  }
+  .search-wrap:focus-within {
+    border-color: var(--red);
+    box-shadow: 0 0 0 3px rgba(192,57,43,0.08);
+  }
+  .search-select {
+    appearance: none;
+    border: none;
+    background: var(--paper-2);
+    padding: 0 14px;
+    font-size: 13px;
+    font-family: var(--sans);
+    color: var(--ink-2);
+    border-right: 1px solid var(--paper-3);
+    cursor: pointer;
+    outline: none;
+    min-width: 90px;
+  }
+  .search-input {
+    flex: 1;
+    border: none;
+    padding: 13px 16px;
+    font-size: 14px;
+    font-family: var(--sans);
+    background: transparent;
+    color: var(--ink);
+    outline: none;
+  }
+  .search-input::placeholder { color: var(--ink-3); }
+  .search-btn {
+    padding: 0 22px;
+    background: var(--red);
+    border: none;
+    color: white;
+    font-size: 14px;
+    cursor: pointer;
+    font-family: var(--sans);
+    transition: background 0.15s;
+    white-space: nowrap;
+  }
+  .search-btn:hover { background: #A9328; }
+
+  .search-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 14px;
+  }
+  .search-tag {
+    font-size: 12px;
+    padding: 4px 12px;
+    border-radius: 999px;
+    background: var(--paper-2);
+    color: var(--ink-2);
+    cursor: pointer;
+    border: 1px solid transparent;
+    transition: all 0.15s;
+  }
+  .search-tag:hover {
+    border-color: var(--red);
+    color: var(--red);
+    background: var(--red-light);
+  }
+
+  /* ── STATS BAR ── */
+  .stats-bar {
+    border-top: 1px solid var(--paper-3);
+    border-bottom: 1px solid var(--paper-3);
+    background: var(--white);
+    padding: 20px 40px;
+    display: flex;
+    gap: 48px;
+    align-items: center;
+    justify-content: center;
+  }
+  .stat {
+    display: flex;
+    flex-direction: column;
+  }
+  .stat-num {
+    font-family: var(--serif);
+    font-size: 24px;
+    font-weight: 600;
+    color: var(--ink);
+    line-height: 1.1;
+  }
+  .stat-label {
+    font-size: 11px;
+    font-family: var(--mono);
+    color: var(--ink-3);
+    letter-spacing: 0.06em;
+    margin-top: 2px;
+  }
+  .stat-divider {
+    width: 1px;
+    height: 36px;
+    background: var(--paper-3);
+  }
+
+  /* ── MAIN LAYOUT ── */
+  .main-layout {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 40px 40px;
+    display: grid;
+    grid-template-columns: 240px 1fr;
+    gap: 40px;
+    align-items: start;
+  }
+
+  /* ── SIDEBAR ── */
+  .sidebar {
+    position: sticky;
+    top: 78px;
+  }
+  .filter-group {
+    margin-bottom: 28px;
+  }
+  .filter-title {
+    font-size: 11px;
+    font-family: var(--mono);
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--ink-3);
+    margin-bottom: 10px;
+  }
+  .filter-option {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 7px 10px;
+    border-radius: var(--radius-sm);
+    cursor: pointer;
+    transition: background 0.12s;
+    font-size: 13px;
+  }
+  .filter-option:hover { background: var(--paper-2); }
+  .filter-option.active {
+    background: var(--red-light);
+    color: var(--red);
+    font-weight: 500;
+  }
+  .filter-count {
+    font-size: 11px;
+    color: var(--ink-3);
+    font-family: var(--mono);
+    background: var(--paper-2);
+    padding: 1px 7px;
+    border-radius: 999px;
+  }
+  .filter-option.active .filter-count {
+    background: rgba(192,57,43,0.12);
+    color: var(--red);
+  }
+
+  /* ── HOSPITAL LIST ── */
+  .list-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  .list-title {
+    font-size: 13px;
+    color: var(--ink-3);
+    font-family: var(--mono);
+  }
+  .list-title strong { color: var(--ink); font-weight: 500; }
+  .sort-select {
+    font-size: 12px;
+    border: 1px solid var(--paper-3);
+    border-radius: var(--radius-sm);
+    padding: 5px 10px;
+    background: var(--white);
+    color: var(--ink-2);
+    cursor: pointer;
+    font-family: var(--sans);
+    outline: none;
+  }
+
+  .hospital-card {
+    background: var(--white);
+    border: 1px solid var(--paper-3);
+    border-radius: var(--radius);
+    padding: 22px 24px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    transition: all 0.18s;
+    position: relative;
+    overflow: hidden;
+  }
+  .hospital-card::before {
+    content: '';
+    position: absolute;
+    left: 0; top: 0; bottom: 0;
+    width: 3px;
+    background: transparent;
+    transition: background 0.18s;
+  }
+  .hospital-card:hover {
+    border-color: var(--red-mid);
+    box-shadow: 0 4px 20px rgba(0,0,0,0.06);
+    transform: translateY(-1px);
+  }
+  .hospital-card:hover::before { background: var(--red); }
+
+  .card-row1 {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin-bottom: 8px;
+  }
+  .hospital-name {
+    font-family: var(--serif);
+    font-size: 17px;
+    font-weight: 600;
+    color: var(--ink);
+    line-height: 1.3;
+  }
+  .hospital-name-ja {
+    font-size: 12px;
+    color: var(--ink-3);
+    margin-top: 2px;
+    font-family: var(--sans);
+    font-weight: 300;
+  }
+
+  .badges {
+    display: flex;
+    gap: 6px;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+  }
+  .badge {
+    font-size: 11px;
+    padding: 3px 9px;
+    border-radius: 999px;
+    font-family: var(--mono);
+    white-space: nowrap;
+  }
+  .badge-cn { background: var(--green-light); color: var(--green); }
+  .badge-en { background: var(--amber-light); color: var(--amber); }
+  .badge-new {
+    background: var(--red);
+    color: white;
+  }
+
+  .card-info {
+    font-size: 13px;
+    color: var(--ink-2);
+    margin-bottom: 10px;
+    line-height: 1.7;
+  }
+  .card-info-row {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  .info-item {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+  .info-icon {
+    font-size: 13px;
+    opacity: 0.6;
+  }
+
+  .card-depts {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    margin-top: 10px;
+  }
+  .dept-tag {
+    font-size: 11px;
+    padding: 3px 10px;
+    border-radius: 999px;
+    background: var(--paper-2);
+    color: var(--ink-2);
+    border: 1px solid var(--paper-3);
+  }
+
+  .card-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 14px;
+    padding-top: 12px;
+    border-top: 1px solid var(--paper-2);
+    font-size: 12px;
+    color: var(--ink-3);
+    font-family: var(--mono);
+  }
+  .view-detail {
+    font-size: 12px;
+    color: var(--red);
+    font-family: var(--sans);
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+  }
+
+  /* ── MODAL (Detail) ── */
+  .modal-overlay {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(8,8,8,0.5);
+    z-index: 200;
+    padding: 40px 20px;
+    overflow-y: auto;
+    backdrop-filter: blur(4px);
+  }
+  .modal-overlay.open { display: flex; align-items: flex-start; justify-content: center; }
+  .modal {
+    background: var(--white);
+    border-radius: 16px;
+    max-width: 680px;
+    width: 100%;
+    overflow: hidden;
+    animation: modalIn 0.22s ease;
+  }
+  @keyframes modalIn {
+    from { opacity: 0; transform: translateY(16px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  .modal-header {
+    background: var(--ink);
+    color: white;
+    padding: 28px 32px 24px;
+    position: relative;
+  }
+  .modal-header-eyebrow {
+    font-family: var(--mono);
+    font-size: 10px;
+    letter-spacing: 0.12em;
+    opacity: 0.5;
+    margin-bottom: 8px;
+    text-transform: uppercase;
+  }
+  .modal-title {
+    font-family: var(--serif);
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 1.3;
+  }
+  .modal-title-ja {
+    font-size: 13px;
+    opacity: 0.5;
+    margin-top: 4px;
+    font-weight: 300;
+  }
+  .modal-close {
+    position: absolute;
+    right: 24px; top: 24px;
+    width: 32px; height: 32px;
+    border-radius: 50%;
+    border: 1px solid rgba(255,255,255,0.2);
+    background: transparent;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+    display: flex; align-items: center; justify-content: center;
+    transition: background 0.15s;
+  }
+  .modal-close:hover { background: rgba(255,255,255,0.1); }
+  .modal-body { padding: 28px 32px; }
+
+  .modal-section {
+    margin-bottom: 24px;
+  }
+  .modal-section-title {
+    font-size: 11px;
+    font-family: var(--mono);
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--ink-3);
+    margin-bottom: 12px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid var(--paper-2);
+  }
+  .modal-info-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+  }
+  .modal-info-item {
+    padding: 12px 14px;
+    background: var(--paper);
+    border-radius: var(--radius-sm);
+  }
+  .modal-info-label {
+    font-size: 11px;
+    color: var(--ink-3);
+    margin-bottom: 4px;
+  }
+  .modal-info-value {
+    font-size: 13px;
+    color: var(--ink);
+    font-weight: 500;
+    line-height: 1.5;
+  }
+
+  .dept-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+  .dept-item {
+    padding: 6px 14px;
+    background: var(--paper-2);
+    border-radius: var(--radius-sm);
+    font-size: 13px;
+    color: var(--ink-2);
+    border: 1px solid var(--paper-3);
+  }
+
+  .lang-badges-large {
+    display: flex;
+    gap: 10px;
+  }
+  .lang-badge-large {
+    padding: 10px 20px;
+    border-radius: var(--radius);
+    font-size: 13px;
+    font-weight: 500;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+  }
+  .lang-badge-large small {
+    font-size: 11px;
+    opacity: 0.7;
+    font-weight: 300;
+  }
+  .lang-cn { background: var(--green-light); color: var(--green); }
+  .lang-en { background: var(--amber-light); color: var(--amber); }
+
+  .modal-actions {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    margin-top: 24px;
+  }
+  .modal-btn {
+    padding: 12px;
+    border-radius: var(--radius);
+    font-size: 13px;
+    font-family: var(--sans);
+    cursor: pointer;
+    text-align: center;
+    transition: all 0.15s;
+    border: 1px solid var(--paper-3);
+    background: var(--paper);
+    color: var(--ink);
+  }
+  .modal-btn:hover { background: var(--paper-2); }
+  .modal-btn-primary {
+    background: var(--red);
+    color: white;
+    border-color: var(--red);
+  }
+  .modal-btn-primary:hover { background: #A9328; }
+
+  .note-box {
+    background: var(--amber-light);
+    border: 1px solid rgba(176,106,0,0.2);
+    border-radius: var(--radius-sm);
+    padding: 12px 14px;
+    font-size: 12px;
+    color: var(--amber);
+    line-height: 1.7;
+    margin-top: 16px;
+  }
+
+  /* ── SUBMIT SECTION ── */
+  .submit-section {
+    background: var(--ink);
+    color: white;
+    padding: 60px 40px;
+    margin-top: 60px;
+  }
+  .submit-inner {
+    max-width: 800px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    gap: 60px;
+    align-items: start;
+  }
+  .submit-text h2 {
+    font-family: var(--serif);
+    font-size: 8px;
+    font-weight: 300;
+    margin-bottom: 12px;
+    line-height: 1.4;
+  }
+  .submit-text h2 em { font-style: normal; color: var(--red-mid); }
+  .submit-text p { font-size: 13px; color: rgba(255,255,255,0.5); line-height: 1.8; }
+  .submit-steps { margin-top: 24px; display: flex; flex-direction: column; gap: 12px; }
+  .submit-step { display: flex; gap: 12px; align-items: flex-start; }
+  .step-num {
+    width: 22px; height: 22px; border-radius: 50%;
+    border: 1px solid rgba(255,255,255,0.2);
+    display: flex; align-items: center; justify-content: center;
+    font-size: 11px; font-family: var(--mono);
+    color: rgba(255,255,255,0.4); flex-shrink: 0; margin-top: 1px;
+  }
+  .step-text { font-size: 12px; color: rgba(255,255,255,0.4); line-height: 1.6; }
+
+  .submit-type-row { display: flex; gap: 8px; margin-bottom: 14px; }
+  .type-btn {
+    flex: 1; padding: 9px 8px;
+    border-radius: var(--radius-sm);
+    border: 1px solid rgba(255,255,255,0.15);
+    background: transparent; color: rgba(255,255,255,0.45);
+    font-size: 12px; font-family: var(--sans); cursor: pointer;
+    transition: all 0.15s; text-align: center;
+  }
+  .type-btn.active {
+    background: rgba(255,255,255,0.1);
+    border-color: rgba(255,255,255,0.4);
+    color: white; font-weight: 500;
+  }
+  .submit-form { display: flex; flex-direction: column; gap: 10px; }
+  .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+  .form-field { display: flex; flex-direction: column; gap: 4px; }
+  .form-label {
+    font-size: 10px; color: rgba(255,255,255,0.35);
+    font-family: var(--mono); letter-spacing: 0.08em; text-transform: uppercase;
+  }
+  .form-label .req { color: var(--red-mid); margin-left: 2px; }
+  .form-input {
+    padding: 10px 13px;
+    border-radius: var(--radius-sm);
+    border: 1px solid rgba(255,255,255,0.12);
+    background: rgba(255,255,255,0.05);
+    color: white; font-size: 13px; font-family: var(--sans);
+    outline: none; transition: border-color 0.15s, background 0.15s;
+  }
+  .form-input::placeholder { color: rgba(255,255,255,0.22); }
+  .form-input:focus { border-color: rgba(255,255,255,0.32); background: rgba(255,255,255,0.08); }
+  .form-input.error { border-color: var(--red-mid); }
+  .form-textarea { min-height: 80px; resize: vertical; }
+  .form-select {
+    appearance: none;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='6'%3E%3Cpath d='M0 0l5 6 5-6z' fill='rgba(255,255,255,0.3)'/%3E%3C/svg%3E");
+    background-repeat: no-repeat; background-position: right 12px center;
+    padding-right: 32px; cursor: pointer;
+  }
+  .form-select option { background: #2a2a2a; color: white; }
+  .char-count { font-size: 11px; color: rgba(255,255,255,0.2); text-align: right; font-family: var(--mono); }
+  .form-submit {
+    padding: 12px; background: var(--red); color: white; border: none;
+    border-radius: var(--radius-sm); font-size: 13px; font-family: var(--sans);
+    cursor: pointer; transition: all 0.15s; font-weight: 500; margin-top: 2px;
+    display: flex; align-items: center; justify-content: center; gap: 8px;
+  }
+  .form-submit:hover:not(:disabled) { background: #A9328; }
+  .form-submit:disabled { opacity: 0.55; cursor: not-allowed; }
+  .form-note { font-size: 11px; color: rgba(255,255,255,0.25); font-family: var(--mono); text-align: center; }
+  .submit-success {
+    display: none; text-align: center; padding: 28px 16px;
+  }
+  .success-icon {
+    width: 52px; height: 52px; border-radius: 50%;
+    background: rgba(29,122,85,0.15); border: 1px solid rgba(29,122,85,0.35);
+    display: flex; align-items: center; justify-content: center;
+    margin: 0 auto 16px; font-size: 22px;
+  }
+  .submit-success h3 { font-family: var(--serif); font-size: 18px; font-weight: 300; margin-bottom: 8px; }
+  .submit-success p { font-size: 13px; color: rgba(255,255,255,0.4); line-height: 1.7; }
+  .submit-again {
+    font-size: 12px; color: rgba(255,255,255,0.35); background: none;
+    border: none; cursor: pointer; text-decoration: underline;
+    margin-top: 14px; font-family: var(--sans); display: block; margin-left: auto; margin-right: auto;
+  }
+  .submit-banner {
+    max-width: 800px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+  }
+  .submit-banner-text h2 {
+    font-family: var(--serif);
+    font-size: 24px;
+    font-weight: 300;
+    margin-bottom: 10px;
+    line-height: 1.4;
+  }
+  .submit-banner-text h2 em { font-style: normal; color: var(--red-mid); }
+  .submit-banner-text p {
+    font-size: 13px;
+    color: rgba(255,255,255,0.45);
+    line-height: 1.8;
+    max-width: 480px;
+  }
+  .submit-banner-btn {
+    flex-shrink: 0;
+    padding: 13px 28px;
+    border-radius: var(--radius);
+    border: 1px solid rgba(255,255,255,0.25);
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    font-family: var(--sans);
+    font-weight: 500;
+    transition: all 0.18s;
+    white-space: nowrap;
+  }
+  .submit-banner-btn:hover {
+    background: rgba(255,255,255,0.1);
+    border-color: rgba(255,255,255,0.45);
+  }
+  @media (max-width: 768px) {
+    .submit-banner { flex-direction: column; gap: 24px; }
+    .submit-banner-btn { width: 100%; text-align: center; }
+  }
+
+  /* ── FOOTER ── */
+  footer {
+    background: var(--paper-2);
+    border-top: 1px solid var(--paper-3);
+    padding: 32px 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 12px;
+    color: var(--ink-3);
+    font-family: var(--mono);
+  }
+  footer a { color: var(--ink-3); text-decoration: none; }
+  footer a:hover { color: var(--red); }
+
+  /* ── RESPONSIVE ── */
+  @media (max-width: 768px) {
+    nav { padding: 0 20px; }
+    .nav-links { display: none; }
+    .hero { padding: 48px 20px 40px; }
+    .hero h1 { font-size: 30px; }
+    .stats-bar { padding: 16px 20px; gap: 24px; overflow-x: auto; }
+    .main-layout { grid-template-columns: 1fr; padding: 24px 20px; }
+    .sidebar { position: static; display: none; }
+    .submit-inner { grid-template-columns: 1fr; gap: 32px; }
+    .modal-info-grid { grid-template-columns: 1fr; }
+    footer { flex-direction: column; gap: 12px; text-align: center; }
+  }
+
+  /* ── ANIMATE IN ── */
+  .fade-in {
+    opacity: 0;
+    transform: translateY(12px);
+    animation: fadeIn 0.5s ease forwards;
+  }
+  .fade-in:nth-child(1) { animation-delay: 0.05s; }
+  .fade-in:nth-child(2) { animation-delay: 0.12s; }
+  .fade-in:nth-child(3) { animation-delay: 0.19s; }
+  .fade-in:nth-child(4) { animation-delay: 0.8s; }
+  .fade-in:nth-child(5) { animation-delay: 0.33s; }
+  @keyframes fadeIn {
+    to { opacity: 1; transform: translateY(0); }
+  }
+</style>
+
+<!-- JSON-LD Structured Data -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": "https://81japan.com/#website",
+      "url": "https://81japan.com/",
+      "name": "81日本",
+      "description": "收录日本全国提供中文医疗服务的医院与诊所信息",
+      "inLanguage": ["zh-Hans", "en"],
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": {
+          "@type": "EntryPoint",
+          "urlTemplate": "https://81japan.com/?q={search_term_string}"
+        },
+        "query-input": "required name=search_term_string"
+      }
+    },
+    {
+      "@type": "ItemList",
+      "@id": "https://81japan.com/#hospital-list",
+      "name": "在日中文医院列表",
+      "description": "日本全国提供中文医疗服务的医院与诊所",
+      "url": "https://81japan.com/",
+      "numberOfItems": 23,
+      "itemListElement": [
+        {"@type": "ListItem", "position": 1, "name": "神户华侨同仁会病院", "url": "https://81japan.com/#神户华侨同仁会病院"},
+        {"@type": "ListItem", "position": 2, "name": "聖路加国際病院", "url": "https://81japan.com/#聖路加国際病院"},
+        {"@type": "ListItem", "position": 3, "name": "順天堂医院 国際診療部", "url": "https://81japan.com/#順天堂医院"}
+      ]
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://81japan.com/#organization",
+      "name": "81日本",
+      "url": "https://81japan.com/",
+      "description": "由社区共同维护的在日中文医疗信息平台"
+    }
+  ]
+}
+</script>
+</head>
+<body>
+
+<!-- NAV -->
+<nav aria-label="主导航">
+  <a class="logo" href="#"><span class="logo-dot"></span>81日本</a>
+  <div class="nav-links" role="menubar">
+    <a href="#" class="active">
+      <span class="zh-only">医院诊所</span><span class="en-only">Hospitals</span>
+    </a>
+    <a href="#">
+      <span class="zh-only">行政手续</span><span class="en-only">Admin</span>
+    </a>
+    <a href="#">
+      <span class="zh-only">生活服务</span><span class="en-only">Life</span>
+    </a>
+    <a href="#">
+      <span class="zh-only">关于我们</span><span class="en-only">About</span>
+    </a>
+  </div>
+  <div class="nav-right">
+    <div class="lang-switcher">
+      <button class="lang-opt active" onclick="switchLang('zh', this)">中文</button>
+      <span class="lang-sep">/</span>
+      <button class="lang-opt" onclick="switchLang('en', this)">EN</button>
+    </div>
+    <button class="submit-nav-btn" onclick="window.location='submit.html'"><span class="zh-only">投稿</span><span class="en-only">Contribute</span></button>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero" aria-labelledby="heroTitle">
+  <div class="hero-eyebrow" id="heroTitle">
+    <span class="zh-only">81日本 · 在日生活中文指南</span>
+    <span class="en-only">81Japan · Chinese Living Guide</span>
+  </div>
+  <h1 class="visually-hidden">81日本 — 在日中文医院・诊所查询指南</h1>
+  <p class="hero-sub zh-only">收集了一些提供中文服务的医院、诊所及生活信息，希望能帮到初到日本的你。</p>
+  <p class="hero-sub en-only">A community-maintained directory of hospitals and clinics with Chinese-speaking staff across Japan.</p>
+
+  <div class="search-wrap" role="search" aria-label="搜索医院">
+    <select class="search-select" onchange="handleRegionSelect(this.value)">
+      <option value="全部地区">全部地区</option>
+      <option value="东京">东京・关东</option>
+      <option value="大阪">大阪・关西</option>
+      <option value="神户">神户</option>
+      <option value="名古屋">名古屋・中部</option>
+      <option value="福冈">福冈・九州</option>
+      <option value="札幌">北海道・札幌</option>
+    </select>
+    <input class="search-input" placeholder="搜索医院名称、城市、科室…" id="searchInput" oninput="resetFilterHighlights(); filterCards()">
+    <button class="search-btn"><span class="zh-only">搜索</span><span class="en-only">Search</span></button>
+  </div>
+  <div class="search-tags">
+    <span class="search-tag" onclick="setSearch('内科')">内科</span>
+    <span class="search-tag" onclick="setSearch('产科')">产科</span>
+    <span class="search-tag" onclick="setSearch('儿科')">儿科</span>
+    <span class="search-tag" onclick="setSearch('皮肤科')">皮肤科</span>
+    <span class="search-tag" onclick="setSearch('大阪')">大阪</span>
+    <span class="search-tag" onclick="setSearch('东京')">东京</span>
+    <span class="search-tag" onclick="setSearch('福冈')">福冈</span>
+  </div>
+</section>
+
+<!-- STATS -->
+<div class="stats-bar">
+  <div class="stat">
+    <div class="stat-num" id="totalCount">23</div>
+    <div class="stat-label"><span class="zh-only">收录医院</span><span class="en-only">Facilities</span></div>
+  </div>
+  <div class="stat-divider"></div>
+  <div class="stat">
+    <div class="stat-num" id="regionCount">6</div>
+    <div class="stat-label"><span class="zh-only">都道府县</span><span class="en-only">Prefectures</span></div>
+  </div>
+  <div class="stat-divider"></div>
+  <div class="stat">
+    <div class="stat-num" id="deptCount">12</div>
+    <div class="stat-label"><span class="zh-only">专科类别</span><span class="en-only">Specialties</span></div>
+  </div>
+  <div class="stat-divider"></div>
+  <div class="stat">
+    <div class="stat-num">社区</div>
+    <div class="stat-label"><span class="zh-only">持续更新中</span><span class="en-only">Community-maintained</span></div>
+  </div>
+</div>
+
+<!-- MAIN -->
+<div class="main-layout">
+
+  <!-- SIDEBAR -->
+  <aside class="sidebar" aria-label="筛选条件">
+    <div class="filter-group">
+      <div class="filter-title"><span class="zh-only">地区</span><span class="en-only">Region</span></div>
+      <div class="filter-option active" onclick="filterRegion('全部', this)" data-region-filter="全部">
+        <span><span class="zh-only">全部地区</span><span class="en-only">All</span></span>
+        <span class="filter-count" id="fc-all">23</span>
+      </div>
+      <div class="filter-option" onclick="filterRegion('东京', this)" data-region-filter="东京">
+        <span><span class="zh-only">东京・关东</span><span class="en-only">Tokyo</span></span>
+        <span class="filter-count" id="fc-tokyo">9</span>
+      </div>
+      <div class="filter-option" onclick="filterRegion('大阪', this)" data-region-filter="大阪">
+        <span><span class="zh-only">大阪・关西</span><span class="en-only">Osaka</span></span>
+        <span class="filter-count" id="fc-osaka">10</span>
+      </div>
+      <div class="filter-option" onclick="filterRegion('福冈', this)" data-region-filter="福冈">
+        <span><span class="zh-only">福冈・九州</span><span class="en-only">Fukuoka</span></span>
+        <span class="filter-count" id="fc-fukuoka">1</span>
+      </div>
+      <div class="filter-option" onclick="filterRegion('札幌', this)" data-region-filter="札幌">
+        <span><span class="zh-only">北海道</span><span class="en-only">Hokkaido</span></span>
+        <span class="filter-count" id="fc-sapporo">1</span>
+      </div>
+      <div class="filter-option" onclick="filterRegion('名古屋', this)" data-region-filter="名古屋">
+        <span><span class="zh-only">名古屋・中部</span><span class="en-only">Nagoya</span></span>
+        <span class="filter-count" id="fc-nagoya">1</span>
+      </div>
+      <div class="filter-option" onclick="filterRegion('神户', this)" data-region-filter="神户">
+        <span><span class="zh-only">神户・关西</span><span class="en-only">Kobe</span></span>
+        <span class="filter-count" id="fc-kobe">1</span>
+      </div>
+    </div>
+
+    <div class="filter-group">
+      <div class="filter-title"><span class="zh-only">服务语言</span><span class="en-only">Language</span></div>
+      <div class="filter-option active" onclick="filterLang('全部', this)" data-lang-filter="全部">
+        <span><span class="zh-only">全部</span><span class="en-only">All</span></span>
+        <span class="filter-count" id="fl-all">23</span>
+      </div>
+      <div class="filter-option" onclick="filterLang('中文', this)" data-lang-filter="中文">
+        <span>🇨🇳 <span class="zh-only">中文对应</span><span class="en-only">Chinese</span></span>
+        <span class="filter-count" id="fl-cn">22</span>
+      </div>
+      <div class="filter-option" onclick="filterLang('英文', this)" data-lang-filter="英文">
+        <span>🇺🇸 <span class="zh-only">英文对应</span><span class="en-only">English</span></span>
+        <span class="filter-count" id="fl-en">18</span>
+      </div>
+    </div>
+
+    <div class="filter-group">
+      <div class="filter-title"><span class="zh-only">科室</span><span class="en-only">Department</span></div>
+      <div class="filter-option" onclick="setSearch('内科')">内科</div>
+      <div class="filter-option" onclick="setSearch('外科')">外科</div>
+      <div class="filter-option" onclick="setSearch('产科')">产科・妇科</div>
+      <div class="filter-option" onclick="setSearch('儿科')">儿科</div>
+      <div class="filter-option" onclick="setSearch('皮肤科')">皮肤科</div>
+      <div class="filter-option" onclick="setSearch('精神科')">精神科・心理</div>
+      <div class="filter-option" onclick="setSearch('牙科')">牙科・口腔</div>
+    </div>
+  </aside>
+
+  <!-- LIST -->
+  <main>
+    <div class="list-header">
+      <div class="list-title">
+          <span class="zh-only">共找到 <strong id="shownCount">23</strong> 家医疗机构</span>
+          <span class="en-only"><strong id="shownCountEn">23</strong> facilities found</span>
+        </div>
+      <select class="sort-select" id="sortSelect" onchange="sortCards(this.value)">
+        <option value="date" data-zh="最近更新" data-en="Latest">最近更新</option>
+        <option value="region" data-zh="按地区" data-en="By Region">按地区</option>
+        <option value="dept" data-zh="按科室" data-en="By Dept.">按科室</option>
+      </select>
+    </div>
+
+    <div id="cardList" role="list" aria-label="医院列表">
+
+      <div class="hospital-card fade-in" data-name="神户华侨同仁会病院" data-region="神户" data-lang="中文" data-depts="内科 外科 产科 儿科 骨科 眼科"
+           onclick="openModal('神户华侨同仁会病院', '神戸華僑同仁会病院', '兵库县神户市中央区', '078-222-XXXX', '中文（全科）', '内科 / 外科 / 产科 / 儿科 / 骨科 / 眼科', '周一至周五 9:00–17:30 / 周六 9:00–12:30', '周日・节假日', '全科均设中文医生或中文翻译，无需另行预约翻译服务。为关西地区历史最悠久的华人医院。', '中文 英文')">
+        <div class="card-row1">
+          <div>
+            <div class="hospital-name">神户华侨同仁会病院</div>
+            <div class="hospital-name-ja">神戸華僑同仁会病院</div>
+          </div>
+          <div class="badges">
+            <span class="badge badge-cn">中文</span>
+            <span class="badge badge-en">英文</span>
+          </div>
+        </div>
+        <div class="card-info">
+          <div class="card-info-row">
+            <div class="info-item"><span class="info-icon">📍</span>兵库县 神户市中央区</div>
+            <div class="info-item"><span class="info-icon">🕐</span>周一至周五 9:00–17:30</div>
+          </div>
+        </div>
+        <div class="card-depts">
+          <span class="dept-tag">内科</span>
+          <span class="dept-tag">外科</span>
+          <span class="dept-tag">产科</span>
+          <span class="dept-tag">儿科</span>
+          <span class="dept-tag">骨科</span>
+          <span class="dept-tag">眼科</span>
+        </div>
+        <div class="card-footer">
+          <span>更新：2025年12月</span>
+          <span class="view-detail"><span class="zh-only">查看详情</span><span class="en-only">Details</span> →</span>
+        </div>
+      </div>
+
+      <div class="hospital-card fade-in" data-name="聖路加国際病院 东京" data-region="东京" data-lang="中文 英文" data-depts="内科 外科 产科 妇科 儿科 肿瘤科 急诊"
+           onclick="openModal('聖路加国際病院', 'St. Luke\'s International Hospital', '东京都中央区明石町9-1', '预约中心: 03-5550-7120', '中文 英文 韩文 俄文', '综合内科 / 外科 / 产科 / 妇科 / 儿科 / 肿瘤科 / 急诊', '平日 8:30–（各科不同）', '第2土曜・周日・节假日', '东京都指定外国人患者拠点医疗机构，中文通译员常驻，官网有完整中文版。需持紹介状及提前预约，无紹介状不受诊。築地駅步行7分。', '中文 英文')">
+        <div class="card-row1">
+          <div>
+            <div class="hospital-name">聖路加国際病院</div>
+            <div class="hospital-name-ja">St. Luke's International Hospital</div>
+          </div>
+          <div class="badges">
+            <span class="badge badge-cn">中文</span>
+            <span class="badge badge-en">英文</span>
+            <span class="badge badge-new">拠点病院</span>
+          </div>
+        </div>
+        <div class="card-info">
+          <div class="card-info-row">
+            <div class="info-item"><span class="info-icon">📍</span>东京都 中央区 明石町（築地駅 徒步7分）</div>
+            <div class="info-item"><span class="info-icon">⚠️</span>需持紹介状预约，无紹介状不受诊</div>
+          </div>
+        </div>
+        <div class="card-depts">
+          <span class="dept-tag">综合内科</span><span class="dept-tag">外科</span><span class="dept-tag">产科</span><span class="dept-tag">妇科</span><span class="dept-tag">儿科</span><span class="dept-tag">肿瘤科</span><span class="dept-tag">急诊</span>
+        </div>
+        <div class="card-footer"><span>更新：2026年4月</span><span class="view-detail"><span class="zh-only">查看详情</span><span class="en-only">Details</span> →</span></div>
+      </div>
+
+      <div class="hospital-card fade-in" data-name="順天堂医院 国際診療部 东京" data-region="东京" data-lang="中文 英文" data-depts="内科 外科 神经科 心脏科 肿瘤科 产科 整形外科"
+           onclick="openModal('順天堂大学医学部附属順天堂医院 国際診療部', '順天堂大学医学部附属順天堂医院', '东京都文京区本郷3-1-3', '03-5802-1985（国際診療部）', '中文 英文', '综合内科 / 外科 / 神经科 / 心脏科 / 肿瘤科 / 产科 / 整形外科', '平日 9:00–（各科不同）', '第2土曜・周日・节假日', '东京都指定外国人患者拠点医疗机构，官网有中文版。在日外国人须自带医疗通译同行，无通译当日不受诊。需紹介状。御茶ノ水駅步行5分。', '中文 英文')">
+        <div class="card-row1">
+          <div>
+            <div class="hospital-name">順天堂医院 国際診療部</div>
+            <div class="hospital-name-ja">順天堂大学医学部附属順天堂医院</div>
+          </div>
+          <div class="badges">
+            <span class="badge badge-cn">中文</span>
+            <span class="badge badge-en">英文</span>
+            <span class="badge badge-new">拠点病院</span>
+          </div>
+        </div>
+        <div class="card-info">
+          <div class="card-info-row">
+            <div class="info-item"><span class="info-icon">📍</span>东京都 文京区 本郷（御茶ノ水駅 徒步5分）</div>
+            <div class="info-item"><span class="info-icon">⚠️</span>需紹介状＋医疗通译同行</div>
+          </div>
+        </div>
+        <div class="card-depts">
+          <span class="dept-tag">综合内科</span><span class="dept-tag">外科</span><span class="dept-tag">神经科</span><span class="dept-tag">心脏科</span><span class="dept-tag">肿瘤科</span><span class="dept-tag">产科</span><span class="dept-tag">整形外科</span>
+        </div>
+        <div class="card-footer"><span>更新：2026年4月</span><span class="view-detail"><span class="zh-only">查看详情</span><span class="en-only">Details</span> →</span></div>
+      </div>
+
+      <div class="hospital-card fade-in" data-name="東京科学大学病院 国際医療部 东京 医科歯科" data-region="东京" data-lang="中文 英文" data-depts="内科 外科 牙科 儿科 产科 眼科 耳鼻喉科 皮肤科"
+           onclick="openModal('東京科学大学病院 国際医療部', '東京科学大学病院（旧・東京医科歯科大学病院）', '东京都文京区湯島1-5-45', '03-5803-5650（国際医療部）', '中文 英文 及19语言通译平板', '综合内科 / 外科 / 牙科口腔外科 / 儿科 / 产科 / 眼科 / 耳鼻科 / 皮肤科 等全科', '平日 8:30–17:00（各科不同）', '周六・周日・节假日', '旧东京医科歯科大学医院，国際医療部中英文员工常驻，提供19语言通译平板（免费）。官网有中文版。需紹介状。御茶ノ水駅步行3分。', '中文 英文')">
+        <div class="card-row1">
+          <div>
+            <div class="hospital-name">東京科学大学病院 国際医療部</div>
+            <div class="hospital-name-ja">東京科学大学病院（旧・東京医科歯科大学病院）</div>
+          </div>
+          <div class="badges">
+            <span class="badge badge-cn">中文</span>
+            <span class="badge badge-en">英文</span>
+            <span class="badge badge-new">19语言通译</span>
+          </div>
+        </div>
+        <div class="card-info">
+          <div class="card-info-row">
+            <div class="info-item"><span class="info-icon">📍</span>东京都 文京区 湯島（御茶ノ水駅 徒步3分）</div>
+            <div class="info-item"><span class="info-icon">⚠️</span>需持紹介状预约</div>
+          </div>
+        </div>
+        <div class="card-depts">
+          <span class="dept-tag">综合内科</span><span class="dept-tag">外科</span><span class="dept-tag">牙科・口腔外科</span><span class="dept-tag">儿科</span><span class="dept-tag">产科</span><span class="dept-tag">眼科</span><span class="dept-tag">耳鼻科</span>
+        </div>
+        <div class="card-footer"><span>更新：2026年4月</span><span class="view-detail"><span class="zh-only">查看详情</span><span class="en-only">Details</span> →</span></div>
+      </div>
+
+      <div class="hospital-card fade-in" data-name="東京都立駒込病院 东京" data-region="东京" data-lang="中文 英文" data-depts="内科 外科 肿瘤科 感染症 儿科 产科"
+           onclick="openModal('東京都立駒込病院', '東京都立駒込病院', '东京都文京区本駒込3-18-22', '03-3823-2101', '中文 英文 韩文', '综合内科 / 外科 / 肿瘤科 / 感染症 / 儿科 / 产科', '平日 8:30–（各科不同）', '周日・节假日', '东京都指定外国人患者拠点医疗机构，官网有中文版，肿瘤及感染症（HIV等）专门病院，设患者支援中心对应外国人。巣鴨駅步行5分。', '中文 英文')">
+        <div class="card-row1">
+          <div>
+            <div class="hospital-name">東京都立駒込病院</div>
+            <div class="hospital-name-ja">東京都立駒込病院</div>
+          </div>
+          <div class="badges">
+            <span class="badge badge-cn">中文</span>
+            <span class="badge badge-en">英文</span>
+            <span class="badge badge-new">拠点病院</span>
+          </div>
+        </div>
+        <div class="card-info">
+          <div class="card-info-row">
+            <div class="info-item"><span class="info-icon">📍</span>东京都 文京区 本駒込（巣鴨駅 徒步5分）</div>
+            <div class="info-item"><span class="info-icon">🕐</span>平日 8:30–（各科不同）</div>
+          </div>
+        </div>
+        <div class="card-depts">
+          <span class="dept-tag">综合内科</span><span class="dept-tag">外科</span><span class="dept-tag">肿瘤科</span><span class="dept-tag">感染症</span><span class="dept-tag">儿科</span><span class="dept-tag">产科</span>
+        </div>
+        <div class="card-footer"><span>更新：2026年4月</span><span class="view-detail"><span class="zh-only">查看详情</span><span class="en-only">Details</span> →</span></div>
+      </div>
+
+      <div class="hospital-card fade-in" data-name="東京大学附属病院 国際診療部 东京" data-region="东京" data-lang="中文 英文" data-depts="内科 外科 肿瘤科 神经科 心脏科 产科 健康体检"
+           onclick="openModal('東京大学医学部附属病院 国際診療部', '東京大学医学部附属病院', '东京都文京区本郷7-3-1', '03-3815-5411', '中文 英文 及多语言', '综合内科 / 外科 / 肿瘤科 / 神经科 / 心脏科 / 产科 / 国际健康体检 等全科', '平日 8:30–（各科不同）', '周日・节假日', '设有国際診療部及国際検診センター（2020年设立），提供中文问诊单，为海外居住者提供全身检查套餐。需紹介状。本郷三丁目駅步行7分。', '中文 英文')">
+        <div class="card-row1">
+          <div>
+            <div class="hospital-name">東京大学附属病院 国際診療部</div>
+            <div class="hospital-name-ja">東京大学医学部附属病院</div>
+          </div>
+          <div class="badges">
+            <span class="badge badge-cn">中文</span>
+            <span class="badge badge-en">英文</span>
+            <span class="badge badge-new">国際検診</span>
+          </div>
+        </div>
+        <div class="card-info">
+          <div class="card-info-row">
+            <div class="info-item"><span class="info-icon">📍</span>东京都 文京区 本郷（本郷三丁目駅 徒步7分）</div>
+            <div class="info-item"><span class="info-icon">⚠️</span>需持紹介状预约</div>
+          </div>
+        </div>
+        <div class="card-depts">
+          <span class="dept-tag">综合内科</span><span class="dept-tag">外科</span><span class="dept-tag">肿瘤科</span><span class="dept-tag">神经科</span><span class="dept-tag">心脏科</span><span class="dept-tag">产科</span><span class="dept-tag">国际健检</span>
+        </div>
+        <div class="card-footer"><span>更新：2026年4月</span><span class="view-detail"><span class="zh-only">查看详情</span><span class="en-only">Details</span> →</span></div>
+      </div>
+
+      <div class="hospital-card fade-in" data-name="东京医科大学病院国际医疗部" data-region="东京" data-lang="中文 英文" data-depts="内科 心脏科 肿瘤科 妇科"
+           onclick="openModal('东京医科大学病院 国际医疗部', '東京医科大学病院 国際医療部', '东京都新宿区西新宿', '03-3342-XXXX', '中文 / 英文 / 韩文', '内科 / 心脏科 / 肿瘤科 / 妇科', '周一至周五 9:00–17:00', '周末・节假日', '需提前通过官网预约国际医疗部，可指定中文翻译陪诊。部分科室需转诊函（紹介状）。', '中文 英文 韩文')">
+        <div class="card-row1">
+          <div>
+            <div class="hospital-name">东京医科大学病院 国际医疗部</div>
+            <div class="hospital-name-ja">東京医科大学病院 国際医療部</div>
+          </div>
+          <div class="badges">
+            <span class="badge badge-cn">中文</span>
+            <span class="badge badge-en">英文</span>
+            <span class="badge badge-new">新</span>
+          </div>
+        </div>
+        <div class="card-info">
+          <div class="card-info-row">
+            <div class="info-item"><span class="info-icon">📍</span>东京都 新宿区</div>
+            <div class="info-item"><span class="info-icon">🕐</span>周一至周五 9:00–17:00</div>
+          </div>
+        </div>
+        <div class="card-depts">
+          <span class="dept-tag">内科</span>
+          <span class="dept-tag">心脏科</span>
+          <span class="dept-tag">肿瘤科</span>
+          <span class="dept-tag">妇科</span>
+        </div>
+        <div class="card-footer">
+          <span>更新：2026年1月</span>
+          <span class="view-detail"><span class="zh-only">查看详情</span><span class="en-only">Details</span> →</span>
+        </div>
+      </div>
+
+      <div class="hospital-card fade-in" data-name="Tokyo Station International Clinic 东京站国际诊所" data-region="东京" data-lang="中文 英文" data-depts="内科 外科 儿科 皮肤科 健康体检 疫苗"
+           onclick="openModal('Tokyo Station International Clinic', 'Tokyo Station International Clinic（東京ステーションインターナショナルクリニック）', '东京都千代田区 JR东京站八重洲南口步行1分钟', '官网预约', '中文 英文', '综合内科 / 外科 / 小儿科 / 皮肤科 / 健康体检 / 疫苗接种', '每天 9:00–21:00（365天营业）', '无休', '全员中英文对应，每月接诊700名以上外国患者，东京站八重洲南口步行1分。支持无预约当日受诊及线上预约，可出具英中文诊断证明书，支持上门往诊。', '中文 英文')">
+        <div class="card-row1">
+          <div>
+            <div class="hospital-name">Tokyo Station International Clinic</div>
+            <div class="hospital-name-ja">東京ステーションインターナショナルクリニック</div>
+          </div>
+          <div class="badges">
+            <span class="badge badge-cn">中文</span>
+            <span class="badge badge-en">英文</span>
+            <span class="badge badge-new">365天</span>
+          </div>
+        </div>
+        <div class="card-info">
+          <div class="card-info-row">
+            <div class="info-item"><span class="info-icon">📍</span>东京都 千代田区（JR东京站 八重洲南口 徒步1分）</div>
+            <div class="info-item"><span class="info-icon">🕐</span>每天 9:00–21:00（无休）</div>
+          </div>
+        </div>
+        <div class="card-depts">
+          <span class="dept-tag">综合内科</span>
+          <span class="dept-tag">外科</span>
+          <span class="dept-tag">儿科</span>
+          <span class="dept-tag">皮肤科</span>
+          <span class="dept-tag">健康体检</span>
+          <span class="dept-tag">疫苗</span>
+        </div>
+        <div class="card-footer">
+          <span>更新：2026年4月</span>
+          <span class="view-detail"><span class="zh-only">查看详情</span><span class="en-only">Details</span> →</span>
+        </div>
+      </div>
+
+      <div class="hospital-card fade-in" data-name="日中友好医院 东京 代々木" data-region="东京" data-lang="中文 英文" data-depts="内科 汉方 健康体检 疫苗"
+           onclick="openModal('日中友好医院', '医療法人社団 日中友好医院', '东京都渋谷区代々木1-38-5 KDX代々木ビル6F', '03-6276-9788', '中文 英文 德文', '内科 / 呼吸科 / 汉方内科 / 健康体检 / 海外渡航健诊', '周一至周五 10:00–12:30 / 14:30–16:30', '周六・周日・节假日', 'JR代々木駅前徒步1分。院长可对应中文・英文・德语，系中国大使馆指定体检机构，可办理赴华签证所需外国人体格检查记录。漢方外来也对应。', '中文 英文')">
+        <div class="card-row1">
+          <div>
+            <div class="hospital-name">日中友好医院</div>
+            <div class="hospital-name-ja">医療法人社団 日中友好医院</div>
+          </div>
+          <div class="badges">
+            <span class="badge badge-cn">中文</span>
+            <span class="badge badge-en">英文</span>
+            <span class="badge badge-new">中国大使馆指定</span>
+          </div>
+        </div>
+        <div class="card-info">
+          <div class="card-info-row">
+            <div class="info-item"><span class="info-icon">📍</span>东京都 渋谷区 代々木（JR代々木駅 徒步1分）</div>
+            <div class="info-item"><span class="info-icon">🕐</span>周一至周五 10:00–12:30 / 14:30–16:30</div>
+          </div>
+        </div>
+        <div class="card-depts">
+          <span class="dept-tag">内科</span>
+          <span class="dept-tag">呼吸科</span>
+          <span class="dept-tag">汉方</span>
+          <span class="dept-tag">健康体检</span>
+          <span class="dept-tag">渡航健诊</span>
+        </div>
+        <div class="card-footer">
+          <span>更新：2026年4月</span>
+          <span class="view-detail"><span class="zh-only">查看详情</span><span class="en-only">Details</span> →</span>
+        </div>
+      </div>
+
+      <div class="hospital-card fade-in" data-name="宮田胃腸内科皮膚科クリニック 新大久保 东京" data-region="东京" data-lang="中文 英文" data-depts="内科 皮肤科 儿科 汉方"
+           onclick="openModal('宮田胃腸内科皮膚科クリニック', '宮田胃腸内科皮膚科クリニック', '东京都新宿区百人町1-11-2 2F', '03-5937-0668', '中文（普通话・台语）英文 韩文 泰文', '内科 / 消化器内科 / 皮肤科 / 小儿科 / 漢方内科', '周一・二・四・五 9:30–12:30 / 15:00–18:30 / 周六 9:30–12:30', '周三・周日・节假日', '院长宮田直輝毕业于台湾台北医科大学，对应中文（含台语）・英文・泰文・韩文。内镜专科，当日胃镜・大肠镜检查可对应。新大久保站徒步3分，新宿外国人聚集区。', '中文 英文')">
+        <div class="card-row1">
+          <div>
+            <div class="hospital-name">宮田胃腸内科皮膚科クリニック</div>
+            <div class="hospital-name-ja">宮田胃腸内科皮膚科クリニック</div>
+          </div>
+          <div class="badges">
+            <span class="badge badge-cn">中文</span>
+            <span class="badge badge-cn" style="background:#d4edda;color:#155724;">台语</span>
+            <span class="badge badge-en">英文</span>
+          </div>
+        </div>
+        <div class="card-info">
+          <div class="card-info-row">
+            <div class="info-item"><span class="info-icon">📍</span>东京都 新宿区 百人町（新大久保駅 徒步3分）</div>
+            <div class="info-item"><span class="info-icon">🕐</span>平日 9:30–12:30 / 15:00–18:30 / 周六午前</div>
+          </div>
+        </div>
+        <div class="card-depts">
+          <span class="dept-tag">内科</span>
+          <span class="dept-tag">消化器内科</span>
+          <span class="dept-tag">皮肤科</span>
+          <span class="dept-tag">儿科</span>
+          <span class="dept-tag">汉方</span>
+        </div>
+        <div class="card-footer">
+          <span>更新：2026年4月</span>
+          <span class="view-detail"><span class="zh-only">查看详情</span><span class="en-only">Details</span> →</span>
+        </div>
+      </div>
+
+      <div class="hospital-card fade-in" data-name="大阪市立住友病院" data-region="大阪" data-lang="中文" data-depts="内科 外科 皮肤科 耳鼻喉科">
+        <div class="card-row1">
+          <div>
+            <div class="hospital-name">大阪市立住友病院</div>
+            <div class="hospital-name-ja">大阪市立住友病院</div>
+          </div>
+          <div class="badges">
+            <span class="badge badge-cn">中文</span>
+          </div>
+        </div>
+        <div class="card-info">
+          <div class="card-info-row">
+            <div class="info-item"><span class="info-icon">📍</span>大阪府 大阪市北区</div>
+            <div class="info-item"><span class="info-icon">🕐</span>周一至周六 8:30–17:00</div>
+          </div>
+        </div>
+        <div class="card-depts">
+          <span class="dept-tag">内科</span>
+          <span class="dept-tag">外科</span>
+          <span class="dept-tag">皮肤科</span>
+          <span class="dept-tag">耳鼻喉科</span>
+        </div>
+        <div class="card-footer">
+          <span>更新：2025年11月</span>
+          <span class="view-detail"><span class="zh-only">查看详情</span><span class="en-only">Details</span> →</span>
+        </div>
+      </div>
+
+      <div class="hospital-card fade-in" data-name="福冈县立病院 国际部" data-region="福冈" data-lang="中文 英文" data-depts="内科 外科 儿科 产科">
+        <div class="card-row1">
+          <div>
+            <div class="hospital-name">福冈县立病院 国际部</div>
+            <div class="hospital-name-ja">福岡県立病院 国際部</div>
+          </div>
+          <div class="badges">
+            <span class="badge badge-cn">中文</span>
+            <span class="badge badge-en">英文</span>
+          </div>
+        </div>
+        <div class="card-info">
+          <div class="card-info-row">
+            <div class="info-item"><span class="info-icon">📍</span>福冈县 福冈市博多区</div>
+            <div class="info-item"><span class="info-icon">🕐</span>周一至周五 9:00–18:00</div>
+          </div>
+        </div>
+        <div class="card-depts">
+          <span class="dept-tag">内科</span>
+          <span class="dept-tag">外科</span>
+          <span class="dept-tag">儿科</span>
+          <span class="dept-tag">产科</span>
+        </div>
+        <div class="card-footer">
+          <span>更新：2025年10月</span>
+          <span class="view-detail"><span class="zh-only">查看详情</span><span class="en-only">Details</span> →</span>
+        </div>
+      </div>
+
+      <div class="hospital-card fade-in" data-name="札幌医科大学附属病院" data-region="札幌" data-lang="中文" data-depts="内科 外科 骨科 神经科">
+        <div class="card-row1">
+          <div>
+            <div class="hospital-name">札幌医科大学附属病院</div>
+            <div class="hospital-name-ja">札幌医科大学附属病院</div>
+          </div>
+          <div class="badges">
+            <span class="badge badge-cn">中文</span>
+          </div>
+        </div>
+        <div class="card-info">
+          <div class="card-info-row">
+            <div class="info-item"><span class="info-icon">📍</span>北海道 札幌市中央区</div>
+            <div class="info-item"><span class="info-icon">🕐</span>周一至周五 8:30–16:30</div>
+          </div>
+        </div>
+        <div class="card-depts">
+          <span class="dept-tag">内科</span>
+          <span class="dept-tag">外科</span>
+          <span class="dept-tag">骨科</span>
+          <span class="dept-tag">神经科</span>
+        </div>
+        <div class="card-footer">
+          <span>更新：2025年9月</span>
+          <span class="view-detail"><span class="zh-only">查看详情</span><span class="en-only">Details</span> →</span>
+        </div>
+      </div>
+
+      <!-- ── 关西新增 10 家 ── -->
+
+      <div class="hospital-card fade-in" data-name="希咲クリニック" data-region="大阪" data-lang="中文 英文" data-depts="产科 妇科 乳腺科"
+           onclick="openModal('希咲クリニック', '希咲クリニック', '大阪府大阪市淀川区十三東2-7-8 エルディ十三東駅前ビル3F', '06-6476-7233', '中文 英文', '产科 / 妇科 / 乳腺外科', '周一～五 9:30–12:30 / 15:00–19:00 / 周六 9:30–12:30', '周三下午・周六下午・周日・节假日', '院长山分ネルソン祥興来自马来西亚，对应中文、英文，全科女性专科诊所。土曜日午後・水曜日は休診。', '中文 英文')">
+        <div class="card-row1">
+          <div>
+            <div class="hospital-name">希咲クリニック</div>
+            <div class="hospital-name-ja">希咲クリニック</div>
+          </div>
+          <div class="badges">
+            <span class="badge badge-cn">中文</span>
+            <span class="badge badge-en">英文</span>
+          </div>
+        </div>
+        <div class="card-info">
+          <div class="card-info-row">
+            <div class="info-item"><span class="info-icon">📍</span>大阪府 淀川区 十三東（阪急十三駅 徒步2分）</div>
+            <div class="info-item"><span class="info-icon">🕐</span>午前 9:30–12:30 / 午後 15:00–19:00</div>
+          </div>
+        </div>
+        <div class="card-depts">
+          <span class="dept-tag">产科</span>
+          <span class="dept-tag">妇科</span>
+          <span class="dept-tag">乳腺外科</span>
+        </div>
+        <div class="card-footer">
+          <span>更新：2026年4月</span>
+          <span class="view-detail"><span class="zh-only">查看详情</span><span class="en-only">Details</span> →</span>
+        </div>
+      </div>
+
+      <div class="hospital-card fade-in" data-name="こどもクリニックきじま" data-region="大阪" data-lang="中文" data-depts="儿科 内科 过敏科"
+           onclick="openModal('こどもクリニックきじま', 'こどもクリニックきじま', '大阪府大阪市福島区福島5-6-16 ラグザ大阪サウスオフィス4F', '06-6131-9858', '中文', '小儿科 / 内科 / 过敏科', '周一至周日・节假日 9:00–12:00 / 16:00–20:00 (年中无休)', '无固定休诊日（请提前确认）', '对应中文・韩文。土日节假日也营业至20时，年中无休。非感染者专用时间段13:30–15:30。提供网络预约及线上初诊。', '中文')">
+        <div class="card-row1">
+          <div>
+            <div class="hospital-name">こどもクリニックきじま</div>
+            <div class="hospital-name-ja">こどもクリニックきじま</div>
+          </div>
+          <div class="badges">
+            <span class="badge badge-cn">中文</span>
+          </div>
+        </div>
+        <div class="card-info">
+          <div class="card-info-row">
+            <div class="info-item"><span class="info-icon">📍</span>大阪府 福島区 福島5丁目（JR福島駅 徒步1分）</div>
+            <div class="info-item"><span class="info-icon">🕐</span>年中无休 9:00–20:00</div>
+          </div>
+        </div>
+        <div class="card-depts">
+          <span class="dept-tag">小儿科</span>
+          <span class="dept-tag">内科</span>
+          <span class="dept-tag">过敏科</span>
+        </div>
+        <div class="card-footer">
+          <span>更新：2026年4月</span>
+          <span class="view-detail"><span class="zh-only">查看详情</span><span class="en-only">Details</span> →</span>
+        </div>
+      </div>
+
+      <div class="hospital-card fade-in" data-name="春次医院" data-region="大阪" data-lang="中文" data-depts="内科 外科 骨科 耳鼻喉科 皮肤科"
+           onclick="openModal('春次医院', '春次医院（はるつぐいいん）', '大阪府大阪市中央区博労町2-6-1 心斎橋春次ビル', '06-4708-3535 / 涉外担当: 080-9754-5302', '中文', '内科 / 外科 / 骨科 / 耳鼻喉科 / 皮肤科', '周一～周五 9:00–13:00 / 15:00–18:30 / 周六 9:00–13:00', '周日・节假日', '网站有完整中文版。涉外担当电话080-9754-5302可中文对应，微信ID: harutugu88，为中国大使馆指定PCR检查机构，支持线上问诊。', '中文')">
+        <div class="card-row1">
+          <div>
+            <div class="hospital-name">春次医院</div>
+            <div class="hospital-name-ja">春次医院（はるつぐいいん）</div>
+          </div>
+          <div class="badges">
+            <span class="badge badge-cn">中文</span>
+            <span class="badge badge-new">中文网站</span>
+          </div>
+        </div>
+        <div class="card-info">
+          <div class="card-info-row">
+            <div class="info-item"><span class="info-icon">📍</span>大阪府 中央区 博労町（心斎橋・長堀橋 徒步7分）</div>
+            <div class="info-item"><span class="info-icon">🕐</span>平日 9:00–13:00 / 15:00–18:30</div>
+          </div>
+        </div>
+        <div class="card-depts">
+          <span class="dept-tag">内科</span>
+          <span class="dept-tag">外科</span>
+          <span class="dept-tag">骨科</span>
+          <span class="dept-tag">耳鼻喉科</span>
+          <span class="dept-tag">皮肤科</span>
+        </div>
+        <div class="card-footer">
+          <span>更新：2026年4月</span>
+          <span class="view-detail"><span class="zh-only">查看详情</span><span class="en-only">Details</span> →</span>
+        </div>
+      </div>
+
+      <div class="hospital-card fade-in" data-name="琥珀クリニック" data-region="大阪" data-lang="中文 粤语 英文" data-depts="内科 汉方 皮肤科"
+           onclick="openModal('琥珀クリニック', '琥珀クリニック', '大阪府大阪市中央区南船場3-8-14 ACN心斎橋Garden4F', '06-4256-4122', '中文 粤语 英文', '综合内科 / 汉方内科 / 美容皮肤科', '周二至周六 13:00–21:00 / 周六上午 9:00–13:00', '周日・周一・节假日不定休（需提前电话确认）', '院长林 宇（林宇医师）本人精通日・英・普通话・广东话・客家话，不需要翻译陪同，可直接沟通。支持线上问诊。', '中文 粤语 英文')">
+        <div class="card-row1">
+          <div>
+            <div class="hospital-name">琥珀クリニック</div>
+            <div class="hospital-name-ja">琥珀クリニック</div>
+          </div>
+          <div class="badges">
+            <span class="badge badge-cn">中文</span>
+            <span class="badge badge-cn" style="background:#d4edda;color:#155724;">粤语</span>
+            <span class="badge badge-en">英文</span>
+          </div>
+        </div>
+        <div class="card-info">
+          <div class="card-info-row">
+            <div class="info-item"><span class="info-icon">📍</span>大阪府 中央区 南船場（心斎橋駅 徒步3分）</div>
+            <div class="info-item"><span class="info-icon">🕐</span>周二至周六 13:00–21:00</div>
+          </div>
+        </div>
+        <div class="card-depts">
+          <span class="dept-tag">综合内科</span>
+          <span class="dept-tag">汉方</span>
+          <span class="dept-tag">美容皮肤科</span>
+        </div>
+        <div class="card-footer">
+          <span>更新：2026年4月</span>
+          <span class="view-detail"><span class="zh-only">查看详情</span><span class="en-only">Details</span> →</span>
+        </div>
+      </div>
+
+      <div class="hospital-card fade-in" data-name="茜道頓堀クリニック" data-region="大阪" data-lang="中文 英文" data-depts="内科 外科 皮肤科"
+           onclick="openModal('茜道頓堀クリニック', '茜道頓堀クリニック', '大阪府大阪市中央区島之内2-2-2', '06-6213-3311', '中文 英文', '内科 / 外科 / 循环器内科 / 美容皮肤科', '12:00–21:00（周三・周日为特别诊疗，一般诊察需预约）', '不定休', '官网有中文公告，多语言对应。午前诊察及周三・周日为特别诊疗，一般患者需提前预约，当日不受理。', '中文 英文')">
+        <div class="card-row1">
+          <div>
+            <div class="hospital-name">茜道頓堀クリニック</div>
+            <div class="hospital-name-ja">茜道頓堀クリニック</div>
+          </div>
+          <div class="badges">
+            <span class="badge badge-cn">中文</span>
+            <span class="badge badge-en">英文</span>
+          </div>
+        </div>
+        <div class="card-info">
+          <div class="card-info-row">
+            <div class="info-item"><span class="info-icon">📍</span>大阪府 中央区 島之内（日本橋駅 徒步6分）</div>
+            <div class="info-item"><span class="info-icon">🕐</span>12:00–21:00（最終受付 20:00）</div>
+          </div>
+        </div>
+        <div class="card-depts">
+          <span class="dept-tag">内科</span>
+          <span class="dept-tag">外科</span>
+          <span class="dept-tag">循环器内科</span>
+          <span class="dept-tag">美容皮肤科</span>
+        </div>
+        <div class="card-footer">
+          <span>更新：2026年4月</span>
+          <span class="view-detail"><span class="zh-only">查看详情</span><span class="en-only">Details</span> →</span>
+        </div>
+      </div>
+
+      <div class="hospital-card fade-in" data-name="医誠会国際総合病院" data-region="大阪" data-lang="中文 粤语 英文" data-depts="内科 外科 产科 儿科 骨科 心脏科 脑神经科 眼科 牙科 急诊"
+           onclick="openModal('医誠会国際総合病院', '医誠会国際総合病院（いせいかいこくさいそうごうびょういん）', '大阪府大阪市北区南扇町4番14号 i-Mall内', '0570-099-166', '中文（普通话・广东话）英文 韩文 及其他多语言', '综合内科 / 外科 / 产科 / 小儿科 / 整形外科 / 心脏血管科 / 脑神经外科 / 眼科 / 牙科 等49科', '平日 8:00–11:30 / 13:00–16:00', '周六・周日・节假日', 'JMIP（外国人患者受入医療機関）认证医院，2023年10月开业的全新综合医院。对应普通话、广东话等22种语言，设有国际患者窗口，救急告示病院，可急诊。', '中文 粤语 英文')">
+        <div class="card-row1">
+          <div>
+            <div class="hospital-name">医誠会国際総合病院</div>
+            <div class="hospital-name-ja">医誠会国際総合病院</div>
+          </div>
+          <div class="badges">
+            <span class="badge badge-cn">中文</span>
+            <span class="badge badge-cn" style="background:#d4edda;color:#155724;">粤语</span>
+            <span class="badge badge-en">英文</span>
+            <span class="badge badge-new">JMIP认证</span>
+          </div>
+        </div>
+        <div class="card-info">
+          <div class="card-info-row">
+            <div class="info-item"><span class="info-icon">📍</span>大阪府 北区 南扇町（扇町駅 徒步3分）</div>
+            <div class="info-item"><span class="info-icon">🕐</span>平日 8:00–16:00 / 急诊24小时</div>
+          </div>
+        </div>
+        <div class="card-depts">
+          <span class="dept-tag">综合内科</span>
+          <span class="dept-tag">外科</span>
+          <span class="dept-tag">产科</span>
+          <span class="dept-tag">小儿科</span>
+          <span class="dept-tag">心脏科</span>
+          <span class="dept-tag">急诊</span>
+          <span class="dept-tag">牙科</span>
+        </div>
+        <div class="card-footer">
+          <span>更新：2026年4月</span>
+          <span class="view-detail"><span class="zh-only">查看详情</span><span class="en-only">Details</span> →</span>
+        </div>
+      </div>
+
+      <div class="hospital-card fade-in" data-name="みなと町歯科" data-region="大阪" data-lang="英文" data-depts="牙科"
+           onclick="openModal('みなと町歯科', 'みなと町歯科', '大阪府大阪市浪速区幸町1-1-1 夕張家ビル201号', '06-6567-2152', '英文', '牙科', '周一・周三・周五 10:00–13:00 / 14:00–17:00 / 周二・周四 10:00–13:00（午前のみ）/ 周日 10:00–13:00（预约制）', '周六（不定）', '提供英文对应。周日・节假日需提前预约。年末年始12/31–1/3休诊。官网有英文版，母语级别英语医生仅周日出诊。', '英文')">
+        <div class="card-row1">
+          <div>
+            <div class="hospital-name">みなと町歯科</div>
+            <div class="hospital-name-ja">みなと町歯科</div>
+          </div>
+          <div class="badges">
+            <span class="badge badge-en">英文</span>
+          </div>
+        </div>
+        <div class="card-info">
+          <div class="card-info-row">
+            <div class="info-item"><span class="info-icon">📍</span>大阪府 浪速区 幸町（JR難波駅 徒步5分）</div>
+            <div class="info-item"><span class="info-icon">🕐</span>10:00–17:00（火・木 午前のみ）</div>
+          </div>
+        </div>
+        <div class="card-depts">
+          <span class="dept-tag">牙科</span>
+        </div>
+        <div class="card-footer">
+          <span>更新：2026年4月</span>
+          <span class="view-detail"><span class="zh-only">查看详情</span><span class="en-only">Details</span> →</span>
+        </div>
+      </div>
+
+      <div class="hospital-card fade-in" data-name="Osaka Lee Clinic イークリニック" data-region="大阪" data-lang="中文 英文" data-depts="内科 健康体检 康复"
+           onclick="openModal('Osaka Lee Clinic（イークリニック）', 'Osaka Lee Clinic / イークリニック', '大阪府大阪市北区本庄西1-13-15', '06-6292-0155', '中文 英文 韩文', '综合内科 / 呼吸科 / 健康体检', '平日・周六 详见官网', '周日・节假日', '1998年开业的社区内科诊所，提供日・英・普通话・韩文四语种服务，设有健康体检中心（2楼）及上门康复服务（3楼）。官网有中文版。', '中文 英文')">
+        <div class="card-row1">
+          <div>
+            <div class="hospital-name">Osaka Lee Clinic（イークリニック）</div>
+            <div class="hospital-name-ja">Osaka Lee Clinic / イークリニック</div>
+          </div>
+          <div class="badges">
+            <span class="badge badge-cn">中文</span>
+            <span class="badge badge-en">英文</span>
+          </div>
+        </div>
+        <div class="card-info">
+          <div class="card-info-row">
+            <div class="info-item"><span class="info-icon">📍</span>大阪府 北区 本庄西（天満駅 徒步约10分）</div>
+            <div class="info-item"><span class="info-icon">🕐</span>详见官网 goleeclinic.com</div>
+          </div>
+        </div>
+        <div class="card-depts">
+          <span class="dept-tag">综合内科</span>
+          <span class="dept-tag">呼吸科</span>
+          <span class="dept-tag">健康体检</span>
+          <span class="dept-tag">上门康复</span>
+        </div>
+        <div class="card-footer">
+          <span>更新：2026年4月</span>
+          <span class="view-detail"><span class="zh-only">查看详情</span><span class="en-only">Details</span> →</span>
+        </div>
+      </div>
+
+      <div class="hospital-card fade-in" data-name="大阪天満橋Y&Y歯科・矯正歯科" data-region="大阪" data-lang="中文 英文" data-depts="牙科"
+           onclick="openModal('大阪天満橋 Y&Y歯科・矯正歯科', '大阪天満橋 Y&Y歯科・矯正歯科', '大阪府大阪市中央区谷町2-2-18 2F', '06-6966-5548 / 中文热线: 090-6609-6686', '中文 英文', '牙科 / 矯正歯科 / 小児歯科 / 口腔外科 / 种植牙', '周一・二・四・五 10:00–20:00 / 周六・日 10:00–17:00', '周三・节假日', '女性院长（大阪歯科大学大学院博士），中文对应员工常驻，有中文专线090-6609-6686及微信 yy-dental，支持支付宝・微信支付，面向短期赴日患者提供短期集中治疗套餐。', '中文 英文')">
+        <div class="card-row1">
+          <div>
+            <div class="hospital-name">大阪天満橋 Y&Y歯科・矯正歯科</div>
+            <div class="hospital-name-ja">大阪天満橋 Y&Y歯科・矯正歯科</div>
+          </div>
+          <div class="badges">
+            <span class="badge badge-cn">中文</span>
+            <span class="badge badge-en">英文</span>
+            <span class="badge badge-new">微信对应</span>
+          </div>
+        </div>
+        <div class="card-info">
+          <div class="card-info-row">
+            <div class="info-item"><span class="info-icon">📍</span>大阪府 中央区 谷町2丁目（天満橋駅 徒步5分）</div>
+            <div class="info-item"><span class="info-icon">🕐</span>平日 10:00–20:00 / 土日 10:00–17:00</div>
+          </div>
+        </div>
+        <div class="card-depts">
+          <span class="dept-tag">牙科</span>
+          <span class="dept-tag">矫正</span>
+          <span class="dept-tag">小儿牙科</span>
+          <span class="dept-tag">种植牙</span>
+          <span class="dept-tag">美容牙科</span>
+        </div>
+        <div class="card-footer">
+          <span>更新：2026年4月</span>
+          <span class="view-detail"><span class="zh-only">查看详情</span><span class="en-only">Details</span> →</span>
+        </div>
+      </div>
+
+      <!-- ── 原有最后一张 ── -->
+      <div class="hospital-card fade-in" data-name="名古屋第二赤十字病院" data-region="名古屋" data-lang="中文 英文" data-depts="内科 急诊 妇科 精神科">
+        <div class="card-row1">
+          <div>
+            <div class="hospital-name">名古屋第二赤十字病院</div>
+            <div class="hospital-name-ja">名古屋第二赤十字病院</div>
+          </div>
+          <div class="badges">
+            <span class="badge badge-cn">中文</span>
+            <span class="badge badge-en">英文</span>
+          </div>
+        </div>
+        <div class="card-info">
+          <div class="card-info-row">
+            <div class="info-item"><span class="info-icon">📍</span>爱知县 名古屋市昭和区</div>
+            <div class="info-item"><span class="info-icon">🕐</span>24小时急诊 / 门诊 8:30–17:00</div>
+          </div>
+        </div>
+        <div class="card-depts">
+          <span class="dept-tag">内科</span>
+          <span class="dept-tag">急诊</span>
+          <span class="dept-tag">妇科</span>
+          <span class="dept-tag">精神科</span>
+        </div>
+        <div class="card-footer">
+          <span>更新：2026年1月</span>
+          <span class="view-detail"><span class="zh-only">查看详情</span><span class="en-only">Details</span> →</span>
+        </div>
+      </div>
+
+    </div>
+
+    <div id="emptyState" style="display:none; text-align:center; padding:60px 20px; color:var(--ink-3);">
+      <div style="font-size:32px; margin-bottom:12px;">🔍</div>
+      <div style="font-size:15px; margin-bottom:6px;"><span class="zh-only">没有找到相关结果</span><span class="en-only">No results found</span></div>
+      <div style="font-size:13px;"><span class="zh-only">换个关键词试试，或者 <a href="#submit" onclick="window.location='submit.html'" style="color:var(--red);">提交新信息</a></span><span class="en-only">Try a different keyword, or <a href="#submit" onclick="window.location='submit.html'" style="color:var(--red);">submit a new entry</a></span></div>
+    </div>
+  </main>
+</div>
+
+<!-- SUBMIT -->
+<section class="submit-section" id="submit">
+  <div class="submit-banner">
+    <div class="submit-banner-text">
+      <h2><span class="zh-only">知道遗漏的<em>信息？</em></span><span class="en-only">Know something <em>we missed?</em></span></h2>
+      <p><span class="zh-only">如果你知道某家医院提供中文服务，或发现信息有误，欢迎投稿——我们会人工审核后更新。</span><span class="en-only">If you know a hospital with Chinese-speaking staff, or spot an error, please contribute.</span></p>
+    </div>
+    <a href="submit.html" class="submit-banner-btn">
+      <span class="zh-only">前往投稿 →</span>
+      <span class="en-only">Contribute →</span>
+    </a>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div><span class="zh-only">© <span class="copy-year">2026</span> 81日本 · 由81Japan维护</span><span class="en-only">© <span class="copy-year">2026</span> 81Japan · 81Japan</span></div>
+  <a href="#">联系我们</a>
+</footer>
+
+<!-- MODAL -->
+<div class="modal-overlay" id="modalOverlay" onclick="closeModalOnBg(event)">
+  <div class="modal" id="modal">
+    <div class="modal-header">
+      <div class="modal-header-eyebrow"><span class="zh-only">医院详情</span><span class="en-only">Hospital Details</span></div>
+      <div class="modal-title" id="mTitle">-</div>
+      <div class="modal-title-ja" id="mTitleJa">-</div>
+      <button class="modal-close" onclick="closeModal()">✕</button>
+    </div>
+    <div class="modal-body">
+      <div class="modal-section">
+        <div class="modal-section-title">语言服务</div>
+        <div class="lang-badges-large" id="mLangs"></div>
+      </div>
+      <div class="modal-section">
+        <div class="modal-section-title">基本信息</div>
+        <div class="modal-info-grid">
+          <div class="modal-info-item">
+            <div class="modal-info-label">地址</div>
+            <div class="modal-info-value" id="mAddr">-</div>
+          </div>
+          <div class="modal-info-item">
+            <div class="modal-info-label">电话</div>
+            <div class="modal-info-value" id="mPhone">-</div>
+          </div>
+          <div class="modal-info-item">
+            <div class="modal-info-label">营业时间</div>
+            <div class="modal-info-value" id="mHours">-</div>
+          </div>
+          <div class="modal-info-item">
+            <div class="modal-info-label">休诊日</div>
+            <div class="modal-info-value" id="mClosed">-</div>
+          </div>
+        </div>
+      </div>
+      <div class="modal-section">
+        <div class="modal-section-title">提供科室</div>
+        <div class="dept-list" id="mDepts"></div>
+      </div>
+      <div class="note-box" id="mNote"></div>
+      <div class="modal-actions">
+        <button class="modal-btn" onclick="closeModal()">关闭</button>
+        <button class="modal-btn modal-btn-primary" onclick="openMap()">
+          <span class="zh-only">在地图中查看</span>
+          <span class="en-only">View on Map</span>
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+// ── 语言切换 ──
+function switchLang(lang, btn) {
+  document.querySelectorAll('.lang-opt').forEach(b => b.classList.remove('active'));
+  btn.classList.add('active');
+  localStorage.setItem('lang', lang);
+  if (lang === 'en') {
+    document.body.classList.add('lang-en');
+    document.documentElement.setAttribute('lang', 'en');
+    document.getElementById('searchInput').placeholder = 'Search by hospital name, city, department…';
+    document.querySelectorAll('#sortSelect option').forEach(o => { if(o.dataset.en) o.textContent = o.dataset.en; });
+    document.title = '81Japan | Chinese Living Guide in Japan';
+    // 同步两个shownCount
+    const n = document.getElementById('shownCount');
+    const ne = document.getElementById('shownCountEn');
+    if (n && ne) ne.textContent = n.textContent;
+  } else {
+    document.body.classList.remove('lang-en');
+    document.documentElement.setAttribute('lang', 'zh');
+    document.getElementById('searchInput').placeholder = '搜索医院名称、城市、科室…';
+    document.querySelectorAll('#sortSelect option').forEach(o => { if(o.dataset.zh) o.textContent = o.dataset.zh; });
+    document.title = '81日本 | 收集的一些在日生活中文指南';
+  }
+}
+
+const LANG_CONFIG = {
+  '中文': { cls: 'lang-cn', sub: 'Chinese' },
+  '英文': { cls: 'lang-en', sub: 'English' },
+  '粤语': { cls: 'lang-cn', sub: 'Cantonese' },
+  '台语': { cls: 'lang-cn', sub: 'Taiwanese' },
+  '韩文': { cls: 'lang-en', sub: 'Korean' },
+  '俄文': { cls: 'lang-en', sub: 'Russian' },
+};
+
+function openModal(name, nameJa, addr, phone, langs, depts, hours, closed, note) {
+  document.getElementById('mTitle').textContent = name;
+  document.getElementById('mTitleJa').textContent = nameJa;
+  document.getElementById('mAddr').textContent = addr;
+  document.getElementById('mPhone').textContent = phone;
+  document.getElementById('mHours').textContent = hours;
+  document.getElementById('mClosed').textContent = closed;
+
+  const noteEl = document.getElementById('mNote');
+  if (note && note.trim()) {
+    noteEl.textContent = '⚠ 注意：' + note;
+    noteEl.style.display = '';
+  } else {
+    noteEl.textContent = '';
+    noteEl.style.display = 'none';
+  }
+
+  const langsEl = document.getElementById('mLangs');
+  langsEl.innerHTML = '';
+  langs.split(' ').forEach(lang => {
+    const cfg = LANG_CONFIG[lang];
+    if (!cfg) return;
+    const div = document.createElement('div');
+    div.className = 'lang-badge-large ' + cfg.cls;
+    div.textContent = lang;
+    const small = document.createElement('small');
+    small.textContent = cfg.sub;
+    div.appendChild(small);
+    langsEl.appendChild(div);
+  });
+
+  const deptsEl = document.getElementById('mDepts');
+  deptsEl.innerHTML = '';
+  depts.split(' / ').forEach(d => {
+    const div = document.createElement('div');
+    div.className = 'dept-item';
+    div.textContent = d;
+    deptsEl.appendChild(div);
+  });
+
+  document.getElementById('modalOverlay').classList.add('open');
+  document.body.style.overflow = 'hidden';
+}
+
+function openMap() {
+  const name = document.getElementById('mTitle').textContent;
+  const addr = document.getElementById('mAddr').textContent;
+  const query = encodeURIComponent(name + ' ' + addr);
+  window.open('https://www.google.com/maps/search/?api=1&query=' + query, '_blank');
+}
+
+function closeModal() {
+  document.getElementById('modalOverlay').classList.remove('open');
+  document.body.style.overflow = '';
+}
+
+function closeModalOnBg(e) {
+  if (e.target === document.getElementById('modalOverlay')) closeModal();
+}
+
+function setSearch(val) {
+  document.getElementById('searchInput').value = val;
+  filterCards();
+}
+
+function resetFilterHighlights() {
+  const allRegion = document.querySelector('[data-region-filter="全部"]');
+  if (allRegion) { document.querySelectorAll('[data-region-filter]').forEach(o => o.classList.remove('active')); allRegion.classList.add('active'); }
+  const allLang = document.querySelector('[data-lang-filter="全部"]');
+  if (allLang) { document.querySelectorAll('[data-lang-filter]').forEach(o => o.classList.remove('active')); allLang.classList.add('active'); }
+  const sel = document.querySelector('.search-select');
+  if (sel) sel.value = '全部地区';
+}
+
+function filterCards() {
+  const q = document.getElementById('searchInput').value.toLowerCase();
+  const cards = document.querySelectorAll('#cardList .hospital-card');
+  let shown = 0;
+  cards.forEach(c => {
+    const text = (c.dataset.name + c.dataset.region + c.dataset.depts + c.dataset.lang).toLowerCase();
+    const match = !q || text.includes(q);
+    c.style.display = match ? '' : 'none';
+    if (match) shown++;
+  });
+  document.getElementById('shownCount').textContent = shown;
+  const enCount = document.getElementById('shownCountEn');
+  if (enCount) enCount.textContent = shown;
+  document.getElementById('emptyState').style.display = shown === 0 ? '' : 'none';
+}
+
+function sortCards(method) {
+  const list = document.getElementById('cardList');
+  const cards = Array.from(list.querySelectorAll('.hospital-card'));
+
+  cards.sort((a, b) => {
+    if (method === 'region') {
+      return (a.dataset.region || '').localeCompare(b.dataset.region || '', 'zh');
+    }
+    if (method === 'dept') {
+      return (a.dataset.depts || '').localeCompare(b.dataset.depts || '', 'zh');
+    }
+    // 默认：最近更新，按卡片footer里的更新时间倒序
+    const parseDate = c => {
+      const t = c.querySelector('.card-footer span') ? c.querySelector('.card-footer span').textContent : '';
+      const m = t.match(/(\d{4})年(\d{1,2})月/);
+      return m ? parseInt(m[1]) * 100 + parseInt(m[2]) : 0;
+    };
+    return parseDate(b) - parseDate(a);
+  });
+
+  cards.forEach(c => list.appendChild(c));
+  // 重新触发fade动画
+  cards.forEach((c, i) => {
+    c.style.opacity = '0';
+    c.style.transform = 'translateY(8px)';
+    setTimeout(() => {
+      c.style.transition = 'opacity 0.25s ease, transform 0.25s ease';
+      c.style.opacity = '';
+      c.style.transform = '';
+    }, i * 40);
+  });
+}
+
+function handleRegionSelect(val) {
+  if (val === '全部地区') {
+    const allBtn = document.querySelector('[data-region-filter="全部"]');
+    if (allBtn) filterRegion('全部', allBtn);
+  } else {
+    const sidebarBtn = document.querySelector('[data-region-filter="' + val + '"]');
+    if (sidebarBtn) filterRegion(val, sidebarBtn);
+    else { document.getElementById('searchInput').value = val; filterCards(); }
+  }
+}
+
+function filterRegion(region, el) {
+  document.querySelectorAll('[data-region-filter]').forEach(o => o.classList.remove('active'));
+  el.classList.add('active');
+  // 同步顶部下拉菜单
+  const sel = document.querySelector('.search-select');
+  if (sel) sel.value = region === '全部' ? '全部地区' : region;
+  if (region === '全部') {
+    document.getElementById('searchInput').value = '';
+    filterCards();
+  } else {
+    setSearch(region);
+  }
+}
+
+function filterLang(lang, el) {
+  document.querySelectorAll('[data-lang-filter]').forEach(o => o.classList.remove('active'));
+  el.classList.add('active');
+  if (lang === '全部') {
+    document.getElementById('searchInput').value = '';
+    filterCards();
+  } else {
+    setSearch(lang);
+  }
+}
+
+// ── 自动统计数字 ──
+function updateStats() {
+  const cards = document.querySelectorAll('#cardList .hospital-card');
+  const total = cards.length;
+
+  // 顶部统计
+  const totalEl = document.getElementById('totalCount');
+  if (totalEl) totalEl.textContent = total;
+
+  // 都道府县去重
+  const regions = new Set();
+  cards.forEach(c => { if (c.dataset.region) regions.add(c.dataset.region.trim()); });
+  const regionEl = document.getElementById('regionCount');
+  if (regionEl) regionEl.textContent = regions.size;
+
+  // 专科去重
+  const depts = new Set();
+  cards.forEach(c => {
+    if (c.dataset.depts) c.dataset.depts.split(' ').forEach(d => { if (d) depts.add(d.trim()); });
+  });
+  const deptEl = document.getElementById('deptCount');
+  if (deptEl) deptEl.textContent = depts.size;
+
+  // 侧边栏地区计数
+  const regionMap = { 'fc-all': '全部', 'fc-tokyo': '东京', 'fc-osaka': '大阪',
+    'fc-fukuoka': '福冈', 'fc-sapporo': '札幌', 'fc-nagoya': '名古屋', 'fc-kobe': '神户' };
+  Object.entries(regionMap).forEach(([id, key]) => {
+    const el = document.getElementById(id);
+    if (!el) return;
+    if (key === '全部') { el.textContent = total; return; }
+    const count = Array.from(cards).filter(c => c.dataset.region === key).length;
+    el.textContent = count;
+    // 隐藏0条的地区
+    el.closest('.filter-option').style.display = count === 0 ? 'none' : '';
+  });
+
+  // 侧边栏语言计数
+  const cnCount = Array.from(cards).filter(c => c.dataset.lang && c.dataset.lang.includes('中文')).length;
+  const enCount = Array.from(cards).filter(c => c.dataset.lang && c.dataset.lang.includes('英文')).length;
+  const flAll = document.getElementById('fl-all');
+  const flCn = document.getElementById('fl-cn');
+  const flEn = document.getElementById('fl-en');
+  if (flAll) flAll.textContent = total;
+  if (flCn) flCn.textContent = cnCount;
+  if (flEn) flEn.textContent = enCount;
+}
+
+// 页面加载后立即统计 + 恢复语言设置
+document.addEventListener('DOMContentLoaded', () => {
+  updateStats();
+  const savedLang = localStorage.getItem('lang');
+  if (savedLang === 'en') {
+    const langBtns = document.querySelectorAll('.lang-opt');
+    if (langBtns.length >= 2) switchLang('en', langBtns[1]);
+  }
+});
+window.addEventListener('load', updateStats);
+
+document.addEventListener('keydown', e => { if (e.key === 'Escape') closeModal(); });
+document.querySelectorAll('.copy-year').forEach(el => el.textContent = new Date().getFullYear());
+</script>
+</body>
+</html>
