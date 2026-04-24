@@ -1,0 +1,71 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Nav from '../components/Nav.astro';
+import Footer from '../components/Footer.astro';
+import rules from '../data/rules.json';
+import '../styles/page.css';
+
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'ItemList',
+  'name': '日本生活ルール',
+  'itemListElement': rules.map((r, i) => ({
+    '@type': 'ListItem',
+    'position': i + 1,
+    'name': r.titleZh,
+  })),
+};
+---
+<Layout
+  title="日本ルール · 在日生活规矩速查 | 81日本"
+  description="初到日本最容易踩坑的生活规则速查：垃圾分类、地震防灾、公共交通礼仪、健康保险、在留卡、银行开户等。"
+  path="/rules"
+>
+  <Fragment slot="head">
+    <meta name="keywords" content="日本生活规则,日本垃圾分类,地震防灾,在留卡,健康保险,日本生活指南,マイナンバー" />
+    <script type="application/ld+json" set:html={JSON.stringify(jsonLd)} />
+  </Fragment>
+
+  <Nav active="rules" />
+
+  <section class="page-hero">
+    <div class="eyebrow">
+      <span class="zh-only">日本ルール</span>
+      <span class="en-only">Living in Japan</span>
+    </div>
+    <h1 class="zh-only">初到日本，先记<em>这些规矩</em></h1>
+    <h1 class="en-only">Things to know <em>before you settle in</em></h1>
+    <p class="zh-only">从垃圾分类到在留卡，整理出对中文使用者最容易踩坑的日常规则。信息来源为官方机构及社区经验，请以最新官方公告为准。</p>
+    <p class="en-only">Everyday rules newcomers most often trip over — sorted from official sources and community experience. Always verify with the latest official notice.</p>
+  </section>
+
+  <main class="page-main">
+    <div class="rules-grid">
+      {rules.map((r) => (
+        <article class="rule-card" id={r.id}>
+          <div class="rule-card-head">
+            <div class="rule-icon" aria-hidden="true">{r.icon}</div>
+            <div>
+              <div class="rule-title">{r.titleZh}</div>
+              <div class="rule-title-en">{r.titleEn}</div>
+            </div>
+          </div>
+          <p class="rule-summary zh-only">{r.summaryZh}</p>
+          <p class="rule-summary en-only">{r.summaryEn}</p>
+          <ul class="rule-points zh-only">
+            {r.pointsZh.map((p) => <li>{p}</li>)}
+          </ul>
+          <ul class="rule-points en-only">
+            {r.pointsEn.map((p) => <li>{p}</li>)}
+          </ul>
+          {r.tipZh && <div class="rule-tip zh-only">💡 {r.tipZh}</div>}
+          {r.tipEn && <div class="rule-tip en-only">💡 {r.tipEn}</div>}
+        </article>
+      ))}
+    </div>
+  </main>
+
+  <Footer />
+
+  <script is:inline src="/page.js" defer></script>
+</Layout>

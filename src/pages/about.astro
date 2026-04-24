@@ -1,0 +1,101 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Nav from '../components/Nav.astro';
+import Footer from '../components/Footer.astro';
+import '../styles/page.css';
+
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'AboutPage',
+  'name': '关于 81日本',
+  'url': 'https://www.81japan.com/about',
+  'description': '81日本是一个由社区共同维护的在日中文生活信息平台。',
+};
+---
+<Layout
+  title="关于我们 · 81日本 | 在日中文生活信息平台"
+  description="81日本是由社区共同维护的非营利信息平台，专注于为在日中文使用者整理医疗、行政、生活等实用信息。"
+  path="/about"
+>
+  <Fragment slot="head">
+    <script type="application/ld+json" set:html={JSON.stringify(jsonLd)} />
+  </Fragment>
+
+  <Nav active="about" />
+
+  <section class="page-hero">
+    <div class="eyebrow">
+      <span class="zh-only">关于我们</span>
+      <span class="en-only">About</span>
+    </div>
+    <h1 class="zh-only">我们想让在日生活 <em>少走点弯路</em></h1>
+    <h1 class="en-only">Making life in Japan <em>a little easier</em></h1>
+    <p class="zh-only">81日本是一个由社区共同维护的非营利信息平台，专注于为在日中文使用者整理医疗、行政、生活等实用信息。</p>
+    <p class="en-only">81Japan is a community-maintained, non-profit directory for Chinese-speaking residents — covering healthcare, paperwork, and everyday life in Japan.</p>
+  </section>
+
+  <main class="page-main">
+    <div class="about-body">
+
+      <div class="zh-only">
+        <h2>我们是谁</h2>
+        <p>81日本由几位在日生活多年的华人独立发起。我们不是商业团队，也没有背后机构，只是想把自己踩过的坑整理成一份公开可查的指南，让后来的人能少花一些找资料的时间。</p>
+
+        <h2>我们做什么</h2>
+        <p>目前网站包含以下栏目，持续扩充中：</p>
+        <ul>
+          <li><a href="/">医院诊所</a>——收录日本各地提供中文医疗服务的医院与诊所</li>
+          <li><a href="/rules">日本ルール</a>——初到日本最容易踩坑的生活规则速查</li>
+          <li>行政手续 / 生活服务——规划中，欢迎共建</li>
+        </ul>
+
+        <h2>信息来源与更新</h2>
+        <p>每条医院信息都来自医院官网、厚生劳动省公告，或社区投稿核实。我们会在卡片上标注最近更新日期。受限于人力，部分信息可能滞后，请以就诊前电话确认为准。如果你发现错漏，<a href="/submit">欢迎投稿</a>告诉我们。</p>
+
+        <h2>开源与开放</h2>
+        <p>本站不登广告、不收取医院任何费用。所有医院数据都以 JSON 形式公开，你可以自由引用（注明来源即可）。</p>
+
+        <h2>联系方式</h2>
+        <p>合作、纠错、建议，欢迎通过 <a href="/submit">投稿页</a> 留言，会直接送到维护者的 Telegram。</p>
+      </div>
+
+      <div class="en-only">
+        <h2>Who we are</h2>
+        <p>81Japan is run by a handful of long-term Chinese residents of Japan. We are not a company and have no institutional sponsor — we're just trying to turn our own hard-won experience into a guide that saves others the trouble of searching.</p>
+
+        <h2>What we cover</h2>
+        <p>The current sections, with more in the works:</p>
+        <ul>
+          <li><a href="/">Hospitals & Clinics</a> — Chinese-speaking medical facilities across Japan</li>
+          <li><a href="/rules">Living in Japan</a> — everyday rules newcomers most often trip over</li>
+          <li>Admin / Life services — planned; contributors welcome</li>
+        </ul>
+
+        <h2>Sources & updates</h2>
+        <p>Hospital entries come from official hospital sites, MHLW notices, or verified community submissions. Each card carries its last-updated date. Some details may lag — please call ahead before visiting. If you spot an error, <a href="/submit">let us know</a>.</p>
+
+        <h2>Open & free</h2>
+        <p>We run no ads and accept no payment from hospitals. All hospital data is published as open JSON — feel free to reuse with attribution.</p>
+
+        <h2>Contact</h2>
+        <p>For partnerships, corrections, or suggestions, use the <a href="/submit">submission page</a> — messages go straight to our Telegram.</p>
+      </div>
+
+      <div class="about-cta">
+        <div class="cta-text">
+          <span class="zh-only">发现漏掉的医院，或有想补充的内容？<br><strong>投稿直达维护者。</strong></span>
+          <span class="en-only">Know a hospital we missed, or want to add something?<br><strong>Submissions reach us directly.</strong></span>
+        </div>
+        <a href="/submit">
+          <span class="zh-only">前往投稿 →</span>
+          <span class="en-only">Contribute →</span>
+        </a>
+      </div>
+
+    </div>
+  </main>
+
+  <Footer />
+
+  <script is:inline src="/page.js" defer></script>
+</Layout>

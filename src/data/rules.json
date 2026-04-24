@@ -1,0 +1,178 @@
+[
+  {
+    "id": "gomi",
+    "icon": "🗑",
+    "titleZh": "ゴミ分別・垃圾分类",
+    "titleEn": "Garbage Sorting",
+    "summaryZh": "日本的垃圾按「可燃・不可燃・资源・粗大」分类，收集日随地区不同。分错会被退回，并贴上警示贴纸。",
+    "summaryEn": "Garbage is strictly sorted into burnable, non-burnable, recyclable, and bulky categories. Collection days vary by ward.",
+    "pointsZh": [
+      "燃やせるゴミ（可燃）：厨余、纸屑、尿布等",
+      "燃やせないゴミ（不可燃）：小金属、陶瓷、玻璃碎片",
+      "資源ゴミ（资源）：PET 瓶、铝罐、纸箱，需洗净分开",
+      "粗大ゴミ（大件）：家具、家电，需提前预约付费"
+    ],
+    "pointsEn": [
+      "Burnable: food waste, paper scraps, diapers",
+      "Non-burnable: small metals, ceramics, glass",
+      "Recyclable: PET bottles, cans, cardboard — rinse & separate",
+      "Bulky: furniture, appliances — book pickup & pay fee"
+    ],
+    "tipZh": "搬家后到区役所领取本区的收集日历，或用区役所 App 查询。",
+    "tipEn": "After moving, get your ward's collection calendar from the city office or its app."
+  },
+  {
+    "id": "jishin",
+    "icon": "🌋",
+    "titleZh": "地震・防灾",
+    "titleEn": "Earthquake & Disaster",
+    "summaryZh": "日本年均有感地震上千次。手机会先响「紧急地震速报」——先护头、远离高物，等震停再行动。",
+    "summaryEn": "Japan experiences thousands of felt earthquakes per year. Phones ring an Early Warning alert — protect your head, move away from heavy objects.",
+    "pointsZh": [
+      "开启手机「緊急地震速報」推送（iPhone/Android 都默认开）",
+      "家中常备手电筒、饮用水（3日分）、应急食品",
+      "记下所在区的指定避难所位置（通常是附近小学）",
+      "大震后优先确认家人安全，再考虑外出"
+    ],
+    "pointsEn": [
+      "Enable Earthquake Early Warning on your phone (on by default)",
+      "Keep flashlight, 3 days of water & emergency food at home",
+      "Know your designated evacuation site (usually a local school)",
+      "After a quake: check family first before going out"
+    ],
+    "tipZh": "免费 App「NHK ニュース・防災」可实时推送震度与避难信息。",
+    "tipEn": "The free NHK News & Disaster Prevention app pushes real-time intensity and shelter info."
+  },
+  {
+    "id": "densha",
+    "icon": "🚆",
+    "titleZh": "电车・公共交通礼仪",
+    "titleEn": "Train Etiquette",
+    "summaryZh": "车厢内保持安静是基本共识。通话、大声说话、吃东西都会被侧目——这不是规定，但是共同默契。",
+    "summaryEn": "Quiet is the default. Calls, loud talking, and eating will get disapproving looks — it's social convention, not law.",
+    "pointsZh": [
+      "车内手机调静音，不要通话",
+      "优先席（シルバーシート）附近建议关闭手机信号",
+      "背包高峰期请放到身前或架上",
+      "排队上车，不要横冲"
+    ],
+    "pointsEn": [
+      "Phones on silent, no voice calls",
+      "Near priority seats, turn signal off during rush hour",
+      "Rush hour: move backpack to front or overhead rack",
+      "Queue up — no shoving"
+    ],
+    "tipZh": "Suica / PASMO 充值后几乎通行全国地铁与便利店。",
+    "tipEn": "A Suica or PASMO IC card works nationwide for transit and convenience stores."
+  },
+  {
+    "id": "hoken",
+    "icon": "🏥",
+    "titleZh": "国民健康保険・健康保险",
+    "titleEn": "National Health Insurance",
+    "summaryZh": "在日居住满 3 个月以上必须加入。加入后看病个人只付 30%，是日本生活最核心的社保。",
+    "summaryEn": "Required for residents staying 3+ months. Cuts your out-of-pocket medical cost to 30% — core safety net.",
+    "pointsZh": [
+      "到市区役所「保険年金課」办理，带在留卡",
+      "费用按前一年收入计算（初到日本通常最低档）",
+      "拿到保険証后，看病在挂号时一并出示",
+      "公司员工则自动加入「社会保険」，不需单独办"
+    ],
+    "pointsEn": [
+      "Apply at your ward office's insurance desk with your residence card",
+      "Premium is based on prior-year income (new arrivals pay minimum)",
+      "Show the insurance card when registering at hospitals",
+      "Full-time employees are auto-enrolled in Shakai Hoken instead"
+    ],
+    "tipZh": "找中文医院可在首页按地区/科室筛选。",
+    "tipEn": "Find Chinese-speaking clinics by region/department on our home page."
+  },
+  {
+    "id": "mynumber",
+    "icon": "🆔",
+    "titleZh": "マイナンバー・个人番号",
+    "titleEn": "My Number (ID)",
+    "summaryZh": "12 位个人识别号，办税、工作、社保、开户时都会要。搬入住所后会自动寄送通知卡。",
+    "summaryEn": "A 12-digit personal ID used for tax, employment, social security, and bank accounts. Notification arrives after you register an address.",
+    "pointsZh": [
+      "通知カード是纸质，マイナンバーカード（IC 卡）需另申请",
+      "IC 卡可当作身份证用，也能做税务 e-Tax",
+      "号码需严格保密，不要随意交付给第三方",
+      "更新地址时记得携带 IC 卡到区役所登记"
+    ],
+    "pointsEn": [
+      "The paper notification is separate from the plastic My Number Card (apply yourself)",
+      "The plastic card serves as photo ID and enables online tax filing (e-Tax)",
+      "Treat the number as sensitive — share only with employer, bank, etc.",
+      "Update your card at the ward office after moving"
+    ],
+    "tipZh": "官方申请入口：マイナポータル（myna.go.jp）。",
+    "tipEn": "Apply via the official Myna Portal: myna.go.jp."
+  },
+  {
+    "id": "zairyu",
+    "icon": "📇",
+    "titleZh": "在留カード・居留卡",
+    "titleEn": "Residence Card",
+    "summaryZh": "中长期居留者入境时发放。法律要求随身携带，警察可随时查验，不带会被罚款甚至拘留。",
+    "summaryEn": "Issued on arrival to mid/long-term residents. You must carry it at all times — police can ask to see it; failure risks a fine.",
+    "pointsZh": [
+      "搬家后 14 天内，必须到新住所的市区役所登记",
+      "姓名、国籍、签证类型变更需到入管局申报",
+      "到期前 3 个月可申请更新，切勿过期",
+      "遗失需立刻到警察署报失并到入管局补办"
+    ],
+    "pointsEn": [
+      "After moving, register the new address at the ward office within 14 days",
+      "Report changes (name, nationality, visa type) to Immigration",
+      "Renewal can be filed 3 months before expiry — do not overstay",
+      "If lost: report to police, then reissue at Immigration"
+    ],
+    "tipZh": "入管局官网：www.moj.go.jp/isa （有简中版）。",
+    "tipEn": "Immigration Services Agency: www.moj.go.jp/isa (Chinese version available)."
+  },
+  {
+    "id": "bank",
+    "icon": "🏦",
+    "titleZh": "銀行口座・银行开户",
+    "titleEn": "Opening a Bank Account",
+    "summaryZh": "初到日本最容易开户的是「ゆうちょ銀行」（邮政银行）。主要都市银行（三菱UFJ、みずほ等）通常要求在留 6 个月以上。",
+    "summaryEn": "Japan Post Bank (Yucho) is easiest for newcomers. Major city banks usually require 6+ months of residence.",
+    "pointsZh": [
+      "必带：在留卡、住民票、印鉴（或签名）",
+      "电话号码通常是必填，建议先办手机",
+      "ゆうちょ 当天可开，都市银行需 1–2 周",
+      "网银 App 多数支持中文或英文"
+    ],
+    "pointsEn": [
+      "Bring: residence card, juminhyo, hanko (or signature)",
+      "A Japanese phone number is usually required — get SIM first",
+      "Yucho opens same day; city banks take 1–2 weeks",
+      "Most mobile banking apps offer English/Chinese"
+    ],
+    "tipZh": "Revolut、Wise 等国际钱包可作为过渡使用。",
+    "tipEn": "Revolut or Wise can bridge the gap before a local account opens."
+  },
+  {
+    "id": "juminhyo",
+    "icon": "📝",
+    "titleZh": "住民票・住民登记",
+    "titleEn": "Resident Registration",
+    "summaryZh": "确定新住所后 14 天内，必须到市区役所办「転入届」。住民票是租房、开户、办保险的基础。",
+    "summaryEn": "Within 14 days of moving to a new address, file a Move-In notification at the ward office. Juminhyo is the base doc for rent, banking, insurance.",
+    "pointsZh": [
+      "带在留カード + 旧住所的「転出証明書」（同市内搬家不需要）",
+      "当场更新在留カード背面的住址",
+      "可同时申请健康保险、年金等",
+      "需要纸质住民票副本时按 300 円/份收费"
+    ],
+    "pointsEn": [
+      "Bring residence card + Move-Out certificate from previous city",
+      "Your residence card address is updated on the spot",
+      "Can enroll in health insurance & pension at the same window",
+      "Paper copies of juminhyo cost ~300 yen each"
+    ],
+    "tipZh": "建议多拿几份，新工作、房租、银行都可能要原件。",
+    "tipEn": "Get a few copies — new employers, landlords, and banks often need originals."
+  }
+]
