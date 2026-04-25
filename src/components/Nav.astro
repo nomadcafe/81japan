@@ -28,5 +28,8 @@ const items = [
       <button class="lang-opt" onclick="switchLang('en', this)">EN</button>
     </div>
     <button class="submit-nav-btn" onclick="window.location='/submit'"><span class="zh-only">投稿</span><span class="en-only">Contribute</span></button>
+    <button class="nav-toggle" aria-label="菜单" aria-expanded="false" onclick="(function(b){var n=b.closest('nav');var open=n.classList.toggle('open');b.setAttribute('aria-expanded',open);})(this)">
+      <span></span><span></span><span></span>
+    </button>
   </div>
 </nav>
