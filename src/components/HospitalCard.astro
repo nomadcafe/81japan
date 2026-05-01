@@ -1,0 +1,86 @@
+---
+import { hospitalSlug } from '../lib/hospitals.js';
+
+interface Props {
+  hospital: any;
+}
+
+const { hospital: h } = Astro.props;
+const slug = hospitalSlug(h);
+const detailHref = `/hospital/${encodeURIComponent(slug)}/`;
+
+const langSet = new Set(h.langs || []);
+const badges: { cls: string; label: string }[] = [];
+if (langSet.has('中文')) badges.push({ cls: 'badge badge-cn', label: '中文' });
+if (langSet.has('英文')) badges.push({ cls: 'badge badge-en', label: '英文' });
+(h.extraBadges || []).forEach((b: any) => badges.push({ cls: 'badge badge-new', label: b.label }));
+
+const updatedFmt = (() => {
+  const m = (h.updated || '').match(/^(\d{4})-(\d{1,2})$/);
+  return m ? `${m[1]}年${parseInt(m[2], 10)}月` : (h.updated || '');
+})();
+
+const telDigits = (h.phone || '').replace(/[^\d+]/g, '');
+const hasPhone = telDigits.length >= 9;
+
+const mapAddr = h.address || h.addressShort;
+const mapHref = mapAddr
+  ? `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(h.name + ' ' + mapAddr)}`
+  : null;
+
+const langDataAttr = h.langDetail || (h.langs || []).join(' ');
+const deptsDataAttr = (h.depts || []).join(' ');
+---
+<article
+  class="hospital-card fade-in"
+  role="listitem"
+  data-name={h.searchKeys || h.name}
+  data-region={h.region || ''}
+  data-lang={langDataAttr}
+  data-depts={deptsDataAttr}
+  data-updated={h.updated || ''}
+>
+  <a class="card-link" href={detailHref}>
+    <div class="card-row1">
+      <div>
+        <div class="hospital-name">{h.name}</div>
+        <div class="hospital-name-ja">{h.jpName || ''}</div>
+      </div>
+      <div class="badges">
+        {badges.map(b => <span class={b.cls}>{b.label}</span>)}
+      </div>
+    </div>
+    <div class="card-info">
+      <div class="card-info-row">
+        {h.addressShort && (
+          <div class="info-item"><span class="info-icon">📍</span>{h.addressShort}</div>
+        )}
+        {h.warning ? (
+          <div class="info-item"><span class="info-icon">⚠️</span>{h.warning}</div>
+        ) : h.hoursShort && (
+          <div class="info-item"><span class="info-icon">🕐</span>{h.hoursShort}</div>
+        )}
+      </div>
+    </div>
+    <div class="card-depts">
+      {(h.depts || []).map((d: string) => <span class="dept-tag">{d}</span>)}
+    </div>
+  </a>
+  <div class="card-footer">
+    <span class="card-updated">{updatedFmt}</span>
+    <div class="card-actions">
+      {hasPhone && (
+        <a class="card-action" href={`tel:${telDigits}`} aria-label={`拨打 ${h.name}`}>
+          <span aria-hidden="true">📞</span>
+          <span class="zh-only">电话</span><span class="en-only">Call</span>
+        </a>
+      )}
+      {mapHref && (
+        <a class="card-action" href={mapHref} target="_blank" rel="noopener noreferrer" aria-label={`在地图查看 ${h.name}`}>
+          <span aria-hidden="true">🗺</span>
+          <span class="zh-only">地图</span><span class="en-only">Map</span>
+        </a>
+      )}
+    </div>
+  </div>
+</article>
