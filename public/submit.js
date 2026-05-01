@@ -38,7 +38,12 @@ document.getElementById('submitForm').addEventListener('submit', async function(
   }
 
   try {
-    const res = await fetch(this.action, { method:'POST', body: new FormData(this), headers:{'Accept':'application/json'} });
+    const payload = Object.fromEntries(new FormData(this));
+    const res = await fetch(this.action, {
+      method: 'POST',
+      body: JSON.stringify(payload),
+      headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
+    });
     if (res.ok) {
       document.getElementById('formCard').style.display = 'none';
       document.getElementById('successCard').style.display = 'block';
