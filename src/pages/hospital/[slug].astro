@@ -1,0 +1,204 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Nav from '../../components/Nav.astro';
+import Footer from '../../components/Footer.astro';
+import { loadHospitals, hospitalSlug } from '../../lib/hospitals.js';
+import '../../styles/page.css';
+import '../../styles/hospital.css';
+
+export async function getStaticPaths() {
+  const data = loadHospitals();
+  return data.map((h: any) => ({
+    params: { slug: hospitalSlug(h) },
+    props: { hospital: h },
+  }));
+}
+
+const { hospital: h } = Astro.props;
+const slug = hospitalSlug(h);
+const url = `https://www.81japan.com/hospital/${encodeURIComponent(slug)}/`;
+
+const telDigits = (h.phone || '').replace(/[^\d+]/g, '');
+const hasPhone = telDigits.length >= 9;
+
+const mapAddr = h.address || h.addressShort;
+const mapHref = mapAddr
+  ? `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(h.name + ' ' + mapAddr)}`
+  : null;
+
+const updatedFmt = (() => {
+  const m = (h.updated || '').match(/^(\d{4})-(\d{1,2})$/);
+  return m ? `${m[1]}年${parseInt(m[2], 10)}月` : (h.updated || '');
+})();
+
+const langSet = new Set(h.langs || []);
+const isCN = langSet.has('中文');
+const isEN = langSet.has('英文');
+
+const langTokens = ((h.langDetail || (h.langs || []).join(' ')).match(/中文|英文|粤语|台语|韩文|俄文/g) || [])
+  .filter((v: string, i: number, a: string[]) => a.indexOf(v) === i);
+
+const description = `${h.name}（${h.jpName || ''}）位于${h.region || '日本'}${h.addressShort ? '・' + h.addressShort : ''}。${
+  isCN ? '提供中文医疗服务，' : ''
+}${(h.depts && h.depts.length) ? '科室包括' + h.depts.slice(0, 4).join('、') + '等。' : ''}${
+  h.phone ? '电话：' + h.phone + '。' : ''
+}`.slice(0, 160);
+
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@graph': [
+    {
+      '@type': h.depts && h.depts.length > 1 ? 'Hospital' : 'MedicalOrganization',
+      '@id': url + '#organization',
+      'name': h.name,
+      ...(h.jpName ? { 'alternateName': h.jpName } : {}),
+      'url': url,
+      ...(h.phone ? { 'telephone': h.phone } : {}),
+      ...(mapAddr ? {
+        'address': {
+          '@type': 'PostalAddress',
+          'streetAddress': h.address || h.addressShort,
+          'addressRegion': h.region,
+          'addressCountry': 'JP',
+        },
+      } : {}),
+      ...(h.depts && h.depts.length ? { 'medicalSpecialty': h.depts } : {}),
+      ...(langTokens.length ? {
+        'availableLanguage': langTokens.map((l: string) => {
+          const map: Record<string, string> = { '中文': 'zh', '英文': 'en', '粤语': 'yue', '台语': 'nan', '韩文': 'ko', '俄文': 'ru' };
+          return map[l] || l;
+        }),
+      } : {}),
+    },
+    {
+      '@type': 'BreadcrumbList',
+      'itemListElement': [
+        { '@type': 'ListItem', 'position': 1, 'name': '医院诊所', 'item': 'https://www.81japan.com/' },
+        { '@type': 'ListItem', 'position': 2, 'name': h.name },
+      ],
+    },
+  ],
+};
+---
+<Layout
+  title={`${h.name}${h.jpName && h.jpName !== h.name ? '（' + h.jpName + '）' : ''} | 中文医疗服务 · 81日本`}
+  description={description}
+  path={`/hospital/${slug}`}
+>
+  <Fragment slot="head">
+    <script type="application/ld+json" set:html={JSON.stringify(jsonLd)} />
+  </Fragment>
+
+  <Nav active="hospitals" />
+
+  <nav class="breadcrumb" aria-label="面包屑">
+    <a href="/">医院诊所</a>
+    <span class="bc-sep">/</span>
+    <span class="bc-current">{h.region || ''}</span>
+    <span class="bc-sep">/</span>
+    <span class="bc-current">{h.name}</span>
+  </nav>
+
+  <article class="h-detail">
+    <header class="h-header">
+      <div class="h-eyebrow">
+        {h.region && <span class="h-region">{h.region}</span>}
+        <div class="h-badges">
+          {isCN && <span class="badge badge-cn">中文</span>}
+          {isEN && <span class="badge badge-en">英文</span>}
+          {(h.extraBadges || []).map((b: any) => <span class="badge badge-new">{b.label}</span>)}
+        </div>
+      </div>
+      <h1 class="h-name">{h.name}</h1>
+      {h.jpName && h.jpName !== h.name && <p class="h-name-ja">{h.jpName}</p>}
+
+      <div class="h-cta">
+        {hasPhone && (
+          <a class="h-cta-btn h-cta-primary" href={`tel:${telDigits}`}>
+            <span aria-hidden="true">📞</span>
+            <span class="zh-only">拨打电话</span>
+            <span class="en-only">Call</span>
+          </a>
+        )}
+        {mapHref && (
+          <a class="h-cta-btn" href={mapHref} target="_blank" rel="noopener noreferrer">
+            <span aria-hidden="true">🗺</span>
+            <span class="zh-only">在 Google 地图查看</span>
+            <span class="en-only">View on Google Maps</span>
+          </a>
+        )}
+      </div>
+    </header>
+
+    <section class="h-section">
+      <h2 class="h-section-title"><span class="zh-only">基本信息</span><span class="en-only">Basics</span></h2>
+      <dl class="h-info-grid">
+        {(h.address || h.addressShort) && (
+          <div class="h-info-item">
+            <dt><span class="zh-only">地址</span><span class="en-only">Address</span></dt>
+            <dd>{h.address || h.addressShort}</dd>
+          </div>
+        )}
+        {h.phone && (
+          <div class="h-info-item">
+            <dt><span class="zh-only">电话</span><span class="en-only">Phone</span></dt>
+            <dd>{hasPhone ? <a href={`tel:${telDigits}`}>{h.phone}</a> : h.phone}</dd>
+          </div>
+        )}
+        {(h.hours || h.hoursShort) && (
+          <div class="h-info-item">
+            <dt><span class="zh-only">营业时间</span><span class="en-only">Hours</span></dt>
+            <dd>{h.hours || h.hoursShort}</dd>
+          </div>
+        )}
+        {h.closed && (
+          <div class="h-info-item">
+            <dt><span class="zh-only">休诊日</span><span class="en-only">Closed</span></dt>
+            <dd>{h.closed}</dd>
+          </div>
+        )}
+      </dl>
+    </section>
+
+    {langTokens.length > 0 && (
+      <section class="h-section">
+        <h2 class="h-section-title"><span class="zh-only">服务语言</span><span class="en-only">Languages</span></h2>
+        {h.langDetail && <p class="h-lang-detail">{h.langDetail}</p>}
+      </section>
+    )}
+
+    {h.depts && h.depts.length > 0 && (
+      <section class="h-section">
+        <h2 class="h-section-title"><span class="zh-only">提供科室</span><span class="en-only">Departments</span></h2>
+        <div class="h-dept-list">
+          {h.depts.map((d: string) => <span class="dept-tag">{d}</span>)}
+        </div>
+      </section>
+    )}
+
+    {h.note && (
+      <section class="h-section">
+        <h2 class="h-section-title"><span class="zh-only">注意事项</span><span class="en-only">Notes</span></h2>
+        <p class="h-note">{h.note}</p>
+      </section>
+    )}
+
+    {h.warning && (
+      <section class="h-section">
+        <div class="h-warning">⚠️ {h.warning}</div>
+      </section>
+    )}
+
+    <footer class="h-meta">
+      <span><span class="zh-only">最近更新</span><span class="en-only">Last updated</span>：{updatedFmt}</span>
+      <a class="h-back" href="/">
+        <span class="zh-only">← 返回列表</span>
+        <span class="en-only">← Back to list</span>
+      </a>
+    </footer>
+  </article>
+
+  <Footer />
+
+  <script is:inline src="/page.js" defer></script>
+</Layout>

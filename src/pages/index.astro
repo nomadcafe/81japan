@@ -2,7 +2,21 @@
 import Layout from '../layouts/Layout.astro';
 import Nav from '../components/Nav.astro';
 import Footer from '../components/Footer.astro';
+import HospitalCard from '../components/HospitalCard.astro';
+import { loadHospitals, hospitalSlug } from '../lib/hospitals.js';
 import '../styles/index.css';
+
+const hospitals = loadHospitals();
+const total = hospitals.length;
+
+const regionCounts: Record<string, number> = {};
+const langCounts: Record<string, number> = { '中文': 0, '英文': 0 };
+hospitals.forEach((h: any) => {
+  if (h.region) regionCounts[h.region] = (regionCounts[h.region] || 0) + 1;
+  (h.langs || []).forEach((l: string) => {
+    if (l in langCounts) langCounts[l]++;
+  });
+});
 
 const jsonLd = {
   '@context': 'https://schema.org',
@@ -29,6 +43,18 @@ const jsonLd = {
       'name': '81日本',
       'url': 'https://www.81japan.com/',
       'description': '由社区共同维护的在日中文医疗信息平台',
+    },
+    {
+      '@type': 'ItemList',
+      '@id': 'https://www.81japan.com/#hospital-list',
+      'name': '在日中文医院列表',
+      'numberOfItems': total,
+      'itemListElement': hospitals.map((h: any, i: number) => ({
+        '@type': 'ListItem',
+        'position': i + 1,
+        'name': h.name,
+        'url': `https://www.81japan.com/hospital/${encodeURIComponent(hospitalSlug(h))}/`,
+      })),
     },
   ],
 };
@@ -73,47 +99,36 @@ const jsonLd = {
         <div class="filter-title"><span class="zh-only">地区</span><span class="en-only">Region</span></div>
         <div class="filter-option active" onclick="filterRegion('全部', this)" data-region-filter="全部">
           <span><span class="zh-only">全部地区</span><span class="en-only">All</span></span>
-          <span class="filter-count" id="fc-all">23</span>
+          <span class="filter-count">{total}</span>
         </div>
-        <div class="filter-option" onclick="filterRegion('东京', this)" data-region-filter="东京">
-          <span><span class="zh-only">东京・关东</span><span class="en-only">Tokyo</span></span>
-          <span class="filter-count" id="fc-tokyo">9</span>
-        </div>
-        <div class="filter-option" onclick="filterRegion('大阪', this)" data-region-filter="大阪">
-          <span><span class="zh-only">大阪・关西</span><span class="en-only">Osaka</span></span>
-          <span class="filter-count" id="fc-osaka">10</span>
-        </div>
-        <div class="filter-option" onclick="filterRegion('福冈', this)" data-region-filter="福冈">
-          <span><span class="zh-only">福冈・九州</span><span class="en-only">Fukuoka</span></span>
-          <span class="filter-count" id="fc-fukuoka">1</span>
-        </div>
-        <div class="filter-option" onclick="filterRegion('札幌', this)" data-region-filter="札幌">
-          <span><span class="zh-only">北海道</span><span class="en-only">Hokkaido</span></span>
-          <span class="filter-count" id="fc-sapporo">1</span>
-        </div>
-        <div class="filter-option" onclick="filterRegion('名古屋', this)" data-region-filter="名古屋">
-          <span><span class="zh-only">名古屋・中部</span><span class="en-only">Nagoya</span></span>
-          <span class="filter-count" id="fc-nagoya">1</span>
-        </div>
-        <div class="filter-option" onclick="filterRegion('神户', this)" data-region-filter="神户">
-          <span><span class="zh-only">神户・关西</span><span class="en-only">Kobe</span></span>
-          <span class="filter-count" id="fc-kobe">1</span>
-        </div>
+        {[
+          { key: '东京', zh: '东京・关东', en: 'Tokyo' },
+          { key: '大阪', zh: '大阪・关西', en: 'Osaka' },
+          { key: '福冈', zh: '福冈・九州', en: 'Fukuoka' },
+          { key: '札幌', zh: '北海道', en: 'Hokkaido' },
+          { key: '名古屋', zh: '名古屋・中部', en: 'Nagoya' },
+          { key: '神户', zh: '神户・关西', en: 'Kobe' },
+        ].filter(r => (regionCounts[r.key] || 0) > 0).map(r => (
+          <div class="filter-option" onclick={`filterRegion('${r.key}', this)`} data-region-filter={r.key}>
+            <span><span class="zh-only">{r.zh}</span><span class="en-only">{r.en}</span></span>
+            <span class="filter-count">{regionCounts[r.key]}</span>
+          </div>
+        ))}
       </div>
 
       <div class="filter-group">
         <div class="filter-title"><span class="zh-only">服务语言</span><span class="en-only">Language</span></div>
         <div class="filter-option active" onclick="filterLang('全部', this)" data-lang-filter="全部">
           <span><span class="zh-only">全部</span><span class="en-only">All</span></span>
-          <span class="filter-count" id="fl-all">23</span>
+          <span class="filter-count">{total}</span>
         </div>
         <div class="filter-option" onclick="filterLang('中文', this)" data-lang-filter="中文">
           <span>🇨🇳 <span class="zh-only">中文对应</span><span class="en-only">Chinese</span></span>
-          <span class="filter-count" id="fl-cn">22</span>
+          <span class="filter-count">{langCounts['中文']}</span>
         </div>
         <div class="filter-option" onclick="filterLang('英文', this)" data-lang-filter="英文">
           <span>🇺🇸 <span class="zh-only">英文对应</span><span class="en-only">English</span></span>
-          <span class="filter-count" id="fl-en">18</span>
+          <span class="filter-count">{langCounts['英文']}</span>
         </div>
       </div>
 
@@ -132,8 +147,8 @@ const jsonLd = {
     <main>
       <div class="list-header">
         <div class="list-title">
-          <span class="zh-only">共找到 <strong id="shownCount">23</strong> 家医疗机构</span>
-          <span class="en-only"><strong id="shownCountEn">23</strong> facilities found</span>
+          <span class="zh-only">共找到 <strong id="shownCount">{total}</strong> 家医疗机构</span>
+          <span class="en-only"><strong id="shownCountEn">{total}</strong> facilities found</span>
         </div>
         <select class="sort-select" id="sortSelect" onchange="sortCards(this.value)">
           <option value="date" data-zh="最近更新" data-en="Latest">最近更新</option>
@@ -142,7 +157,9 @@ const jsonLd = {
         </select>
       </div>
 
-      <div id="cardList" role="list" aria-label="医院列表"></div>
+      <div id="cardList" role="list" aria-label="医院列表">
+        {hospitals.map((h: any) => <HospitalCard hospital={h} />)}
+      </div>
 
       <div id="emptyState" style="display:none; text-align:center; padding:60px 20px; color:var(--ink-3);">
         <div style="font-size:32px; margin-bottom:12px;">🔍</div>
@@ -167,57 +184,6 @@ const jsonLd = {
   </section>
 
   <Footer />
-
-  <!-- MODAL -->
-  <div class="modal-overlay" id="modalOverlay" onclick="closeModalOnBg(event)">
-    <div class="modal" id="modal">
-      <div class="modal-header">
-        <div class="modal-header-eyebrow"><span class="zh-only">医院详情</span><span class="en-only">Hospital Details</span></div>
-        <div class="modal-title" id="mTitle">-</div>
-        <div class="modal-title-ja" id="mTitleJa">-</div>
-        <button class="modal-close" onclick="closeModal()">✕</button>
-      </div>
-      <div class="modal-body">
-        <div class="modal-section">
-          <div class="modal-section-title">语言服务</div>
-          <div class="lang-badges-large" id="mLangs"></div>
-        </div>
-        <div class="modal-section">
-          <div class="modal-section-title">基本信息</div>
-          <div class="modal-info-grid">
-            <div class="modal-info-item">
-              <div class="modal-info-label">地址</div>
-              <div class="modal-info-value" id="mAddr">-</div>
-            </div>
-            <div class="modal-info-item">
-              <div class="modal-info-label">电话</div>
-              <div class="modal-info-value" id="mPhone">-</div>
-            </div>
-            <div class="modal-info-item">
-              <div class="modal-info-label">营业时间</div>
-              <div class="modal-info-value" id="mHours">-</div>
-            </div>
-            <div class="modal-info-item">
-              <div class="modal-info-label">休诊日</div>
-              <div class="modal-info-value" id="mClosed">-</div>
-            </div>
-          </div>
-        </div>
-        <div class="modal-section">
-          <div class="modal-section-title">提供科室</div>
-          <div class="dept-list" id="mDepts"></div>
-        </div>
-        <div class="note-box" id="mNote"></div>
-        <div class="modal-actions">
-          <button class="modal-btn" onclick="closeModal()">关闭</button>
-          <button class="modal-btn modal-btn-primary" onclick="openMap()">
-            <span class="zh-only">在地图中查看</span>
-            <span class="en-only">View on Map</span>
-          </button>
-        </div>
-      </div>
-    </div>
-  </div>
 
   <script is:inline src="/hospitals.js" defer></script>
 </Layout>
