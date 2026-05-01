@@ -33,36 +33,39 @@ export async function POST({ request, clientAddress }) {
     return json({ ok: false, error: '服务未配置' }, 500);
   }
 
-  let fd;
+  let data;
   try {
-    fd = await request.formData();
+    data = await request.json();
   } catch {
+    return json({ ok: false, error: '无法解析表单' }, 400);
+  }
+  if (!data || typeof data !== 'object') {
     return json({ ok: false, error: '无法解析表单' }, 400);
   }
 
   // Honeypot: 机器人通常会填所有字段
-  if (truncate(fd.get('_honey'))) return json({ ok: true });
+  if (truncate(data['_honey'])) return json({ ok: true });
 
-  const type = truncate(fd.get('投稿类型')) || '未指定';
+  const type = truncate(data['投稿类型']) || '未指定';
 
   const lines = [`📥 <b>新投稿</b> · ${escapeHtml(type)}`, '━━━━━━━━━━'];
 
   if (type.includes('新增')) {
-    pushField(lines, '医院', fd.get('医院名称'));
-    pushField(lines, '所在地', fd.get('所在地'));
-    pushField(lines, '语言', fd.get('语言服务'));
-    pushField(lines, '科室', fd.get('科室'));
-    pushField(lines, '电话', fd.get('电话'));
-    pushField(lines, '网址', fd.get('网址'));
-    pushField(lines, '备注', fd.get('备注'));
+    pushField(lines, '医院', data['医院名称']);
+    pushField(lines, '所在地', data['所在地']);
+    pushField(lines, '语言', data['语言服务']);
+    pushField(lines, '科室', data['科室']);
+    pushField(lines, '电话', data['电话']);
+    pushField(lines, '网址', data['网址']);
+    pushField(lines, '备注', data['备注']);
   } else if (type.includes('纠错')) {
-    pushField(lines, '医院', fd.get('纠错-医院名称'));
-    pushField(lines, '问题', fd.get('纠错-问题描述'));
+    pushField(lines, '医院', data['纠错-医院名称']);
+    pushField(lines, '问题', data['纠错-问题描述']);
   } else {
-    pushField(lines, '建议', fd.get('建议内容'));
+    pushField(lines, '建议', data['建议内容']);
   }
 
-  pushField(lines, '联系', fd.get('联系方式'));
+  pushField(lines, '联系', data['联系方式']);
 
   // 基础校验：除类型外至少有一个字段
   if (lines.length <= 2) {
