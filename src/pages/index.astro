@@ -57,51 +57,14 @@ const jsonLd = {
     <p class="hero-sub en-only">A community-maintained directory of hospitals and clinics with Chinese-speaking staff across Japan.</p>
 
     <div class="search-wrap" role="search" aria-label="搜索医院">
-      <select class="search-select" onchange="handleRegionSelect(this.value)">
-        <option value="全部地区">全部地区</option>
-        <option value="东京">东京・关东</option>
-        <option value="大阪">大阪・关西</option>
-        <option value="神户">神户</option>
-        <option value="名古屋">名古屋・中部</option>
-        <option value="福冈">福冈・九州</option>
-        <option value="札幌">北海道・札幌</option>
-      </select>
       <input class="search-input" placeholder="搜索医院名称、城市、科室…" id="searchInput" oninput="resetFilterHighlights(); filterCards()" />
       <button class="search-btn"><span class="zh-only">搜索</span><span class="en-only">Search</span></button>
     </div>
-    <div class="search-tags">
-      <span class="search-tag" onclick="setSearch('内科')">内科</span>
-      <span class="search-tag" onclick="setSearch('产科')">产科</span>
-      <span class="search-tag" onclick="setSearch('儿科')">儿科</span>
-      <span class="search-tag" onclick="setSearch('皮肤科')">皮肤科</span>
-      <span class="search-tag" onclick="setSearch('大阪')">大阪</span>
-      <span class="search-tag" onclick="setSearch('东京')">东京</span>
-      <span class="search-tag" onclick="setSearch('福冈')">福冈</span>
-    </div>
+    <p class="hero-coverage">
+      <span class="zh-only">覆盖 关东・关西・九州・北海道・中部</span>
+      <span class="en-only">Tokyo · Osaka · Fukuoka · Hokkaido · Nagoya region</span>
+    </p>
   </section>
-
-  <!-- STATS -->
-  <div class="stats-bar">
-    <div class="stat">
-      <div class="stat-num" id="totalCount">23</div>
-      <div class="stat-label"><span class="zh-only">收录医院</span><span class="en-only">Facilities</span></div>
-    </div>
-    <div class="stat-divider"></div>
-    <div class="stat">
-      <div class="stat-num" id="regionCount">6</div>
-      <div class="stat-label"><span class="zh-only">都道府县</span><span class="en-only">Prefectures</span></div>
-    </div>
-    <div class="stat-divider"></div>
-    <div class="stat">
-      <div class="stat-num" id="deptCount">12</div>
-      <div class="stat-label"><span class="zh-only">专科类别</span><span class="en-only">Specialties</span></div>
-    </div>
-    <div class="stat-divider"></div>
-    <div class="stat">
-      <div class="stat-num">社区</div>
-      <div class="stat-label"><span class="zh-only">持续更新中</span><span class="en-only">Community-maintained</span></div>
-    </div>
-  </div>
 
   <!-- MAIN -->
   <div class="main-layout">

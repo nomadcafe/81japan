@@ -65,6 +65,17 @@ function createHospitalCard(h) {
 
   const depts = (h.depts || []).map(d => `<span class="dept-tag">${escapeHtml(d)}</span>`).join('');
 
+  const actions = [];
+  const telDigits = (h.phone || '').replace(/[^\d+]/g, '');
+  if (telDigits.length >= 9) {
+    actions.push(`<a class="card-action" href="tel:${escapeHtml(telDigits)}" onclick="event.stopPropagation()" aria-label="拨打 ${escapeHtml(h.name)}"><span aria-hidden="true">📞</span> <span class="zh-only">电话</span><span class="en-only">Call</span></a>`);
+  }
+  const mapAddr = h.address || h.addressShort;
+  if (mapAddr) {
+    const mapQuery = encodeURIComponent(h.name + ' ' + mapAddr);
+    actions.push(`<a class="card-action" href="https://www.google.com/maps/search/?api=1&query=${mapQuery}" target="_blank" rel="noopener noreferrer" onclick="event.stopPropagation()" aria-label="在地图查看 ${escapeHtml(h.name)}"><span aria-hidden="true">🗺</span> <span class="zh-only">地图</span><span class="en-only">Map</span></a>`);
+  }
+
   card.innerHTML = `
     <div class="card-row1">
       <div>
@@ -78,8 +89,8 @@ function createHospitalCard(h) {
     </div>
     <div class="card-depts">${depts}</div>
     <div class="card-footer">
-      <span>更新：${escapeHtml(formatUpdated(h.updated))}</span>
-      <span class="view-detail"><span class="zh-only">查看详情</span><span class="en-only">Details</span> →</span>
+      <span class="card-updated">${escapeHtml(formatUpdated(h.updated))}</span>
+      <div class="card-actions">${actions.join('')}</div>
     </div>
   `;
   card.addEventListener('click', () => openModal(h));
@@ -241,17 +252,6 @@ function sortCards(method) {
       c.style.transform = '';
     }, i * 40);
   });
-}
-
-function handleRegionSelect(val) {
-  if (val === '全部地区') {
-    const allBtn = document.querySelector('[data-region-filter="全部"]');
-    if (allBtn) filterRegion('全部', allBtn);
-  } else {
-    const sidebarBtn = document.querySelector('[data-region-filter="' + val + '"]');
-    if (sidebarBtn) filterRegion(val, sidebarBtn);
-    else { document.getElementById('searchInput').value = val; filterCards(); }
-  }
 }
 
 function filterRegion(region, el) {
