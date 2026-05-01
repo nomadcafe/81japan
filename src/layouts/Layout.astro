@@ -1,5 +1,6 @@
 ---
 import SEO from '../components/SEO.astro';
+import Analytics from '@vercel/analytics/astro';
 
 interface Props {
   title: string;
@@ -43,9 +44,6 @@ const {
 </head>
 <body class={bodyClass}>
   <slot />
-  <script>
-    import { inject } from '@vercel/analytics';
-    inject();
-  </script>
+  <Analytics />
 </body>
 </html>
