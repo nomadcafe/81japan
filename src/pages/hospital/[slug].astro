@@ -16,7 +16,7 @@ export async function getStaticPaths() {
 
 const { hospital: h } = Astro.props;
 const slug = hospitalSlug(h);
-const url = `https://www.81japan.com/hospital/${encodeURIComponent(slug)}/`;
+const url = `https://www.81japan.com/hospital/${encodeURIComponent(slug)}`;
 
 const telDigits = (h.phone || '').replace(/[^\d+]/g, '');
 const hasPhone = telDigits.length >= 9;

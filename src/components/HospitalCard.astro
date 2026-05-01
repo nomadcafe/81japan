@@ -7,7 +7,7 @@ interface Props {
 
 const { hospital: h } = Astro.props;
 const slug = hospitalSlug(h);
-const detailHref = `/hospital/${encodeURIComponent(slug)}/`;
+const detailHref = `/hospital/${encodeURIComponent(slug)}`;
 
 const langSet = new Set(h.langs || []);
 const badges: { cls: string; label: string }[] = [];
