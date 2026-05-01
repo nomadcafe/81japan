@@ -35,6 +35,23 @@ function langsFrom(lang) {
   return out;
 }
 
+const REGION_RULES = [
+  ['东京', ['东京', '東京', '神奈川', '横滨', '橫濱', '横濱', '川崎', '埼玉', '千叶', '千葉']],
+  ['神户', ['神户', '神戸', '兵库', '兵庫', '京都']],
+  ['大阪', ['大阪']],
+  ['福冈', ['福冈', '福岡']],
+  ['札幌', ['札幌', '北海道']],
+  ['名古屋', ['名古屋', '爱知', '愛知']],
+];
+
+function regionFrom(addr) {
+  const s = String(addr ?? '');
+  for (const [region, kws] of REGION_RULES) {
+    if (kws.some(k => s.includes(k))) return region;
+  }
+  return '';
+}
+
 function deptsFrom(dept) {
   return String(dept ?? '')
     .split(/[、，,/;；\s]+/)
@@ -48,24 +65,26 @@ function ymNow() {
 }
 
 function buildHospitalSnippet(data) {
+  const name = truncate(data['医院名称']);
   const url = truncate(data['网址']);
   const noteParts = [truncate(data['备注']), url ? `官网: ${url}` : ''].filter(Boolean);
+  const hours = truncate(data['营业时间']);
   const obj = {
-    name: truncate(data['医院名称']),
-    jpName: '',
-    region: '',
+    name,
+    jpName: name,
+    region: regionFrom(data['所在地']),
     address: truncate(data['所在地']),
     addressShort: truncate(data['所在地']),
     phone: truncate(data['电话']),
     langs: langsFrom(data['语言服务']),
     langDetail: truncate(data['语言服务']),
     depts: deptsFrom(data['科室']),
-    hours: '',
-    hoursShort: '',
+    hours,
+    hoursShort: hours,
     closed: '',
     note: noteParts.join(' / '),
     updated: ymNow(),
-    searchKeys: truncate(data['医院名称']),
+    searchKeys: name,
   };
   return ',' + JSON.stringify(obj, null, 2);
 }
@@ -100,6 +119,7 @@ export async function POST({ request, clientAddress }) {
     pushField(lines, '科室', data['科室']);
     pushField(lines, '电话', data['电话']);
     pushField(lines, '网址', data['网址']);
+    pushField(lines, '营业时间', data['营业时间']);
     pushField(lines, '备注', data['备注']);
   } else if (type.includes('纠错')) {
     pushField(lines, '医院', data['纠错-医院名称']);
