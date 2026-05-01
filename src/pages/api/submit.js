@@ -27,6 +27,49 @@ function pushField(lines, label, value) {
   if (v) lines.push(`<b>${escapeHtml(label)}</b>: ${escapeHtml(v)}`);
 }
 
+function langsFrom(lang) {
+  const s = String(lang ?? '');
+  const out = [];
+  if (s.includes('中文')) out.push('中文');
+  if (s.includes('英文')) out.push('英文');
+  return out;
+}
+
+function deptsFrom(dept) {
+  return String(dept ?? '')
+    .split(/[、，,/;；\s]+/)
+    .map(x => x.trim())
+    .filter(Boolean);
+}
+
+function ymNow() {
+  const d = new Date();
+  return `${d.getUTCFullYear()}-${String(d.getUTCMonth() + 1).padStart(2, '0')}`;
+}
+
+function buildHospitalSnippet(data) {
+  const url = truncate(data['网址']);
+  const noteParts = [truncate(data['备注']), url ? `官网: ${url}` : ''].filter(Boolean);
+  const obj = {
+    name: truncate(data['医院名称']),
+    jpName: '',
+    region: '',
+    address: truncate(data['所在地']),
+    addressShort: truncate(data['所在地']),
+    phone: truncate(data['电话']),
+    langs: langsFrom(data['语言服务']),
+    langDetail: truncate(data['语言服务']),
+    depts: deptsFrom(data['科室']),
+    hours: '',
+    hoursShort: '',
+    closed: '',
+    note: noteParts.join(' / '),
+    updated: ymNow(),
+    searchKeys: truncate(data['医院名称']),
+  };
+  return ',' + JSON.stringify(obj, null, 2);
+}
+
 export async function POST({ request, clientAddress }) {
   if (!TG_TOKEN || !TG_CHAT) {
     console.error('Missing TELEGRAM_BOT_TOKEN or TELEGRAM_CHAT_ID');
@@ -74,6 +117,12 @@ export async function POST({ request, clientAddress }) {
 
   lines.push('');
   lines.push(`<i>${new Date().toISOString()}</i>`);
+
+  if (type.includes('新增')) {
+    lines.push('');
+    lines.push('📋 <b>JSON 片段</b>（点击复制，粘贴到 hospitals.json 末尾 <code>]</code> 之前）');
+    lines.push(`<pre>${escapeHtml(buildHospitalSnippet(data))}</pre>`);
+  }
 
   let text = lines.join('\n');
   if (text.length > MAX_TOTAL) text = text.slice(0, MAX_TOTAL - 1) + '…';
