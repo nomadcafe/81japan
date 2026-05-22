@@ -22,5 +22,27 @@
     ],
     "tipZh": "マイナンバーカード 可以让你用 e-Tax 在家申报，不用去税务署排队。",
     "tipEn": "With a My Number Card, you can file via e-Tax from home — no queueing at the tax office."
+  },
+  {
+    "id": "global-income",
+    "icon": "🌏",
+    "titleZh": "全球纳税・海外收入",
+    "titleEn": "Worldwide Income Tax",
+    "summaryZh": "日本对税务居民按「过去 10 年内居住 5 年」划线：超过 5 年的就成「永住者（税法意义）」，必须申报包括海外的全球收入。这跟你有没有永住签证无关。",
+    "summaryEn": "Japan classifies tax residents by the 5-out-of-10-years rule. If you've lived here more than 5 years in the past 10, you become a 'permanent resident' for tax purposes (separate from visa status) and must report worldwide income.",
+    "pointsZh": [
+      "判断标准是「物理居住时间」，跟你拿什么签证、有没有永住权无关",
+      "非永住者（≤5 年）：只对日本国内收入＋汇入日本的海外收入纳税",
+      "永住者（>5 年）：全球所有收入都要申报",
+      "国外已交的税可通过「外国税额控除」抵扣，不会双重征税"
+    ],
+    "pointsEn": [
+      "Status is decided by physical residency time — visa type doesn't matter",
+      "Non-permanent resident (≤5 yrs): taxed on Japan-source income + foreign income remitted to Japan",
+      "Permanent resident for tax (>5 yrs): all worldwide income reportable",
+      "Foreign taxes already paid can be offset via Foreign Tax Credit — no double taxation"
+    ],
+    "tipZh": "快住满 5 年那年如果有大额海外资产或收入，应该提前找会计咨询——这是最容易被忽视的「跳一档」时刻，错过后整个税务结构变化很大。",
+    "tipEn": "If you're approaching the 5-year mark with significant foreign assets or income, talk to an accountant ahead of time — it's the most commonly missed 'tax bracket jump'."
   }
 ]
