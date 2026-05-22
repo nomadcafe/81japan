@@ -1,0 +1,71 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Nav from '../components/Nav.astro';
+import Footer from '../components/Footer.astro';
+import tax from '../data/tax.json';
+import '../styles/page.css';
+
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'ItemList',
+  'name': '在日税务指南',
+  'itemListElement': tax.map((r, i) => ({
+    '@type': 'ListItem',
+    'position': i + 1,
+    'name': r.titleZh,
+  })),
+};
+---
+<Layout
+  title="税务 · 在日工资族税务速查 | 81日本"
+  description="在日工作必懂的税务：所得税源泉徴収、住民税、確定申告、ふるさと納税、医疗费扣除——日常工资族角度整理。"
+  path="/tax"
+>
+  <Fragment slot="head">
+    <meta name="keywords" content="日本税务,確定申告,住民税,ふるさと納税,医疗费扣除,e-Tax,日本所得税,在日工资税" />
+    <script type="application/ld+json" set:html={JSON.stringify(jsonLd)} />
+  </Fragment>
+
+  <Nav active="tax" />
+
+  <section class="page-hero">
+    <div class="eyebrow">
+      <span class="zh-only">税务</span>
+      <span class="en-only">Taxes</span>
+    </div>
+    <h1 class="zh-only">在日本工作，<em>税该怎么办</em></h1>
+    <h1 class="en-only">Taxes <em>when working in Japan</em></h1>
+    <p class="zh-only">工资族基本不用自己报，但住民税、ふるさと納税、医疗费扣除这些值得搞懂。</p>
+    <p class="en-only">Company employees usually don't file themselves — but resident tax, Furusato Nozei, and medical deductions are worth knowing.</p>
+  </section>
+
+  <main class="page-main">
+    <div class="rules-grid">
+      {tax.map((r) => (
+        <article class="rule-card" id={r.id}>
+          <div class="rule-card-head">
+            <div class="rule-icon" aria-hidden="true">{r.icon}</div>
+            <div>
+              <div class="rule-title">{r.titleZh}</div>
+              <div class="rule-title-en">{r.titleEn}</div>
+            </div>
+          </div>
+          <p class="rule-summary zh-only">{r.summaryZh}</p>
+          <p class="rule-summary en-only">{r.summaryEn}</p>
+          <ul class="rule-points zh-only">
+            {r.pointsZh.map((p) => <li>{p}</li>)}
+          </ul>
+          <ul class="rule-points en-only">
+            {r.pointsEn.map((p) => <li>{p}</li>)}
+          </ul>
+          {r.tipZh && <div class="rule-tip zh-only">💡 {r.tipZh}</div>}
+          {r.tipEn && <div class="rule-tip en-only">💡 {r.tipEn}</div>}
+        </article>
+      ))}
+    </div>
+  </main>
+
+  <Footer />
+
+  <script is:inline src="/page.js" defer></script>
+</Layout>

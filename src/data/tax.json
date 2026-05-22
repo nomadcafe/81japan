@@ -1,0 +1,26 @@
+[
+  {
+    "id": "tax-overview",
+    "icon": "🧾",
+    "titleZh": "税金・確定申告",
+    "titleEn": "Taxes & Filing",
+    "summaryZh": "工资族大多不用自己报税——公司会从工资源泉徴収，年末调整搞定。需要自己申告的主要是：副业、医疗费扣除、首次买房、自由职业者。",
+    "summaryEn": "Company employees usually don't file themselves — payroll withholding + year-end adjustment cover it. Filing is mainly for side income, medical deductions, home purchase, or freelance work.",
+    "pointsZh": [
+      "所得税：公司每月源泉徴収，年末调整后多退少补",
+      "住民税：按上一年收入算，今年 6 月起每月从工资扣",
+      "確定申告：每年 2 月 16 日 – 3 月 15 日，可用 e-Tax 在线",
+      "医疗费扣除：年医疗费超过 10 万円可申报扣除（要留收据）",
+      "ふるさと納税：用住民税抵扣捐给地方政府，还能拿当地特产"
+    ],
+    "pointsEn": [
+      "Income tax: withheld monthly by employer, reconciled at year-end",
+      "Resident tax: based on prior-year income, deducted monthly from salary starting June",
+      "Final filing: Feb 16 – Mar 15, can use e-Tax online",
+      "Medical deduction: annual medical costs over ¥100k can be deducted (keep receipts)",
+      "Furusato Nozei: donate to municipalities for tax credit + local specialty gifts"
+    ],
+    "tipZh": "マイナンバーカード 可以让你用 e-Tax 在家申报，不用去税务署排队。",
+    "tipEn": "With a My Number Card, you can file via e-Tax from home — no queueing at the tax office."
+  }
+]
