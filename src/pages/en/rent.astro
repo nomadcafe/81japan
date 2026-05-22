@@ -1,0 +1,76 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Nav from '../../components/Nav.astro';
+import Footer from '../../components/Footer.astro';
+import rent from '../../data/rent.json';
+import '../../styles/page.css';
+
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@graph': [
+    {
+      '@type': 'ItemList',
+      'name': 'Renting in Japan',
+      'itemListElement': rent.map((r, i) => ({
+        '@type': 'ListItem',
+        'position': i + 1,
+        'name': r.titleEn,
+      })),
+    },
+    {
+      '@type': 'BreadcrumbList',
+      'itemListElement': [
+        { '@type': 'ListItem', 'position': 1, 'name': 'Home', 'item': 'https://www.81japan.com/en' },
+        { '@type': 'ListItem', 'position': 2, 'name': 'Renting' },
+      ],
+    },
+  ],
+};
+---
+<Layout
+  title="Renting · Finding a Place to Live in Japan | 81Japan"
+  description="Renting in Japan: shikikin, reikin, agent fees, guarantor companies, tenant screening, UR housing — what foreigners need to know about finding an apartment."
+  path="/en/rent"
+  locale="en"
+>
+  <Fragment slot="head">
+    <meta name="keywords" content="renting in Japan,shikikin,reikin,key money Japan,guarantor company,nyukyo shinsa,UR housing,foreigner rental Japan" />
+    <script type="application/ld+json" set:html={JSON.stringify(jsonLd)} />
+  </Fragment>
+
+  <Nav active="rent" locale="en" />
+
+  <section class="page-hero">
+    <div class="eyebrow">Renting</div>
+    <h1>Finding a place <em>to live in Japan</em></h1>
+    <p>Initial costs, guarantor companies, tenant screening — the concepts you can't skip.</p>
+  </section>
+
+  <main class="page-main">
+    <div class="rules-grid">
+      {rent.map((r) => (
+        <article class="rule-card" id={r.id}>
+          <div class="rule-card-head">
+            <div class="rule-icon" aria-hidden="true">{r.icon}</div>
+            <div>
+              <div class="rule-title">{r.titleEn}</div>
+              <div class="rule-title-en">{r.titleZh}</div>
+            </div>
+          </div>
+          <p class="rule-summary">{r.summaryEn}</p>
+          <ul class="rule-points">
+            {r.pointsEn.map((p) => {
+              const m = p.match(/^\[tip\]\s*(.+)$/);
+              return m ? <li class="tip" set:html={m[1]} /> : <li set:html={p} />;
+            })}
+          </ul>
+          {r.tipEn && <div class="rule-tip">💡 {r.tipEn}</div>}
+        </article>
+      ))}
+    </div>
+  </main>
+
+  <Footer locale="en" />
+
+  <script is:inline src="/page.js" defer></script>
+</Layout>
