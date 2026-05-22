@@ -1,0 +1,26 @@
+[
+  {
+    "id": "rent-basics",
+    "icon": "🏠",
+    "titleZh": "租房・初期费用",
+    "titleEn": "Renting an Apartment",
+    "summaryZh": "在日本签租房合同时要一次性付清的「初期費用」通常等于 3–5 个月房租，主要看礼金、敷金多少。看房前先把预算算清楚。",
+    "summaryEn": "Initial costs when signing a Japanese rental contract usually total 3–5 months' rent — depending mostly on reikin and shikikin. Budget carefully before viewing.",
+    "pointsZh": [
+      "敷金（押金，1–2 月）：退房时扣清扫修复费后退还",
+      "礼金（谢礼，0–2 月）：付给房东，不退",
+      "仲介手数料（中介费，1 月＋税）",
+      "保証会社费（30–100% 月租 + 每年更新）：替代「保証人」",
+      "火災保険（2 万円左右 / 2 年）＋ 更新料（每 2 年 1 月房租）"
+    ],
+    "pointsEn": [
+      "Shikikin (deposit, 1–2 mo): returned at move-out after cleaning fees",
+      "Reikin (key money, 0–2 mo): paid to landlord, non-refundable",
+      "Agent fee (1 mo + tax)",
+      "Guarantor company fee (30–100% monthly + yearly renewal): replaces a personal guarantor",
+      "Fire insurance (~¥20,000 / 2 yr) + renewal fee (1 mo every 2 yrs)"
+    ],
+    "tipZh": "外国人租房经常在「入居審査」被拒。可以找对外国人友好的中介（GTN、エイブル 等），或者优先看 UR 物件——没礼金、敷金低、不查保証人。",
+    "tipEn": "Foreigner screening (nyukyo-shinsa) can be a hurdle. Look for foreigner-friendly agents (GTN, Able), or check UR housing — no key money, low deposit, no guarantor screening."
+  }
+]
