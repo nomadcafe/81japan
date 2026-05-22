@@ -44,5 +44,29 @@
     ],
     "tipZh": "快住满 5 年那年如果有大额海外资产或收入，应该提前找会计咨询——这是最容易被忽视的「跳一档」时刻，错过后整个税务结构变化很大。",
     "tipEn": "If you're approaching the 5-year mark with significant foreign assets or income, talk to an accountant ahead of time — it's the most commonly missed 'tax bracket jump'."
+  },
+  {
+    "id": "exit-tax",
+    "icon": "✈️",
+    "titleZh": "国外転出時課税・离日税",
+    "titleEn": "Exit Tax (Departure Tax)",
+    "summaryZh": "在日本住满 5 年（同税法永住者标准）且持有 1 亿日元以上有价证券的人，离开日本时要按「视同出售」对未实现资本利得纳税。2015 年 7 月开始。",
+    "summaryEn": "Tax residents who've lived in Japan 5+ years (same threshold as tax-status permanent resident) and hold ¥100M+ in eligible securities owe tax on unrealized capital gains when leaving — assets are treated as if sold. Started July 2015.",
+    "pointsZh": [
+      "对象：与税法永住者同样的 5/10 年标准 + 有价证券・匿名組合出資・衍生品合计 ≥ 1 亿円",
+      "应税：股票、投信、未决算的信用交易・デリバティブ等的未实现利得（按离日时市价 − 取得成本）",
+      "不在范围：不動産、銀行存款、加密货币等（截至 2025 现行规定）",
+      "可担保 + 设纳税管理人延期 5 年（可再延长至 10 年）；5 年内回日且仍持有该资产，可申请撤销",
+      "离日前需提交「出国時確定申告」，与普通报税不同"
+    ],
+    "pointsEn": [
+      "Who: same 5/10-year resident threshold + ¥100M in eligible securities/derivatives",
+      "What: unrealized gains on stocks, mutual funds, unsettled credit/derivative positions (market value at departure − cost basis)",
+      "Not covered: real estate, bank deposits, crypto, etc. (as of 2025)",
+      "5-year deferral available with collateral + tax representative (extendable to 10 yrs); reversible if you return within 5 yrs still holding the assets",
+      "A separate 'departure tax return' is required before leaving Japan"
+    ],
+    "tipZh": "1 亿円门槛看起来高，但 IT 行业 RSU / 期权较多的话很容易跨过去。如果你接近这条线，建议至少提前半年咨询税理士。",
+    "tipEn": "The ¥100M threshold sounds high but is easy to cross with tech-sector RSUs or stock options. If you're approaching it, consult a tax accountant at least 6 months before leaving."
   }
 ]
