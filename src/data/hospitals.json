@@ -1,6 +1,7 @@
 [
   {
     "name": "神户华侨同仁会病院",
+    "nameEn": "Kobe Kakyo Doujinkai Hospital",
     "jpName": "神戸華僑同仁会病院",
     "region": "神户",
     "address": "兵库县神户市中央区",
@@ -28,6 +29,7 @@
   },
   {
     "name": "聖路加国際病院",
+    "nameEn": "St. Luke's International Hospital",
     "jpName": "St. Luke's International Hospital",
     "region": "东京",
     "address": "东京都中央区明石町9-1",
@@ -62,6 +64,7 @@
   },
   {
     "name": "順天堂医院 国際診療部",
+    "nameEn": "Juntendo University Hospital · International Department",
     "jpName": "順天堂大学医学部附属順天堂医院",
     "region": "东京",
     "address": "东京都文京区本郷3-1-3",
@@ -96,6 +99,7 @@
   },
   {
     "name": "東京科学大学病院 国際医療部",
+    "nameEn": "Institute of Science Tokyo Hospital · International Medical Dept",
     "jpName": "東京科学大学病院（旧・東京医科歯科大学病院）",
     "region": "东京",
     "address": "东京都文京区湯島1-5-45",
@@ -131,6 +135,7 @@
   },
   {
     "name": "東京都立駒込病院",
+    "nameEn": "Tokyo Metropolitan Komagome Hospital",
     "jpName": "東京都立駒込病院",
     "region": "东京",
     "address": "东京都文京区本駒込3-18-22",
@@ -164,6 +169,7 @@
   },
   {
     "name": "東京大学附属病院 国際診療部",
+    "nameEn": "The University of Tokyo Hospital · International Department",
     "jpName": "東京大学医学部附属病院",
     "region": "东京",
     "address": "东京都文京区本郷7-3-1",
@@ -198,6 +204,7 @@
   },
   {
     "name": "东京医科大学病院 国际医疗部",
+    "nameEn": "Tokyo Medical University Hospital · International Medical Dept",
     "jpName": "東京医科大学病院 国際医療部",
     "region": "东京",
     "address": "东京都新宿区西新宿",
@@ -230,6 +237,7 @@
   },
   {
     "name": "Tokyo Station International Clinic",
+    "nameEn": "Tokyo Station International Clinic",
     "jpName": "東京ステーションインターナショナルクリニック",
     "region": "东京",
     "address": "东京都千代田区 JR东京站八重洲南口步行1分钟",
@@ -263,6 +271,7 @@
   },
   {
     "name": "日中友好医院",
+    "nameEn": "Japan-China Friendship Clinic",
     "jpName": "医療法人社団 日中友好医院",
     "region": "东京",
     "address": "东京都渋谷区代々木1-38-5 KDX代々木ビル6F",
@@ -294,6 +303,7 @@
   },
   {
     "name": "宮田胃腸内科皮膚科クリニック",
+    "nameEn": "Miyata Gastroenterology & Dermatology Clinic",
     "jpName": "宮田胃腸内科皮膚科クリニック",
     "region": "东京",
     "address": "东京都新宿区百人町1-11-2 2F",
@@ -319,6 +329,7 @@
   },
   {
     "name": "大阪市立住友病院",
+    "nameEn": "Sumitomo Hospital",
     "jpName": "大阪市立住友病院",
     "region": "大阪",
     "addressShort": "大阪府 大阪市北区",
@@ -337,6 +348,7 @@
   },
   {
     "name": "福冈县立病院 国际部",
+    "nameEn": "Fukuoka Prefectural Hospital · International Dept",
     "jpName": "福岡県立病院 国際部",
     "region": "福冈",
     "addressShort": "福冈县 福冈市博多区",
@@ -356,6 +368,7 @@
   },
   {
     "name": "札幌医科大学附属病院",
+    "nameEn": "Sapporo Medical University Hospital",
     "jpName": "札幌医科大学附属病院",
     "region": "札幌",
     "addressShort": "北海道 札幌市中央区",
@@ -374,6 +387,7 @@
   },
   {
     "name": "希咲クリニック",
+    "nameEn": "Kisaki Clinic",
     "jpName": "希咲クリニック",
     "region": "大阪",
     "address": "大阪府大阪市淀川区十三東2-7-8 エルディ十三東駅前ビル3F",
@@ -398,6 +412,7 @@
   },
   {
     "name": "こどもクリニックきじま",
+    "nameEn": "Kijima Children's Clinic",
     "jpName": "こどもクリニックきじま",
     "region": "大阪",
     "address": "大阪府大阪市福島区福島5-6-16 ラグザ大阪サウスオフィス4F",
@@ -421,6 +436,7 @@
   },
   {
     "name": "春次医院",
+    "nameEn": "Harutsugu Clinic",
     "jpName": "春次医院（はるつぐいいん）",
     "region": "大阪",
     "address": "大阪府大阪市中央区博労町2-6-1 心斎橋春次ビル",
@@ -452,6 +468,7 @@
   },
   {
     "name": "琥珀クリニック",
+    "nameEn": "Kohaku Clinic",
     "jpName": "琥珀クリニック",
     "region": "大阪",
     "address": "大阪府大阪市中央区南船場3-8-14 ACN心斎橋Garden4F",
@@ -477,6 +494,7 @@
   },
   {
     "name": "茜道頓堀クリニック",
+    "nameEn": "Akane Dotonbori Clinic",
     "jpName": "茜道頓堀クリニック",
     "region": "大阪",
     "address": "大阪府大阪市中央区島之内2-2-2",
@@ -501,6 +519,7 @@
   },
   {
     "name": "医誠会国際総合病院",
+    "nameEn": "Iseikai International General Hospital",
     "jpName": "医誠会国際総合病院",
     "region": "大阪",
     "address": "大阪府大阪市北区南扇町4番14号 i-Mall内",
@@ -539,6 +558,7 @@
   },
   {
     "name": "みなと町歯科",
+    "nameEn": "Minato-cho Dental Clinic",
     "jpName": "みなと町歯科",
     "region": "大阪",
     "address": "大阪府大阪市浪速区幸町1-1-1 夕張家ビル201号",
@@ -560,6 +580,7 @@
   },
   {
     "name": "Osaka Lee Clinic（イークリニック）",
+    "nameEn": "Osaka Lee Clinic",
     "jpName": "Osaka Lee Clinic / イークリニック",
     "region": "大阪",
     "address": "大阪府大阪市北区本庄西1-13-15",
@@ -584,6 +605,7 @@
   },
   {
     "name": "大阪天満橋 Y&Y歯科・矯正歯科",
+    "nameEn": "Y&Y Dental & Orthodontics Osaka Tenmabashi",
     "jpName": "大阪天満橋 Y&Y歯科・矯正歯科",
     "region": "大阪",
     "address": "大阪府大阪市中央区谷町2-2-18 2F",
@@ -612,6 +634,7 @@
   },
   {
     "name": "名古屋第二赤十字病院",
+    "nameEn": "Japanese Red Cross Aichi Medical Center Nagoya Daini Hospital",
     "jpName": "名古屋第二赤十字病院",
     "region": "名古屋",
     "addressShort": "爱知县 名古屋市昭和区",
@@ -631,14 +654,24 @@
   },
   {
     "name": "福冈山王医院",
+    "nameEn": "Fukuoka Sanno Hospital",
     "jpName": "福岡山王病院",
     "region": "福冈",
     "address": "福冈县福冈市早良区百道浜3-6-45",
     "addressShort": "福冈县 福冈市早良区 百道浜",
     "phone": "092-407-1133（中文・英文专线）",
-    "langs": ["中文", "英文"],
+    "langs": [
+      "中文",
+      "英文"
+    ],
     "langDetail": "中文・英文专线、官网中文版",
-    "depts": ["内科", "外科", "妇产科", "整形外科", "预防医学"],
+    "depts": [
+      "内科",
+      "外科",
+      "妇产科",
+      "整形外科",
+      "预防医学"
+    ],
     "hours": "周一至周六 9:00–13:00 / 14:00–17:00",
     "hoursShort": "周一至周六 9:00–17:00",
     "closed": "周日・节假日",
@@ -648,14 +681,27 @@
   },
   {
     "name": "福冈大学医院",
+    "nameEn": "Fukuoka University Hospital",
     "jpName": "福岡大学病院",
     "region": "福冈",
     "address": "福冈县福冈市城南区七隈7-45-1",
     "addressShort": "福冈县 福冈市城南区 七隈",
     "phone": "092-801-1011",
-    "langs": ["中文", "英文"],
+    "langs": [
+      "中文",
+      "英文"
+    ],
     "langDetail": "官网中文版含外国患者咨询说明",
-    "depts": ["内科", "心脏内科", "神经内科", "肿瘤科", "儿科", "妇产科", "整形外科", "精神科"],
+    "depts": [
+      "内科",
+      "心脏内科",
+      "神经内科",
+      "肿瘤科",
+      "儿科",
+      "妇产科",
+      "整形外科",
+      "精神科"
+    ],
     "hours": "初诊 周一至周五 8:30–12:00 / 复诊 8:30–15:00",
     "hoursShort": "周一至周五 8:30–12:00（初诊）",
     "closed": "周六・周日・节假日・年末年始（12/29–1/3）",
@@ -665,14 +711,29 @@
   },
   {
     "name": "圣玛利亚医院",
+    "nameEn": "St. Mary's Hospital",
     "jpName": "聖マリア病院",
     "region": "福冈",
     "address": "福冈县久留米市津福本町422",
     "addressShort": "福冈县 久留米市 津福本町",
     "phone": "0942-35-3322 / 门诊预约 0570-05-1224",
-    "langs": ["中文", "英文"],
+    "langs": [
+      "中文",
+      "英文"
+    ],
     "langDetail": "32 语言通译（部分需预约），含中文・英文・韩文・越南语等",
-    "depts": ["内科", "外科", "儿科", "产科", "妇科", "神经科", "眼科", "牙科", "放射科", "急诊"],
+    "depts": [
+      "内科",
+      "外科",
+      "儿科",
+      "产科",
+      "妇科",
+      "神经科",
+      "眼科",
+      "牙科",
+      "放射科",
+      "急诊"
+    ],
     "hours": "受付 8:30–11:30（下午需预约）",
     "hoursShort": "受付 8:30–11:30",
     "warning": "无紹介状初诊加收 7,700 円",
@@ -683,14 +744,20 @@
   },
   {
     "name": "姬野医院",
+    "nameEn": "Himeno Hospital",
     "jpName": "医療法人 八女発心会 姫野病院",
     "region": "福冈",
     "address": "福冈县八女郡広川町大字新代2316",
     "addressShort": "福冈县 八女郡 広川町",
     "phone": "0943-32-3611",
-    "langs": ["中文"],
+    "langs": [
+      "中文"
+    ],
     "langDetail": "中文工作人员常驻，无需预约",
-    "depts": ["内科", "外科"],
+    "depts": [
+      "内科",
+      "外科"
+    ],
     "hours": "周一至周五 9:00–12:00 / 14:00–16:30 / 周六 9:00–12:00",
     "hoursShort": "周一至周五 9:00–16:30",
     "closed": "周日・节假日",
@@ -700,14 +767,24 @@
   },
   {
     "name": "博多桧诊所",
+    "nameEn": "Hakata Hinoki Clinic",
     "jpName": "博多ひのきクリニック",
     "region": "福冈",
     "address": "福冈县福冈市博多区博多駅南1-8-34 博多駅FRビル7F",
     "addressShort": "福冈县 福冈市博多区（博多站徒步 5 分）",
     "phone": "092-477-7216（中文・韩文专线）/ 092-477-7215",
-    "langs": ["中文", "英文"],
+    "langs": [
+      "中文",
+      "英文"
+    ],
     "langDetail": "中文・韩文专线、配置中文翻译员",
-    "depts": ["内科", "外科", "儿科", "渡航外来", "健诊"],
+    "depts": [
+      "内科",
+      "外科",
+      "儿科",
+      "渡航外来",
+      "健诊"
+    ],
     "hours": "需查询官网（土・日午后、周三、节假日休诊）",
     "hoursShort": "周一至周六（部分时段休）",
     "closed": "土・日午后、周三、节假日",
@@ -717,14 +794,25 @@
   },
   {
     "name": "福冈德洲会医院 国际医疗支援室",
+    "nameEn": "Fukuoka Tokushukai Hospital · International Medical Support",
     "jpName": "福岡徳洲会病院 国際医療支援室",
     "region": "福冈",
     "address": "福冈县春日市須玖北4-5",
     "addressShort": "福冈县 春日市（福冈市近郊）",
     "phone": "092-573-6622（国际医疗支援室分机 1289）",
-    "langs": ["中文", "英文"],
+    "langs": [
+      "中文",
+      "英文"
+    ],
     "langDetail": "中文・英文常驻医疗专员；平板视频通译支援 17 语言",
-    "depts": ["内科", "外科", "儿科", "妇产科", "整形外科", "急诊"],
+    "depts": [
+      "内科",
+      "外科",
+      "儿科",
+      "妇产科",
+      "整形外科",
+      "急诊"
+    ],
     "hours": "平日 8:30–17:00 / 土曜 8:30–12:30",
     "hoursShort": "平日 8:30–17:00",
     "closed": "周日・节假日",
@@ -734,14 +822,25 @@
   },
   {
     "name": "九州大学医院 国际诊疗支援中心",
+    "nameEn": "Kyushu University Hospital · IPAC",
     "jpName": "九州大学病院 国際診療支援センター（IPAC）",
     "region": "福冈",
     "address": "福冈县福冈市東区马出3-1-1",
     "addressShort": "福冈县 福冈市东区 马出",
     "phone": "092-642-4231",
-    "langs": ["中文", "英文"],
+    "langs": [
+      "中文",
+      "英文"
+    ],
     "langDetail": "IPAC 配置中文通译 1 名、英文通译 1 名常驻；院内通译タブレット",
-    "depts": ["内科", "外科", "儿科", "产科", "肿瘤科", "急诊"],
+    "depts": [
+      "内科",
+      "外科",
+      "儿科",
+      "产科",
+      "肿瘤科",
+      "急诊"
+    ],
     "hours": "需通过 IPAC 官网事前相談",
     "hoursShort": "事前相談预约",
     "warning": "需先通过 IPAC 官网提交国际患者受入相談",
@@ -752,14 +851,24 @@
   },
   {
     "name": "京都市立医院",
+    "nameEn": "Kyoto City Hospital",
     "jpName": "京都市立病院",
     "region": "京都",
     "address": "京都府京都市中京区壬生东高田町1-2",
     "addressShort": "京都府 京都市中京区（壬生）",
     "phone": "075-311-5311",
-    "langs": ["中文", "英文"],
+    "langs": [
+      "中文",
+      "英文"
+    ],
     "langDetail": "中文医疗通译 周二・周五 9:00–12:00 常驻（受付至 11:00），免预约",
-    "depts": ["内科", "外科", "儿科", "产科", "整形外科"],
+    "depts": [
+      "内科",
+      "外科",
+      "儿科",
+      "产科",
+      "整形外科"
+    ],
     "hours": "平日 8:30–11:00（外来受付）",
     "hoursShort": "平日 8:30–11:00",
     "closed": "土・日・节假日",
@@ -769,14 +878,27 @@
   },
   {
     "name": "医仁会武田综合医院",
+    "nameEn": "Ijinkai Takeda General Hospital",
     "jpName": "医仁会 武田総合病院",
     "region": "京都",
     "address": "京都府京都市伏見区石田森南町28-1",
     "addressShort": "京都府 京都市伏見区（石田駅徒步）",
     "phone": "075-572-6331",
-    "langs": ["中文", "英文"],
+    "langs": [
+      "中文",
+      "英文"
+    ],
     "langDetail": "中文医疗通译 周二・周五 9:00–12:00 常驻（免预约）",
-    "depts": ["内科", "外科", "循环器内科", "脑神经外科", "儿科", "妇产科", "整形外科", "泌尿器科"],
+    "depts": [
+      "内科",
+      "外科",
+      "循环器内科",
+      "脑神经外科",
+      "儿科",
+      "妇产科",
+      "整形外科",
+      "泌尿器科"
+    ],
     "hours": "周一至周六 9:00–12:00 / 受付 8:00–12:00",
     "hoursShort": "周一至周六 9:00–12:00",
     "closed": "周日・节假日",
@@ -786,14 +908,30 @@
   },
   {
     "name": "康生会武田医院",
+    "nameEn": "Koseikai Takeda Hospital",
     "jpName": "医療法人財団康生会 武田病院",
     "region": "京都",
     "address": "京都府京都市下京区盐小路通西洞院東入東盐小路町841-5",
     "addressShort": "京都府 京都市下京区（京都站徒步 5 分）",
     "phone": "075-361-1351",
-    "langs": ["中文", "英文", "韩文"],
+    "langs": [
+      "中文",
+      "英文",
+      "韩文"
+    ],
     "langDetail": "国际医疗支援室通过 iPad 多语言口译，平日 8:30–17:00",
-    "depts": ["内科", "心脏内科", "神经内科", "呼吸内科", "消化内科", "外科", "骨外科", "脑神经外科", "皮肤科", "眼科"],
+    "depts": [
+      "内科",
+      "心脏内科",
+      "神经内科",
+      "呼吸内科",
+      "消化内科",
+      "外科",
+      "骨外科",
+      "脑神经外科",
+      "皮肤科",
+      "眼科"
+    ],
     "hours": "周一至周六 8:00–12:00 / 13:00–16:00",
     "hoursShort": "周一至周六 8:00–16:00",
     "closed": "周日・节假日",
@@ -803,14 +941,22 @@
   },
   {
     "name": "郑医院",
+    "nameEn": "Tei Clinic",
     "jpName": "医療法人社団 テイ医院",
     "region": "京都",
     "address": "京都府京都市左京区浄土寺下南田町3-5",
     "addressShort": "京都府 京都市左京区 浄土寺",
     "phone": "075-752-0556",
-    "langs": ["中文"],
+    "langs": [
+      "中文"
+    ],
     "langDetail": "中文常驻（京都市国際交流協会公开列表）",
-    "depts": ["内科", "外科", "胃肠科", "皮肤美容科"],
+    "depts": [
+      "内科",
+      "外科",
+      "胃肠科",
+      "皮肤美容科"
+    ],
     "hours": "上午 9:00–12:30 / 下午 16:30–19:00",
     "hoursShort": "9:00–12:30 / 16:30–19:00",
     "closed": "周二下午・周日",
@@ -820,14 +966,21 @@
   },
   {
     "name": "坂部医院",
+    "nameEn": "Sakabe Clinic",
     "jpName": "医療法人 坂部医院",
     "region": "京都",
     "address": "京都府京都市中京区御幸町通二条下る山本町435",
     "addressShort": "京都府 京都市中京区 御幸町",
     "phone": "075-231-1624",
-    "langs": ["中文", "英文"],
+    "langs": [
+      "中文",
+      "英文"
+    ],
     "langDetail": "英文・中文対応（京都市国際交流協会公开列表）",
-    "depts": ["内科", "消化器科"],
+    "depts": [
+      "内科",
+      "消化器科"
+    ],
     "hours": "上午 9:30–12:30 / 晚间 18:30–20:30",
     "hoursShort": "9:30–12:30 / 18:30–20:30",
     "warning": "上午就诊需提前预约",
@@ -838,14 +991,25 @@
   },
   {
     "name": "向岛病院",
+    "nameEn": "Mukaijima Hospital",
     "jpName": "医療法人健幸会 むかいじま病院",
     "region": "京都",
     "address": "京都府京都市伏見区向島四谷池5番地",
     "addressShort": "京都府 京都市伏見区 向島",
     "phone": "075-612-3101",
-    "langs": ["中文"],
+    "langs": [
+      "中文"
+    ],
     "langDetail": "中文対応（京都市国際交流協会公开列表）",
-    "depts": ["内科", "外科", "整形外科", "眼科", "皮肤科", "放射线科", "理学疗法科"],
+    "depts": [
+      "内科",
+      "外科",
+      "整形外科",
+      "眼科",
+      "皮肤科",
+      "放射线科",
+      "理学疗法科"
+    ],
     "hours": "周一至周六 9:00–17:00",
     "hoursShort": "周一至周六 9:00–17:00",
     "closed": "周日・节假日",
@@ -855,14 +1019,23 @@
   },
   {
     "name": "洛和会音羽记念医院",
+    "nameEn": "Rakuwakai Otowa Memorial Hospital",
     "jpName": "洛和会 音羽記念病院",
     "region": "京都",
     "address": "京都府京都市山科区小山镇守町29-1",
     "addressShort": "京都府 京都市山科区 小山",
     "phone": "075-594-8010",
-    "langs": ["中文", "英文"],
+    "langs": [
+      "中文",
+      "英文"
+    ],
     "langDetail": "英文・中文対応（京都市国際交流協会公开列表）",
-    "depts": ["内科", "外科", "肾脏内科", "人工透析内科"],
+    "depts": [
+      "内科",
+      "外科",
+      "肾脏内科",
+      "人工透析内科"
+    ],
     "hours": "周一至周六 8:30–12:00 / 13:30–17:00",
     "hoursShort": "周一至周六 8:30–17:00",
     "closed": "周日・节假日",

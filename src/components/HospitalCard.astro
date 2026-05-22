@@ -1,6 +1,6 @@
 ---
 import { hospitalSlug, type Hospital } from '../lib/hospitals.js';
-import { localizePath, detectLocale, deptLabel, type Locale } from '../lib/i18n';
+import { localizePath, detectLocale, deptLabel, hospitalName, type Locale } from '../lib/i18n';
 
 interface Props {
   hospital: Hospital;
@@ -41,9 +41,10 @@ const deptsDataAttr = (h.depts || []).flatMap((d) => {
   return en === d ? [d] : [d, en];
 }).join(' ');
 
+const displayName = hospitalName(h, locale);
 const labels = locale === 'zh'
-  ? { call: '电话', map: '地图', callAria: `拨打 ${h.name}`, mapAria: `在地图查看 ${h.name}` }
-  : { call: 'Call', map: 'Map', callAria: `Call ${h.name}`, mapAria: `View ${h.name} on map` };
+  ? { call: '电话', map: '地图', callAria: `拨打 ${displayName}`, mapAria: `在地图查看 ${displayName}` }
+  : { call: 'Call', map: 'Map', callAria: `Call ${displayName}`, mapAria: `View ${displayName} on map` };
 ---
 <article
   class="hospital-card fade-in"
@@ -62,7 +63,7 @@ const labels = locale === 'zh'
     )}
     <div class="card-row1">
       <div class="card-title">
-        <div class="hospital-name">{h.name}</div>
+        <div class="hospital-name">{displayName}</div>
         <div class="hospital-name-ja">{h.jpName || ''}</div>
       </div>
       <div class="badges">

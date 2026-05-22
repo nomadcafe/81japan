@@ -26,6 +26,7 @@ const hospitals = defineCollection({
   }),
   schema: z.object({
     name: z.string(),
+    nameEn: z.string().optional(),
     jpName: z.string().optional(),
     region: z.string().optional(),
     address: z.string().optional(),
