@@ -1,10 +1,20 @@
 ---
+import { localizePath, detectLocale, type Locale } from '../lib/i18n';
+
+interface Props {
+  locale?: Locale;
+}
+const { locale: localeProp } = Astro.props;
+const locale: Locale = localeProp ?? detectLocale(Astro.url.pathname);
 const year = new Date().getFullYear();
+const submitHref = localizePath('/submit', locale);
 ---
 <footer>
   <div>
-    <span class="zh-only">© {year} 81日本 · 由81Japan维护</span>
-    <span class="en-only">© {year} 81Japan · 81Japan</span>
+    {locale === 'zh'
+      ? <>© {year} 81日本 · 由 81Japan 维护</>
+      : <>© {year} 81Japan · maintained by 81Japan</>
+    }
   </div>
-  <a href="#">联系我们</a>
+  <a href={submitHref}>{locale === 'zh' ? '联系我' : 'Contact'}</a>
 </footer>

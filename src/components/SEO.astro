@@ -1,4 +1,6 @@
 ---
+import { alternatePath, OG_LOCALE, type Locale } from '../lib/i18n';
+
 interface Props {
   title: string;
   description: string;
@@ -6,7 +8,7 @@ interface Props {
   image?: string;
   imageAlt?: string;
   noindex?: boolean;
-  locale?: string;
+  locale?: Locale;
   siteName?: string;
   twitterCard?: 'summary' | 'summary_large_image';
 }
@@ -18,24 +20,33 @@ const {
   image,
   imageAlt = '81日本 - 在日中文医院・诊所查询指南',
   noindex = false,
-  locale = 'zh_CN',
+  locale = 'zh',
   siteName = '81日本',
   twitterCard = 'summary_large_image',
 } = Astro.props;
 
 const canonical = new URL(path, Astro.site).href;
+const altPath = alternatePath(path, locale);
+const altUrl = new URL(altPath, Astro.site).href;
 const ogImage = image ? new URL(image, Astro.site).href : null;
+const ogLocale = OG_LOCALE[locale];
 ---
 <title>{title}</title>
 <meta name="description" content={description} />
 <meta name="robots" content={noindex ? 'noindex, follow' : 'index, follow'} />
 <link rel="canonical" href={canonical} />
 
+<link rel="alternate" hreflang="zh-Hans" href={locale === 'zh' ? canonical : altUrl} />
+<link rel="alternate" hreflang="en" href={locale === 'en' ? canonical : altUrl} />
+<link rel="alternate" hreflang="x-default" href={locale === 'zh' ? canonical : altUrl} />
+
 <meta property="og:type" content="website" />
 <meta property="og:url" content={canonical} />
 <meta property="og:title" content={title} />
 <meta property="og:description" content={description} />
-<meta property="og:locale" content={locale} />
+<meta property="og:locale" content={ogLocale} />
+{locale === 'zh' && <meta property="og:locale:alternate" content={OG_LOCALE.en} />}
+{locale === 'en' && <meta property="og:locale:alternate" content={OG_LOCALE.zh} />}
 <meta property="og:site_name" content={siteName} />
 {ogImage && (
   <>

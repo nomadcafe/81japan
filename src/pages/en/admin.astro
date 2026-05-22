@@ -1,0 +1,73 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Nav from '../../components/Nav.astro';
+import Footer from '../../components/Footer.astro';
+import admin from '../../data/admin.json';
+import '../../styles/page.css';
+
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@graph': [
+    {
+      '@type': 'ItemList',
+      'name': 'Administration in Japan',
+      'itemListElement': admin.map((r, i) => ({
+        '@type': 'ListItem',
+        'position': i + 1,
+        'name': r.titleEn,
+      })),
+    },
+    {
+      '@type': 'BreadcrumbList',
+      'itemListElement': [
+        { '@type': 'ListItem', 'position': 1, 'name': 'Home', 'item': 'https://www.81japan.com/en' },
+        { '@type': 'ListItem', 'position': 2, 'name': 'Administration' },
+      ],
+    },
+  ],
+};
+---
+<Layout
+  title="Administration · Essential Paperwork in Japan | 81Japan"
+  description="The essential paperwork to handle after moving to Japan: resident registration, residence card, My Number, health insurance, bank account — in the order you'll do them."
+  path="/en/admin"
+  locale="en"
+>
+  <Fragment slot="head">
+    <meta name="keywords" content="Japan paperwork,juminhyo,residence card,my number Japan,national health insurance,Japan bank account,living in Japan" />
+    <script type="application/ld+json" set:html={JSON.stringify(jsonLd)} />
+  </Fragment>
+
+  <Nav active="admin" locale="en" />
+
+  <section class="page-hero">
+    <div class="eyebrow">Administration</div>
+    <h1>Paperwork to <em>knock out first</em></h1>
+    <p>In the order you'll actually do them: register address, residence card, My Number, health insurance, bank account.</p>
+  </section>
+
+  <main class="page-main">
+    <div class="rules-grid">
+      {admin.map((r) => (
+        <article class="rule-card" id={r.id}>
+          <div class="rule-card-head">
+            <div class="rule-icon" aria-hidden="true">{r.icon}</div>
+            <div>
+              <div class="rule-title">{r.titleEn}</div>
+              <div class="rule-title-en">{r.titleZh}</div>
+            </div>
+          </div>
+          <p class="rule-summary">{r.summaryEn}</p>
+          <ul class="rule-points">
+            {r.pointsEn.map((p) => <li>{p}</li>)}
+          </ul>
+          {r.tipEn && <div class="rule-tip">💡 {r.tipEn}</div>}
+        </article>
+      ))}
+    </div>
+  </main>
+
+  <Footer locale="en" />
+
+  <script is:inline src="/page.js" defer></script>
+</Layout>

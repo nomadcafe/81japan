@@ -1,0 +1,73 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Nav from '../../components/Nav.astro';
+import Footer from '../../components/Footer.astro';
+import '../../styles/page.css';
+
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@graph': [
+    {
+      '@type': 'AboutPage',
+      'name': 'About 81Japan',
+      'url': 'https://www.81japan.com/en/about',
+      'description': "81Japan: a personal collection of info I've put together after a few years living in Japan.",
+    },
+    {
+      '@type': 'BreadcrumbList',
+      'itemListElement': [
+        { '@type': 'ListItem', 'position': 1, 'name': 'Home', 'item': 'https://www.81japan.com/en' },
+        { '@type': 'ListItem', 'position': 2, 'name': 'About' },
+      ],
+    },
+  ],
+};
+---
+<Layout
+  title="About · 81Japan | Chinese Living Guide in Japan"
+  description="81Japan is a personal collection of info I've gathered after a few years in Japan — covering healthcare, paperwork, taxes, and daily life. Corrections welcome."
+  path="/en/about"
+  locale="en"
+>
+  <Fragment slot="head">
+    <script type="application/ld+json" set:html={JSON.stringify(jsonLd)} />
+  </Fragment>
+
+  <Nav active="about" locale="en" />
+
+  <section class="page-hero">
+    <div class="eyebrow">About 81Japan</div>
+    <h1>Making life in Japan <em>a little easier</em></h1>
+    <p>81Japan is a personal collection of info I've put together after a few years living in Japan. Some of it may not be accurate — corrections welcome.</p>
+  </section>
+
+  <main class="page-main">
+    <div class="about-body">
+      <h2>What's here</h2>
+      <ul>
+        <li><a href="/en/">Hospitals & Clinics</a> — places across Japan where you can be seen in Chinese</li>
+        <li><a href="/en/rules">Living in Japan</a> — the everyday etiquette newcomers most often miss</li>
+        <li><a href="/en/admin">Administration</a> — residence registration, residence card, health insurance, banking</li>
+        <li><a href="/en/tax">Taxes</a> — income tax, resident tax, final filing, Furusato Nozei</li>
+        <li>Life services — in progress; contributions welcome</li>
+      </ul>
+
+      <h2>Where the info comes from</h2>
+      <p>I checked each entry against the hospital site or official sources. Cards show last-updated dates. Things change — call ahead before visiting. Wrong? <a href="/en/submit">Let me know</a>.</p>
+
+      <h2>Reach me</h2>
+      <p>Hospitals to add, info to correct, or just feedback — <a href="/en/submit">submit here</a>.</p>
+
+      <div class="about-cta">
+        <div class="cta-text">
+          Know a hospital I missed, or want to add something?<br><strong>Submissions reach me directly.</strong>
+        </div>
+        <a href="/en/submit">Contribute →</a>
+      </div>
+    </div>
+  </main>
+
+  <Footer locale="en" />
+
+  <script is:inline src="/page.js" defer></script>
+</Layout>

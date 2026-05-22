@@ -1,10 +1,10 @@
 ---
-import Layout from '../../layouts/Layout.astro';
-import Nav from '../../components/Nav.astro';
-import Footer from '../../components/Footer.astro';
-import { loadHospitals, hospitalSlug, type Hospital } from '../../lib/hospitals.js';
-import '../../styles/page.css';
-import '../../styles/hospital.css';
+import Layout from '../../../layouts/Layout.astro';
+import Nav from '../../../components/Nav.astro';
+import Footer from '../../../components/Footer.astro';
+import { loadHospitals, hospitalSlug, type Hospital } from '../../../lib/hospitals.js';
+import '../../../styles/page.css';
+import '../../../styles/hospital.css';
 
 export async function getStaticPaths() {
   const data = await loadHospitals();
@@ -16,7 +16,7 @@ export async function getStaticPaths() {
 
 const { hospital: h } = Astro.props as { hospital: Hospital };
 const slug = hospitalSlug(h);
-const url = `https://www.81japan.com/hospital/${encodeURIComponent(slug)}`;
+const url = `https://www.81japan.com/en/hospital/${encodeURIComponent(slug)}`;
 
 const telDigits = (h.phone || '').replace(/[^\d+]/g, '');
 const hasPhone = telDigits.length >= 9;
@@ -28,7 +28,7 @@ const mapHref = mapAddr
 
 const updatedFmt = (() => {
   const m = (h.updated || '').match(/^(\d{4})-(\d{1,2})$/);
-  return m ? `${m[1]}年${parseInt(m[2], 10)}月` : (h.updated || '');
+  return m ? `${m[1]}-${m[2].padStart(2, '0')}` : (h.updated || '');
 })();
 
 const langSet = new Set(h.langs || []);
@@ -38,10 +38,22 @@ const isEN = langSet.has('英文');
 const langTokens = ((h.langDetail || (h.langs || []).join(' ')).match(/中文|英文|粤语|台语|韩文|俄文/g) || [])
   .filter((v: string, i: number, a: string[]) => a.indexOf(v) === i);
 
-const description = `${h.name}（${h.jpName || ''}）位于${h.region || '日本'}${h.addressShort ? '・' + h.addressShort : ''}。${
-  isCN ? '提供中文医疗服务，' : ''
-}${(h.depts && h.depts.length) ? '科室包括' + h.depts.slice(0, 4).join('、') + '等。' : ''}${
-  h.phone ? '电话：' + h.phone + '。' : ''
+const regionEnMap: Record<string, string> = {
+  '东京': 'Tokyo',
+  '横浜': 'Yokohama',
+  '大阪': 'Osaka',
+  '京都': 'Kyoto',
+  '神户': 'Kobe',
+  '福冈': 'Fukuoka',
+  '札幌': 'Hokkaido',
+  '名古屋': 'Nagoya',
+};
+const regionEn = regionEnMap[h.region || ''] || h.region || 'Japan';
+
+const description = `${h.name}${h.jpName ? ` (${h.jpName})` : ''} in ${regionEn}${h.addressShort ? ', ' + h.addressShort : ''}. ${
+  isCN ? 'Chinese-speaking staff available. ' : ''
+}${(h.depts && h.depts.length) ? 'Departments include ' + h.depts.slice(0, 4).join(', ') + '. ' : ''}${
+  h.phone ? 'Phone: ' + h.phone + '.' : ''
 }`.slice(0, 160);
 
 const jsonLd = {
@@ -58,7 +70,7 @@ const jsonLd = {
         'address': {
           '@type': 'PostalAddress',
           'streetAddress': h.address || h.addressShort,
-          'addressRegion': h.region,
+          'addressRegion': regionEn,
           'addressCountry': 'JP',
         },
       } : {}),
@@ -73,7 +85,7 @@ const jsonLd = {
     {
       '@type': 'BreadcrumbList',
       'itemListElement': [
-        { '@type': 'ListItem', 'position': 1, 'name': '医院诊所', 'item': 'https://www.81japan.com/' },
+        { '@type': 'ListItem', 'position': 1, 'name': 'Hospitals', 'item': 'https://www.81japan.com/en' },
         { '@type': 'ListItem', 'position': 2, 'name': h.name },
       ],
     },
@@ -81,21 +93,21 @@ const jsonLd = {
 };
 ---
 <Layout
-  title={`${h.name}${h.jpName && h.jpName !== h.name ? '（' + h.jpName + '）' : ''} · ${h.region || '日本'}中文医院 | 81日本`}
+  title={`${h.name}${h.jpName && h.jpName !== h.name ? ' (' + h.jpName + ')' : ''} · Chinese-Speaking Hospital in ${regionEn} | 81Japan`}
   description={description}
-  path={`/hospital/${slug}`}
-  locale="zh"
+  path={`/en/hospital/${slug}`}
+  locale="en"
 >
   <Fragment slot="head">
     <script type="application/ld+json" set:html={JSON.stringify(jsonLd)} />
   </Fragment>
 
-  <Nav active="hospitals" locale="zh" />
+  <Nav active="hospitals" locale="en" />
 
-  <nav class="breadcrumb" aria-label="面包屑">
-    <a href="/">医院诊所</a>
+  <nav class="breadcrumb" aria-label="Breadcrumb">
+    <a href="/en">Hospitals</a>
     <span class="bc-sep">/</span>
-    <span class="bc-current">{h.region || ''}</span>
+    <span class="bc-current">{regionEn}</span>
     <span class="bc-sep">/</span>
     <span class="bc-current">{h.name}</span>
   </nav>
@@ -103,10 +115,10 @@ const jsonLd = {
   <article class="h-detail">
     <header class="h-header">
       <div class="h-eyebrow">
-        {h.region && <span class="h-region">{h.region}</span>}
+        {h.region && <span class="h-region">{regionEn}</span>}
         <div class="h-badges">
-          {isCN && <span class="badge badge-cn">中文</span>}
-          {isEN && <span class="badge badge-en">英文</span>}
+          {isCN && <span class="badge badge-cn">CN</span>}
+          {isEN && <span class="badge badge-en">EN</span>}
           {(h.extraBadges || []).map((b) => <span class="badge badge-new">{b.label}</span>)}
         </div>
       </div>
@@ -117,42 +129,42 @@ const jsonLd = {
         {hasPhone && (
           <a class="h-cta-btn h-cta-primary" href={`tel:${telDigits}`}>
             <span aria-hidden="true">📞</span>
-            <span>拨打电话</span>
+            <span>Call</span>
           </a>
         )}
         {mapHref && (
           <a class="h-cta-btn" href={mapHref} target="_blank" rel="noopener noreferrer">
             <span aria-hidden="true">🗺</span>
-            <span>在 Google 地图查看</span>
+            <span>View on Google Maps</span>
           </a>
         )}
       </div>
     </header>
 
     <section class="h-section">
-      <h2 class="h-section-title">基本信息</h2>
+      <h2 class="h-section-title">Basics</h2>
       <dl class="h-info-grid">
         {(h.address || h.addressShort) && (
           <div class="h-info-item">
-            <dt>地址</dt>
+            <dt>Address</dt>
             <dd>{h.address || h.addressShort}</dd>
           </div>
         )}
         {h.phone && (
           <div class="h-info-item">
-            <dt>电话</dt>
+            <dt>Phone</dt>
             <dd>{hasPhone ? <a href={`tel:${telDigits}`}>{h.phone}</a> : h.phone}</dd>
           </div>
         )}
         {(h.hours || h.hoursShort) && (
           <div class="h-info-item">
-            <dt>营业时间</dt>
+            <dt>Hours</dt>
             <dd>{h.hours || h.hoursShort}</dd>
           </div>
         )}
         {h.closed && (
           <div class="h-info-item">
-            <dt>休诊日</dt>
+            <dt>Closed</dt>
             <dd>{h.closed}</dd>
           </div>
         )}
@@ -161,14 +173,14 @@ const jsonLd = {
 
     {langTokens.length > 0 && (
       <section class="h-section">
-        <h2 class="h-section-title">服务语言</h2>
+        <h2 class="h-section-title">Languages</h2>
         {h.langDetail && <p class="h-lang-detail">{h.langDetail}</p>}
       </section>
     )}
 
     {h.depts && h.depts.length > 0 && (
       <section class="h-section">
-        <h2 class="h-section-title">提供科室</h2>
+        <h2 class="h-section-title">Departments</h2>
         <div class="h-dept-list">
           {h.depts.map((d) => <span class="dept-tag">{d}</span>)}
         </div>
@@ -177,7 +189,7 @@ const jsonLd = {
 
     {h.note && (
       <section class="h-section">
-        <h2 class="h-section-title">注意事项</h2>
+        <h2 class="h-section-title">Notes</h2>
         <p class="h-note">{h.note}</p>
       </section>
     )}
@@ -189,12 +201,12 @@ const jsonLd = {
     )}
 
     <footer class="h-meta">
-      <span>最近更新：{updatedFmt}</span>
-      <a class="h-back" href="/">← 返回列表</a>
+      <span>Last updated: {updatedFmt}</span>
+      <a class="h-back" href="/en">← Back to list</a>
     </footer>
   </article>
 
-  <Footer locale="zh" />
+  <Footer locale="en" />
 
   <script is:inline src="/page.js" defer></script>
 </Layout>

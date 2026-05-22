@@ -31,23 +31,19 @@ const jsonLd = {
   title="税务 · 在日工资族税务速查 | 81日本"
   description="在日工作必懂的税务：所得税源泉徴収、住民税、確定申告、ふるさと納税、医疗费扣除——日常工资族角度整理。"
   path="/tax"
+  locale="zh"
 >
   <Fragment slot="head">
     <meta name="keywords" content="日本税务,確定申告,住民税,ふるさと納税,医疗费扣除,e-Tax,日本所得税,在日工资税" />
     <script type="application/ld+json" set:html={JSON.stringify(jsonLd)} />
   </Fragment>
 
-  <Nav active="tax" />
+  <Nav active="tax" locale="zh" />
 
   <section class="page-hero">
-    <div class="eyebrow">
-      <span class="zh-only">税务</span>
-      <span class="en-only">Taxes</span>
-    </div>
-    <h1 class="zh-only">在日本工作，<em>税该怎么办</em></h1>
-    <h1 class="en-only">Taxes <em>when working in Japan</em></h1>
-    <p class="zh-only">工资族基本不用自己报，但住民税、ふるさと納税、医疗费扣除这些值得搞懂。</p>
-    <p class="en-only">Company employees usually don't file themselves — but resident tax, Furusato Nozei, and medical deductions are worth knowing.</p>
+    <div class="eyebrow">税务</div>
+    <h1>在日本工作，<em>税该怎么办</em></h1>
+    <p>工资族基本不用自己报，但住民税、ふるさと納税、医疗费扣除这些值得搞懂。</p>
   </section>
 
   <main class="page-main">
@@ -61,22 +57,17 @@ const jsonLd = {
               <div class="rule-title-en">{r.titleEn}</div>
             </div>
           </div>
-          <p class="rule-summary zh-only">{r.summaryZh}</p>
-          <p class="rule-summary en-only">{r.summaryEn}</p>
-          <ul class="rule-points zh-only">
+          <p class="rule-summary">{r.summaryZh}</p>
+          <ul class="rule-points">
             {r.pointsZh.map((p) => <li>{p}</li>)}
           </ul>
-          <ul class="rule-points en-only">
-            {r.pointsEn.map((p) => <li>{p}</li>)}
-          </ul>
-          {r.tipZh && <div class="rule-tip zh-only">💡 {r.tipZh}</div>}
-          {r.tipEn && <div class="rule-tip en-only">💡 {r.tipEn}</div>}
+          {r.tipZh && <div class="rule-tip">💡 {r.tipZh}</div>}
         </article>
       ))}
     </div>
   </main>
 
-  <Footer />
+  <Footer locale="zh" />
 
   <script is:inline src="/page.js" defer></script>
 </Layout>

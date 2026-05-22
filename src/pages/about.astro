@@ -27,74 +27,47 @@ const jsonLd = {
   title="关于 · 81日本 | 在日中文生活信息"
   description="81日本是我在日本生活几年自己整理的医疗、行政、生活信息。可能不一定都对，欢迎指正。"
   path="/about"
+  locale="zh"
 >
   <Fragment slot="head">
     <script type="application/ld+json" set:html={JSON.stringify(jsonLd)} />
   </Fragment>
 
-  <Nav active="about" />
+  <Nav active="about" locale="zh" />
 
   <section class="page-hero">
-    <div class="eyebrow">
-      <span class="zh-only">关于 81Japan</span>
-      <span class="en-only">About</span>
-    </div>
-    <h1 class="zh-only">和 81Japan 一起，在日生活 <em>少走点弯路</em></h1>
-    <h1 class="en-only">Making life in Japan <em>a little easier</em></h1>
-    <p class="zh-only">81日本 是我在日本生活几年，自己整理的一些关于日本的信息资料。可能不一定都对，欢迎指正。</p>
-    <p class="en-only">81Japan is a personal collection of info I've put together after a few years living in Japan. Some of it may not be accurate — corrections welcome.</p>
+    <div class="eyebrow">关于 81Japan</div>
+    <h1>和 81Japan 一起，在日生活 <em>少走点弯路</em></h1>
+    <p>81日本 是我在日本生活几年，自己整理的一些关于日本的信息资料。可能不一定都对，欢迎指正。</p>
   </section>
 
   <main class="page-main">
     <div class="about-body">
+      <h2>站上有什么</h2>
+      <ul>
+        <li><a href="/">医院诊所</a>——日本各地能用中文看病的医院和诊所</li>
+        <li><a href="/rules">日本ルール</a>——刚到日本最容易踩坑的生活规则</li>
+        <li><a href="/admin">行政手续</a>——住民票、在留卡、健保、银行开户等</li>
+        <li><a href="/tax">税务</a>——所得税、住民税、確定申告、ふるさと納税</li>
+        <li>生活服务——在做，欢迎一起补</li>
+      </ul>
 
-      <div class="zh-only">
-        <h2>站上有什么</h2>
-        <ul>
-          <li><a href="/">医院诊所</a>——日本各地能用中文看病的医院和诊所</li>
-          <li><a href="/rules">日本ルール</a>——刚到日本最容易踩坑的生活规则</li>
-          <li><a href="/admin">行政手续</a>——住民票、在留卡、健保、银行开户等</li>
-          <li>生活服务——在做，欢迎一起补</li>
-        </ul>
+      <h2>信息怎么来的</h2>
+      <p>信息我都查过医院官网和公开资料，卡片上有更新日期。情况会变，看病前最好先打个电话。写错了<a href="/submit">告诉我</a>。</p>
 
-        <h2>信息怎么来的</h2>
-        <p>信息我都查过医院官网和公开资料，卡片上有更新日期。情况会变，看病前最好先打个电话。写错了<a href="/submit">告诉我</a>。</p>
-
-        <h2>联系我</h2>
-        <p>有医院要补、信息要纠、单纯吐槽——<a href="/submit">欢迎联系</a>。</p>
-      </div>
-
-      <div class="en-only">
-        <h2>What's here</h2>
-        <ul>
-          <li><a href="/">Hospitals & Clinics</a> — places across Japan where you can be seen in Chinese</li>
-          <li><a href="/rules">Living in Japan</a> — the everyday rules newcomers most often trip on</li>
-          <li><a href="/admin">Administration</a> — residence registration, residence card, health insurance, banking</li>
-          <li>Life services — in progress; contributions welcome</li>
-        </ul>
-
-        <h2>Where the info comes from</h2>
-        <p>I checked each entry against the hospital site or official sources. Cards show last-updated dates. Things change — call ahead before visiting. Wrong? <a href="/submit">Let me know</a>.</p>
-
-        <h2>Reach me</h2>
-        <p>Hospitals to add, info to correct, or just feedback — drop it in the <a href="/submit">submission page</a>. It lands in my Telegram and I'll see it.</p>
-      </div>
+      <h2>联系我</h2>
+      <p>有医院要补、信息要纠、单纯吐槽——<a href="/submit">欢迎联系</a>。</p>
 
       <div class="about-cta">
         <div class="cta-text">
-          <span class="zh-only">发现漏掉的医院，或有想补充的内容？<br><strong>投稿直达我。</strong></span>
-          <span class="en-only">Know a hospital I missed, or want to add something?<br><strong>Submissions reach me directly.</strong></span>
+          发现漏掉的医院，或有想补充的内容？<br><strong>投稿直达我。</strong>
         </div>
-        <a href="/submit">
-          <span class="zh-only">前往投稿 →</span>
-          <span class="en-only">Contribute →</span>
-        </a>
+        <a href="/submit">前往投稿 →</a>
       </div>
-
     </div>
   </main>
 
-  <Footer />
+  <Footer locale="zh" />
 
   <script is:inline src="/page.js" defer></script>
 </Layout>

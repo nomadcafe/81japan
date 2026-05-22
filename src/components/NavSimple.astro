@@ -1,23 +1,34 @@
 ---
+import { alternatePath, localizePath, detectLocale, type Locale } from '../lib/i18n';
+
 interface Props {
   backLabelZh?: string;
   backLabelEn?: string;
   showLang?: boolean;
+  locale?: Locale;
 }
-const { backLabelZh = '返回首页', backLabelEn = 'Back', showLang = true } = Astro.props;
+const {
+  backLabelZh = '返回首页',
+  backLabelEn = 'Back',
+  showLang = true,
+  locale: localeProp,
+} = Astro.props;
+
+const locale: Locale = localeProp ?? detectLocale(Astro.url.pathname);
+const homeHref = localizePath('/', locale);
+const altUrl = alternatePath(Astro.url.pathname, locale);
 ---
 <nav>
-  <a class="logo" href="/"><span class="logo-dot"></span>81日本</a>
+  <a class="logo" href={homeHref}><span class="logo-dot"></span>81日本</a>
   {showLang && (
     <div class="lang-switcher">
-      <button class="lang-opt active" onclick="switchLang('zh', this)">中文</button>
+      <a class={`lang-opt${locale === 'zh' ? ' active' : ''}`} href={locale === 'zh' ? Astro.url.pathname : altUrl}>中文</a>
       <span class="lang-sep">/</span>
-      <button class="lang-opt" onclick="switchLang('en', this)">EN</button>
+      <a class={`lang-opt${locale === 'en' ? ' active' : ''}`} href={locale === 'en' ? Astro.url.pathname : altUrl}>EN</a>
     </div>
   )}
-  <a href="/" class="back-btn">
+  <a href={homeHref} class="back-btn">
     <span>←</span>
-    <span class="zh-only">{backLabelZh}</span>
-    <span class="en-only">{backLabelEn}</span>
+    <span>{locale === 'zh' ? backLabelZh : backLabelEn}</span>
   </a>
 </nav>
