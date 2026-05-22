@@ -5,17 +5,15 @@ import Footer from '../components/Footer.astro';
 import rent from '../data/rent.json';
 import '../styles/page.css';
 
+const r = rent[0];
+
 const jsonLd = {
   '@context': 'https://schema.org',
   '@graph': [
     {
-      '@type': 'ItemList',
-      'name': '在日租房指南',
-      'itemListElement': rent.map((r, i) => ({
-        '@type': 'ListItem',
-        'position': i + 1,
-        'name': r.titleZh,
-      })),
+      '@type': 'Article',
+      'name': r.titleZh,
+      'description': r.summaryZh,
     },
     {
       '@type': 'BreadcrumbList',
@@ -43,30 +41,18 @@ const jsonLd = {
   <section class="page-hero">
     <div class="eyebrow">租房</div>
     <h1>在日本找房子，<em>先搞懂规则</em></h1>
-    <p>初期费用、保証会社、入居审查——日本租房的几个绕不开的概念。</p>
+    <p>{r.summaryZh}</p>
   </section>
 
   <main class="page-main">
-    <div class="rules-grid">
-      {rent.map((r) => (
-        <article class="rule-card" id={r.id}>
-          <div class="rule-card-head">
-            <div class="rule-icon" aria-hidden="true">{r.icon}</div>
-            <div>
-              <div class="rule-title">{r.titleZh}</div>
-              <div class="rule-title-en">{r.titleEn}</div>
-            </div>
-          </div>
-          <p class="rule-summary">{r.summaryZh}</p>
-          <ul class="rule-points">
-            {r.pointsZh.map((p) => {
-              const m = p.match(/^\[tip\]\s*(.+)$/);
-              return m ? <li class="tip" set:html={m[1]} /> : <li set:html={p} />;
-            })}
-          </ul>
-          {r.tipZh && <div class="rule-tip">💡 {r.tipZh}</div>}
-        </article>
-      ))}
+    <div class="about-body">
+      <ul class="rule-points">
+        {r.pointsZh.map((p) => {
+          const m = p.match(/^\[tip\]\s*(.+)$/);
+          return m ? <li class="tip" set:html={m[1]} /> : <li set:html={p} />;
+        })}
+      </ul>
+      {r.tipZh && <div class="rule-tip">💡 {r.tipZh}</div>}
     </div>
   </main>
 
