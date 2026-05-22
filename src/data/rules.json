@@ -174,5 +174,27 @@
     ],
     "tipZh": "建议多拿几份，新工作、房租、银行都可能要原件。",
     "tipEn": "Get a few copies — new employers, landlords, and banks often need originals."
+  },
+  {
+    "id": "tabearuki",
+    "icon": "🍡",
+    "titleZh": "食べ歩き・边走边吃",
+    "titleEn": "Eating While Walking",
+    "summaryZh": "边走边吃在日本普遍被视为失礼。尤其在车站、便利店门口和住宅街会很显眼。",
+    "summaryEn": "Walking while eating is widely seen as impolite. It stands out near stations, convenience stores, and residential streets.",
+    "pointsZh": [
+      "便利店外通常有立食台或长椅，买完站着或坐着吃完再走",
+      "电车站内・月台・车厢里都不要吃（新干线・特急除外）",
+      "祭典・观光街即使是「食べ歩き」摊位，也建议在摊位附近吃完",
+      "瓶装饮料边走边喝相对宽松，但人多的商店街也不推荐"
+    ],
+    "pointsEn": [
+      "Most konbini have a standing counter or bench outside — finish there",
+      "Avoid eating in stations, on platforms, or in trains (shinkansen/express excepted)",
+      "Even at festival or tourist street stalls, eat near the stand before moving on",
+      "Bottled drinks while walking are more tolerated, but still avoid on crowded streets"
+    ],
+    "tipZh": "「食べ歩き」一词在观光语境下也可指「巡店式品尝」（不是所有场景都=失礼），但单纯「边走边咬」的失礼感全国共通。",
+    "tipEn": "\"Tabearuki\" can also mean \"food crawl\" in tourist areas — context matters, but eating while literally walking is universally seen as rude."
   }
 ]
