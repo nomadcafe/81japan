@@ -92,22 +92,24 @@
     "icon": "🏦",
     "titleZh": "銀行口座・银行开户",
     "titleEn": "Opening a Bank Account",
-    "summaryZh": "初到日本最容易开户的是「ゆうちょ銀行」（邮政银行）。主要都市银行（三菱UFJ、みずほ等）通常要求在留 6 个月以上。",
-    "summaryEn": "Japan Post Bank (Yucho) is easiest for newcomers. Major city banks usually require 6+ months of residence.",
+    "summaryZh": "初到日本最容易开户的是「ゆうちょ銀行」（邮政银行），但开出来是非居民账户，会有汇款・转账限制。主要都市银行（三菱UFJ、みずほ等）通常要求在留 6 个月以上。",
+    "summaryEn": "Japan Post Bank (Yucho) is easiest for newcomers — but it opens as a non-resident account with restrictions on transfers. Major city banks usually require 6+ months of residence.",
     "pointsZh": [
       "必带：在留卡、住民票、印鉴（或签名）",
       "电话号码通常是必填，建议先办手机",
       "ゆうちょ 当天可开，都市银行需 1–2 周",
+      "找到 アルバイト 后可申请把 ゆうちょ 从非居民账户改为居民账户（少有人知）",
       "网银 App 多数支持中文或英文"
     ],
     "pointsEn": [
       "Bring: residence card, juminhyo, hanko (or signature)",
-      "A Japanese phone number is usually required — get SIM first",
+      "A Japanese phone number is usually required — get a SIM first",
       "Yucho opens same day; city banks take 1–2 weeks",
-      "Most mobile banking apps offer English/Chinese"
+      "Once you land a part-time job (arubaito), you can apply to convert your Yucho account from non-resident to resident — little-known trick",
+      "Most mobile banking apps offer English / Chinese"
     ],
-    "tipZh": "Revolut、Wise 等国际钱包可作为过渡使用。",
-    "tipEn": "Revolut or Wise can bridge the gap before a local account opens."
+    "tipZh": "不想等的话，Wise / Revolut 等网络银行要求少、注册快，也支持海外送金，过渡或长期都行。",
+    "tipEn": "Don't want to wait? Online options like Wise / Revolut have fewer requirements, sign up fast, and support international transfers — good as a bridge or long-term."
   },
   {
     "id": "todokede",
