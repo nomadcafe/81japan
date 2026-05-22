@@ -68,3 +68,7 @@ export function deptLabel(dept: string, locale: Locale): string {
   if (locale === 'zh') return dept;
   return DEPT_EN[dept] || dept;
 }
+
+export function hospitalName(h: { name: string; nameEn?: string }, locale: Locale): string {
+  return locale === 'en' && h.nameEn ? h.nameEn : h.name;
+}

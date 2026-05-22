@@ -3,7 +3,7 @@ import Layout from '../../../layouts/Layout.astro';
 import Nav from '../../../components/Nav.astro';
 import Footer from '../../../components/Footer.astro';
 import { loadHospitals, hospitalSlug, type Hospital } from '../../../lib/hospitals.js';
-import { deptLabel } from '../../../lib/i18n';
+import { deptLabel, hospitalName } from '../../../lib/i18n';
 import '../../../styles/page.css';
 import '../../../styles/hospital.css';
 
@@ -18,6 +18,7 @@ export async function getStaticPaths() {
 const { hospital: h } = Astro.props as { hospital: Hospital };
 const slug = hospitalSlug(h);
 const url = `https://www.81japan.com/en/hospital/${encodeURIComponent(slug)}`;
+const displayName = hospitalName(h, 'en');
 
 const telDigits = (h.phone || '').replace(/[^\d+]/g, '');
 const hasPhone = telDigits.length >= 9;
@@ -51,9 +52,9 @@ const regionEnMap: Record<string, string> = {
 };
 const regionEn = regionEnMap[h.region || ''] || h.region || 'Japan';
 
-const description = `${h.name}${h.jpName ? ` (${h.jpName})` : ''} in ${regionEn}${h.addressShort ? ', ' + h.addressShort : ''}. ${
+const description = `${displayName}${h.jpName ? ` (${h.jpName})` : ''} in ${regionEn}${h.addressShort ? ', ' + h.addressShort : ''}. ${
   isCN ? 'Chinese-speaking staff available. ' : ''
-}${(h.depts && h.depts.length) ? 'Departments include ' + h.depts.slice(0, 4).join(', ') + '. ' : ''}${
+}${(h.depts && h.depts.length) ? 'Departments include ' + h.depts.slice(0, 4).map((d) => deptLabel(d, 'en')).join(', ') + '. ' : ''}${
   h.phone ? 'Phone: ' + h.phone + '.' : ''
 }`.slice(0, 160);
 
@@ -63,8 +64,8 @@ const jsonLd = {
     {
       '@type': h.depts && h.depts.length > 1 ? 'Hospital' : 'MedicalOrganization',
       '@id': url + '#organization',
-      'name': h.name,
-      ...(h.jpName ? { 'alternateName': h.jpName } : {}),
+      'name': displayName,
+      ...(h.jpName || h.name !== displayName ? { 'alternateName': [h.jpName, h.name !== displayName ? h.name : undefined].filter(Boolean) } : {}),
       'url': url,
       ...(h.phone ? { 'telephone': h.phone } : {}),
       ...(mapAddr ? {
@@ -87,14 +88,14 @@ const jsonLd = {
       '@type': 'BreadcrumbList',
       'itemListElement': [
         { '@type': 'ListItem', 'position': 1, 'name': 'Hospitals', 'item': 'https://www.81japan.com/en' },
-        { '@type': 'ListItem', 'position': 2, 'name': h.name },
+        { '@type': 'ListItem', 'position': 2, 'name': displayName },
       ],
     },
   ],
 };
 ---
 <Layout
-  title={`${h.name}${h.jpName && h.jpName !== h.name ? ' (' + h.jpName + ')' : ''} · Chinese-Speaking Hospital in ${regionEn} | 81Japan`}
+  title={`${displayName}${h.jpName && h.jpName !== displayName ? ' (' + h.jpName + ')' : ''} · Chinese-Speaking Hospital in ${regionEn} | 81Japan`}
   description={description}
   path={`/en/hospital/${slug}`}
   locale="en"
@@ -110,7 +111,7 @@ const jsonLd = {
     <span class="bc-sep">/</span>
     <span class="bc-current">{regionEn}</span>
     <span class="bc-sep">/</span>
-    <span class="bc-current">{h.name}</span>
+    <span class="bc-current">{displayName}</span>
   </nav>
 
   <article class="h-detail">
@@ -123,8 +124,8 @@ const jsonLd = {
           {(h.extraBadges || []).map((b) => <span class="badge badge-new">{b.label}</span>)}
         </div>
       </div>
-      <h1 class="h-name">{h.name}</h1>
-      {h.jpName && h.jpName !== h.name && <p class="h-name-ja">{h.jpName}</p>}
+      <h1 class="h-name">{displayName}</h1>
+      {h.jpName && h.jpName !== displayName && <p class="h-name-ja">{h.jpName}{h.name !== displayName ? ` · ${h.name}` : ''}</p>}
 
       <div class="h-cta">
         {hasPhone && (
