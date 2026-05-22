@@ -1,0 +1,71 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Nav from '../components/Nav.astro';
+import Footer from '../components/Footer.astro';
+import admin from '../data/admin.json';
+import '../styles/page.css';
+
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'ItemList',
+  'name': '在日行政手续指南',
+  'itemListElement': admin.map((r, i) => ({
+    '@type': 'ListItem',
+    'position': i + 1,
+    'name': r.titleZh,
+  })),
+};
+---
+<Layout
+  title="行政手续 · 在日必办手续速查 | 81日本"
+  description="初到日本最关键的行政手续：住民票、在留卡、マイナンバー、国民健康保险、银行开户——按办理顺序整理。"
+  path="/admin"
+>
+  <Fragment slot="head">
+    <meta name="keywords" content="日本行政手续,住民票,在留卡,マイナンバー,国民健康保险,日本银行开户,在日生活指南" />
+    <script type="application/ld+json" set:html={JSON.stringify(jsonLd)} />
+  </Fragment>
+
+  <Nav active="admin" />
+
+  <section class="page-hero">
+    <div class="eyebrow">
+      <span class="zh-only">行政手续</span>
+      <span class="en-only">Administration</span>
+    </div>
+    <h1 class="zh-only">来日本，先把<em>这些手续办了</em></h1>
+    <h1 class="en-only">Paperwork to <em>knock out first</em></h1>
+    <p class="zh-only">按到日本后的实际办理顺序整理：登记住址、领在留卡、办个人番号、加入健保、开银行账户。</p>
+    <p class="en-only">In the order you'll actually do them: register address, residence card, My Number, health insurance, bank account.</p>
+  </section>
+
+  <main class="page-main">
+    <div class="rules-grid">
+      {admin.map((r) => (
+        <article class="rule-card" id={r.id}>
+          <div class="rule-card-head">
+            <div class="rule-icon" aria-hidden="true">{r.icon}</div>
+            <div>
+              <div class="rule-title">{r.titleZh}</div>
+              <div class="rule-title-en">{r.titleEn}</div>
+            </div>
+          </div>
+          <p class="rule-summary zh-only">{r.summaryZh}</p>
+          <p class="rule-summary en-only">{r.summaryEn}</p>
+          <ul class="rule-points zh-only">
+            {r.pointsZh.map((p) => <li>{p}</li>)}
+          </ul>
+          <ul class="rule-points en-only">
+            {r.pointsEn.map((p) => <li>{p}</li>)}
+          </ul>
+          {r.tipZh && <div class="rule-tip zh-only">💡 {r.tipZh}</div>}
+          {r.tipEn && <div class="rule-tip en-only">💡 {r.tipEn}</div>}
+        </article>
+      ))}
+    </div>
+  </main>
+
+  <Footer />
+
+  <script is:inline src="/page.js" defer></script>
+</Layout>
