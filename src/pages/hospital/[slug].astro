@@ -2,19 +2,19 @@
 import Layout from '../../layouts/Layout.astro';
 import Nav from '../../components/Nav.astro';
 import Footer from '../../components/Footer.astro';
-import { loadHospitals, hospitalSlug } from '../../lib/hospitals.js';
+import { loadHospitals, hospitalSlug, type Hospital } from '../../lib/hospitals.js';
 import '../../styles/page.css';
 import '../../styles/hospital.css';
 
 export async function getStaticPaths() {
-  const data = loadHospitals();
-  return data.map((h: any) => ({
+  const data = await loadHospitals();
+  return data.map((h) => ({
     params: { slug: hospitalSlug(h) },
     props: { hospital: h },
   }));
 }
 
-const { hospital: h } = Astro.props;
+const { hospital: h } = Astro.props as { hospital: Hospital };
 const slug = hospitalSlug(h);
 const url = `https://www.81japan.com/hospital/${encodeURIComponent(slug)}`;
 
@@ -64,7 +64,7 @@ const jsonLd = {
       } : {}),
       ...(h.depts && h.depts.length ? { 'medicalSpecialty': h.depts } : {}),
       ...(langTokens.length ? {
-        'availableLanguage': langTokens.map((l: string) => {
+        'availableLanguage': langTokens.map((l) => {
           const map: Record<string, string> = { '中文': 'zh', '英文': 'en', '粤语': 'yue', '台语': 'nan', '韩文': 'ko', '俄文': 'ru' };
           return map[l] || l;
         }),
@@ -106,7 +106,7 @@ const jsonLd = {
         <div class="h-badges">
           {isCN && <span class="badge badge-cn">中文</span>}
           {isEN && <span class="badge badge-en">英文</span>}
-          {(h.extraBadges || []).map((b: any) => <span class="badge badge-new">{b.label}</span>)}
+          {(h.extraBadges || []).map((b) => <span class="badge badge-new">{b.label}</span>)}
         </div>
       </div>
       <h1 class="h-name">{h.name}</h1>
@@ -171,7 +171,7 @@ const jsonLd = {
       <section class="h-section">
         <h2 class="h-section-title"><span class="zh-only">提供科室</span><span class="en-only">Departments</span></h2>
         <div class="h-dept-list">
-          {h.depts.map((d: string) => <span class="dept-tag">{d}</span>)}
+          {h.depts.map((d) => <span class="dept-tag">{d}</span>)}
         </div>
       </section>
     )}

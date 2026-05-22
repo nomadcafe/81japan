@@ -1,8 +1,8 @@
 ---
-import { hospitalSlug } from '../lib/hospitals.js';
+import { hospitalSlug, type Hospital } from '../lib/hospitals.js';
 
 interface Props {
-  hospital: any;
+  hospital: Hospital;
 }
 
 const { hospital: h } = Astro.props;
@@ -13,7 +13,7 @@ const langSet = new Set(h.langs || []);
 const badges: { cls: string; label: string }[] = [];
 if (langSet.has('中文')) badges.push({ cls: 'badge badge-cn', label: '中文' });
 if (langSet.has('英文')) badges.push({ cls: 'badge badge-en', label: '英文' });
-(h.extraBadges || []).forEach((b: any) => badges.push({ cls: 'badge badge-new', label: b.label }));
+(h.extraBadges || []).forEach((b) => badges.push({ cls: 'badge badge-new', label: b.label }));
 
 const updatedFmt = (() => {
   const m = (h.updated || '').match(/^(\d{4})-(\d{1,2})$/);
@@ -63,7 +63,7 @@ const deptsDataAttr = (h.depts || []).join(' ');
       </div>
     </div>
     <div class="card-depts">
-      {(h.depts || []).map((d: string) => <span class="dept-tag">{d}</span>)}
+      {(h.depts || []).map((d) => <span class="dept-tag">{d}</span>)}
     </div>
   </a>
   <div class="card-footer">
