@@ -6,10 +6,21 @@ import '../styles/page.css';
 
 const jsonLd = {
   '@context': 'https://schema.org',
-  '@type': 'AboutPage',
-  'name': '关于 81日本',
-  'url': 'https://www.81japan.com/about',
-  'description': '81日本：我在日本生活几年，自己整理的一些信息资料。',
+  '@graph': [
+    {
+      '@type': 'AboutPage',
+      'name': '关于 81日本',
+      'url': 'https://www.81japan.com/about',
+      'description': '81日本：我在日本生活几年，自己整理的一些信息资料。',
+    },
+    {
+      '@type': 'BreadcrumbList',
+      'itemListElement': [
+        { '@type': 'ListItem', 'position': 1, 'name': '首页', 'item': 'https://www.81japan.com/' },
+        { '@type': 'ListItem', 'position': 2, 'name': '关于' },
+      ],
+    },
+  ],
 };
 ---
 <Layout
