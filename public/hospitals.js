@@ -1,29 +1,6 @@
 // ── 筛选状态 ──
 const filterState = { region: '', lang: '', query: '' };
 
-// ── 语言切换 ──
-function switchLang(lang, btn) {
-  document.querySelectorAll('.lang-opt').forEach(b => b.classList.remove('active'));
-  btn.classList.add('active');
-  localStorage.setItem('lang', lang);
-  if (lang === 'en') {
-    document.body.classList.add('lang-en');
-    document.documentElement.setAttribute('lang', 'en');
-    document.getElementById('searchInput').placeholder = 'Search by hospital name, city, department…';
-    document.querySelectorAll('#sortSelect option').forEach(o => { if (o.dataset.en) o.textContent = o.dataset.en; });
-    document.title = '81Japan | Chinese Living Guide in Japan';
-    const n = document.getElementById('shownCount');
-    const ne = document.getElementById('shownCountEn');
-    if (n && ne) ne.textContent = n.textContent;
-  } else {
-    document.body.classList.remove('lang-en');
-    document.documentElement.setAttribute('lang', 'zh');
-    document.getElementById('searchInput').placeholder = '搜索医院名称、城市、科室…';
-    document.querySelectorAll('#sortSelect option').forEach(o => { if (o.dataset.zh) o.textContent = o.dataset.zh; });
-    document.title = '81日本 | 收集的一些在日生活中文指南';
-  }
-}
-
 // ── 组合筛选 ──
 function applyFilters() {
   const q = filterState.query.trim().toLowerCase();
@@ -106,10 +83,5 @@ function sortCards(method) {
 }
 
 document.addEventListener('DOMContentLoaded', () => {
-  const savedLang = localStorage.getItem('lang');
-  if (savedLang === 'en') {
-    const btns = document.querySelectorAll('.lang-opt');
-    if (btns.length >= 2) switchLang('en', btns[1]);
-  }
   document.querySelectorAll('.copy-year').forEach(el => el.textContent = new Date().getFullYear());
 });

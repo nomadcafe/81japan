@@ -84,12 +84,13 @@ const jsonLd = {
   title={`${h.name}${h.jpName && h.jpName !== h.name ? '（' + h.jpName + '）' : ''} · ${h.region || '日本'}中文医院 | 81日本`}
   description={description}
   path={`/hospital/${slug}`}
+  locale="zh"
 >
   <Fragment slot="head">
     <script type="application/ld+json" set:html={JSON.stringify(jsonLd)} />
   </Fragment>
 
-  <Nav active="hospitals" />
+  <Nav active="hospitals" locale="zh" />
 
   <nav class="breadcrumb" aria-label="面包屑">
     <a href="/">医院诊所</a>
@@ -116,44 +117,42 @@ const jsonLd = {
         {hasPhone && (
           <a class="h-cta-btn h-cta-primary" href={`tel:${telDigits}`}>
             <span aria-hidden="true">📞</span>
-            <span class="zh-only">拨打电话</span>
-            <span class="en-only">Call</span>
+            <span>拨打电话</span>
           </a>
         )}
         {mapHref && (
           <a class="h-cta-btn" href={mapHref} target="_blank" rel="noopener noreferrer">
             <span aria-hidden="true">🗺</span>
-            <span class="zh-only">在 Google 地图查看</span>
-            <span class="en-only">View on Google Maps</span>
+            <span>在 Google 地图查看</span>
           </a>
         )}
       </div>
     </header>
 
     <section class="h-section">
-      <h2 class="h-section-title"><span class="zh-only">基本信息</span><span class="en-only">Basics</span></h2>
+      <h2 class="h-section-title">基本信息</h2>
       <dl class="h-info-grid">
         {(h.address || h.addressShort) && (
           <div class="h-info-item">
-            <dt><span class="zh-only">地址</span><span class="en-only">Address</span></dt>
+            <dt>地址</dt>
             <dd>{h.address || h.addressShort}</dd>
           </div>
         )}
         {h.phone && (
           <div class="h-info-item">
-            <dt><span class="zh-only">电话</span><span class="en-only">Phone</span></dt>
+            <dt>电话</dt>
             <dd>{hasPhone ? <a href={`tel:${telDigits}`}>{h.phone}</a> : h.phone}</dd>
           </div>
         )}
         {(h.hours || h.hoursShort) && (
           <div class="h-info-item">
-            <dt><span class="zh-only">营业时间</span><span class="en-only">Hours</span></dt>
+            <dt>营业时间</dt>
             <dd>{h.hours || h.hoursShort}</dd>
           </div>
         )}
         {h.closed && (
           <div class="h-info-item">
-            <dt><span class="zh-only">休诊日</span><span class="en-only">Closed</span></dt>
+            <dt>休诊日</dt>
             <dd>{h.closed}</dd>
           </div>
         )}
@@ -162,14 +161,14 @@ const jsonLd = {
 
     {langTokens.length > 0 && (
       <section class="h-section">
-        <h2 class="h-section-title"><span class="zh-only">服务语言</span><span class="en-only">Languages</span></h2>
+        <h2 class="h-section-title">服务语言</h2>
         {h.langDetail && <p class="h-lang-detail">{h.langDetail}</p>}
       </section>
     )}
 
     {h.depts && h.depts.length > 0 && (
       <section class="h-section">
-        <h2 class="h-section-title"><span class="zh-only">提供科室</span><span class="en-only">Departments</span></h2>
+        <h2 class="h-section-title">提供科室</h2>
         <div class="h-dept-list">
           {h.depts.map((d) => <span class="dept-tag">{d}</span>)}
         </div>
@@ -178,7 +177,7 @@ const jsonLd = {
 
     {h.note && (
       <section class="h-section">
-        <h2 class="h-section-title"><span class="zh-only">注意事项</span><span class="en-only">Notes</span></h2>
+        <h2 class="h-section-title">注意事项</h2>
         <p class="h-note">{h.note}</p>
       </section>
     )}
@@ -190,15 +189,12 @@ const jsonLd = {
     )}
 
     <footer class="h-meta">
-      <span><span class="zh-only">最近更新</span><span class="en-only">Last updated</span>：{updatedFmt}</span>
-      <a class="h-back" href="/">
-        <span class="zh-only">← 返回列表</span>
-        <span class="en-only">← Back to list</span>
-      </a>
+      <span>最近更新：{updatedFmt}</span>
+      <a class="h-back" href="/">← 返回列表</a>
     </footer>
   </article>
 
-  <Footer />
+  <Footer locale="zh" />
 
   <script is:inline src="/page.js" defer></script>
 </Layout>

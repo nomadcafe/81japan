@@ -1,23 +1,29 @@
 ---
 import { hospitalSlug, type Hospital } from '../lib/hospitals.js';
+import { localizePath, detectLocale, type Locale } from '../lib/i18n';
 
 interface Props {
   hospital: Hospital;
+  locale?: Locale;
 }
 
-const { hospital: h } = Astro.props;
+const { hospital: h, locale: localeProp } = Astro.props;
+const locale: Locale = localeProp ?? detectLocale(Astro.url.pathname);
 const slug = hospitalSlug(h);
-const detailHref = `/hospital/${encodeURIComponent(slug)}`;
+const detailHref = localizePath(`/hospital/${encodeURIComponent(slug)}`, locale);
 
 const langSet = new Set(h.langs || []);
 const badges: { cls: string; label: string }[] = [];
-if (langSet.has('中文')) badges.push({ cls: 'badge badge-cn', label: '中文' });
-if (langSet.has('英文')) badges.push({ cls: 'badge badge-en', label: '英文' });
+if (langSet.has('中文')) badges.push({ cls: 'badge badge-cn', label: locale === 'zh' ? '中文' : 'CN' });
+if (langSet.has('英文')) badges.push({ cls: 'badge badge-en', label: locale === 'zh' ? '英文' : 'EN' });
 (h.extraBadges || []).forEach((b) => badges.push({ cls: 'badge badge-new', label: b.label }));
 
 const updatedFmt = (() => {
   const m = (h.updated || '').match(/^(\d{4})-(\d{1,2})$/);
-  return m ? `${m[1]}年${parseInt(m[2], 10)}月` : (h.updated || '');
+  if (!m) return h.updated || '';
+  return locale === 'zh'
+    ? `${m[1]}年${parseInt(m[2], 10)}月`
+    : `${m[1]}-${m[2].padStart(2, '0')}`;
 })();
 
 const telDigits = (h.phone || '').replace(/[^\d+]/g, '');
@@ -30,6 +36,10 @@ const mapHref = mapAddr
 
 const langDataAttr = h.langDetail || (h.langs || []).join(' ');
 const deptsDataAttr = (h.depts || []).join(' ');
+
+const labels = locale === 'zh'
+  ? { call: '电话', map: '地图', callAria: `拨打 ${h.name}`, mapAria: `在地图查看 ${h.name}` }
+  : { call: 'Call', map: 'Map', callAria: `Call ${h.name}`, mapAria: `View ${h.name} on map` };
 ---
 <article
   class="hospital-card fade-in"
@@ -75,15 +85,15 @@ const deptsDataAttr = (h.depts || []).join(' ');
     <span class="card-updated">{updatedFmt}</span>
     <div class="card-actions">
       {hasPhone && (
-        <a class="card-action" href={`tel:${telDigits}`} aria-label={`拨打 ${h.name}`}>
+        <a class="card-action" href={`tel:${telDigits}`} aria-label={labels.callAria}>
           <span aria-hidden="true">📞</span>
-          <span class="zh-only">电话</span><span class="en-only">Call</span>
+          <span>{labels.call}</span>
         </a>
       )}
       {mapHref && (
-        <a class="card-action" href={mapHref} target="_blank" rel="noopener noreferrer" aria-label={`在地图查看 ${h.name}`}>
+        <a class="card-action" href={mapHref} target="_blank" rel="noopener noreferrer" aria-label={labels.mapAria}>
           <span aria-hidden="true">🗺</span>
-          <span class="zh-only">地图</span><span class="en-only">Map</span>
+          <span>{labels.map}</span>
         </a>
       )}
     </div>

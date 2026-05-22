@@ -42,7 +42,7 @@ const jsonLd = {
       '@id': 'https://www.81japan.com/#organization',
       'name': '81日本',
       'url': 'https://www.81japan.com/',
-      'description': '在日中文医疗信息平台',
+      'description': '在日中文医疗信息',
     },
     {
       '@type': 'ItemList',
@@ -61,83 +61,75 @@ const jsonLd = {
 ---
 <Layout
   title="81日本 | 在日中文医院・诊所查询指南"
-  description="收录日本全国23家提供中文医疗服务的医院与诊所，涵盖东京、大阪、福冈、神户、名古屋、北海道等地区，支持按科室、语言、地区筛选。"
+  description="收录日本全国提供中文医疗服务的医院与诊所，涵盖东京、横浜、大阪、京都、神户、福冈、名古屋、北海道，按地区/语言/科室筛选。"
   path="/"
+  locale="zh"
 >
   <Fragment slot="head">
-    <meta name="keywords" content="在日中文医院,日本中文诊所,日本看病,中文医疗,日本华人医院,东京中文医院,大阪中文医院,在日生活,中文医生,华人医疗" />
+    <meta name="keywords" content="在日中文医院,日本中文诊所,日本看病,中文医疗,日本华人医院,东京中文医院,大阪中文医院,京都中文医院,在日生活,中文医生" />
     <meta name="author" content="81Japan" />
     <script type="application/ld+json" set:html={JSON.stringify(jsonLd)} />
   </Fragment>
 
-  <Nav active="hospitals" />
+  <Nav active="hospitals" locale="zh" />
 
-  <!-- HERO -->
   <section class="hero" aria-labelledby="heroTitle">
     <div class="hero-card">
-      <div class="hero-eyebrow" id="heroTitle">
-        <span class="zh-only">81日本 · 在日生活中文指南</span>
-        <span class="en-only">81Japan · Chinese Living Guide</span>
-      </div>
+      <div class="hero-eyebrow" id="heroTitle">81日本 · 在日生活中文指南</div>
       <h1 class="visually-hidden">81日本 — 在日中文医院・诊所查询指南</h1>
-      <p class="hero-sub zh-only">收集了一些提供中文服务的医院、诊所及生活信息，希望能帮到初到日本的你。</p>
-      <p class="hero-sub en-only">A directory of hospitals and clinics with Chinese-speaking staff across Japan.</p>
+      <p class="hero-sub">收集了一些提供中文服务的医院、诊所及生活信息，希望能帮到初到日本的你。</p>
 
       <div class="search-wrap" role="search" aria-label="搜索医院">
         <input class="search-input" placeholder="搜索医院名称、城市、科室…" id="searchInput" oninput="onSearchInput()" />
-        <button class="search-btn"><span class="zh-only">搜索</span><span class="en-only">Search</span></button>
+        <button class="search-btn">搜索</button>
       </div>
-      <p class="hero-coverage">
-        <span class="zh-only">覆盖 关东・关西・九州・北海道・中部</span>
-        <span class="en-only">Tokyo · Osaka · Fukuoka · Hokkaido · Nagoya region</span>
-      </p>
+      <p class="hero-coverage">覆盖 关东・关西・九州・北海道・中部</p>
     </div>
   </section>
 
-  <!-- MAIN -->
   <div class="main-layout">
     <aside class="sidebar" aria-label="筛选条件">
       <div class="filter-group">
-        <div class="filter-title"><span class="zh-only">地区</span><span class="en-only">Region</span></div>
+        <div class="filter-title">地区</div>
         <div class="filter-option active" onclick="filterRegion('全部', this)" data-region-filter="全部">
-          <span><span class="zh-only">全部地区</span><span class="en-only">All</span></span>
+          <span>全部地区</span>
           <span class="filter-count">{total}</span>
         </div>
         {[
-          { key: '东京', zh: '东京・关东', en: 'Tokyo' },
-          { key: '横浜', zh: '横浜・神奈川', en: 'Yokohama' },
-          { key: '大阪', zh: '大阪・关西', en: 'Osaka' },
-          { key: '京都', zh: '京都・关西', en: 'Kyoto' },
-          { key: '神户', zh: '神户・关西', en: 'Kobe' },
-          { key: '福冈', zh: '福冈・九州', en: 'Fukuoka' },
-          { key: '札幌', zh: '北海道', en: 'Hokkaido' },
-          { key: '名古屋', zh: '名古屋・中部', en: 'Nagoya' },
+          { key: '东京', label: '东京・关东' },
+          { key: '横浜', label: '横浜・神奈川' },
+          { key: '大阪', label: '大阪・关西' },
+          { key: '京都', label: '京都・关西' },
+          { key: '神户', label: '神户・关西' },
+          { key: '福冈', label: '福冈・九州' },
+          { key: '札幌', label: '北海道' },
+          { key: '名古屋', label: '名古屋・中部' },
         ].filter(r => (regionCounts[r.key] || 0) > 0).map(r => (
           <div class="filter-option" onclick={`filterRegion('${r.key}', this)`} data-region-filter={r.key}>
-            <span><span class="zh-only">{r.zh}</span><span class="en-only">{r.en}</span></span>
+            <span>{r.label}</span>
             <span class="filter-count">{regionCounts[r.key]}</span>
           </div>
         ))}
       </div>
 
       <div class="filter-group">
-        <div class="filter-title"><span class="zh-only">服务语言</span><span class="en-only">Language</span></div>
+        <div class="filter-title">服务语言</div>
         <div class="filter-option active" onclick="filterLang('全部', this)" data-lang-filter="全部">
-          <span><span class="zh-only">全部</span><span class="en-only">All</span></span>
+          <span>全部</span>
           <span class="filter-count">{total}</span>
         </div>
         <div class="filter-option" onclick="filterLang('中文', this)" data-lang-filter="中文">
-          <span>🇨🇳 <span class="zh-only">中文对应</span><span class="en-only">Chinese</span></span>
+          <span>🇨🇳 中文对应</span>
           <span class="filter-count">{langCounts['中文']}</span>
         </div>
         <div class="filter-option" onclick="filterLang('英文', this)" data-lang-filter="英文">
-          <span>🇺🇸 <span class="zh-only">英文对应</span><span class="en-only">English</span></span>
+          <span>🇺🇸 英文对应</span>
           <span class="filter-count">{langCounts['英文']}</span>
         </div>
       </div>
 
       <div class="filter-group">
-        <div class="filter-title"><span class="zh-only">科室</span><span class="en-only">Department</span></div>
+        <div class="filter-title">科室</div>
         <div class="filter-option" onclick="setSearch('内科')">内科</div>
         <div class="filter-option" onclick="setSearch('外科')">外科</div>
         <div class="filter-option" onclick="setSearch('产科')">产科・妇科</div>
@@ -150,44 +142,37 @@ const jsonLd = {
 
     <main>
       <div class="list-header">
-        <div class="list-title">
-          <span class="zh-only">共找到 <strong id="shownCount">{total}</strong> 家医疗机构</span>
-          <span class="en-only"><strong id="shownCountEn">{total}</strong> facilities found</span>
-        </div>
+        <div class="list-title">共找到 <strong id="shownCount">{total}</strong> 家医疗机构</div>
         <select class="sort-select" id="sortSelect" onchange="sortCards(this.value)">
-          <option value="date" data-zh="最近更新" data-en="Latest">最近更新</option>
-          <option value="region" data-zh="按地区" data-en="By Region">按地区</option>
-          <option value="dept" data-zh="按科室" data-en="By Dept.">按科室</option>
+          <option value="date">最近更新</option>
+          <option value="region">按地区</option>
+          <option value="dept">按科室</option>
         </select>
       </div>
 
       <div id="cardList" role="list" aria-label="医院列表">
-        {hospitals.map((h) => <HospitalCard hospital={h} />)}
+        {hospitals.map((h) => <HospitalCard hospital={h} locale="zh" />)}
       </div>
 
       <div id="emptyState" style="display:none; text-align:center; padding:60px 20px; color:var(--ink-3);">
         <div style="font-size:32px; margin-bottom:12px;">🔍</div>
-        <div style="font-size:15px; margin-bottom:6px;"><span class="zh-only">没有找到相关结果</span><span class="en-only">No results found</span></div>
-        <div style="font-size:13px;"><span class="zh-only">换个关键词试试，或者 <a href="/submit" style="color:var(--red);">提交新信息</a></span><span class="en-only">Try a different keyword, or <a href="/submit" style="color:var(--red);">submit a new entry</a></span></div>
+        <div style="font-size:15px; margin-bottom:6px;">没有找到相关结果</div>
+        <div style="font-size:13px;">换个关键词试试，或者 <a href="/submit" style="color:var(--red);">提交新信息</a></div>
       </div>
     </main>
   </div>
 
-  <!-- SUBMIT -->
   <section class="submit-section" id="submit">
     <div class="submit-banner">
       <div class="submit-banner-text">
-        <h2><span class="zh-only">知道遗漏的<em>信息？</em></span><span class="en-only">Know something <em>we missed?</em></span></h2>
-        <p><span class="zh-only">如果你知道某家医院提供中文服务，或发现信息有误，欢迎投稿——我们会人工审核后更新。</span><span class="en-only">If you know a hospital with Chinese-speaking staff, or spot an error, please contribute.</span></p>
+        <h2>知道遗漏的<em>信息？</em></h2>
+        <p>如果你知道某家医院提供中文服务，或发现信息有误，欢迎投稿——我会人工审核后更新。</p>
       </div>
-      <a href="/submit" class="submit-banner-btn">
-        <span class="zh-only">前往投稿 →</span>
-        <span class="en-only">Contribute →</span>
-      </a>
+      <a href="/submit" class="submit-banner-btn">前往投稿 →</a>
     </div>
   </section>
 
-  <Footer />
+  <Footer locale="zh" />
 
   <script is:inline src="/hospitals.js" defer></script>
 </Layout>

@@ -1,0 +1,172 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import NavSimple from '../../components/NavSimple.astro';
+import '../../styles/submit.css';
+
+const year = new Date().getFullYear();
+---
+<Layout
+  title="Submit / Correct Info | 81Japan"
+  description="Submit a new hospital, correct existing info, or suggest improvements to 81Japan."
+  path="/en/submit"
+  noindex={true}
+  locale="en"
+>
+  <NavSimple locale="en" backLabelEn="Back" />
+
+  <div class="page-hero">
+    <div class="eyebrow">Contribute</div>
+    <h1>Help me <em>improve</em> this guide</h1>
+    <p>Know a hospital with Chinese-speaking staff that I haven't listed? Or spotted an error? Let me know.</p>
+  </div>
+
+  <div class="page-main">
+    <aside class="side-info">
+      <h3>How it works</h3>
+      <div class="steps">
+        <div class="step">
+          <div class="step-num">1</div>
+          <div class="step-body">
+            <div class="step-title">Fill in the form</div>
+            <div class="step-desc">Tell me the hospital name, location and language services</div>
+          </div>
+        </div>
+        <div class="step">
+          <div class="step-num">2</div>
+          <div class="step-body">
+            <div class="step-title">Manual review</div>
+            <div class="step-desc">I'll verify after receiving your submission</div>
+          </div>
+        </div>
+        <div class="step">
+          <div class="step-num">3</div>
+          <div class="step-body">
+            <div class="step-title">Published</div>
+            <div class="step-desc">Once confirmed, I'll add it to the site within 1–3 days</div>
+          </div>
+        </div>
+      </div>
+      <div class="side-note">For corrections, please include the specific issue and a source if possible — that speeds things up.</div>
+    </aside>
+
+    <div>
+      <div class="form-card" id="formCard">
+        <div class="type-row">
+          <button class="type-btn active" onclick="switchType('new', this)">＋ Add hospital</button>
+          <button class="type-btn" onclick="switchType('fix', this)">✎ Correction</button>
+          <button class="type-btn" onclick="switchType('other', this)">⊙ Other</button>
+        </div>
+
+        <form class="form" id="submitForm" action="/api/submit" method="POST">
+          <input type="hidden" name="投稿类型" id="typeHidden" value="新增医院" />
+          <input type="text" name="_honey" tabindex="-1" autocomplete="off" aria-hidden="true" style="position:absolute; left:-9999px; opacity:0" />
+
+          <div id="fields-new">
+            <div class="form-row">
+              <div class="form-field">
+                <label class="form-label">Hospital name <span class="req">*</span></label>
+                <input class="form-input" type="text" name="医院名称" id="f-name" placeholder="Chinese or Japanese name" />
+              </div>
+              <div class="form-field">
+                <label class="form-label">Location <span class="req">*</span></label>
+                <input class="form-input" type="text" name="所在地" id="f-location" placeholder="Prefecture / city" />
+              </div>
+            </div>
+            <div class="form-row" style="margin-top:0">
+              <div class="form-field">
+                <label class="form-label">Language <span class="req">*</span></label>
+                <select class="form-input form-select" name="语言服务" id="f-lang">
+                  <option value="">Select…</option>
+                  <option value="中文（普通话）">Chinese (Mandarin)</option>
+                  <option value="中文（广东话）">Chinese (Cantonese)</option>
+                  <option value="中文＋英文">Chinese + English</option>
+                  <option value="英文">English</option>
+                  <option value="其他">Other</option>
+                </select>
+              </div>
+              <div class="form-field">
+                <label class="form-label">Department</label>
+                <input class="form-input" type="text" name="科室" placeholder="Internal, OB/GYN, Dental…" />
+              </div>
+            </div>
+            <div class="form-row" style="margin-top:0">
+              <div class="form-field">
+                <label class="form-label">Phone</label>
+                <input class="form-input" type="text" name="电话" placeholder="03-XXXX-XXXX" />
+              </div>
+              <div class="form-field">
+                <label class="form-label">Website</label>
+                <input class="form-input" type="text" name="网址" placeholder="https://…" />
+              </div>
+            </div>
+            <div class="form-field">
+              <label class="form-label">Hours</label>
+              <input class="form-input" type="text" name="营业时间"
+                placeholder="e.g. Mon–Fri 9:00–17:30 / Sat 9:00–12:30" />
+            </div>
+            <div class="form-field">
+              <label class="form-label">Notes</label>
+              <textarea class="form-input form-textarea" name="备注" id="f-note"
+                placeholder="Reservation needed? Closed days? Anything to watch for…"
+                oninput="updateChar(this,'c1')"></textarea>
+              <div class="char-count" id="c1">0 / 300</div>
+            </div>
+          </div>
+
+          <div id="fields-fix" style="display:none">
+            <div class="form-field">
+              <label class="form-label">Which hospital <span class="req">*</span></label>
+              <input class="form-input" type="text" name="纠错-医院名称" id="f-fix-name" placeholder="Hospital name" />
+            </div>
+            <div class="form-field">
+              <label class="form-label">Describe the issue <span class="req">*</span></label>
+              <textarea class="form-input form-textarea" name="纠错-问题描述" id="f-fix-desc"
+                placeholder="What's wrong? What's the correct info? Include a source if possible."
+                style="min-height:110px" oninput="updateChar(this,'c2')"></textarea>
+              <div class="char-count" id="c2">0 / 300</div>
+            </div>
+          </div>
+
+          <div id="fields-other" style="display:none">
+            <div class="form-field">
+              <label class="form-label">Your suggestion <span class="req">*</span></label>
+              <textarea class="form-input form-textarea" name="建议内容" id="f-other"
+                placeholder="Feature ideas, content suggestions, etc."
+                style="min-height:110px" oninput="updateChar(this,'c3')"></textarea>
+              <div class="char-count" id="c3">0 / 300</div>
+            </div>
+          </div>
+
+          <div class="form-divider"></div>
+
+          <div class="form-field">
+            <label class="form-label">Contact (optional)</label>
+            <input class="form-input" type="text" name="联系方式" placeholder="Email, WeChat, LINE ID" />
+          </div>
+
+          <button class="submit-btn" type="submit" id="submitBtn">
+            <span id="btnText">Submit</span>
+          </button>
+          <p class="form-note">By submitting you agree to your information being used for site updates</p>
+        </form>
+      </div>
+
+      <div class="success-card" id="successCard">
+        <div class="success-icon">✓</div>
+        <h3>Received, thank you!</h3>
+        <p>I'll verify and update soon.<br>If you left contact info, I'll reach out if I have questions.</p>
+        <div class="success-actions">
+          <button class="success-btn success-btn-primary" onclick="resetForm()">Submit another</button>
+          <a href="/en" class="success-btn success-btn-secondary">Back to home</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <div>© {year} 81Japan · maintained by 81Japan</div>
+    <a href="/en" style="color:var(--ink-3); text-decoration:none; font-size:12px;">← Home</a>
+  </footer>
+
+  <script is:inline src="/submit.js" defer></script>
+</Layout>

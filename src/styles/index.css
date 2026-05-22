@@ -100,6 +100,7 @@
     border-radius: 4px;
     transition: all 0.15s;
     letter-spacing: 0.04em;
+    text-decoration: none;
   }
   .lang-opt:hover { color: var(--ink); }
   .lang-opt.active {

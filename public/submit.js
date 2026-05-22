@@ -1,4 +1,17 @@
 let currentType = 'new';
+const isEn = location.pathname.startsWith('/en/') || location.pathname === '/en';
+
+const STR = isEn ? {
+  submitting: 'Submitting…',
+  submit: 'Submit',
+  failed: 'Submission failed, please try again',
+  networkError: 'Network error, please try again',
+} : {
+  submitting: '提交中…',
+  submit: '提交投稿',
+  failed: '提交失败，请重试',
+  networkError: '网络错误，请重试',
+};
 
 function switchType(type, btn) {
   currentType = type;
@@ -31,11 +44,7 @@ document.getElementById('submitForm').addEventListener('submit', async function(
   const btn = document.getElementById('submitBtn');
   const btnText = document.getElementById('btnText');
   btn.disabled = true;
-  btnText.innerHTML = '<span class="zh-only">提交中…</span><span class="en-only">Submitting…</span>';
-  if (document.body.classList.contains('lang-en')) {
-    btnText.querySelector('.zh-only').style.display = 'none';
-    btnText.querySelector('.en-only').style.display = 'inline';
-  }
+  btnText.textContent = STR.submitting;
 
   try {
     const payload = Object.fromEntries(new FormData(this));
@@ -48,11 +57,11 @@ document.getElementById('submitForm').addEventListener('submit', async function(
       document.getElementById('formCard').style.display = 'none';
       document.getElementById('successCard').style.display = 'block';
     } else {
-      btnText.innerHTML = '<span>提交失败，请重试</span>';
+      btnText.textContent = STR.failed;
       btn.disabled = false;
     }
   } catch {
-    btnText.innerHTML = '<span>网络错误，请重试</span>';
+    btnText.textContent = STR.networkError;
     btn.disabled = false;
   }
 });
@@ -62,31 +71,11 @@ function resetForm() {
   document.getElementById('formCard').style.display = '';
   document.getElementById('successCard').style.display = 'none';
   document.getElementById('submitBtn').disabled = false;
-  document.getElementById('btnText').innerHTML = '<span class="zh-only">提交投稿</span><span class="en-only">Submit</span>';
+  document.getElementById('btnText').textContent = STR.submit;
   switchType('new', document.querySelector('.type-btn'));
   ['c1','c2','c3'].forEach(id => { const el = document.getElementById(id); if(el) el.textContent = '0 / 300'; });
 }
 
-function switchLang(lang, btn) {
-  document.querySelectorAll('.lang-opt').forEach(b => b.classList.remove('active'));
-  btn.classList.add('active');
-  localStorage.setItem('lang', lang);
-  if (lang === 'en') {
-    document.body.classList.add('lang-en');
-    document.documentElement.setAttribute('lang', 'en');
-    document.title = 'Contribute · 81Japan';
-  } else {
-    document.body.classList.remove('lang-en');
-    document.documentElement.setAttribute('lang', 'zh');
-    document.title = '投稿 · 81日本';
-  }
-}
-
 document.addEventListener('DOMContentLoaded', () => {
-  const savedLang = localStorage.getItem('lang');
-  if (savedLang === 'en') {
-    const langBtns = document.querySelectorAll('.lang-opt');
-    if (langBtns.length >= 2) switchLang('en', langBtns[1]);
-  }
   document.querySelectorAll('.copy-year').forEach(el => el.textContent = new Date().getFullYear());
 });

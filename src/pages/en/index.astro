@@ -1,0 +1,162 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Nav from '../../components/Nav.astro';
+import Footer from '../../components/Footer.astro';
+import HospitalCard from '../../components/HospitalCard.astro';
+import { loadHospitals, hospitalSlug } from '../../lib/hospitals.js';
+import '../../styles/index.css';
+
+const hospitals = await loadHospitals();
+const total = hospitals.length;
+
+const regionCounts: Record<string, number> = {};
+const langCounts: Record<string, number> = { '中文': 0, '英文': 0 };
+hospitals.forEach((h) => {
+  if (h.region) regionCounts[h.region] = (regionCounts[h.region] || 0) + 1;
+  (h.langs || []).forEach((l) => {
+    if (l in langCounts) langCounts[l]++;
+  });
+});
+
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@graph': [
+    {
+      '@type': 'WebSite',
+      '@id': 'https://www.81japan.com/en#website',
+      'url': 'https://www.81japan.com/en',
+      'name': '81Japan',
+      'description': 'Directory of hospitals and clinics with Chinese-speaking staff across Japan',
+      'inLanguage': ['en', 'zh-Hans'],
+    },
+    {
+      '@type': 'ItemList',
+      'name': 'Hospitals with Chinese-speaking staff in Japan',
+      'numberOfItems': total,
+      'itemListElement': hospitals.map((h, i) => ({
+        '@type': 'ListItem',
+        'position': i + 1,
+        'name': h.name,
+        'url': `https://www.81japan.com/en/hospital/${encodeURIComponent(hospitalSlug(h))}`,
+      })),
+    },
+  ],
+};
+---
+<Layout
+  title="81Japan | Chinese-Speaking Hospitals & Clinics in Japan"
+  description="A directory of hospitals and clinics with Chinese-speaking staff across Japan — Tokyo, Yokohama, Osaka, Kyoto, Kobe, Fukuoka, Nagoya, Hokkaido. Filter by region, language, and department."
+  path="/en"
+  locale="en"
+>
+  <Fragment slot="head">
+    <meta name="keywords" content="Chinese hospital Japan,Chinese-speaking clinic,Tokyo Chinese doctor,Osaka Chinese hospital,Japan medical guide,Mandarin medical,Chinese medical Japan" />
+    <meta name="author" content="81Japan" />
+    <script type="application/ld+json" set:html={JSON.stringify(jsonLd)} />
+  </Fragment>
+
+  <Nav active="hospitals" locale="en" />
+
+  <section class="hero" aria-labelledby="heroTitle">
+    <div class="hero-card">
+      <div class="hero-eyebrow" id="heroTitle">81Japan · Chinese Living Guide</div>
+      <h1 class="visually-hidden">81Japan — Chinese-Speaking Hospital & Clinic Guide in Japan</h1>
+      <p class="hero-sub">A directory of hospitals and clinics with Chinese-speaking staff across Japan.</p>
+
+      <div class="search-wrap" role="search" aria-label="Search hospitals">
+        <input class="search-input" placeholder="Search by hospital name, city, department…" id="searchInput" oninput="onSearchInput()" />
+        <button class="search-btn">Search</button>
+      </div>
+      <p class="hero-coverage">Tokyo · Yokohama · Osaka · Kyoto · Kobe · Fukuoka · Nagoya · Hokkaido</p>
+    </div>
+  </section>
+
+  <div class="main-layout">
+    <aside class="sidebar" aria-label="Filters">
+      <div class="filter-group">
+        <div class="filter-title">Region</div>
+        <div class="filter-option active" onclick="filterRegion('全部', this)" data-region-filter="全部">
+          <span>All</span>
+          <span class="filter-count">{total}</span>
+        </div>
+        {[
+          { key: '东京', label: 'Tokyo' },
+          { key: '横浜', label: 'Yokohama' },
+          { key: '大阪', label: 'Osaka' },
+          { key: '京都', label: 'Kyoto' },
+          { key: '神户', label: 'Kobe' },
+          { key: '福冈', label: 'Fukuoka' },
+          { key: '札幌', label: 'Hokkaido' },
+          { key: '名古屋', label: 'Nagoya' },
+        ].filter(r => (regionCounts[r.key] || 0) > 0).map(r => (
+          <div class="filter-option" onclick={`filterRegion('${r.key}', this)`} data-region-filter={r.key}>
+            <span>{r.label}</span>
+            <span class="filter-count">{regionCounts[r.key]}</span>
+          </div>
+        ))}
+      </div>
+
+      <div class="filter-group">
+        <div class="filter-title">Language</div>
+        <div class="filter-option active" onclick="filterLang('全部', this)" data-lang-filter="全部">
+          <span>All</span>
+          <span class="filter-count">{total}</span>
+        </div>
+        <div class="filter-option" onclick="filterLang('中文', this)" data-lang-filter="中文">
+          <span>🇨🇳 Chinese</span>
+          <span class="filter-count">{langCounts['中文']}</span>
+        </div>
+        <div class="filter-option" onclick="filterLang('英文', this)" data-lang-filter="英文">
+          <span>🇺🇸 English</span>
+          <span class="filter-count">{langCounts['英文']}</span>
+        </div>
+      </div>
+
+      <div class="filter-group">
+        <div class="filter-title">Department</div>
+        <div class="filter-option" onclick="setSearch('内科')">Internal medicine</div>
+        <div class="filter-option" onclick="setSearch('外科')">Surgery</div>
+        <div class="filter-option" onclick="setSearch('产科')">Ob/Gyn</div>
+        <div class="filter-option" onclick="setSearch('儿科')">Pediatrics</div>
+        <div class="filter-option" onclick="setSearch('皮肤科')">Dermatology</div>
+        <div class="filter-option" onclick="setSearch('精神科')">Psychiatry</div>
+        <div class="filter-option" onclick="setSearch('牙科')">Dental</div>
+      </div>
+    </aside>
+
+    <main>
+      <div class="list-header">
+        <div class="list-title"><strong id="shownCount">{total}</strong> facilities found</div>
+        <select class="sort-select" id="sortSelect" onchange="sortCards(this.value)">
+          <option value="date">Latest update</option>
+          <option value="region">By region</option>
+          <option value="dept">By department</option>
+        </select>
+      </div>
+
+      <div id="cardList" role="list" aria-label="Hospital list">
+        {hospitals.map((h) => <HospitalCard hospital={h} locale="en" />)}
+      </div>
+
+      <div id="emptyState" style="display:none; text-align:center; padding:60px 20px; color:var(--ink-3);">
+        <div style="font-size:32px; margin-bottom:12px;">🔍</div>
+        <div style="font-size:15px; margin-bottom:6px;">No results found</div>
+        <div style="font-size:13px;">Try a different keyword, or <a href="/en/submit" style="color:var(--red);">submit a new entry</a></div>
+      </div>
+    </main>
+  </div>
+
+  <section class="submit-section" id="submit">
+    <div class="submit-banner">
+      <div class="submit-banner-text">
+        <h2>Know something <em>I missed?</em></h2>
+        <p>If you know a hospital with Chinese-speaking staff, or spot an error, please contribute — I'll verify and update.</p>
+      </div>
+      <a href="/en/submit" class="submit-banner-btn">Contribute →</a>
+    </div>
+  </section>
+
+  <Footer locale="en" />
+
+  <script is:inline src="/hospitals.js" defer></script>
+</Layout>

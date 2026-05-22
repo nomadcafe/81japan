@@ -1,0 +1,73 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Nav from '../../components/Nav.astro';
+import Footer from '../../components/Footer.astro';
+import rules from '../../data/rules.json';
+import '../../styles/page.css';
+
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@graph': [
+    {
+      '@type': 'ItemList',
+      'name': 'Living in Japan — Everyday Etiquette',
+      'itemListElement': rules.map((r, i) => ({
+        '@type': 'ListItem',
+        'position': i + 1,
+        'name': r.titleEn,
+      })),
+    },
+    {
+      '@type': 'BreadcrumbList',
+      'itemListElement': [
+        { '@type': 'ListItem', 'position': 1, 'name': 'Home', 'item': 'https://www.81japan.com/en' },
+        { '@type': 'ListItem', 'position': 2, 'name': 'Living in Japan' },
+      ],
+    },
+  ],
+};
+---
+<Layout
+  title="Living in Japan · Everyday Etiquette | 81Japan"
+  description="Unwritten everyday etiquette newcomers most often trip on: train and elevator manners, eating in public, and more."
+  path="/en/rules"
+  locale="en"
+>
+  <Fragment slot="head">
+    <meta name="keywords" content="Japan etiquette,train etiquette Japan,elevator etiquette,eating walking Japan,Japan social rules,living in Japan guide" />
+    <script type="application/ld+json" set:html={JSON.stringify(jsonLd)} />
+  </Fragment>
+
+  <Nav active="rules" locale="en" />
+
+  <section class="page-hero">
+    <div class="eyebrow">Living in Japan</div>
+    <h1>Things to know <em>before you settle in</em></h1>
+    <p>The unwritten etiquette everyone in Japan follows.</p>
+  </section>
+
+  <main class="page-main">
+    <div class="rules-grid">
+      {rules.map((r) => (
+        <article class="rule-card" id={r.id}>
+          <div class="rule-card-head">
+            <div class="rule-icon" aria-hidden="true">{r.icon}</div>
+            <div>
+              <div class="rule-title">{r.titleEn}</div>
+              <div class="rule-title-en">{r.titleZh}</div>
+            </div>
+          </div>
+          <p class="rule-summary">{r.summaryEn}</p>
+          <ul class="rule-points">
+            {r.pointsEn.map((p) => <li>{p}</li>)}
+          </ul>
+          {r.tipEn && <div class="rule-tip">💡 {r.tipEn}</div>}
+        </article>
+      ))}
+    </div>
+  </main>
+
+  <Footer locale="en" />
+
+  <script is:inline src="/page.js" defer></script>
+</Layout>

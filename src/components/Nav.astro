@@ -1,35 +1,47 @@
 ---
+import { alternatePath, localizePath, detectLocale, type Locale } from '../lib/i18n';
+
 interface Props {
   active?: 'hospitals' | 'admin' | 'tax' | 'life' | 'rules' | 'about' | null;
+  locale?: Locale;
 }
-const { active = null } = Astro.props;
+const { active = null, locale: localeProp } = Astro.props;
+const locale: Locale = localeProp ?? detectLocale(Astro.url.pathname);
 
-const items = [
-  { key: 'hospitals', href: '/',           zh: '医院诊所',   en: 'Hospitals' },
-  { key: 'rules',     href: '/rules',      zh: '日本ルール', en: 'Rules' },
-  { key: 'admin',     href: '/admin',      zh: '行政手续',   en: 'Admin' },
-  { key: 'tax',       href: '/tax',        zh: '税务',       en: 'Taxes' },
-  { key: 'life',      href: '#',           zh: '生活服务',   en: 'Life' },
-  { key: 'about',     href: '/about',      zh: '关于',       en: 'About' },
+const items: Array<{ key: NonNullable<Props['active']>; href: string; zh: string; en: string }> = [
+  { key: 'hospitals', href: '/',         zh: '医院诊所',   en: 'Hospitals' },
+  { key: 'rules',     href: '/rules',    zh: '日本ルール', en: 'Rules' },
+  { key: 'admin',     href: '/admin',    zh: '行政手续',   en: 'Admin' },
+  { key: 'tax',       href: '/tax',      zh: '税务',       en: 'Taxes' },
+  { key: 'life',      href: '#',         zh: '生活服务',   en: 'Life' },
+  { key: 'about',     href: '/about',    zh: '关于',       en: 'About' },
 ];
+
+const altUrl = alternatePath(Astro.url.pathname, locale);
+const submitHref = localizePath('/submit', locale);
+const homeHref = localizePath('/', locale);
+const labels = {
+  contribute: locale === 'zh' ? '投稿' : 'Contribute',
+  menu: locale === 'zh' ? '菜单' : 'Menu',
+};
 ---
-<nav aria-label="主导航">
-  <a class="logo" href="/"><span class="logo-dot"></span>81日本</a>
+<nav aria-label={locale === 'zh' ? '主导航' : 'Main navigation'}>
+  <a class="logo" href={homeHref}><span class="logo-dot"></span>81日本</a>
   <div class="nav-links" role="menubar">
     {items.map(i => (
-      <a href={i.href} class={active === i.key ? 'active' : ''}>
-        <span class="zh-only">{i.zh}</span><span class="en-only">{i.en}</span>
+      <a href={i.href === '#' ? '#' : localizePath(i.href, locale)} class={active === i.key ? 'active' : ''}>
+        {locale === 'zh' ? i.zh : i.en}
       </a>
     ))}
   </div>
   <div class="nav-right">
     <div class="lang-switcher">
-      <button class="lang-opt active" onclick="switchLang('zh', this)">中文</button>
+      <a class={`lang-opt${locale === 'zh' ? ' active' : ''}`} href={locale === 'zh' ? Astro.url.pathname : altUrl}>中文</a>
       <span class="lang-sep">/</span>
-      <button class="lang-opt" onclick="switchLang('en', this)">EN</button>
+      <a class={`lang-opt${locale === 'en' ? ' active' : ''}`} href={locale === 'en' ? Astro.url.pathname : altUrl}>EN</a>
     </div>
-    <button class="submit-nav-btn" onclick="window.location='/submit'"><span class="zh-only">投稿</span><span class="en-only">Contribute</span></button>
-    <button class="nav-toggle" aria-label="菜单" aria-expanded="false" onclick="(function(b){var n=b.closest('nav');var open=n.classList.toggle('open');b.setAttribute('aria-expanded',open);})(this)">
+    <button class="submit-nav-btn" onclick={`window.location='${submitHref}'`}>{labels.contribute}</button>
+    <button class="nav-toggle" aria-label={labels.menu} aria-expanded="false" onclick="(function(b){var n=b.closest('nav');var open=n.classList.toggle('open');b.setAttribute('aria-expanded',open);})(this)">
       <span></span><span></span><span></span>
     </button>
   </div>
