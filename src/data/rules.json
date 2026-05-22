@@ -1,5 +1,27 @@
 [
   {
+    "id": "kutsu",
+    "icon": "👟",
+    "titleZh": "靴を脱ぐ・进屋脱鞋",
+    "titleEn": "Take Off Your Shoes Indoors",
+    "summaryZh": "在日本的家、传统旅馆、部分餐厅与诊所，进门都要脱鞋。门口的「玄関」与室内之间有一段高差，那个台阶就是脱鞋的分界线。",
+    "summaryEn": "In Japanese homes, traditional inns, and some restaurants or clinics, shoes come off at the entrance. The step (genkan) between door and floor marks the line where shoes stop.",
+    "pointsZh": [
+      "进门后在「玄関」（入口正下方那块矮区域）脱鞋",
+      "踩到台阶上方的木地板 / 榻榻米就算「进屋」了，不能穿鞋",
+      "餐厅・诊所・试衣间门口如果有鞋柜或备用拖鞋，规则一样",
+      "厕所通常换专用拖鞋，离开时记得换回来"
+    ],
+    "pointsEn": [
+      "Take off shoes in the genkan (the recessed area just inside the door)",
+      "Once you step up onto the wood floor or tatami, you're 'inside' — shoes never go here",
+      "Same rule at restaurants, clinics, fitting rooms if you see a shoe rack or slippers at the door",
+      "Toilets usually have dedicated slippers — don't forget to switch back when leaving"
+    ],
+    "tipZh": "脱下的鞋摆成「鞋头朝外」是默认礼节，方便下次穿。去别人家时先看主人怎么放，跟着做就行。",
+    "tipEn": "Setting shoes neatly with toes pointing toward the door is standard etiquette. Visiting someone's home? Glance at how the host arranges their shoes and follow suit."
+  },
+  {
     "id": "densha",
     "icon": "🚆",
     "titleZh": "电车・公共交通礼仪",
