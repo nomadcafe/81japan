@@ -6,11 +6,43 @@ const TG_CHAT = import.meta.env.TELEGRAM_CHAT_ID;
 const MAX_FIELD = 1000;
 const MAX_TOTAL = 4096;
 
+const ALLOWED_ORIGINS = ['https://www.81japan.com', 'https://81japan.com'];
+
+const RATE_WINDOW_MS = 60_000;
+const RATE_LIMIT = 5;
+const ipBuckets = new Map();
+
 function json(data, status = 200) {
   return new Response(JSON.stringify(data), {
     status,
     headers: { 'content-type': 'application/json; charset=utf-8' },
   });
+}
+
+function isAllowedOrigin(request) {
+  if (import.meta.env.DEV) return true;
+  const origin = request.headers.get('origin');
+  if (origin) return ALLOWED_ORIGINS.includes(origin);
+  const referer = request.headers.get('referer') || '';
+  return ALLOWED_ORIGINS.some(o => referer === o || referer.startsWith(o + '/'));
+}
+
+function getClientIp(request, clientAddress) {
+  const fwd = request.headers.get('x-forwarded-for');
+  if (fwd) return fwd.split(',')[0].trim();
+  return clientAddress || 'unknown';
+}
+
+function isRateLimited(ip) {
+  const now = Date.now();
+  const recent = (ipBuckets.get(ip) || []).filter(t => now - t < RATE_WINDOW_MS);
+  if (recent.length >= RATE_LIMIT) {
+    ipBuckets.set(ip, recent);
+    return true;
+  }
+  recent.push(now);
+  ipBuckets.set(ip, recent);
+  return false;
 }
 
 function escapeHtml(s) {
@@ -90,6 +122,15 @@ function buildHospitalSnippet(data) {
 }
 
 export async function POST({ request, clientAddress }) {
+  if (!isAllowedOrigin(request)) {
+    return json({ ok: false, error: '禁止访问' }, 403);
+  }
+
+  const ip = getClientIp(request, clientAddress);
+  if (isRateLimited(ip)) {
+    return json({ ok: false, error: '请求过于频繁，请稍后再试' }, 429);
+  }
+
   if (!TG_TOKEN || !TG_CHAT) {
     console.error('Missing TELEGRAM_BOT_TOKEN or TELEGRAM_CHAT_ID');
     return json({ ok: false, error: '服务未配置' }, 500);
