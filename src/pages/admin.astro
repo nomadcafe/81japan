@@ -2,14 +2,14 @@
 import Layout from '../layouts/Layout.astro';
 import Nav from '../components/Nav.astro';
 import Footer from '../components/Footer.astro';
-import rules from '../data/rules.json';
+import admin from '../data/admin.json';
 import '../styles/page.css';
 
 const jsonLd = {
   '@context': 'https://schema.org',
   '@type': 'ItemList',
-  'name': '日本生活ルール',
-  'itemListElement': rules.map((r, i) => ({
+  'name': '在日行政手续指南',
+  'itemListElement': admin.map((r, i) => ({
     '@type': 'ListItem',
     'position': i + 1,
     'name': r.titleZh,
@@ -17,31 +17,31 @@ const jsonLd = {
 };
 ---
 <Layout
-  title="日本ルール · 在日生活规矩速查 | 81日本"
-  description="初到日本最容易踩坑的文化与生活规则：垃圾分类、地震防灾、公共交通礼仪、食べ歩き 等。行政手续请见 /admin。"
-  path="/rules"
+  title="行政手续 · 在日必办手续速查 | 81日本"
+  description="初到日本最关键的行政手续：住民票、在留卡、マイナンバー、国民健康保险、银行开户——按办理顺序整理。"
+  path="/admin"
 >
   <Fragment slot="head">
-    <meta name="keywords" content="日本生活规则,日本垃圾分类,地震防灾,公共交通礼仪,食べ歩き,日本生活指南" />
+    <meta name="keywords" content="日本行政手续,住民票,在留卡,マイナンバー,国民健康保险,日本银行开户,在日生活指南" />
     <script type="application/ld+json" set:html={JSON.stringify(jsonLd)} />
   </Fragment>
 
-  <Nav active="rules" />
+  <Nav active="admin" />
 
   <section class="page-hero">
     <div class="eyebrow">
-      <span class="zh-only">日本ルール</span>
-      <span class="en-only">Living in Japan</span>
+      <span class="zh-only">行政手续</span>
+      <span class="en-only">Administration</span>
     </div>
-    <h1 class="zh-only">初到日本，先记<em>这些规矩</em></h1>
-    <h1 class="en-only">Things to know <em>before you settle in</em></h1>
-    <p class="zh-only">从地震防灾到电车礼仪、食べ歩き——对中文使用者最容易踩坑的文化与日常规则。行政手续请见<a href="/admin">行政手续</a>页。</p>
-    <p class="en-only">From earthquakes to train etiquette — the cultural and everyday rules newcomers most often miss. For paperwork, see <a href="/admin">Administration</a>.</p>
+    <h1 class="zh-only">来日本，先把<em>这些手续办了</em></h1>
+    <h1 class="en-only">Paperwork to <em>knock out first</em></h1>
+    <p class="zh-only">按到日本后的实际办理顺序整理：登记住址、领在留卡、办个人番号、加入健保、开银行账户。</p>
+    <p class="en-only">In the order you'll actually do them: register address, residence card, My Number, health insurance, bank account.</p>
   </section>
 
   <main class="page-main">
     <div class="rules-grid">
-      {rules.map((r) => (
+      {admin.map((r) => (
         <article class="rule-card" id={r.id}>
           <div class="rule-card-head">
             <div class="rule-icon" aria-hidden="true">{r.icon}</div>
