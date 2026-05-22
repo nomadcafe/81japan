@@ -1,22 +1,16 @@
 ---
-import Layout from '../layouts/Layout.astro';
-import NavSimple from '../components/NavSimple.astro';
-import '../styles/submit.css';
+import Layout from '../../layouts/Layout.astro';
+import NavSimple from '../../components/NavSimple.astro';
+import '../../styles/submit.css';
 ---
 <Layout
-  title="页面未找到 · 404 | 81日本"
-  description="抱歉，你访问的页面不存在。返回 81日本 首页查看在日中文医院信息。"
-  path="/404.html"
+  title="Page not found · 404 | 81Japan"
+  description="The page you're looking for doesn't exist. Return to 81Japan to find Chinese-speaking hospitals in Japan."
+  path="/en/404.html"
   noindex={true}
+  locale="en"
 >
   <Fragment slot="head">
-    <script is:inline>
-      // Vercel serves /404.html for any unmatched URL including /en/<bad>.
-      // Redirect EN visitors to the EN 404 page.
-      if (location.pathname.indexOf('/en/') === 0 && location.pathname !== '/en/404') {
-        location.replace('/en/404');
-      }
-    </script>
     <style is:global>
       .nf-wrap {
         flex: 1;
@@ -58,15 +52,15 @@ import '../styles/submit.css';
     </style>
   </Fragment>
 
-  <NavSimple showLang={false} />
+  <NavSimple showLang={false} locale="en" backLabelEn="Home" />
 
   <main class="nf-wrap">
     <div class="nf-code">404</div>
-    <div class="nf-title">页面走丢了</div>
-    <p class="nf-desc">你访问的页面不存在，或者已经被移动。可以回首页继续查找在日中文医院信息。</p>
+    <div class="nf-title">Page not found</div>
+    <p class="nf-desc">The page you're looking for doesn't exist or was moved. Head back to the home page to find Chinese-speaking hospitals in Japan.</p>
     <div class="nf-actions">
-      <a href="/" class="nf-btn nf-btn-primary">回到首页</a>
-      <a href="/submit" class="nf-btn nf-btn-ghost">投稿・纠错</a>
+      <a href="/en" class="nf-btn nf-btn-primary">Back to home</a>
+      <a href="/en/submit" class="nf-btn nf-btn-ghost">Submit / Correct</a>
     </div>
   </main>
 </Layout>

@@ -47,6 +47,34 @@ const htmlLang = HTML_LANG[locale];
   <noscript><link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@300;400;600&family=Noto+Sans+SC:wght@300;400;500&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet" /></noscript>
 
   <slot name="head" />
+
+  <script is:inline>
+    (function () {
+      try {
+        var path = location.pathname;
+        var onEn = path === '/en' || path.indexOf('/en/') === 0;
+        if (onEn) {
+          localStorage.setItem('preferredLang', 'en');
+          return;
+        }
+        var onRoot = path === '/' || path === '';
+        var stored = localStorage.getItem('preferredLang');
+        if (stored === 'en' && onRoot) {
+          location.replace('/en');
+          return;
+        }
+        if (!stored && onRoot) {
+          var lang = (navigator.language || '').toLowerCase();
+          if (lang.indexOf('en') === 0 && lang.indexOf('zh') === -1) {
+            localStorage.setItem('preferredLang', 'en');
+            location.replace('/en');
+            return;
+          }
+          localStorage.setItem('preferredLang', 'zh');
+        }
+      } catch (e) {}
+    })();
+  </script>
 </head>
 <body class={bodyClass}>
   <slot />
