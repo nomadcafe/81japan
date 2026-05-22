@@ -7,13 +7,24 @@ import '../styles/page.css';
 
 const jsonLd = {
   '@context': 'https://schema.org',
-  '@type': 'ItemList',
-  'name': '在日税务指南',
-  'itemListElement': tax.map((r, i) => ({
-    '@type': 'ListItem',
-    'position': i + 1,
-    'name': r.titleZh,
-  })),
+  '@graph': [
+    {
+      '@type': 'ItemList',
+      'name': '在日税务指南',
+      'itemListElement': tax.map((r, i) => ({
+        '@type': 'ListItem',
+        'position': i + 1,
+        'name': r.titleZh,
+      })),
+    },
+    {
+      '@type': 'BreadcrumbList',
+      'itemListElement': [
+        { '@type': 'ListItem', 'position': 1, 'name': '首页', 'item': 'https://www.81japan.com/' },
+        { '@type': 'ListItem', 'position': 2, 'name': '税务' },
+      ],
+    },
+  ],
 };
 ---
 <Layout

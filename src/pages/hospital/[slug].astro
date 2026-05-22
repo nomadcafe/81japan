@@ -81,7 +81,7 @@ const jsonLd = {
 };
 ---
 <Layout
-  title={`${h.name}${h.jpName && h.jpName !== h.name ? '（' + h.jpName + '）' : ''} | 中文医疗服务 · 81日本`}
+  title={`${h.name}${h.jpName && h.jpName !== h.name ? '（' + h.jpName + '）' : ''} · ${h.region || '日本'}中文医院 | 81日本`}
   description={description}
   path={`/hospital/${slug}`}
 >
