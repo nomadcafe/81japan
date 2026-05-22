@@ -68,5 +68,29 @@
     ],
     "tipZh": "1 亿円门槛看起来高，但 IT 行业 RSU / 期权较多的话很容易跨过去。如果你接近这条线，建议至少提前半年咨询税理士。",
     "tipEn": "The ¥100M threshold sounds high but is easy to cross with tech-sector RSUs or stock options. If you're approaching it, consult a tax accountant at least 6 months before leaving."
+  },
+  {
+    "id": "gift-tax",
+    "icon": "🎁",
+    "titleZh": "贈与税・赠与税",
+    "titleEn": "Gift Tax (Zoyozei)",
+    "summaryZh": "日本对每人每年收受的赠与按累进税率征税。基础免税额是 110 万円/年/受赠者，超过部分由「收钱的人」申告纳税。家人之间也算。",
+    "summaryEn": "Japan taxes gifts received per person per year at progressive rates. The basic annual exemption is ¥1.1M per recipient — the recipient (not the giver) files and pays. Family gifts count.",
+    "pointsZh": [
+      "免税额：每位受赠者每年（1/1–12/31）收的合计 ≤ 110 万円 → 免税",
+      "纳税人：受赠者本人，次年 2/1–3/15 申告",
+      "税率：累进 10–55%",
+      "扶養義務 范围内的家人日常生活费・学费不算赠与",
+      "几个大额通道：住宅资金（至 1000 万）、教育资金一括赠与（至 1500 万）、配偶居住房产（至 2000 万）"
+    ],
+    "pointsEn": [
+      "Exemption: total per recipient per year (Jan–Dec) ≤ ¥1.1M → tax-free",
+      "Filer: the recipient, Feb 1 – Mar 15 next year",
+      "Rates: progressive 10–55%",
+      "Regular living and education expenses between family members aren't gifts (fuyō-gimu / duty of support)",
+      "Big-ticket exemptions: housing fund (up to ¥10M), lump-sum education (up to ¥15M), spouse residential property (¥20M)"
+    ],
+    "tipZh": "2024 改革后，给予人死前 3–7 年内的赠与会被「生前贈与加算」拉回遗产税计算——临终前几年靠「每年 110 万 trickle 给孩子」避税的做法已经失效，需要长期规划。",
+    "tipEn": "After the 2024 reform, gifts made within 3–7 years before the giver's death are pulled back into the inheritance tax base — the 'trickle ¥1.1M each year' strategy doesn't work in the final years. Long-term planning needed."
   }
 ]
