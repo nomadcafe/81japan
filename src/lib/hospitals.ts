@@ -1,21 +1,20 @@
-import hospitalsData from '../../public/hospitals.json';
+import { getCollection, type CollectionEntry } from 'astro:content';
 
-export function loadHospitals() {
-  return hospitalsData;
+type HospitalData = CollectionEntry<'hospitals'>['data'];
+
+export type Hospital = Omit<HospitalData, '_order'> & { slug: string };
+
+export async function loadHospitals(): Promise<Hospital[]> {
+  const entries = await getCollection('hospitals');
+  return entries
+    .slice()
+    .sort((a, b) => a.data._order - b.data._order)
+    .map((e) => {
+      const { _order, ...data } = e.data;
+      return { ...data, slug: e.id };
+    });
 }
 
-export function toSlug(name) {
-  return (name || '')
-    .toLowerCase()
-    .replace(/[（(][^）)]*[）)]/g, '')
-    .split(/[\/／・]/)[0]
-    .trim()
-    .replace(/['']/g, '')
-    .replace(/[^\p{L}\p{N}\s-]/gu, '')
-    .trim()
-    .replace(/\s+/g, '-');
-}
-
-export function hospitalSlug(h) {
-  return h.slug || toSlug(h.jpName || h.name);
+export function hospitalSlug(h: Hospital): string {
+  return h.slug;
 }

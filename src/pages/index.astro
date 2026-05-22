@@ -6,14 +6,14 @@ import HospitalCard from '../components/HospitalCard.astro';
 import { loadHospitals, hospitalSlug } from '../lib/hospitals.js';
 import '../styles/index.css';
 
-const hospitals = loadHospitals();
+const hospitals = await loadHospitals();
 const total = hospitals.length;
 
 const regionCounts: Record<string, number> = {};
 const langCounts: Record<string, number> = { '中文': 0, '英文': 0 };
-hospitals.forEach((h: any) => {
+hospitals.forEach((h) => {
   if (h.region) regionCounts[h.region] = (regionCounts[h.region] || 0) + 1;
-  (h.langs || []).forEach((l: string) => {
+  (h.langs || []).forEach((l) => {
     if (l in langCounts) langCounts[l]++;
   });
 });
@@ -49,7 +49,7 @@ const jsonLd = {
       '@id': 'https://www.81japan.com/#hospital-list',
       'name': '在日中文医院列表',
       'numberOfItems': total,
-      'itemListElement': hospitals.map((h: any, i: number) => ({
+      'itemListElement': hospitals.map((h, i) => ({
         '@type': 'ListItem',
         'position': i + 1,
         'name': h.name,
@@ -158,7 +158,7 @@ const jsonLd = {
       </div>
 
       <div id="cardList" role="list" aria-label="医院列表">
-        {hospitals.map((h: any) => <HospitalCard hospital={h} />)}
+        {hospitals.map((h) => <HospitalCard hospital={h} />)}
       </div>
 
       <div id="emptyState" style="display:none; text-align:center; padding:60px 20px; color:var(--ink-3);">

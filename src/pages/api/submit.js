@@ -140,7 +140,7 @@ export async function POST({ request, clientAddress }) {
 
   if (type.includes('新增')) {
     lines.push('');
-    lines.push('📋 <b>JSON 片段</b>（点右上角 COPY，粘贴到 hospitals.json 末尾 <code>]</code> 之前）');
+    lines.push('📋 <b>JSON 片段</b>（点右上角 COPY，粘贴到 src/data/hospitals.json 末尾 <code>]</code> 之前）');
     lines.push(`<pre><code class="language-json">${escapeHtml(buildHospitalSnippet(data))}</code></pre>`);
   }
 
