@@ -36,9 +36,9 @@ const labels = {
   </div>
   <div class="nav-right">
     <div class="lang-switcher">
-      <a class={`lang-opt${locale === 'zh' ? ' active' : ''}`} href={locale === 'zh' ? Astro.url.pathname : altUrl}>中文</a>
+      <a class={`lang-opt${locale === 'zh' ? ' active' : ''}`} href={locale === 'zh' ? Astro.url.pathname : altUrl} onclick="try{localStorage.setItem('preferredLang','zh')}catch(e){}">中文</a>
       <span class="lang-sep">/</span>
-      <a class={`lang-opt${locale === 'en' ? ' active' : ''}`} href={locale === 'en' ? Astro.url.pathname : altUrl}>EN</a>
+      <a class={`lang-opt${locale === 'en' ? ' active' : ''}`} href={locale === 'en' ? Astro.url.pathname : altUrl} onclick="try{localStorage.setItem('preferredLang','en')}catch(e){}">EN</a>
     </div>
     <button class="submit-nav-btn" onclick={`window.location='${submitHref}'`}>{labels.contribute}</button>
     <button class="nav-toggle" aria-label={labels.menu} aria-expanded="false" onclick="(function(b){var n=b.closest('nav');var open=n.classList.toggle('open');b.setAttribute('aria-expanded',open);})(this)">
