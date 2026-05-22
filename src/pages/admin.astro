@@ -58,7 +58,10 @@ const jsonLd = {
           </div>
           <p class="rule-summary">{r.summaryZh}</p>
           <ul class="rule-points">
-            {r.pointsZh.map((p) => <li>{p}</li>)}
+            {r.pointsZh.map((p) => {
+              const m = p.match(/^\[tip\]\s*(.+)$/);
+              return m ? <li class="tip" set:html={m[1]} /> : <li set:html={p} />;
+            })}
           </ul>
           {r.tipZh && <div class="rule-tip">💡 {r.tipZh}</div>}
         </article>

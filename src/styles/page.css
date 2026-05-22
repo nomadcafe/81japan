@@ -187,6 +187,17 @@
     content: '·'; position: absolute; left: 4px; color: var(--red-mid);
     font-weight: 700;
   }
+  .rule-points li.tip {
+    background: var(--red-light);
+    color: var(--red);
+    font-weight: 500;
+    padding: 8px 12px 8px 22px;
+    border-radius: 6px;
+    margin: 0 -2px 4px;
+  }
+  .rule-points li.tip::before {
+    content: '⭐'; left: 6px; font-size: 11px; top: 8px;
+  }
   .rule-tip {
     font-size: 11.5px; color: var(--ink-3);
     background: var(--paper-2);
