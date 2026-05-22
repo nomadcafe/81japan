@@ -1,27 +1,5 @@
 [
   {
-    "id": "gomi",
-    "icon": "🗑",
-    "titleZh": "ゴミ分別・垃圾分类",
-    "titleEn": "Garbage Sorting",
-    "summaryZh": "日本的垃圾按「可燃・不可燃・资源・粗大」分类，收集日随地区不同。分错会被退回，并贴上警示贴纸。",
-    "summaryEn": "Garbage is strictly sorted into burnable, non-burnable, recyclable, and bulky categories. Collection days vary by ward.",
-    "pointsZh": [
-      "燃やせるゴミ（可燃）：厨余、纸屑、尿布等",
-      "燃やせないゴミ（不可燃）：小金属、陶瓷、玻璃碎片",
-      "資源ゴミ（资源）：PET 瓶、铝罐、纸箱，需洗净分开",
-      "粗大ゴミ（大件）：家具、家电，需提前预约付费"
-    ],
-    "pointsEn": [
-      "Burnable: food waste, paper scraps, diapers",
-      "Non-burnable: small metals, ceramics, glass",
-      "Recyclable: PET bottles, cans, cardboard — rinse & separate",
-      "Bulky: furniture, appliances — book pickup & pay fee"
-    ],
-    "tipZh": "搬家后到区役所领取本区的收集日历，或用区役所 App 查询。",
-    "tipEn": "After moving, get your ward's collection calendar from the city office or its app."
-  },
-  {
     "id": "densha",
     "icon": "🚆",
     "titleZh": "电车・公共交通礼仪",
