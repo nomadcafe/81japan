@@ -10,6 +10,13 @@ import '../styles/submit.css';
   noindex={true}
 >
   <Fragment slot="head">
+    <script is:inline>
+      // Vercel serves /404.html for any unmatched URL including /en/<bad>.
+      // Redirect EN visitors to the EN 404 page.
+      if (location.pathname.indexOf('/en/') === 0 && location.pathname !== '/en/404') {
+        location.replace('/en/404');
+      }
+    </script>
     <style is:global>
       .nf-wrap {
         flex: 1;

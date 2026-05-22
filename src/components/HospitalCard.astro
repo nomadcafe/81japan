@@ -1,6 +1,6 @@
 ---
 import { hospitalSlug, type Hospital } from '../lib/hospitals.js';
-import { localizePath, detectLocale, type Locale } from '../lib/i18n';
+import { localizePath, detectLocale, deptLabel, type Locale } from '../lib/i18n';
 
 interface Props {
   hospital: Hospital;
@@ -35,7 +35,11 @@ const mapHref = mapAddr
   : null;
 
 const langDataAttr = h.langDetail || (h.langs || []).join(' ');
-const deptsDataAttr = (h.depts || []).join(' ');
+// 数据属性给客户端搜索用：两种语言都放进去，搜索框输入英文中文都能匹配
+const deptsDataAttr = (h.depts || []).flatMap((d) => {
+  const en = deptLabel(d, 'en');
+  return en === d ? [d] : [d, en];
+}).join(' ');
 
 const labels = locale === 'zh'
   ? { call: '电话', map: '地图', callAria: `拨打 ${h.name}`, mapAria: `在地图查看 ${h.name}` }
@@ -78,7 +82,7 @@ const labels = locale === 'zh'
       </div>
     </div>
     <div class="card-depts">
-      {(h.depts || []).map((d) => <span class="dept-tag">{d}</span>)}
+      {(h.depts || []).map((d) => <span class="dept-tag">{deptLabel(d, locale)}</span>)}
     </div>
   </a>
   <div class="card-footer">

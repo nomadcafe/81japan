@@ -3,6 +3,7 @@ import Layout from '../../../layouts/Layout.astro';
 import Nav from '../../../components/Nav.astro';
 import Footer from '../../../components/Footer.astro';
 import { loadHospitals, hospitalSlug, type Hospital } from '../../../lib/hospitals.js';
+import { deptLabel } from '../../../lib/i18n';
 import '../../../styles/page.css';
 import '../../../styles/hospital.css';
 
@@ -182,7 +183,7 @@ const jsonLd = {
       <section class="h-section">
         <h2 class="h-section-title">Departments</h2>
         <div class="h-dept-list">
-          {h.depts.map((d) => <span class="dept-tag">{d}</span>)}
+          {h.depts.map((d) => <span class="dept-tag">{deptLabel(d, 'en')}</span>)}
         </div>
       </section>
     )}
