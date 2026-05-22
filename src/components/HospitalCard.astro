@@ -41,8 +41,13 @@ const deptsDataAttr = (h.depts || []).join(' ');
   data-updated={h.updated || ''}
 >
   <a class="card-link" href={detailHref}>
+    {h.region && (
+      <div class="card-eyebrow">
+        <span class="card-region">{h.region}</span>
+      </div>
+    )}
     <div class="card-row1">
-      <div>
+      <div class="card-title">
         <div class="hospital-name">{h.name}</div>
         <div class="hospital-name-ja">{h.jpName || ''}</div>
       </div>
