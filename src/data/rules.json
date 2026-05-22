@@ -66,6 +66,24 @@
     "tipEn": "A Suica or PASMO IC card works nationwide for transit and convenience stores."
   },
   {
+    "id": "elevator",
+    "icon": "🛗",
+    "titleZh": "エレベーター・电梯礼仪",
+    "titleEn": "Elevator Etiquette",
+    "summaryZh": "靠近按钮的人默认是「操作员」：代大家按楼层、按住「开门」键让别人先出，自己最后出。",
+    "summaryEn": "Whoever stands closest to the panel is the de-facto operator — they press floors, hold the door, and exit last.",
+    "pointsZh": [
+      "到楼层时按住「開」键（▷|◁ 标志），让其他人先出，自己最后出",
+      "进电梯时也按「開」让外面的人先进"
+    ],
+    "pointsEn": [
+      "On arrival, hold OPEN (▷|◁) and let everyone exit first; you exit last",
+      "Hold OPEN while others board when boarding too"
+    ],
+    "tipZh": "「開」是开门键，「閉」是关门键——别按错。对着正在进出的人按「閉」是相当失礼的行为。",
+    "tipEn": "「開」opens, 「閉」closes — don't mix them up. Pressing 「閉」on someone entering or leaving is considered very rude."
+  },
+  {
     "id": "tabearuki",
     "icon": "🍡",
     "titleZh": "食べ歩き・边走边吃",
