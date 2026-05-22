@@ -1,3 +1,6 @@
+// ── 筛选状态 ──
+const filterState = { region: '', lang: '', query: '' };
+
 // ── 语言切换 ──
 function switchLang(lang, btn) {
   document.querySelectorAll('.lang-opt').forEach(b => b.classList.remove('active'));
@@ -21,26 +24,26 @@ function switchLang(lang, btn) {
   }
 }
 
-// ── 搜索 / 筛选 / 排序 ──
-function setSearch(val) {
-  document.getElementById('searchInput').value = val;
-  filterCards();
-}
-
-function resetFilterHighlights() {
-  const allRegion = document.querySelector('[data-region-filter="全部"]');
-  if (allRegion) { document.querySelectorAll('[data-region-filter]').forEach(o => o.classList.remove('active')); allRegion.classList.add('active'); }
-  const allLang = document.querySelector('[data-lang-filter="全部"]');
-  if (allLang) { document.querySelectorAll('[data-lang-filter]').forEach(o => o.classList.remove('active')); allLang.classList.add('active'); }
-}
-
-function filterCards() {
-  const q = document.getElementById('searchInput').value.toLowerCase();
+// ── 组合筛选 ──
+function applyFilters() {
+  const q = filterState.query.trim().toLowerCase();
+  const region = filterState.region;
+  const lang = filterState.lang.toLowerCase();
   const cards = document.querySelectorAll('#cardList .hospital-card');
   let shown = 0;
   cards.forEach(c => {
-    const text = (c.dataset.name + c.dataset.region + c.dataset.depts + c.dataset.lang).toLowerCase();
-    const match = !q || text.includes(q);
+    const cRegion = c.dataset.region || '';
+    const cLang = (c.dataset.lang || '').toLowerCase();
+    const cText = (
+      (c.dataset.name || '') + ' ' +
+      cRegion + ' ' +
+      (c.dataset.depts || '') + ' ' +
+      cLang
+    ).toLowerCase();
+    const matchRegion = !region || cRegion === region;
+    const matchLang = !lang || cLang.includes(lang);
+    const matchQuery = !q || cText.includes(q);
+    const match = matchRegion && matchLang && matchQuery;
     c.style.display = match ? '' : 'none';
     if (match) shown++;
   });
@@ -50,6 +53,32 @@ function filterCards() {
   document.getElementById('emptyState').style.display = shown === 0 ? '' : 'none';
 }
 
+function onSearchInput() {
+  filterState.query = document.getElementById('searchInput').value;
+  applyFilters();
+}
+
+function setSearch(val) {
+  document.getElementById('searchInput').value = val;
+  filterState.query = val;
+  applyFilters();
+}
+
+function filterRegion(region, el) {
+  document.querySelectorAll('[data-region-filter]').forEach(o => o.classList.remove('active'));
+  el.classList.add('active');
+  filterState.region = region === '全部' ? '' : region;
+  applyFilters();
+}
+
+function filterLang(lang, el) {
+  document.querySelectorAll('[data-lang-filter]').forEach(o => o.classList.remove('active'));
+  el.classList.add('active');
+  filterState.lang = lang === '全部' ? '' : lang;
+  applyFilters();
+}
+
+// ── 排序 ──
 function sortCards(method) {
   const list = document.getElementById('cardList');
   const cards = Array.from(list.querySelectorAll('.hospital-card'));
@@ -74,28 +103,6 @@ function sortCards(method) {
       c.style.transform = '';
     }, i * 40);
   });
-}
-
-function filterRegion(region, el) {
-  document.querySelectorAll('[data-region-filter]').forEach(o => o.classList.remove('active'));
-  el.classList.add('active');
-  if (region === '全部') {
-    document.getElementById('searchInput').value = '';
-    filterCards();
-  } else {
-    setSearch(region);
-  }
-}
-
-function filterLang(lang, el) {
-  document.querySelectorAll('[data-lang-filter]').forEach(o => o.classList.remove('active'));
-  el.classList.add('active');
-  if (lang === '全部') {
-    document.getElementById('searchInput').value = '';
-    filterCards();
-  } else {
-    setSearch(lang);
-  }
 }
 
 document.addEventListener('DOMContentLoaded', () => {
