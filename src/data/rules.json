@@ -1,27 +1,5 @@
 [
   {
-    "id": "jishin",
-    "icon": "🌋",
-    "titleZh": "地震・防灾",
-    "titleEn": "Earthquake & Disaster",
-    "summaryZh": "日本年均有感地震上千次。手机会先响「紧急地震速报」——先护头、远离高物，等震停再行动。",
-    "summaryEn": "Japan experiences thousands of felt earthquakes per year. Phones ring an Early Warning alert — protect your head, move away from heavy objects.",
-    "pointsZh": [
-      "开启手机「緊急地震速報」推送（iPhone/Android 都默认开）",
-      "家中常备手电筒、饮用水（3日分）、应急食品",
-      "记下所在区的指定避难所位置（通常是附近小学）",
-      "大震后优先确认家人安全，再考虑外出"
-    ],
-    "pointsEn": [
-      "Enable Earthquake Early Warning on your phone (on by default)",
-      "Keep flashlight, 3 days of water & emergency food at home",
-      "Know your designated evacuation site (usually a local school)",
-      "After a quake: check family first before going out"
-    ],
-    "tipZh": "免费 App「NHK ニュース・防災」可实时推送震度与避难信息。",
-    "tipEn": "The free NHK News & Disaster Prevention app pushes real-time intensity and shelter info."
-  },
-  {
     "id": "gomi",
     "icon": "🗑",
     "titleZh": "ゴミ分別・垃圾分类",
