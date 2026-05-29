@@ -206,6 +206,74 @@
     line-height: 1.7;
   }
 
+  /* JOBS — 网址导航 */
+  .jobs-section { margin-bottom: 40px; }
+  .jobs-section:last-child { margin-bottom: 0; }
+  .jobs-section-head {
+    display: flex; align-items: flex-start; gap: 12px;
+    padding-bottom: 14px; margin-bottom: 18px;
+    border-bottom: 1px solid var(--paper-3);
+  }
+  .jobs-section-icon {
+    width: 38px; height: 38px; border-radius: var(--radius-sm);
+    background: var(--paper-2);
+    display: flex; align-items: center; justify-content: center;
+    font-size: 19px; flex-shrink: 0;
+  }
+  .jobs-section-title {
+    font-family: var(--serif); font-size: 20px;
+    font-weight: 500; color: var(--ink); line-height: 1.35;
+  }
+  .jobs-section-desc {
+    font-size: 12.5px; color: var(--ink-3);
+    margin-top: 2px; line-height: 1.6;
+  }
+  .links-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+    gap: 14px;
+  }
+  .link-card {
+    display: block; text-decoration: none;
+    background: var(--white);
+    border: 1px solid var(--paper-3);
+    border-radius: var(--radius);
+    padding: 16px 18px;
+    transition: border-color 0.15s, transform 0.15s, box-shadow 0.15s;
+  }
+  .link-card:hover {
+    border-color: var(--ink);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 18px rgba(26,26,26,0.06);
+  }
+  .link-card-top {
+    display: flex; align-items: baseline; justify-content: space-between; gap: 10px;
+  }
+  .link-name {
+    font-size: 15px; font-weight: 600; color: var(--ink);
+    line-height: 1.4;
+  }
+  .link-card:hover .link-name { color: var(--red); }
+  .link-arrow {
+    font-family: var(--mono); font-size: 13px; color: var(--ink-3);
+    flex-shrink: 0; transition: transform 0.15s;
+  }
+  .link-card:hover .link-arrow { color: var(--red); transform: translate(2px, -2px); }
+  .link-domain {
+    font-family: var(--mono); font-size: 11px; color: var(--ink-3);
+    letter-spacing: 0.02em; margin-top: 3px;
+  }
+  .link-desc {
+    font-size: 12.5px; color: var(--ink-2);
+    line-height: 1.65; margin-top: 10px;
+  }
+  .jobs-note {
+    margin-top: 8px; font-size: 11.5px; color: var(--ink-3);
+    background: var(--paper-2);
+    padding: 12px 14px; border-radius: var(--radius-sm);
+    border-left: 2px solid var(--red-mid); line-height: 1.7;
+  }
+
   /* ABOUT — 长文布局 */
   .about-body {
     max-width: 680px; margin: 0 auto;
@@ -293,6 +361,7 @@
     .page-hero h1 { font-size: 26px; }
     .page-main { padding: 32px 20px; }
     .rules-grid { grid-template-columns: 1fr; gap: 14px; }
+    .links-grid { grid-template-columns: 1fr; gap: 12px; }
     .about-cta { flex-direction: column; align-items: flex-start; }
     footer { flex-direction: column; gap: 10px; text-align: center; }
   }

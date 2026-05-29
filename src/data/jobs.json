@@ -1,0 +1,144 @@
+[
+  {
+    "id": "general",
+    "icon": "🔍",
+    "titleZh": "综合求职 · 转职",
+    "titleEn": "General & Career",
+    "descZh": "正社员、转职为主，职位最全，适合长期工作。",
+    "descEn": "Full-time and career-change roles — the broadest listings for long-term work.",
+    "sites": [
+      {
+        "name": "Indeed Japan",
+        "url": "https://jp.indeed.com/",
+        "descZh": "全球最大的求人搜索引擎日本版，几乎涵盖所有职位。",
+        "descEn": "The Japanese edition of the world's largest job search engine."
+      },
+      {
+        "name": "リクナビNEXT",
+        "url": "https://next.rikunabi.com/",
+        "descZh": "Recruit 旗下转职门户，正社员职位丰富。",
+        "descEn": "Recruit's career-change portal, strong on full-time roles."
+      },
+      {
+        "name": "doda",
+        "url": "https://doda.jp/",
+        "descZh": "大型转职网站，自带顾问与年收诊断工具。",
+        "descEn": "Major career site with agents and salary-check tools."
+      },
+      {
+        "name": "マイナビ転職",
+        "url": "https://tenshoku.mynavi.jp/",
+        "descZh": "Mynavi 转职平台，面向 20–30 代上班族。",
+        "descEn": "Mynavi's career platform, aimed at workers in their 20s–30s."
+      },
+      {
+        "name": "エン転職",
+        "url": "https://employment.en-japan.com/",
+        "descZh": "en-japan 旗下，企业口碑信息较透明。",
+        "descEn": "By en-japan, known for transparent company reviews."
+      }
+    ]
+  },
+  {
+    "id": "baito",
+    "icon": "🕒",
+    "titleZh": "兼职 · 打工 (アルバイト)",
+    "titleEn": "Part-time (Baito)",
+    "descZh": "时给制兼职、短期工，留学生与刚来日本者首选。",
+    "descEn": "Hourly and short-term gigs — a first stop for students and new arrivals.",
+    "sites": [
+      {
+        "name": "バイトル",
+        "url": "https://www.baitoru.com/",
+        "descZh": "知名度极高的兼职平台，职位多、筛选细。",
+        "descEn": "Hugely popular baito site with detailed filters."
+      },
+      {
+        "name": "タウンワーク",
+        "url": "https://townwork.net/",
+        "descZh": "Recruit 旗下，便利店、餐饮等本地兼职最多。",
+        "descEn": "Recruit's local-baito board — convenience stores, dining and more."
+      },
+      {
+        "name": "マイナビバイト",
+        "url": "https://baito.mynavi.jp/",
+        "descZh": "Mynavi 的兼职频道，附奖金活动多。",
+        "descEn": "Mynavi's baito channel, often with sign-on bonuses."
+      },
+      {
+        "name": "ショットワークス",
+        "url": "https://shotworks.jp/",
+        "descZh": "主打单日 · 短期工（単発バイト）。",
+        "descEn": "Focused on single-day and short-term gigs."
+      }
+    ]
+  },
+  {
+    "id": "foreigner",
+    "icon": "🌏",
+    "titleZh": "外国人 · 中文友好",
+    "titleEn": "Foreigner-friendly",
+    "descZh": "支持中英文、对签证与日语门槛友好的招聘平台。",
+    "descEn": "Platforms in Chinese/English that welcome non-Japanese applicants.",
+    "sites": [
+      {
+        "name": "NEXT IN JAPAN",
+        "url": "https://nextinjapan.com/",
+        "descZh": "面向在日华人的中文求职平台。",
+        "descEn": "A Chinese-language job platform for people living in Japan."
+      },
+      {
+        "name": "YOLO JAPAN",
+        "url": "https://www.yolo-japan.com/",
+        "descZh": "面向在日外国人，多语言、兼职为主。",
+        "descEn": "Multilingual site for foreigners in Japan, mostly part-time."
+      },
+      {
+        "name": "Daijob",
+        "url": "https://www.daijob.com/",
+        "descZh": "双语 · 高技能人才转职，外企职位多。",
+        "descEn": "Bilingual career site for skilled talent and global firms."
+      },
+      {
+        "name": "GaijinPot Jobs",
+        "url": "https://jobs.gaijinpot.com/",
+        "descZh": "老牌英文求职站，教师与英语相关职位多。",
+        "descEn": "Long-running English job board, strong on teaching roles."
+      },
+      {
+        "name": "WORK JAPAN",
+        "url": "https://workjapan.jp/",
+        "descZh": "多语言兼职平台，应聘流程简单。",
+        "descEn": "Multilingual part-time platform with an easy apply flow."
+      }
+    ]
+  },
+  {
+    "id": "public",
+    "icon": "🏛️",
+    "titleZh": "公共 · 高端",
+    "titleEn": "Public & Executive",
+    "descZh": "政府公共职介与高端 · 猎头型服务。",
+    "descEn": "Government placement services and executive / headhunting channels.",
+    "sites": [
+      {
+        "name": "ハローワーク",
+        "url": "https://www.hellowork.mhlw.go.jp/",
+        "descZh": "厚生劳动省公共职业介绍所，免费、覆盖全国。",
+        "descEn": "Japan's free government employment service, nationwide."
+      },
+      {
+        "name": "ビズリーチ",
+        "url": "https://www.bizreach.jp/",
+        "descZh": "面向中高年收的猎头 · 高端转职平台。",
+        "descEn": "Headhunting platform for higher-salary, senior roles."
+      },
+      {
+        "name": "リクルートエージェント",
+        "url": "https://www.r-agent.com/",
+        "descZh": "Recruit 转职代理，顾问一对一推荐。",
+        "descEn": "Recruit's agent service with one-on-one consultants."
+      }
+    ]
+  }
+]
