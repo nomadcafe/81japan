@@ -48,6 +48,25 @@
         "url": "https://www.green-japan.com/",
         "descZh": "面向 IT · 互联网行业的转职平台。",
         "descEn": "Career-change platform focused on IT and web industries."
+      },
+      {
+        "name": "type転職",
+        "url": "https://type.jp/",
+        "descZh": "老牌转职网站，IT · 工程师职位较多。",
+        "descEn": "Long-running career site, strong on IT and engineering."
+      },
+      {
+        "name": "マイナビエージェント",
+        "url": "https://mynavi-agent.jp/",
+        "descZh": "Mynavi 转职代理，顾问一对一支持。",
+        "descEn": "Mynavi's agent service with one-on-one consultant support."
+      },
+      {
+        "name": "求人ボックス",
+        "url": "https://xn--pckua2a7gp15o89zb.com/",
+        "domain": "求人ボックス.com",
+        "descZh": "价格.com 旗下求人聚合搜索，汇总各大招聘站职位。",
+        "descEn": "Job-aggregator search by Kakaku.com, pulling listings from many sites."
       }
     ]
   },
@@ -134,6 +153,68 @@
         "url": "https://www.careercross.com/",
         "descZh": "双语人才转职平台，外资企业职位多。",
         "descEn": "Bilingual career platform with many roles at global companies."
+      },
+      {
+        "name": "Jobs in Japan",
+        "url": "https://jobsinjapan.com/",
+        "descZh": "英文求职站，外国人友好职位较多。",
+        "descEn": "English job board with plenty of foreigner-friendly roles."
+      },
+      {
+        "name": "Robert Walters",
+        "url": "https://www.robertwalters.co.jp/",
+        "descZh": "知名外资猎头，双语 · 专业人才职位。",
+        "descEn": "Well-known global recruiter for bilingual, professional roles."
+      }
+    ]
+  },
+  {
+    "id": "spot",
+    "icon": "⚡",
+    "titleZh": "短期 · 单日 (スキマバイト)",
+    "titleEn": "Short-term & Single-day",
+    "descZh": "免面试 · 最短数小时的零工 App，想灵活赚点零花钱时用。",
+    "descEn": "No-interview gig apps for a few hours' work — handy for flexible side income.",
+    "sites": [
+      {
+        "name": "タイミー (Timee)",
+        "url": "https://timee.co.jp/",
+        "descZh": "最大的单日打工 App，免面试 · 当天即可上工。",
+        "descEn": "The largest single-day gig app — no interview, work the same day."
+      },
+      {
+        "name": "シェアフル",
+        "url": "https://sharefull.com/",
+        "descZh": "1 日单位的短期打工 App，职种多样。",
+        "descEn": "Single-day gig app with a wide range of job types."
+      }
+    ]
+  },
+  {
+    "id": "medical",
+    "icon": "🏥",
+    "titleZh": "医疗 · 护理 · 介护",
+    "titleEn": "Medical & Care",
+    "descZh": "医院、诊所、介护设施等专门职种招聘。",
+    "descEn": "Specialized listings for hospitals, clinics and nursing-care facilities.",
+    "sites": [
+      {
+        "name": "ジョブメドレー",
+        "url": "https://job-medley.com/",
+        "descZh": "医疗 · 介护 · 保育领域最大的招聘平台。",
+        "descEn": "The largest job platform for medical, nursing-care and childcare."
+      },
+      {
+        "name": "カイゴジョブ",
+        "url": "https://www.kaigojob.com/",
+        "descZh": "介护 · 福祉行业专门招聘网站。",
+        "descEn": "Job site specialized in nursing-care and welfare work."
+      },
+      {
+        "name": "看護roo! 転職",
+        "url": "https://www.kango-roo.com/career/",
+        "descZh": "面向护士的转职平台。",
+        "descEn": "Career-change platform for nurses."
       }
     ]
   },
