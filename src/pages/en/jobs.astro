@@ -1,0 +1,86 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Nav from '../../components/Nav.astro';
+import Footer from '../../components/Footer.astro';
+import jobs from '../../data/jobs.json';
+import '../../styles/page.css';
+
+const domain = (url: string) => {
+  try { return new URL(url).hostname.replace(/^www\./, ''); }
+  catch { return url; }
+};
+
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@graph': [
+    {
+      '@type': 'ItemList',
+      'name': 'Finding a Job in Japan — Useful Sites',
+      'itemListElement': jobs.flatMap((c) => c.sites).map((s, i) => ({
+        '@type': 'ListItem',
+        'position': i + 1,
+        'name': s.name,
+        'url': s.url,
+      })),
+    },
+    {
+      '@type': 'BreadcrumbList',
+      'itemListElement': [
+        { '@type': 'ListItem', 'position': 1, 'name': 'Home', 'item': 'https://www.81japan.com/en' },
+        { '@type': 'ListItem', 'position': 2, 'name': 'Jobs' },
+      ],
+    },
+  ],
+};
+---
+<Layout
+  title="Finding a Job in Japan · Job & Part-time Site Directory | 81Japan"
+  description="A curated directory of job-search sites in Japan: Indeed, Baitoru, NEXT IN JAPAN and more — full-time, part-time, foreigner-friendly and public placement, all in one place."
+  path="/en/jobs"
+  locale="en"
+>
+  <Fragment slot="head">
+    <meta name="keywords" content="jobs in Japan,find work Japan,part-time Japan,baito,Indeed Japan,foreigner jobs Japan,job search Japan" />
+    <script type="application/ld+json" set:html={JSON.stringify(jsonLd)} />
+  </Fragment>
+
+  <Nav active="jobs" locale="en" />
+
+  <section class="page-hero">
+    <div class="eyebrow">Jobs</div>
+    <h1>Finding work in Japan <em>starts here</em></h1>
+    <p>Full-time, part-time, foreigner-friendly and public placement — the job-search sites you'll actually use, in one place.</p>
+  </section>
+
+  <main class="page-main">
+    {jobs.map((cat) => (
+      <section class="jobs-section" id={cat.id}>
+        <div class="jobs-section-head">
+          <div class="jobs-section-icon" aria-hidden="true">{cat.icon}</div>
+          <div>
+            <div class="jobs-section-title">{cat.titleEn}</div>
+            <div class="jobs-section-desc">{cat.descEn}</div>
+          </div>
+        </div>
+        <div class="links-grid">
+          {cat.sites.map((s) => (
+            <a class="link-card" href={s.url} target="_blank" rel="noopener noreferrer">
+              <div class="link-card-top">
+                <span class="link-name">{s.name}</span>
+                <span class="link-arrow" aria-hidden="true">↗</span>
+              </div>
+              <div class="link-domain">{domain(s.url)}</div>
+              <p class="link-desc">{s.descEn}</p>
+            </a>
+          ))}
+        </div>
+      </section>
+    ))}
+
+    <p class="jobs-note">External links are curated by 81Japan for reference only. Always verify listings through official channels, protect your personal information, and watch out for scams.</p>
+  </main>
+
+  <Footer locale="en" />
+
+  <script is:inline src="/page.js" defer></script>
+</Layout>

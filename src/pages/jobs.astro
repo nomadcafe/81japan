@@ -1,0 +1,86 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Nav from '../components/Nav.astro';
+import Footer from '../components/Footer.astro';
+import jobs from '../data/jobs.json';
+import '../styles/page.css';
+
+const domain = (url: string) => {
+  try { return new URL(url).hostname.replace(/^www\./, ''); }
+  catch { return url; }
+};
+
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@graph': [
+    {
+      '@type': 'ItemList',
+      'name': '日本找工作网址导航',
+      'itemListElement': jobs.flatMap((c) => c.sites).map((s, i) => ({
+        '@type': 'ListItem',
+        'position': i + 1,
+        'name': s.name,
+        'url': s.url,
+      })),
+    },
+    {
+      '@type': 'BreadcrumbList',
+      'itemListElement': [
+        { '@type': 'ListItem', 'position': 1, 'name': '首页', 'item': 'https://www.81japan.com/' },
+        { '@type': 'ListItem', 'position': 2, 'name': '找工作' },
+      ],
+    },
+  ],
+};
+---
+<Layout
+  title="日本找工作 · 求职 / 兼职网址导航 | 81日本"
+  description="在日本找工作的常用网站合集：Indeed、バイトル、NEXT IN JAPAN 等。综合转职、兼职打工、外国人中文友好与公共职介一站速查。"
+  path="/jobs"
+  locale="zh"
+>
+  <Fragment slot="head">
+    <meta name="keywords" content="日本找工作,日本求职网站,日本兼职,アルバイト,Indeed Japan,バイトル,外国人 日本 工作,在日华人求职" />
+    <script type="application/ld+json" set:html={JSON.stringify(jsonLd)} />
+  </Fragment>
+
+  <Nav active="jobs" locale="zh" />
+
+  <section class="page-hero">
+    <div class="eyebrow">找工作</div>
+    <h1>在日本，<em>找工作</em>从这里开始</h1>
+    <p>综合转职、兼职打工、外国人友好与公共职介，常用求职网站一站速查。</p>
+  </section>
+
+  <main class="page-main">
+    {jobs.map((cat) => (
+      <section class="jobs-section" id={cat.id}>
+        <div class="jobs-section-head">
+          <div class="jobs-section-icon" aria-hidden="true">{cat.icon}</div>
+          <div>
+            <div class="jobs-section-title">{cat.titleZh}</div>
+            <div class="jobs-section-desc">{cat.descZh}</div>
+          </div>
+        </div>
+        <div class="links-grid">
+          {cat.sites.map((s) => (
+            <a class="link-card" href={s.url} target="_blank" rel="noopener noreferrer">
+              <div class="link-card-top">
+                <span class="link-name">{s.name}</span>
+                <span class="link-arrow" aria-hidden="true">↗</span>
+              </div>
+              <div class="link-domain">{domain(s.url)}</div>
+              <p class="link-desc">{s.descZh}</p>
+            </a>
+          ))}
+        </div>
+      </section>
+    ))}
+
+    <p class="jobs-note">外部链接由 81日本 整理，仅供参考。求职时请通过官方渠道核实招聘信息，注意保护个人信息，谨防诈骗。</p>
+  </main>
+
+  <Footer locale="zh" />
+
+  <script is:inline src="/page.js" defer></script>
+</Layout>

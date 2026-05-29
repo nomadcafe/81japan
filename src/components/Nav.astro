@@ -2,7 +2,7 @@
 import { alternatePath, localizePath, detectLocale, type Locale } from '../lib/i18n';
 
 interface Props {
-  active?: 'hospitals' | 'admin' | 'tax' | 'rent' | 'life' | 'rules' | 'about' | null;
+  active?: 'hospitals' | 'admin' | 'tax' | 'rent' | 'jobs' | 'life' | 'rules' | 'about' | null;
   locale?: Locale;
 }
 const { active = null, locale: localeProp } = Astro.props;
@@ -14,6 +14,7 @@ const items: Array<{ key: NonNullable<Props['active']>; href: string; zh: string
   { key: 'admin',     href: '/admin',    zh: '行政手续',   en: 'Admin' },
   { key: 'rent',      href: '/rent',     zh: '租房',       en: 'Renting' },
   { key: 'tax',       href: '/tax',      zh: '税务',       en: 'Taxes' },
+  { key: 'jobs',      href: '/jobs',     zh: '找工作',     en: 'Jobs' },
   { key: 'life',      href: '#',         zh: '生活服务',   en: 'Life' },
   { key: 'about',     href: '/about',    zh: '关于',       en: 'About' },
 ];
