@@ -7,7 +7,6 @@ interface Props {
 const { locale: localeProp } = Astro.props;
 const locale: Locale = localeProp ?? detectLocale(Astro.url.pathname);
 const year = new Date().getFullYear();
-const submitHref = localizePath('/submit', locale);
 ---
 <footer>
   <div>
@@ -16,5 +15,12 @@ const submitHref = localizePath('/submit', locale);
       : <>© {year} 81Japan · maintained by 81Japan</>
     }
   </div>
-  <a href={submitHref}>{locale === 'zh' ? '联系我' : 'Contact'}</a>
+  <a class="contact-link" href="#" data-user="hello" data-domain="81japan.com">{locale === 'zh' ? '联系我' : 'Contact'}</a>
 </footer>
+<script>
+  document.querySelectorAll<HTMLAnchorElement>('a.contact-link').forEach((a) => {
+    const user = a.dataset.user;
+    const domain = a.dataset.domain;
+    if (user && domain) a.href = `mailto:${user}@${domain}`;
+  });
+</script>
