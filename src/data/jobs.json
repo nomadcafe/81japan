@@ -36,6 +36,18 @@
         "url": "https://employment.en-japan.com/",
         "descZh": "en-japan 旗下，企业口碑信息较透明。",
         "descEn": "By en-japan, known for transparent company reviews."
+      },
+      {
+        "name": "Wantedly",
+        "url": "https://www.wantedly.com/",
+        "descZh": "主打理念匹配，IT · 创业公司多，可先「聊聊」再应聘。",
+        "descEn": "Mission-driven platform popular with startups; start with a casual chat."
+      },
+      {
+        "name": "Green",
+        "url": "https://www.green-japan.com/",
+        "descZh": "面向 IT · 互联网行业的转职平台。",
+        "descEn": "Career-change platform focused on IT and web industries."
       }
     ]
   },
@@ -110,6 +122,18 @@
         "url": "https://workjapan.jp/",
         "descZh": "多语言兼职平台，应聘流程简单。",
         "descEn": "Multilingual part-time platform with an easy apply flow."
+      },
+      {
+        "name": "LinkedIn",
+        "url": "https://www.linkedin.com/",
+        "descZh": "全球职业社交网络，外资 · 全球职位与猎头机会多。",
+        "descEn": "Global professional network — strong for foreign-affiliated and global roles."
+      },
+      {
+        "name": "CareerCross",
+        "url": "https://www.careercross.com/",
+        "descZh": "双语人才转职平台，外资企业职位多。",
+        "descEn": "Bilingual career platform with many roles at global companies."
       }
     ]
   },
