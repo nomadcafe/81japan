@@ -61,7 +61,7 @@ const jsonLd = {
 ---
 <Layout
   title="81日本 | 在日中文生活 · 医院・行政・税务指南"
-  description="为在日中文使用者整理的医疗、行政、税务、租房指南。首页为中文医院・诊所列表，涵盖东京、横浜、大阪、京都、神户、福冈、名古屋、北海道。"
+  description="为在日中文使用者整理的医疗、行政、税务、租房指南。首页为中文医院・诊所列表，涵盖东京、横浜、大阪、京都、神户、福冈、名古屋、北海道、广岛、冈山。"
   path="/"
   locale="zh"
 >
@@ -104,6 +104,8 @@ const jsonLd = {
           { key: '福冈', label: '福冈・九州' },
           { key: '札幌', label: '北海道' },
           { key: '名古屋', label: '名古屋・中部' },
+          { key: '广岛', label: '广岛・中国' },
+          { key: '冈山', label: '冈山・中国' },
         ].filter(r => (regionCounts[r.key] || 0) > 0).map(r => (
           <div class="filter-option" onclick={`filterRegion('${r.key}', this)`} data-region-filter={r.key}>
             <span>{r.label}</span>
