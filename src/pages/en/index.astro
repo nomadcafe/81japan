@@ -88,6 +88,8 @@ const jsonLd = {
           { key: '福冈', label: 'Fukuoka' },
           { key: '札幌', label: 'Hokkaido' },
           { key: '名古屋', label: 'Nagoya' },
+          { key: '广岛', label: 'Hiroshima' },
+          { key: '冈山', label: 'Okayama' },
         ].filter(r => (regionCounts[r.key] || 0) > 0).map(r => (
           <div class="filter-option" onclick={`filterRegion('${r.key}', this)`} data-region-filter={r.key}>
             <span>{r.label}</span>
