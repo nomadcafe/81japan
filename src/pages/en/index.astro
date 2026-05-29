@@ -10,7 +10,7 @@ const hospitals = await loadHospitals();
 const total = hospitals.length;
 
 const regionCounts: Record<string, number> = {};
-const langCounts: Record<string, number> = { '中文': 0, '英文': 0 };
+const langCounts: Record<string, number> = { '中文': 0, '英文': 0, '越南语': 0 };
 hospitals.forEach((h) => {
   if (h.region) regionCounts[h.region] = (regionCounts[h.region] || 0) + 1;
   (h.langs || []).forEach((l) => {
@@ -111,6 +111,10 @@ const jsonLd = {
         <div class="filter-option" onclick="filterLang('英文', this)" data-lang-filter="英文">
           <span>🇺🇸 English</span>
           <span class="filter-count">{langCounts['英文']}</span>
+        </div>
+        <div class="filter-option" onclick="filterLang('越南语', this)" data-lang-filter="越南语">
+          <span>🇻🇳 Vietnamese</span>
+          <span class="filter-count">{langCounts['越南语']}</span>
         </div>
       </div>
 
