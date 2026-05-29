@@ -273,7 +273,14 @@
   .sidebar {
     position: sticky;
     top: 78px;
+    /* 筛选项较多、整体高于视口时，让侧栏自身可滚动，避免下方「科室」要把右侧列表拉到底才能看到 */
+    max-height: calc(100vh - 78px - 24px);
+    overflow-y: auto;
+    overscroll-behavior: contain;
+    padding-right: 6px;
   }
+  .sidebar::-webkit-scrollbar { width: 6px; }
+  .sidebar::-webkit-scrollbar-thumb { background: var(--paper-3); border-radius: 999px; }
   .filter-group {
     margin-bottom: 28px;
   }
@@ -726,6 +733,9 @@
       position: static;
       display: block;
       margin: 0 -16px;
+      max-height: none;
+      overflow-y: visible;
+      padding-right: 0;
     }
     .filter-group {
       display: flex;
