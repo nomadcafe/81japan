@@ -30,6 +30,17 @@ function applyFilters() {
   document.getElementById('emptyState').style.display = shown === 0 ? '' : 'none';
 }
 
+// 点击侧栏筛选后，结果会变少导致页面变矮，浏览器把滚动位置夹到新底部（看起来像“跳到最下方”）。
+// 这里把视口滚回结果列表顶部（避开 sticky 导航的高度）。
+function scrollToResults() {
+  const layout = document.querySelector('.main-layout');
+  if (!layout) return;
+  const nav = document.querySelector('nav');
+  const offset = nav ? nav.offsetHeight + 8 : 0;
+  const top = layout.getBoundingClientRect().top + window.scrollY - offset;
+  window.scrollTo({ top: Math.max(0, top), behavior: 'smooth' });
+}
+
 function onSearchInput() {
   filterState.query = document.getElementById('searchInput').value;
   applyFilters();
@@ -39,6 +50,7 @@ function setSearch(val) {
   document.getElementById('searchInput').value = val;
   filterState.query = val;
   applyFilters();
+  scrollToResults();
 }
 
 function filterRegion(region, el) {
@@ -46,6 +58,7 @@ function filterRegion(region, el) {
   el.classList.add('active');
   filterState.region = region === '全部' ? '' : region;
   applyFilters();
+  scrollToResults();
 }
 
 function filterLang(lang, el) {
@@ -53,6 +66,7 @@ function filterLang(lang, el) {
   el.classList.add('active');
   filterState.lang = lang === '全部' ? '' : lang;
   applyFilters();
+  scrollToResults();
 }
 
 // ── 排序 ──
