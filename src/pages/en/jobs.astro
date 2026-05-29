@@ -69,7 +69,7 @@ const jsonLd = {
                 <span class="link-name">{s.name}</span>
                 <span class="link-arrow" aria-hidden="true">↗</span>
               </div>
-              <div class="link-domain">{domain(s.url)}</div>
+              <div class="link-domain">{('domain' in s ? s.domain : domain(s.url))}</div>
               <p class="link-desc">{s.descEn}</p>
             </a>
           ))}
