@@ -1391,5 +1391,142 @@
       }
     ],
     "searchKeys": "岡山大学病院 国際診療支援センター JMIP 中文 冈山"
+  },
+  {
+    "name": "神户大学医院 国际诊疗（IMCC）",
+    "nameEn": "Kobe University Hospital · International Medical Communication Center",
+    "jpName": "神戸大学医学部附属病院 国際診療（IMCC）",
+    "region": "神户",
+    "address": "兵库县神户市中央区楠町7-5-2",
+    "addressShort": "兵库县 神户市中央区 楠町",
+    "phone": "078-382-6855（IMCC国际医疗交流中心）",
+    "langs": [
+      "中文",
+      "英文"
+    ],
+    "langDetail": "中文医疗通译（同行2,750円／远程平板1,650円）+ 50余种语言通译",
+    "depts": [
+      "内科",
+      "外科",
+      "产科",
+      "妇科",
+      "儿科",
+      "肿瘤科",
+      "急诊"
+    ],
+    "hours": "平日 8:30–11:00（初诊受理／各科不同）",
+    "hoursShort": "平日 上午受理",
+    "warning": "不懂日语的患者须同行医疗通译就诊；初诊建议持紹介状",
+    "closed": "周六・周日・节假日",
+    "note": "兵库县神户市的国立大学医院。国际医疗交流中心（IMCC）提供中文等50余种语言通译，邮箱 imcc@med.kobe-u.ac.jp 可咨询预约。无日本公的保险者诊疗费按1点30円计算。",
+    "updated": "2026-06",
+    "extraBadges": [
+      {
+        "label": "50+语言通译",
+        "type": "new"
+      }
+    ],
+    "searchKeys": "神戸大学医学部附属病院 IMCC 国際診療 中文 神户"
+  },
+  {
+    "name": "那霸市立医院 国际医疗支援室",
+    "nameEn": "Naha City Hospital · International Medical Support Office",
+    "jpName": "那覇市立病院 国際医療支援室",
+    "region": "冲绳",
+    "address": "冲绳县那霸市古岛2-31-1",
+    "addressShort": "冲绳县 那霸市 古岛",
+    "phone": "098-884-5111（总机）",
+    "langs": [
+      "中文",
+      "英文"
+    ],
+    "langDetail": "常驻中文医疗通译（医疗通译技能检定中文1级）+ 英文通译",
+    "depts": [
+      "内科",
+      "外科",
+      "产科",
+      "妇科",
+      "儿科",
+      "急诊"
+    ],
+    "hours": "平日 8:00–16:00（受理）",
+    "hoursShort": "平日 受理 8:00–16:00",
+    "closed": "周六・周日・节假日（急诊24小时）",
+    "note": "冲绳那霸市的公立医院，2024年3月取得JMIP认证。国际医疗支援室常驻中文医疗通译（持医疗通译技能检定中文1级），提供受理・诊疗陪同・结算・文件翻译等支援。急诊24小时。",
+    "updated": "2026-06",
+    "extraBadges": [
+      {
+        "label": "JMIP认证",
+        "type": "new"
+      }
+    ],
+    "searchKeys": "那覇市立病院 国際医療支援室 JMIP 中文 冲绳 那霸"
+  },
+  {
+    "name": "圣隷浜松医院",
+    "nameEn": "Seirei Hamamatsu General Hospital",
+    "jpName": "聖隷浜松病院",
+    "region": "浜松",
+    "address": "静冈县浜松市中央区住吉2-12-12",
+    "addressShort": "静冈县 浜松市中央区 住吉",
+    "phone": "053-474-2222（总机）",
+    "langs": [
+      "中文",
+      "英文"
+    ],
+    "langDetail": "官网设中文「在日外籍患者就医说明」+ 多语言对应",
+    "depts": [
+      "内科",
+      "外科",
+      "产科",
+      "妇科",
+      "儿科",
+      "肿瘤科",
+      "急诊"
+    ],
+    "hours": "平日 受理（各科不同）",
+    "hoursShort": "平日 上午受理",
+    "warning": "采病诊连携，初诊原则需持紹介状；无紹介状另收选定疗养费7,700円",
+    "closed": "周六・周日・节假日",
+    "note": "静冈县浜松市的大型综合医院，2011年取得JCI国际认证。官网设有中文「在日外籍患者就医说明」页。初诊原则需持其他医疗机构紹介状，无紹介状须另付选定疗养费7,700円。",
+    "updated": "2026-06",
+    "extraBadges": [
+      {
+        "label": "JCI认证",
+        "type": "new"
+      }
+    ],
+    "searchKeys": "聖隷浜松病院 JCI 中文 浜松 静冈"
+  },
+  {
+    "name": "龟田京桥诊所 中文门诊",
+    "nameEn": "Kameda Kyobashi Clinic · Chinese Outpatient",
+    "jpName": "亀田京橋クリニック（中国人外来）",
+    "region": "东京",
+    "address": "东京都中央区京橋3-1-1 东京广场花园4F・6F",
+    "addressShort": "东京都 中央区 京橋（京橋駅3番出口 直结）",
+    "phone": "03-5542-1182（国际部）",
+    "langs": [
+      "中文",
+      "英文"
+    ],
+    "langDetail": "中文门诊（中文医生应诊）+ 中文官网",
+    "depts": [
+      "内科",
+      "风湿科",
+      "体检"
+    ],
+    "hours": "周一至周六 8:30–17:00（咨询受理）",
+    "hoursShort": "周一至周六 8:30–17:00",
+    "closed": "周日・节假日",
+    "note": "亀田综合医院（千叶鴨川）旗下东京京橋的卫星诊所，持JCI及ISO 7101国际认证。2020年3月起开设中文门诊（中国人外来），由内科・风湿科等专科医生应诊，邮箱 kyobashi.international@kameda.jp 可中文咨询。京橋駅3番出口直结。",
+    "updated": "2026-06",
+    "extraBadges": [
+      {
+        "label": "中文门诊",
+        "type": "new"
+      }
+    ],
+    "searchKeys": "亀田京橋クリニック 中国人外来 中文门诊 JCI 东京 京橋"
   }
 ]
