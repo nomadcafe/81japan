@@ -264,7 +264,7 @@
     margin: 0 auto;
     padding: 40px 40px;
     display: grid;
-    grid-template-columns: 240px 1fr;
+    grid-template-columns: 240px minmax(0, 1fr);
     gap: 40px;
     align-items: start;
   }
@@ -747,12 +747,13 @@
     .search-input { padding: 13px 18px; }
     .search-btn { padding: 0 20px; }
 
-    .main-layout { grid-template-columns: 1fr; padding: 28px 16px; gap: 20px; }
+    .main-layout { grid-template-columns: minmax(0, 1fr); padding: 28px 16px; gap: 20px; }
 
     .sidebar {
       position: static;
       display: block;
       margin: 0 -16px;
+      min-width: 0;
       max-height: none;
       overflow-y: visible;
       padding-right: 0;
@@ -763,6 +764,7 @@
       flex-wrap: nowrap;
       align-items: center;
       gap: 8px;
+      min-width: 0;
       margin-bottom: 10px;
       padding: 0 16px 4px;
       overflow-x: auto;
