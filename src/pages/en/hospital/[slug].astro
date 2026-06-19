@@ -3,7 +3,7 @@ import Layout from '../../../layouts/Layout.astro';
 import Nav from '../../../components/Nav.astro';
 import Footer from '../../../components/Footer.astro';
 import { loadHospitals, hospitalSlug, type Hospital } from '../../../lib/hospitals.js';
-import { deptLabel, hospitalName } from '../../../lib/i18n';
+import { deptLabel, hospitalName, regionLabel } from '../../../lib/i18n';
 import '../../../styles/page.css';
 import '../../../styles/hospital.css';
 
@@ -40,19 +40,7 @@ const isEN = langSet.has('英文');
 const langTokens = ((h.langDetail || (h.langs || []).join(' ')).match(/中文|英文|粤语|台语|韩文|俄文/g) || [])
   .filter((v: string, i: number, a: string[]) => a.indexOf(v) === i);
 
-const regionEnMap: Record<string, string> = {
-  '东京': 'Tokyo',
-  '横浜': 'Yokohama',
-  '大阪': 'Osaka',
-  '京都': 'Kyoto',
-  '神户': 'Kobe',
-  '福冈': 'Fukuoka',
-  '札幌': 'Hokkaido',
-  '名古屋': 'Nagoya',
-  '广岛': 'Hiroshima',
-  '冈山': 'Okayama',
-};
-const regionEn = regionEnMap[h.region || ''] || h.region || 'Japan';
+const regionEn = h.region ? regionLabel(h.region, 'en') : 'Japan';
 
 const description = `${displayName}${h.jpName ? ` (${h.jpName})` : ''} in ${regionEn}${h.addressShort ? ', ' + h.addressShort : ''}. ${
   isCN ? 'Chinese-speaking staff available. ' : ''
