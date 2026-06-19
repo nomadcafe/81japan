@@ -1,6 +1,6 @@
 ---
 import { hospitalSlug, type Hospital } from '../lib/hospitals.js';
-import { localizePath, detectLocale, deptLabel, hospitalName, type Locale } from '../lib/i18n';
+import { localizePath, detectLocale, deptLabel, regionLabel, hospitalName, type Locale } from '../lib/i18n';
 
 interface Props {
   hospital: Hospital;
@@ -58,7 +58,7 @@ const labels = locale === 'zh'
   <a class="card-link" href={detailHref}>
     {h.region && (
       <div class="card-eyebrow">
-        <span class="card-region">{h.region}</span>
+        <span class="card-region">{regionLabel(h.region, locale)}</span>
       </div>
     )}
     <div class="card-row1">
