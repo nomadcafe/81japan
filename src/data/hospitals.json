@@ -5,13 +5,16 @@
     "jpName": "神戸華僑同仁会病院",
     "region": "神户",
     "address": "兵库县神户市中央区",
+    "addressEn": "Chuo-ku, Kobe, Hyogo",
     "addressShort": "兵库县 神户市中央区",
+    "addressShortEn": "Chuo-ku, Kobe, Hyogo",
     "phone": "078-222-XXXX",
     "langs": [
       "中文",
       "英文"
     ],
     "langDetail": "中文（全科）",
+    "langDetailEn": "Chinese (all departments)",
     "depts": [
       "内科",
       "外科",
@@ -21,9 +24,13 @@
       "眼科"
     ],
     "hours": "周一至周五 9:00–17:30 / 周六 9:00–12:30",
+    "hoursEn": "Mon–Fri 9:00–17:30 / Sat 9:00–12:30",
     "hoursShort": "周一至周五 9:00–17:30",
+    "hoursShortEn": "Mon–Fri 9:00–17:30",
     "closed": "周日・节假日",
+    "closedEn": "Sun & public holidays",
     "note": "全科均设中文医生或中文翻译，无需另行预约翻译服务。为关西地区历史最悠久的华人医院。",
+    "noteEn": "Every department has a Chinese-speaking doctor or interpreter — no separate interpreter booking needed. The oldest Chinese-community hospital in the Kansai region.",
     "updated": "2025-12",
     "searchKeys": "神户华侨同仁会病院"
   },
@@ -33,13 +40,17 @@
     "jpName": "St. Luke's International Hospital",
     "region": "东京",
     "address": "东京都中央区明石町9-1",
+    "addressEn": "9-1 Akashicho, Chuo-ku, Tokyo",
     "addressShort": "东京都 中央区 明石町（築地駅 徒步7分）",
+    "addressShortEn": "Akashicho, Chuo-ku, Tokyo (7-min walk from Tsukiji Stn)",
     "phone": "预约中心: 03-5550-7120",
+    "phoneEn": "Booking center: 03-5550-7120",
     "langs": [
       "中文",
       "英文"
     ],
     "langDetail": "中文 英文 韩文 俄文",
+    "langDetailEn": "Chinese, English, Korean, Russian",
     "depts": [
       "内科",
       "外科",
@@ -50,17 +61,21 @@
       "急诊"
     ],
     "hours": "平日 8:30–（各科不同）",
-    "warning": "需持紹介状预约，无紹介状不受诊",
+    "hoursEn": "Weekdays from 8:30 (varies by department)",
     "closed": "第2土曜・周日・节假日",
+    "closedEn": "2nd Sat, Sun & public holidays",
     "note": "东京都指定外国人患者拠点医疗机构，中文通译员常驻，官网有完整中文版。需持紹介状及提前预约，无紹介状不受诊。築地駅步行7分。",
+    "noteEn": "A Tokyo-designated hub hospital for foreign patients. On-site Chinese interpreters and a full Chinese website. A referral letter and advance appointment are required; no walk-ins without a referral. 7-min walk from Tsukiji Stn.",
+    "warning": "需持紹介状预约，无紹介状不受诊",
+    "warningEn": "Referral letter and appointment required; no consultation without a referral",
     "updated": "2026-04",
+    "searchKeys": "聖路加国際病院 东京",
     "extraBadges": [
       {
         "label": "拠点病院",
         "type": "new"
       }
-    ],
-    "searchKeys": "聖路加国際病院 东京"
+    ]
   },
   {
     "name": "東京科学大学病院 国際医療部",
@@ -68,13 +83,17 @@
     "jpName": "東京科学大学病院（旧・東京医科歯科大学病院）",
     "region": "东京",
     "address": "东京都文京区湯島1-5-45",
+    "addressEn": "1-5-45 Yushima, Bunkyo-ku, Tokyo",
     "addressShort": "东京都 文京区 湯島（御茶ノ水駅 徒步3分）",
+    "addressShortEn": "Yushima, Bunkyo-ku, Tokyo (3-min walk from Ochanomizu Stn)",
     "phone": "03-5803-5650（国際医療部）",
+    "phoneEn": "03-5803-5650 (Intl Medical Dept)",
     "langs": [
       "中文",
       "英文"
     ],
     "langDetail": "中文 英文 及19语言通译平板",
+    "langDetailEn": "Chinese, English & 19-language interpreter tablet",
     "depts": [
       "内科",
       "外科",
@@ -86,17 +105,21 @@
       "皮肤科"
     ],
     "hours": "平日 8:30–17:00（各科不同）",
-    "warning": "需持紹介状预约",
+    "hoursEn": "Weekdays 8:30–17:00 (varies by department)",
     "closed": "周六・周日・节假日",
+    "closedEn": "Sat, Sun & public holidays",
     "note": "旧东京医科歯科大学医院，国際医療部中英文员工常驻，提供19语言通译平板（免费）。官网有中文版。需紹介状。御茶ノ水駅步行3分。",
+    "noteEn": "Formerly Tokyo Medical and Dental University Hospital. The International Medical Department has on-site Chinese/English staff and a free 19-language interpreter tablet. Chinese website available. Referral letter required. 3-min walk from Ochanomizu Stn.",
+    "warning": "需持紹介状预约",
+    "warningEn": "Referral letter and appointment required",
     "updated": "2026-04",
+    "searchKeys": "東京科学大学病院 国際医療部 东京 医科歯科",
     "extraBadges": [
       {
         "label": "19语言通译",
         "type": "new"
       }
-    ],
-    "searchKeys": "東京科学大学病院 国際医療部 东京 医科歯科"
+    ]
   },
   {
     "name": "東京都立駒込病院",
@@ -104,13 +127,16 @@
     "jpName": "東京都立駒込病院",
     "region": "东京",
     "address": "东京都文京区本駒込3-18-22",
+    "addressEn": "3-18-22 Hon-Komagome, Bunkyo-ku, Tokyo",
     "addressShort": "东京都 文京区 本駒込（巣鴨駅 徒步5分）",
+    "addressShortEn": "Hon-Komagome, Bunkyo-ku, Tokyo (5-min walk from Sugamo Stn)",
     "phone": "03-3823-2101",
     "langs": [
       "中文",
       "英文"
     ],
     "langDetail": "中文 英文 韩文",
+    "langDetailEn": "Chinese, English, Korean",
     "depts": [
       "内科",
       "外科",
@@ -120,17 +146,21 @@
       "产科"
     ],
     "hours": "平日 8:30–（各科不同）",
+    "hoursEn": "Weekdays from 8:30 (varies by department)",
     "hoursShort": "平日 8:30–（各科不同）",
+    "hoursShortEn": "Weekdays from 8:30 (varies by department)",
     "closed": "周日・节假日",
+    "closedEn": "Sun & public holidays",
     "note": "东京都指定外国人患者拠点医疗机构，官网有中文版，肿瘤及感染症（HIV等）专门病院，设患者支援中心对应外国人。巣鴨駅步行5分。",
+    "noteEn": "A Tokyo-designated hub hospital for foreign patients, with a Chinese website. A specialist hospital for oncology and infectious diseases (incl. HIV), with a patient support center for foreign patients. 5-min walk from Sugamo Stn.",
     "updated": "2026-04",
+    "searchKeys": "東京都立駒込病院 东京",
     "extraBadges": [
       {
         "label": "拠点病院",
         "type": "new"
       }
-    ],
-    "searchKeys": "東京都立駒込病院 东京"
+    ]
   },
   {
     "name": "東京大学附属病院 国際診療部",
@@ -138,13 +168,16 @@
     "jpName": "東京大学医学部附属病院",
     "region": "东京",
     "address": "东京都文京区本郷7-3-1",
+    "addressEn": "7-3-1 Hongo, Bunkyo-ku, Tokyo",
     "addressShort": "东京都 文京区 本郷（本郷三丁目駅 徒步7分）",
+    "addressShortEn": "Hongo, Bunkyo-ku, Tokyo (7-min walk from Hongo-sanchome Stn)",
     "phone": "03-3815-5411",
     "langs": [
       "中文",
       "英文"
     ],
     "langDetail": "中文 英文 及多语言",
+    "langDetailEn": "Chinese, English & other languages",
     "depts": [
       "内科",
       "外科",
@@ -155,17 +188,21 @@
       "健康体检"
     ],
     "hours": "平日 8:30–（各科不同）",
-    "warning": "需持紹介状预约",
+    "hoursEn": "Weekdays from 8:30 (varies by department)",
     "closed": "周日・节假日",
+    "closedEn": "Sun & public holidays",
     "note": "设有国際診療部及国際検診センター（2020年设立），提供中文问诊单，为海外居住者提供全身检查套餐。需紹介状。本郷三丁目駅步行7分。",
+    "noteEn": "Has an International Medical Department and an International Health Checkup Center (est. 2020), offering Chinese-language questionnaires and full-body checkup packages for overseas residents. Referral letter required. 7-min walk from Hongo-sanchome Stn.",
+    "warning": "需持紹介状预约",
+    "warningEn": "Referral letter and appointment required",
     "updated": "2026-04",
+    "searchKeys": "東京大学附属病院 国際診療部 东京",
     "extraBadges": [
       {
         "label": "国際検診",
         "type": "new"
       }
-    ],
-    "searchKeys": "東京大学附属病院 国際診療部 东京"
+    ]
   },
   {
     "name": "东京医科大学病院 国际医疗部",
@@ -173,7 +210,9 @@
     "jpName": "東京医科大学病院 国際医療部",
     "region": "东京",
     "address": "东京都新宿区西新宿",
+    "addressEn": "Nishi-Shinjuku, Shinjuku-ku, Tokyo",
     "addressShort": "东京都 新宿区",
+    "addressShortEn": "Shinjuku-ku, Tokyo",
     "phone": "03-3342-XXXX",
     "langs": [
       "中文",
@@ -181,6 +220,7 @@
       "韩文"
     ],
     "langDetail": "中文 / 英文 / 韩文",
+    "langDetailEn": "Chinese / English / Korean",
     "depts": [
       "内科",
       "心脏科",
@@ -188,17 +228,21 @@
       "妇科"
     ],
     "hours": "周一至周五 9:00–17:00",
+    "hoursEn": "Mon–Fri 9:00–17:00",
     "hoursShort": "周一至周五 9:00–17:00",
+    "hoursShortEn": "Mon–Fri 9:00–17:00",
     "closed": "周末・节假日",
+    "closedEn": "Weekends & public holidays",
     "note": "需提前通过官网预约国际医疗部，可指定中文翻译陪诊。部分科室需转诊函（紹介状）。",
+    "noteEn": "Book the International Medical Department in advance via the website; a Chinese-speaking interpreter can be requested to accompany the visit. Some departments require a referral letter.",
     "updated": "2026-01",
+    "searchKeys": "东京医科大学病院国际医疗部",
     "extraBadges": [
       {
         "label": "新",
         "type": "new"
       }
-    ],
-    "searchKeys": "东京医科大学病院国际医疗部"
+    ]
   },
   {
     "name": "Tokyo Station International Clinic",
@@ -206,13 +250,17 @@
     "jpName": "東京ステーションインターナショナルクリニック",
     "region": "东京",
     "address": "东京都千代田区 JR东京站八重洲南口步行1分钟",
+    "addressEn": "Chiyoda-ku, Tokyo — 1-min walk from Yaesu South Exit, JR Tokyo Stn",
     "addressShort": "东京都 千代田区（JR东京站 八重洲南口 徒步1分）",
+    "addressShortEn": "Chiyoda-ku, Tokyo (1-min walk from Yaesu South Exit, JR Tokyo Stn)",
     "phone": "官网预约",
+    "phoneEn": "Book via website",
     "langs": [
       "中文",
       "英文"
     ],
     "langDetail": "中文 英文",
+    "langDetailEn": "Chinese, English",
     "depts": [
       "内科",
       "外科",
@@ -222,17 +270,21 @@
       "疫苗"
     ],
     "hours": "每天 9:00–21:00（365天营业）",
+    "hoursEn": "Daily 9:00–21:00 (open 365 days)",
     "hoursShort": "每天 9:00–21:00（无休）",
+    "hoursShortEn": "Daily 9:00–21:00 (no closing day)",
     "closed": "无休",
+    "closedEn": "Open daily",
     "note": "全员中英文对应，每月接诊700名以上外国患者，东京站八重洲南口步行1分。支持无预约当日受诊及线上预约，可出具英中文诊断证明书，支持上门往诊。",
+    "noteEn": "Fully Chinese/English-capable, treating 700+ foreign patients a month; 1-min walk from the Yaesu South Exit of Tokyo Stn. Same-day walk-ins and online booking accepted, English/Chinese medical certificates issued, and home visits available.",
     "updated": "2026-04",
+    "searchKeys": "Tokyo Station International Clinic 东京站国际诊所",
     "extraBadges": [
       {
         "label": "365天",
         "type": "new"
       }
-    ],
-    "searchKeys": "Tokyo Station International Clinic 东京站国际诊所"
+    ]
   },
   {
     "name": "日中友好医院",
@@ -240,13 +292,16 @@
     "jpName": "医療法人社団 日中友好医院",
     "region": "东京",
     "address": "东京都渋谷区代々木1-38-5 KDX代々木ビル6F",
+    "addressEn": "KDX Yoyogi Bldg 6F, 1-38-5 Yoyogi, Shibuya-ku, Tokyo",
     "addressShort": "东京都 渋谷区 代々木（JR代々木駅 徒步1分）",
+    "addressShortEn": "Yoyogi, Shibuya-ku, Tokyo (1-min walk from JR Yoyogi Stn)",
     "phone": "03-6276-9788",
     "langs": [
       "中文",
       "英文"
     ],
     "langDetail": "中文 英文 德文",
+    "langDetailEn": "Chinese, English, German",
     "depts": [
       "内科",
       "汉方",
@@ -254,17 +309,21 @@
       "疫苗"
     ],
     "hours": "周一至周五 10:00–12:30 / 14:30–16:30",
+    "hoursEn": "Mon–Fri 10:00–12:30 / 14:30–16:30",
     "hoursShort": "周一至周五 10:00–12:30 / 14:30–16:30",
+    "hoursShortEn": "Mon–Fri 10:00–12:30 / 14:30–16:30",
     "closed": "周六・周日・节假日",
+    "closedEn": "Sat, Sun & public holidays",
     "note": "JR代々木駅前徒步1分。院长可对应中文・英文・德语，系中国大使馆指定体检机构，可办理赴华签证所需外国人体格检查记录。漢方外来也对应。",
+    "noteEn": "1-min walk from JR Yoyogi Stn. The director speaks Chinese, English and German. A Chinese-Embassy-designated health-check facility that can issue the foreigner physical examination record required for China visas. Kampo (herbal medicine) consultations also available.",
     "updated": "2026-04",
+    "searchKeys": "日中友好医院 东京 代々木",
     "extraBadges": [
       {
         "label": "中国大使馆指定",
         "type": "new"
       }
-    ],
-    "searchKeys": "日中友好医院 东京 代々木"
+    ]
   },
   {
     "name": "宮田胃腸内科皮膚科クリニック",
@@ -272,13 +331,16 @@
     "jpName": "宮田胃腸内科皮膚科クリニック",
     "region": "东京",
     "address": "东京都新宿区百人町1-11-2 2F",
+    "addressEn": "2F, 1-11-2 Hyakunincho, Shinjuku-ku, Tokyo",
     "addressShort": "东京都 新宿区 百人町（新大久保駅 徒步3分）",
+    "addressShortEn": "Hyakunincho, Shinjuku-ku, Tokyo (3-min walk from Shin-Okubo Stn)",
     "phone": "03-5937-0668",
     "langs": [
       "中文",
       "英文"
     ],
     "langDetail": "中文（普通话・台语）英文 韩文 泰文",
+    "langDetailEn": "Chinese (Mandarin & Taiwanese), English, Korean, Thai",
     "depts": [
       "内科",
       "皮肤科",
@@ -286,9 +348,13 @@
       "汉方"
     ],
     "hours": "周一・二・四・五 9:30–12:30 / 15:00–18:30 / 周六 9:30–12:30",
+    "hoursEn": "Mon, Tue, Thu, Fri 9:30–12:30 / 15:00–18:30; Sat 9:30–12:30",
     "hoursShort": "平日 9:30–12:30 / 15:00–18:30 / 周六午前",
+    "hoursShortEn": "Weekdays 9:30–12:30 / 15:00–18:30; Sat morning",
     "closed": "周三・周日・节假日",
+    "closedEn": "Wed, Sun & public holidays",
     "note": "院长宮田直輝毕业于台湾台北医科大学，对应中文（含台语）・英文・泰文・韩文。内镜专科，当日胃镜・大肠镜检查可对应。新大久保站徒步3分，新宿外国人聚集区。",
+    "noteEn": "Director Naoki Miyata graduated from Taipei Medical University and speaks Chinese (incl. Taiwanese), English, Thai and Korean. An endoscopy specialist offering same-day gastroscopy and colonoscopy. 3-min walk from Shin-Okubo Stn, in Shinjuku's international district.",
     "updated": "2026-04",
     "searchKeys": "宮田胃腸内科皮膚科クリニック 新大久保 东京"
   },
@@ -298,6 +364,7 @@
     "jpName": "大阪市立住友病院",
     "region": "大阪",
     "addressShort": "大阪府 大阪市北区",
+    "addressShortEn": "Kita-ku, Osaka, Osaka",
     "langs": [
       "中文"
     ],
@@ -308,6 +375,7 @@
       "耳鼻喉科"
     ],
     "hoursShort": "周一至周六 8:30–17:00",
+    "hoursShortEn": "Mon–Sat 8:30–17:00",
     "updated": "2025-11",
     "searchKeys": "大阪市立住友病院"
   },
@@ -317,6 +385,7 @@
     "jpName": "福岡県立病院 国際部",
     "region": "福冈",
     "addressShort": "福冈县 福冈市博多区",
+    "addressShortEn": "Hakata-ku, Fukuoka, Fukuoka",
     "langs": [
       "中文",
       "英文"
@@ -328,6 +397,7 @@
       "产科"
     ],
     "hoursShort": "周一至周五 9:00–18:00",
+    "hoursShortEn": "Mon–Fri 9:00–18:00",
     "updated": "2025-10",
     "searchKeys": "福冈县立病院 国际部"
   },
@@ -337,6 +407,7 @@
     "jpName": "札幌医科大学附属病院",
     "region": "札幌",
     "addressShort": "北海道 札幌市中央区",
+    "addressShortEn": "Chuo-ku, Sapporo, Hokkaido",
     "langs": [
       "中文"
     ],
@@ -347,6 +418,7 @@
       "神经科"
     ],
     "hoursShort": "周一至周五 8:30–16:30",
+    "hoursShortEn": "Mon–Fri 8:30–16:30",
     "updated": "2025-09",
     "searchKeys": "札幌医科大学附属病院"
   },
@@ -356,22 +428,29 @@
     "jpName": "希咲クリニック",
     "region": "大阪",
     "address": "大阪府大阪市淀川区十三東2-7-8 エルディ十三東駅前ビル3F",
+    "addressEn": "Eldi Juso-Higashi Ekimae Bldg 3F, 2-7-8 Juso-Higashi, Yodogawa-ku, Osaka",
     "addressShort": "大阪府 淀川区 十三東（阪急十三駅 徒步2分）",
+    "addressShortEn": "Juso-Higashi, Yodogawa-ku, Osaka (2-min walk from Hankyu Juso Stn)",
     "phone": "06-6476-7233",
     "langs": [
       "中文",
       "英文"
     ],
     "langDetail": "中文 英文",
+    "langDetailEn": "Chinese, English",
     "depts": [
       "产科",
       "妇科",
       "乳腺科"
     ],
     "hours": "周一～五 9:30–12:30 / 15:00–19:00 / 周六 9:30–12:30",
+    "hoursEn": "Mon–Fri 9:30–12:30 / 15:00–19:00; Sat 9:30–12:30",
     "hoursShort": "午前 9:30–12:30 / 午後 15:00–19:00",
+    "hoursShortEn": "Morning 9:30–12:30 / Afternoon 15:00–19:00",
     "closed": "周三下午・周六下午・周日・节假日",
+    "closedEn": "Wed afternoon, Sat afternoon, Sun & public holidays",
     "note": "院长山分ネルソン祥興来自马来西亚，对应中文、英文，全科女性专科诊所。土曜日午後・水曜日は休診。",
+    "noteEn": "Director Nelson Yamawake is from Malaysia and speaks Chinese and English; a full-service women's clinic. Closed Sat afternoon and Wed.",
     "updated": "2026-04",
     "searchKeys": "希咲クリニック"
   },
@@ -381,21 +460,28 @@
     "jpName": "こどもクリニックきじま",
     "region": "大阪",
     "address": "大阪府大阪市福島区福島5-6-16 ラグザ大阪サウスオフィス4F",
+    "addressEn": "Raguza Osaka South Office 4F, 5-6-16 Fukushima, Fukushima-ku, Osaka",
     "addressShort": "大阪府 福島区 福島5丁目（JR福島駅 徒步1分）",
+    "addressShortEn": "Fukushima 5-chome, Fukushima-ku, Osaka (1-min walk from JR Fukushima Stn)",
     "phone": "06-6131-9858",
     "langs": [
       "中文"
     ],
     "langDetail": "中文",
+    "langDetailEn": "Chinese",
     "depts": [
       "儿科",
       "内科",
       "过敏科"
     ],
     "hours": "周一至周日・节假日 9:00–12:00 / 16:00–20:00 (年中无休)",
+    "hoursEn": "Mon–Sun & public holidays 9:00–12:00 / 16:00–20:00 (open year-round)",
     "hoursShort": "年中无休 9:00–20:00",
+    "hoursShortEn": "Open year-round 9:00–20:00",
     "closed": "无固定休诊日（请提前确认）",
+    "closedEn": "No fixed closing day (please confirm in advance)",
     "note": "对应中文・韩文。土日节假日也营业至20时，年中无休。非感染者专用时间段13:30–15:30。提供网络预约及线上初诊。",
+    "noteEn": "Chinese and Korean supported. Open until 20:00 on weekends and holidays, year-round. Non-infectious time slot 13:30–15:30. Online booking and online first consultations available.",
     "updated": "2026-04",
     "searchKeys": "こどもクリニックきじま"
   },
@@ -405,12 +491,16 @@
     "jpName": "春次医院（はるつぐいいん）",
     "region": "大阪",
     "address": "大阪府大阪市中央区博労町2-6-1 心斎橋春次ビル",
+    "addressEn": "Shinsaibashi Harutsugu Bldg, 2-6-1 Bakuro-machi, Chuo-ku, Osaka",
     "addressShort": "大阪府 中央区 博労町（心斎橋・長堀橋 徒步7分）",
+    "addressShortEn": "Bakuro-machi, Chuo-ku, Osaka (7-min walk from Shinsaibashi / Nagahoribashi)",
     "phone": "06-4708-3535 / 涉外担当: 080-9754-5302",
+    "phoneEn": "06-4708-3535 / Intl liaison: 080-9754-5302",
     "langs": [
       "中文"
     ],
     "langDetail": "中文",
+    "langDetailEn": "Chinese",
     "depts": [
       "内科",
       "外科",
@@ -419,17 +509,21 @@
       "皮肤科"
     ],
     "hours": "周一～周五 9:00–13:00 / 15:00–18:30 / 周六 9:00–13:00",
+    "hoursEn": "Mon–Fri 9:00–13:00 / 15:00–18:30; Sat 9:00–13:00",
     "hoursShort": "平日 9:00–13:00 / 15:00–18:30",
+    "hoursShortEn": "Weekdays 9:00–13:00 / 15:00–18:30",
     "closed": "周日・节假日",
+    "closedEn": "Sun & public holidays",
     "note": "网站有完整中文版。涉外担当电话080-9754-5302可中文对应，微信ID: harutugu88，为中国大使馆指定PCR检查机构，支持线上问诊。",
+    "noteEn": "Full Chinese version of the website. The international liaison line 080-9754-5302 supports Chinese (WeChat ID: harutugu88). A Chinese-Embassy-designated PCR testing facility; online consultations available.",
     "updated": "2026-04",
+    "searchKeys": "春次医院",
     "extraBadges": [
       {
         "label": "中文网站",
         "type": "new"
       }
-    ],
-    "searchKeys": "春次医院"
+    ]
   },
   {
     "name": "琥珀クリニック",
@@ -437,7 +531,9 @@
     "jpName": "琥珀クリニック",
     "region": "大阪",
     "address": "大阪府大阪市中央区南船場3-8-14 ACN心斎橋Garden4F",
+    "addressEn": "ACN Shinsaibashi Garden 4F, 3-8-14 Minamisemba, Chuo-ku, Osaka",
     "addressShort": "大阪府 中央区 南船場（心斎橋駅 徒步3分）",
+    "addressShortEn": "Minamisemba, Chuo-ku, Osaka (3-min walk from Shinsaibashi Stn)",
     "phone": "06-4256-4122",
     "langs": [
       "中文",
@@ -445,15 +541,20 @@
       "英文"
     ],
     "langDetail": "中文 粤语 英文",
+    "langDetailEn": "Chinese, Cantonese, English",
     "depts": [
       "内科",
       "汉方",
       "皮肤科"
     ],
     "hours": "周二至周六 13:00–21:00 / 周六上午 9:00–13:00",
+    "hoursEn": "Tue–Sat 13:00–21:00; Sat morning 9:00–13:00",
     "hoursShort": "周二至周六 13:00–21:00",
+    "hoursShortEn": "Tue–Sat 13:00–21:00",
     "closed": "周日・周一・节假日不定休（需提前电话确认）",
+    "closedEn": "Sun, Mon & public holidays; irregular closures (call ahead to confirm)",
     "note": "院长林 宇（林宇医师）本人精通日・英・普通话・广东话・客家话，不需要翻译陪同，可直接沟通。支持线上问诊。",
+    "noteEn": "Director Lin Yu is fluent in Japanese, English, Mandarin, Cantonese and Hakka, so no interpreter is needed — you can speak directly. Online consultations available.",
     "updated": "2026-04",
     "searchKeys": "琥珀クリニック"
   },
@@ -463,22 +564,29 @@
     "jpName": "茜道頓堀クリニック",
     "region": "大阪",
     "address": "大阪府大阪市中央区島之内2-2-2",
+    "addressEn": "2-2-2 Shimanouchi, Chuo-ku, Osaka",
     "addressShort": "大阪府 中央区 島之内（日本橋駅 徒步6分）",
+    "addressShortEn": "Shimanouchi, Chuo-ku, Osaka (6-min walk from Nipponbashi Stn)",
     "phone": "06-6213-3311",
     "langs": [
       "中文",
       "英文"
     ],
     "langDetail": "中文 英文",
+    "langDetailEn": "Chinese, English",
     "depts": [
       "内科",
       "外科",
       "皮肤科"
     ],
     "hours": "12:00–21:00（周三・周日为特别诊疗，一般诊察需预约）",
+    "hoursEn": "12:00–21:00 (Wed & Sun are special clinics; general consultations need an appointment)",
     "hoursShort": "12:00–21:00（最終受付 20:00）",
+    "hoursShortEn": "12:00–21:00 (last reception 20:00)",
     "closed": "不定休",
+    "closedEn": "Irregular closures",
     "note": "官网有中文公告，多语言对应。午前诊察及周三・周日为特别诊疗，一般患者需提前预约，当日不受理。",
+    "noteEn": "Multilingual support, with Chinese notices on the website. Morning sessions and Wed/Sun are special clinics; general patients must book in advance and cannot be seen on a walk-in basis.",
     "updated": "2026-04",
     "searchKeys": "茜道頓堀クリニック"
   },
@@ -488,7 +596,9 @@
     "jpName": "医誠会国際総合病院",
     "region": "大阪",
     "address": "大阪府大阪市北区南扇町4番14号 i-Mall内",
+    "addressEn": "4-14 Minami-Ogimachi, Kita-ku, Osaka (inside i-Mall)",
     "addressShort": "大阪府 北区 南扇町（扇町駅 徒步3分）",
+    "addressShortEn": "Minami-Ogimachi, Kita-ku, Osaka (3-min walk from Ogimachi Stn)",
     "phone": "0570-099-166",
     "langs": [
       "中文",
@@ -496,6 +606,7 @@
       "英文"
     ],
     "langDetail": "中文（普通话・广东话）英文 韩文 及其他多语言",
+    "langDetailEn": "Chinese (Mandarin & Cantonese), English, Korean & other languages",
     "depts": [
       "内科",
       "外科",
@@ -509,17 +620,21 @@
       "急诊"
     ],
     "hours": "平日 8:00–11:30 / 13:00–16:00",
+    "hoursEn": "Weekdays 8:00–11:30 / 13:00–16:00",
     "hoursShort": "平日 8:00–16:00 / 急诊24小时",
+    "hoursShortEn": "Weekdays 8:00–16:00 / ER 24h",
     "closed": "周六・周日・节假日",
+    "closedEn": "Sat, Sun & public holidays",
     "note": "JMIP（外国人患者受入医療機関）认证医院，2023年10月开业的全新综合医院。对应普通话、广东话等22种语言，设有国际患者窗口，救急告示病院，可急诊。",
+    "noteEn": "A JMIP-accredited hospital for foreign patients; a brand-new general hospital opened October 2023. Supports 22 languages including Mandarin and Cantonese, with an international patient desk. An emergency-designated hospital able to take ER cases.",
     "updated": "2026-04",
+    "searchKeys": "医誠会国際総合病院",
     "extraBadges": [
       {
         "label": "JMIP认证",
         "type": "new"
       }
-    ],
-    "searchKeys": "医誠会国際総合病院"
+    ]
   },
   {
     "name": "みなと町歯科",
@@ -527,19 +642,26 @@
     "jpName": "みなと町歯科",
     "region": "大阪",
     "address": "大阪府大阪市浪速区幸町1-1-1 夕張家ビル201号",
+    "addressEn": "Yubariya Bldg 201, 1-1-1 Saiwaicho, Naniwa-ku, Osaka",
     "addressShort": "大阪府 浪速区 幸町（JR難波駅 徒步5分）",
+    "addressShortEn": "Saiwaicho, Naniwa-ku, Osaka (5-min walk from JR Namba Stn)",
     "phone": "06-6567-2152",
     "langs": [
       "英文"
     ],
     "langDetail": "英文",
+    "langDetailEn": "English",
     "depts": [
       "牙科"
     ],
     "hours": "周一・周三・周五 10:00–13:00 / 14:00–17:00 / 周二・周四 10:00–13:00（午前のみ）/ 周日 10:00–13:00（预约制）",
+    "hoursEn": "Mon, Wed, Fri 10:00–13:00 / 14:00–17:00; Tue, Thu 10:00–13:00 (morning only); Sun 10:00–13:00 (by appointment)",
     "hoursShort": "10:00–17:00（火・木 午前のみ）",
+    "hoursShortEn": "10:00–17:00 (Tue & Thu morning only)",
     "closed": "周六（不定）",
+    "closedEn": "Sat (irregular)",
     "note": "提供英文对应。周日・节假日需提前预约。年末年始12/31–1/3休诊。官网有英文版，母语级别英语医生仅周日出诊。",
+    "noteEn": "English supported. Book ahead for Sun & holidays. Closed Dec 31–Jan 3. The website has an English version; the native-level English-speaking dentist works Sun only.",
     "updated": "2026-04",
     "searchKeys": "みなと町歯科"
   },
@@ -549,22 +671,29 @@
     "jpName": "Osaka Lee Clinic / イークリニック",
     "region": "大阪",
     "address": "大阪府大阪市北区本庄西1-13-15",
+    "addressEn": "1-13-15 Honjo-Nishi, Kita-ku, Osaka",
     "addressShort": "大阪府 北区 本庄西（天満駅 徒步约10分）",
+    "addressShortEn": "Honjo-Nishi, Kita-ku, Osaka (about 10-min walk from Tenma Stn)",
     "phone": "06-6292-0155",
     "langs": [
       "中文",
       "英文"
     ],
     "langDetail": "中文 英文 韩文",
+    "langDetailEn": "Chinese, English, Korean",
     "depts": [
       "内科",
       "健康体检",
       "康复"
     ],
     "hours": "平日・周六 详见官网",
+    "hoursEn": "Weekdays & Sat — see website",
     "hoursShort": "详见官网 goleeclinic.com",
+    "hoursShortEn": "See website goleeclinic.com",
     "closed": "周日・节假日",
+    "closedEn": "Sun & public holidays",
     "note": "1998年开业的社区内科诊所，提供日・英・普通话・韩文四语种服务，设有健康体检中心（2楼）及上门康复服务（3楼）。官网有中文版。",
+    "noteEn": "A neighborhood internal-medicine clinic opened in 1998, offering Japanese, English, Mandarin and Korean. Includes a health-checkup center (2F) and home rehabilitation services (3F). Chinese website available.",
     "updated": "2026-04",
     "searchKeys": "Osaka Lee Clinic イークリニック"
   },
@@ -574,28 +703,36 @@
     "jpName": "大阪天満橋 Y&Y歯科・矯正歯科",
     "region": "大阪",
     "address": "大阪府大阪市中央区谷町2-2-18 2F",
+    "addressEn": "2F, 2-2-18 Tanimachi, Chuo-ku, Osaka",
     "addressShort": "大阪府 中央区 谷町2丁目（天満橋駅 徒步5分）",
+    "addressShortEn": "Tanimachi 2-chome, Chuo-ku, Osaka (5-min walk from Temmabashi Stn)",
     "phone": "06-6966-5548 / 中文热线: 090-6609-6686",
+    "phoneEn": "06-6966-5548 / Chinese hotline: 090-6609-6686",
     "langs": [
       "中文",
       "英文"
     ],
     "langDetail": "中文 英文",
+    "langDetailEn": "Chinese, English",
     "depts": [
       "牙科"
     ],
     "hours": "周一・二・四・五 10:00–20:00 / 周六・日 10:00–17:00",
+    "hoursEn": "Mon, Tue, Thu, Fri 10:00–20:00; Sat & Sun 10:00–17:00",
     "hoursShort": "平日 10:00–20:00 / 土日 10:00–17:00",
+    "hoursShortEn": "Weekdays 10:00–20:00 / Sat & Sun 10:00–17:00",
     "closed": "周三・节假日",
+    "closedEn": "Wed & public holidays",
     "note": "女性院长（大阪歯科大学大学院博士），中文对应员工常驻，有中文专线090-6609-6686及微信 yy-dental，支持支付宝・微信支付，面向短期赴日患者提供短期集中治疗套餐。",
+    "noteEn": "Female director (DDS, PhD, Osaka Dental University). On-site Chinese-speaking staff, a Chinese line 090-6609-6686 and WeChat yy-dental. Alipay/WeChat Pay accepted; short, intensive treatment packages offered for short-stay visitors to Japan.",
     "updated": "2026-04",
+    "searchKeys": "大阪天満橋Y&Y歯科・矯正歯科",
     "extraBadges": [
       {
         "label": "微信对应",
         "type": "new"
       }
-    ],
-    "searchKeys": "大阪天満橋Y&Y歯科・矯正歯科"
+    ]
   },
   {
     "name": "名古屋第二赤十字病院",
@@ -603,6 +740,7 @@
     "jpName": "名古屋第二赤十字病院",
     "region": "名古屋",
     "addressShort": "爱知县 名古屋市昭和区",
+    "addressShortEn": "Showa-ku, Nagoya, Aichi",
     "langs": [
       "中文",
       "英文"
@@ -614,6 +752,7 @@
       "精神科"
     ],
     "hoursShort": "24小时急诊 / 门诊 8:30–17:00",
+    "hoursShortEn": "24h ER / Outpatient 8:30–17:00",
     "updated": "2026-01",
     "searchKeys": "名古屋第二赤十字病院"
   },
@@ -623,13 +762,17 @@
     "jpName": "福岡山王病院",
     "region": "福冈",
     "address": "福冈县福冈市早良区百道浜3-6-45",
+    "addressEn": "3-6-45 Momochihama, Sawara-ku, Fukuoka, Fukuoka",
     "addressShort": "福冈县 福冈市早良区 百道浜",
+    "addressShortEn": "Momochihama, Sawara-ku, Fukuoka, Fukuoka",
     "phone": "092-407-1133（中文・英文专线）",
+    "phoneEn": "092-407-1133 (Chinese & English line)",
     "langs": [
       "中文",
       "英文"
     ],
     "langDetail": "中文・英文专线、官网中文版",
+    "langDetailEn": "Chinese & English line; Chinese website",
     "depts": [
       "内科",
       "外科",
@@ -638,9 +781,13 @@
       "预防医学"
     ],
     "hours": "周一至周六 9:00–13:00 / 14:00–17:00",
+    "hoursEn": "Mon–Sat 9:00–13:00 / 14:00–17:00",
     "hoursShort": "周一至周六 9:00–17:00",
+    "hoursShortEn": "Mon–Sat 9:00–17:00",
     "closed": "周日・节假日",
+    "closedEn": "Sun & public holidays",
     "note": "中文・英文专线（092-407-1133）可直接咨询。配备 3.0T MRI、PET-CT 等先进设备。注意：夜间・节假日急诊无翻译，需自带会日语的同行人；综合健康检查的日语翻译目前暂停。",
+    "noteEn": "A Chinese/English line (092-407-1133) for direct enquiries. Equipped with advanced gear such as 3.0T MRI and PET-CT. Note: no interpreter for night/holiday ER, so bring a Japanese-speaking companion; Japanese interpretation for comprehensive health checks is currently suspended.",
     "updated": "2026-05",
     "searchKeys": "福冈山王 早良区 百道浜"
   },
@@ -650,13 +797,16 @@
     "jpName": "福岡大学病院",
     "region": "福冈",
     "address": "福冈县福冈市城南区七隈7-45-1",
+    "addressEn": "7-45-1 Nanakuma, Jonan-ku, Fukuoka, Fukuoka",
     "addressShort": "福冈县 福冈市城南区 七隈",
+    "addressShortEn": "Nanakuma, Jonan-ku, Fukuoka, Fukuoka",
     "phone": "092-801-1011",
     "langs": [
       "中文",
       "英文"
     ],
     "langDetail": "官网中文版含外国患者咨询说明",
+    "langDetailEn": "Chinese website with foreign-patient guidance",
     "depts": [
       "内科",
       "心脏内科",
@@ -668,9 +818,13 @@
       "精神科"
     ],
     "hours": "初诊 周一至周五 8:30–12:00 / 复诊 8:30–15:00",
+    "hoursEn": "First visit Mon–Fri 8:30–12:00 / Follow-up 8:30–15:00",
     "hoursShort": "周一至周五 8:30–12:00（初诊）",
+    "hoursShortEn": "Mon–Fri 8:30–12:00 (first visit)",
     "closed": "周六・周日・节假日・年末年始（12/29–1/3）",
+    "closedEn": "Sat, Sun, public holidays & year-end (Dec 29–Jan 3)",
     "note": "福冈县拠点医療機関。24 小时急诊运营，设心脏中心、卒中中心、肿瘤中心、移植中心等专科中心，共 24 个临床科室。",
+    "noteEn": "A Fukuoka Prefecture hub hospital. 24-hour ER, with specialist centers for cardiology, stroke, oncology and transplantation, across 24 clinical departments.",
     "updated": "2026-05",
     "searchKeys": "福冈大学 福大 城南区 七隈"
   },
@@ -680,14 +834,18 @@
     "jpName": "聖マリア病院",
     "region": "福冈",
     "address": "福冈县久留米市津福本町422",
+    "addressEn": "422 Tsubuku-Honmachi, Kurume, Fukuoka",
     "addressShort": "福冈县 久留米市 津福本町",
+    "addressShortEn": "Tsubuku-Honmachi, Kurume, Fukuoka",
     "phone": "0942-35-3322 / 门诊预约 0570-05-1224",
+    "phoneEn": "0942-35-3322 / Appointments 0570-05-1224",
     "langs": [
       "中文",
       "英文",
       "越南语"
     ],
     "langDetail": "32 语言通译（部分需预约），含中文・英文・韩文・越南语等",
+    "langDetailEn": "32-language interpreting (some by appointment), incl. Chinese, English, Korean, Vietnamese",
     "depts": [
       "内科",
       "外科",
@@ -701,10 +859,15 @@
       "急诊"
     ],
     "hours": "受付 8:30–11:30（下午需预约）",
+    "hoursEn": "Reception 8:30–11:30 (afternoon by appointment)",
     "hoursShort": "受付 8:30–11:30",
-    "warning": "无紹介状初诊加收 7,700 円",
+    "hoursShortEn": "Reception 8:30–11:30",
     "closed": "周日・节假日",
+    "closedEn": "Sun & public holidays",
     "note": "久留米市拠点医療機関。32 语言通译，多语言问诊表（中・英・越南・他加禄・尼泊尔语）。急诊 24 小时。复诊无紹介状加收 3,300 円。",
+    "noteEn": "A Kurume hub hospital. 32-language interpreting and multilingual questionnaires (Chinese, English, Vietnamese, Tagalog, Nepali). 24-hour ER. Follow-up visits without a referral incur a 3,300 yen surcharge.",
+    "warning": "无紹介状初诊加收 7,700 円",
+    "warningEn": "First visit without a referral incurs a 7,700 yen surcharge",
     "updated": "2026-05",
     "searchKeys": "圣玛利亚 聖マリア 久留米"
   },
@@ -714,20 +877,27 @@
     "jpName": "医療法人 八女発心会 姫野病院",
     "region": "福冈",
     "address": "福冈县八女郡広川町大字新代2316",
+    "addressEn": "2316 Oaza-Shindai, Hirokawa, Yame District, Fukuoka",
     "addressShort": "福冈县 八女郡 広川町",
+    "addressShortEn": "Hirokawa, Yame District, Fukuoka",
     "phone": "0943-32-3611",
     "langs": [
       "中文"
     ],
     "langDetail": "中文工作人员常驻，无需预约",
+    "langDetailEn": "Chinese-speaking staff on-site, no appointment needed",
     "depts": [
       "内科",
       "外科"
     ],
     "hours": "周一至周五 9:00–12:00 / 14:00–16:30 / 周六 9:00–12:00",
+    "hoursEn": "Mon–Fri 9:00–12:00 / 14:00–16:30; Sat 9:00–12:00",
     "hoursShort": "周一至周五 9:00–16:30",
+    "hoursShortEn": "Mon–Fri 9:00–16:30",
     "closed": "周日・节假日",
+    "closedEn": "Sun & public holidays",
     "note": "中文工作人员常驻，无需预约即可中文就诊。24 小时紧急医疗。支持信用卡・电子钱包・二维码支付。位于福冈市南郊八女郡，需自驾或公共交通前往。",
+    "noteEn": "Chinese-speaking staff on-site; you can consult in Chinese without an appointment. 24-hour emergency care. Credit cards, e-wallets and QR payments accepted. Located in Yame District, south of Fukuoka City — reach it by car or public transport.",
     "updated": "2026-05",
     "searchKeys": "姫野 姬野 八女 広川"
   },
@@ -737,13 +907,17 @@
     "jpName": "博多ひのきクリニック",
     "region": "福冈",
     "address": "福冈县福冈市博多区博多駅南1-8-34 博多駅FRビル7F",
+    "addressEn": "Hakata-eki FR Bldg 7F, 1-8-34 Hakata-eki-Minami, Hakata-ku, Fukuoka, Fukuoka",
     "addressShort": "福冈县 福冈市博多区（博多站徒步 5 分）",
+    "addressShortEn": "Hakata-ku, Fukuoka, Fukuoka (5-min walk from Hakata Stn)",
     "phone": "092-477-7216（中文・韩文专线）/ 092-477-7215",
+    "phoneEn": "092-477-7216 (Chinese & Korean line) / 092-477-7215",
     "langs": [
       "中文",
       "英文"
     ],
     "langDetail": "中文・韩文专线、配置中文翻译员",
+    "langDetailEn": "Chinese & Korean line; on-site Chinese interpreter",
     "depts": [
       "内科",
       "外科",
@@ -752,9 +926,13 @@
       "健诊"
     ],
     "hours": "需查询官网（土・日午后、周三、节假日休诊）",
+    "hoursEn": "Check website (closed Sat/Sun afternoons, Wed & public holidays)",
     "hoursShort": "周一至周六（部分时段休）",
+    "hoursShortEn": "Mon–Sat (some hours closed)",
     "closed": "土・日午后、周三、节假日",
+    "closedEn": "Sat & Sun afternoons, Wed & public holidays",
     "note": "中文专线（092-477-7216）可直接预约，配置常驻中文翻译员。内科・外科・儿科及渡航相关诊疗均可。位于博多站附近，便于交通。",
+    "noteEn": "A Chinese line (092-477-7216) for direct booking, with an on-site Chinese interpreter. Internal medicine, surgery, pediatrics and travel-related care available. Near Hakata Stn, easy to reach.",
     "updated": "2026-05",
     "searchKeys": "博多ひのき 博多 中文专线"
   },
@@ -764,13 +942,17 @@
     "jpName": "福岡徳洲会病院 国際医療支援室",
     "region": "福冈",
     "address": "福冈县春日市須玖北4-5",
+    "addressEn": "4-5 Suku-Kita, Kasuga, Fukuoka",
     "addressShort": "福冈县 春日市（福冈市近郊）",
+    "addressShortEn": "Kasuga, Fukuoka (near Fukuoka City)",
     "phone": "092-573-6622（国际医疗支援室分机 1289）",
+    "phoneEn": "092-573-6622 (Intl Medical Support Office, ext. 1289)",
     "langs": [
       "中文",
       "英文"
     ],
     "langDetail": "中文・英文常驻医疗专员；平板视频通译支援 17 语言",
+    "langDetailEn": "On-site Chinese & English staff; tablet video interpreting in 17 languages",
     "depts": [
       "内科",
       "外科",
@@ -780,9 +962,13 @@
       "急诊"
     ],
     "hours": "平日 8:30–17:00 / 土曜 8:30–12:30",
+    "hoursEn": "Weekdays 8:30–17:00 / Sat 8:30–12:30",
     "hoursShort": "平日 8:30–17:00",
+    "hoursShortEn": "Weekdays 8:30–17:00",
     "closed": "周日・节假日",
+    "closedEn": "Sun & public holidays",
     "note": "国际医疗支援室设中文・英文常驻专员，邮箱预约 ftoku-intl@csf.ne.jp。配备 17 语言平板视频通译。对非英中语言可借助福冈国际医疗支援中心。",
+    "noteEn": "The International Medical Support Office has on-site Chinese/English staff; book by email at ftoku-intl@csf.ne.jp. Equipped with 17-language tablet video interpreting. For other languages, the Fukuoka International Medical Support Center can assist.",
     "updated": "2026-05",
     "searchKeys": "福岡徳洲会 春日市 国際医療支援室"
   },
@@ -792,13 +978,16 @@
     "jpName": "九州大学病院 国際診療支援センター（IPAC）",
     "region": "福冈",
     "address": "福冈县福冈市東区马出3-1-1",
+    "addressEn": "3-1-1 Maidashi, Higashi-ku, Fukuoka, Fukuoka",
     "addressShort": "福冈县 福冈市东区 马出",
+    "addressShortEn": "Maidashi, Higashi-ku, Fukuoka, Fukuoka",
     "phone": "092-642-4231",
     "langs": [
       "中文",
       "英文"
     ],
     "langDetail": "IPAC 配置中文通译 1 名、英文通译 1 名常驻；院内通译タブレット",
+    "langDetailEn": "IPAC has one on-site Chinese and one English interpreter; in-house interpreter tablet",
     "depts": [
       "内科",
       "外科",
@@ -808,10 +997,15 @@
       "急诊"
     ],
     "hours": "需通过 IPAC 官网事前相談",
+    "hoursEn": "Apply in advance via the IPAC website",
     "hoursShort": "事前相談预约",
-    "warning": "需先通过 IPAC 官网提交国际患者受入相談",
+    "hoursShortEn": "Advance consultation & booking",
     "closed": "周六・周日・节假日",
+    "closedEn": "Sat, Sun & public holidays",
     "note": "九大病院 IPAC 是福冈地区国际患者受入拠点。中文通译 1 名常驻，提供院内医疗通译及タブレット支援。需通过官网相談后预约。",
+    "noteEn": "Kyushu University Hospital's IPAC is the regional hub for international patients in Fukuoka. One on-site Chinese interpreter, with in-house medical interpreting and tablet support. Book after an initial consultation via the website.",
+    "warning": "需先通过 IPAC 官网提交国际患者受入相談",
+    "warningEn": "First submit an international-patient intake request via the IPAC website",
     "updated": "2026-05",
     "searchKeys": "九州大学 九大 IPAC 东区 马出"
   },
@@ -821,13 +1015,16 @@
     "jpName": "京都市立病院",
     "region": "京都",
     "address": "京都府京都市中京区壬生东高田町1-2",
+    "addressEn": "1-2 Mibu-Higashitakada-cho, Nakagyo-ku, Kyoto, Kyoto",
     "addressShort": "京都府 京都市中京区（壬生）",
+    "addressShortEn": "Nakagyo-ku, Kyoto (Mibu)",
     "phone": "075-311-5311",
     "langs": [
       "中文",
       "英文"
     ],
     "langDetail": "中文医疗通译 周二・周五 9:00–12:00 常驻（受付至 11:00），免预约",
+    "langDetailEn": "Chinese medical interpreter on-site Tue & Fri 9:00–12:00 (reception until 11:00), no appointment",
     "depts": [
       "内科",
       "外科",
@@ -836,9 +1033,13 @@
       "整形外科"
     ],
     "hours": "平日 8:30–11:00（外来受付）",
+    "hoursEn": "Weekdays 8:30–11:00 (outpatient reception)",
     "hoursShort": "平日 8:30–11:00",
+    "hoursShortEn": "Weekdays 8:30–11:00",
     "closed": "土・日・节假日",
+    "closedEn": "Sat, Sun & public holidays",
     "note": "京都市医疗通译派遣事业指定医院。中文通译每周二、周五上午常驻，无需预约；英文/韩文需 5 个工作日前预约。",
+    "noteEn": "A designated hospital under Kyoto City's medical-interpreter dispatch program. A Chinese interpreter is on-site Tue & Fri mornings, no appointment needed; English/Korean require booking 5 business days ahead.",
     "updated": "2026-05",
     "searchKeys": "京都市立 中京区 壬生"
   },
@@ -848,13 +1049,16 @@
     "jpName": "医仁会 武田総合病院",
     "region": "京都",
     "address": "京都府京都市伏見区石田森南町28-1",
+    "addressEn": "28-1 Ishida-Morimina-cho, Fushimi-ku, Kyoto, Kyoto",
     "addressShort": "京都府 京都市伏見区（石田駅徒步）",
+    "addressShortEn": "Fushimi-ku, Kyoto (walk from Ishida Stn)",
     "phone": "075-572-6331",
     "langs": [
       "中文",
       "英文"
     ],
     "langDetail": "中文医疗通译 周二・周五 9:00–12:00 常驻（免预约）",
+    "langDetailEn": "Chinese medical interpreter on-site Tue & Fri 9:00–12:00 (no appointment)",
     "depts": [
       "内科",
       "外科",
@@ -866,9 +1070,13 @@
       "泌尿器科"
     ],
     "hours": "周一至周六 9:00–12:00 / 受付 8:00–12:00",
+    "hoursEn": "Mon–Sat 9:00–12:00 / Reception 8:00–12:00",
     "hoursShort": "周一至周六 9:00–12:00",
+    "hoursShortEn": "Mon–Sat 9:00–12:00",
     "closed": "周日・节假日",
+    "closedEn": "Sun & public holidays",
     "note": "京都市医疗通译派遣事业指定医院（与京都市立病院同制度）。中文通译每周二、周五上午常驻，免预约。急患 24 小时受付（部分科室）。",
+    "noteEn": "A designated hospital under Kyoto City's medical-interpreter dispatch program (same scheme as Kyoto City Hospital). A Chinese interpreter is on-site Tue & Fri mornings, no appointment needed. 24-hour ER reception (some departments).",
     "updated": "2026-05",
     "searchKeys": "武田 医仁会 京都 伏見区 石田"
   },
@@ -878,7 +1086,9 @@
     "jpName": "医療法人財団康生会 武田病院",
     "region": "京都",
     "address": "京都府京都市下京区盐小路通西洞院東入東盐小路町841-5",
+    "addressEn": "841-5 Higashi-Shiokoji-cho, Nishinotoin-Higashi-iru, Shiokoji-dori, Shimogyo-ku, Kyoto, Kyoto",
     "addressShort": "京都府 京都市下京区（京都站徒步 5 分）",
+    "addressShortEn": "Shimogyo-ku, Kyoto (5-min walk from Kyoto Stn)",
     "phone": "075-361-1351",
     "langs": [
       "中文",
@@ -886,6 +1096,7 @@
       "韩文"
     ],
     "langDetail": "国际医疗支援室通过 iPad 多语言口译，平日 8:30–17:00",
+    "langDetailEn": "International Medical Support Office offers iPad multilingual interpreting, weekdays 8:30–17:00",
     "depts": [
       "内科",
       "心脏内科",
@@ -899,9 +1110,13 @@
       "眼科"
     ],
     "hours": "周一至周六 8:00–12:00 / 13:00–16:00",
+    "hoursEn": "Mon–Sat 8:00–12:00 / 13:00–16:00",
     "hoursShort": "周一至周六 8:00–16:00",
+    "hoursShortEn": "Mon–Sat 8:00–16:00",
     "closed": "周日・节假日",
+    "closedEn": "Sun & public holidays",
     "note": "京都站徒步 5 分。设国际医疗支援室，iPad 多语言口译（英・中・韩）平日 8:30–17:00 可用。年接诊外籍患者超 1,500 人，支持支付宝・PayPay・银联。",
+    "noteEn": "5-min walk from Kyoto Stn. Its International Medical Support Office offers iPad multilingual interpreting (English, Chinese, Korean) weekdays 8:30–17:00. Sees 1,500+ foreign patients a year; Alipay, PayPay and UnionPay accepted.",
     "updated": "2026-05",
     "searchKeys": "康生会武田 武田病院 京都站 下京区"
   },
@@ -911,12 +1126,15 @@
     "jpName": "医療法人社団 テイ医院",
     "region": "京都",
     "address": "京都府京都市左京区浄土寺下南田町3-5",
+    "addressEn": "3-5 Jodoji-Shimominamida-cho, Sakyo-ku, Kyoto, Kyoto",
     "addressShort": "京都府 京都市左京区 浄土寺",
+    "addressShortEn": "Jodoji, Sakyo-ku, Kyoto",
     "phone": "075-752-0556",
     "langs": [
       "中文"
     ],
     "langDetail": "中文常驻（京都市国際交流協会公开列表）",
+    "langDetailEn": "Chinese on-site (listed publicly by the Kyoto City International Foundation)",
     "depts": [
       "内科",
       "外科",
@@ -924,9 +1142,13 @@
       "皮肤美容科"
     ],
     "hours": "上午 9:00–12:30 / 下午 16:30–19:00",
+    "hoursEn": "Morning 9:00–12:30 / Afternoon 16:30–19:00",
     "hoursShort": "9:00–12:30 / 16:30–19:00",
+    "hoursShortEn": "9:00–12:30 / 16:30–19:00",
     "closed": "周二下午・周日",
+    "closedEn": "Tue afternoon & Sun",
     "note": "京都市国際交流協会公开的中文対応医院。诊所规模，覆盖内科・外科・胃肠科・皮肤美容科。京都左京区浄土寺一带。",
+    "noteEn": "A Chinese-capable clinic listed publicly by the Kyoto City International Foundation. Clinic-sized, covering internal medicine, surgery, gastroenterology and cosmetic dermatology. Around Jodoji in Sakyo-ku, Kyoto.",
     "updated": "2026-05",
     "searchKeys": "テイ医院 郑医院 左京区 浄土寺"
   },
@@ -936,22 +1158,30 @@
     "jpName": "医療法人 坂部医院",
     "region": "京都",
     "address": "京都府京都市中京区御幸町通二条下る山本町435",
+    "addressEn": "435 Yamamoto-cho, Gokomachi-dori Nijo-sagaru, Nakagyo-ku, Kyoto, Kyoto",
     "addressShort": "京都府 京都市中京区 御幸町",
+    "addressShortEn": "Gokomachi, Nakagyo-ku, Kyoto",
     "phone": "075-231-1624",
     "langs": [
       "中文",
       "英文"
     ],
     "langDetail": "英文・中文対応（京都市国際交流協会公开列表）",
+    "langDetailEn": "English & Chinese supported (listed publicly by the Kyoto City International Foundation)",
     "depts": [
       "内科",
       "消化器科"
     ],
     "hours": "上午 9:30–12:30 / 晚间 18:30–20:30",
+    "hoursEn": "Morning 9:30–12:30 / Evening 18:30–20:30",
     "hoursShort": "9:30–12:30 / 18:30–20:30",
-    "warning": "上午就诊需提前预约",
+    "hoursShortEn": "9:30–12:30 / 18:30–20:30",
     "closed": "周日・部分节假日",
+    "closedEn": "Sun & some public holidays",
     "note": "京都市国際交流協会公开的英中対応医院。覆盖内科・消化器科。上午需提前预约。中京区御幸町通沿线。",
+    "noteEn": "An English/Chinese-capable clinic listed publicly by the Kyoto City International Foundation. Covers internal medicine and gastroenterology. Morning visits require an appointment. Along Gokomachi-dori in Nakagyo-ku.",
+    "warning": "上午就诊需提前预约",
+    "warningEn": "Morning visits require an advance appointment",
     "updated": "2026-05",
     "searchKeys": "坂部医院 中京区 御幸町"
   },
@@ -961,12 +1191,15 @@
     "jpName": "医療法人健幸会 むかいじま病院",
     "region": "京都",
     "address": "京都府京都市伏見区向島四谷池5番地",
+    "addressEn": "5 Mukaijima-Yotsuya-ike, Fushimi-ku, Kyoto, Kyoto",
     "addressShort": "京都府 京都市伏見区 向島",
+    "addressShortEn": "Mukaijima, Fushimi-ku, Kyoto",
     "phone": "075-612-3101",
     "langs": [
       "中文"
     ],
     "langDetail": "中文対応（京都市国際交流協会公开列表）",
+    "langDetailEn": "Chinese supported (listed publicly by the Kyoto City International Foundation)",
     "depts": [
       "内科",
       "外科",
@@ -977,9 +1210,13 @@
       "理学疗法科"
     ],
     "hours": "周一至周六 9:00–17:00",
+    "hoursEn": "Mon–Sat 9:00–17:00",
     "hoursShort": "周一至周六 9:00–17:00",
+    "hoursShortEn": "Mon–Sat 9:00–17:00",
     "closed": "周日・节假日",
+    "closedEn": "Sun & public holidays",
     "note": "京都市国際交流協会公开的中文対応综合医院。多科室含整形外科、放射线科、理学疗法。伏見区向島地区。",
+    "noteEn": "A Chinese-capable general hospital listed publicly by the Kyoto City International Foundation. Multiple departments including orthopedics, radiology and physical therapy. Mukaijima area, Fushimi-ku.",
     "updated": "2026-05",
     "searchKeys": "向岛 むかいじま 伏見区 向島"
   },
@@ -989,13 +1226,16 @@
     "jpName": "洛和会 音羽記念病院",
     "region": "京都",
     "address": "京都府京都市山科区小山镇守町29-1",
+    "addressEn": "29-1 Koyama-Chinjucho, Yamashina-ku, Kyoto, Kyoto",
     "addressShort": "京都府 京都市山科区 小山",
+    "addressShortEn": "Koyama, Yamashina-ku, Kyoto",
     "phone": "075-594-8010",
     "langs": [
       "中文",
       "英文"
     ],
     "langDetail": "英文・中文対応（京都市国際交流協会公开列表）",
+    "langDetailEn": "English & Chinese supported (listed publicly by the Kyoto City International Foundation)",
     "depts": [
       "内科",
       "外科",
@@ -1003,9 +1243,13 @@
       "人工透析内科"
     ],
     "hours": "周一至周六 8:30–12:00 / 13:30–17:00",
+    "hoursEn": "Mon–Sat 8:30–12:00 / 13:30–17:00",
     "hoursShort": "周一至周六 8:30–17:00",
+    "hoursShortEn": "Mon–Sat 8:30–17:00",
     "closed": "周日・节假日",
+    "closedEn": "Sun & public holidays",
     "note": "京都市国際交流協会公开的英中対応医院。专注肾脏内科和人工透析，覆盖内科・外科。山科区小山地区。",
+    "noteEn": "An English/Chinese-capable hospital listed publicly by the Kyoto City International Foundation. Focused on nephrology and dialysis, covering internal medicine and surgery. Koyama area, Yamashina-ku.",
     "updated": "2026-05",
     "searchKeys": "洛和会 音羽記念 山科区 小山"
   },
@@ -1015,28 +1259,35 @@
     "jpName": "横濱医院",
     "region": "横浜",
     "address": "神奈川县横滨市中区山下町211-8-101",
+    "addressEn": "211-8-101 Yamashitacho, Naka-ku, Yokohama, Kanagawa",
     "addressShort": "神奈川县 横滨市中区 山下町（みなとみらい線 元町・中華街駅 徒步5分）",
+    "addressShortEn": "Yamashitacho, Naka-ku, Yokohama, Kanagawa (5-min walk from Motomachi-Chukagai Stn, Minatomirai Line)",
     "phone": "045-228-8321",
     "langs": [
       "中文"
     ],
     "langDetail": "中文（院长上海出身，全程接诊）西医及汉方均可对应",
+    "langDetailEn": "Chinese (Shanghai-born director sees every patient); both Western medicine and Kampo supported",
     "depts": [
       "内科",
       "汉方"
     ],
     "hours": "周一至周六（具体时段以官网为准）",
+    "hoursEn": "Mon–Sat (hours per website)",
     "hoursShort": "周一至周六诊疗",
+    "hoursShortEn": "Mon–Sat consultations",
     "closed": "周日・节假日",
+    "closedEn": "Sun & public holidays",
     "note": "位于横滨中华街正中心，院长上海出身、东京医科齿科大学医学部毕业，西医与中药两条线均可。中文母语接诊，无需另约翻译。元町・中華街駅步行5分。",
+    "noteEn": "In the heart of Yokohama Chinatown. The director is from Shanghai and graduated from Tokyo Medical and Dental University, practicing both Western medicine and Chinese herbal medicine. Native Chinese consultations, no separate interpreter needed. 5-min walk from Motomachi-Chukagai Stn.",
     "updated": "2026-05",
+    "searchKeys": "横濱医院 横滨 中華街 中文 内科 漢方",
     "extraBadges": [
       {
         "label": "中文母语接诊",
         "type": "new"
       }
-    ],
-    "searchKeys": "横濱医院 横滨 中華街 中文 内科 漢方"
+    ]
   },
   {
     "name": "中华街医院",
@@ -1044,12 +1295,15 @@
     "jpName": "医療法人 医健会 中華街医院",
     "region": "横浜",
     "address": "神奈川县横滨市中区山下町73-3 ヴァルス山下町ビル3F",
+    "addressEn": "Vals Yamashitacho Bldg 3F, 73-3 Yamashitacho, Naka-ku, Yokohama, Kanagawa",
     "addressShort": "神奈川县 横滨市中区 山下町（みなとみらい線 日本大通り駅 徒步4分）",
+    "addressShortEn": "Yamashitacho, Naka-ku, Yokohama, Kanagawa (4-min walk from Nihon-odori Stn, Minatomirai Line)",
     "phone": "045-662-8992",
     "langs": [
       "中文"
     ],
     "langDetail": "中文对应（内科・外科・骨科・皮肤共用）",
+    "langDetailEn": "Chinese supported (shared across internal medicine, surgery, orthopedics, dermatology)",
     "depts": [
       "内科",
       "外科",
@@ -1057,9 +1311,13 @@
       "皮肤科"
     ],
     "hours": "周一・二・四・五・六 7:30–11:30 / 13:30–18:30",
+    "hoursEn": "Mon, Tue, Thu, Fri, Sat 7:30–11:30 / 13:30–18:30",
     "hoursShort": "上午 7:30–11:30 / 下午 13:30–18:30",
+    "hoursShortEn": "Morning 7:30–11:30 / Afternoon 13:30–18:30",
     "closed": "周三・周日・节假日",
+    "closedEn": "Wed, Sun & public holidays",
     "note": "横滨中华街老牌中文医院之一，早上7:30 起诊适合上班族。日本大通り駅3番出口步行4分。诊疗科目较全（内・外・骨・皮）。",
+    "noteEn": "One of Yokohama Chinatown's established Chinese-language clinics; the 7:30 morning start suits commuters. 4-min walk from Exit 3 of Nihon-odori Stn. Fairly broad scope (internal medicine, surgery, orthopedics, dermatology).",
     "updated": "2026-05",
     "searchKeys": "中華街医院 横滨 中文 内科 整形"
   },
@@ -1069,28 +1327,35 @@
     "jpName": "横浜中華街雅デンタルクリニック",
     "region": "横浜",
     "address": "神奈川县横滨市中区山下町97 一石屋ビル3F",
+    "addressEn": "Ichiishiya Bldg 3F, 97 Yamashitacho, Naka-ku, Yokohama, Kanagawa",
     "addressShort": "神奈川县 横滨市中区 山下町（みなとみらい線 元町・中華街駅 徒步2分）",
+    "addressShortEn": "Yamashitacho, Naka-ku, Yokohama, Kanagawa (2-min walk from Motomachi-Chukagai Stn, Minatomirai Line)",
     "phone": "045-664-5420",
     "langs": [
       "中文",
       "英文"
     ],
     "langDetail": "中国人スタッフ常驻；院长有南加州大学背景，中文・英文均可",
+    "langDetailEn": "Chinese staff on-site; the director, with a USC background, speaks Chinese and English",
     "depts": [
       "牙科"
     ],
     "hours": "周一・二・四・五 10:00–19:00（最终受理 18:30）/ 周六・日 10:30–17:00（最终受理 16:30）",
+    "hoursEn": "Mon, Tue, Thu, Fri 10:00–19:00 (last reception 18:30); Sat & Sun 10:30–17:00 (last reception 16:30)",
     "hoursShort": "周一二四五 10:00–19:00 / 周六日 10:30–17:00",
+    "hoursShortEn": "Mon/Tue/Thu/Fri 10:00–19:00 / Sat & Sun 10:30–17:00",
     "closed": "周三・节假日",
+    "closedEn": "Wed & public holidays",
     "note": "中华街正中心牙科，周日仍营业，适合工作日难就诊者。中国人员常驻、无需另约翻译；元町・中華街駅徒步2分。诊疗科目含一般牙科・矫正・种植・美白・小儿牙科・牙周病。",
+    "noteEn": "A dental clinic in the heart of Chinatown, open Sundays — good for those who struggle to visit on weekdays. Chinese staff on-site, no separate interpreter needed; 2-min walk from Motomachi-Chukagai Stn. Services include general dentistry, orthodontics, implants, whitening, pediatric dentistry and periodontics.",
     "updated": "2026-05",
+    "searchKeys": "横浜中華街 雅 デンタル 牙科 中文",
     "extraBadges": [
       {
         "label": "周日营业",
         "type": "new"
       }
-    ],
-    "searchKeys": "横浜中華街 雅 デンタル 牙科 中文"
+    ]
   },
   {
     "name": "檀诊所 中文外来",
@@ -1098,28 +1363,35 @@
     "jpName": "檀（たん）クリニック",
     "region": "横浜",
     "address": "神奈川县川崎市多摩区菅2-9-1 グランベルジェ稲田堤202",
+    "addressEn": "Grand Berge Inadazutsumi 202, 2-9-1 Suge, Tama-ku, Kawasaki, Kanagawa",
     "addressShort": "神奈川县 川崎市多摩区（京王/JR 稲田堤駅 徒步2分）",
+    "addressShortEn": "Tama-ku, Kawasaki, Kanagawa (2-min walk from Inadazutsumi Stn, Keio/JR)",
     "phone": "044-944-0333",
     "langs": [
       "中文"
     ],
     "langDetail": "中文母语诊疗（院长持中日两国医师执照）",
+    "langDetailEn": "Native Chinese consultations (director licensed in both China and Japan)",
     "depts": [
       "心疗内科",
       "精神科"
     ],
     "hours": "周五 10:00–13:00 / 15:00–20:00；周六 9:30–12:30 / 13:00–15:00",
+    "hoursEn": "Fri 10:00–13:00 / 15:00–20:00; Sat 9:30–12:30 / 13:00–15:00",
     "hoursShort": "周五 10:00–20:00 / 周六 9:30–15:00",
+    "hoursShortEn": "Fri 10:00–20:00 / Sat 9:30–15:00",
     "closed": "周二・周日・节假日",
+    "closedEn": "Tue, Sun & public holidays",
     "note": "首都圏少有的中文心理诊疗。院长持有中日两国医师资格 + 日本精神保健指定医，针对抑郁・焦虑・失眠等用中文问诊。京王/JR稲田堤駅步行2分。",
+    "noteEn": "A rare Chinese-language psychiatric clinic in the Tokyo metropolitan area. The director holds medical licenses in both China and Japan plus Japan's designated mental-health physician qualification, consulting in Chinese on depression, anxiety, insomnia and more. 2-min walk from Inadazutsumi Stn (Keio/JR).",
     "updated": "2026-05",
+    "searchKeys": "檀クリニック tan 川崎 稲田堤 中文 心療内科 精神科",
     "extraBadges": [
       {
         "label": "中文心理诊疗",
         "type": "new"
       }
-    ],
-    "searchKeys": "檀クリニック tan 川崎 稲田堤 中文 心療内科 精神科"
+    ]
   },
   {
     "name": "Leo葵诊所",
@@ -1127,29 +1399,36 @@
     "jpName": "脳神経内科Leo葵クリニック",
     "region": "名古屋",
     "address": "爱知县名古屋市东区葵1-25-7 AOI FA BLDG 1F",
+    "addressEn": "AOI FA Bldg 1F, 1-25-7 Aoi, Higashi-ku, Nagoya, Aichi",
     "addressShort": "爱知县 名古屋市东区 葵（地下铁东山線 新栄町駅 徒步30秒）",
+    "addressShortEn": "Aoi, Higashi-ku, Nagoya, Aichi (30-sec walk from Shin-Sakaemachi Stn, Higashiyama Line)",
     "phone": "052-325-5511",
     "langs": [
       "中文",
       "英文"
     ],
     "langDetail": "院长中文・英文均可接诊（神经内科专门医）",
+    "langDetailEn": "Director consults in Chinese & English (neurology specialist)",
     "depts": [
       "脑神经内科",
       "内科"
     ],
     "hours": "周一・三・四・五 10:00–13:00 / 15:00–19:00；周六 10:00–13:00",
+    "hoursEn": "Mon, Wed, Thu, Fri 10:00–13:00 / 15:00–19:00; Sat 10:00–13:00",
     "hoursShort": "周一三四五 10:00–19:00 / 周六上午",
+    "hoursShortEn": "Mon/Wed/Thu/Fri 10:00–19:00 / Sat morning",
     "closed": "周二・周日・节假日・周六下午",
+    "closedEn": "Tue, Sun, public holidays & Sat afternoon",
     "note": "名古屋市中心少有的中文神经内科。院长直接用中文/英文问诊，头痛・脑神经・一般内科均可。设氧气舱与汉方处方。新栄町駅0分。提供在线诊疗。",
+    "noteEn": "A rare Chinese-language neurology clinic in central Nagoya. The director consults directly in Chinese/English on headaches, neurological issues and general internal medicine. Offers a hyperbaric oxygen chamber and Kampo prescriptions. Right by Shin-Sakaemachi Stn. Online consultations available.",
     "updated": "2026-05",
+    "searchKeys": "Leo葵 leo aoi 名古屋 新栄町 中文 脳神経内科",
     "extraBadges": [
       {
         "label": "中文神经内科",
         "type": "new"
       }
-    ],
-    "searchKeys": "Leo葵 leo aoi 名古屋 新栄町 中文 脳神経内科"
+    ]
   },
   {
     "name": "名古屋共立医院",
@@ -1157,14 +1436,18 @@
     "jpName": "医療法人偕行会 名古屋共立病院",
     "region": "名古屋",
     "address": "爱知县名古屋市中川区法华1-172",
+    "addressEn": "1-172 Hokke, Nakagawa-ku, Nagoya, Aichi",
     "addressShort": "爱知县 名古屋市中川区 法华",
+    "addressShortEn": "Hokke, Nakagawa-ku, Nagoya, Aichi",
     "phone": "052-355-6636（外国人窗口，平日9:00–17:00）",
+    "phoneEn": "052-355-6636 (foreign-patient desk, weekdays 9:00–17:00)",
     "langs": [
       "中文",
       "英文",
       "越南语"
     ],
     "langDetail": "中文・英文・越南语・印尼语・西班牙语・葡萄牙语 6 语种翻译（部分配自动翻译机）",
+    "langDetailEn": "Chinese, English, Vietnamese, Indonesian, Spanish & Portuguese interpreting in 6 languages (some via automatic translator)",
     "depts": [
       "内科",
       "外科",
@@ -1173,17 +1456,21 @@
       "透析"
     ],
     "hours": "平日 9:00–17:00（外国人窗口）",
+    "hoursEn": "Weekdays 9:00–17:00 (foreign-patient desk)",
     "hoursShort": "平日 9:00–17:00",
+    "hoursShortEn": "Weekdays 9:00–17:00",
     "closed": "周日・节假日",
+    "closedEn": "Sun & public holidays",
     "note": "通译完全免费、无紹介状直接受诊、可对应体检/人间ドック。预约时告知希望语言即可。爱知县医疗通译系统加盟。",
+    "noteEn": "Interpreting is fully free, walk-ins without a referral are accepted, and health checks / comprehensive checkups are supported. Just state your preferred language when booking. Part of the Aichi Prefecture medical-interpreter system.",
     "updated": "2026-05",
+    "searchKeys": "偕行会 名古屋共立 中川区 中文 翻訳無料",
     "extraBadges": [
       {
         "label": "翻译免费",
         "type": "new"
       }
-    ],
-    "searchKeys": "偕行会 名古屋共立 中川区 中文 翻訳無料"
+    ]
   },
   {
     "name": "藤田医科大学医院 国际医疗中心",
@@ -1191,13 +1478,17 @@
     "jpName": "藤田医科大学病院 国際医療センター",
     "region": "名古屋",
     "address": "爱知县丰明市沓挂町田楽ヶ窪1-98",
+    "addressEn": "1-98 Dengakugakubo, Kutsukake-cho, Toyoake, Aichi",
     "addressShort": "爱知县 丰明市（名古屋市营地下鉄桜通線 徳重駅 接驳巴士）",
+    "addressShortEn": "Toyoake, Aichi (shuttle bus from Tokushige Stn, Sakura-dori Subway Line)",
     "phone": "0562-93-9724（国际医疗中心）",
+    "phoneEn": "0562-93-9724 (Intl Medical Center)",
     "langs": [
       "中文",
       "英文"
     ],
     "langDetail": "全职中文医疗翻译常驻",
+    "langDetailEn": "Full-time Chinese medical interpreter on-site",
     "depts": [
       "健康体检",
       "肿瘤科",
@@ -1205,17 +1496,21 @@
       "外科"
     ],
     "hours": "平日 8:45–17:00 / 周六 8:45–12:30",
+    "hoursEn": "Weekdays 8:45–17:00 / Sat 8:45–12:30",
     "hoursShort": "平日 8:45–17:00 / 周六上午",
+    "hoursShortEn": "Weekdays 8:45–17:00 / Sat morning",
     "closed": "周日・节假日",
+    "closedEn": "Sun & public holidays",
     "note": "日本少有的同时持有 JCI + JMIP 双认证的大学医院。设独立国际医疗中心，全职中文医疗翻译，专做高精度体检和再生医疗等先进医疗。中文官网可直接预约。",
+    "noteEn": "One of the few Japanese university hospitals holding both JCI and JMIP accreditation. It has a dedicated International Medical Center with a full-time Chinese medical interpreter, specializing in high-precision health checks and advanced care such as regenerative medicine. Book directly via the Chinese website.",
     "updated": "2026-05",
+    "searchKeys": "藤田医科大学 国際医療センター 丰明 中文 体检",
     "extraBadges": [
       {
         "label": "JCI+JMIP认证",
         "type": "new"
       }
-    ],
-    "searchKeys": "藤田医科大学 国際医療センター 丰明 中文 体检"
+    ]
   },
   {
     "name": "名古屋掖済会医院 中国患者窗口",
@@ -1223,12 +1518,16 @@
     "jpName": "名古屋掖済会病院（中国患者対応窓口・日中博医堂）",
     "region": "名古屋",
     "address": "爱知县名古屋市中川区松年町4-66",
+    "addressEn": "4-66 Shonen-cho, Nakagawa-ku, Nagoya, Aichi",
     "addressShort": "爱知县 名古屋市中川区 松年町",
+    "addressShortEn": "Shonen-cho, Nakagawa-ku, Nagoya, Aichi",
     "phone": "052-887-6976（中文专线·日中博医堂） / 052-652-7711（医院总机）",
+    "phoneEn": "052-887-6976 (Chinese line · Nicchu Hakuido) / 052-652-7711 (main)",
     "langs": [
       "中文"
     ],
     "langDetail": "中文专线 + 微信咨询（zbyyxhsor）+ 邮箱 zbysor@rzbyt.com",
+    "langDetailEn": "Chinese line + WeChat (zbyyxhsor) + email (zbysor@rzbyt.com)",
     "depts": [
       "内科",
       "外科",
@@ -1236,17 +1535,21 @@
       "肿瘤科"
     ],
     "hours": "平日 8:30–11:00（外来受理）",
+    "hoursEn": "Weekdays 8:30–11:00 (outpatient reception)",
     "hoursShort": "平日 上午受理",
+    "hoursShortEn": "Weekdays — morning reception",
     "closed": "周日・节假日",
+    "closedEn": "Sun & public holidays",
     "note": "与株式会社日中博医堂合作设中文专属窗口，可微信预约，处理医疗翻译及医疗签证事项。适合从中国直接联系预约。",
+    "noteEn": "A dedicated Chinese desk set up with Nicchu Hakuido Co., handling bookings via WeChat plus medical interpreting and medical-visa matters. Convenient for booking directly from China.",
     "updated": "2026-05",
+    "searchKeys": "名古屋掖済会 中川区 中文 日中博医堂 微信",
     "extraBadges": [
       {
         "label": "微信对应",
         "type": "new"
       }
-    ],
-    "searchKeys": "名古屋掖済会 中川区 中文 日中博医堂 微信"
+    ]
   },
   {
     "name": "札幌东德洲会医院 国际医疗支援室",
@@ -1254,13 +1557,17 @@
     "jpName": "医療法人徳洲会 札幌東徳洲会病院 国際医療支援室",
     "region": "札幌",
     "address": "北海道札幌市东区北33条东14丁目3-1",
+    "addressEn": "33-jo Higashi 14-chome 3-1, Kita, Higashi-ku, Sapporo, Hokkaido",
     "addressShort": "北海道 札幌市东区 北33条东（环状通东駅 巴士）",
+    "addressShortEn": "Kita-33-jo-Higashi, Higashi-ku, Sapporo, Hokkaido (bus from Kanjodori-Higashi Stn)",
     "phone": "011-722-1110（医院总机・国际医疗支援室）",
+    "phoneEn": "011-722-1110 (main / Intl Medical Support Office)",
     "langs": [
       "中文",
       "英文"
     ],
     "langDetail": "中文翻译常驻；可微信/邮件预约（kokusai@tohtoku.jp）",
+    "langDetailEn": "Chinese interpreter on-site; book by WeChat/email (kokusai@tohtoku.jp)",
     "depts": [
       "内科",
       "外科",
@@ -1269,10 +1576,15 @@
       "脑神经科"
     ],
     "hours": "平日 8:30–17:00 / 周六 8:30–12:30；急诊24小时",
+    "hoursEn": "Weekdays 8:30–17:00 / Sat 8:30–12:30; ER 24h",
     "hoursShort": "平日 8:30–17:00 / 周六上午",
+    "hoursShortEn": "Weekdays 8:30–17:00 / Sat morning",
     "closed": "周日・节假日（门诊）",
+    "closedEn": "Sun & public holidays (outpatient)",
     "note": "北海道少有的同时持有 JCI + JMIP 认证的综合医院，24小时急诊。中文翻译常驻、可微信/WhatsApp联系。急诊与心脑血管为强项。",
+    "noteEn": "One of the few general hospitals in Hokkaido holding both JCI and JMIP accreditation, with a 24-hour ER. On-site Chinese interpreter, reachable via WeChat/WhatsApp. Strengths in emergency care and cardiovascular/cerebrovascular medicine.",
     "updated": "2026-05",
+    "searchKeys": "札幌東徳洲会 国際医療支援室 中文 微信 JCI JMIP",
     "extraBadges": [
       {
         "label": "JCI+JMIP认证",
@@ -1282,8 +1594,7 @@
         "label": "24h急诊",
         "type": "new"
       }
-    ],
-    "searchKeys": "札幌東徳洲会 国際医療支援室 中文 微信 JCI JMIP"
+    ]
   },
   {
     "name": "札幌Tomo心理诊所",
@@ -1291,29 +1602,36 @@
     "jpName": "医療法人社団同楽会 札幌西区ともメンタルクリニック",
     "region": "札幌",
     "address": "北海道札幌市西区西町北7丁目2-11 西さっぽろメディカルビル1F",
+    "addressEn": "Nishi-Sapporo Medical Bldg 1F, Nishimachi-Kita 7-2-11, Nishi-ku, Sapporo, Hokkaido",
     "addressShort": "北海道 札幌市西区 西町北",
+    "addressShortEn": "Nishimachi-Kita, Nishi-ku, Sapporo, Hokkaido",
     "phone": "011-213-9955",
     "langs": [
       "中文"
     ],
     "langDetail": "院长胡先生（上海出身、大阪大学医学部）中文母语接诊",
+    "langDetailEn": "Director Dr. Hu (Shanghai-born, Osaka University School of Medicine) consults in native Chinese",
     "depts": [
       "心疗内科",
       "精神科",
       "内科"
     ],
     "hours": "详见官网",
+    "hoursEn": "See website",
     "hoursShort": "详见官网",
+    "hoursShortEn": "See website",
     "closed": "详见官网",
+    "closedEn": "See website",
     "note": "札幌少有的中文母语精神科。院长胡先生上海出身、大阪大学医学部，可对应抑郁・焦虑・失眠・适应障碍等中文心理诊疗。营业时间请以官网为准。",
+    "noteEn": "A rare native-Chinese psychiatric clinic in Sapporo. Director Dr. Hu, born in Shanghai and trained at Osaka University School of Medicine, consults in Chinese on depression, anxiety, insomnia, adjustment disorders and more. Please check the website for hours.",
     "updated": "2026-05",
+    "searchKeys": "札幌 ともメンタル 西区 中文 心療内科 胡",
     "extraBadges": [
       {
         "label": "中文心理诊疗",
         "type": "new"
       }
-    ],
-    "searchKeys": "札幌 ともメンタル 西区 中文 心療内科 胡"
+    ]
   },
   {
     "name": "广岛大学病院 国际医疗支援部",
@@ -1321,13 +1639,17 @@
     "jpName": "広島大学病院 国際医療支援部",
     "region": "广岛",
     "address": "广岛县广岛市南区霞1-2-3",
+    "addressEn": "1-2-3 Kasumi, Minami-ku, Hiroshima, Hiroshima",
     "addressShort": "广岛县 广岛市南区 霞",
+    "addressShortEn": "Kasumi, Minami-ku, Hiroshima, Hiroshima",
     "phone": "082-257-5555（总机）",
+    "phoneEn": "082-257-5555 (main)",
     "langs": [
       "中文",
       "英文"
     ],
     "langDetail": "中文通过翻译机 + HIC医疗通译派遣（事前申请）",
+    "langDetailEn": "Chinese via translation device + HIC medical-interpreter dispatch (apply in advance)",
     "depts": [
       "内科",
       "消化内科",
@@ -1338,18 +1660,23 @@
       "牙科"
     ],
     "hours": "平日 8:30–11:00（初诊受理）",
+    "hoursEn": "Weekdays 8:30–11:00 (first-visit reception)",
     "hoursShort": "平日 上午受理",
-    "warning": "中文人工翻译需事前申请 HIC 派遣（协力金2,000円/次），需紹介状",
+    "hoursShortEn": "Weekdays — morning reception",
     "closed": "周六・周日・节假日",
+    "closedEn": "Sat, Sun & public holidays",
     "note": "广岛地区首家 JMIP 认证大学医院（2022年取得），同时 JIH 注册。常规配翻译机+多语指示牌；中文人工翻译需通过ひろしま国際センター（HIC）事前申请派遣。",
+    "noteEn": "Hiroshima's first JMIP-accredited university hospital (certified 2022), also JIH-registered. Translation devices and multilingual signage are standard; an in-person Chinese interpreter must be requested in advance through the Hiroshima International Center (HIC).",
+    "warning": "中文人工翻译需事前申请 HIC 派遣（协力金2,000円/次），需紹介状",
+    "warningEn": "An in-person Chinese interpreter requires advance HIC dispatch (2,000 yen cooperation fee per visit); referral letter required",
     "updated": "2026-05",
+    "searchKeys": "広島大学病院 国際医療支援部 JMIP 中文 广岛",
     "extraBadges": [
       {
         "label": "JMIP+JIH认证",
         "type": "new"
       }
-    ],
-    "searchKeys": "広島大学病院 国際医療支援部 JMIP 中文 广岛"
+    ]
   },
   {
     "name": "冈山大学病院 国际诊疗支援中心",
@@ -1357,14 +1684,18 @@
     "jpName": "岡山大学病院 国際診療支援センター",
     "region": "冈山",
     "address": "冈山县冈山市北区鹿田町2-5-1",
+    "addressEn": "2-5-1 Shikata-cho, Kita-ku, Okayama, Okayama",
     "addressShort": "冈山县 冈山市北区 鹿田町（JR冈山駅 步行约15分）",
+    "addressShortEn": "Shikata-cho, Kita-ku, Okayama, Okayama (about 15-min walk from JR Okayama Stn)",
     "phone": "086-235-7849（国际诊疗支援中心） / 086-223-7151（总机）",
+    "phoneEn": "086-235-7849 (Intl Care Support Center) / 086-223-7151 (main)",
     "langs": [
       "中文",
       "英文",
       "韩文"
     ],
     "langDetail": "中文医疗通译（付费）+ 翻译平板 + 中文版网站及医疗检索",
+    "langDetailEn": "Chinese medical interpreter (paid) + translation tablet + Chinese website & medical search",
     "depts": [
       "内科",
       "外科",
@@ -1375,11 +1706,17 @@
       "牙科"
     ],
     "hours": "平日 8:30–12:00（初诊受理）",
+    "hoursEn": "Weekdays 8:30–12:00 (first-visit reception)",
     "hoursShort": "平日 上午受理",
-    "warning": "中文医疗通译为付费服务；初诊需在留卡/护照 + 保险证明",
+    "hoursShortEn": "Weekdays — morning reception",
     "closed": "周六・周日・节假日・年末年始",
+    "closedEn": "Sat, Sun, public holidays & year-end/New Year",
     "note": "中国・四国地区首家获得 JMIP 认证的国立大学医院（2017年取得、2023年再认证）。中文官网及医疗信息检索完备，年接诊约700位外国患者。邮箱可日/英咨询：kokusai-shinryou@adm.okayama-u.ac.jp。",
+    "noteEn": "The first national university hospital in the Chugoku-Shikoku region to gain JMIP accreditation (certified 2017, recertified 2023). Comprehensive Chinese website and medical-information search; sees around 700 foreign patients a year. Email enquiries in Japanese/English: kokusai-shinryou@adm.okayama-u.ac.jp.",
+    "warning": "中文医疗通译为付费服务；初诊需在留卡/护照 + 保险证明",
+    "warningEn": "Chinese medical interpreting is a paid service; first visit requires residence card/passport + proof of insurance",
     "updated": "2026-05",
+    "searchKeys": "岡山大学病院 国際診療支援センター JMIP 中文 冈山",
     "extraBadges": [
       {
         "label": "JMIP认证",
@@ -1389,8 +1726,7 @@
         "label": "中国・四国首家",
         "type": "new"
       }
-    ],
-    "searchKeys": "岡山大学病院 国際診療支援センター JMIP 中文 冈山"
+    ]
   },
   {
     "name": "神户大学医院 国际诊疗（IMCC）",
@@ -1398,13 +1734,17 @@
     "jpName": "神戸大学医学部附属病院 国際診療（IMCC）",
     "region": "神户",
     "address": "兵库县神户市中央区楠町7-5-2",
+    "addressEn": "7-5-2 Kusunoki-cho, Chuo-ku, Kobe, Hyogo",
     "addressShort": "兵库县 神户市中央区 楠町",
+    "addressShortEn": "Kusunoki-cho, Chuo-ku, Kobe, Hyogo",
     "phone": "078-382-6855（IMCC国际医疗交流中心）",
+    "phoneEn": "078-382-6855 (IMCC)",
     "langs": [
       "中文",
       "英文"
     ],
     "langDetail": "中文医疗通译（同行2,750円／远程平板1,650円）+ 50余种语言通译",
+    "langDetailEn": "Chinese medical interpreter (in-person 2,750 yen / remote tablet 1,650 yen) + 50+ languages",
     "depts": [
       "内科",
       "外科",
@@ -1415,18 +1755,23 @@
       "急诊"
     ],
     "hours": "平日 8:30–11:00（初诊受理／各科不同）",
+    "hoursEn": "Weekdays 8:30–11:00 (first-visit reception / varies by department)",
     "hoursShort": "平日 上午受理",
-    "warning": "不懂日语的患者须同行医疗通译就诊；初诊建议持紹介状",
+    "hoursShortEn": "Weekdays — morning reception",
     "closed": "周六・周日・节假日",
+    "closedEn": "Sat, Sun & public holidays",
     "note": "兵库县神户市的国立大学医院。国际医疗交流中心（IMCC）提供中文等50余种语言通译，邮箱 imcc@med.kobe-u.ac.jp 可咨询预约。无日本公的保险者诊疗费按1点30円计算。",
+    "noteEn": "A national university hospital in Chuo-ku, Kobe. Its International Medical Communication Center (IMCC) offers interpreting in Chinese and 50+ other languages; enquire and book by email at imcc@med.kobe-u.ac.jp. Patients without Japanese public insurance are charged 30 yen per point.",
+    "warning": "不懂日语的患者须同行医疗通译就诊；初诊建议持紹介状",
+    "warningEn": "Patients who don't speak Japanese must attend with a medical interpreter; a referral letter is recommended for first visits",
     "updated": "2026-06",
+    "searchKeys": "神戸大学医学部附属病院 IMCC 国際診療 中文 神户",
     "extraBadges": [
       {
         "label": "50+语言通译",
         "type": "new"
       }
-    ],
-    "searchKeys": "神戸大学医学部附属病院 IMCC 国際診療 中文 神户"
+    ]
   },
   {
     "name": "那霸市立医院 国际医疗支援室",
@@ -1434,13 +1779,17 @@
     "jpName": "那覇市立病院 国際医療支援室",
     "region": "冲绳",
     "address": "冲绳县那霸市古岛2-31-1",
+    "addressEn": "2-31-1 Furujima, Naha, Okinawa",
     "addressShort": "冲绳县 那霸市 古岛",
+    "addressShortEn": "Furujima, Naha, Okinawa",
     "phone": "098-884-5111（总机）",
+    "phoneEn": "098-884-5111 (main)",
     "langs": [
       "中文",
       "英文"
     ],
     "langDetail": "常驻中文医疗通译（医疗通译技能检定中文1级）+ 英文通译",
+    "langDetailEn": "On-site Chinese medical interpreter (Level 1 Chinese medical-interpreting certification) + English interpreter",
     "depts": [
       "内科",
       "外科",
@@ -1450,17 +1799,21 @@
       "急诊"
     ],
     "hours": "平日 8:00–16:00（受理）",
+    "hoursEn": "Weekdays 8:00–16:00 (reception)",
     "hoursShort": "平日 受理 8:00–16:00",
+    "hoursShortEn": "Weekdays reception 8:00–16:00",
     "closed": "周六・周日・节假日（急诊24小时）",
+    "closedEn": "Sat, Sun & public holidays (ER 24h)",
     "note": "冲绳那霸市的公立医院，2024年3月取得JMIP认证。国际医疗支援室常驻中文医疗通译（持医疗通译技能检定中文1级），提供受理・诊疗陪同・结算・文件翻译等支援。急诊24小时。",
+    "noteEn": "A public hospital in Naha, Okinawa, JMIP-accredited in March 2024. The International Medical Support Office has an on-site Chinese medical interpreter (Level 1 certification) providing reception, consultation accompaniment, billing and document-translation support. 24-hour ER.",
     "updated": "2026-06",
+    "searchKeys": "那覇市立病院 国際医療支援室 JMIP 中文 冲绳 那霸",
     "extraBadges": [
       {
         "label": "JMIP认证",
         "type": "new"
       }
-    ],
-    "searchKeys": "那覇市立病院 国際医療支援室 JMIP 中文 冲绳 那霸"
+    ]
   },
   {
     "name": "圣隷浜松医院",
@@ -1468,13 +1821,17 @@
     "jpName": "聖隷浜松病院",
     "region": "浜松",
     "address": "静冈县浜松市中央区住吉2-12-12",
+    "addressEn": "2-12-12 Sumiyoshi, Chuo-ku, Hamamatsu, Shizuoka",
     "addressShort": "静冈县 浜松市中央区 住吉",
+    "addressShortEn": "Sumiyoshi, Chuo-ku, Hamamatsu, Shizuoka",
     "phone": "053-474-2222（总机）",
+    "phoneEn": "053-474-2222 (main)",
     "langs": [
       "中文",
       "英文"
     ],
     "langDetail": "官网设中文「在日外籍患者就医说明」+ 多语言对应",
+    "langDetailEn": "Chinese \"Guide for foreign residents\" on the website + multilingual support",
     "depts": [
       "内科",
       "外科",
@@ -1485,18 +1842,23 @@
       "急诊"
     ],
     "hours": "平日 受理（各科不同）",
+    "hoursEn": "Weekdays — reception (varies by department)",
     "hoursShort": "平日 上午受理",
-    "warning": "采病诊连携，初诊原则需持紹介状；无紹介状另收选定疗养费7,700円",
+    "hoursShortEn": "Weekdays — morning reception",
     "closed": "周六・周日・节假日",
+    "closedEn": "Sat, Sun & public holidays",
     "note": "静冈县浜松市的大型综合医院，2011年取得JCI国际认证。官网设有中文「在日外籍患者就医说明」页。初诊原则需持其他医疗机构紹介状，无紹介状须另付选定疗养费7,700円。",
+    "noteEn": "A large general hospital in Hamamatsu, Shizuoka, JCI-accredited since 2011. The website has a Chinese \"Guide for foreign residents\" page. First visits in principle require a referral from another medical institution; without one, a 7,700 yen special fee applies.",
+    "warning": "采病诊连携，初诊原则需持紹介状；无紹介状另收选定疗养费7,700円",
+    "warningEn": "Operates a referral system; first visits in principle require a referral, otherwise a 7,700 yen special fee applies",
     "updated": "2026-06",
+    "searchKeys": "聖隷浜松病院 JCI 中文 浜松 静冈",
     "extraBadges": [
       {
         "label": "JCI认证",
         "type": "new"
       }
-    ],
-    "searchKeys": "聖隷浜松病院 JCI 中文 浜松 静冈"
+    ]
   },
   {
     "name": "龟田京桥诊所 中文门诊",
@@ -1504,30 +1866,38 @@
     "jpName": "亀田京橋クリニック（中国人外来）",
     "region": "东京",
     "address": "东京都中央区京橋3-1-1 东京广场花园4F・6F",
+    "addressEn": "Tokyo Square Garden 4F & 6F, 3-1-1 Kyobashi, Chuo-ku, Tokyo",
     "addressShort": "东京都 中央区 京橋（京橋駅3番出口 直结）",
+    "addressShortEn": "Kyobashi, Chuo-ku, Tokyo (directly connected to Exit 3, Kyobashi Stn)",
     "phone": "03-5542-1182（国际部）",
+    "phoneEn": "03-5542-1182 (International Dept)",
     "langs": [
       "中文",
       "英文"
     ],
     "langDetail": "中文门诊（中文医生应诊）+ 中文官网",
+    "langDetailEn": "Chinese clinic (Chinese-speaking doctors) + Chinese website",
     "depts": [
       "内科",
       "风湿科",
       "体检"
     ],
     "hours": "周一至周六 8:30–17:00（咨询受理）",
+    "hoursEn": "Mon–Sat 8:30–17:00 (enquiry reception)",
     "hoursShort": "周一至周六 8:30–17:00",
+    "hoursShortEn": "Mon–Sat 8:30–17:00",
     "closed": "周日・节假日",
+    "closedEn": "Sun & public holidays",
     "note": "亀田综合医院（千叶鴨川）旗下东京京橋的卫星诊所，持JCI及ISO 7101国际认证。2020年3月起开设中文门诊（中国人外来），由内科・风湿科等专科医生应诊，邮箱 kyobashi.international@kameda.jp 可中文咨询。京橋駅3番出口直结。",
+    "noteEn": "A Tokyo (Kyobashi) satellite clinic of Kameda Medical Center (Kamogawa, Chiba), holding JCI and ISO 7101 accreditation. Since March 2020 it has run a Chinese clinic staffed by specialists in internal medicine, rheumatology and more; email kyobashi.international@kameda.jp for Chinese-language enquiries. Directly connected to Exit 3 of Kyobashi Stn.",
     "updated": "2026-06",
+    "searchKeys": "亀田京橋クリニック 中国人外来 中文门诊 JCI 东京 京橋",
     "extraBadges": [
       {
         "label": "中文门诊",
         "type": "new"
       }
-    ],
-    "searchKeys": "亀田京橋クリニック 中国人外来 中文门诊 JCI 东京 京橋"
+    ]
   },
   {
     "name": "平和记念医院 国际外来",
@@ -1535,13 +1905,16 @@
     "jpName": "平和記念医院（医療法人社団順瑞会）",
     "region": "东京",
     "address": "东京都江東区平野2-11-5 Pacific第二门前仲町2F",
+    "addressEn": "Pacific Daini Monzen-Nakacho 2F, 2-11-5 Hirano, Koto-ku, Tokyo",
     "addressShort": "东京都 江東区 平野（清澄白河駅 步行6分）",
+    "addressShortEn": "Hirano, Koto-ku, Tokyo (6-min walk from Kiyosumi-Shirakawa Stn)",
     "phone": "03-3820-8880",
     "langs": [
       "中文",
       "英文"
     ],
     "langDetail": "院长劉瑞芹（中国出身）中文应诊 + 英文国际外来",
+    "langDetailEn": "Director Liu Ruiqin (from China) consults in Chinese + English international clinic",
     "depts": [
       "内科",
       "皮肤科",
@@ -1550,18 +1923,23 @@
       "预防接种"
     ],
     "hours": "上午 周一二三五六 9:00–12:30 / 下午 周一二三五 14:30–18:30・周六 14:30–17:00",
+    "hoursEn": "Morning: Mon, Tue, Wed, Fri, Sat 9:00–12:30; Afternoon: Mon, Tue, Wed, Fri 14:30–18:30 / Sat 14:30–17:00",
     "hoursShort": "上午 9:00–12:30 / 下午 14:30–18:30",
-    "warning": "非儿科专门，但院长中文应诊、含儿童疫苗接种",
+    "hoursShortEn": "Morning 9:00–12:30 / Afternoon 14:30–18:30",
     "closed": "周四・周日・节假日",
+    "closedEn": "Thu, Sun & public holidays",
     "note": "江東区清澄白河的诊所，院长劉瑞芹为中国出身、日中两国行医20余年，设中文・英文国际外来。涵盖内科・皮肤科・汉方・过敏・渡航门诊及预防接种，院内有儿童空间，可中文应诊儿童疫苗接种。清澄白河駅B2出口步行6分。",
+    "noteEn": "A clinic in Kiyosumi-Shirakawa, Koto-ku. Director Liu Ruiqin is from China and has practiced in both China and Japan for over 20 years, running Chinese and English international clinics. Covers internal medicine, dermatology, Kampo, allergy, travel clinic and vaccinations, with a children's area and Chinese-language consultations for child vaccinations. 6-min walk from Exit B2, Kiyosumi-Shirakawa Stn.",
+    "warning": "非儿科专门，但院长中文应诊、含儿童疫苗接种",
+    "warningEn": "Not a pediatric specialist, but the director consults in Chinese and offers child vaccinations",
     "updated": "2026-06",
+    "searchKeys": "平和記念医院 国際外来 中文 中国語 江東区 清澄白河 劉瑞芹 东京",
     "extraBadges": [
       {
         "label": "中文应诊",
         "type": "new"
       }
-    ],
-    "searchKeys": "平和記念医院 国際外来 中文 中国語 江東区 清澄白河 劉瑞芹 东京"
+    ]
   },
   {
     "name": "Raffles Medical 大阪诊所",
@@ -1569,13 +1947,16 @@
     "jpName": "ラッフルズメディカル大阪クリニック（医療法人瑞和会）",
     "region": "大阪",
     "address": "大阪府大阪市北区梅田2-5-25 Herbis PLAZA 4F",
+    "addressEn": "Herbis PLAZA 4F, 2-5-25 Umeda, Kita-ku, Osaka",
     "addressShort": "大阪府 大阪市北区 梅田（西梅田駅／JR大阪駅西侧 Herbis PLAZA 4F）",
+    "addressShortEn": "Umeda, Kita-ku, Osaka (Herbis PLAZA 4F, west of Nishi-Umeda Stn / JR Osaka Stn)",
     "phone": "06-6345-8145",
     "langs": [
       "中文",
       "英文"
     ],
     "langDetail": "常驻中英文员工，提供中英文国际诊疗",
+    "langDetailEn": "On-site Chinese & English staff, offering Chinese/English international care",
     "depts": [
       "内科",
       "消化内科",
@@ -1583,18 +1964,23 @@
       "皮肤科"
     ],
     "hours": "周一至周六 8:30–13:00（受理至12:30）/ 14:00–17:30（受理至17:00）",
+    "hoursEn": "Mon–Sat 8:30–13:00 (reception until 12:30) / 14:00–17:30 (reception until 17:00)",
     "hoursShort": "周一至周六 8:30–17:30",
-    "warning": "不设儿科；面向外籍患者的国际诊所，多为自费",
+    "hoursShortEn": "Mon–Sat 8:30–17:30",
     "closed": "周日・节假日・年末年始",
+    "closedEn": "Sun, public holidays & year-end/New Year",
     "note": "新加坡 Raffles Medical 集团在JR大阪駅西侧 Herbis PLAZA 4F 的国际诊所，常驻中英文员工，为外籍患者提供中英文诊疗。设内科・消化内科・渡航医学・皮肤科等，不设儿科。",
+    "noteEn": "An international clinic run by Singapore's Raffles Medical Group, on the 4th floor of Herbis PLAZA west of JR Osaka Stn, with on-site Chinese/English staff serving foreign patients in Chinese and English. Departments include internal medicine, gastroenterology, travel medicine and dermatology; no pediatrics.",
+    "warning": "不设儿科；面向外籍患者的国际诊所，多为自费",
+    "warningEn": "No pediatrics; an international clinic for foreign patients, mostly out-of-pocket",
     "updated": "2026-06",
+    "searchKeys": "ラッフルズメディカル大阪クリニック Raffles Medical Osaka 中文 大阪 梅田 西梅田 Herbis",
     "extraBadges": [
       {
         "label": "中英文常驻",
         "type": "new"
       }
-    ],
-    "searchKeys": "ラッフルズメディカル大阪クリニック Raffles Medical Osaka 中文 大阪 梅田 西梅田 Herbis"
+    ]
   },
   {
     "name": "うららか内科クリニック",
@@ -1602,12 +1988,15 @@
     "jpName": "うららか内科クリニック",
     "region": "埼玉",
     "address": "埼玉县川口市並木2-4-6 1F",
+    "addressEn": "1F, 2-4-6 Namiki, Kawaguchi, Saitama",
     "addressShort": "埼玉县 川口市 並木（西川口駅东口 步行5分）",
+    "addressShortEn": "Namiki, Kawaguchi, Saitama (5-min walk from East Exit, Nishi-Kawaguchi Stn)",
     "phone": "048-299-9581",
     "langs": [
       "中文"
     ],
     "langDetail": "院长孫莉華（中国出身）中文应诊",
+    "langDetailEn": "Director Sun Lihua (from China) consults in Chinese",
     "depts": [
       "内科",
       "过敏科",
@@ -1615,17 +2004,21 @@
       "发热外来"
     ],
     "hours": "周一・二・四・五 9:00–12:30 / 14:00–18:00；周三 9:00–12:30；周六 9:00–13:00",
+    "hoursEn": "Mon, Tue, Thu, Fri 9:00–12:30 / 14:00–18:00; Wed 9:00–12:30; Sat 9:00–13:00",
     "hoursShort": "上午 9:00–12:30 / 周一二四五下午 14:00–18:00",
+    "hoursShortEn": "Morning 9:00–12:30 / Mon/Tue/Thu/Fri afternoon 14:00–18:00",
     "closed": "周日・节假日（周三・周六下午休）",
+    "closedEn": "Sun & public holidays (closed Wed & Sat afternoons)",
     "note": "西川口的内科诊所，2024年4月开院，院长孫莉華为中国出身、可中文应诊。诊一般内科・过敏・糖尿病・生活习惯病及发热外来，网络/电话可预约，无障碍设计。西川口駅东口步行5分。",
+    "noteEn": "An internal-medicine clinic in Nishi-Kawaguchi, opened April 2024; director Sun Lihua is from China and consults in Chinese. Covers general internal medicine, allergy, diabetes, lifestyle diseases and a fever clinic; book online or by phone; barrier-free design. 5-min walk from East Exit, Nishi-Kawaguchi Stn.",
     "updated": "2026-06",
+    "searchKeys": "うららか内科クリニック 西川口 川口 埼玉 中文 中国語 孫莉華",
     "extraBadges": [
       {
         "label": "中文应诊",
         "type": "new"
       }
-    ],
-    "searchKeys": "うららか内科クリニック 西川口 川口 埼玉 中文 中国語 孫莉華"
+    ]
   },
   {
     "name": "东北大学医院 国际医疗中心",
@@ -1633,13 +2026,17 @@
     "jpName": "東北大学病院 国際医療センター",
     "region": "仙台",
     "address": "宫城县仙台市青葉区星陵町1-1",
+    "addressEn": "1-1 Seiryomachi, Aoba-ku, Sendai, Miyagi",
     "addressShort": "宫城县 仙台市青葉区 星陵町",
+    "addressShortEn": "Seiryomachi, Aoba-ku, Sendai, Miyagi",
     "phone": "022-717-7000（总机）",
+    "phoneEn": "022-717-7000 (main)",
     "langs": [
       "中文",
       "英文"
     ],
     "langDetail": "医疗通译对应（含中文）+ 院内多语言标识",
+    "langDetailEn": "Medical interpreting (incl. Chinese) + in-house multilingual signage",
     "depts": [
       "内科",
       "外科",
@@ -1650,18 +2047,23 @@
       "急诊"
     ],
     "hours": "平日 8:30–11:00（初诊受理）",
+    "hoursEn": "Weekdays 8:30–11:00 (first-visit reception)",
     "hoursShort": "平日 上午受理",
-    "warning": "需通过医疗通译协调就诊；初诊建议持紹介状",
+    "hoursShortEn": "Weekdays — morning reception",
     "closed": "周六・周日・节假日",
+    "closedEn": "Sat, Sun & public holidays",
     "note": "东北地区的国立大学医院，2026年3月取得JMIP认证。国际医疗中心（国际交流・临床支援两部门）为外籍患者及在仙台的留学生・研究者提供支援，通过医疗通译（含中文）及院内多语言标识对应。",
+    "noteEn": "A national university hospital in the Tohoku region, JMIP-accredited in March 2026. Its International Medical Center (international-exchange and clinical-support divisions) supports foreign patients and international students/researchers in Sendai through medical interpreting (incl. Chinese) and in-house multilingual signage.",
+    "warning": "需通过医疗通译协调就诊；初诊建议持紹介状",
+    "warningEn": "Visits coordinated via medical interpreting; a referral letter is recommended for first visits",
     "updated": "2026-06",
+    "searchKeys": "東北大学病院 国際医療センター JMIP 中文 仙台 宮城",
     "extraBadges": [
       {
         "label": "JMIP认证",
         "type": "new"
       }
-    ],
-    "searchKeys": "東北大学病院 国際医療センター JMIP 中文 仙台 宮城"
+    ]
   },
   {
     "name": "りんくう综合医疗中心 国际中心",
@@ -1669,13 +2071,17 @@
     "jpName": "りんくう総合医療センター 国際センター",
     "region": "大阪",
     "address": "大阪府泉佐野市りんくう往来北2-23",
+    "addressEn": "2-23 Rinku-Orai-Kita, Izumisano, Osaka",
     "addressShort": "大阪府 泉佐野市 りんくう（関西机场旁／JR・南海 りんくうタウン駅）",
+    "addressShortEn": "Rinku, Izumisano, Osaka (next to Kansai Airport / JR & Nankai Rinku-Town Stn)",
     "phone": "072-469-3111（总机）",
+    "phoneEn": "072-469-3111 (main)",
     "langs": [
       "中文",
       "英文"
     ],
     "langDetail": "中文医疗通译常驻（周一至周五 10:00–15:00）+ 英文・西・葡语",
+    "langDetailEn": "On-site Chinese medical interpreter (Mon–Fri 10:00–15:00) + English, Spanish, Portuguese",
     "depts": [
       "内科",
       "外科",
@@ -1686,11 +2092,17 @@
       "感染科"
     ],
     "hours": "平日 8:00–11:00（初诊受理）／中文通译 10:00–15:00",
+    "hoursEn": "Weekdays 8:00–11:00 (first-visit reception) / Chinese interpreter 10:00–15:00",
     "hoursShort": "平日 上午受理",
-    "warning": "中文通译费含于诊疗费；面向居民及访日旅客均可",
+    "hoursShortEn": "Weekdays — morning reception",
     "closed": "周六・周日・节假日",
+    "closedEn": "Sat, Sun & public holidays",
     "note": "关西国际机场旁的公立医院，日本外国人诊疗的先驱之一，关西机场指定转送医院。国际中心常驻中文医疗通译（周一至周五 10:00–15:00），并对应英・西・葡语。持JMIP认证，居民与访日旅客均可就诊。",
+    "noteEn": "A public hospital next to Kansai International Airport and a pioneer of foreign-patient care in Japan, designated as the airport's transfer hospital. Its International Center has an on-site Chinese medical interpreter (Mon–Fri 10:00–15:00) plus English, Spanish and Portuguese. JMIP-accredited, open to both residents and visitors to Japan.",
+    "warning": "中文通译费含于诊疗费；面向居民及访日旅客均可",
+    "warningEn": "Chinese interpreting is included in the consultation fee; open to both residents and visitors to Japan",
     "updated": "2026-06",
+    "searchKeys": "りんくう総合医療センター 国際センター JMIP 中文 大阪 泉佐野 関空 関西空港",
     "extraBadges": [
       {
         "label": "JMIP认证",
@@ -1700,8 +2112,7 @@
         "label": "关空旁",
         "type": "new"
       }
-    ],
-    "searchKeys": "りんくう総合医療センター 国際センター JMIP 中文 大阪 泉佐野 関空 関西空港"
+    ]
   },
   {
     "name": "侑生クリニック",
@@ -1709,25 +2120,31 @@
     "jpName": "侑生クリニック",
     "region": "大阪",
     "address": "大阪府大阪市東住吉区照ケ丘矢田1-17-7",
+    "addressEn": "1-17-7 Terugaoka-Yata, Higashisumiyoshi-ku, Osaka",
     "addressShort": "大阪府 东住吉区 照ケ丘矢田（近鉄 矢田駅 附近）",
+    "addressShortEn": "Terugaoka-Yata, Higashisumiyoshi-ku, Osaka (near Yata Stn, Kintetsu)",
     "langs": [
       "中文"
     ],
     "langDetail": "中文（华人医生 周末出诊）",
+    "langDetailEn": "Chinese (Chinese doctor on weekends)",
     "depts": [
       "内科"
     ],
     "hours": "华人医生 周末（周六・周日）9:00–14:00 出诊",
+    "hoursEn": "Chinese doctor consults weekends (Sat & Sun) 9:00–14:00",
     "hoursShort": "周末 9:00–14:00（华人医生）",
+    "hoursShortEn": "Weekends 9:00–14:00 (Chinese doctor)",
     "note": "华人女医生（小红书「佩佩在大阪」）周末（9:00–14:00）在此出诊，欢迎华人及游客就诊。就诊前建议先确认当周出诊安排。",
+    "noteEn": "A Chinese female doctor (Xiaohongshu \"Peipei in Osaka\") consults here on weekends (9:00–14:00); Chinese patients and visitors welcome. It's best to confirm that week's schedule before visiting.",
     "updated": "2026-06",
+    "searchKeys": "侑生クリニック Yusei 东住吉 照ケ丘矢田 大阪 佩佩 华人医生",
     "extraBadges": [
       {
         "label": "华人医生",
         "type": "new"
       }
-    ],
-    "searchKeys": "侑生クリニック Yusei 东住吉 照ケ丘矢田 大阪 佩佩 华人医生"
+    ]
   },
   {
     "name": "亀岡内科",
@@ -1735,29 +2152,37 @@
     "jpName": "亀岡内科（かめおかないか）",
     "region": "大阪",
     "address": "〒573-1192 大阪府枚方市西禁野2-2-15",
+    "addressEn": "〒573-1192 2-2-15 Nishi-Kinya, Hirakata, Osaka",
     "addressShort": "大阪府 枚方市 西禁野（京阪 枚方市駅 附近）",
+    "addressShortEn": "Nishi-Kinya, Hirakata, Osaka (near Hirakata-shi Stn, Keihan)",
     "phone": "072-848-8866",
     "langs": [
       "中文"
     ],
     "langDetail": "中文（华人医生 周二下午出诊）",
+    "langDetailEn": "Chinese (Chinese doctor consults Tue afternoon)",
     "depts": [
       "内科",
       "糖尿病内科"
     ],
     "hours": "周一～周六 9:30–12:30 / 周一・二・三・五 15:30–19:00（华人医生 周二 15:30–19:00 出诊）",
+    "hoursEn": "Mon–Sat 9:30–12:30 / Mon, Tue, Wed, Fri 15:30–19:00 (Chinese doctor consults Tue 15:30–19:00)",
     "hoursShort": "平日 9:30–12:30 / 15:30–19:00",
+    "hoursShortEn": "Weekdays 9:30–12:30 / 15:30–19:00",
     "closed": "周日・节假日",
-    "warning": "需预约",
+    "closedEn": "Sun & public holidays",
     "note": "糖尿病内科专科诊所。华人女医生（小红书「佩佩在大阪」）周二下午（15:30–19:00）在此出诊。就诊前建议先确认当周出诊安排。",
+    "noteEn": "A diabetes/internal-medicine specialist clinic. A Chinese female doctor (Xiaohongshu \"Peipei in Osaka\") consults here Tue afternoon (15:30–19:00). It's best to confirm that week's schedule before visiting.",
+    "warning": "需预约",
+    "warningEn": "Appointment required",
     "updated": "2026-06",
+    "searchKeys": "亀岡内科 Kameoka 枚方 西禁野 大阪 佩佩 华人医生 糖尿病",
     "extraBadges": [
       {
         "label": "华人医生",
         "type": "new"
       }
-    ],
-    "searchKeys": "亀岡内科 Kameoka 枚方 西禁野 大阪 佩佩 华人医生 糖尿病"
+    ]
   },
   {
     "name": "国立国际医疗研究中心病院",
@@ -1765,13 +2190,17 @@
     "jpName": "国立国際医療研究センター病院（NCGM）",
     "region": "东京",
     "address": "东京都新宿区戸山1-21-1",
+    "addressEn": "1-21-1 Toyama, Shinjuku-ku, Tokyo",
     "addressShort": "东京都 新宿区 戸山（都营大江户线 若松河田駅 徒步5分）",
+    "addressShortEn": "Toyama, Shinjuku-ku, Tokyo (5-min walk from Wakamatsu-Kawada Stn, Toei Oedo Line)",
     "phone": "国际诊疗部(ICC): 03-6228-0749（平日 8:30–16:00）",
+    "phoneEn": "Intl Care Dept (ICC): 03-6228-0749 (weekdays 8:30–16:00)",
     "langs": [
       "中文",
       "英文"
     ],
     "langDetail": "中文 英文 韩文 法文 越南文 缅甸文 尼泊尔文 + 19语言远程通译平板",
+    "langDetailEn": "Chinese, English, Korean, French, Vietnamese, Burmese, Nepali + 19-language remote interpreter tablet",
     "depts": [
       "内科",
       "外科",
@@ -1782,17 +2211,21 @@
       "急诊"
     ],
     "hours": "平日 8:30–17:00（各科不同）",
-    "warning": "建议持紹介状预约",
+    "hoursEn": "Weekdays 8:30–17:00 (varies by department)",
     "closed": "周六・周日・节假日",
+    "closedEn": "Sat, Sun & public holidays",
     "note": "厚生劳动省直属的国立高度专门医疗机构，位于外国人聚集的新宿区。国际诊疗部（ICC）常驻中・英・越・尼泊尔・缅甸等医疗通译，并配备19语言远程通译平板。咨询邮箱 support@jihs.go.jp。",
+    "noteEn": "A national advanced-specialty institution under the Ministry of Health, in foreigner-heavy Shinjuku. Its International Care Center (ICC) has on-site medical interpreters for Chinese, English, Vietnamese, Nepali, Burmese and more, plus a 19-language remote interpreter tablet. Enquiries: support@jihs.go.jp.",
+    "warning": "建议持紹介状预约",
+    "warningEn": "A referral letter and appointment are recommended",
     "updated": "2026-06",
+    "searchKeys": "国立国际医疗研究中心 NCGM 国立国際医療研究センター ICC 东京 新宿 戸山",
     "extraBadges": [
       {
         "label": "19语言通译",
         "type": "new"
       }
-    ],
-    "searchKeys": "国立国际医疗研究中心 NCGM 国立国際医療研究センター ICC 东京 新宿 戸山"
+    ]
   },
   {
     "name": "埼玉医科大学国际医疗中心",
@@ -1800,13 +2233,17 @@
     "jpName": "埼玉医科大学国際医療センター",
     "region": "埼玉",
     "address": "〒350-1298 埼玉县日高市山根1397-1",
+    "addressEn": "〒350-1298 1397-1 Yamane, Hidaka, Saitama",
     "addressShort": "埼玉县 日高市 山根（JR川越线 笠幡駅 / 接驳巴士）",
+    "addressShortEn": "Yamane, Hidaka, Saitama (Kasahata Stn, JR Kawagoe Line / shuttle bus)",
     "phone": "042-984-4111（总机）",
+    "phoneEn": "042-984-4111 (main)",
     "langs": [
       "中文",
       "英文"
     ],
     "langDetail": "中文（普通话・粤语）英文 韩文 越南文 葡萄牙文 西班牙文等多语言对应",
+    "langDetailEn": "Chinese (Mandarin & Cantonese), English, Korean, Vietnamese, Portuguese, Spanish & other languages",
     "depts": [
       "肿瘤科",
       "心脏科",
@@ -1816,9 +2253,13 @@
       "急诊"
     ],
     "hours": "平日 8:30–17:00（各科不同）",
-    "warning": "需持紹介状及提前预约；语言对应视科室・时段而定",
+    "hoursEn": "Weekdays 8:30–17:00 (varies by department)",
     "closed": "周六・周日・节假日",
+    "closedEn": "Sat, Sun & public holidays",
     "note": "以肿瘤、心血管、脑神经、急救为主的高度专门医疗中心。设外国人患者支援窗口，对应中（普通话・粤语）・英・韩・越・葡・西等多语言。就诊需备日文或英文紹介状并提前预约。",
+    "noteEn": "An advanced-specialty center focused on oncology, cardiovascular, neurology and emergency care. It has a foreign-patient support desk supporting Chinese (Mandarin & Cantonese), English, Korean, Vietnamese, Portuguese, Spanish and more. Visits require a Japanese- or English-language referral and an advance appointment.",
+    "warning": "需持紹介状及提前预约；语言对应视科室・时段而定",
+    "warningEn": "Referral letter and advance appointment required; language support depends on department and time slot",
     "updated": "2026-06",
     "searchKeys": "埼玉医科大学国际医疗中心 埼玉医科大学国際医療センター 日高 山根 埼玉"
   },
@@ -1828,13 +2269,17 @@
     "jpName": "亀田総合病院（亀田メディカルセンター）",
     "region": "千叶",
     "address": "〒296-8602 千叶县鸭川市东町929",
+    "addressEn": "〒296-8602 929 Higashi-cho, Kamogawa, Chiba",
     "addressShort": "千叶县 鸭川市 东町（JR外房线 安房鸭川駅 / 接驳巴士）",
+    "addressShortEn": "Higashi-cho, Kamogawa, Chiba (Awa-Kamogawa Stn, JR Sotobo Line / shuttle bus)",
     "phone": "04-7092-2211（总机）",
+    "phoneEn": "04-7092-2211 (main)",
     "langs": [
       "中文",
       "英文"
     ],
     "langDetail": "中文 英文 越南文（国际诊疗・国际连携室对应）",
+    "langDetailEn": "Chinese, English, Vietnamese (handled by the International Care / International Liaison Office)",
     "depts": [
       "内科",
       "外科",
@@ -1846,17 +2291,21 @@
       "急诊"
     ],
     "hours": "平日 8:30–（各科不同）",
-    "warning": "建议提前预约；部分诊疗需紹介状",
+    "hoursEn": "Weekdays from 8:30 (varies by department)",
     "closed": "周日・节假日",
+    "closedEn": "Sun & public holidays",
     "note": "千叶县南部的核心综合医院，日本最早取得 JCI 国际认证的医院之一，曾入选「World's Best Hospitals」。设国际诊疗・国际连携室，官网有中・英・越多语言版本，长期接待外国患者。",
+    "noteEn": "A core general hospital in southern Chiba, one of the first in Japan to gain JCI accreditation, and a former \"World's Best Hospitals\" listee. It has an International Care / International Liaison Office, a Chinese/English/Vietnamese website, and a long history of serving foreign patients.",
+    "warning": "建议提前预约；部分诊疗需紹介状",
+    "warningEn": "Advance appointment recommended; some care requires a referral letter",
     "updated": "2026-06",
+    "searchKeys": "龟田综合病院 亀田総合病院 Kameda 鸭川 千叶 JCI 国际诊疗",
     "extraBadges": [
       {
         "label": "JCI认证",
         "type": "new"
       }
-    ],
-    "searchKeys": "龟田综合病院 亀田総合病院 Kameda 鸭川 千叶 JCI 国际诊疗"
+    ]
   },
   {
     "name": "シュシュ歯科クリニック",
@@ -1864,13 +2313,16 @@
     "jpName": "シュシュ歯科クリニック（旧：谷町歯科医院）",
     "region": "大阪",
     "address": "〒542-0081 大阪府大阪市中央区南船场2-2-4 1F",
+    "addressEn": "〒542-0081 1F, 2-2-4 Minamisemba, Chuo-ku, Osaka",
     "addressShort": "大阪府 中央区 南船场（地下铁 堺筋本町駅 10号出口 徒步4分 / 长堀桥駅 2-B出口 徒步3分）",
+    "addressShortEn": "Minamisemba, Chuo-ku, Osaka (4-min walk from Exit 10, Sakaisujihommachi Stn / 3-min walk from Exit 2-B, Nagahoribashi Stn)",
     "phone": "06-6762-0513",
     "langs": [
       "中文",
       "英文"
     ],
     "langDetail": "中文 英文（中文对应员工常驻）",
+    "langDetailEn": "Chinese, English (Chinese-speaking staff on-site)",
     "depts": [
       "牙科",
       "矫正牙科",
@@ -1878,18 +2330,23 @@
       "种植牙"
     ],
     "hours": "10:00–13:00 / 14:30–19:30",
+    "hoursEn": "10:00–13:00 / 14:30–19:30",
     "hoursShort": "10:00–19:30",
-    "warning": "完全预约制",
+    "hoursShortEn": "10:00–19:30",
     "closed": "周五・周日・节假日",
+    "closedEn": "Fri, Sun & public holidays",
     "note": "位于中央区南船场的牙科诊所（旧名「谷町歯科医院」）。常驻中文对应员工，可用中文进行治疗计划详细说明、问诊表填写支援、术后护理指导，紧急联络也可中文沟通。官网设有中文版。诊疗涵盖一般牙科、矫正、种植、美白及儿童牙科，并提供上门诊疗。完全预约制。",
+    "noteEn": "A dental clinic in Minamisemba, Chuo-ku (formerly \"Tanimachi Dental Clinic\"). On-site Chinese-speaking staff can explain treatment plans in detail, help fill out questionnaires, give aftercare guidance, and handle emergency contact in Chinese. The website has a Chinese version. Services include general dentistry, orthodontics, implants, whitening and pediatric dentistry, plus home visits. By appointment only.",
+    "warning": "完全预约制",
+    "warningEn": "By appointment only",
     "updated": "2026-06",
+    "searchKeys": "シュシュ歯科クリニック Shushu chouchou 谷町歯科医院 南船场 南船場 堺筋本町 長堀橋 长堀桥 大阪 中央区 中文 矫正 种植 牙科",
     "extraBadges": [
       {
         "label": "中文官网",
         "type": "new"
       }
-    ],
-    "searchKeys": "シュシュ歯科クリニック Shushu chouchou 谷町歯科医院 南船场 南船場 堺筋本町 長堀橋 长堀桥 大阪 中央区 中文 矫正 种植 牙科"
+    ]
   },
   {
     "name": "横浜中央病院 外国人语言服务中心",
@@ -1897,13 +2354,17 @@
     "jpName": "横浜中央病院（地域医療機能推進機構 JCHO）",
     "region": "横浜",
     "address": "〒231-8553 神奈川县横滨市中区山下町268",
+    "addressEn": "〒231-8553 268 Yamashitacho, Naka-ku, Yokohama, Kanagawa",
     "addressShort": "神奈川县 横滨市中区 山下町（JR根岸线 石川町駅 北口 徒步3分）",
+    "addressShortEn": "Yamashitacho, Naka-ku, Yokohama, Kanagawa (3-min walk from North Exit, Ishikawamachi Stn, JR Negishi Line)",
     "phone": "045-641-1921（代表）",
+    "phoneEn": "045-641-1921 (main)",
     "langs": [
       "中文",
       "英文"
     ],
     "langDetail": "中文 英文 韩文（院内医疗翻译团队）",
+    "langDetailEn": "Chinese, English, Korean (in-house medical interpreting team)",
     "depts": [
       "内科",
       "消化器内科",
@@ -1915,17 +2376,21 @@
       "眼科"
     ],
     "hours": "门诊 平日（各科不同）；语言服务咨询 平日 9:00–16:00",
+    "hoursEn": "Outpatient weekdays (varies by department); language-service enquiries weekdays 9:00–16:00",
     "hoursShort": "平日（各科不同）",
+    "hoursShortEn": "Weekdays (varies by department)",
     "closed": "周日・节假日",
+    "closedEn": "Sun & public holidays",
     "note": "紧邻横滨中华街的综合医院，常驻中・英・韩医疗翻译团队，平日 9:00–16:00 可致电咨询语言服务。涵盖内科、消化器内科、外科、整形外科、脑神经外科、皮肤科、泌尿器科、眼科等共18个诊疗科目。",
+    "noteEn": "A general hospital right by Yokohama Chinatown, with an on-site Chinese/English/Korean medical interpreting team; call weekdays 9:00–16:00 for language services. Covers 18 departments including internal medicine, gastroenterology, surgery, orthopedics, neurosurgery, dermatology, urology and ophthalmology.",
     "updated": "2026-06",
+    "searchKeys": "横浜中央病院 横滨中央病院 Yokohama Central JCHO 山下町 石川町 横滨 中华街 中文 翻译",
     "extraBadges": [
       {
         "label": "中文翻译团队",
         "type": "new"
       }
-    ],
-    "searchKeys": "横浜中央病院 横滨中央病院 Yokohama Central JCHO 山下町 石川町 横滨 中华街 中文 翻译"
+    ]
   },
   {
     "name": "協和医院",
@@ -1933,12 +2398,15 @@
     "jpName": "協和医院",
     "region": "东京",
     "address": "〒110-0016 东京都台东区台东4-8-5 T&T御徒町大厦4F",
+    "addressEn": "〒110-0016 T&T Okachimachi Bldg 4F, 4-8-5 Taito, Taito-ku, Tokyo",
     "addressShort": "东京都 台东区 台东（JR御徒町駅 南口 徒步3分 / 都营大江戸线 上野御徒町駅 徒步3分）",
+    "addressShortEn": "Taito, Taito-ku, Tokyo (3-min walk from South Exit, JR Okachimachi Stn / 3-min walk from Ueno-okachimachi Stn, Toei Oedo Line)",
     "phone": "03-3835-0186",
     "langs": [
       "中文"
     ],
     "langDetail": "中文（可中文诊察）",
+    "langDetailEn": "Chinese (consultations available in Chinese)",
     "depts": [
       "综合内科",
       "糖尿病",
@@ -1948,17 +2416,21 @@
       "肾脏内科"
     ],
     "hours": "周一～周五 9:00–12:30 / 13:30–18:00 ・ 第2・4周六 9:00–12:30 ・ 周日・节假日 9:00–12:30 / 13:30–18:00",
+    "hoursEn": "Mon–Fri 9:00–12:30 / 13:30–18:00; 2nd & 4th Sat 9:00–12:30; Sun & public holidays 9:00–12:30 / 13:30–18:00",
     "hoursShort": "平日 9:00–18:00（周日・节假日亦诊）",
+    "hoursShortEn": "Weekdays 9:00–18:00 (also Sun & public holidays)",
     "closed": "第1・3・5周六",
+    "closedEn": "1st, 3rd & 5th Sat",
     "note": "御徒町的综合内科诊所，可用日语・中文诊察。设糖尿病、肝脏、循环器、肾脏、消化器等专科门诊，并提供健康体检与疫苗接种。周日・节假日上午亦有门诊，方便上班族就诊。",
+    "noteEn": "A general internal-medicine clinic in Okachimachi, with consultations in Japanese and Chinese. Specialty clinics for diabetes, liver, cardiology, nephrology and gastroenterology, plus health checks and vaccinations. Open Sun & holiday mornings too, convenient for commuters.",
     "updated": "2026-06",
+    "searchKeys": "協和医院 协和医院 Kyowa 御徒町 上野 台东 东京 中文 综合内科 糖尿病",
     "extraBadges": [
       {
         "label": "周日开诊",
         "type": "new"
       }
-    ],
-    "searchKeys": "協和医院 协和医院 Kyowa 御徒町 上野 台东 东京 中文 综合内科 糖尿病"
+    ]
   },
   {
     "name": "林クリニック",
@@ -1966,13 +2438,16 @@
     "jpName": "林クリニック",
     "region": "东京",
     "address": "〒170-0013 东京都丰岛区东池袋1-39-15 シャトレー東池袋204",
+    "addressEn": "〒170-0013 Chatelet Higashi-Ikebukuro 204, 1-39-15 Higashi-Ikebukuro, Toshima-ku, Tokyo",
     "addressShort": "东京都 丰岛区 东池袋（JR池袋駅 徒步5分）",
+    "addressShortEn": "Higashi-Ikebukuro, Toshima-ku, Tokyo (5-min walk from JR Ikebukuro Stn)",
     "phone": "03-3988-2773",
     "langs": [
       "中文",
       "英文"
     ],
     "langDetail": "中文（北京话・台湾话）英文",
+    "langDetailEn": "Chinese (Beijing dialect & Taiwanese), English",
     "depts": [
       "内科",
       "妇科",
@@ -1980,9 +2455,13 @@
       "汉方内科"
     ],
     "hours": "周一・三・五 9:30–13:00 / 15:00–18:00 ・ 周六 9:30–13:00",
+    "hoursEn": "Mon, Wed, Fri 9:30–13:00 / 15:00–18:00; Sat 9:30–13:00",
     "hoursShort": "9:30–18:00（周六午前）",
+    "hoursShortEn": "9:30–18:00 (Sat morning)",
     "closed": "周二・周四・周日・节假日",
+    "closedEn": "Tue, Thu, Sun & public holidays",
     "note": "池袋的内科诊所，林冠佑院长出诊，对应中文（北京话・台湾话）及英文。诊疗涵盖内科、妇科、皮肤科，另设汉方专门外来。",
+    "noteEn": "An internal-medicine clinic in Ikebukuro, with director Lin Guanyou consulting in Chinese (Beijing dialect & Taiwanese) and English. Covers internal medicine, gynecology and dermatology, plus a dedicated Kampo clinic.",
     "updated": "2026-06",
     "searchKeys": "林クリニック 林诊所 林冠佑 Hayashi 东池袋 池袋 丰岛区 东京 中文 北京话 台湾话 汉方"
   },
@@ -1992,12 +2471,15 @@
     "jpName": "東文中醫クリニック・新橋",
     "region": "东京",
     "address": "〒105-0003 东京都港区西新桥1-5-9 ル・グラシエルBLDG.70 5F",
+    "addressEn": "〒105-0003 Le Glaciel BLDG.70 5F, 1-5-9 Nishi-Shimbashi, Minato-ku, Tokyo",
     "addressShort": "东京都 港区 西新桥（都营三田线 内幸町駅 A4出口 徒步1分 / JR新桥駅 徒步5分）",
+    "addressShortEn": "Nishi-Shimbashi, Minato-ku, Tokyo (1-min walk from Exit A4, Uchisaiwaicho Stn, Toei Mita Line / 5-min walk from JR Shimbashi Stn)",
     "phone": "03-6268-8582",
     "langs": [
       "中文"
     ],
     "langDetail": "中文（华人中医师出诊）",
+    "langDetailEn": "Chinese (Chinese TCM practitioners)",
     "depts": [
       "中医",
       "汉方内科",
@@ -2006,9 +2488,13 @@
       "肿瘤汉方"
     ],
     "hours": "9:30–12:45 / 15:30–18:45（周三 10:00–13:30 / 15:00–18:30）",
+    "hoursEn": "9:30–12:45 / 15:30–18:45 (Wed 10:00–13:30 / 15:00–18:30)",
     "hoursShort": "9:30–18:45",
+    "hoursShortEn": "9:30–18:45",
     "closed": "周五・周六午后・第2・4・5周三・节假日",
+    "closedEn": "Fri, Sat afternoon, 2nd/4th/5th Wed & public holidays",
     "note": "新桥的中医・汉方专门诊所，多位华人中医师（呉晨輝医师等）出诊，全程可中文沟通。专长肿瘤汉方、汉方妇科・不孕症、汉方过敏・五官科及针灸。官网设有中文页面。",
+    "noteEn": "A TCM/Kampo specialty clinic in Shimbashi, with several Chinese TCM practitioners (incl. Dr. Wu Chenhui), fully Chinese-speaking. Specialties include Kampo oncology, Kampo gynecology/infertility, Kampo allergy/ENT, and acupuncture. The website has Chinese pages.",
     "updated": "2026-06",
     "searchKeys": "東文中醫クリニック 东文中医 Tobun 新桥 内幸町 虎之门 港区 东京 中文 中医 汉方 针灸"
   },
@@ -2018,12 +2504,15 @@
     "jpName": "ちば浜野総合診療クリニック",
     "region": "千叶",
     "address": "〒260-0825 千叶县千叶市中央区村田町1178",
+    "addressEn": "〒260-0825 1178 Murata-cho, Chuo-ku, Chiba, Chiba",
     "addressShort": "千叶县 千叶市中央区 村田町（JR内房线 浜野駅 东口 徒步1分）",
+    "addressShortEn": "Murata-cho, Chuo-ku, Chiba, Chiba (1-min walk from East Exit, Hamano Stn, JR Uchibo Line)",
     "phone": "043-497-2433",
     "langs": [
       "中文"
     ],
     "langDetail": "中文（中国語対応可）",
+    "langDetailEn": "Chinese (Chinese-language consultation available)",
     "depts": [
       "综合内科",
       "整形外科",
@@ -2031,17 +2520,21 @@
       "皮肤科"
     ],
     "hours": "周一・三・四・五・日・节假日 9:00–12:30 / 15:00–18:00",
+    "hoursEn": "Mon, Wed, Thu, Fri, Sun & public holidays 9:00–12:30 / 15:00–18:00",
     "hoursShort": "9:00–18:00（周日・节假日亦诊）",
+    "hoursShortEn": "9:00–18:00 (also Sun & public holidays)",
     "closed": "周二・周六（及夏季・年末年始）",
+    "closedEn": "Tue & Sat (and summer / year-end)",
     "note": "千叶市中央区浜野駅旁的综合诊疗诊所，登记为中国語対応可，可用中文就诊。涵盖综合内科、整形外科、康复科、皮肤科。周日・节假日亦开诊至傍晚，方便上班族。院长 铃木觉。建议预约时确认中文对应时段。",
+    "noteEn": "A general-practice clinic by Hamano Stn in Chuo-ku, Chiba, registered as Chinese-capable. Covers general internal medicine, orthopedics, rehabilitation and dermatology. Open until evening on Sun & holidays too, convenient for commuters. Director: Satoru Suzuki. Confirm the Chinese-language time slots when booking.",
     "updated": "2026-06",
+    "searchKeys": "ちば浜野総合診療クリニック 浜野 千叶市 中央区 村田町 千叶 中文 综合内科 整形外科",
     "extraBadges": [
       {
         "label": "周日开诊",
         "type": "new"
       }
-    ],
-    "searchKeys": "ちば浜野総合診療クリニック 浜野 千叶市 中央区 村田町 千叶 中文 综合内科 整形外科"
+    ]
   },
   {
     "name": "柏東口駅前歯科 ジャパンデンタルクリニック",
@@ -2049,13 +2542,16 @@
     "jpName": "柏東口駅前歯科 ジャパンデンタルクリニック",
     "region": "千叶",
     "address": "〒277-0005 千叶县柏市柏1-7-1 DayOne大厦2F",
+    "addressEn": "〒277-0005 DayOne Bldg 2F, 1-7-1 Kashiwa, Kashiwa, Chiba",
     "addressShort": "千叶县 柏市 柏（JR常磐线 / 东武野田线 柏駅 东口 徒步3分）",
+    "addressShortEn": "Kashiwa, Chiba (3-min walk from East Exit, Kashiwa Stn, JR Joban Line / Tobu Noda Line)",
     "phone": "04-7168-4618",
     "langs": [
       "中文",
       "英文"
     ],
     "langDetail": "中文 英文（中国語・英語対応可）",
+    "langDetailEn": "Chinese, English (Chinese & English supported)",
     "depts": [
       "牙科",
       "儿童牙科",
@@ -2063,17 +2559,21 @@
       "口腔外科"
     ],
     "hours": "平日 10:00–20:00 / 周六 10:00–18:00 / 周日 9:00–13:00",
+    "hoursEn": "Weekdays 10:00–20:00 / Sat 10:00–18:00 / Sun 9:00–13:00",
     "hoursShort": "平日 10:00–20:00",
+    "hoursShortEn": "Weekdays 10:00–20:00",
     "closed": "年中无休",
+    "closedEn": "Open year-round",
     "note": "柏駅东口徒步3分的牙科诊所，登记为中国語・英語対応可。平日诊疗至晚上20点、年中无休，方便上班族及临时就诊。涵盖一般牙科、儿童牙科、矫正及口腔外科。建议预约时确认中文对应时段。",
+    "noteEn": "A dental clinic 3-min walk from the East Exit of Kashiwa Stn, registered as Chinese/English-capable. Open until 20:00 on weekdays and year-round, convenient for commuters and walk-ins. Covers general dentistry, pediatric dentistry, orthodontics and oral surgery. Confirm the Chinese-language time slots when booking.",
     "updated": "2026-06",
+    "searchKeys": "柏東口駅前歯科 ジャパンデンタルクリニック Japan Dental 柏 柏市 千叶 中文 牙科 矫正",
     "extraBadges": [
       {
         "label": "年中无休",
         "type": "new"
       }
-    ],
-    "searchKeys": "柏東口駅前歯科 ジャパンデンタルクリニック Japan Dental 柏 柏市 千叶 中文 牙科 矫正"
+    ]
   },
   {
     "name": "オリエント歯科クリニック",
@@ -2081,13 +2581,16 @@
     "jpName": "オリエント歯科クリニック（医療法人社団 本間歯科）",
     "region": "千叶",
     "address": "〒279-0011 千叶县浦安市美浜3-26-11",
+    "addressEn": "〒279-0011 3-26-11 Mihama, Urayasu, Chiba",
     "addressShort": "千叶县 浦安市 美浜（JR京叶线 新浦安駅 北口 徒步5分）",
+    "addressShortEn": "Mihama, Urayasu, Chiba (5-min walk from North Exit, Shin-Urayasu Stn, JR Keiyo Line)",
     "phone": "047-352-0036",
     "langs": [
       "中文",
       "英文"
     ],
     "langDetail": "中文 英文 韩文等多语言（中国語対応可）",
+    "langDetailEn": "Chinese, English, Korean & other languages (Chinese supported)",
     "depts": [
       "牙科",
       "口腔外科",
@@ -2095,9 +2598,13 @@
       "矫正牙科"
     ],
     "hours": "周一・二・三・五・六 10:00–13:00 / 14:00–18:00",
+    "hoursEn": "Mon, Tue, Wed, Fri, Sat 10:00–13:00 / 14:00–18:00",
     "hoursShort": "10:00–18:00",
+    "hoursShortEn": "10:00–18:00",
     "closed": "周四・周日・节假日",
+    "closedEn": "Thu, Sun & public holidays",
     "note": "新浦安駅徒步5分的牙科诊所，登记对应中・英・韩等多种语言（中国語対応可）。涵盖一般牙科、口腔外科、儿童牙科及矫正。建议预约时确认中文对应时段。",
+    "noteEn": "A dental clinic 5-min walk from Shin-Urayasu Stn, registered as supporting Chinese, English, Korean and more. Covers general dentistry, oral surgery, pediatric dentistry and orthodontics. Confirm the Chinese-language time slots when booking.",
     "updated": "2026-06",
     "searchKeys": "オリエント歯科クリニック Orient Dental 本間歯科 浦安 新浦安 美浜 千叶 中文 牙科 矫正"
   },
@@ -2107,13 +2614,16 @@
     "jpName": "わかば歯科クリニック（医療法人晴咲会）",
     "region": "千叶",
     "address": "〒273-0035 千叶县船桥市本中山2-18-3 カタンクローバービル2F",
+    "addressEn": "〒273-0035 Katan Clover Bldg 2F, 2-18-3 Hon-Nakayama, Funabashi, Chiba",
     "addressShort": "千叶县 船桥市 本中山（JR総武线 下総中山駅 徒步1分 / 京成中山駅 徒步3分）",
+    "addressShortEn": "Hon-Nakayama, Funabashi, Chiba (1-min walk from Shimosa-Nakayama Stn, JR Sobu Line / 3-min walk from Keisei-Nakayama Stn)",
     "phone": "047-302-6480",
     "langs": [
       "中文",
       "英文"
     ],
     "langDetail": "中文（竹下医师中文出诊）英文（有田医师）",
+    "langDetailEn": "Chinese (Dr. Takeshita consults in Chinese), English (Dr. Arita)",
     "depts": [
       "牙科",
       "矫正牙科",
@@ -2122,17 +2632,21 @@
       "种植牙"
     ],
     "hours": "周一～周五 10:00–14:00 / 15:30–21:00 ・ 周六・周日 10:00–18:00",
+    "hoursEn": "Mon–Fri 10:00–14:00 / 15:30–21:00; Sat & Sun 10:00–18:00",
     "hoursShort": "平日 10:00–21:00 / 周六日 10:00–18:00",
+    "hoursShortEn": "Weekdays 10:00–21:00 / Sat & Sun 10:00–18:00",
     "closed": "无固定休（周六日亦诊，详见官网）",
+    "closedEn": "No fixed closing day (also open Sat & Sun, see website)",
     "note": "下総中山駅徒步1分的牙科诊所（晴咲会旗下），有中文・英文对应医生（中文 竹下医师、英文 有田医师）。平日诊疗至晚上21点、周六・周日也开诊，方便上班族。涵盖一般牙科、矫正、儿童牙科、口腔外科及种植。建议预约时指定中文对应医师。",
+    "noteEn": "A dental clinic 1-min walk from Shimosa-Nakayama Stn (Seisakai group), with Chinese- and English-speaking dentists (Chinese: Dr. Takeshita; English: Dr. Arita). Open until 21:00 on weekdays and on Sat & Sun, convenient for commuters. Covers general dentistry, orthodontics, pediatric dentistry, oral surgery and implants. Request the Chinese-speaking dentist when booking.",
     "updated": "2026-06",
+    "searchKeys": "わかば歯科クリニック 晴咲会 下総中山 本中山 船桥 千叶 中文 牙科 矫正 种植 竹下",
     "extraBadges": [
       {
         "label": "土日诊疗",
         "type": "new"
       }
-    ],
-    "searchKeys": "わかば歯科クリニック 晴咲会 下総中山 本中山 船桥 千叶 中文 牙科 矫正 种植 竹下"
+    ]
   },
   {
     "name": "松戸市立総合医療センター",
@@ -2140,13 +2654,17 @@
     "jpName": "松戸市立総合医療センター",
     "region": "千叶",
     "address": "〒271-0064 千叶县松户市上本乡4182",
+    "addressEn": "〒271-0064 4182 Kamihongo, Matsudo, Chiba",
     "addressShort": "千叶县 松户市 上本乡（常磐线 北松户駅 徒步15分 / 京成 上本乡駅 徒步15分 / 巴士可达）",
+    "addressShortEn": "Kamihongo, Matsudo, Chiba (15-min walk from Kita-Matsudo Stn, Joban Line / 15-min walk from Kamihongo Stn, Keisei / accessible by bus)",
     "phone": "047-367-4444（总机）",
+    "phoneEn": "047-367-4444 (main)",
     "langs": [
       "中文",
       "英文"
     ],
     "langDetail": "中文 英文等多语言（mediPhone 远程医疗翻译）",
+    "langDetailEn": "Chinese, English & other languages (mediPhone remote medical interpreting)",
     "depts": [
       "内科",
       "外科",
@@ -2158,18 +2676,23 @@
       "肿瘤科"
     ],
     "hours": "门诊 平日（各科不同，需预约）",
+    "hoursEn": "Outpatient weekdays (varies by department, appointment required)",
     "hoursShort": "平日（各科不同）",
-    "warning": "建议持紹介状预约；中文经 mediPhone 翻译对应",
+    "hoursShortEn": "Weekdays (varies by department)",
     "closed": "周六・周日・节假日",
+    "closedEn": "Sat, Sun & public holidays",
     "note": "松户市的市立综合医院，设救命救急中心（三次急救）及地域医疗支援功能。引入 mediPhone 远程医疗翻译服务，可对应中文等多语言。就诊建议持紹介状并提前预约，到院时可向窗口申请医疗翻译。",
+    "noteEn": "A municipal general hospital in Matsudo with a critical-care center (tertiary emergency) and regional medical-support functions. It uses mediPhone remote medical interpreting, supporting Chinese and other languages. A referral letter and advance appointment are recommended; request a medical interpreter at the desk on arrival.",
+    "warning": "建议持紹介状预约；中文经 mediPhone 翻译对应",
+    "warningEn": "Referral letter and appointment recommended; Chinese handled via mediPhone interpreting",
     "updated": "2026-06",
+    "searchKeys": "松戸市立総合医療センター 松户市立综合医疗中心 Matsudo City General 上本乡 北松户 松户 千叶 中文 mediPhone 急救",
     "extraBadges": [
       {
         "label": "医疗翻译",
         "type": "new"
       }
-    ],
-    "searchKeys": "松戸市立総合医療センター 松户市立综合医疗中心 Matsudo City General 上本乡 北松户 松户 千叶 中文 mediPhone 急救"
+    ]
   },
   {
     "name": "船橋森谷歯科クリニック",
@@ -2177,13 +2700,16 @@
     "jpName": "船橋森谷歯科クリニック",
     "region": "千叶",
     "address": "〒273-0005 千叶县船桥市本町4-16-27",
+    "addressEn": "〒273-0005 4-16-27 Honcho, Funabashi, Chiba",
     "addressShort": "千叶县 船桥市 本町（JR船桥駅 徒步3分 / 京成船桥駅 徒步2分）",
+    "addressShortEn": "Honcho, Funabashi, Chiba (3-min walk from JR Funabashi Stn / 2-min walk from Keisei Funabashi Stn)",
     "phone": "047-422-3374",
     "langs": [
       "中文",
       "英文"
     ],
     "langDetail": "外国語対応可（第三方名录标记，中文请就诊前确认）",
+    "langDetailEn": "Foreign-language support listed (third-party directory; confirm Chinese before visiting)",
     "depts": [
       "牙科",
       "儿童牙科",
@@ -2192,9 +2718,13 @@
       "种植牙"
     ],
     "hours": "9:00–12:30 / 14:00–18:00（周六午后 14:00–17:00）",
+    "hoursEn": "9:00–12:30 / 14:00–18:00 (Sat afternoon 14:00–17:00)",
     "hoursShort": "9:00–18:00",
+    "hoursShortEn": "9:00–18:00",
     "closed": "周四・周日・节假日",
+    "closedEn": "Thu, Sun & public holidays",
     "note": "船桥駅徒步2–3分的牙科诊所，涵盖一般牙科、矫正、儿童牙科、口腔外科及种植。医疗名录（病院なび等）标记为外国語対応可，但院方未明确公示中文对应，建议就诊前电话确认中文能否对应。",
+    "noteEn": "A dental clinic 2–3 min from Funabashi Stn, covering general dentistry, orthodontics, pediatric dentistry, oral surgery and implants. Medical directories (e.g. Byoin Navi) list it as foreign-language capable, but the clinic does not explicitly advertise Chinese support — call ahead to confirm whether Chinese is available.",
     "updated": "2026-06",
     "searchKeys": "船橋森谷歯科クリニック 森谷歯科 船桥 本町 千叶 牙科 矫正 外国語対応"
   },
@@ -2204,13 +2734,16 @@
     "jpName": "ぜんり歯科内科クリニック",
     "region": "千叶",
     "address": "〒273-0003 千叶县船桥市宫本8-31-15",
+    "addressEn": "〒273-0003 8-31-15 Miyamoto, Funabashi, Chiba",
     "addressShort": "千叶县 船桥市 宫本（京成本线 船桥競馬場駅 徒步约5分）",
+    "addressShortEn": "Miyamoto, Funabashi, Chiba (about 5-min walk from Funabashi-Keibajo Stn, Keisei Main Line)",
     "phone": "047-423-3051",
     "langs": [
       "中文",
       "英文"
     ],
     "langDetail": "外国語対応可（第三方名录标记，中文请就诊前确认）",
+    "langDetailEn": "Foreign-language support listed (third-party directory; confirm Chinese before visiting)",
     "depts": [
       "牙科",
       "儿童牙科",
@@ -2219,9 +2752,13 @@
       "小儿科"
     ],
     "hours": "牙科 平日 9:00–12:30 / 15:00–18:30・周六 9:00–13:00；内科・小儿科 周一三四 9:00–12:30 / 15:00–17:30・周二 9:00–12:30・周六 9:00–13:00",
+    "hoursEn": "Dental: weekdays 9:00–12:30 / 15:00–18:30, Sat 9:00–13:00; Internal medicine & pediatrics: Mon, Wed, Thu 9:00–12:30 / 15:00–17:30, Tue 9:00–12:30, Sat 9:00–13:00",
     "hoursShort": "牙科 9:00–18:30 / 内科 9:00–17:30",
+    "hoursShortEn": "Dental 9:00–18:30 / Internal medicine 9:00–17:30",
     "closed": "牙科 周三・周日・节假日；内科 周五・周日・节假日",
+    "closedEn": "Dental: Wed, Sun & public holidays; Internal medicine: Fri, Sun & public holidays",
     "note": "船桥競馬場駅附近兼设牙科与内科・小儿科的诊所，方便一处看牙科与内科。医疗名录标记为外国語対応可，但院方未明确公示中文对应，建议就诊前电话确认中文能否对应。",
+    "noteEn": "A clinic near Funabashi-Keibajo Stn combining dentistry with internal medicine and pediatrics, so you can see both in one place. Medical directories list it as foreign-language capable, but the clinic does not explicitly advertise Chinese support — call ahead to confirm whether Chinese is available.",
     "updated": "2026-06",
     "searchKeys": "ぜんり歯科内科クリニック 船桥 宫本 船桥競馬場 千叶 牙科 内科 小儿科 外国語対応"
   },
@@ -2231,12 +2768,15 @@
     "jpName": "千葉ニュータウンデンタルクリニック",
     "region": "千叶",
     "address": "〒270-1347 千叶县印西市内野1-5-2",
+    "addressEn": "〒270-1347 1-5-2 Uchino, Inzai, Chiba",
     "addressShort": "千叶县 印西市 内野（北総线 千叶新城中央駅）",
+    "addressShortEn": "Uchino, Inzai, Chiba (Chiba-Newtown-Chuo Stn, Hokuso Line)",
     "phone": "0476-46-5011",
     "langs": [
       "中文"
     ],
     "langDetail": "中文（中国語対応可）",
+    "langDetailEn": "Chinese (Chinese supported)",
     "depts": [
       "牙科",
       "儿童牙科",
@@ -2244,9 +2784,13 @@
       "口腔外科"
     ],
     "hours": "9:30–12:00 / 13:00–18:00",
+    "hoursEn": "9:30–12:00 / 13:00–18:00",
     "hoursShort": "9:30–18:00",
+    "hoursShortEn": "9:30–18:00",
     "closed": "周二・周日・节假日",
+    "closedEn": "Tue, Sun & public holidays",
     "note": "印西市千叶新城的牙科诊所，登记为中国語対応可。涵盖一般牙科、儿童牙科、矫正及口腔外科。建议预约时确认中文对应时段。",
+    "noteEn": "A dental clinic in Chiba New Town, Inzai, registered as Chinese-capable. Covers general dentistry, pediatric dentistry, orthodontics and oral surgery. Confirm the Chinese-language time slots when booking.",
     "updated": "2026-06",
     "searchKeys": "千葉ニュータウンデンタルクリニック 千叶新城 印西 内野 千叶 中文 牙科 矫正"
   },
@@ -2256,13 +2800,16 @@
     "jpName": "新浦安U歯科",
     "region": "千叶",
     "address": "〒279-0013 千叶县浦安市日之出5-1-14 フォルテ新浦安2F",
+    "addressEn": "〒279-0013 Forte Shin-Urayasu 2F, 5-1-14 Hinode, Urayasu, Chiba",
     "addressShort": "千叶县 浦安市 日之出（JR京叶线 新浦安駅 / 商业楼 フォルテ新浦安 2F）",
+    "addressShortEn": "Hinode, Urayasu, Chiba (Shin-Urayasu Stn, JR Keiyo Line / Forte Shin-Urayasu mall 2F)",
     "phone": "047-350-5501",
     "langs": [
       "中文",
       "英文"
     ],
     "langDetail": "中文 英文（中国語・英語対応可）",
+    "langDetailEn": "Chinese, English (Chinese & English supported)",
     "depts": [
       "牙科",
       "口腔外科",
@@ -2270,9 +2817,13 @@
       "矫正牙科"
     ],
     "hours": "平日 10:00–13:00 / 14:30–19:00 ・ 周六・节假日 10:00–13:00 / 14:30–18:30",
+    "hoursEn": "Weekdays 10:00–13:00 / 14:30–19:00; Sat & public holidays 10:00–13:00 / 14:30–18:30",
     "hoursShort": "10:00–19:00",
+    "hoursShortEn": "10:00–19:00",
     "closed": "周三・周日",
+    "closedEn": "Wed & Sun",
     "note": "新浦安的牙科诊所（院长 松田义弘），登记为中国語・英語対応可。涵盖一般牙科、口腔外科、儿童牙科及矫正。建议预约时确认中文对应时段。",
+    "noteEn": "A dental clinic in Shin-Urayasu (director Yoshihiro Matsuda), registered as Chinese/English-capable. Covers general dentistry, oral surgery, pediatric dentistry and orthodontics. Confirm the Chinese-language time slots when booking.",
     "updated": "2026-06",
     "searchKeys": "新浦安U歯科 新浦安 浦安 日之出 千叶 中文 牙科 矫正 松田"
   },
@@ -2282,22 +2833,29 @@
     "jpName": "K'sファミリー歯科",
     "region": "千叶",
     "address": "〒270-0235 千叶县野田市尾崎853-1 エコスTAIRAYA川间店2F",
+    "addressEn": "〒270-0235 Ecos TAIRAYA Kawama 2F, 853-1 Ozaki, Noda, Chiba",
     "addressShort": "千叶县 野田市 尾崎（东武野田线 川间駅 徒步4分）",
+    "addressShortEn": "Ozaki, Noda, Chiba (4-min walk from Kawama Stn, Tobu Noda Line)",
     "phone": "04-7128-4116",
     "langs": [
       "中文",
       "英文"
     ],
     "langDetail": "中文 英文 韩文等多语言（中国語対応可）",
+    "langDetailEn": "Chinese, English, Korean & other languages (Chinese supported)",
     "depts": [
       "牙科",
       "儿童牙科",
       "口腔外科"
     ],
     "hours": "10:00–14:00 / 16:00–20:00",
+    "hoursEn": "10:00–14:00 / 16:00–20:00",
     "hoursShort": "10:00–20:00",
+    "hoursShortEn": "10:00–20:00",
     "closed": "周一・周日・节假日",
+    "closedEn": "Mon, Sun & public holidays",
     "note": "野田市川间駅徒步4分、位于超市 エコス（TAIRAYA）2楼的牙科诊所，登记对应中・英・韩等多种语言（中国語対応可）。诊疗至晚上20点。涵盖一般牙科、儿童牙科及口腔外科。建议预约时确认中文对应时段。",
+    "noteEn": "A dental clinic on the 2nd floor of the Ecos (TAIRAYA) supermarket, 4-min walk from Kawama Stn in Noda, registered as supporting Chinese, English, Korean and more. Open until 20:00. Covers general dentistry, pediatric dentistry and oral surgery. Confirm the Chinese-language time slots when booking.",
     "updated": "2026-06",
     "searchKeys": "K'sファミリー歯科 Ks Family Dental 野田 尾崎 川间 千叶 中文 牙科"
   },
@@ -2307,13 +2865,17 @@
     "jpName": "地方独立行政法人東京都立病院機構 大久保病院",
     "region": "东京",
     "address": "〒160-8488 东京都新宿区歌舞伎町2-44-1",
+    "addressEn": "〒160-8488 2-44-1 Kabukicho, Shinjuku-ku, Tokyo",
     "addressShort": "东京都 新宿区 歌舞伎町（JR新宿駅 东口 徒步7分 / 新宿三丁目駅 徒步5分）",
+    "addressShortEn": "Kabukicho, Shinjuku-ku, Tokyo (7-min walk from East Exit, JR Shinjuku Stn / 5-min walk from Shinjuku-sanchome Stn)",
     "phone": "03-5285-8811（预约挂号）",
+    "phoneEn": "03-5285-8811 (appointments)",
     "langs": [
       "中文",
       "英文"
     ],
     "langDetail": "中文官网 + 13语言通译平板「みえる通訳」（含中文）",
+    "langDetailEn": "Chinese website + 13-language interpreter tablet \"Mieru Tsuyaku\" (incl. Chinese)",
     "depts": [
       "内科",
       "外科",
@@ -2326,18 +2888,22 @@
       "急诊"
     ],
     "hours": "平日上午受理（各科不同，建议先预约）",
-    "warning": "原则上需持紹介状预约，无紹介状加收选定疗养费",
+    "hoursEn": "Weekday morning reception (varies by department; booking recommended)",
     "closed": "周六・周日・节假日",
+    "closedEn": "Sat, Sun & public holidays",
     "note": "新宿区都立综合医院，由东京都立病院机构运营，设女性医疗中心（妇人科）。2025年10月新设国際診療中心，提供简体中文官网及13语言通译平板「みえる通訳」。原则上需持紹介状并提前预约。新宿三丁目駅步行5分。",
+    "noteEn": "A Tokyo metropolitan general hospital in Shinjuku, run by the Tokyo Metropolitan Hospital Organization, with a women's medical center (gynecology). An International Care Center, newly established October 2025, offers a simplified-Chinese website and the 13-language interpreter tablet \"Mieru Tsuyaku.\" A referral letter and advance appointment are required in principle. 5-min walk from Shinjuku-sanchome Stn.",
+    "warning": "原则上需持紹介状预约，无紹介状加收选定疗养费",
+    "warningEn": "Referral letter and appointment required in principle; without a referral a special fee applies",
     "updated": "2026-06",
+    "searchKeys": "東京都立大久保病院 大久保病院 Okubo 新宿 歌舞伎町 东京 妇人科 都立病院",
+    "slug": "okubo-hospital",
     "extraBadges": [
       {
         "label": "中文官网",
         "type": "new"
       }
-    ],
-    "slug": "okubo-hospital",
-    "searchKeys": "東京都立大久保病院 大久保病院 Okubo 新宿 歌舞伎町 东京 妇人科 都立病院"
+    ]
   },
   {
     "name": "新宿NSビルスカイクリニック",
@@ -2345,7 +2911,9 @@
     "jpName": "医療法人社団スカイ 新宿NSビルスカイクリニック",
     "region": "东京",
     "address": "〒160-0023 东京都新宿区西新宿2-4-1 新宿NSビル4F",
+    "addressEn": "〒160-0023 Shinjuku NS Bldg 4F, 2-4-1 Nishi-Shinjuku, Shinjuku-ku, Tokyo",
     "addressShort": "东京都 新宿区 西新宿（都营大江户线 都庁前駅 直结 / JR新宿駅 西口 徒步7分）",
+    "addressShortEn": "Nishi-Shinjuku, Shinjuku-ku, Tokyo (directly connected to Tochomae Stn, Toei Oedo Line / 7-min walk from West Exit, JR Shinjuku Stn)",
     "phone": "03-6258-5755",
     "langs": [
       "中文",
@@ -2353,6 +2921,7 @@
       "法文"
     ],
     "langDetail": "院方自述医生团队可英文・中文（普通话）・法文应诊，设国际诊疗专页",
+    "langDetailEn": "Clinic states its doctors can consult in English, Chinese (Mandarin) and French; has an international-care page",
     "depts": [
       "内科",
       "消化器科",
@@ -2361,12 +2930,16 @@
       "泌尿器科"
     ],
     "hours": "周一至周六 10:00–14:00 / 15:00–18:30 ・ 周日 10:00–17:00",
+    "hoursEn": "Mon–Sat 10:00–14:00 / 15:00–18:30; Sun 10:00–17:00",
     "hoursShort": "周一至周六 10:00–18:30 / 周日午前",
+    "hoursShortEn": "Mon–Sat 10:00–18:30 / Sun morning",
     "closed": "年末年初（周日亦开诊）",
+    "closedEn": "Year-end/New Year (also open Sun)",
     "note": "都庁前駅直结、新宿NS大楼4层的诊所，周末・周日亦开诊。院方官网及国际站宣称可中文（普通话）应诊。无需紹介状可直接就诊；外籍新患（保险诊疗）如日语沟通困难，需自带翻译或支付1,000日元翻译费，建议就诊前电话确认当日是否有中文医生。",
+    "noteEn": "A clinic on the 4th floor of the Shinjuku NS Building, directly connected to Tochomae Stn, open on weekends and Sundays. The clinic's website and international page state Chinese (Mandarin) consultations are available. Walk-ins accepted without a referral; foreign first-visit patients (insured care) who can't communicate in Japanese must bring an interpreter or pay a 1,000 yen interpreter fee — call ahead to confirm a Chinese-speaking doctor is available that day.",
     "updated": "2026-06",
-    "slug": "shinjuku-ns-sky-clinic",
-    "searchKeys": "新宿NSビルスカイクリニック Sky Clinic 西新宿 都庁前 新宿 东京 妇人科 中文"
+    "searchKeys": "新宿NSビルスカイクリニック Sky Clinic 西新宿 都庁前 新宿 东京 妇人科 中文",
+    "slug": "shinjuku-ns-sky-clinic"
   },
   {
     "name": "杏林大学医学部付属杉並病院",
@@ -2374,7 +2947,9 @@
     "jpName": "杏林大学医学部付属杉並病院",
     "region": "东京",
     "address": "〒166-0012 东京都杉並区和田2-25-1",
+    "addressEn": "〒166-0012 2-25-1 Wada, Suginami-ku, Tokyo",
     "addressShort": "东京都 杉並区 和田（丸ノ内线 方南町駅 徒步9分）",
+    "addressShortEn": "Wada, Suginami-ku, Tokyo (9-min walk from Honancho Stn, Marunouchi Line)",
     "phone": "03-3383-1281",
     "langs": [
       "中文",
@@ -2382,6 +2957,7 @@
       "韩文"
     ],
     "langDetail": "官网对应英・中・韩等多语言；中文人工通译／中文医生安排建议就诊前致电确认",
+    "langDetailEn": "Website supports English, Chinese, Korean & more; confirm in-person Chinese interpreting / Chinese doctor by phone before visiting",
     "depts": [
       "内科",
       "外科",
@@ -2398,12 +2974,16 @@
       "精神科"
     ],
     "hours": "平日 8:30–12:00（9:00开诊）・ 周六 8:30–11:00",
-    "warning": "原则上需持紹介状就诊，部分科室需预约",
+    "hoursEn": "Weekdays 8:30–12:00 (opens 9:00); Sat 8:30–11:00",
     "closed": "周日・节假日・第2周六",
+    "closedEn": "Sun, public holidays & 2nd Sat",
     "note": "杏林大学2026年4月新开院的综合医院，产科・妇人科齐全。院方网站设英・中・韩多语言。中文人工通译或中文医生安排官网未明确，建议就诊前致电确认。方南町駅步行9分。",
+    "noteEn": "A general hospital newly opened by Kyorin University in April 2026, with full obstetrics and gynecology. The hospital website supports English, Chinese and Korean. In-person Chinese interpreting or a Chinese doctor is not clearly stated online — call ahead to confirm. 9-min walk from Honancho Stn.",
+    "warning": "原则上需持紹介状就诊，部分科室需预约",
+    "warningEn": "First visits in principle require a referral; some departments require an appointment",
     "updated": "2026-06",
-    "slug": "kyorin-suginami-hospital",
-    "searchKeys": "杏林大学医学部付属杉並病院 杏林杉並病院 Kyorin Suginami 杉並区 和田 方南町 东京 妇人科"
+    "searchKeys": "杏林大学医学部付属杉並病院 杏林杉並病院 Kyorin Suginami 杉並区 和田 方南町 东京 妇人科",
+    "slug": "kyorin-suginami-hospital"
   },
   {
     "name": "ローズレディースクリニック",
@@ -2411,13 +2991,17 @@
     "jpName": "医療法人社団ローズレディースクリニック",
     "region": "东京",
     "address": "〒158-0082 东京都世田谷区等々力2-3-18",
+    "addressEn": "〒158-0082 2-3-18 Todoroki, Setagaya-ku, Tokyo",
     "addressShort": "东京都 世田谷区 等々力（东急大井町线 尾山台駅 徒步5分）",
+    "addressShortEn": "Todoroki, Setagaya-ku, Tokyo (5-min walk from Oyamadai Stn, Tokyu Oimachi Line)",
     "phone": "03-3703-0114（咨询）/ 03-3703-0115（中文预约）",
+    "phoneEn": "03-3703-0114 (enquiries) / 03-3703-0115 (Chinese booking)",
     "langs": [
       "中文",
       "英文"
     ],
     "langDetail": "中文官网 + 中文专属预约热线／邮箱，由诊所安排医疗翻译陪诊",
+    "langDetailEn": "Chinese website + dedicated Chinese booking line/email; the clinic arranges an interpreter to accompany the visit",
     "depts": [
       "妇人科",
       "不孕治疗",
@@ -2425,17 +3009,20 @@
       "体外受精"
     ],
     "hours": "周一至周六 上午・下午门诊（完全预约制，时段以预约为准）",
+    "hoursEn": "Mon–Sat morning & afternoon clinics (by appointment only; times per booking)",
     "closed": "周日・节假日",
+    "closedEn": "Sun & public holidays",
     "note": "世田谷区专攻不孕治疗与妇人科的女性诊所，以早发性卵巢功能不全（POI）治疗见长。设中文专属网站与中文预约通道（03-3703-0115），就诊由诊所安排医疗翻译陪同。初诊完全预约制。尾山台駅步行5分。",
+    "noteEn": "A women's clinic in Setagaya-ku specializing in infertility treatment and gynecology, with expertise in premature ovarian insufficiency (POI). It has a dedicated Chinese website and Chinese booking line (03-3703-0115), and arranges a medical interpreter to accompany the visit. First visits are by appointment only. 5-min walk from Oyamadai Stn.",
     "updated": "2026-06",
+    "searchKeys": "ローズレディースクリニック Rose Ladies Clinic 等々力 尾山台 世田谷 东京 妇人科 不孕 中文",
+    "slug": "rose-ladies-clinic",
     "extraBadges": [
       {
         "label": "中文官网",
         "type": "new"
       }
-    ],
-    "slug": "rose-ladies-clinic",
-    "searchKeys": "ローズレディースクリニック Rose Ladies Clinic 等々力 尾山台 世田谷 东京 妇人科 不孕 中文"
+    ]
   },
   {
     "name": "東京都立広尾病院",
@@ -2443,13 +3030,17 @@
     "jpName": "地方独立行政法人東京都立病院機構 東京都立広尾病院",
     "region": "东京",
     "address": "〒150-0013 东京都渋谷区恵比寿2-34-10",
+    "addressEn": "〒150-0013 2-34-10 Ebisu, Shibuya-ku, Tokyo",
     "addressShort": "东京都 渋谷区 恵比寿（日比谷线 広尾駅 徒步7分）",
+    "addressShortEn": "Ebisu, Shibuya-ku, Tokyo (7-min walk from Hiroo Stn, Hibiya Line)",
     "phone": "03-3444-1181（代表）/ 03-3446-8331（预约）",
+    "phoneEn": "03-3444-1181 (main) / 03-3446-8331 (appointments)",
     "langs": [
       "中文",
       "英文"
     ],
     "langDetail": "JMIP认证；院内常驻中文・英文医疗口译员（平日9:00–17:00）+ 34语言视频远程口译",
+    "langDetailEn": "JMIP-accredited; on-site Chinese & English medical interpreters (weekdays 9:00–17:00) + 34-language video remote interpreting",
     "depts": [
       "产妇人科",
       "内科",
@@ -2465,18 +3056,22 @@
       "急诊"
     ],
     "hours": "平日上午受理（各科不同，建议先预约）；口译服务平日 9:00–17:00",
-    "warning": "都立大型医院，初诊一般需持紹介状，否则加收选定疗养费",
+    "hoursEn": "Weekday morning reception (varies by department; booking recommended); interpreting service weekdays 9:00–17:00",
     "closed": "周六・周日・节假日",
+    "closedEn": "Sat, Sun & public holidays",
     "note": "东京都立大型综合医院，东京都指定外国人患者拠点医疗机构，2017年取得JMIP认证。自2016年起院内常驻中文・英文医疗口译员（平日9:00–17:00），并配34语言以上视频远程口译，中文支持正规可靠。初诊建议持紹介状并提前预约口译。広尾駅步行7分。",
+    "noteEn": "A large Tokyo metropolitan general hospital, a Tokyo-designated hub for foreign patients, JMIP-accredited in 2017. Since 2016 it has had on-site Chinese and English medical interpreters (weekdays 9:00–17:00) plus video remote interpreting in 34+ languages, so Chinese support is reliable. A referral letter and an advance interpreter booking are recommended for first visits. 7-min walk from Hiroo Stn.",
+    "warning": "都立大型医院，初诊一般需持紹介状，否则加收选定疗养费",
+    "warningEn": "A large metropolitan hospital; first visits generally require a referral, otherwise a special fee applies",
     "updated": "2026-06",
+    "searchKeys": "東京都立広尾病院 広尾病院 Hiroo 渋谷 恵比寿 广尾 东京 妇人科 JMIP 拠点病院",
+    "slug": "hiroo-hospital",
     "extraBadges": [
       {
         "label": "拠点病院",
         "type": "new"
       }
-    ],
-    "slug": "hiroo-hospital",
-    "searchKeys": "東京都立広尾病院 広尾病院 Hiroo 渋谷 恵比寿 广尾 东京 妇人科 JMIP 拠点病院"
+    ]
   },
   {
     "name": "ピンクリボンブレストケアクリニック表参道",
@@ -2484,25 +3079,32 @@
     "jpName": "ピンクリボンブレストケアクリニック表参道",
     "region": "东京",
     "address": "〒150-0001 东京都渋谷区神宮前4-3-13 FPG links OMOTESANDO Ⅲ 2F",
+    "addressEn": "〒150-0001 FPG links OMOTESANDO III 2F, 4-3-13 Jingumae, Shibuya-ku, Tokyo",
     "addressShort": "东京都 渋谷区 神宮前（表参道駅 A2出口 徒步1分）",
+    "addressShortEn": "Jingumae, Shibuya-ku, Tokyo (1-min walk from Exit A2, Omotesando Stn)",
     "phone": "03-3401-7700（代表）/ 03-3401-7707（预约）/ 050-3171-3258",
+    "phoneEn": "03-3401-7700 (main) / 03-3401-7707 (appointments) / 050-3171-3258",
     "langs": [
       "中文",
       "英文",
       "韩文"
     ],
     "langDetail": "全员女医生；中文应诊安排建议就诊前致电确认",
+    "langDetailEn": "All-female doctors; confirm Chinese consultation by phone before visiting",
     "depts": [
       "乳腺科",
       "妇人科",
       "放射线诊断科"
     ],
     "hours": "周一至周五 10:00–14:00 / 15:30–20:00 ・ 周六・周日 9:30–13:00 / 14:00–18:00（完全预约制）",
+    "hoursEn": "Mon–Fri 10:00–14:00 / 15:30–20:00; Sat & Sun 9:30–13:00 / 14:00–18:00 (by appointment only)",
     "closed": "每月第1周四・节假日",
+    "closedEn": "1st Thu of each month & public holidays",
     "note": "表参道駅旁的乳腺专科诊所，全员女医生，主打乳癌检诊与乳房影像检查，并设妇人科，营业至晚间且周末开诊。中文应诊安排请就诊前致电确认。表参道駅A2出口步行1分。",
+    "noteEn": "A breast-care clinic by Omotesando Stn with all-female doctors, focused on breast-cancer screening and breast imaging, plus a gynecology department; open into the evening and on weekends. Confirm Chinese consultation by phone before visiting. 1-min walk from Exit A2, Omotesando Stn.",
     "updated": "2026-06",
-    "slug": "pink-ribbon-omotesando",
-    "searchKeys": "ピンクリボンブレストケアクリニック表参道 Pink Ribbon Breast Care 表参道 神宮前 渋谷 东京 乳腺 妇人科"
+    "searchKeys": "ピンクリボンブレストケアクリニック表参道 Pink Ribbon Breast Care 表参道 神宮前 渋谷 东京 乳腺 妇人科",
+    "slug": "pink-ribbon-omotesando"
   },
   {
     "name": "あさひレディスクリニック",
@@ -2510,13 +3112,16 @@
     "jpName": "あさひレディスクリニック",
     "region": "东京",
     "address": "〒101-0025 东京都千代田区神田佐久間町1-13 chomp chomp AKIHABARA 10F",
+    "addressEn": "〒101-0025 chomp chomp AKIHABARA 10F, 1-13 Kanda-Sakumacho, Chiyoda-ku, Tokyo",
     "addressShort": "东京都 千代田区 神田佐久間町（JR秋葉原駅 徒步1分）",
+    "addressShortEn": "Kanda-Sakumacho, Chiyoda-ku, Tokyo (1-min walk from JR Akihabara Stn)",
     "phone": "03-3251-3588",
     "langs": [
       "中文",
       "英文"
     ],
     "langDetail": "中文官网；院长高橋青子毕业于中国东南大学医学院（建议就诊前确认中文接诊）",
+    "langDetailEn": "Chinese website; director Aoko Takahashi graduated from Southeast University Medical School, China (confirm Chinese consultation before visiting)",
     "depts": [
       "妇人科",
       "生殖医疗",
@@ -2524,11 +3129,14 @@
       "汉方"
     ],
     "hours": "平日 8:30–12:30 / 14:30–18:30 ・ 周六 8:30–13:30",
+    "hoursEn": "Weekdays 8:30–12:30 / 14:30–18:30; Sat 8:30–13:30",
     "closed": "周日・节假日",
+    "closedEn": "Sun & public holidays",
     "note": "秋葉原駅旁的女性专科诊所，以不孕治疗与生殖医疗（体外受精・卵子冻结等）见长，女医生出诊，为东京都卵子冻结补助登录医疗机构。设中文版官网，院长有中国医学院学习背景，对中文患者较友好，建议就诊前致电确认中文接诊安排。秋葉原駅步行1分。",
+    "noteEn": "A women's clinic by Akihabara Stn, with expertise in infertility treatment and reproductive medicine (IVF, egg freezing, etc.), staffed by female doctors, and a registered facility for Tokyo's egg-freezing subsidy. It has a Chinese website, and the director studied at a Chinese medical school, making it friendly to Chinese patients — call ahead to confirm Chinese consultation. 1-min walk from Akihabara Stn.",
     "updated": "2026-06",
-    "slug": "asahi-ladies-clinic",
-    "searchKeys": "あさひレディスクリニック Asahi Ladies Clinic 秋葉原 神田 千代田 东京 妇人科 不孕 中文"
+    "searchKeys": "あさひレディスクリニック Asahi Ladies Clinic 秋葉原 神田 千代田 东京 妇人科 不孕 中文",
+    "slug": "asahi-ladies-clinic"
   },
   {
     "name": "KISHI CLINICA FEMINA",
@@ -2536,29 +3144,35 @@
     "jpName": "KISHI CLINICA FEMINA（岸クリニカフェミナ）",
     "region": "东京",
     "address": "〒104-0061 东京都中央区銀座8-5-6 中島商事ビル5F",
+    "addressEn": "〒104-0061 Nakajima Shoji Bldg 5F, 8-5-6 Ginza, Chuo-ku, Tokyo",
     "addressShort": "东京都 中央区 銀座（新橋駅 3号口 徒步2分 / 銀座駅 徒步5分）",
+    "addressShortEn": "Ginza, Chuo-ku, Tokyo (2-min walk from Exit 3, Shimbashi Stn / 5-min walk from Ginza Stn)",
     "phone": "03-5537-7171",
     "langs": [
       "中文",
       "英文"
     ],
     "langDetail": "官网明确「中国語診療可」，全员可英文对应",
+    "langDetailEn": "Website explicitly states \"Chinese consultation available\"; all staff support English",
     "depts": [
       "妇人科",
       "女性内科"
     ],
     "hours": "完全预约制（各时段以官网/电话为准）",
+    "hoursEn": "By appointment only (times per website/phone)",
     "closed": "以官网为准",
+    "closedEn": "See website",
     "note": "銀座的女性专科诊所（仅限女性就诊），院长曾任东京济生会中央医院科室主任，手术经验丰富，涵盖妇科诊疗、激光治疗及紧急避孕药处方等，注重隐私。官网明确表示可用中文与英文诊疗。新橋駅步行2分。",
+    "noteEn": "A women's clinic in Ginza (women only). The director formerly headed a department at Tokyo Saiseikai Central Hospital and has extensive surgical experience, covering gynecology, laser treatment, emergency contraception and more, with attention to privacy. The website explicitly states consultations are available in Chinese and English. 2-min walk from Shimbashi Stn.",
     "updated": "2026-06",
+    "searchKeys": "KISHI CLINICA FEMINA 岸クリニカフェミナ 銀座 新橋 中央区 东京 妇人科 中文",
+    "slug": "kishi-clinica-femina",
     "extraBadges": [
       {
         "label": "中文诊疗",
         "type": "new"
       }
-    ],
-    "slug": "kishi-clinica-femina",
-    "searchKeys": "KISHI CLINICA FEMINA 岸クリニカフェミナ 銀座 新橋 中央区 东京 妇人科 中文"
+    ]
   },
   {
     "name": "mammaria tsukiji",
@@ -2566,13 +3180,16 @@
     "jpName": "乳腺外科・婦人科専門クリニック マンマリア築地",
     "region": "东京",
     "address": "〒104-0045 东京都中央区築地3-7-2 築地スカイビル5F",
+    "addressEn": "〒104-0045 Tsukiji Sky Bldg 5F, 3-7-2 Tsukiji, Chuo-ku, Tokyo",
     "addressShort": "东京都 中央区 築地（日比谷线 築地駅 徒步1分 / 新富町駅 徒步4分）",
+    "addressShortEn": "Tsukiji, Chuo-ku, Tokyo (1-min walk from Tsukiji Stn, Hibiya Line / 4-min walk from Shintomicho Stn)",
     "phone": "03-3545-0880",
     "langs": [
       "中文",
       "英文"
     ],
     "langDetail": "女医生为主；中文应诊安排建议就诊前致电确认",
+    "langDetailEn": "Mainly female doctors; confirm Chinese consultation by phone before visiting",
     "depts": [
       "乳腺外科",
       "妇人科",
@@ -2580,11 +3197,14 @@
       "子宫颈癌检查"
     ],
     "hours": "9:00–12:00 / 13:30–17:30（最终受理17:00）",
+    "hoursEn": "9:00–12:00 / 13:30–17:30 (last reception 17:00)",
     "closed": "周日・节假日",
+    "closedEn": "Sun & public holidays",
     "note": "圣路加国际医院的合作诊所，2017年开设，专注乳腺疾病诊断与治疗，2023年9月起增设妇人科（月经异常・异常出血・子宫颈癌筛查等）。预约制，可当日电话预约。中文应诊安排请就诊前致电确认。築地駅步行1分。",
+    "noteEn": "A partner clinic of St. Luke's International Hospital, opened in 2017, specializing in breast-disease diagnosis and treatment; a gynecology department was added in September 2023 (menstrual issues, abnormal bleeding, cervical-cancer screening, etc.). By appointment, with same-day phone booking possible. Confirm Chinese consultation by phone before visiting. 1-min walk from Tsukiji Stn.",
     "updated": "2026-06",
-    "slug": "mammaria-tsukiji",
-    "searchKeys": "mammaria tsukiji マンマリア築地 築地 新富町 中央区 东京 乳腺 妇人科"
+    "searchKeys": "mammaria tsukiji マンマリア築地 築地 新富町 中央区 东京 乳腺 妇人科",
+    "slug": "mammaria-tsukiji"
   },
   {
     "name": "三ノ輪 紀レディースクリニック",
@@ -2592,22 +3212,28 @@
     "jpName": "三ノ輪 紀レディースクリニック",
     "region": "东京",
     "address": "〒110-0011 东京都台東区三ノ輪1-27-15",
+    "addressEn": "〒110-0011 1-27-15 Minowa, Taito-ku, Tokyo",
     "addressShort": "东京都 台東区 三ノ輪（日比谷线 三ノ輪駅 3号出口 徒步2分）",
+    "addressShortEn": "Minowa, Taito-ku, Tokyo (2-min walk from Exit 3, Minowa Stn, Hibiya Line)",
     "phone": "03-6802-1637",
     "langs": [
       "中文"
     ],
     "langDetail": "中文应诊安排建议就诊前致电确认",
+    "langDetailEn": "Confirm Chinese consultation by phone before visiting",
     "depts": [
       "产科",
       "妇人科"
     ],
     "hours": "周一・二・四・五・六 9:00–12:00 / 15:00–18:00",
+    "hoursEn": "Mon, Tue, Thu, Fri, Sat 9:00–12:00 / 15:00–18:00",
     "closed": "周三・周日・节假日",
+    "closedEn": "Wed, Sun & public holidays",
     "note": "台東区三ノ輪的产科・妇人科诊所，院长紀宏志，以细致产前检查见长，可诊治子宫肌瘤、月经不调、更年期障碍及不孕咨询等。中文应诊安排请就诊前致电确认。三ノ輪駅步行2分。",
+    "noteEn": "An obstetrics/gynecology clinic in Minowa, Taito-ku, with director Hiroshi Ki, known for thorough prenatal care and treating uterine fibroids, menstrual irregularities, menopausal disorders and infertility concerns. Confirm Chinese consultation by phone before visiting. 2-min walk from Minowa Stn.",
     "updated": "2026-06",
-    "slug": "minowa-kino-ladies-clinic",
-    "searchKeys": "三ノ輪 紀レディースクリニック 紀女性诊所 Kino Ladies 三ノ輪 台東区 东京 产科 妇人科"
+    "searchKeys": "三ノ輪 紀レディースクリニック 紀女性诊所 Kino Ladies 三ノ輪 台東区 东京 产科 妇人科",
+    "slug": "minowa-kino-ladies-clinic"
   },
   {
     "name": "NTT東日本関東病院 国際診療科",
@@ -2615,14 +3241,18 @@
     "jpName": "NTT東日本関東病院",
     "region": "东京",
     "address": "〒141-8625 东京都品川区東五反田5-9-22",
+    "addressEn": "〒141-8625 5-9-22 Higashi-Gotanda, Shinagawa-ku, Tokyo",
     "addressShort": "东京都 品川区 東五反田（JR/都营浅草线 五反田駅 徒步7分）",
+    "addressShortEn": "Higashi-Gotanda, Shinagawa-ku, Tokyo (7-min walk from Gotanda Stn, JR / Toei Asakusa Line)",
     "phone": "03-6721-6239（国際診療科）",
+    "phoneEn": "03-6721-6239 (Intl Care Dept)",
     "langs": [
       "中文",
       "英文",
       "韩文"
     ],
     "langDetail": "国際診療科直通中文・英文（平日8:30–17:00）+ 医疗通译与协调员，设中文官网",
+    "langDetailEn": "International Department direct line for Chinese & English (weekdays 8:30–17:00) + medical interpreters and coordinators; Chinese website",
     "depts": [
       "内科",
       "外科",
@@ -2636,18 +3266,22 @@
       "急诊"
     ],
     "hours": "国際診療科咨询 平日 8:30–17:00；普通门诊一般为平日上午",
-    "warning": "经国際診療科预约的保险居民患者需付预约费7,700日元/次；建议持紹介状",
+    "hoursEn": "International Department enquiries weekdays 8:30–17:00; general outpatient generally weekday mornings",
     "closed": "周六・周日・节假日",
+    "closedEn": "Sat, Sun & public holidays",
     "note": "品川区五反田的大型综合医院，被东京都列为接收外国人患者的最高等级（选出要件1）拠点医院。设国際診療科（2020年成立），直通电话支持日・英・中（平日8:30–17:00），配医疗通译与协调员对接院内各专科，并有中文官网。有・无日本医保患者均可受理。五反田駅步行7分。",
+    "noteEn": "A large general hospital in Gotanda, Shinagawa-ku, ranked by Tokyo at the top tier (selection requirement 1) for receiving foreign patients. Its International Department (est. 2020) has a direct line supporting Japanese, English and Chinese (weekdays 8:30–17:00), with medical interpreters and coordinators linking to each specialty, plus a Chinese website. Patients with or without Japanese insurance are accepted. 7-min walk from Gotanda Stn.",
+    "warning": "经国際診療科预约的保险居民患者需付预约费7,700日元/次；建议持紹介状",
+    "warningEn": "Insured resident patients booking via the International Department pay a 7,700 yen booking fee per visit; a referral letter is recommended",
     "updated": "2026-06",
+    "searchKeys": "NTT東日本関東病院 NTT Medical Center Tokyo 国際診療科 五反田 品川 东京 妇人科 拠点病院 中文",
+    "slug": "ntt-kanto-hospital",
     "extraBadges": [
       {
         "label": "拠点病院",
         "type": "new"
       }
-    ],
-    "slug": "ntt-kanto-hospital",
-    "searchKeys": "NTT東日本関東病院 NTT Medical Center Tokyo 国際診療科 五反田 品川 东京 妇人科 拠点病院 中文"
+    ]
   },
   {
     "name": "東京労災病院",
@@ -2655,13 +3289,16 @@
     "jpName": "独立行政法人労働者健康安全機構 東京労災病院",
     "region": "东京",
     "address": "〒143-0013 东京都大田区大森南4-13-21",
+    "addressEn": "〒143-0013 4-13-21 Omori-Minami, Ota-ku, Tokyo",
     "addressShort": "东京都 大田区 大森南（JR京浜东北线 大森駅 / 京急 大森町駅）",
+    "addressShortEn": "Omori-Minami, Ota-ku, Tokyo (Omori Stn, JR Keihin-Tohoku Line / Omorimachi Stn, Keikyu)",
     "phone": "03-3742-7301",
     "langs": [
       "中文",
       "英文"
     ],
     "langDetail": "东京都外国人患者拠点医院，设中文版官网（中文通译形式建议就诊前确认）",
+    "langDetailEn": "A Tokyo foreign-patient hub hospital with a Chinese website (confirm the form of Chinese interpreting before visiting)",
     "depts": [
       "内科",
       "外科",
@@ -2677,18 +3314,22 @@
       "急诊"
     ],
     "hours": "门诊受理 8:15–11:00；急诊24小时",
-    "warning": "紹介受診重点医疗机构；初诊建议持紹介状，部分科室新患仅限持紹介状",
+    "hoursEn": "Outpatient reception 8:15–11:00; ER 24h",
     "closed": "周六・周日・节假日（急诊除外）",
+    "closedEn": "Sat, Sun & public holidays (except ER)",
     "note": "大田区大森的综合医院，由劳动者健康安全机构运营，设产妇人科。被东京都指定为接收外国人患者的最高等级（选出要件1）拠点医院，设中文版官网。为紹介受診重点医疗机构，初诊建议携带紹介状。大森駅可达。",
+    "noteEn": "A general hospital in Omori, Ota-ku, run by the Japan Organization of Occupational Health and Safety, with an obstetrics/gynecology department. Ranked by Tokyo at the top tier (selection requirement 1) for receiving foreign patients, with a Chinese website. A referral-priority medical institution; a referral letter is recommended for first visits. Accessible from Omori Stn.",
+    "warning": "紹介受診重点医疗机构；初诊建议持紹介状，部分科室新患仅限持紹介状",
+    "warningEn": "A referral-priority institution; a referral is recommended for first visits, and some departments accept new patients by referral only",
     "updated": "2026-06",
+    "searchKeys": "東京労災病院 Tokyo Rosai 大森 大田区 东京 妇人科 拠点病院 中文",
+    "slug": "tokyo-rosai-hospital",
     "extraBadges": [
       {
         "label": "拠点病院",
         "type": "new"
       }
-    ],
-    "slug": "tokyo-rosai-hospital",
-    "searchKeys": "東京労災病院 Tokyo Rosai 大森 大田区 东京 妇人科 拠点病院 中文"
+    ]
   },
   {
     "name": "東京都立大塚病院",
@@ -2696,13 +3337,16 @@
     "jpName": "地方独立行政法人東京都立病院機構 東京都立大塚病院",
     "region": "东京",
     "address": "〒170-8476 东京都豊島区南大塚2-8-1",
+    "addressEn": "〒170-8476 2-8-1 Minami-Otsuka, Toshima-ku, Tokyo",
     "addressShort": "东京都 豊島区 南大塚（丸ノ内线 新大塚駅 徒步2分 / JR大塚駅 徒步10分）",
+    "addressShortEn": "Minami-Otsuka, Toshima-ku, Tokyo (2-min walk from Shin-Otsuka Stn, Marunouchi Line / 10-min walk from JR Otsuka Stn)",
     "phone": "03-3941-3211",
     "langs": [
       "中文",
       "英文"
     ],
     "langDetail": "日・英・中・韩四语官网；东京都立病院通译体系（含中文）",
+    "langDetailEn": "Japanese/English/Chinese/Korean website; Tokyo Metropolitan Hospital interpreting system (incl. Chinese)",
     "depts": [
       "产妇人科",
       "内科",
@@ -2718,18 +3362,22 @@
       "急诊"
     ],
     "hours": "平日上午受理（各科不同，建议先预约）",
-    "warning": "都立大型医院，初诊一般需持紹介状，否则加收选定疗养费",
+    "hoursEn": "Weekday morning reception (varies by department; booking recommended)",
     "closed": "周六・周日・节假日",
+    "closedEn": "Sat, Sun & public holidays",
     "note": "豊島区南大塚的综合医院，由东京都立病院机构运营，距新大塚駅步行2分。产妇人科为都内屈指的「総合周産期母子医療中心」，擅长高危孕产妇接收。东京都指定外国人患者拠点医院，提供日・英・中・韩四语官网。新大塚駅步行2分。",
+    "noteEn": "A general hospital in Minami-Otsuka, Toshima-ku, run by the Tokyo Metropolitan Hospital Organization, 2-min walk from Shin-Otsuka Stn. Its obstetrics/gynecology is one of Tokyo's leading \"Comprehensive Perinatal Maternal and Child Medical Centers,\" skilled at handling high-risk pregnancies. A Tokyo-designated foreign-patient hub, with a Japanese/English/Chinese/Korean website. 2-min walk from Shin-Otsuka Stn.",
+    "warning": "都立大型医院，初诊一般需持紹介状，否则加收选定疗养费",
+    "warningEn": "A large metropolitan hospital; first visits generally require a referral, otherwise a special fee applies",
     "updated": "2026-06",
+    "searchKeys": "東京都立大塚病院 大塚病院 Otsuka 南大塚 新大塚 豊島区 东京 妇人科 周産期 拠点病院 中文",
+    "slug": "otsuka-hospital",
     "extraBadges": [
       {
         "label": "拠点病院",
         "type": "new"
       }
-    ],
-    "slug": "otsuka-hospital",
-    "searchKeys": "東京都立大塚病院 大塚病院 Otsuka 南大塚 新大塚 豊島区 东京 妇人科 周産期 拠点病院 中文"
+    ]
   },
   {
     "name": "東京高輪病院 国際部",
@@ -2737,13 +3385,16 @@
     "jpName": "独立行政法人地域医療機能推進機構 東京高輪病院",
     "region": "东京",
     "address": "〒108-8606 东京都港区高輪3-10-11",
+    "addressEn": "〒108-8606 3-10-11 Takanawa, Minato-ku, Tokyo",
     "addressShort": "东京都 港区 高輪（都营浅草线 高輪台駅 徒步3分 / JR品川駅 徒步10分）",
+    "addressShortEn": "Takanawa, Minato-ku, Tokyo (3-min walk from Takanawadai Stn, Toei Asakusa Line / 10-min walk from JR Shinagawa Stn)",
     "phone": "03-3443-9191",
     "langs": [
       "中文",
       "英文"
     ],
     "langDetail": "国際部常驻中文（普通话・广东话）・英文专职医疗口译 + 简体中文官网",
+    "langDetailEn": "International Department with full-time Chinese (Mandarin & Cantonese) and English medical interpreters + simplified-Chinese website",
     "depts": [
       "内科",
       "外科",
@@ -2759,18 +3410,22 @@
       "放射线科"
     ],
     "hours": "受理 平日 8:30–11:30；国际部口译 平日 9:00–15:45",
-    "warning": "初诊需持紹介状，无紹介状加收选定疗养费3,300日元",
+    "hoursEn": "Reception weekdays 8:30–11:30; International Department interpreting weekdays 9:00–15:45",
     "closed": "周六・周日・节假日・年末年初",
+    "closedEn": "Sat, Sun, public holidays & year-end/New Year",
     "note": "由地域医疗机能推进机构（JCHO）运营的综合医院，邻近品川站。设专门国際部，配中文（普通话・广东话）专职口译，并有简体中文官网，对中文患者友好。设妇人科。口译自2025年10月起收费（门诊每次1,100日元）。高輪台駅步行3分。",
+    "noteEn": "A general hospital run by the Japan Community Health Care Organization (JCHO), near Shinagawa Stn. It has a dedicated International Department with full-time Chinese (Mandarin & Cantonese) interpreters and a simplified-Chinese website, friendly to Chinese patients, with a gynecology department. Interpreting is paid from October 2025 (1,100 yen per outpatient visit). 3-min walk from Takanawadai Stn.",
+    "warning": "初诊需持紹介状，无紹介状加收选定疗养费3,300日元",
+    "warningEn": "First visit requires a referral; without one, a 3,300 yen special fee applies",
     "updated": "2026-06",
+    "searchKeys": "東京高輪病院 JCHO Takanawa 高輪 高輪台 品川 港区 东京 妇人科 国際部 中文",
+    "slug": "takanawa-hospital",
     "extraBadges": [
       {
         "label": "中文官网",
         "type": "new"
       }
-    ],
-    "slug": "takanawa-hospital",
-    "searchKeys": "東京高輪病院 JCHO Takanawa 高輪 高輪台 品川 港区 东京 妇人科 国際部 中文"
+    ]
   },
   {
     "name": "虎の門病院 国際室",
@@ -2778,13 +3433,16 @@
     "jpName": "国家公務員共済組合連合会 虎の門病院",
     "region": "东京",
     "address": "〒105-8470 东京都港区虎ノ門2-2-2",
+    "addressEn": "〒105-8470 2-2-2 Toranomon, Minato-ku, Tokyo",
     "addressShort": "东京都 港区 虎ノ門（日比谷线 虎ノ門ヒルズ駅 徒步3分 / 银座线 虎ノ門駅 徒步6分）",
+    "addressShortEn": "Toranomon, Minato-ku, Tokyo (3-min walk from Toranomon Hills Stn, Hibiya Line / 6-min walk from Toranomon Stn, Ginza Line)",
     "phone": "03-3588-1111",
     "langs": [
       "中文",
       "英文"
     ],
     "langDetail": "国際室配中文医疗口译 + 英文协调员；JMIP・JIH认证，简体中文官网",
+    "langDetailEn": "International Office with Chinese medical interpreter + English coordinator; JMIP & JIH accredited, simplified-Chinese website",
     "depts": [
       "内科",
       "血液内科",
@@ -2804,18 +3462,22 @@
       "齿科"
     ],
     "hours": "上午门诊 平日 8:30–11:00；下午 12:30–14:30（各科不同）",
-    "warning": "完全紹介制：初诊必须持紹介状",
+    "hoursEn": "Morning outpatient weekdays 8:30–11:00; afternoon 12:30–14:30 (varies by department)",
     "closed": "周六・周日・节假日・年末年初",
+    "closedEn": "Sat, Sun, public holidays & year-end/New Year",
     "note": "由国家公务员共济组合连合会运营的大型综合医院，取得JMIP・JIH认证，并为东京都外国人患者受诊拠点医院。设国際室，提供中文医疗口译与英文协调员，官网有简体中文版，设产妇人科。完全紹介制，初诊必须持紹介状。虎ノ門ヒルズ駅步行3分。",
+    "noteEn": "A large general hospital run by the National Public Service Mutual Aid Associations, JMIP- and JIH-accredited and a Tokyo foreign-patient hub hospital. Its International Office provides a Chinese medical interpreter and an English coordinator, with a simplified-Chinese website and an obstetrics/gynecology department. Referral-only: first visits require a referral letter. 3-min walk from Toranomon Hills Stn.",
+    "warning": "完全紹介制：初诊必须持紹介状",
+    "warningEn": "Referral-only: first visits require a referral letter",
     "updated": "2026-06",
+    "searchKeys": "虎の門病院 虎之门病院 Toranomon 虎ノ門 虎ノ門ヒルズ 港区 东京 妇人科 国際室 JMIP 中文",
+    "slug": "toranomon-hospital",
     "extraBadges": [
       {
         "label": "JMIP认证",
         "type": "new"
       }
-    ],
-    "slug": "toranomon-hospital",
-    "searchKeys": "虎の門病院 虎之门病院 Toranomon 虎ノ門 虎ノ門ヒルズ 港区 东京 妇人科 国際室 JMIP 中文"
+    ]
   },
   {
     "name": "東京都済生会中央病院 国際連携室",
@@ -2823,14 +3485,18 @@
     "jpName": "東京都済生会中央病院",
     "region": "东京",
     "address": "〒108-0073 东京都港区三田1-4-17",
+    "addressEn": "〒108-0073 1-4-17 Mita, Minato-ku, Tokyo",
     "addressShort": "东京都 港区 三田（大江户线 赤羽橋駅 徒步约8分）",
+    "addressShortEn": "Mita, Minato-ku, Tokyo (about 8-min walk from Akabanebashi Stn, Oedo Line)",
     "phone": "国际连携室(英·中): 050-5358-2873 / 代表 03-3451-8211",
+    "phoneEn": "Intl Liaison Office (EN/CN): 050-5358-2873 / Main 03-3451-8211",
     "langs": [
       "中文",
       "英文",
       "韩文"
     ],
     "langDetail": "国際連携室常驻中文（普通话）・英文医疗口译与协调员；急诊科对应英・中・韩",
+    "langDetailEn": "International Liaison Office with on-site Chinese (Mandarin) & English medical interpreters and coordinators; ER supports English, Chinese, Korean",
     "depts": [
       "急诊科",
       "内科",
@@ -2842,18 +3508,22 @@
       "消化器内科"
     ],
     "hours": "初诊受理 8:00–11:30；急诊24小时",
-    "warning": "地域医疗支援医院，原则上需持紹介状，无紹介状加收选定疗养费",
+    "hoursEn": "First-visit reception 8:00–11:30; ER 24h",
     "closed": "周六・周日・节假日（急诊全年无休）",
+    "closedEn": "Sat, Sun & public holidays (ER open year-round)",
     "note": "港区三田的大型综合医院（约505床），2017年取得JMIP外国人患者接收认证。设国際連携室，常驻中文・英文医疗口译与协调员，可电话（050-5358-2873）或邮件（int.a@saichu.jp）预约中文翻译陪诊。地域医疗支援医院，建议持紹介状就诊。赤羽橋駅可达。",
+    "noteEn": "A large general hospital in Mita, Minato-ku (about 505 beds), JMIP-accredited for foreign-patient care in 2017. Its International Liaison Office has on-site Chinese and English medical interpreters and coordinators; book a Chinese interpreter to accompany your visit by phone (050-5358-2873) or email (int.a@saichu.jp). A regional medical-support hospital; a referral letter is recommended. Accessible from Akabanebashi Stn.",
+    "warning": "地域医疗支援医院，原则上需持紹介状，无紹介状加收选定疗养费",
+    "warningEn": "A regional medical-support hospital; a referral is required in principle, otherwise a special fee applies",
     "updated": "2026-06",
+    "searchKeys": "東京都済生会中央病院 済生会 Saiseikai 三田 赤羽橋 港区 东京 妇人科 国際連携室 JMIP 中文",
+    "slug": "saiseikai-central-hospital",
     "extraBadges": [
       {
         "label": "JMIP认证",
         "type": "new"
       }
-    ],
-    "slug": "saiseikai-central-hospital",
-    "searchKeys": "東京都済生会中央病院 済生会 Saiseikai 三田 赤羽橋 港区 东京 妇人科 国際連携室 JMIP 中文"
+    ]
   },
   {
     "name": "エバーグリーンメディカルクリニック",
@@ -2861,13 +3531,16 @@
     "jpName": "エバーグリーンメディカルクリニック",
     "region": "东京",
     "address": "〒106-0032 东京都港区六本木7-12-15 VORT六本木Ⅱ 2F",
+    "addressEn": "〒106-0032 VORT Roppongi II 2F, 7-12-15 Roppongi, Minato-ku, Tokyo",
     "addressShort": "东京都 港区 六本木（日比谷线/大江户线 六本木駅 徒步3分）",
+    "addressShortEn": "Roppongi, Minato-ku, Tokyo (3-min walk from Roppongi Stn, Hibiya/Oedo Line)",
     "phone": "03-6459-2757",
     "langs": [
       "中文",
       "英文"
     ],
     "langDetail": "设英文官网（英文应诊）；中文应诊安排建议就诊前致电确认",
+    "langDetailEn": "English website (English consultations); confirm Chinese consultation by phone before visiting",
     "depts": [
       "内科",
       "外科",
@@ -2878,11 +3551,14 @@
       "过敏科"
     ],
     "hours": "周一至周五 9:30–18:30 ・ 周六・节假日 9:30–14:30",
+    "hoursEn": "Mon–Fri 9:30–18:30; Sat & public holidays 9:30–14:30",
     "closed": "周日",
+    "closedEn": "Sun",
     "note": "六本木的综合诊所，预约制并提供在线诊疗。院长沼田樱华为急诊专门医，可处理内科・皮肤科・妇人科・泌尿科等常见问题，设英文官网。中文应诊安排请就诊前致电确认。六本木駅步行3分。",
+    "noteEn": "A general clinic in Roppongi, by appointment and offering online consultations. Director Sakura Numata is an emergency-medicine specialist handling common internal-medicine, dermatology, gynecology and urology issues, with an English website. Confirm Chinese consultation by phone before visiting. 3-min walk from Roppongi Stn.",
     "updated": "2026-06",
-    "slug": "evergreen-medical-clinic",
-    "searchKeys": "エバーグリーンメディカルクリニック Evergreen Medical Clinic 六本木 港区 东京 妇人科 在线诊疗"
+    "searchKeys": "エバーグリーンメディカルクリニック Evergreen Medical Clinic 六本木 港区 东京 妇人科 在线诊疗",
+    "slug": "evergreen-medical-clinic"
   },
   {
     "name": "さくらオンラインクリニック",
@@ -2890,7 +3566,9 @@
     "jpName": "さくらオンラインクリニック",
     "region": "东京",
     "address": "〒105-0012 东京都港区芝大門2-8-5 MHKビル4F（运营：トスメディカル）",
+    "addressEn": "〒105-0012 MHK Bldg 4F, 2-8-5 Shibadaimon, Minato-ku, Tokyo (operated by Tos Medical)",
     "addressShort": "东京都 港区 芝大門（以在线诊疗为主 / 登记地址近 大门駅 徒步3分）",
+    "addressShortEn": "Shibadaimon, Minato-ku, Tokyo (mainly online; registered address near Daimon Stn, 3-min walk)",
     "phone": "03-6824-6819",
     "langs": [
       "中文",
@@ -2898,21 +3576,25 @@
       "韩文"
     ],
     "langDetail": "面向在日外国人的多语言在线诊所，预约页明确支持简体・繁体中文・英文・韩文",
+    "langDetailEn": "A multilingual online clinic for foreign residents; booking page explicitly supports simplified & traditional Chinese, English, Korean",
     "depts": [
       "内科",
       "产妇人科"
     ],
     "hours": "在线诊疗 9:00–17:00（全周含节假日）",
+    "hoursEn": "Online consultations 9:00–17:00 (all week, incl. public holidays)",
     "closed": "无固定休诊（在线诊疗）",
+    "closedEn": "No fixed closing day (online consultations)",
     "note": "以在线诊疗（telemedicine）为主的诊所，可经官网/curon/EDISONE在线预约。设内科与产妇人科，明确面向不会日语的在日外国人，预约页支持简体中文。有・无日本医保患者均可受理。登记地址在港区芝大門，实际以在线方式诊疗。",
+    "noteEn": "A clinic focused on online consultations (telemedicine), bookable via its website, curon or EDISONE. It has internal medicine and obstetrics/gynecology, explicitly serves foreign residents who don't speak Japanese, and its booking page supports simplified Chinese. Patients with or without Japanese insurance are accepted. The registered address is in Shibadaimon, Minato-ku, but care is provided online.",
     "updated": "2026-06",
+    "searchKeys": "さくらオンラインクリニック Sakura Online Clinic 芝大門 大门 港区 东京 在线诊疗 产妇人科 中文",
+    "slug": "sakura-online-clinic",
     "extraBadges": [
       {
         "label": "在线诊疗",
         "type": "new"
       }
-    ],
-    "slug": "sakura-online-clinic",
-    "searchKeys": "さくらオンラインクリニック Sakura Online Clinic 芝大門 大门 港区 东京 在线诊疗 产妇人科 中文"
+    ]
   }
 ]

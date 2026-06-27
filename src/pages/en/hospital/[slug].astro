@@ -3,7 +3,7 @@ import Layout from '../../../layouts/Layout.astro';
 import Nav from '../../../components/Nav.astro';
 import Footer from '../../../components/Footer.astro';
 import { loadHospitals, hospitalSlug, type Hospital } from '../../../lib/hospitals.js';
-import { deptLabel, hospitalName, regionLabel } from '../../../lib/i18n';
+import { deptLabel, hospitalName, regionLabel, badgeLabel } from '../../../lib/i18n';
 import '../../../styles/page.css';
 import '../../../styles/hospital.css';
 
@@ -23,6 +23,18 @@ const displayName = hospitalName(h, 'en');
 const telDigits = (h.phone || '').replace(/[^\d+]/g, '');
 const hasPhone = telDigits.length >= 9;
 
+// English content with fallback to the original (Chinese) value.
+const addressEn = h.addressEn || h.address;
+const addressShortEn = h.addressShortEn || h.addressShort;
+const hoursEn = h.hoursEn || h.hours;
+const hoursShortEn = h.hoursShortEn || h.hoursShort;
+const closedEn = h.closedEn || h.closed;
+const langDetailEn = h.langDetailEn || h.langDetail;
+const noteEn = h.noteEn || h.note;
+const warningEn = h.warningEn || h.warning;
+const phoneEn = h.phoneEn || h.phone;
+
+// Map query keeps the original name/address so Google Maps resolves the real place.
 const mapAddr = h.address || h.addressShort;
 const mapHref = mapAddr
   ? `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(h.name + ' ' + mapAddr)}`
@@ -42,7 +54,7 @@ const langTokens = ((h.langDetail || (h.langs || []).join(' ')).match(/中文|�
 
 const regionEn = h.region ? regionLabel(h.region, 'en') : 'Japan';
 
-const description = `${displayName}${h.jpName ? ` (${h.jpName})` : ''} in ${regionEn}${h.addressShort ? ', ' + h.addressShort : ''}. ${
+const description = `${displayName}${h.jpName ? ` (${h.jpName})` : ''} in ${regionEn}${addressShortEn ? ', ' + addressShortEn : ''}. ${
   isCN ? 'Chinese-speaking staff available. ' : ''
 }${(h.depts && h.depts.length) ? 'Departments include ' + h.depts.slice(0, 4).map((d) => deptLabel(d, 'en')).join(', ') + '. ' : ''}${
   h.phone ? 'Phone: ' + h.phone + '.' : ''
@@ -61,7 +73,7 @@ const jsonLd = {
       ...(mapAddr ? {
         'address': {
           '@type': 'PostalAddress',
-          'streetAddress': h.address || h.addressShort,
+          'streetAddress': addressEn || addressShortEn,
           'addressRegion': regionEn,
           'addressCountry': 'JP',
         },
@@ -111,7 +123,7 @@ const jsonLd = {
         <div class="h-badges">
           {isCN && <span class="badge badge-cn">CN</span>}
           {isEN && <span class="badge badge-en">EN</span>}
-          {(h.extraBadges || []).map((b) => <span class="badge badge-new">{b.label}</span>)}
+          {(h.extraBadges || []).map((b) => <span class="badge badge-new">{badgeLabel(b.label, 'en')}</span>)}
         </div>
       </div>
       <h1 class="h-name">{displayName}</h1>
@@ -136,28 +148,28 @@ const jsonLd = {
     <section class="h-section">
       <h2 class="h-section-title">Basics</h2>
       <dl class="h-info-grid">
-        {(h.address || h.addressShort) && (
+        {(addressEn || addressShortEn) && (
           <div class="h-info-item">
             <dt>Address</dt>
-            <dd>{h.address || h.addressShort}</dd>
+            <dd>{addressEn || addressShortEn}</dd>
           </div>
         )}
         {h.phone && (
           <div class="h-info-item">
             <dt>Phone</dt>
-            <dd>{hasPhone ? <a href={`tel:${telDigits}`}>{h.phone}</a> : h.phone}</dd>
+            <dd>{hasPhone ? <a href={`tel:${telDigits}`}>{phoneEn}</a> : phoneEn}</dd>
           </div>
         )}
-        {(h.hours || h.hoursShort) && (
+        {(hoursEn || hoursShortEn) && (
           <div class="h-info-item">
             <dt>Hours</dt>
-            <dd>{h.hours || h.hoursShort}</dd>
+            <dd>{hoursEn || hoursShortEn}</dd>
           </div>
         )}
-        {h.closed && (
+        {closedEn && (
           <div class="h-info-item">
             <dt>Closed</dt>
-            <dd>{h.closed}</dd>
+            <dd>{closedEn}</dd>
           </div>
         )}
       </dl>
@@ -166,7 +178,7 @@ const jsonLd = {
     {langTokens.length > 0 && (
       <section class="h-section">
         <h2 class="h-section-title">Languages</h2>
-        {h.langDetail && <p class="h-lang-detail">{h.langDetail}</p>}
+        {langDetailEn && <p class="h-lang-detail">{langDetailEn}</p>}
       </section>
     )}
 
@@ -179,16 +191,16 @@ const jsonLd = {
       </section>
     )}
 
-    {h.note && (
+    {noteEn && (
       <section class="h-section">
         <h2 class="h-section-title">Notes</h2>
-        <p class="h-note">{h.note}</p>
+        <p class="h-note">{noteEn}</p>
       </section>
     )}
 
-    {h.warning && (
+    {warningEn && (
       <section class="h-section">
-        <div class="h-warning">⚠️ {h.warning}</div>
+        <div class="h-warning">⚠️ {warningEn}</div>
       </section>
     )}
 
