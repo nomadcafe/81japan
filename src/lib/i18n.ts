@@ -100,6 +100,27 @@ const DEPT_EN: Record<string, string> = {
   '汉方妇科': 'Kampo Gynecology',
   '肿瘤汉方': 'Kampo Oncology',
   '针灸': 'Acupuncture',
+  '妇人科': 'Gynecology',
+  '产妇人科': 'Ob/Gyn',
+  '女性内科': "Women's Internal Medicine",
+  '耳鼻咽喉科': 'ENT',
+  '乳腺外科': 'Breast Surgery',
+  '乳癌检查': 'Breast Cancer Screening',
+  '不孕治疗': 'Infertility Treatment',
+  '妇科检诊': 'Gynecological Screening',
+  '体外受精': 'IVF',
+  '生殖医疗': 'Reproductive Medicine',
+  '子宫颈癌检查': 'Cervical Cancer Screening',
+  '心脏血管外科': 'Cardiovascular Surgery',
+  '放射线诊断科': 'Diagnostic Radiology',
+  '新生儿科': 'Neonatology',
+  '齿科': 'Dental',
+  '齿科口腔外科': 'Dental & Oral Surgery',
+  '血液内科': 'Hematology',
+  '内分泌代谢内科': 'Endocrinology & Metabolism',
+  '呼吸器内科': 'Respiratory Medicine',
+  '急诊科': 'Emergency',
+  '美容皮肤科': 'Cosmetic Dermatology',
 };
 
 export function deptLabel(dept: string, locale: Locale): string {
@@ -132,4 +153,45 @@ export function regionLabel(region: string, locale: Locale): string {
 
 export function hospitalName(h: { name?: string; nameEn?: string }, locale: Locale): string {
   return (locale === 'en' && h.nameEn ? h.nameEn : h.name) || '';
+}
+
+const BADGE_EN: Record<string, string> = {
+  '拠点病院': 'Hub hospital',
+  '19语言通译': '19-lang interpreting',
+  '国際検診': 'Intl checkup',
+  '新': 'New',
+  '365天': '365 days',
+  '中国大使馆指定': 'China Embassy designated',
+  '中文网站': 'Chinese website',
+  '中文官网': 'Chinese website',
+  'JMIP认证': 'JMIP certified',
+  '微信对应': 'WeChat',
+  '中文母语接诊': 'Native Chinese doctor',
+  '周日营业': 'Open Sundays',
+  '周日开诊': 'Open Sundays',
+  '中文心理诊疗': 'Chinese mental health',
+  '中文神经内科': 'Chinese neurology',
+  '翻译免费': 'Free interpreting',
+  'JCI+JMIP认证': 'JCI+JMIP certified',
+  '24h急诊': '24h ER',
+  'JMIP+JIH认证': 'JMIP+JIH certified',
+  '中国・四国首家': 'First in Chugoku-Shikoku',
+  '50+语言通译': '50+ languages',
+  'JCI认证': 'JCI certified',
+  '中文门诊': 'Chinese clinic',
+  '中文应诊': 'Chinese consults',
+  '中英文常驻': 'CN/EN on-site',
+  '关空旁': 'By Kansai Airport',
+  '华人医生': 'Chinese doctor',
+  '中文翻译团队': 'Chinese interpreter team',
+  '年中无休': 'Open year-round',
+  '土日诊疗': 'Weekend care',
+  '医疗翻译': 'Medical interpreter',
+  '中文诊疗': 'Chinese care',
+  '在线诊疗': 'Telemedicine',
+};
+
+export function badgeLabel(label: string, locale: Locale): string {
+  if (locale === 'zh') return label;
+  return BADGE_EN[label] || label;
 }

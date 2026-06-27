@@ -1,6 +1,6 @@
 ---
 import { hospitalSlug, type Hospital } from '../lib/hospitals.js';
-import { localizePath, detectLocale, deptLabel, regionLabel, hospitalName, type Locale } from '../lib/i18n';
+import { localizePath, detectLocale, deptLabel, regionLabel, hospitalName, badgeLabel, type Locale } from '../lib/i18n';
 
 interface Props {
   hospital: Hospital;
@@ -16,7 +16,12 @@ const langSet = new Set(h.langs || []);
 const badges: { cls: string; label: string }[] = [];
 if (langSet.has('中文')) badges.push({ cls: 'badge badge-cn', label: locale === 'zh' ? '中文' : 'CN' });
 if (langSet.has('英文')) badges.push({ cls: 'badge badge-en', label: locale === 'zh' ? '英文' : 'EN' });
-(h.extraBadges || []).forEach((b) => badges.push({ cls: 'badge badge-new', label: b.label }));
+(h.extraBadges || []).forEach((b) => badges.push({ cls: 'badge badge-new', label: badgeLabel(b.label, locale) }));
+
+const en = locale === 'en';
+const cardAddressShort = (en && h.addressShortEn) || h.addressShort;
+const cardWarning = (en && h.warningEn) || h.warning;
+const cardHoursShort = (en && h.hoursShortEn) || h.hoursShort;
 
 const updatedFmt = (() => {
   const m = (h.updated || '').match(/^(\d{4})-(\d{1,2})$/);
@@ -72,13 +77,13 @@ const labels = locale === 'zh'
     </div>
     <div class="card-info">
       <div class="card-info-row">
-        {h.addressShort && (
-          <div class="info-item"><span class="info-icon">📍</span>{h.addressShort}</div>
+        {cardAddressShort && (
+          <div class="info-item"><span class="info-icon">📍</span>{cardAddressShort}</div>
         )}
-        {h.warning ? (
-          <div class="info-item"><span class="info-icon">⚠️</span>{h.warning}</div>
-        ) : h.hoursShort && (
-          <div class="info-item"><span class="info-icon">🕐</span>{h.hoursShort}</div>
+        {cardWarning ? (
+          <div class="info-item"><span class="info-icon">⚠️</span>{cardWarning}</div>
+        ) : cardHoursShort && (
+          <div class="info-item"><span class="info-icon">🕐</span>{cardHoursShort}</div>
         )}
       </div>
     </div>
