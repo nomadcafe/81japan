@@ -3722,5 +3722,130 @@
     "noteEn": "Vietnamese simultaneous interpreting and English supported. Emergency medicine, internal medicine, pediatrics, surgery and more; emergencies accepted 24/7, 365 days. The website has Vietnamese and English pages.",
     "updated": "2026-07",
     "searchKeys": "T-松岡救急クリニック神田 TMC神田 T-Matsuoka Emergency Clinic Kanda 神田 千代田区 东京 越南语 ベトナム語 急救 24小时"
+  },
+  {
+    "name": "ふくや皮フ科クリニック",
+    "nameEn": "Fukuya Dermatology Clinic",
+    "jpName": "ふくや皮フ科クリニック",
+    "region": "神户",
+    "address": "兵库县神户市中央区下山手通2-12-11 神戸華僑会館1F",
+    "addressEn": "Kobe Kakyo Kaikan 1F, 2-12-11 Shimoyamatedori, Chuo-ku, Kobe, Hyogo",
+    "addressShort": "兵库县 神户市中央区 下山手通（三宮駅 徒步2分）",
+    "addressShortEn": "Shimoyamatedori, Chuo-ku, Kobe (2-min walk from Sannomiya Stn)",
+    "phone": "078-977-7298",
+    "langs": [
+      "中文"
+    ],
+    "langDetail": "中文对应",
+    "langDetailEn": "Chinese",
+    "depts": [
+      "皮肤科"
+    ],
+    "hours": "周一・二・四・五・六 9:00–12:00 / 14:00–17:00",
+    "hoursEn": "Mon, Tue, Thu, Fri, Sat 9:00–12:00 / 14:00–17:00",
+    "hoursShort": "9:00–17:00",
+    "hoursShortEn": "9:00–17:00",
+    "closed": "周三・周日・节假日・盂兰盆节・年末年始",
+    "closedEn": "Wed, Sun, holidays, Obon & New Year",
+    "note": "位于神户华侨会馆1楼，提供中文对应。一般皮肤科・小儿皮肤科・美容皮肤科。就诊前建议先电话确认。",
+    "noteEn": "Located on the 1F of the Kobe Overseas Chinese Hall; Chinese supported. General, pediatric and cosmetic dermatology. Call ahead to confirm.",
+    "updated": "2026-07",
+    "searchKeys": "ふくや皮フ科クリニック Fukuya Dermatology Clinic 松岛智慧 下山手通 华侨会馆 神户 中央区 三宫 中文 皮肤科"
+  },
+  {
+    "name": "梶歯科医院",
+    "nameEn": "Kaji Dental Clinic",
+    "jpName": "梶歯科医院",
+    "region": "神户",
+    "address": "兵库县神户市垂水区天ノ下町1-1 ウエステ垂水2F",
+    "addressEn": "Weste Tarumi 2F, 1-1 Amanoshitacho, Tarumi-ku, Kobe, Hyogo",
+    "addressShort": "兵库县 神户市垂水区 天ノ下町（垂水駅 徒步2分）",
+    "addressShortEn": "Amanoshitacho, Tarumi-ku, Kobe (2-min walk from Tarumi Stn)",
+    "phone": "078-707-2735",
+    "langs": [
+      "中文"
+    ],
+    "langDetail": "中文（日常会话程度，勤务医曾就读华侨学校）",
+    "langDetailEn": "Chinese (conversational; a dentist attended an overseas-Chinese school)",
+    "depts": [
+      "牙科",
+      "矫正牙科",
+      "儿童牙科",
+      "口腔外科"
+    ],
+    "hours": "平日 9:00–12:00 / 15:00–19:00 / 周六 9:00–12:00",
+    "hoursEn": "Weekdays 9:00–12:00 / 15:00–19:00; Sat 9:00–12:00",
+    "hoursShort": "9:00–19:00（周六仅上午）",
+    "hoursShortEn": "9:00–19:00 (Sat morning only)",
+    "closed": "周日・节假日",
+    "closedEn": "Sun & holidays",
+    "note": "提供中文（日常会话程度）对应，一名勤务医曾就读华侨学校。牙科・矫正・儿童牙科・口腔外科。垂水站徒步2分，位于商场内、设有停车场。",
+    "noteEn": "Chinese at a conversational level (one dentist attended an overseas-Chinese school). General, orthodontic, pediatric dentistry and oral surgery. 2-min walk from Tarumi Stn, inside a mall with parking.",
+    "updated": "2026-07",
+    "searchKeys": "梶歯科医院 Kaji Dental Clinic 垂水区 天ノ下町 神户 中文 牙科 矫正"
+  },
+  {
+    "name": "さくら歯科医院（神户）",
+    "nameEn": "Sakura Dental Clinic (Kobe)",
+    "jpName": "さくら歯科医院",
+    "region": "神户",
+    "address": "兵库县神户市中央区中山手通7-25-43 1F",
+    "addressEn": "1F, 7-25-43 Nakayamatedori, Chuo-ku, Kobe, Hyogo",
+    "addressShort": "兵库县 神户市中央区 中山手通（大倉山駅 附近）",
+    "addressShortEn": "Nakayamatedori, Chuo-ku, Kobe (near Okurayama Stn)",
+    "phone": "078-351-6411",
+    "langs": [
+      "中文"
+    ],
+    "langDetail": "中文对应",
+    "langDetailEn": "Chinese",
+    "depts": [
+      "牙科",
+      "矫正牙科",
+      "儿童牙科",
+      "口腔外科"
+    ],
+    "hours": "9:30–13:00 / 14:30–19:00（周六下午 14:00–17:00）预约制，周四以出诊为主",
+    "hoursEn": "9:30–13:00 / 14:30–19:00 (Sat afternoon 14:00–17:00); by appointment, Thu prioritizes home visits",
+    "hoursShort": "9:30–19:00（预约制）",
+    "hoursShortEn": "9:30–19:00 (by appointment)",
+    "closed": "周日・节假日（详情请电话确认）",
+    "closedEn": "Sun & holidays (please confirm by phone)",
+    "note": "提供中文对应。牙科・矫正・儿童牙科・口腔外科，采预约制，周四以往诊（上门诊疗）为主。就诊前建议先电话确认。",
+    "noteEn": "Chinese supported. General, orthodontic, pediatric dentistry and oral surgery; by appointment, with Thursdays focused on home visits. Call ahead to confirm.",
+    "updated": "2026-07",
+    "searchKeys": "さくら歯科医院 Sakura Dental Clinic 中山手通 大倉山 神户 中央区 中文 牙科"
+  },
+  {
+    "name": "その歯科クリニック",
+    "nameEn": "Sono Dental Clinic",
+    "jpName": "その歯科クリニック",
+    "region": "神户",
+    "address": "兵库县神户市灘区桜口町1-1-12",
+    "addressEn": "1-1-12 Sakuraguchicho, Nada-ku, Kobe, Hyogo",
+    "addressShort": "兵库县 神户市灘区 桜口町（六甲道駅 徒步7分 / 新在家駅 徒步5分）",
+    "addressShortEn": "Sakuraguchicho, Nada-ku, Kobe (7-min walk from Rokkomichi Stn)",
+    "phone": "078-262-1280",
+    "langs": [
+      "中文"
+    ],
+    "langDetail": "中文对应",
+    "langDetailEn": "Chinese",
+    "depts": [
+      "牙科",
+      "矫正牙科",
+      "儿童牙科",
+      "口腔外科"
+    ],
+    "hours": "挂号 9:30–18:30（周六至17:00）",
+    "hoursEn": "Reception 9:30–18:30 (Sat until 17:00)",
+    "hoursShort": "9:30–18:30（周六至17:00）",
+    "hoursShortEn": "9:30–18:30 (Sat until 17:00)",
+    "closed": "周日・节假日",
+    "closedEn": "Sun & holidays",
+    "note": "提供中文对应。牙科・矫正・儿童牙科・口腔外科。阪神「新在家」站徒步5分、JR「六甲道」站徒步7分。就诊前建议先电话确认。",
+    "noteEn": "Chinese supported. General, orthodontic, pediatric dentistry and oral surgery. 5-min walk from Hanshin Shinzaike Stn, 7-min from JR Rokkomichi Stn. Call ahead to confirm.",
+    "updated": "2026-07",
+    "searchKeys": "その歯科クリニック Sono Dental Clinic 灘区 桜口町 六甲道 新在家 神户 中文 牙科"
   }
 ]
