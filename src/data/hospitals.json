@@ -647,10 +647,12 @@
     "addressShortEn": "Saiwaicho, Naniwa-ku, Osaka (5-min walk from JR Namba Stn)",
     "phone": "06-6567-2152",
     "langs": [
-      "英文"
+      "中文",
+      "英文",
+      "俄文"
     ],
-    "langDetail": "英文",
-    "langDetailEn": "English",
+    "langDetail": "中文 英文 俄文",
+    "langDetailEn": "Chinese, English, Russian",
     "depts": [
       "牙科"
     ],
@@ -660,10 +662,39 @@
     "hoursShortEn": "10:00–17:00 (Tue & Thu morning only)",
     "closed": "周六（不定）",
     "closedEn": "Sat (irregular)",
-    "note": "提供英文对应。周日・节假日需提前预约。年末年始12/31–1/3休诊。官网有英文版，母语级别英语医生仅周日出诊。",
-    "noteEn": "English supported. Book ahead for Sun & holidays. Closed Dec 31–Jan 3. The website has an English version; the native-level English-speaking dentist works Sun only.",
+    "note": "提供中文・英文・俄语对应。周日・节假日需提前预约。年末年始12/31–1/3休诊。官网有英文版，母语级别英语医生仅周日出诊。",
+    "noteEn": "Chinese, English & Russian supported. Book ahead for Sun & holidays. Closed Dec 31–Jan 3. The website has an English version; the native-level English-speaking dentist works Sun only.",
     "updated": "2026-04",
     "searchKeys": "みなと町歯科"
+  },
+  {
+    "name": "なないろ歯科医院",
+    "nameEn": "Nanairo Dental Clinic",
+    "jpName": "なないろ歯科医院",
+    "region": "大阪",
+    "address": "大阪府大阪市浪速区元町3-9-15 アビタ元町1F",
+    "addressEn": "Abita Motomachi 1F, 3-9-15 Motomachi, Naniwa-ku, Osaka",
+    "addressShort": "大阪府 浪速区 元町（大国町駅・なんば駅 附近）",
+    "addressShortEn": "Motomachi, Naniwa-ku, Osaka (near Daikokucho & Namba Stns)",
+    "phone": "06-6644-7716",
+    "langs": [
+      "中文"
+    ],
+    "langDetail": "中文",
+    "langDetailEn": "Chinese",
+    "depts": [
+      "牙科"
+    ],
+    "hours": "周一・周二・周四・周五 9:30–13:00 / 15:00–19:30 / 周六 10:00–13:00 / 15:00–18:00（挂号截止于闭诊前30分钟）",
+    "hoursEn": "Mon, Tue, Thu, Fri 9:30–13:00 / 15:00–19:30; Sat 10:00–13:00 / 15:00–18:00 (reception closes 30 min before closing)",
+    "hoursShort": "9:30–19:30（周六至18:00）",
+    "hoursShortEn": "9:30–19:30 (Sat until 18:00)",
+    "closed": "周三・周日・节假日",
+    "closedEn": "Wed, Sun & holidays",
+    "note": "提供中文对应，医生为台湾人。综合牙科，另设儿童牙科、齿列矫正、种植牙、美白等诊疗。就诊前建议先电话确认。",
+    "noteEn": "Chinese supported; the dentist is from Taiwan. General dentistry plus pediatric dentistry, orthodontics, implants and whitening. Call ahead to confirm before visiting.",
+    "updated": "2026-07",
+    "searchKeys": "なないろ歯科医院 nanairo 元町"
   },
   {
     "name": "Osaka Lee Clinic（イークリニック）",
