@@ -3627,5 +3627,100 @@
         "type": "new"
       }
     ]
+  },
+  {
+    "name": "中井駅前クリニック",
+    "nameEn": "Nakai Ekimae Clinic",
+    "jpName": "中井駅前クリニック",
+    "region": "东京",
+    "address": "东京都新宿区上落合2-20-2 杉山ビル3F",
+    "addressEn": "Sugiyama Bldg 3F, 2-20-2 Kamiochiai, Shinjuku-ku, Tokyo",
+    "addressShort": "东京都 新宿区 上落合（中井駅 徒步约1分）",
+    "addressShortEn": "Kamiochiai, Shinjuku-ku, Tokyo (1-min walk from Nakai Stn)",
+    "phone": "03-3365-1627",
+    "langs": [
+      "越南语"
+    ],
+    "langDetail": "越南语（武永贤院长为越南裔，越南语流利）",
+    "langDetailEn": "Vietnamese (director Dr. Ken Takenaga is of Vietnamese origin and fluent)",
+    "depts": [
+      "内科",
+      "儿科",
+      "皮肤科",
+      "过敏科"
+    ],
+    "hours": "周二・三・五・六 11:45–15:30 / 17:30–19:30 / 周日 11:45–16:30 / 周四 12:45–15:30",
+    "hoursEn": "Tue, Wed, Fri, Sat 11:45–15:30 / 17:30–19:30; Sun 11:45–16:30; Thu 12:45–15:30",
+    "hoursShort": "11:45–19:30（时段随曜日不同）",
+    "hoursShortEn": "11:45–19:30 (varies by day)",
+    "closed": "周一・节假日",
+    "closedEn": "Mon & holidays",
+    "note": "提供越南语对应，武永贤院长自幼在日、为越南裔，越南语流利。内科・儿科・皮肤科・过敏科。就诊前建议先电话确认。",
+    "noteEn": "Vietnamese supported; director Dr. Ken Takenaga, who grew up in Japan and is of Vietnamese origin, is fluent in Vietnamese. Internal medicine, pediatrics, dermatology and allergy. Call ahead to confirm.",
+    "updated": "2026-07",
+    "searchKeys": "中井駅前クリニック Nakai Ekimae Clinic 武永贤 上落合 新宿区 东京 越南语 ベトナム語"
+  },
+  {
+    "name": "高田馬場さくらクリニック",
+    "nameEn": "Takadanobaba Sakura Clinic",
+    "jpName": "高田馬場さくらクリニック",
+    "region": "东京",
+    "address": "东京都新宿区高田馬場4-11-8 河上ビル3F",
+    "addressEn": "Kawakami Bldg 3F, 4-11-8 Takadanobaba, Shinjuku-ku, Tokyo",
+    "addressShort": "东京都 新宿区 高田馬場（高田馬場駅 附近）",
+    "addressShortEn": "Takadanobaba, Shinjuku-ku, Tokyo (near Takadanobaba Stn)",
+    "phone": "03-5937-3717",
+    "langs": [
+      "越南语"
+    ],
+    "langDetail": "越南语（配越南语翻译协助就诊）",
+    "langDetailEn": "Vietnamese (a Vietnamese interpreter assists visits)",
+    "depts": [
+      "骨科",
+      "内科"
+    ],
+    "hours": "骨科 9:30–12:30（周一~四・六）/ 15:00–18:00（周一~四）；内科 15:00–17:30",
+    "hoursEn": "Orthopedics 9:30–12:30 (Mon–Thu & Sat) / 15:00–18:00 (Mon–Thu); Internal medicine 15:00–17:30",
+    "hoursShort": "9:30–18:00（科室时段不同）",
+    "hoursShortEn": "9:30–18:00 (varies by department)",
+    "closed": "周日・节假日",
+    "closedEn": "Sun & holidays",
+    "note": "提供越南语翻译协助就诊。整形外科（骨科）・内科。本院无法处理的病症可协助转诊并开具介绍信。越南语对应曜日请提前电话确认。",
+    "noteEn": "A Vietnamese interpreter helps with visits. Orthopedics and internal medicine. For conditions it can't treat, staff help arrange a referral and write a referral letter. Call ahead to confirm which days Vietnamese is available.",
+    "updated": "2026-07",
+    "searchKeys": "高田馬場さくらクリニック Takadanobaba Sakura Clinic 高田马场 新宿区 东京 越南语 ベトナム語 整形外科"
+  },
+  {
+    "name": "T-松岡救急クリニック神田",
+    "nameEn": "T-Matsuoka Emergency Clinic Kanda (TMC Kanda)",
+    "jpName": "T-松岡救急クリニック神田",
+    "region": "东京",
+    "address": "东京都千代田区神田鍛冶町3-4 oak神田鍛冶町ビル1F",
+    "addressEn": "oak Kanda-Kajicho Bldg 1F, 3-4 Kanda-Kajicho, Chiyoda-ku, Tokyo",
+    "addressShort": "东京都 千代田区 神田鍛冶町（神田駅 徒步2分）",
+    "addressShortEn": "Kanda-Kajicho, Chiyoda-ku, Tokyo (2-min walk from Kanda Stn)",
+    "phone": "03-3518-5188",
+    "langs": [
+      "越南语",
+      "英文"
+    ],
+    "langDetail": "越南语・英文（越南语同声传译对应）",
+    "langDetailEn": "Vietnamese & English (Vietnamese simultaneous interpreting)",
+    "depts": [
+      "急诊",
+      "内科",
+      "儿科",
+      "外科"
+    ],
+    "hours": "周一~周六 9:00–13:00 / 14:00–18:00；急患 24小时365天对应",
+    "hoursEn": "Mon–Sat 9:00–13:00 / 14:00–18:00; emergencies handled 24/7, 365 days",
+    "hoursShort": "9:00–18:00（急患24小时）",
+    "hoursShortEn": "9:00–18:00 (emergencies 24h)",
+    "closed": "周日（急患除外）",
+    "closedEn": "Sun (except emergencies)",
+    "note": "提供越南语同声传译及英文对应。急救科・内科・儿科・外科等，急患24小时365天受理。官网有越南语・英文页面。",
+    "noteEn": "Vietnamese simultaneous interpreting and English supported. Emergency medicine, internal medicine, pediatrics, surgery and more; emergencies accepted 24/7, 365 days. The website has Vietnamese and English pages.",
+    "updated": "2026-07",
+    "searchKeys": "T-松岡救急クリニック神田 TMC神田 T-Matsuoka Emergency Clinic Kanda 神田 千代田区 东京 越南语 ベトナム語 急救 24小时"
   }
 ]
