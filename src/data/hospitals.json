@@ -4879,5 +4879,39 @@
     "updated": "2026-07",
     "searchKeys": "日本橋耳鼻咽喉科医院 Nipponbashi ENT Clinic 中央区 日本橋 大阪 中文 英文 韩语 耳鼻喉科 耳鼻咽喉科",
     "slug": "nipponbashi-ent-clinic"
+  },
+  {
+    "name": "ポネレクリニック大阪",
+    "nameEn": "Ponere Clinic Osaka",
+    "jpName": "ポネレクリニック大阪",
+    "slug": "ponere-clinic-osaka",
+    "region": "大阪",
+    "address": "〒530-0001 大阪府大阪市北区梅田3-2-2 KITTE大阪6階",
+    "addressEn": "KITTE Osaka 6F, 3-2-2 Umeda, Kita-ku, Osaka 530-0001",
+    "addressShort": "大阪府 北区 梅田（JR大阪駅西口直结 / 地铁梅田站徒步5分）",
+    "addressShortEn": "Umeda, Kita-ku, Osaka (direct from JR Osaka Stn west exit)",
+    "phone": "06-6454-3220",
+    "langs": [
+      "中文",
+      "英文"
+    ],
+    "langDetail": "中文 英文（设有中文・英文网站，面向国际患者・医疗旅游）",
+    "langDetailEn": "Chinese, English (Chinese & English websites; caters to international / medical-tourism patients)",
+    "depts": [
+      "妇科",
+      "内科",
+      "消化内科",
+      "美容皮肤科"
+    ],
+    "hours": "妇科 10:00–14:00 / 15:00–19:00（周一二三五六）；内科・消化内科 周二四日祝；美容皮肤科 每日 10:00–19:00",
+    "hoursEn": "Gynecology 10:00–14:00 / 15:00–19:00 (Mon,Tue,Wed,Fri,Sat); Internal/GI Tue,Thu,Sun,Hol; Cosmetic dermatology daily 10:00–19:00",
+    "hoursShort": "10:00–19:00（各科时段不同）",
+    "hoursShortEn": "10:00–19:00 (varies by department)",
+    "closed": "各科不同（妇科：周四・周日・节假日休）",
+    "closedEn": "Varies by department (Gynecology: Thu, Sun & holidays)",
+    "note": "位于 JR大阪站西口直结的 KITTE大阪6楼。设有中文・英文网站，面向国际患者与医疗旅游，提供妇科（含妇科肿瘤）、内科・消化内科、美容皮肤科。各科诊疗时间不同，就诊前请先电话或网上确认（含中文对应的方式与时段）。",
+    "noteEn": "On the 6th floor of KITTE Osaka, directly connected to JR Osaka Stn west exit. Chinese and English websites; caters to international and medical-tourism patients. Gynecology (incl. gyn-oncology), internal/GI medicine, and cosmetic dermatology. Hours differ by department — call or book online ahead and confirm Chinese-support arrangements.",
+    "updated": "2026-07",
+    "searchKeys": "ポネレクリニック大阪 Ponere Clinic Osaka 北区 梅田 KITTE大阪 大阪 中文 英文 妇科 内科 消化内科 美容皮肤科 医疗旅游"
   }
 ]
