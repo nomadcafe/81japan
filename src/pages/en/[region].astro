@@ -1,0 +1,17 @@
+---
+import RegionPage from '../../components/RegionPage.astro';
+import { loadHospitals } from '../../lib/hospitals.js';
+import { REGIONS } from '../../lib/regions';
+
+export async function getStaticPaths() {
+  const hospitals = await loadHospitals();
+  const present = new Set(hospitals.map((h) => h.region).filter(Boolean));
+  return REGIONS.filter((r) => present.has(r.key)).map((r) => ({
+    params: { region: r.slug },
+    props: { regionKey: r.key },
+  }));
+}
+
+const { regionKey } = Astro.props;
+---
+<RegionPage regionKey={regionKey} locale="en" />

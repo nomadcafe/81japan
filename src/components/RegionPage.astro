@@ -1,0 +1,217 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Nav from './Nav.astro';
+import Footer from './Footer.astro';
+import HospitalCard from './HospitalCard.astro';
+import { loadHospitals, hospitalSlug } from '../lib/hospitals.js';
+import { localizePath, regionLabel, langLabel, sortLangs, type Locale } from '../lib/i18n';
+import { REGIONS, regionByKey } from '../lib/regions';
+import '../styles/index.css';
+
+interface Props {
+  regionKey: string;
+  locale: Locale;
+}
+
+const { regionKey, locale } = Astro.props;
+const zh = locale === 'zh';
+const meta = regionByKey(regionKey)!;
+
+const hospitals = await loadHospitals();
+
+// 各地区总数（供侧栏地区列表用）
+const regionCounts: Record<string, number> = {};
+hospitals.forEach((h) => {
+  if (h.region) regionCounts[h.region] = (regionCounts[h.region] || 0) + 1;
+});
+
+// 本地区医院
+const list = hospitals.filter((h) => h.region === regionKey);
+const total = list.length;
+
+// 本地区服务语言（去重 + 规范排序）
+const langsPresent = sortLangs([...new Set(list.flatMap((h) => h.langs || []))]);
+const langLabelsZh = langsPresent.map((l) => langLabel(l, 'zh'));
+const langLabelsEn = langsPresent.map((l) => langLabel(l, 'en'));
+// 标题里只突出前 2 种（通常是中文・英文）
+const featuredZh = langLabelsZh.slice(0, 2);
+const featuredEn = langLabelsEn.slice(0, 2);
+
+// 侧栏语言筛选计数（本地区内）
+const langCounts: Record<string, number> = { '中文': 0, '英文': 0, '越南语': 0 };
+list.forEach((h) => (h.langs || []).forEach((l) => { if (l in langCounts) langCounts[l]++; }));
+
+const nameZh = meta.nameZh;
+const nameEn = meta.nameEn;
+
+const pageTitle = zh
+  ? `${nameZh} ${featuredZh.join('・')}对应医院・诊所一览（${total}家） | 81日本`
+  : `${nameEn} Hospitals & Clinics with ${featuredEn.join(' & ')} Support (${total}) | 81Japan`;
+
+const pageDesc = zh
+  ? `收录${nameZh}地区提供${langLabelsZh.join('・')}等外语对应的医院与诊所共 ${total} 家，含地址、电话、诊疗时间、服务语言与科室，可按语言和科室筛选，持续更新。`
+  : `Directory of ${total} hospitals and clinics in ${nameEn} with ${langLabelsEn.join(', ')} support — addresses, phone numbers, hours, languages and departments. Filter by language or specialty. Updated regularly.`;
+
+const h1 = zh
+  ? `${nameZh} · 支持${featuredZh.join('・')}的医院・诊所`
+  : `${nameEn} — Hospitals & Clinics with ${featuredEn.join(' & ')} Support`;
+
+const intro = zh
+  ? `以下整理了${nameZh}地区提供${langLabelsZh.join('、')}等外语对应的医院与诊所，共 ${total} 家。你可以按服务语言与科室筛选，查看每家的地址、电话与就诊时间。想找${nameZh}的中文医院或英文诊所，从这里开始。`
+  : `A directory of hospitals and clinics in ${nameEn} with staff or interpreters for ${langLabelsEn.join(', ')}, ${total} in total. Filter by language and specialty, and check each one's address, phone number and consultation hours.`;
+
+const path = localizePath(`/${meta.slug}`, locale);
+const siteBase = zh ? 'https://www.81japan.com' : 'https://www.81japan.com/en';
+const homeHref = localizePath('/', locale);
+
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@graph': [
+    {
+      '@type': 'BreadcrumbList',
+      'itemListElement': [
+        { '@type': 'ListItem', 'position': 1, 'name': zh ? '首页' : 'Home', 'item': `${siteBase}/` },
+        { '@type': 'ListItem', 'position': 2, 'name': zh ? nameZh : nameEn, 'item': new URL(path, 'https://www.81japan.com').href },
+      ],
+    },
+    {
+      '@type': 'ItemList',
+      'name': h1,
+      'numberOfItems': total,
+      'itemListElement': list.map((h, i) => ({
+        '@type': 'ListItem',
+        'position': i + 1,
+        'name': h.name,
+        'url': `https://www.81japan.com${localizePath(`/hospital/${encodeURIComponent(hospitalSlug(h))}`, locale)}`,
+      })),
+    },
+  ],
+};
+
+const t = zh
+  ? {
+      region: '地区', all: '全部地区', lang: '服务语言', langAll: '全部',
+      cn: '🇨🇳 中文对应', en: '🇺🇸 英文对应', vi: '🇻🇳 越南语对应',
+      dept: '科室', found1: '共找到', found2: '家医疗机构',
+      sortDate: '最近更新', sortRegion: '按地区', sortDept: '按科室',
+      searchPh: '搜索医院名称、科室…', searchBtn: '搜索',
+      emptyT: '没有找到相关结果', emptyS: '换个关键词试试，或者',
+      submit: '提交新信息',
+      depts: [['内科','内科'],['外科','外科'],['产科','产科・妇科'],['儿科','儿科'],['皮肤科','皮肤科'],['牙科','牙科・口腔']] as [string,string][],
+    }
+  : {
+      region: 'Region', all: 'All regions', lang: 'Language', langAll: 'All',
+      cn: '🇨🇳 Chinese', en: '🇺🇸 English', vi: '🇻🇳 Vietnamese',
+      dept: 'Department', found1: '', found2: 'facilities found',
+      sortDate: 'Latest update', sortRegion: 'By region', sortDept: 'By department',
+      searchPh: 'Search by name, department…', searchBtn: 'Search',
+      emptyT: 'No results found', emptyS: 'Try a different keyword, or',
+      submit: 'submit a new entry',
+      depts: [['内科','Internal medicine'],['外科','Surgery'],['产科','Ob/Gyn'],['儿科','Pediatrics'],['皮肤科','Dermatology'],['牙科','Dental']] as [string,string][],
+    };
+const submitHref = localizePath('/submit', locale);
+---
+<Layout title={pageTitle} description={pageDesc} path={path} locale={locale}>
+  <Fragment slot="head">
+    <script type="application/ld+json" set:html={JSON.stringify(jsonLd)} />
+  </Fragment>
+
+  <Nav active="hospitals" locale={locale} />
+
+  <section class="hero" aria-labelledby="heroTitle">
+    <div class="hero-card">
+      <nav class="region-crumb" aria-label={zh ? '面包屑' : 'Breadcrumb'}>
+        <a href={homeHref}>{zh ? '首页' : 'Home'}</a>
+        <span aria-hidden="true">›</span>
+        <span>{zh ? nameZh : nameEn}</span>
+      </nav>
+      <h1 class="region-h1" id="heroTitle">{h1}</h1>
+      <p class="hero-sub region-intro">{intro}</p>
+
+      <div class="search-wrap" role="search" aria-label={zh ? '搜索医院' : 'Search hospitals'}>
+        <input class="search-input" placeholder={t.searchPh} id="searchInput" oninput="onSearchInput()" />
+        <button class="search-btn">{t.searchBtn}</button>
+      </div>
+    </div>
+  </section>
+
+  <div class="main-layout">
+    <aside class="sidebar" aria-label={zh ? '筛选条件' : 'Filters'}>
+      <div class="filter-group">
+        <div class="filter-title">{t.region}</div>
+        <a class="filter-option" href={homeHref}>
+          <span>{t.all}</span>
+          <span class="filter-count">{hospitals.length}</span>
+        </a>
+        {REGIONS.filter((r) => (regionCounts[r.key] || 0) > 0).map((r) => (
+          <a
+            class={`filter-option${r.key === regionKey ? ' active' : ''}`}
+            href={localizePath(`/${r.slug}`, locale)}
+            aria-current={r.key === regionKey ? 'page' : undefined}
+          >
+            <span>{zh ? r.labelZh : r.labelEn}</span>
+            <span class="filter-count">{regionCounts[r.key]}</span>
+          </a>
+        ))}
+      </div>
+
+      <div class="filter-group">
+        <div class="filter-title">{t.lang}</div>
+        <div class="filter-option active" onclick="filterLang('全部', this)" data-lang-filter="全部">
+          <span>{t.langAll}</span>
+          <span class="filter-count">{total}</span>
+        </div>
+        {langCounts['中文'] > 0 && (
+          <div class="filter-option" onclick="filterLang('中文', this)" data-lang-filter="中文">
+            <span>{t.cn}</span>
+            <span class="filter-count">{langCounts['中文']}</span>
+          </div>
+        )}
+        {langCounts['英文'] > 0 && (
+          <div class="filter-option" onclick="filterLang('英文', this)" data-lang-filter="英文">
+            <span>{t.en}</span>
+            <span class="filter-count">{langCounts['英文']}</span>
+          </div>
+        )}
+        {langCounts['越南语'] > 0 && (
+          <div class="filter-option" onclick="filterLang('越南语', this)" data-lang-filter="越南语">
+            <span>{t.vi}</span>
+            <span class="filter-count">{langCounts['越南语']}</span>
+          </div>
+        )}
+      </div>
+
+      <div class="filter-group">
+        <div class="filter-title">{t.dept}</div>
+        {t.depts.map(([kw, label]) => (
+          <div class="filter-option" onclick={`setSearch('${kw}')`}>{label}</div>
+        ))}
+      </div>
+    </aside>
+
+    <main>
+      <div class="list-header">
+        <div class="list-title">{t.found1} <strong id="shownCount">{total}</strong> {t.found2}</div>
+        <select class="sort-select" id="sortSelect" onchange="sortCards(this.value)">
+          <option value="date">{t.sortDate}</option>
+          <option value="region">{t.sortRegion}</option>
+          <option value="dept">{t.sortDept}</option>
+        </select>
+      </div>
+
+      <div id="cardList" role="list" aria-label={zh ? '医院列表' : 'Hospital list'}>
+        {list.map((h) => <HospitalCard hospital={h} locale={locale} />)}
+      </div>
+
+      <div id="emptyState" style="display:none; text-align:center; padding:60px 20px; color:var(--ink-3);">
+        <div style="font-size:32px; margin-bottom:12px;">🔍</div>
+        <div style="font-size:15px; margin-bottom:6px;">{t.emptyT}</div>
+        <div style="font-size:13px;">{t.emptyS} <a href={submitHref} style="color:var(--red);">{t.submit}</a></div>
+      </div>
+    </main>
+  </div>
+
+  <Footer locale={locale} />
+
+  <script is:inline src="/hospitals.js" defer></script>
+</Layout>
