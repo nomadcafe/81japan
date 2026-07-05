@@ -1,6 +1,7 @@
 /* ── Breadcrumb ── */
 .breadcrumb {
   max-width: 880px;
+  width: 100%;
   margin: 24px auto 0;
   padding: 0 40px;
   font-size: 12px;
@@ -24,6 +25,7 @@
 /* ── Detail ── */
 .h-detail {
   max-width: 880px;
+  width: 100%;
   margin: 0 auto;
   padding: 24px 40px 60px;
   flex: 1;
