@@ -1,5 +1,6 @@
 // 医院详情页结构化数据（JSON-LD）辅助：语言代码、机构类型、邮编拆分。
 // 中英两套详情页共用，保证输出一致。
+import { sortLangs, langLabel, type Locale } from './i18n';
 
 type H = { name?: string; jpName?: string; langs?: string[]; langDetail?: string };
 
@@ -39,4 +40,24 @@ export function splitPostal(addr?: string): { postalCode?: string; streetAddress
   const postalCode = `${m[1]}-${m[2]}`;
   const streetAddress = addr.replace(m[0], '').trim() || undefined;
   return { postalCode, streetAddress };
+}
+
+// 去掉 jpName 末尾的法人后缀（如「（医療法人）」「（医療法人 順心会）」），用于标题显示
+export function cleanJpName(jp?: string): string {
+  if (!jp) return '';
+  return jp.replace(/[（(](医療法人|社会福祉法人|一般社団法人|公益財団法人|医療法人社団|医療法人財団)[^）)]*[）)]\s*$/, '').trim();
+}
+
+// 机构名词：Hospital→医院/Hospital，其余→诊所/Clinic
+export function typeNoun(h: H, locale: Locale): string {
+  const isHospital = medicalType(h) === 'Hospital';
+  return locale === 'zh' ? (isHospital ? '医院' : '诊所') : (isHospital ? 'Hospital' : 'Clinic');
+}
+
+// 标题用的语言短语：按规范顺序取前 max 种，中文用「・」、英文用「 & 」连接
+export function featuredLangLabel(h: H, locale: Locale, max = 2): string {
+  const langs = sortLangs([...new Set(h.langs || [])]).slice(0, max);
+  const labels = langs.map((l) => langLabel(l, locale));
+  if (!labels.length) return locale === 'zh' ? '外语' : 'Multilingual';
+  return locale === 'zh' ? labels.join('・') : labels.join(' & ');
 }
