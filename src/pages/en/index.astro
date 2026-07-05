@@ -4,6 +4,7 @@ import Nav from '../../components/Nav.astro';
 import Footer from '../../components/Footer.astro';
 import HospitalCard from '../../components/HospitalCard.astro';
 import { loadHospitals, hospitalSlug } from '../../lib/hospitals.js';
+import { REGIONS } from '../../lib/regions';
 import '../../styles/index.css';
 
 const hospitals = await loadHospitals();
@@ -79,27 +80,11 @@ const jsonLd = {
           <span>All</span>
           <span class="filter-count">{total}</span>
         </div>
-        {[
-          { key: '东京', label: 'Tokyo' },
-          { key: '千叶', label: 'Chiba' },
-          { key: '埼玉', label: 'Saitama' },
-          { key: '横浜', label: 'Yokohama' },
-          { key: '大阪', label: 'Osaka' },
-          { key: '京都', label: 'Kyoto' },
-          { key: '神户', label: 'Kobe' },
-          { key: '福冈', label: 'Fukuoka' },
-          { key: '札幌', label: 'Hokkaido' },
-          { key: '名古屋', label: 'Nagoya' },
-          { key: '广岛', label: 'Hiroshima' },
-          { key: '冈山', label: 'Okayama' },
-          { key: '浜松', label: 'Hamamatsu' },
-          { key: '仙台', label: 'Sendai' },
-          { key: '冲绳', label: 'Okinawa' },
-        ].filter(r => (regionCounts[r.key] || 0) > 0).map(r => (
-          <div class="filter-option" onclick={`filterRegion('${r.key}', this)`} data-region-filter={r.key}>
-            <span>{r.label}</span>
+        {REGIONS.filter(r => (regionCounts[r.key] || 0) > 0).map(r => (
+          <a class="filter-option" href={`/en/${r.slug}`} data-region-filter={r.key} onclick={`filterRegion('${r.key}', this); return false;`}>
+            <span>{r.labelEn}</span>
             <span class="filter-count">{regionCounts[r.key]}</span>
-          </div>
+          </a>
         ))}
       </div>
 

@@ -151,6 +151,37 @@ export function regionLabel(region: string, locale: Locale): string {
   return REGION_EN[region] || region;
 }
 
+// 服务语言：规范排序 + 英文标签，供地区落地页拼接标题/描述
+export const LANG_ORDER = ['中文', '英文', '韩文', '粤语', '越南语', '法文', '德文', '泰文', '印尼文', '台语', '俄文'];
+
+const LANG_EN: Record<string, string> = {
+  '中文': 'Chinese',
+  '英文': 'English',
+  '韩文': 'Korean',
+  '粤语': 'Cantonese',
+  '越南语': 'Vietnamese',
+  '法文': 'French',
+  '德文': 'German',
+  '泰文': 'Thai',
+  '印尼文': 'Indonesian',
+  '台语': 'Taiwanese',
+  '俄文': 'Russian',
+};
+
+export function langLabel(lang: string, locale: Locale): string {
+  if (locale === 'zh') return lang;
+  return LANG_EN[lang] || lang;
+}
+
+// 按规范顺序排序某地区出现过的语言（未知语言排在最后，保持稳定）
+export function sortLangs(langs: string[]): string[] {
+  return [...langs].sort((a, b) => {
+    const ia = LANG_ORDER.indexOf(a);
+    const ib = LANG_ORDER.indexOf(b);
+    return (ia === -1 ? 99 : ia) - (ib === -1 ? 99 : ib);
+  });
+}
+
 export function hospitalName(h: { name?: string; nameEn?: string }, locale: Locale): string {
   return (locale === 'en' && h.nameEn ? h.nameEn : h.name) || '';
 }
