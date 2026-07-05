@@ -3847,5 +3847,885 @@
     "noteEn": "Chinese supported. General, orthodontic, pediatric dentistry and oral surgery. 5-min walk from Hanshin Shinzaike Stn, 7-min from JR Rokkomichi Stn. Call ahead to confirm.",
     "updated": "2026-07",
     "searchKeys": "その歯科クリニック Sono Dental Clinic 灘区 桜口町 六甲道 新在家 神户 中文 牙科"
+  },
+  {
+    "name": "愛染橋病院",
+    "nameEn": "Aizenbashi Hospital",
+    "jpName": "愛染橋病院",
+    "region": "大阪",
+    "address": "〒556-0005 大阪府大阪市浪速区日本橋5-16-15",
+    "addressEn": "5-16-15 Nipponbashi, Naniwa-ku, Osaka 556-0005",
+    "addressShort": "大阪府 浪速区 日本橋（今宮戎駅 徒步5分 / 恵美須町駅 徒步6分）",
+    "addressShortEn": "Nipponbashi, Naniwa-ku, Osaka (5-min walk from Imamiya-Ebisu Stn)",
+    "phone": "06-6633-2801",
+    "langs": [
+      "中文",
+      "越南语"
+    ],
+    "langDetail": "中文 越南语",
+    "langDetailEn": "Chinese, Vietnamese",
+    "depts": [
+      "妇产科",
+      "儿科",
+      "儿童外科",
+      "内科",
+      "外科",
+      "骨科",
+      "整形外科",
+      "皮肤科",
+      "泌尿科",
+      "耳鼻喉科",
+      "康复科",
+      "放射科",
+      "麻醉科"
+    ],
+    "hours": "平日 8:30–11:00 / 12:00–15:00，周六 8:30–11:00（仅上午）",
+    "hoursEn": "Weekdays 8:30–11:00 / 12:00–15:00, Sat 8:30–11:00 (morning only)",
+    "hoursShort": "平日 8:30–15:00（周六仅上午）",
+    "hoursShortEn": "Weekdays 8:30–15:00 (Sat morning only)",
+    "closed": "周六下午・周日・节假日・年末年始",
+    "closedEn": "Sat afternoon, Sun, public holidays & New Year period",
+    "note": "大阪市浪速区的总合周产期母子医疗中心（设NICU・MFICU），设有13个诊疗科目的综合医院，产科・儿科・母子医疗为强项。支持中文・越南语。就诊前建议先电话确认对应语言的时间安排。",
+    "noteEn": "A general perinatal maternal and child medical center in Naniwa-ku, Osaka (with NICU & MFICU), a general hospital with 13 departments strong in obstetrics, pediatrics and maternal-child care. Chinese and Vietnamese supported. Call ahead to confirm interpreter availability.",
+    "updated": "2026-07",
+    "searchKeys": "愛染橋病院 石井記念愛染園 Aizenbashi Hospital 浪速区 日本橋 今宮戎 恵美須町 大阪 中文 越南语 周産期 母子医療 产科 儿科"
+  },
+  {
+    "name": "南森町ふくしま内科・循環器内科",
+    "nameEn": "Minamimorimachi Fukushima Internal Medicine & Cardiology Clinic",
+    "jpName": "南森町ふくしま内科・循環器内科",
+    "region": "大阪",
+    "address": "〒530-0041 大阪府大阪市北区天神橋2-1-29 レクシア大阪天満宮3・4F",
+    "addressEn": "Lexia Osaka Tenmangu 3-4F, 2-1-29 Tenjinbashi, Kita-ku, Osaka 530-0041",
+    "addressShort": "大阪府 北区 天神橋（大阪天満宮駅・南森町駅 徒步1分）",
+    "addressShortEn": "Tenjinbashi, Kita-ku, Osaka (1-min walk from Osaka-Temmangu / Minami-morimachi Stn)",
+    "phone": "06-6379-5530",
+    "langs": [
+      "中文",
+      "英文"
+    ],
+    "langDetail": "中文 英文（中国語・英語员工常驻）",
+    "langDetailEn": "Chinese, English (Chinese- & English-speaking staff on site)",
+    "depts": [
+      "内科",
+      "心脏内科",
+      "糖尿病内科",
+      "儿科",
+      "皮肤科",
+      "过敏科"
+    ],
+    "hours": "上午 8:45–12:30 / 下午 14:30–18:20（周六下午至18:00）",
+    "hoursEn": "Morning 8:45–12:30 / Afternoon 14:30–18:20 (Sat afternoon until 18:00)",
+    "hoursShort": "8:45–12:30 / 14:30–18:20（周六全天・周日上午应诊）",
+    "hoursShortEn": "8:45–12:30 / 14:30–18:20 (open Sat & Sun morning)",
+    "closed": "周三・周日下午・节假日",
+    "closedEn": "Wed, Sun afternoon & public holidays",
+    "note": "中国語・英語员工常驻，另设有中文网站。JR东西线「大阪天満宮」站、地铁堺筋线・谷町线「南森町」站徒步1分。周六全天、周日上午也应诊。内科・循环器内科・糖尿病内科・儿科・皮肤科・过敏科。就诊前建议先电话或网上确认。",
+    "noteEn": "Chinese- and English-speaking staff on site, with a Chinese-language website. 1-min walk from Osaka-Temmangu Stn (JR Tozai Line) and Minami-morimachi Stn (Sakaisuji / Tanimachi Lines). Open all day Saturday and Sunday morning. Internal medicine, cardiology, diabetes, pediatrics, dermatology and allergy. Call or book online ahead.",
+    "updated": "2026-07",
+    "searchKeys": "南森町ふくしま内科・循環器内科 Minamimorimachi Fukushima Clinic 北区 天神橋 大阪天満宮 南森町 大阪 中文 英文 内科 循环器 糖尿病"
+  },
+  {
+    "name": "前田整形外科",
+    "nameEn": "Maeda Orthopedic Clinic",
+    "jpName": "前田整形外科（医療法人）",
+    "region": "大阪",
+    "address": "〒533-0001 大阪府大阪市東淀川区井高野2-5-8 井高野中央ビル2F",
+    "addressEn": "Idakano Chuo Bldg 2F, 2-5-8 Idakano, Higashiyodogawa-ku, Osaka 533-0001",
+    "addressShort": "大阪府 東淀川区 井高野",
+    "addressShortEn": "Idakano, Higashiyodogawa-ku, Osaka",
+    "phone": "06-6829-2468",
+    "langs": [
+      "英文"
+    ],
+    "langDetail": "英文（提供英语医疗通译）",
+    "langDetailEn": "English (English medical interpreter available)",
+    "depts": [
+      "骨科"
+    ],
+    "note": "骨科诊所。提供英语对应，并配有英语医疗通译。就诊前建议先电话确认。",
+    "noteEn": "Orthopedic clinic. English supported with an English medical interpreter. Call ahead to confirm.",
+    "updated": "2026-07",
+    "searchKeys": "前田整形外科 Maeda Orthopedic 東淀川区 井高野 大阪 英文 骨科"
+  },
+  {
+    "name": "藤本クリニック",
+    "nameEn": "Fujimoto Clinic",
+    "jpName": "藤本クリニック（医療法人 順心会）",
+    "region": "大阪",
+    "address": "〒533-0013 大阪府大阪市東淀川区豊里5-21-15",
+    "addressEn": "5-21-15 Toyosato, Higashiyodogawa-ku, Osaka 533-0013",
+    "addressShort": "大阪府 東淀川区 豊里",
+    "addressShortEn": "Toyosato, Higashiyodogawa-ku, Osaka",
+    "phone": "06-6328-1850",
+    "langs": [
+      "英文"
+    ],
+    "langDetail": "英文",
+    "langDetailEn": "English",
+    "depts": [
+      "内科",
+      "儿科"
+    ],
+    "note": "内科・儿科。提供英语对应。就诊前建议先电话确认。",
+    "noteEn": "Internal medicine and pediatrics. English supported. Call ahead to confirm.",
+    "updated": "2026-07",
+    "searchKeys": "藤本クリニック Fujimoto Clinic 順心会 東淀川区 豊里 大阪 英文 内科 儿科"
+  },
+  {
+    "name": "なかえびえ整形外科",
+    "nameEn": "Nakaebie Orthopedic Clinic",
+    "jpName": "なかえびえ整形外科",
+    "region": "大阪",
+    "address": "〒553-0001 大阪府大阪市福島区海老江5-6-11",
+    "addressEn": "5-6-11 Ebie, Fukushima-ku, Osaka 553-0001",
+    "addressShort": "大阪府 福島区 海老江",
+    "addressShortEn": "Ebie, Fukushima-ku, Osaka",
+    "phone": "06-6345-3553",
+    "langs": [
+      "英文"
+    ],
+    "langDetail": "英文",
+    "langDetailEn": "English",
+    "depts": [
+      "骨科"
+    ],
+    "note": "骨科诊所。提供英语对应。就诊前建议先电话确认。",
+    "noteEn": "Orthopedic clinic. English supported. Call ahead to confirm.",
+    "updated": "2026-07",
+    "searchKeys": "なかえびえ整形外科 Nakaebie Orthopedic 福島区 海老江 大阪 英文 骨科"
+  },
+  {
+    "name": "中山整形外科",
+    "nameEn": "Nakayama Orthopedic Clinic",
+    "jpName": "中山整形外科（医療法人三愛会）",
+    "region": "大阪",
+    "address": "〒552-0007 大阪府大阪市港区弁天4-5-3 第3つた家ビル1F",
+    "addressEn": "Dai-3 Tsutaya Bldg 1F, 4-5-3 Benten, Minato-ku, Osaka 552-0007",
+    "addressShort": "大阪府 港区 弁天",
+    "addressShortEn": "Benten, Minato-ku, Osaka",
+    "phone": "06-6573-9585",
+    "langs": [
+      "英文"
+    ],
+    "langDetail": "英文",
+    "langDetailEn": "English",
+    "depts": [
+      "骨科"
+    ],
+    "note": "骨科诊所。提供英语对应。就诊前建议先电话确认。",
+    "noteEn": "Orthopedic clinic. English supported. Call ahead to confirm.",
+    "updated": "2026-07",
+    "searchKeys": "中山整形外科 Nakayama Orthopedic 三愛会 港区 弁天 大阪 英文 骨科"
+  },
+  {
+    "name": "クローバークリニック",
+    "nameEn": "Clover Clinic",
+    "jpName": "クローバークリニック（医療法人 よつば会）",
+    "region": "大阪",
+    "address": "〒536-0014 大阪府大阪市城東区鴫野西4-1-33 Welfare大阪京橋ビル1階",
+    "addressEn": "Welfare Osaka Kyobashi Bldg 1F, 4-1-33 Shigino-nishi, Joto-ku, Osaka 536-0014",
+    "addressShort": "大阪府 城東区 鴫野西",
+    "addressShortEn": "Shigino-nishi, Joto-ku, Osaka",
+    "phone": "06-6180-8927",
+    "langs": [
+      "英文",
+      "中文"
+    ],
+    "langDetail": "英文 中文（提供英语・中文医疗通译）",
+    "langDetailEn": "English, Chinese (English & Chinese medical interpreters)",
+    "depts": [
+      "内科",
+      "皮肤科",
+      "骨科"
+    ],
+    "note": "内科・皮肤科・骨科。提供英语・中文对应，并配有英语・中文医疗通译。就诊前建议先电话确认。",
+    "noteEn": "Internal medicine, dermatology and orthopedics. English and Chinese supported with interpreters. Call ahead to confirm.",
+    "updated": "2026-07",
+    "searchKeys": "クローバークリニック Clover Clinic よつば会 城東区 鴫野西 京橋 大阪 英文 中文 内科 皮肤科 骨科"
+  },
+  {
+    "name": "任クリニック",
+    "nameEn": "Jin Clinic",
+    "jpName": "任クリニック",
+    "region": "大阪",
+    "address": "〒540-0004 大阪府大阪市中央区玉造2-16-8 井上ビル5階",
+    "addressEn": "Inoue Bldg 5F, 2-16-8 Tamatsukuri, Chuo-ku, Osaka 540-0004",
+    "addressShort": "大阪府 中央区 玉造",
+    "addressShortEn": "Tamatsukuri, Chuo-ku, Osaka",
+    "phone": "06-6768-6412",
+    "langs": [
+      "英文",
+      "韩文"
+    ],
+    "langDetail": "英文 韩语（提供英语・韩语医疗通译）",
+    "langDetailEn": "English, Korean (English & Korean medical interpreters)",
+    "depts": [
+      "内科",
+      "脑神经外科"
+    ],
+    "note": "内科・脑神经外科。提供英语・韩语对应，并配有英语・韩语医疗通译。就诊前建议先电话确认。",
+    "noteEn": "Internal medicine and neurosurgery. English and Korean supported with interpreters. Call ahead to confirm.",
+    "updated": "2026-07",
+    "searchKeys": "任クリニック Jin Clinic 中央区 玉造 大阪 英文 韩语 内科 脑神经外科"
+  },
+  {
+    "name": "ラ・クォール本町クリニック",
+    "nameEn": "La Qual Honmachi Clinic",
+    "jpName": "ラ・クォール本町クリニック（医療法人 ラ・クォール会）",
+    "region": "大阪",
+    "address": "〒541-0053 大阪府大阪市中央区本町3-5-2 辰野本町ビル2階",
+    "addressEn": "Tatsuno Honmachi Bldg 2F, 3-5-2 Honmachi, Chuo-ku, Osaka 541-0053",
+    "addressShort": "大阪府 中央区 本町",
+    "addressShortEn": "Honmachi, Chuo-ku, Osaka",
+    "phone": "06-6125-1250",
+    "langs": [
+      "英文"
+    ],
+    "langDetail": "英文",
+    "langDetailEn": "English",
+    "depts": [
+      "内科",
+      "妇科"
+    ],
+    "note": "内科・妇科。提供英语对应。就诊前建议先电话确认。",
+    "noteEn": "Internal medicine and gynecology. English supported. Call ahead to confirm.",
+    "updated": "2026-07",
+    "searchKeys": "ラ・クォール本町クリニック La Qual Honmachi 中央区 本町 大阪 英文 内科 妇科"
+  },
+  {
+    "name": "くぼたこどもクリニック",
+    "nameEn": "Kubota Children's Clinic",
+    "jpName": "くぼたこどもクリニック（医療法人）",
+    "region": "大阪",
+    "address": "〒544-0033 大阪府大阪市生野区勝山北2-6-18",
+    "addressEn": "2-6-18 Katsuyama-kita, Ikuno-ku, Osaka 544-0033",
+    "addressShort": "大阪府 生野区 勝山北",
+    "addressShortEn": "Katsuyama-kita, Ikuno-ku, Osaka",
+    "phone": "06-7894-1100",
+    "langs": [
+      "英文",
+      "韩文"
+    ],
+    "langDetail": "英文（提供英语・韩语医疗通译）",
+    "langDetailEn": "English (English & Korean medical interpreters)",
+    "depts": [
+      "儿科"
+    ],
+    "note": "儿科诊所。提供英语对应，并配有英语・韩语医疗通译。就诊前建议先电话确认。",
+    "noteEn": "Pediatric clinic. English supported with English & Korean medical interpreters. Call ahead to confirm.",
+    "updated": "2026-07",
+    "searchKeys": "くぼたこどもクリニック Kubota Children Clinic 生野区 勝山北 大阪 英文 韩语 儿科 小児科"
+  },
+  {
+    "name": "北巽白鷺クリニック",
+    "nameEn": "Kitatatsumi Shirasagi Clinic",
+    "jpName": "北巽白鷺クリニック（医療法人仁真会）",
+    "region": "大阪",
+    "address": "〒544-0004 大阪府大阪市生野区巽北3-16-28",
+    "addressEn": "3-16-28 Tatsumi-kita, Ikuno-ku, Osaka 544-0004",
+    "addressShort": "大阪府 生野区 巽北",
+    "addressShortEn": "Tatsumi-kita, Ikuno-ku, Osaka",
+    "phone": "06-6754-3010",
+    "langs": [
+      "英文"
+    ],
+    "langDetail": "英文",
+    "langDetailEn": "English",
+    "depts": [
+      "血液透析"
+    ],
+    "note": "提供血液透析。英语对应。就诊前建议先电话确认。",
+    "noteEn": "Hemodialysis. English supported. Call ahead to confirm.",
+    "updated": "2026-07",
+    "searchKeys": "北巽白鷺クリニック Kitatatsumi Shirasagi 仁真会 生野区 巽北 大阪 英文 血液透析"
+  },
+  {
+    "name": "宮原レディースクリニック",
+    "nameEn": "Miyahara Ladies Clinic",
+    "jpName": "宮原レディースクリニック",
+    "region": "大阪",
+    "address": "〒543-0045 大阪府大阪市天王寺区寺田町1-7-3",
+    "addressEn": "1-7-3 Teradacho, Tennoji-ku, Osaka 543-0045",
+    "addressShort": "大阪府 天王寺区 寺田町",
+    "addressShortEn": "Teradacho, Tennoji-ku, Osaka",
+    "phone": "06-4305-8806",
+    "langs": [
+      "中文"
+    ],
+    "langDetail": "中文（提供中文医疗通译）",
+    "langDetailEn": "Chinese (Chinese medical interpreter available)",
+    "depts": [
+      "内科",
+      "妇科"
+    ],
+    "note": "内科・妇科（女性诊所）。提供中文对应，并配有中文医疗通译。就诊前建议先电话确认。",
+    "noteEn": "Internal medicine and gynecology (ladies clinic). Chinese supported with a Chinese medical interpreter. Call ahead to confirm.",
+    "updated": "2026-07",
+    "searchKeys": "宮原レディースクリニック Miyahara Ladies 天王寺区 寺田町 大阪 中文 内科 妇科 妇人科"
+  },
+  {
+    "name": "ハルカス川崎クリニック",
+    "nameEn": "Harukas Kawasaki Clinic",
+    "jpName": "ハルカス川崎クリニック",
+    "region": "大阪",
+    "address": "〒545-0052 大阪府大阪市阿倍野区阿倍野筋1-1-43 あべのハルカス21階",
+    "addressEn": "Abeno Harukas 21F, 1-1-43 Abenosuji, Abeno-ku, Osaka 545-0052",
+    "addressShort": "大阪府 阿倍野区 阿倍野筋（あべのハルカス21F）",
+    "addressShortEn": "Abenosuji, Abeno-ku, Osaka (Abeno Harukas 21F)",
+    "phone": "06-6623-0236",
+    "langs": [
+      "英文"
+    ],
+    "langDetail": "英文",
+    "langDetailEn": "English",
+    "depts": [
+      "内科",
+      "外科"
+    ],
+    "note": "内科・外科。位于あべのハルカス21楼。提供英语对应。就诊前建议先电话确认。",
+    "noteEn": "Internal medicine and surgery, on the 21st floor of Abeno Harukas. English supported. Call ahead to confirm.",
+    "updated": "2026-07",
+    "searchKeys": "ハルカス川崎クリニック Harukas Kawasaki 阿倍野区 阿倍野筋 あべのハルカス 大阪 英文 内科 外科"
+  },
+  {
+    "name": "天野整形外科",
+    "nameEn": "Amano Orthopedic Clinic",
+    "jpName": "天野整形外科（医療法人）",
+    "region": "大阪",
+    "address": "〒546-0043 大阪府大阪市東住吉区駒川4-1-5",
+    "addressEn": "4-1-5 Komagawa, Higashisumiyoshi-ku, Osaka 546-0043",
+    "addressShort": "大阪府 東住吉区 駒川",
+    "addressShortEn": "Komagawa, Higashisumiyoshi-ku, Osaka",
+    "phone": "06-6692-5437",
+    "langs": [
+      "英文",
+      "法文"
+    ],
+    "langDetail": "英文 法语（提供英语医疗通译）",
+    "langDetailEn": "English, French (English medical interpreter available)",
+    "depts": [
+      "骨科"
+    ],
+    "note": "骨科诊所。提供英语・法语对应，并配有英语医疗通译。就诊前建议先电话确认。",
+    "noteEn": "Orthopedic clinic. English and French supported with an English medical interpreter. Call ahead to confirm.",
+    "updated": "2026-07",
+    "searchKeys": "天野整形外科 Amano Orthopedic 東住吉区 駒川 大阪 英文 法语 骨科"
+  },
+  {
+    "name": "白鷺診療所",
+    "nameEn": "Shirasagi Clinic",
+    "jpName": "白鷺診療所（医療法人仁真会）",
+    "region": "大阪",
+    "address": "〒546-0002 大阪府大阪市東住吉区杭全7-10-19",
+    "addressEn": "7-10-19 Kumata, Higashisumiyoshi-ku, Osaka 546-0002",
+    "addressShort": "大阪府 東住吉区 杭全",
+    "addressShortEn": "Kumata, Higashisumiyoshi-ku, Osaka",
+    "phone": "06-6714-1661",
+    "langs": [
+      "英文"
+    ],
+    "langDetail": "英文",
+    "langDetailEn": "English",
+    "depts": [
+      "泌尿科",
+      "血液透析"
+    ],
+    "note": "泌尿科・血液透析。提供英语对应。就诊前建议先电话确认。",
+    "noteEn": "Urology and hemodialysis. English supported. Call ahead to confirm.",
+    "updated": "2026-07",
+    "searchKeys": "白鷺診療所 Shirasagi Clinic 仁真会 東住吉区 杭全 大阪 英文 泌尿科 血液透析"
+  },
+  {
+    "name": "みのりクリニック",
+    "nameEn": "Minori Clinic",
+    "jpName": "みのりクリニック（医療法人孝至会）",
+    "region": "大阪",
+    "address": "〒547-0041 大阪府大阪市平野区平野北1-9-8 武陵平野駅前医療複合ビル2階",
+    "addressEn": "Buryo Hirano Ekimae Medical Bldg 2F, 1-9-8 Hirano-kita, Hirano-ku, Osaka 547-0041",
+    "addressShort": "大阪府 平野区 平野北",
+    "addressShortEn": "Hirano-kita, Hirano-ku, Osaka",
+    "phone": "06-6796-3110",
+    "langs": [
+      "英文"
+    ],
+    "langDetail": "英文",
+    "langDetailEn": "English",
+    "depts": [
+      "内科",
+      "外科",
+      "儿科",
+      "皮肤科",
+      "骨科"
+    ],
+    "note": "内科・外科・儿科・皮肤科・骨科。提供英语对应。就诊前建议先电话确认。",
+    "noteEn": "Internal medicine, surgery, pediatrics, dermatology and orthopedics. English supported. Call ahead to confirm.",
+    "updated": "2026-07",
+    "searchKeys": "みのりクリニック Minori Clinic 孝至会 平野区 平野北 大阪 英文 内科 外科 儿科 皮肤科 骨科"
+  },
+  {
+    "name": "かつらぎクリニック",
+    "nameEn": "Katsuragi Clinic",
+    "jpName": "かつらぎクリニック（医療法人桂輝会）",
+    "region": "大阪",
+    "address": "〒559-0013 大阪府大阪市住之江区御崎5-2-21",
+    "addressEn": "5-2-21 Misaki, Suminoe-ku, Osaka 559-0013",
+    "addressShort": "大阪府 住之江区 御崎",
+    "addressShortEn": "Misaki, Suminoe-ku, Osaka",
+    "phone": "06-6686-5786",
+    "langs": [
+      "英文",
+      "韩文"
+    ],
+    "langDetail": "英文 韩语",
+    "langDetailEn": "English, Korean",
+    "depts": [
+      "内科"
+    ],
+    "note": "内科。提供英语・韩语对应。就诊前建议先电话确认。",
+    "noteEn": "Internal medicine. English and Korean supported. Call ahead to confirm.",
+    "updated": "2026-07",
+    "searchKeys": "かつらぎクリニック Katsuragi Clinic 桂輝会 住之江区 御崎 大阪 英文 韩语 内科"
+  },
+  {
+    "name": "小林医院",
+    "nameEn": "Kobayashi Clinic",
+    "jpName": "小林医院",
+    "region": "大阪",
+    "address": "〒558-0051 大阪府大阪市住吉区東粉浜3-31-4",
+    "addressEn": "3-31-4 Higashikohama, Sumiyoshi-ku, Osaka 558-0051",
+    "addressShort": "大阪府 住吉区 東粉浜",
+    "addressShortEn": "Higashikohama, Sumiyoshi-ku, Osaka",
+    "phone": "06-6671-3101",
+    "langs": [
+      "英文"
+    ],
+    "langDetail": "英文",
+    "langDetailEn": "English",
+    "depts": [
+      "内科",
+      "儿科",
+      "皮肤科"
+    ],
+    "note": "内科・儿科・皮肤科。提供英语对应。就诊前建议先电话确认。",
+    "noteEn": "Internal medicine, pediatrics and dermatology. English supported. Call ahead to confirm.",
+    "updated": "2026-07",
+    "searchKeys": "小林医院 Kobayashi Clinic 住吉区 東粉浜 大阪 英文 内科 儿科 皮肤科"
+  },
+  {
+    "name": "まわたり内科",
+    "nameEn": "Mawatari Internal Medicine Clinic",
+    "jpName": "まわたり内科（医療法人秀徳会）",
+    "region": "大阪",
+    "address": "〒563-0105 大阪府豊能郡豊能町新光風台2-16-12",
+    "addressEn": "2-16-12 Shinkofudai, Toyono-cho, Toyono-gun, Osaka 563-0105",
+    "addressShort": "大阪府 豊能郡 豊能町",
+    "addressShortEn": "Toyono-cho, Toyono-gun, Osaka",
+    "phone": "072-733-3366",
+    "langs": [
+      "英文"
+    ],
+    "langDetail": "英文",
+    "langDetailEn": "English",
+    "depts": [
+      "内科"
+    ],
+    "note": "内科。提供英语对应。就诊前建议先电话确认。",
+    "noteEn": "Internal medicine. English supported. Call ahead to confirm.",
+    "updated": "2026-07",
+    "searchKeys": "まわたり内科 Mawatari 秀徳会 豊能郡 豊能町 新光風台 大阪 英文 内科"
+  },
+  {
+    "name": "おざわクリニック",
+    "nameEn": "Ozawa Clinic",
+    "jpName": "おざわクリニック",
+    "region": "大阪",
+    "address": "〒562-0023 大阪府箕面市粟生間谷西3-7-9 シャトー野間1F",
+    "addressEn": "Chateau Noma 1F, 3-7-9 Aomatani-nishi, Minoo, Osaka 562-0023",
+    "addressShort": "大阪府 箕面市 粟生間谷西",
+    "addressShortEn": "Aomatani-nishi, Minoo, Osaka",
+    "phone": "072-730-0721",
+    "langs": [
+      "英文",
+      "韩文",
+      "法文"
+    ],
+    "langDetail": "英文 韩语 法语",
+    "langDetailEn": "English, Korean, French",
+    "depts": [
+      "内科",
+      "外科"
+    ],
+    "note": "内科・外科。提供英语・韩语・法语对应。就诊前建议先电话确认。",
+    "noteEn": "Internal medicine and surgery. English, Korean and French supported. Call ahead to confirm.",
+    "updated": "2026-07",
+    "searchKeys": "おざわクリニック Ozawa Clinic 箕面市 粟生間谷西 大阪 英文 韩语 法语 内科 外科"
+  },
+  {
+    "name": "みほクリニック",
+    "nameEn": "Miho Clinic",
+    "jpName": "みほクリニック（医療法人 嵩美会）",
+    "region": "大阪",
+    "address": "〒562-0022 大阪府箕面市粟生間谷東5-25-23",
+    "addressEn": "5-25-23 Aomatani-higashi, Minoo, Osaka 562-0022",
+    "addressShort": "大阪府 箕面市 粟生間谷東",
+    "addressShortEn": "Aomatani-higashi, Minoo, Osaka",
+    "phone": "072-726-0909",
+    "langs": [
+      "英文"
+    ],
+    "langDetail": "英文",
+    "langDetailEn": "English",
+    "depts": [
+      "儿科",
+      "牙科"
+    ],
+    "note": "儿科・牙科。提供英语对应。就诊前建议先电话确认。",
+    "noteEn": "Pediatrics and dentistry. English supported. Call ahead to confirm.",
+    "updated": "2026-07",
+    "searchKeys": "みほクリニック Miho Clinic 嵩美会 箕面市 粟生間谷東 大阪 英文 儿科 牙科"
+  },
+  {
+    "name": "西野医院",
+    "nameEn": "Nishino Clinic",
+    "jpName": "西野医院",
+    "region": "大阪",
+    "address": "〒565-0831 大阪府吹田市五月が丘東13-10",
+    "addressEn": "13-10 Satsukigaoka-higashi, Suita, Osaka 565-0831",
+    "addressShort": "大阪府 吹田市 五月が丘東",
+    "addressShortEn": "Satsukigaoka-higashi, Suita, Osaka",
+    "phone": "06-6876-1320",
+    "langs": [
+      "英文",
+      "德文"
+    ],
+    "langDetail": "英文 德语",
+    "langDetailEn": "English, German",
+    "depts": [
+      "内科"
+    ],
+    "note": "内科。提供英语・德语对应。就诊前建议先电话确认。",
+    "noteEn": "Internal medicine. English and German supported. Call ahead to confirm.",
+    "updated": "2026-07",
+    "searchKeys": "西野医院 Nishino Clinic 吹田市 五月が丘東 大阪 英文 德语 内科"
+  },
+  {
+    "name": "寺嶋・塚田こどもクリニック",
+    "nameEn": "Terashima-Tsukada Children's Clinic",
+    "jpName": "寺嶋・塚田こどもクリニック（医療法人）",
+    "region": "大阪",
+    "address": "〒576-0034 大阪府交野市天野が原町5-14-2",
+    "addressEn": "5-14-2 Amanogaharacho, Katano, Osaka 576-0034",
+    "addressShort": "大阪府 交野市 天野が原町",
+    "addressShortEn": "Amanogaharacho, Katano, Osaka",
+    "phone": "072-893-3141",
+    "langs": [
+      "英文"
+    ],
+    "langDetail": "英文（提供英语医疗通译）",
+    "langDetailEn": "English (English medical interpreter available)",
+    "depts": [
+      "内科",
+      "儿科",
+      "牙科"
+    ],
+    "note": "内科・儿科・牙科。提供英语对应，并配有英语医疗通译。就诊前建议先电话确认。",
+    "noteEn": "Internal medicine, pediatrics and dentistry. English supported with an English medical interpreter. Call ahead to confirm.",
+    "updated": "2026-07",
+    "searchKeys": "寺嶋・塚田こどもクリニック Terashima Tsukada Children 交野市 天野が原町 大阪 英文 内科 儿科 牙科"
+  },
+  {
+    "name": "立沢整形外科",
+    "nameEn": "Tatsuzawa Orthopedic Clinic",
+    "jpName": "立沢整形外科（医療法人）",
+    "region": "大阪",
+    "address": "〒570-0028 大阪府守口市本町1-7-21 ラグーナ本町ビル1F",
+    "addressEn": "Laguna Honmachi Bldg 1F, 1-7-21 Honmachi, Moriguchi, Osaka 570-0028",
+    "addressShort": "大阪府 守口市 本町",
+    "addressShortEn": "Honmachi, Moriguchi, Osaka",
+    "phone": "06-6992-2750",
+    "langs": [
+      "英文",
+      "泰文"
+    ],
+    "langDetail": "英文 泰语（提供英语・泰语医疗通译）",
+    "langDetailEn": "English, Thai (English & Thai medical interpreters)",
+    "depts": [
+      "骨科"
+    ],
+    "note": "骨科诊所。提供英语・泰语对应，并配有英语・泰语医疗通译。就诊前建议先电话确认。",
+    "noteEn": "Orthopedic clinic. English and Thai supported with interpreters. Call ahead to confirm.",
+    "updated": "2026-07",
+    "searchKeys": "立沢整形外科 Tatsuzawa Orthopedic 守口市 本町 大阪 英文 泰语 骨科"
+  },
+  {
+    "name": "寺川クリニック",
+    "nameEn": "Terakawa Clinic",
+    "jpName": "寺川クリニック",
+    "region": "大阪",
+    "address": "〒574-0014 大阪府大東市寺川4-2-30",
+    "addressEn": "4-2-30 Terakawa, Daito, Osaka 574-0014",
+    "addressShort": "大阪府 大東市 寺川",
+    "addressShortEn": "Terakawa, Daito, Osaka",
+    "phone": "072-870-0285",
+    "langs": [
+      "中文"
+    ],
+    "langDetail": "中文（提供中文医疗通译）",
+    "langDetailEn": "Chinese (Chinese medical interpreter available)",
+    "depts": [
+      "内科",
+      "泌尿科"
+    ],
+    "note": "内科・泌尿科。提供中文对应，并配有中文医疗通译。就诊前建议先电话确认。",
+    "noteEn": "Internal medicine and urology. Chinese supported with a Chinese medical interpreter. Call ahead to confirm.",
+    "updated": "2026-07",
+    "searchKeys": "寺川クリニック Terakawa Clinic 大東市 寺川 大阪 中文 内科 泌尿科"
+  },
+  {
+    "name": "とうしんクリニック",
+    "nameEn": "Toshin Clinic",
+    "jpName": "とうしんクリニック",
+    "region": "大阪",
+    "address": "〒577-0817 大阪府東大阪市近江堂2-6-4 木田ビル1F",
+    "addressEn": "Kida Bldg 1F, 2-6-4 Ominodo, Higashiosaka, Osaka 577-0817",
+    "addressShort": "大阪府 東大阪市 近江堂",
+    "addressShortEn": "Ominodo, Higashiosaka, Osaka",
+    "phone": "06-6724-7012",
+    "langs": [
+      "英文",
+      "德文"
+    ],
+    "langDetail": "英文 德语",
+    "langDetailEn": "English, German",
+    "depts": [
+      "内科",
+      "骨科"
+    ],
+    "note": "内科・骨科。提供英语・德语对应。就诊前建议先电话确认。",
+    "noteEn": "Internal medicine and orthopedics. English and German supported. Call ahead to confirm.",
+    "updated": "2026-07",
+    "searchKeys": "とうしんクリニック Toshin Clinic 東大阪市 近江堂 大阪 英文 德语 内科 骨科"
+  },
+  {
+    "name": "もとざわ医院",
+    "nameEn": "Motozawa Clinic",
+    "jpName": "もとざわ医院（医療法人弘代会）",
+    "region": "大阪",
+    "address": "〒577-0818 大阪府東大阪市小若江1-24-11",
+    "addressEn": "1-24-11 Kowakae, Higashiosaka, Osaka 577-0818",
+    "addressShort": "大阪府 東大阪市 小若江",
+    "addressShortEn": "Kowakae, Higashiosaka, Osaka",
+    "phone": "06-6722-9070",
+    "langs": [
+      "中文"
+    ],
+    "langDetail": "中文（提供中文医疗通译）",
+    "langDetailEn": "Chinese (Chinese medical interpreter available)",
+    "depts": [
+      "内科",
+      "儿科"
+    ],
+    "note": "内科・儿科。提供中文对应，并配有中文医疗通译。就诊前建议先电话确认。",
+    "noteEn": "Internal medicine and pediatrics. Chinese supported with a Chinese medical interpreter. Call ahead to confirm.",
+    "updated": "2026-07",
+    "searchKeys": "もとざわ医院 Motozawa Clinic 弘代会 東大阪市 小若江 大阪 中文 内科 儿科"
+  },
+  {
+    "name": "原クリニック",
+    "nameEn": "Hara Clinic",
+    "jpName": "原クリニック",
+    "region": "大阪",
+    "address": "〒577-0842 大阪府東大阪市足代南1-2-8",
+    "addressEn": "1-2-8 Ajiro-minami, Higashiosaka, Osaka 577-0842",
+    "addressShort": "大阪府 東大阪市 足代南",
+    "addressShortEn": "Ajiro-minami, Higashiosaka, Osaka",
+    "phone": "06-6726-2671",
+    "langs": [
+      "中文"
+    ],
+    "langDetail": "中文（提供中文医疗通译）",
+    "langDetailEn": "Chinese (Chinese medical interpreter available)",
+    "depts": [
+      "内科",
+      "骨科",
+      "耳鼻喉科"
+    ],
+    "note": "内科・骨科・耳鼻喉科。提供中文对应，并配有中文医疗通译。就诊前建议先电话确认。",
+    "noteEn": "Internal medicine, orthopedics and ENT. Chinese supported with a Chinese medical interpreter. Call ahead to confirm.",
+    "updated": "2026-07",
+    "searchKeys": "原クリニック Hara Clinic 東大阪市 足代南 大阪 中文 内科 骨科 耳鼻喉科"
+  },
+  {
+    "name": "半田クリニック",
+    "nameEn": "Handa Clinic",
+    "jpName": "半田クリニック（医療法人 晃生会）",
+    "region": "大阪",
+    "address": "〒581-0038 大阪府八尾市若林町1-87",
+    "addressEn": "1-87 Wakabayashicho, Yao, Osaka 581-0038",
+    "addressShort": "大阪府 八尾市 若林町",
+    "addressShortEn": "Wakabayashicho, Yao, Osaka",
+    "phone": "072-949-1597",
+    "langs": [
+      "中文",
+      "印尼文",
+      "台语"
+    ],
+    "langDetail": "中文 印尼语 台湾语",
+    "langDetailEn": "Chinese, Indonesian, Taiwanese",
+    "depts": [
+      "内科",
+      "外科"
+    ],
+    "note": "内科・外科。提供中文・印尼语・台湾语对应。就诊前建议先电话确认。",
+    "noteEn": "Internal medicine and surgery. Chinese, Indonesian and Taiwanese supported. Call ahead to confirm.",
+    "updated": "2026-07",
+    "searchKeys": "半田クリニック Handa Clinic 晃生会 八尾市 若林町 大阪 中文 印尼语 台湾语 内科 外科"
+  },
+  {
+    "name": "わたなべ皮フ科 形成外科",
+    "nameEn": "Watanabe Dermatology & Plastic Surgery",
+    "jpName": "わたなべ皮フ科 形成外科（医療法人 あすなろ会）",
+    "region": "大阪",
+    "address": "〒581-0802 大阪府八尾市北本町1-3-5",
+    "addressEn": "1-3-5 Kitahonmachi, Yao, Osaka 581-0802",
+    "addressShort": "大阪府 八尾市 北本町",
+    "addressShortEn": "Kitahonmachi, Yao, Osaka",
+    "phone": "072-993-4676",
+    "langs": [
+      "英文"
+    ],
+    "langDetail": "英文",
+    "langDetailEn": "English",
+    "depts": [
+      "皮肤科",
+      "整形外科（形成）"
+    ],
+    "note": "皮肤科・形成外科。提供英语对应。就诊前建议先电话确认。",
+    "noteEn": "Dermatology and plastic surgery. English supported. Call ahead to confirm.",
+    "updated": "2026-07",
+    "searchKeys": "わたなべ皮フ科 形成外科 Watanabe Dermatology Plastic あすなろ会 八尾市 北本町 大阪 英文 皮肤科 整形外科"
+  },
+  {
+    "name": "山口医院",
+    "nameEn": "Yamaguchi Clinic",
+    "jpName": "山口医院（医療法人山口会）",
+    "region": "大阪",
+    "address": "〒599-8238 大阪府堺市中区土師町1-27-3",
+    "addressEn": "1-27-3 Hazecho, Naka-ku, Sakai, Osaka 599-8238",
+    "addressShort": "大阪府 堺市中区 土師町",
+    "addressShortEn": "Hazecho, Naka-ku, Sakai",
+    "phone": "072-279-5525",
+    "langs": [
+      "英文",
+      "法文"
+    ],
+    "langDetail": "英文 法语",
+    "langDetailEn": "English, French",
+    "depts": [
+      "内科",
+      "儿科",
+      "皮肤科"
+    ],
+    "note": "内科・儿科・皮肤科。提供英语・法语对应。就诊前建议先电话确认。",
+    "noteEn": "Internal medicine, pediatrics and dermatology. English and French supported. Call ahead to confirm.",
+    "updated": "2026-07",
+    "searchKeys": "山口医院 Yamaguchi Clinic 山口会 堺市中区 土師町 大阪 英文 法语 内科 儿科 皮肤科"
+  },
+  {
+    "name": "澤田整形外科医院",
+    "nameEn": "Sawada Orthopedic Clinic",
+    "jpName": "澤田整形外科医院（医療法人）",
+    "region": "大阪",
+    "address": "〒590-0105 大阪府堺市南区竹城台3-3-5",
+    "addressEn": "3-3-5 Takenodai, Minami-ku, Sakai, Osaka 590-0105",
+    "addressShort": "大阪府 堺市南区 竹城台",
+    "addressShortEn": "Takenodai, Minami-ku, Sakai",
+    "phone": "072-297-2277",
+    "langs": [
+      "英文",
+      "法文"
+    ],
+    "langDetail": "英文 法语",
+    "langDetailEn": "English, French",
+    "depts": [
+      "骨科"
+    ],
+    "note": "骨科诊所。提供英语・法语对应。就诊前建议先电话确认。",
+    "noteEn": "Orthopedic clinic. English and French supported. Call ahead to confirm.",
+    "updated": "2026-07",
+    "searchKeys": "澤田整形外科医院 Sawada Orthopedic 堺市南区 竹城台 大阪 英文 法语 骨科"
+  },
+  {
+    "name": "木本内科",
+    "nameEn": "Kimoto Internal Medicine Clinic",
+    "jpName": "木本内科（医療法人）",
+    "region": "大阪",
+    "address": "〒590-0417 大阪府泉南郡熊取町和田1-1-15",
+    "addressEn": "1-1-15 Wada, Kumatori-cho, Sennan-gun, Osaka 590-0417",
+    "addressShort": "大阪府 泉南郡 熊取町",
+    "addressShortEn": "Wada, Kumatori-cho, Sennan-gun, Osaka",
+    "phone": "072-453-3306",
+    "langs": [
+      "英文"
+    ],
+    "langDetail": "英文",
+    "langDetailEn": "English",
+    "depts": [
+      "内科"
+    ],
+    "note": "内科。提供英语对应。就诊前建议先电话确认。",
+    "noteEn": "Internal medicine. English supported. Call ahead to confirm.",
+    "updated": "2026-07",
+    "searchKeys": "木本内科 Kimoto Internal Medicine 泉南郡 熊取町 和田 大阪 英文 内科"
+  },
+  {
+    "name": "谷口クリニック",
+    "nameEn": "Taniguchi Clinic",
+    "jpName": "谷口クリニック",
+    "region": "大阪",
+    "address": "〒599-0202 大阪府阪南市下出37-5 中村ビル2階",
+    "addressEn": "Nakamura Bldg 2F, 37-5 Shimode, Hannan, Osaka 599-0202",
+    "addressShort": "大阪府 阪南市 下出",
+    "addressShortEn": "Shimode, Hannan, Osaka",
+    "phone": "072-471-8822",
+    "langs": [
+      "英文"
+    ],
+    "langDetail": "英文",
+    "langDetailEn": "English",
+    "depts": [
+      "内科",
+      "外科"
+    ],
+    "note": "内科・外科。提供英语对应。就诊前建议先电话确认。",
+    "noteEn": "Internal medicine and surgery. English supported. Call ahead to confirm.",
+    "updated": "2026-07",
+    "searchKeys": "谷口クリニック Taniguchi Clinic 阪南市 下出 大阪 英文 内科 外科"
+  },
+  {
+    "name": "辻レディースクリニック",
+    "nameEn": "Tsuji Ladies Clinic",
+    "jpName": "辻レディースクリニック",
+    "region": "大阪",
+    "address": "〒599-0203 大阪府阪南市黒田590 サンギャラリー2階",
+    "addressEn": "Sun Gallery 2F, 590 Kuroda, Hannan, Osaka 599-0203",
+    "addressShort": "大阪府 阪南市 黒田",
+    "addressShortEn": "Kuroda, Hannan, Osaka",
+    "phone": "072-470-0125",
+    "langs": [
+      "英文"
+    ],
+    "langDetail": "英文（提供英语医疗通译）",
+    "langDetailEn": "English (English medical interpreter available)",
+    "depts": [
+      "内科",
+      "产科",
+      "妇科"
+    ],
+    "note": "内科・产科・妇科（女性诊所）。提供英语对应，并配有英语医疗通译。就诊前建议先电话确认。",
+    "noteEn": "Internal medicine, obstetrics and gynecology (ladies clinic). English supported with an English medical interpreter. Call ahead to confirm.",
+    "updated": "2026-07",
+    "searchKeys": "辻レディースクリニック Tsuji Ladies 阪南市 黒田 大阪 英文 内科 产科 妇科 妇人科"
   }
 ]
