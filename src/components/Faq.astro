@@ -1,0 +1,59 @@
+---
+// 首页 FAQ 板块 + FAQPage 结构化数据。内容以「如何使用本站 + 就医实务」为主，避免医疗建议。
+import type { Locale } from '../lib/i18n';
+
+interface Props { locale: Locale }
+const { locale } = Astro.props;
+const zh = locale === 'zh';
+
+const qaZh: [string, string][] = [
+  ['在日本看病能用中文吗？',
+   '日本多数医院以日语接诊，能用中文的机构有限。本站收录的都是明确提供中文（或英文、越南语等）对应的医院与诊所——有会中文的医生，或配有医疗翻译。'],
+  ['怎么找到离我近的可中文就诊的医院？',
+   '用左侧「地区」选择你所在的城市（如大阪、东京），进入地区页后再按服务语言和科室筛选；也可以直接搜索医院名称或科室。'],
+  ['去之前需要预约吗？',
+   '建议先打电话或在官网确认。部分诊所需要预约，专科（如妇产科、牙科）尤其如此，中文/英文对应的时段有时也需提前确认。'],
+  ['看病需要带什么？',
+   '一般需要在留卡和健康保险证（国保或社保）。带保险证时自付通常为 30%；没有保险则需全额自费，费用较高。'],
+  ['本站信息可靠吗？多久更新？',
+   '信息为人工整理，每家都标注了最近更新的月份。医院的对应语言与诊疗时间可能变动，就诊前请以院方电话或官网为准；发现有误欢迎投稿纠正。'],
+];
+
+const qaEn: [string, string][] = [
+  ['Can I see a doctor in Chinese in Japan?',
+   'Most hospitals in Japan operate in Japanese, and places with Chinese support are limited. Every listing here explicitly offers Chinese (or English, Vietnamese, etc.) support — a Chinese-speaking doctor or a medical interpreter.'],
+  ['How do I find a hospital near me with language support?',
+   'Use the "Region" list on the left to pick your city (e.g. Osaka, Tokyo), then filter by language and specialty on the region page. You can also search by hospital name or department.'],
+  ['Do I need an appointment?',
+   'It is best to call or check the official website first. Some clinics require appointments — especially specialties like Ob/Gyn or dental — and language-support hours may also need confirming in advance.'],
+  ['What should I bring?',
+   'Usually your Residence Card and health insurance card (kokuho or shaho). With insurance your out-of-pocket share is typically 30%; without it you pay the full amount, which is more expensive.'],
+  ['Is the information reliable? How often is it updated?',
+   'Listings are curated by hand and each shows the month it was last updated. Supported languages and hours can change, so please confirm with the hospital by phone or website before visiting — and let us know if anything is wrong.'],
+];
+
+const qa = zh ? qaZh : qaEn;
+const title = zh ? '常见问题' : 'Frequently asked questions';
+
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  'mainEntity': qa.map(([q, a]) => ({
+    '@type': 'Question',
+    'name': q,
+    'acceptedAnswer': { '@type': 'Answer', 'text': a },
+  })),
+};
+---
+<section class="faq" aria-labelledby="faqTitle">
+  <h2 class="faq-title" id="faqTitle">{title}</h2>
+  <div class="faq-list">
+    {qa.map(([q, a], i) => (
+      <details class="faq-item" open={i === 0}>
+        <summary class="faq-q">{q}</summary>
+        <p class="faq-a">{a}</p>
+      </details>
+    ))}
+  </div>
+  <script type="application/ld+json" set:html={JSON.stringify(jsonLd)} />
+</section>
