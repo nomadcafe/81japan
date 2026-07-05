@@ -57,7 +57,7 @@ const { postalCode, streetAddress } = splitPostal(h.address);
 // 标题：按实际对应语言生成（避免把英文/越南语医院误称「中文医院」），并去掉 jpName 的法人后缀与重复
 const jpClean = cleanJpName(h.jpName);
 const showJp = jpClean && jpClean !== h.name;
-const pageTitle = `${h.name}${showJp ? '（' + jpClean + '）' : ''} · ${h.region || '日本'}${featuredLangLabel(h, 'zh')}对应${typeNoun(h, 'zh')} | 81日本`;
+const pageTitle = `${h.name}${showJp ? '（' + jpClean + '）' : ''} · ${h.region || '日本'}${featuredLangLabel(h, 'zh')}对应${typeNoun(h, 'zh')} | 81Japan`;
 
 const jsonLd = {
   '@context': 'https://schema.org',

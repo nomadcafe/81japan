@@ -56,7 +56,7 @@ const langAdjEn = langKey ? `${langLabel(langKey, 'en')}-Speaking` : '';
 let pageTitle: string, pageDesc: string, h1: string, intro: string;
 if (langKey) {
   pageTitle = zh
-    ? `${nameZh} ${langWordZh}对应医院・诊所一览（${total}家） | 81日本`
+    ? `${nameZh} ${langWordZh}对应医院・诊所一览（${total}家） | 81Japan`
     : `${nameEn} ${langAdjEn} Hospitals & Clinics (${total}) | 81Japan`;
   pageDesc = zh
     ? `收录${nameZh}地区提供${langWordZh}服务（${langWordZh}医生或医疗通译）的医院与诊所共 ${total} 家，含地址、电话、诊疗时间与科室，可按科室筛选，持续更新。`
@@ -69,7 +69,7 @@ if (langKey) {
     : `Hospitals and clinics in ${nameEn} where you can be seen in ${langLabel(langKey, 'en')} — native-speaking staff or medical interpreters, ${total} in total. Filter by specialty and check each one's address, phone number and consultation hours.`;
 } else {
   pageTitle = zh
-    ? `${nameZh} ${featuredZh.join('・')}对应医院・诊所一览（${total}家） | 81日本`
+    ? `${nameZh} ${featuredZh.join('・')}对应医院・诊所一览（${total}家） | 81Japan`
     : `${nameEn} Hospitals & Clinics with ${featuredEn.join(' & ')} Support (${total}) | 81Japan`;
   pageDesc = zh
     ? `收录${nameZh}地区提供${langLabelsZh.join('・')}等外语对应的医院与诊所共 ${total} 家，含地址、电话、诊疗时间、服务语言与科室，可按语言和科室筛选，持续更新。`

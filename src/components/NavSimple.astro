@@ -19,7 +19,7 @@ const homeHref = localizePath('/', locale);
 const altUrl = alternatePath(Astro.url.pathname, locale);
 ---
 <nav>
-  <a class="logo" href={homeHref}><span class="logo-dot"></span>81日本</a>
+  <a class="logo" href={homeHref} aria-label="81Japan"><span class="logo-badge">81</span><span class="logo-word">Japan</span></a>
   {showLang && (
     <div class="lang-switcher">
       <a class={`lang-opt${locale === 'zh' ? ' active' : ''}`} href={locale === 'zh' ? Astro.url.pathname : altUrl} onclick="try{localStorage.setItem('preferredLang','zh')}catch(e){}">中文</a>

@@ -43,11 +43,22 @@
     height: 58px;
   }
   .logo {
-    font-family: var(--serif); font-size: 20px; font-weight: 600;
-    color: var(--ink); letter-spacing: 0.03em;
-    display: flex; align-items: center; gap: 8px; text-decoration: none;
+    display: inline-flex; align-items: center; gap: 7px;
+    text-decoration: none; color: var(--ink);
   }
-  .logo-dot { width: 8px; height: 8px; background: var(--red); border-radius: 50%; display: inline-block; }
+  .logo-badge {
+    display: inline-flex; align-items: center; justify-content: center;
+    background: var(--red); color: #fff;
+    font-family: var(--mono); font-weight: 500; font-size: 13px;
+    line-height: 1; letter-spacing: 0.02em;
+    padding: 4px 6px; border-radius: 6px;
+    box-shadow: 0 1px 4px rgba(192,57,43,0.28);
+  }
+  .logo-word {
+    font-family: var(--serif); font-size: 20px; font-weight: 600;
+    letter-spacing: 0.01em; color: var(--ink); transition: color 0.15s;
+  }
+  .logo:hover .logo-word { color: var(--red); }
   .back-btn {
     font-size: 13px; color: var(--ink-3); text-decoration: none;
     display: flex; align-items: center; gap: 6px;
