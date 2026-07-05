@@ -4727,5 +4727,36 @@
     "noteEn": "Internal medicine, obstetrics and gynecology (ladies clinic). English supported with an English medical interpreter. Call ahead to confirm.",
     "updated": "2026-07",
     "searchKeys": "辻レディースクリニック Tsuji Ladies 阪南市 黒田 大阪 英文 内科 产科 妇科 妇人科"
+  },
+  {
+    "name": "日本橋耳鼻咽喉科医院",
+    "nameEn": "Nipponbashi ENT Clinic",
+    "jpName": "日本橋耳鼻咽喉科医院",
+    "region": "大阪",
+    "address": "〒542-0073 大阪府大阪市中央区日本橋1-3-1 三共日本橋ビル2F",
+    "addressEn": "Sankyo Nipponbashi Bldg 2F, 1-3-1 Nipponbashi, Chuo-ku, Osaka 542-0073",
+    "addressShort": "大阪府 中央区 日本橋（「日本橋」駅②番出口 徒步1分）",
+    "addressShortEn": "Nipponbashi, Chuo-ku, Osaka (1-min walk from Nippombashi Stn)",
+    "phone": "06-6484-2255",
+    "langs": [
+      "中文",
+      "英文",
+      "韩文"
+    ],
+    "langDetail": "中文 英文 韩语（中国語・英語・韩语员工常驻，另有中文网站）",
+    "langDetailEn": "Chinese, English, Korean (multilingual staff on site; Chinese website available)",
+    "depts": [
+      "耳鼻喉科"
+    ],
+    "hours": "上午 9:00–12:00 / 下午 16:00–19:00（周四下午·周六下午休诊）",
+    "hoursEn": "Morning 9:00–12:00 / Afternoon 16:00–19:00 (closed Thu & Sat afternoons)",
+    "hoursShort": "9:00–12:00 / 16:00–19:00（周四·周六下午休）",
+    "hoursShortEn": "9:00–12:00 / 16:00–19:00 (no Thu/Sat PM)",
+    "closed": "周四下午·周六下午·周日·节假日",
+    "closedEn": "Thu & Sat afternoons, Sun & public holidays",
+    "note": "中国語・英語・韓国語员工常驻，另设有中文网站。耳鼻喉科专科（耳・鼻・喉）。地铁千日前线・堺筋线・近铁难波线「日本橋」站②号出口徒步1分。就诊前建议先电话或网上确认。",
+    "noteEn": "Multilingual staff in Chinese, English and Korean, with a Chinese-language website. ENT clinic (ear, nose & throat). 1-min walk from Nippombashi Stn (Sennichimae / Sakaisuji / Kintetsu-Namba lines), exit 2. Call or book online ahead.",
+    "updated": "2026-07",
+    "searchKeys": "日本橋耳鼻咽喉科医院 Nipponbashi ENT Clinic 中央区 日本橋 大阪 中文 英文 韩语 耳鼻喉科 耳鼻咽喉科"
   }
 ]
