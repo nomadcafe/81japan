@@ -82,7 +82,7 @@ const jsonLd = {
           <span class="filter-count">{total}</span>
         </div>
         {REGIONS.filter(r => (regionCounts[r.key] || 0) > 0).map(r => (
-          <a class="filter-option" href={`/en/${r.slug}`} data-region-filter={r.key} onclick={`filterRegion('${r.key}', this); return false;`}>
+          <a class="filter-option" href={`/en/${r.slug}`}>
             <span>{r.labelEn}</span>
             <span class="filter-count">{regionCounts[r.key]}</span>
           </a>
