@@ -516,6 +516,64 @@
     line-height: 1.85;
   }
 
+  /* ── RESOURCES / hotlines (home) ── */
+  .resources {
+    max-width: 1000px;
+    margin: 8px auto 0;
+    padding: 40px 40px 8px;
+  }
+  .resources-head { margin-bottom: 20px; }
+  .resources-head h2 {
+    font-family: var(--serif);
+    font-size: 22px;
+    font-weight: 600;
+    color: var(--ink);
+    margin-bottom: 6px;
+  }
+  .resources-head p {
+    font-size: 13.5px;
+    color: var(--ink-3);
+    line-height: 1.7;
+  }
+  .resources-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 14px;
+  }
+  .resources-card {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    background: var(--white);
+    border: 1px solid var(--paper-3);
+    border-radius: var(--radius);
+    padding: 18px 20px;
+    text-decoration: none;
+    transition: border-color 0.15s, transform 0.15s, box-shadow 0.15s;
+  }
+  .resources-card:hover {
+    border-color: var(--ink);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 18px rgba(26,26,26,0.06);
+  }
+  .resources-name {
+    font-size: 15px;
+    font-weight: 600;
+    color: var(--ink);
+  }
+  .resources-card:hover .resources-name { color: var(--red); }
+  .resources-desc {
+    font-size: 13px;
+    color: var(--ink-2);
+    line-height: 1.7;
+  }
+  .resources-link {
+    font-family: var(--mono);
+    font-size: 12px;
+    color: var(--red);
+    margin-top: 2px;
+  }
+
   .hospital-card {
     background: var(--white);
     border: 1px solid var(--paper-3);
@@ -869,6 +927,7 @@
     .region-links { padding: 32px 20px 8px; }
     .region-links-grid { grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); }
     .faq { padding: 32px 20px 8px; }
+    .resources { padding: 32px 20px 8px; }
     nav { padding: 0 20px; position: relative; }
     .nav-toggle { display: flex; }
     .submit-nav-btn { display: none; }

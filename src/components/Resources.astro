@@ -1,0 +1,58 @@
+---
+// 首页「多语言医疗求助窗口」板块：面向不确定去哪家、或需要电话翻译的用户。
+import type { Locale } from '../lib/i18n';
+
+interface Props { locale: Locale }
+const { locale } = Astro.props;
+const zh = locale === 'zh';
+
+const title = zh ? '需要中文帮助？多语言医疗咨询窗口' : 'Need help in your language? Medical hotlines';
+const sub = zh
+  ? '不确定该去哪家医院，或就诊时需要电话翻译，可以先联系这些多语言窗口。'
+  : 'Not sure which hospital to visit, or need phone interpretation? These multilingual services can help.';
+
+const items = zh
+  ? [
+      {
+        name: 'AMDA 国际医疗信息中心',
+        desc: '面向外国人的免费医疗电话咨询，中文对应（周二・周四 10:00–16:00）。可咨询就医与医疗制度。',
+        link: 'https://www.amdamedicalcenter.com/',
+        linkText: 'amdamedicalcenter.com',
+      },
+      {
+        name: 'Osaka Call Center',
+        desc: '大阪的多语言电话咨询（网络通话），可用中文询问就医・生活等资讯。',
+        link: 'https://ofw-oer.com/call/',
+        linkText: 'ofw-oer.com/call',
+      },
+    ]
+  : [
+      {
+        name: 'AMDA International Medical Information Center',
+        desc: 'Free phone consultation for foreign residents; Chinese available Tue & Thu 10:00–16:00. Ask about care and the medical system.',
+        link: 'https://www.amdamedicalcenter.com/',
+        linkText: 'amdamedicalcenter.com',
+      },
+      {
+        name: 'Osaka Call Center',
+        desc: 'Multilingual call service for Osaka (web calling) — ask about medical and daily-life information.',
+        link: 'https://ofw-oer.com/call/',
+        linkText: 'ofw-oer.com/call',
+      },
+    ];
+---
+<section class="resources" aria-labelledby="resourcesTitle">
+  <div class="resources-head">
+    <h2 id="resourcesTitle">{title}</h2>
+    <p>{sub}</p>
+  </div>
+  <div class="resources-grid">
+    {items.map((r) => (
+      <a class="resources-card" href={r.link} target="_blank" rel="noopener noreferrer">
+        <span class="resources-name">{r.name}</span>
+        <span class="resources-desc">{r.desc}</span>
+        <span class="resources-link">{r.linkText} <span aria-hidden="true">↗</span></span>
+      </a>
+    ))}
+  </div>
+</section>
