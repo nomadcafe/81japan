@@ -32,7 +32,8 @@
     "note": "全科均设中文医生或中文翻译，无需另行预约翻译服务。为关西地区历史最悠久的华人医院。",
     "noteEn": "Every department has a Chinese-speaking doctor or interpreter — no separate interpreter booking needed. The oldest Chinese-community hospital in the Kansai region.",
     "updated": "2025-12",
-    "searchKeys": "神户华侨同仁会病院"
+    "searchKeys": "神户华侨同仁会病院",
+    "slug": "kobe-kakyo-doujinkai-hospital"
   },
   {
     "name": "聖路加国際病院",
@@ -75,7 +76,8 @@
         "label": "拠点病院",
         "type": "new"
       }
-    ]
+    ],
+    "slug": "st-lukes-international-hospital"
   },
   {
     "name": "東京科学大学病院 国際医療部",
@@ -119,7 +121,8 @@
         "label": "19语言通译",
         "type": "new"
       }
-    ]
+    ],
+    "slug": "institute-of-science-tokyo-hospital-international-medical-dept"
   },
   {
     "name": "東京都立駒込病院",
@@ -160,7 +163,8 @@
         "label": "拠点病院",
         "type": "new"
       }
-    ]
+    ],
+    "slug": "tokyo-metropolitan-komagome-hospital"
   },
   {
     "name": "東京大学附属病院 国際診療部",
@@ -202,7 +206,8 @@
         "label": "国際検診",
         "type": "new"
       }
-    ]
+    ],
+    "slug": "the-university-of-tokyo-hospital-international-department"
   },
   {
     "name": "东京医科大学病院 国际医疗部",
@@ -242,7 +247,8 @@
         "label": "新",
         "type": "new"
       }
-    ]
+    ],
+    "slug": "tokyo-medical-university-hospital-international-medical-dept"
   },
   {
     "name": "Tokyo Station International Clinic",
@@ -284,7 +290,8 @@
         "label": "365天",
         "type": "new"
       }
-    ]
+    ],
+    "slug": "tokyo-station-international-clinic"
   },
   {
     "name": "日中友好医院",
@@ -323,7 +330,8 @@
         "label": "中国大使馆指定",
         "type": "new"
       }
-    ]
+    ],
+    "slug": "japan-china-friendship-clinic"
   },
   {
     "name": "宮田胃腸内科皮膚科クリニック",
@@ -356,7 +364,8 @@
     "note": "院长宮田直輝毕业于台湾台北医科大学，对应中文（含台语）・英文・泰文・韩文。内镜专科，当日胃镜・大肠镜检查可对应。新大久保站徒步3分，新宿外国人聚集区。",
     "noteEn": "Director Naoki Miyata graduated from Taipei Medical University and speaks Chinese (incl. Taiwanese), English, Thai and Korean. An endoscopy specialist offering same-day gastroscopy and colonoscopy. 3-min walk from Shin-Okubo Stn, in Shinjuku's international district.",
     "updated": "2026-04",
-    "searchKeys": "宮田胃腸内科皮膚科クリニック 新大久保 东京"
+    "searchKeys": "宮田胃腸内科皮膚科クリニック 新大久保 东京",
+    "slug": "miyata-gastroenterology-dermatology-clinic"
   },
   {
     "name": "大阪市立住友病院",
@@ -377,7 +386,8 @@
     "hoursShort": "周一至周六 8:30–17:00",
     "hoursShortEn": "Mon–Sat 8:30–17:00",
     "updated": "2025-11",
-    "searchKeys": "大阪市立住友病院"
+    "searchKeys": "大阪市立住友病院",
+    "slug": "sumitomo-hospital"
   },
   {
     "name": "福冈县立病院 国际部",
@@ -399,7 +409,8 @@
     "hoursShort": "周一至周五 9:00–18:00",
     "hoursShortEn": "Mon–Fri 9:00–18:00",
     "updated": "2025-10",
-    "searchKeys": "福冈县立病院 国际部"
+    "searchKeys": "福冈县立病院 国际部",
+    "slug": "fukuoka-prefectural-hospital-international-dept"
   },
   {
     "name": "札幌医科大学附属病院",
@@ -420,7 +431,8 @@
     "hoursShort": "周一至周五 8:30–16:30",
     "hoursShortEn": "Mon–Fri 8:30–16:30",
     "updated": "2025-09",
-    "searchKeys": "札幌医科大学附属病院"
+    "searchKeys": "札幌医科大学附属病院",
+    "slug": "sapporo-medical-university-hospital"
   },
   {
     "name": "希咲クリニック",
@@ -452,7 +464,8 @@
     "note": "院长山分ネルソン祥興来自马来西亚，对应中文、英文，全科女性专科诊所。土曜日午後・水曜日は休診。",
     "noteEn": "Director Nelson Yamawake is from Malaysia and speaks Chinese and English; a full-service women's clinic. Closed Sat afternoon and Wed.",
     "updated": "2026-04",
-    "searchKeys": "希咲クリニック"
+    "searchKeys": "希咲クリニック",
+    "slug": "kisaki-clinic"
   },
   {
     "name": "こどもクリニックきじま",
@@ -483,7 +496,8 @@
     "note": "对应中文・韩文。土日节假日也营业至20时，年中无休。非感染者专用时间段13:30–15:30。提供网络预约及线上初诊。",
     "noteEn": "Chinese and Korean supported. Open until 20:00 on weekends and holidays, year-round. Non-infectious time slot 13:30–15:30. Online booking and online first consultations available.",
     "updated": "2026-04",
-    "searchKeys": "こどもクリニックきじま"
+    "searchKeys": "こどもクリニックきじま",
+    "slug": "kijima-childrens-clinic"
   },
   {
     "name": "春次医院",
@@ -523,7 +537,8 @@
         "label": "中文网站",
         "type": "new"
       }
-    ]
+    ],
+    "slug": "harutsugu-clinic"
   },
   {
     "name": "琥珀クリニック",
@@ -556,7 +571,8 @@
     "note": "院长林 宇（林宇医师）本人精通日・英・普通话・广东话・客家话，不需要翻译陪同，可直接沟通。支持线上问诊。",
     "noteEn": "Director Lin Yu is fluent in Japanese, English, Mandarin, Cantonese and Hakka, so no interpreter is needed — you can speak directly. Online consultations available.",
     "updated": "2026-04",
-    "searchKeys": "琥珀クリニック"
+    "searchKeys": "琥珀クリニック",
+    "slug": "kohaku-clinic"
   },
   {
     "name": "茜道頓堀クリニック",
@@ -588,7 +604,8 @@
     "note": "官网有中文公告，多语言对应。午前诊察及周三・周日为特别诊疗，一般患者需提前预约，当日不受理。",
     "noteEn": "Multilingual support, with Chinese notices on the website. Morning sessions and Wed/Sun are special clinics; general patients must book in advance and cannot be seen on a walk-in basis.",
     "updated": "2026-04",
-    "searchKeys": "茜道頓堀クリニック"
+    "searchKeys": "茜道頓堀クリニック",
+    "slug": "akane-dotonbori-clinic"
   },
   {
     "name": "医誠会国際総合病院",
@@ -634,7 +651,8 @@
         "label": "JMIP认证",
         "type": "new"
       }
-    ]
+    ],
+    "slug": "iseikai-international-general-hospital"
   },
   {
     "name": "みなと町歯科",
@@ -665,7 +683,8 @@
     "note": "提供中文・英文・俄语对应。周日・节假日需提前预约。年末年始12/31–1/3休诊。官网有英文版，母语级别英语医生仅周日出诊。",
     "noteEn": "Chinese, English & Russian supported. Book ahead for Sun & holidays. Closed Dec 31–Jan 3. The website has an English version; the native-level English-speaking dentist works Sun only.",
     "updated": "2026-04",
-    "searchKeys": "みなと町歯科"
+    "searchKeys": "みなと町歯科",
+    "slug": "minato-cho-dental-clinic"
   },
   {
     "name": "なないろ歯科医院",
@@ -694,7 +713,8 @@
     "note": "提供中文对应，医生为台湾人。综合牙科，另设儿童牙科、齿列矫正、种植牙、美白等诊疗。就诊前建议先电话确认。",
     "noteEn": "Chinese supported; the dentist is from Taiwan. General dentistry plus pediatric dentistry, orthodontics, implants and whitening. Call ahead to confirm before visiting.",
     "updated": "2026-07",
-    "searchKeys": "なないろ歯科医院 nanairo 元町"
+    "searchKeys": "なないろ歯科医院 nanairo 元町",
+    "slug": "nanairo-dental-clinic"
   },
   {
     "name": "Osaka Lee Clinic（イークリニック）",
@@ -726,7 +746,8 @@
     "note": "1998年开业的社区内科诊所，提供日・英・普通话・韩文四语种服务，设有健康体检中心（2楼）及上门康复服务（3楼）。官网有中文版。",
     "noteEn": "A neighborhood internal-medicine clinic opened in 1998, offering Japanese, English, Mandarin and Korean. Includes a health-checkup center (2F) and home rehabilitation services (3F). Chinese website available.",
     "updated": "2026-04",
-    "searchKeys": "Osaka Lee Clinic イークリニック"
+    "searchKeys": "Osaka Lee Clinic イークリニック",
+    "slug": "osaka-lee-clinic"
   },
   {
     "name": "大阪天満橋 Y&Y歯科・矯正歯科",
@@ -763,7 +784,8 @@
         "label": "微信对应",
         "type": "new"
       }
-    ]
+    ],
+    "slug": "yy-dental-orthodontics-osaka-tenmabashi"
   },
   {
     "name": "名古屋第二赤十字病院",
@@ -785,7 +807,8 @@
     "hoursShort": "24小时急诊 / 门诊 8:30–17:00",
     "hoursShortEn": "24h ER / Outpatient 8:30–17:00",
     "updated": "2026-01",
-    "searchKeys": "名古屋第二赤十字病院"
+    "searchKeys": "名古屋第二赤十字病院",
+    "slug": "japanese-red-cross-aichi-medical-center-nagoya-daini-hospital"
   },
   {
     "name": "福冈山王医院",
@@ -820,7 +843,8 @@
     "note": "中文・英文专线（092-407-1133）可直接咨询。配备 3.0T MRI、PET-CT 等先进设备。注意：夜间・节假日急诊无翻译，需自带会日语的同行人；综合健康检查的日语翻译目前暂停。",
     "noteEn": "A Chinese/English line (092-407-1133) for direct enquiries. Equipped with advanced gear such as 3.0T MRI and PET-CT. Note: no interpreter for night/holiday ER, so bring a Japanese-speaking companion; Japanese interpretation for comprehensive health checks is currently suspended.",
     "updated": "2026-05",
-    "searchKeys": "福冈山王 早良区 百道浜"
+    "searchKeys": "福冈山王 早良区 百道浜",
+    "slug": "fukuoka-sanno-hospital"
   },
   {
     "name": "福冈大学医院",
@@ -857,7 +881,8 @@
     "note": "福冈县拠点医療機関。24 小时急诊运营，设心脏中心、卒中中心、肿瘤中心、移植中心等专科中心，共 24 个临床科室。",
     "noteEn": "A Fukuoka Prefecture hub hospital. 24-hour ER, with specialist centers for cardiology, stroke, oncology and transplantation, across 24 clinical departments.",
     "updated": "2026-05",
-    "searchKeys": "福冈大学 福大 城南区 七隈"
+    "searchKeys": "福冈大学 福大 城南区 七隈",
+    "slug": "fukuoka-university-hospital"
   },
   {
     "name": "圣玛利亚医院",
@@ -900,7 +925,8 @@
     "warning": "无紹介状初诊加收 7,700 円",
     "warningEn": "First visit without a referral incurs a 7,700 yen surcharge",
     "updated": "2026-05",
-    "searchKeys": "圣玛利亚 聖マリア 久留米"
+    "searchKeys": "圣玛利亚 聖マリア 久留米",
+    "slug": "st-marys-hospital"
   },
   {
     "name": "姬野医院",
@@ -930,7 +956,8 @@
     "note": "中文工作人员常驻，无需预约即可中文就诊。24 小时紧急医疗。支持信用卡・电子钱包・二维码支付。位于福冈市南郊八女郡，需自驾或公共交通前往。",
     "noteEn": "Chinese-speaking staff on-site; you can consult in Chinese without an appointment. 24-hour emergency care. Credit cards, e-wallets and QR payments accepted. Located in Yame District, south of Fukuoka City — reach it by car or public transport.",
     "updated": "2026-05",
-    "searchKeys": "姫野 姬野 八女 広川"
+    "searchKeys": "姫野 姬野 八女 広川",
+    "slug": "himeno-hospital"
   },
   {
     "name": "博多桧诊所",
@@ -965,7 +992,8 @@
     "note": "中文专线（092-477-7216）可直接预约，配置常驻中文翻译员。内科・外科・儿科及渡航相关诊疗均可。位于博多站附近，便于交通。",
     "noteEn": "A Chinese line (092-477-7216) for direct booking, with an on-site Chinese interpreter. Internal medicine, surgery, pediatrics and travel-related care available. Near Hakata Stn, easy to reach.",
     "updated": "2026-05",
-    "searchKeys": "博多ひのき 博多 中文专线"
+    "searchKeys": "博多ひのき 博多 中文专线",
+    "slug": "hakata-hinoki-clinic"
   },
   {
     "name": "福冈德洲会医院 国际医疗支援室",
@@ -1001,7 +1029,8 @@
     "note": "国际医疗支援室设中文・英文常驻专员，邮箱预约 ftoku-intl@csf.ne.jp。配备 17 语言平板视频通译。对非英中语言可借助福冈国际医疗支援中心。",
     "noteEn": "The International Medical Support Office has on-site Chinese/English staff; book by email at ftoku-intl@csf.ne.jp. Equipped with 17-language tablet video interpreting. For other languages, the Fukuoka International Medical Support Center can assist.",
     "updated": "2026-05",
-    "searchKeys": "福岡徳洲会 春日市 国際医療支援室"
+    "searchKeys": "福岡徳洲会 春日市 国際医療支援室",
+    "slug": "fukuoka-tokushukai-hospital-international-medical-support"
   },
   {
     "name": "九州大学医院 国际诊疗支援中心",
@@ -1038,7 +1067,8 @@
     "warning": "需先通过 IPAC 官网提交国际患者受入相談",
     "warningEn": "First submit an international-patient intake request via the IPAC website",
     "updated": "2026-05",
-    "searchKeys": "九州大学 九大 IPAC 东区 马出"
+    "searchKeys": "九州大学 九大 IPAC 东区 马出",
+    "slug": "kyushu-university-hospital-ipac"
   },
   {
     "name": "京都市立医院",
@@ -1072,7 +1102,8 @@
     "note": "京都市医疗通译派遣事业指定医院。中文通译每周二、周五上午常驻，无需预约；英文/韩文需 5 个工作日前预约。",
     "noteEn": "A designated hospital under Kyoto City's medical-interpreter dispatch program. A Chinese interpreter is on-site Tue & Fri mornings, no appointment needed; English/Korean require booking 5 business days ahead.",
     "updated": "2026-05",
-    "searchKeys": "京都市立 中京区 壬生"
+    "searchKeys": "京都市立 中京区 壬生",
+    "slug": "kyoto-city-hospital"
   },
   {
     "name": "医仁会武田综合医院",
@@ -1109,7 +1140,8 @@
     "note": "京都市医疗通译派遣事业指定医院（与京都市立病院同制度）。中文通译每周二、周五上午常驻，免预约。急患 24 小时受付（部分科室）。",
     "noteEn": "A designated hospital under Kyoto City's medical-interpreter dispatch program (same scheme as Kyoto City Hospital). A Chinese interpreter is on-site Tue & Fri mornings, no appointment needed. 24-hour ER reception (some departments).",
     "updated": "2026-05",
-    "searchKeys": "武田 医仁会 京都 伏見区 石田"
+    "searchKeys": "武田 医仁会 京都 伏見区 石田",
+    "slug": "ijinkai-takeda-general-hospital"
   },
   {
     "name": "康生会武田医院",
@@ -1149,7 +1181,8 @@
     "note": "京都站徒步 5 分。设国际医疗支援室，iPad 多语言口译（英・中・韩）平日 8:30–17:00 可用。年接诊外籍患者超 1,500 人，支持支付宝・PayPay・银联。",
     "noteEn": "5-min walk from Kyoto Stn. Its International Medical Support Office offers iPad multilingual interpreting (English, Chinese, Korean) weekdays 8:30–17:00. Sees 1,500+ foreign patients a year; Alipay, PayPay and UnionPay accepted.",
     "updated": "2026-05",
-    "searchKeys": "康生会武田 武田病院 京都站 下京区"
+    "searchKeys": "康生会武田 武田病院 京都站 下京区",
+    "slug": "koseikai-takeda-hospital"
   },
   {
     "name": "郑医院",
@@ -1181,7 +1214,8 @@
     "note": "京都市国際交流協会公开的中文対応医院。诊所规模，覆盖内科・外科・胃肠科・皮肤美容科。京都左京区浄土寺一带。",
     "noteEn": "A Chinese-capable clinic listed publicly by the Kyoto City International Foundation. Clinic-sized, covering internal medicine, surgery, gastroenterology and cosmetic dermatology. Around Jodoji in Sakyo-ku, Kyoto.",
     "updated": "2026-05",
-    "searchKeys": "テイ医院 郑医院 左京区 浄土寺"
+    "searchKeys": "テイ医院 郑医院 左京区 浄土寺",
+    "slug": "tei-clinic"
   },
   {
     "name": "坂部医院",
@@ -1214,7 +1248,8 @@
     "warning": "上午就诊需提前预约",
     "warningEn": "Morning visits require an advance appointment",
     "updated": "2026-05",
-    "searchKeys": "坂部医院 中京区 御幸町"
+    "searchKeys": "坂部医院 中京区 御幸町",
+    "slug": "sakabe-clinic"
   },
   {
     "name": "向岛病院",
@@ -1249,7 +1284,8 @@
     "note": "京都市国際交流協会公开的中文対応综合医院。多科室含整形外科、放射线科、理学疗法。伏見区向島地区。",
     "noteEn": "A Chinese-capable general hospital listed publicly by the Kyoto City International Foundation. Multiple departments including orthopedics, radiology and physical therapy. Mukaijima area, Fushimi-ku.",
     "updated": "2026-05",
-    "searchKeys": "向岛 むかいじま 伏見区 向島"
+    "searchKeys": "向岛 むかいじま 伏見区 向島",
+    "slug": "mukaijima-hospital"
   },
   {
     "name": "洛和会音羽记念医院",
@@ -1282,7 +1318,8 @@
     "note": "京都市国際交流協会公开的英中対応医院。专注肾脏内科和人工透析，覆盖内科・外科。山科区小山地区。",
     "noteEn": "An English/Chinese-capable hospital listed publicly by the Kyoto City International Foundation. Focused on nephrology and dialysis, covering internal medicine and surgery. Koyama area, Yamashina-ku.",
     "updated": "2026-05",
-    "searchKeys": "洛和会 音羽記念 山科区 小山"
+    "searchKeys": "洛和会 音羽記念 山科区 小山",
+    "slug": "rakuwakai-otowa-memorial-hospital"
   },
   {
     "name": "横滨医院",
@@ -1318,7 +1355,8 @@
         "label": "中文母语接诊",
         "type": "new"
       }
-    ]
+    ],
+    "slug": "yokohama-clinic"
   },
   {
     "name": "中华街医院",
@@ -1350,7 +1388,8 @@
     "note": "横滨中华街老牌中文医院之一，早上7:30 起诊适合上班族。日本大通り駅3番出口步行4分。诊疗科目较全（内・外・骨・皮）。",
     "noteEn": "One of Yokohama Chinatown's established Chinese-language clinics; the 7:30 morning start suits commuters. 4-min walk from Exit 3 of Nihon-odori Stn. Fairly broad scope (internal medicine, surgery, orthopedics, dermatology).",
     "updated": "2026-05",
-    "searchKeys": "中華街医院 横滨 中文 内科 整形"
+    "searchKeys": "中華街医院 横滨 中文 内科 整形",
+    "slug": "chukagai-iin"
   },
   {
     "name": "横浜中华街雅牙科诊所",
@@ -1386,7 +1425,8 @@
         "label": "周日营业",
         "type": "new"
       }
-    ]
+    ],
+    "slug": "yokohama-chinatown-miyabi-dental-clinic"
   },
   {
     "name": "檀诊所 中文外来",
@@ -1422,7 +1462,8 @@
         "label": "中文心理诊疗",
         "type": "new"
       }
-    ]
+    ],
+    "slug": "tan-clinic-chinese-outpatient"
   },
   {
     "name": "Leo葵诊所",
@@ -1459,7 +1500,8 @@
         "label": "中文神经内科",
         "type": "new"
       }
-    ]
+    ],
+    "slug": "leo-aoi-clinic"
   },
   {
     "name": "名古屋共立医院",
@@ -1501,7 +1543,8 @@
         "label": "翻译免费",
         "type": "new"
       }
-    ]
+    ],
+    "slug": "nagoya-kyoritsu-hospital"
   },
   {
     "name": "藤田医科大学医院 国际医疗中心",
@@ -1541,7 +1584,8 @@
         "label": "JCI+JMIP认证",
         "type": "new"
       }
-    ]
+    ],
+    "slug": "fujita-health-university-hospital-international-medical-center"
   },
   {
     "name": "名古屋掖済会医院 中国患者窗口",
@@ -1580,7 +1624,8 @@
         "label": "微信对应",
         "type": "new"
       }
-    ]
+    ],
+    "slug": "nagoya-ekisaikai-hospital-chinese-patient-desk"
   },
   {
     "name": "札幌东德洲会医院 国际医疗支援室",
@@ -1625,7 +1670,8 @@
         "label": "24h急诊",
         "type": "new"
       }
-    ]
+    ],
+    "slug": "sapporo-higashi-tokushukai-hospital-international-support"
   },
   {
     "name": "札幌Tomo心理诊所",
@@ -1662,7 +1708,8 @@
         "label": "中文心理诊疗",
         "type": "new"
       }
-    ]
+    ],
+    "slug": "sapporo-tomo-mental-clinic"
   },
   {
     "name": "广岛大学病院 国际医疗支援部",
@@ -1707,7 +1754,8 @@
         "label": "JMIP+JIH认证",
         "type": "new"
       }
-    ]
+    ],
+    "slug": "hiroshima-university-hospital-international-medical-support-dept"
   },
   {
     "name": "冈山大学病院 国际诊疗支援中心",
@@ -1757,7 +1805,8 @@
         "label": "中国・四国首家",
         "type": "new"
       }
-    ]
+    ],
+    "slug": "okayama-university-hospital-international-medical-support-center"
   },
   {
     "name": "神户大学医院 国际诊疗（IMCC）",
@@ -1802,7 +1851,8 @@
         "label": "50+语言通译",
         "type": "new"
       }
-    ]
+    ],
+    "slug": "kobe-university-hospital-international-medical-communication-center"
   },
   {
     "name": "那霸市立医院 国际医疗支援室",
@@ -1844,7 +1894,8 @@
         "label": "JMIP认证",
         "type": "new"
       }
-    ]
+    ],
+    "slug": "naha-city-hospital-international-medical-support-office"
   },
   {
     "name": "圣隷浜松医院",
@@ -1889,7 +1940,8 @@
         "label": "JCI认证",
         "type": "new"
       }
-    ]
+    ],
+    "slug": "seirei-hamamatsu-general-hospital"
   },
   {
     "name": "龟田京桥诊所 中文门诊",
@@ -1928,7 +1980,8 @@
         "label": "中文门诊",
         "type": "new"
       }
-    ]
+    ],
+    "slug": "kameda-kyobashi-clinic-chinese-outpatient"
   },
   {
     "name": "平和记念医院 国际外来",
@@ -1970,7 +2023,8 @@
         "label": "中文应诊",
         "type": "new"
       }
-    ]
+    ],
+    "slug": "heiwa-memorial-clinic-international-outpatient"
   },
   {
     "name": "Raffles Medical 大阪诊所",
@@ -2011,7 +2065,8 @@
         "label": "中英文常驻",
         "type": "new"
       }
-    ]
+    ],
+    "slug": "raffles-medical-osaka-clinic"
   },
   {
     "name": "うららか内科クリニック",
@@ -2049,7 +2104,8 @@
         "label": "中文应诊",
         "type": "new"
       }
-    ]
+    ],
+    "slug": "uraraka-internal-medicine-clinic"
   },
   {
     "name": "东北大学医院 国际医疗中心",
@@ -2094,7 +2150,8 @@
         "label": "JMIP认证",
         "type": "new"
       }
-    ]
+    ],
+    "slug": "tohoku-university-hospital-international-medical-center"
   },
   {
     "name": "りんくう综合医疗中心 国际中心",
@@ -2143,7 +2200,8 @@
         "label": "关空旁",
         "type": "new"
       }
-    ]
+    ],
+    "slug": "rinku-general-medical-center-international-center"
   },
   {
     "name": "侑生クリニック",
@@ -2175,7 +2233,8 @@
         "label": "华人医生",
         "type": "new"
       }
-    ]
+    ],
+    "slug": "yusei-clinic"
   },
   {
     "name": "亀岡内科",
@@ -2213,7 +2272,8 @@
         "label": "华人医生",
         "type": "new"
       }
-    ]
+    ],
+    "slug": "kameoka-internal-medicine-clinic"
   },
   {
     "name": "国立国际医疗研究中心病院",
@@ -2256,7 +2316,8 @@
         "label": "19语言通译",
         "type": "new"
       }
-    ]
+    ],
+    "slug": "ncgm-hospital-international-health-care-center"
   },
   {
     "name": "埼玉医科大学国际医疗中心",
@@ -2292,7 +2353,8 @@
     "warning": "需持紹介状及提前预约；语言对应视科室・时段而定",
     "warningEn": "Referral letter and advance appointment required; language support depends on department and time slot",
     "updated": "2026-06",
-    "searchKeys": "埼玉医科大学国际医疗中心 埼玉医科大学国際医療センター 日高 山根 埼玉"
+    "searchKeys": "埼玉医科大学国际医疗中心 埼玉医科大学国際医療センター 日高 山根 埼玉",
+    "slug": "saitama-medical-university-international-medical-center"
   },
   {
     "name": "龟田综合病院",
@@ -2336,7 +2398,8 @@
         "label": "JCI认证",
         "type": "new"
       }
-    ]
+    ],
+    "slug": "kameda-medical-center-kameda-general-hospital"
   },
   {
     "name": "シュシュ歯科クリニック",
@@ -2377,7 +2440,8 @@
         "label": "中文官网",
         "type": "new"
       }
-    ]
+    ],
+    "slug": "shushu-dental-clinic"
   },
   {
     "name": "横浜中央病院 外国人语言服务中心",
@@ -2421,7 +2485,8 @@
         "label": "中文翻译团队",
         "type": "new"
       }
-    ]
+    ],
+    "slug": "yokohama-central-hospital"
   },
   {
     "name": "協和医院",
@@ -2461,7 +2526,8 @@
         "label": "周日开诊",
         "type": "new"
       }
-    ]
+    ],
+    "slug": "kyowa-clinic"
   },
   {
     "name": "林クリニック",
@@ -2494,7 +2560,8 @@
     "note": "池袋的内科诊所，林冠佑院长出诊，对应中文（北京话・台湾话）及英文。诊疗涵盖内科、妇科、皮肤科，另设汉方专门外来。",
     "noteEn": "An internal-medicine clinic in Ikebukuro, with director Lin Guanyou consulting in Chinese (Beijing dialect & Taiwanese) and English. Covers internal medicine, gynecology and dermatology, plus a dedicated Kampo clinic.",
     "updated": "2026-06",
-    "searchKeys": "林クリニック 林诊所 林冠佑 Hayashi 东池袋 池袋 丰岛区 东京 中文 北京话 台湾话 汉方"
+    "searchKeys": "林クリニック 林诊所 林冠佑 Hayashi 东池袋 池袋 丰岛区 东京 中文 北京话 台湾话 汉方",
+    "slug": "hayashi-clinic"
   },
   {
     "name": "東文中醫クリニック・新橋",
@@ -2527,7 +2594,8 @@
     "note": "新桥的中医・汉方专门诊所，多位华人中医师（呉晨輝医师等）出诊，全程可中文沟通。专长肿瘤汉方、汉方妇科・不孕症、汉方过敏・五官科及针灸。官网设有中文页面。",
     "noteEn": "A TCM/Kampo specialty clinic in Shimbashi, with several Chinese TCM practitioners (incl. Dr. Wu Chenhui), fully Chinese-speaking. Specialties include Kampo oncology, Kampo gynecology/infertility, Kampo allergy/ENT, and acupuncture. The website has Chinese pages.",
     "updated": "2026-06",
-    "searchKeys": "東文中醫クリニック 东文中医 Tobun 新桥 内幸町 虎之门 港区 东京 中文 中医 汉方 针灸"
+    "searchKeys": "東文中醫クリニック 东文中医 Tobun 新桥 内幸町 虎之门 港区 东京 中文 中医 汉方 针灸",
+    "slug": "tobun-chinese-medicine-clinic-shimbashi"
   },
   {
     "name": "ちば浜野総合診療クリニック",
@@ -2565,7 +2633,8 @@
         "label": "周日开诊",
         "type": "new"
       }
-    ]
+    ],
+    "slug": "chiba-hamano-general-clinic"
   },
   {
     "name": "柏東口駅前歯科 ジャパンデンタルクリニック",
@@ -2604,7 +2673,8 @@
         "label": "年中无休",
         "type": "new"
       }
-    ]
+    ],
+    "slug": "kashiwa-japan-dental-clinic"
   },
   {
     "name": "オリエント歯科クリニック",
@@ -2637,7 +2707,8 @@
     "note": "新浦安駅徒步5分的牙科诊所，登记对应中・英・韩等多种语言（中国語対応可）。涵盖一般牙科、口腔外科、儿童牙科及矫正。建议预约时确认中文对应时段。",
     "noteEn": "A dental clinic 5-min walk from Shin-Urayasu Stn, registered as supporting Chinese, English, Korean and more. Covers general dentistry, oral surgery, pediatric dentistry and orthodontics. Confirm the Chinese-language time slots when booking.",
     "updated": "2026-06",
-    "searchKeys": "オリエント歯科クリニック Orient Dental 本間歯科 浦安 新浦安 美浜 千叶 中文 牙科 矫正"
+    "searchKeys": "オリエント歯科クリニック Orient Dental 本間歯科 浦安 新浦安 美浜 千叶 中文 牙科 矫正",
+    "slug": "orient-dental-clinic"
   },
   {
     "name": "わかば歯科クリニック",
@@ -2677,7 +2748,8 @@
         "label": "土日诊疗",
         "type": "new"
       }
-    ]
+    ],
+    "slug": "wakaba-dental-clinic"
   },
   {
     "name": "松戸市立総合医療センター",
@@ -2723,7 +2795,8 @@
         "label": "医疗翻译",
         "type": "new"
       }
-    ]
+    ],
+    "slug": "matsudo-city-general-hospital"
   },
   {
     "name": "船橋森谷歯科クリニック",
@@ -2757,7 +2830,8 @@
     "note": "船桥駅徒步2–3分的牙科诊所，涵盖一般牙科、矫正、儿童牙科、口腔外科及种植。医疗名录（病院なび等）标记为外国語対応可，但院方未明确公示中文对应，建议就诊前电话确认中文能否对应。",
     "noteEn": "A dental clinic 2–3 min from Funabashi Stn, covering general dentistry, orthodontics, pediatric dentistry, oral surgery and implants. Medical directories (e.g. Byoin Navi) list it as foreign-language capable, but the clinic does not explicitly advertise Chinese support — call ahead to confirm whether Chinese is available.",
     "updated": "2026-06",
-    "searchKeys": "船橋森谷歯科クリニック 森谷歯科 船桥 本町 千叶 牙科 矫正 外国語対応"
+    "searchKeys": "船橋森谷歯科クリニック 森谷歯科 船桥 本町 千叶 牙科 矫正 外国語対応",
+    "slug": "funabashi-moriya-dental-clinic"
   },
   {
     "name": "ぜんり歯科内科クリニック",
@@ -2791,7 +2865,8 @@
     "note": "船桥競馬場駅附近兼设牙科与内科・小儿科的诊所，方便一处看牙科与内科。医疗名录标记为外国語対応可，但院方未明确公示中文对应，建议就诊前电话确认中文能否对应。",
     "noteEn": "A clinic near Funabashi-Keibajo Stn combining dentistry with internal medicine and pediatrics, so you can see both in one place. Medical directories list it as foreign-language capable, but the clinic does not explicitly advertise Chinese support — call ahead to confirm whether Chinese is available.",
     "updated": "2026-06",
-    "searchKeys": "ぜんり歯科内科クリニック 船桥 宫本 船桥競馬場 千叶 牙科 内科 小儿科 外国語対応"
+    "searchKeys": "ぜんり歯科内科クリニック 船桥 宫本 船桥競馬場 千叶 牙科 内科 小儿科 外国語対応",
+    "slug": "zenri-dental-internal-medicine-clinic"
   },
   {
     "name": "千葉ニュータウンデンタルクリニック",
@@ -2823,7 +2898,8 @@
     "note": "印西市千叶新城的牙科诊所，登记为中国語対応可。涵盖一般牙科、儿童牙科、矫正及口腔外科。建议预约时确认中文对应时段。",
     "noteEn": "A dental clinic in Chiba New Town, Inzai, registered as Chinese-capable. Covers general dentistry, pediatric dentistry, orthodontics and oral surgery. Confirm the Chinese-language time slots when booking.",
     "updated": "2026-06",
-    "searchKeys": "千葉ニュータウンデンタルクリニック 千叶新城 印西 内野 千叶 中文 牙科 矫正"
+    "searchKeys": "千葉ニュータウンデンタルクリニック 千叶新城 印西 内野 千叶 中文 牙科 矫正",
+    "slug": "chiba-new-town-dental-clinic"
   },
   {
     "name": "新浦安U歯科",
@@ -2856,7 +2932,8 @@
     "note": "新浦安的牙科诊所（院长 松田义弘），登记为中国語・英語対応可。涵盖一般牙科、口腔外科、儿童牙科及矫正。建议预约时确认中文对应时段。",
     "noteEn": "A dental clinic in Shin-Urayasu (director Yoshihiro Matsuda), registered as Chinese/English-capable. Covers general dentistry, oral surgery, pediatric dentistry and orthodontics. Confirm the Chinese-language time slots when booking.",
     "updated": "2026-06",
-    "searchKeys": "新浦安U歯科 新浦安 浦安 日之出 千叶 中文 牙科 矫正 松田"
+    "searchKeys": "新浦安U歯科 新浦安 浦安 日之出 千叶 中文 牙科 矫正 松田",
+    "slug": "shin-urayasu-u-dental"
   },
   {
     "name": "K'sファミリー歯科",
@@ -2888,7 +2965,8 @@
     "note": "野田市川间駅徒步4分、位于超市 エコス（TAIRAYA）2楼的牙科诊所，登记对应中・英・韩等多种语言（中国語対応可）。诊疗至晚上20点。涵盖一般牙科、儿童牙科及口腔外科。建议预约时确认中文对应时段。",
     "noteEn": "A dental clinic on the 2nd floor of the Ecos (TAIRAYA) supermarket, 4-min walk from Kawama Stn in Noda, registered as supporting Chinese, English, Korean and more. Open until 20:00. Covers general dentistry, pediatric dentistry and oral surgery. Confirm the Chinese-language time slots when booking.",
     "updated": "2026-06",
-    "searchKeys": "K'sファミリー歯科 Ks Family Dental 野田 尾崎 川间 千叶 中文 牙科"
+    "searchKeys": "K'sファミリー歯科 Ks Family Dental 野田 尾崎 川间 千叶 中文 牙科",
+    "slug": "ks-family-dental"
   },
   {
     "name": "東京都立大久保病院 国際診療中心",
@@ -2928,7 +3006,7 @@
     "warningEn": "Referral letter and appointment required in principle; without a referral a special fee applies",
     "updated": "2026-06",
     "searchKeys": "東京都立大久保病院 大久保病院 Okubo 新宿 歌舞伎町 东京 妇人科 都立病院",
-    "slug": "okubo-hospital",
+    "slug": "tokyo-metropolitan-okubo-hospital-international-care-center",
     "extraBadges": [
       {
         "label": "中文官网",
@@ -2970,7 +3048,7 @@
     "noteEn": "A clinic on the 4th floor of the Shinjuku NS Building, directly connected to Tochomae Stn, open on weekends and Sundays. The clinic's website and international page state Chinese (Mandarin) consultations are available. Walk-ins accepted without a referral; foreign first-visit patients (insured care) who can't communicate in Japanese must bring an interpreter or pay a 1,000 yen interpreter fee — call ahead to confirm a Chinese-speaking doctor is available that day.",
     "updated": "2026-06",
     "searchKeys": "新宿NSビルスカイクリニック Sky Clinic 西新宿 都庁前 新宿 东京 妇人科 中文",
-    "slug": "shinjuku-ns-sky-clinic"
+    "slug": "shinjuku-ns-building-sky-clinic"
   },
   {
     "name": "杏林大学医学部付属杉並病院",
@@ -3014,7 +3092,7 @@
     "warningEn": "First visits in principle require a referral; some departments require an appointment",
     "updated": "2026-06",
     "searchKeys": "杏林大学医学部付属杉並病院 杏林杉並病院 Kyorin Suginami 杉並区 和田 方南町 东京 妇人科",
-    "slug": "kyorin-suginami-hospital"
+    "slug": "kyorin-university-suginami-hospital"
   },
   {
     "name": "ローズレディースクリニック",
@@ -3096,7 +3174,7 @@
     "warningEn": "A large metropolitan hospital; first visits generally require a referral, otherwise a special fee applies",
     "updated": "2026-06",
     "searchKeys": "東京都立広尾病院 広尾病院 Hiroo 渋谷 恵比寿 广尾 东京 妇人科 JMIP 拠点病院",
-    "slug": "hiroo-hospital",
+    "slug": "tokyo-metropolitan-hiroo-hospital",
     "extraBadges": [
       {
         "label": "拠点病院",
@@ -3135,7 +3213,7 @@
     "noteEn": "A breast-care clinic by Omotesando Stn with all-female doctors, focused on breast-cancer screening and breast imaging, plus a gynecology department; open into the evening and on weekends. Confirm Chinese consultation by phone before visiting. 1-min walk from Exit A2, Omotesando Stn.",
     "updated": "2026-06",
     "searchKeys": "ピンクリボンブレストケアクリニック表参道 Pink Ribbon Breast Care 表参道 神宮前 渋谷 东京 乳腺 妇人科",
-    "slug": "pink-ribbon-omotesando"
+    "slug": "pink-ribbon-breast-care-clinic-omotesando"
   },
   {
     "name": "あさひレディスクリニック",
@@ -3306,7 +3384,7 @@
     "warningEn": "Insured resident patients booking via the International Department pay a 7,700 yen booking fee per visit; a referral letter is recommended",
     "updated": "2026-06",
     "searchKeys": "NTT東日本関東病院 NTT Medical Center Tokyo 国際診療科 五反田 品川 东京 妇人科 拠点病院 中文",
-    "slug": "ntt-kanto-hospital",
+    "slug": "ntt-medical-center-tokyo-international-department",
     "extraBadges": [
       {
         "label": "拠点病院",
@@ -3402,7 +3480,7 @@
     "warningEn": "A large metropolitan hospital; first visits generally require a referral, otherwise a special fee applies",
     "updated": "2026-06",
     "searchKeys": "東京都立大塚病院 大塚病院 Otsuka 南大塚 新大塚 豊島区 东京 妇人科 周産期 拠点病院 中文",
-    "slug": "otsuka-hospital",
+    "slug": "tokyo-metropolitan-otsuka-hospital",
     "extraBadges": [
       {
         "label": "拠点病院",
@@ -3450,7 +3528,7 @@
     "warningEn": "First visit requires a referral; without one, a 3,300 yen special fee applies",
     "updated": "2026-06",
     "searchKeys": "東京高輪病院 JCHO Takanawa 高輪 高輪台 品川 港区 东京 妇人科 国際部 中文",
-    "slug": "takanawa-hospital",
+    "slug": "jcho-tokyo-takanawa-hospital-international-dept",
     "extraBadges": [
       {
         "label": "中文官网",
@@ -3502,7 +3580,7 @@
     "warningEn": "Referral-only: first visits require a referral letter",
     "updated": "2026-06",
     "searchKeys": "虎の門病院 虎之门病院 Toranomon 虎ノ門 虎ノ門ヒルズ 港区 东京 妇人科 国際室 JMIP 中文",
-    "slug": "toranomon-hospital",
+    "slug": "toranomon-hospital-international-office",
     "extraBadges": [
       {
         "label": "JMIP认证",
@@ -3548,7 +3626,7 @@
     "warningEn": "A regional medical-support hospital; a referral is required in principle, otherwise a special fee applies",
     "updated": "2026-06",
     "searchKeys": "東京都済生会中央病院 済生会 Saiseikai 三田 赤羽橋 港区 东京 妇人科 国際連携室 JMIP 中文",
-    "slug": "saiseikai-central-hospital",
+    "slug": "tokyo-saiseikai-central-hospital-international-liaison",
     "extraBadges": [
       {
         "label": "JMIP认证",
@@ -3658,7 +3736,8 @@
     "note": "提供越南语对应，武永贤院长自幼在日、为越南裔，越南语流利。内科・儿科・皮肤科・过敏科。就诊前建议先电话确认。",
     "noteEn": "Vietnamese supported; director Dr. Ken Takenaga, who grew up in Japan and is of Vietnamese origin, is fluent in Vietnamese. Internal medicine, pediatrics, dermatology and allergy. Call ahead to confirm.",
     "updated": "2026-07",
-    "searchKeys": "中井駅前クリニック Nakai Ekimae Clinic 武永贤 上落合 新宿区 东京 越南语 ベトナム語"
+    "searchKeys": "中井駅前クリニック Nakai Ekimae Clinic 武永贤 上落合 新宿区 东京 越南语 ベトナム語",
+    "slug": "nakai-ekimae-clinic"
   },
   {
     "name": "高田馬場さくらクリニック",
@@ -3688,7 +3767,8 @@
     "note": "提供越南语翻译协助就诊。整形外科（骨科）・内科。本院无法处理的病症可协助转诊并开具介绍信。越南语对应曜日请提前电话确认。",
     "noteEn": "A Vietnamese interpreter helps with visits. Orthopedics and internal medicine. For conditions it can't treat, staff help arrange a referral and write a referral letter. Call ahead to confirm which days Vietnamese is available.",
     "updated": "2026-07",
-    "searchKeys": "高田馬場さくらクリニック Takadanobaba Sakura Clinic 高田马场 新宿区 东京 越南语 ベトナム語 整形外科"
+    "searchKeys": "高田馬場さくらクリニック Takadanobaba Sakura Clinic 高田马场 新宿区 东京 越南语 ベトナム語 整形外科",
+    "slug": "takadanobaba-sakura-clinic"
   },
   {
     "name": "T-松岡救急クリニック神田",
@@ -3721,7 +3801,8 @@
     "note": "提供越南语同声传译及英文对应。急救科・内科・儿科・外科等，急患24小时365天受理。官网有越南语・英文页面。",
     "noteEn": "Vietnamese simultaneous interpreting and English supported. Emergency medicine, internal medicine, pediatrics, surgery and more; emergencies accepted 24/7, 365 days. The website has Vietnamese and English pages.",
     "updated": "2026-07",
-    "searchKeys": "T-松岡救急クリニック神田 TMC神田 T-Matsuoka Emergency Clinic Kanda 神田 千代田区 东京 越南语 ベトナム語 急救 24小时"
+    "searchKeys": "T-松岡救急クリニック神田 TMC神田 T-Matsuoka Emergency Clinic Kanda 神田 千代田区 东京 越南语 ベトナム語 急救 24小时",
+    "slug": "t-matsuoka-emergency-clinic-kanda"
   },
   {
     "name": "ふくや皮フ科クリニック",
@@ -3750,7 +3831,8 @@
     "note": "位于神户华侨会馆1楼，提供中文对应。一般皮肤科・小儿皮肤科・美容皮肤科。就诊前建议先电话确认。",
     "noteEn": "Located on the 1F of the Kobe Overseas Chinese Hall; Chinese supported. General, pediatric and cosmetic dermatology. Call ahead to confirm.",
     "updated": "2026-07",
-    "searchKeys": "ふくや皮フ科クリニック Fukuya Dermatology Clinic 松岛智慧 下山手通 华侨会馆 神户 中央区 三宫 中文 皮肤科"
+    "searchKeys": "ふくや皮フ科クリニック Fukuya Dermatology Clinic 松岛智慧 下山手通 华侨会馆 神户 中央区 三宫 中文 皮肤科",
+    "slug": "fukuya-dermatology-clinic"
   },
   {
     "name": "梶歯科医院",
@@ -3782,7 +3864,8 @@
     "note": "提供中文（日常会话程度）对应，一名勤务医曾就读华侨学校。牙科・矫正・儿童牙科・口腔外科。垂水站徒步2分，位于商场内、设有停车场。",
     "noteEn": "Chinese at a conversational level (one dentist attended an overseas-Chinese school). General, orthodontic, pediatric dentistry and oral surgery. 2-min walk from Tarumi Stn, inside a mall with parking.",
     "updated": "2026-07",
-    "searchKeys": "梶歯科医院 Kaji Dental Clinic 垂水区 天ノ下町 神户 中文 牙科 矫正"
+    "searchKeys": "梶歯科医院 Kaji Dental Clinic 垂水区 天ノ下町 神户 中文 牙科 矫正",
+    "slug": "kaji-dental-clinic"
   },
   {
     "name": "さくら歯科医院（神户）",
@@ -3814,7 +3897,8 @@
     "note": "提供中文对应。牙科・矫正・儿童牙科・口腔外科，采预约制，周四以往诊（上门诊疗）为主。就诊前建议先电话确认。",
     "noteEn": "Chinese supported. General, orthodontic, pediatric dentistry and oral surgery; by appointment, with Thursdays focused on home visits. Call ahead to confirm.",
     "updated": "2026-07",
-    "searchKeys": "さくら歯科医院 Sakura Dental Clinic 中山手通 大倉山 神户 中央区 中文 牙科"
+    "searchKeys": "さくら歯科医院 Sakura Dental Clinic 中山手通 大倉山 神户 中央区 中文 牙科",
+    "slug": "sakura-dental-clinic"
   },
   {
     "name": "その歯科クリニック",
@@ -3846,7 +3930,8 @@
     "note": "提供中文对应。牙科・矫正・儿童牙科・口腔外科。阪神「新在家」站徒步5分、JR「六甲道」站徒步7分。就诊前建议先电话确认。",
     "noteEn": "Chinese supported. General, orthodontic, pediatric dentistry and oral surgery. 5-min walk from Hanshin Shinzaike Stn, 7-min from JR Rokkomichi Stn. Call ahead to confirm.",
     "updated": "2026-07",
-    "searchKeys": "その歯科クリニック Sono Dental Clinic 灘区 桜口町 六甲道 新在家 神户 中文 牙科"
+    "searchKeys": "その歯科クリニック Sono Dental Clinic 灘区 桜口町 六甲道 新在家 神户 中文 牙科",
+    "slug": "sono-dental-clinic"
   },
   {
     "name": "愛染橋病院",
@@ -3888,7 +3973,8 @@
     "note": "大阪市浪速区的总合周产期母子医疗中心（设NICU・MFICU），设有13个诊疗科目的综合医院，产科・儿科・母子医疗为强项。支持中文・越南语。就诊前建议先电话确认对应语言的时间安排。",
     "noteEn": "A general perinatal maternal and child medical center in Naniwa-ku, Osaka (with NICU & MFICU), a general hospital with 13 departments strong in obstetrics, pediatrics and maternal-child care. Chinese and Vietnamese supported. Call ahead to confirm interpreter availability.",
     "updated": "2026-07",
-    "searchKeys": "愛染橋病院 石井記念愛染園 Aizenbashi Hospital 浪速区 日本橋 今宮戎 恵美須町 大阪 中文 越南语 周産期 母子医療 产科 儿科"
+    "searchKeys": "愛染橋病院 石井記念愛染園 Aizenbashi Hospital 浪速区 日本橋 今宮戎 恵美須町 大阪 中文 越南语 周産期 母子医療 产科 儿科",
+    "slug": "aizenbashi-hospital"
   },
   {
     "name": "南森町ふくしま内科・循環器内科",
@@ -3923,7 +4009,8 @@
     "note": "中国語・英語员工常驻，另设有中文网站。JR东西线「大阪天満宮」站、地铁堺筋线・谷町线「南森町」站徒步1分。周六全天、周日上午也应诊。内科・循环器内科・糖尿病内科・儿科・皮肤科・过敏科。就诊前建议先电话或网上确认。",
     "noteEn": "Chinese- and English-speaking staff on site, with a Chinese-language website. 1-min walk from Osaka-Temmangu Stn (JR Tozai Line) and Minami-morimachi Stn (Sakaisuji / Tanimachi Lines). Open all day Saturday and Sunday morning. Internal medicine, cardiology, diabetes, pediatrics, dermatology and allergy. Call or book online ahead.",
     "updated": "2026-07",
-    "searchKeys": "南森町ふくしま内科・循環器内科 Minamimorimachi Fukushima Clinic 北区 天神橋 大阪天満宮 南森町 大阪 中文 英文 内科 循环器 糖尿病"
+    "searchKeys": "南森町ふくしま内科・循環器内科 Minamimorimachi Fukushima Clinic 北区 天神橋 大阪天満宮 南森町 大阪 中文 英文 内科 循环器 糖尿病",
+    "slug": "minamimorimachi-fukushima-internal-medicine-cardiology-clinic"
   },
   {
     "name": "前田整形外科",
@@ -3946,7 +4033,8 @@
     "note": "骨科诊所。提供英语对应，并配有英语医疗通译。就诊前建议先电话确认。",
     "noteEn": "Orthopedic clinic. English supported with an English medical interpreter. Call ahead to confirm.",
     "updated": "2026-07",
-    "searchKeys": "前田整形外科 Maeda Orthopedic 東淀川区 井高野 大阪 英文 骨科"
+    "searchKeys": "前田整形外科 Maeda Orthopedic 東淀川区 井高野 大阪 英文 骨科",
+    "slug": "maeda-orthopedic-clinic"
   },
   {
     "name": "藤本クリニック",
@@ -3970,7 +4058,8 @@
     "note": "内科・儿科。提供英语对应。就诊前建议先电话确认。",
     "noteEn": "Internal medicine and pediatrics. English supported. Call ahead to confirm.",
     "updated": "2026-07",
-    "searchKeys": "藤本クリニック Fujimoto Clinic 順心会 東淀川区 豊里 大阪 英文 内科 儿科"
+    "searchKeys": "藤本クリニック Fujimoto Clinic 順心会 東淀川区 豊里 大阪 英文 内科 儿科",
+    "slug": "fujimoto-clinic"
   },
   {
     "name": "なかえびえ整形外科",
@@ -3993,7 +4082,8 @@
     "note": "骨科诊所。提供英语对应。就诊前建议先电话确认。",
     "noteEn": "Orthopedic clinic. English supported. Call ahead to confirm.",
     "updated": "2026-07",
-    "searchKeys": "なかえびえ整形外科 Nakaebie Orthopedic 福島区 海老江 大阪 英文 骨科"
+    "searchKeys": "なかえびえ整形外科 Nakaebie Orthopedic 福島区 海老江 大阪 英文 骨科",
+    "slug": "nakaebie-orthopedic-clinic"
   },
   {
     "name": "中山整形外科",
@@ -4016,7 +4106,8 @@
     "note": "骨科诊所。提供英语对应。就诊前建议先电话确认。",
     "noteEn": "Orthopedic clinic. English supported. Call ahead to confirm.",
     "updated": "2026-07",
-    "searchKeys": "中山整形外科 Nakayama Orthopedic 三愛会 港区 弁天 大阪 英文 骨科"
+    "searchKeys": "中山整形外科 Nakayama Orthopedic 三愛会 港区 弁天 大阪 英文 骨科",
+    "slug": "nakayama-orthopedic-clinic"
   },
   {
     "name": "クローバークリニック",
@@ -4042,7 +4133,8 @@
     "note": "内科・皮肤科・骨科。提供英语・中文对应，并配有英语・中文医疗通译。就诊前建议先电话确认。",
     "noteEn": "Internal medicine, dermatology and orthopedics. English and Chinese supported with interpreters. Call ahead to confirm.",
     "updated": "2026-07",
-    "searchKeys": "クローバークリニック Clover Clinic よつば会 城東区 鴫野西 京橋 大阪 英文 中文 内科 皮肤科 骨科"
+    "searchKeys": "クローバークリニック Clover Clinic よつば会 城東区 鴫野西 京橋 大阪 英文 中文 内科 皮肤科 骨科",
+    "slug": "clover-clinic"
   },
   {
     "name": "任クリニック",
@@ -4067,7 +4159,8 @@
     "note": "内科・脑神经外科。提供英语・韩语对应，并配有英语・韩语医疗通译。就诊前建议先电话确认。",
     "noteEn": "Internal medicine and neurosurgery. English and Korean supported with interpreters. Call ahead to confirm.",
     "updated": "2026-07",
-    "searchKeys": "任クリニック Jin Clinic 中央区 玉造 大阪 英文 韩语 内科 脑神经外科"
+    "searchKeys": "任クリニック Jin Clinic 中央区 玉造 大阪 英文 韩语 内科 脑神经外科",
+    "slug": "jin-clinic"
   },
   {
     "name": "ラ・クォール本町クリニック",
@@ -4091,7 +4184,8 @@
     "note": "内科・妇科。提供英语对应。就诊前建议先电话确认。",
     "noteEn": "Internal medicine and gynecology. English supported. Call ahead to confirm.",
     "updated": "2026-07",
-    "searchKeys": "ラ・クォール本町クリニック La Qual Honmachi 中央区 本町 大阪 英文 内科 妇科"
+    "searchKeys": "ラ・クォール本町クリニック La Qual Honmachi 中央区 本町 大阪 英文 内科 妇科",
+    "slug": "la-qual-honmachi-clinic"
   },
   {
     "name": "くぼたこどもクリニック",
@@ -4115,7 +4209,8 @@
     "note": "儿科诊所。提供英语对应，并配有英语・韩语医疗通译。就诊前建议先电话确认。",
     "noteEn": "Pediatric clinic. English supported with English & Korean medical interpreters. Call ahead to confirm.",
     "updated": "2026-07",
-    "searchKeys": "くぼたこどもクリニック Kubota Children Clinic 生野区 勝山北 大阪 英文 韩语 儿科 小児科"
+    "searchKeys": "くぼたこどもクリニック Kubota Children Clinic 生野区 勝山北 大阪 英文 韩语 儿科 小児科",
+    "slug": "kubota-childrens-clinic"
   },
   {
     "name": "北巽白鷺クリニック",
@@ -4138,7 +4233,8 @@
     "note": "提供血液透析。英语对应。就诊前建议先电话确认。",
     "noteEn": "Hemodialysis. English supported. Call ahead to confirm.",
     "updated": "2026-07",
-    "searchKeys": "北巽白鷺クリニック Kitatatsumi Shirasagi 仁真会 生野区 巽北 大阪 英文 血液透析"
+    "searchKeys": "北巽白鷺クリニック Kitatatsumi Shirasagi 仁真会 生野区 巽北 大阪 英文 血液透析",
+    "slug": "kitatatsumi-shirasagi-clinic"
   },
   {
     "name": "宮原レディースクリニック",
@@ -4162,7 +4258,8 @@
     "note": "内科・妇科（女性诊所）。提供中文对应，并配有中文医疗通译。就诊前建议先电话确认。",
     "noteEn": "Internal medicine and gynecology (ladies clinic). Chinese supported with a Chinese medical interpreter. Call ahead to confirm.",
     "updated": "2026-07",
-    "searchKeys": "宮原レディースクリニック Miyahara Ladies 天王寺区 寺田町 大阪 中文 内科 妇科 妇人科"
+    "searchKeys": "宮原レディースクリニック Miyahara Ladies 天王寺区 寺田町 大阪 中文 内科 妇科 妇人科",
+    "slug": "miyahara-ladies-clinic"
   },
   {
     "name": "ハルカス川崎クリニック",
@@ -4186,7 +4283,8 @@
     "note": "内科・外科。位于あべのハルカス21楼。提供英语对应。就诊前建议先电话确认。",
     "noteEn": "Internal medicine and surgery, on the 21st floor of Abeno Harukas. English supported. Call ahead to confirm.",
     "updated": "2026-07",
-    "searchKeys": "ハルカス川崎クリニック Harukas Kawasaki 阿倍野区 阿倍野筋 あべのハルカス 大阪 英文 内科 外科"
+    "searchKeys": "ハルカス川崎クリニック Harukas Kawasaki 阿倍野区 阿倍野筋 あべのハルカス 大阪 英文 内科 外科",
+    "slug": "harukas-kawasaki-clinic"
   },
   {
     "name": "天野整形外科",
@@ -4210,7 +4308,8 @@
     "note": "骨科诊所。提供英语・法语对应，并配有英语医疗通译。就诊前建议先电话确认。",
     "noteEn": "Orthopedic clinic. English and French supported with an English medical interpreter. Call ahead to confirm.",
     "updated": "2026-07",
-    "searchKeys": "天野整形外科 Amano Orthopedic 東住吉区 駒川 大阪 英文 法语 骨科"
+    "searchKeys": "天野整形外科 Amano Orthopedic 東住吉区 駒川 大阪 英文 法语 骨科",
+    "slug": "amano-orthopedic-clinic"
   },
   {
     "name": "白鷺診療所",
@@ -4234,7 +4333,8 @@
     "note": "泌尿科・血液透析。提供英语对应。就诊前建议先电话确认。",
     "noteEn": "Urology and hemodialysis. English supported. Call ahead to confirm.",
     "updated": "2026-07",
-    "searchKeys": "白鷺診療所 Shirasagi Clinic 仁真会 東住吉区 杭全 大阪 英文 泌尿科 血液透析"
+    "searchKeys": "白鷺診療所 Shirasagi Clinic 仁真会 東住吉区 杭全 大阪 英文 泌尿科 血液透析",
+    "slug": "shirasagi-clinic"
   },
   {
     "name": "みのりクリニック",
@@ -4261,7 +4361,8 @@
     "note": "内科・外科・儿科・皮肤科・骨科。提供英语对应。就诊前建议先电话确认。",
     "noteEn": "Internal medicine, surgery, pediatrics, dermatology and orthopedics. English supported. Call ahead to confirm.",
     "updated": "2026-07",
-    "searchKeys": "みのりクリニック Minori Clinic 孝至会 平野区 平野北 大阪 英文 内科 外科 儿科 皮肤科 骨科"
+    "searchKeys": "みのりクリニック Minori Clinic 孝至会 平野区 平野北 大阪 英文 内科 外科 儿科 皮肤科 骨科",
+    "slug": "minori-clinic"
   },
   {
     "name": "かつらぎクリニック",
@@ -4285,7 +4386,8 @@
     "note": "内科。提供英语・韩语对应。就诊前建议先电话确认。",
     "noteEn": "Internal medicine. English and Korean supported. Call ahead to confirm.",
     "updated": "2026-07",
-    "searchKeys": "かつらぎクリニック Katsuragi Clinic 桂輝会 住之江区 御崎 大阪 英文 韩语 内科"
+    "searchKeys": "かつらぎクリニック Katsuragi Clinic 桂輝会 住之江区 御崎 大阪 英文 韩语 内科",
+    "slug": "katsuragi-clinic"
   },
   {
     "name": "小林医院",
@@ -4310,7 +4412,8 @@
     "note": "内科・儿科・皮肤科。提供英语对应。就诊前建议先电话确认。",
     "noteEn": "Internal medicine, pediatrics and dermatology. English supported. Call ahead to confirm.",
     "updated": "2026-07",
-    "searchKeys": "小林医院 Kobayashi Clinic 住吉区 東粉浜 大阪 英文 内科 儿科 皮肤科"
+    "searchKeys": "小林医院 Kobayashi Clinic 住吉区 東粉浜 大阪 英文 内科 儿科 皮肤科",
+    "slug": "kobayashi-clinic"
   },
   {
     "name": "まわたり内科",
@@ -4333,7 +4436,8 @@
     "note": "内科。提供英语对应。就诊前建议先电话确认。",
     "noteEn": "Internal medicine. English supported. Call ahead to confirm.",
     "updated": "2026-07",
-    "searchKeys": "まわたり内科 Mawatari 秀徳会 豊能郡 豊能町 新光風台 大阪 英文 内科"
+    "searchKeys": "まわたり内科 Mawatari 秀徳会 豊能郡 豊能町 新光風台 大阪 英文 内科",
+    "slug": "mawatari-internal-medicine-clinic"
   },
   {
     "name": "おざわクリニック",
@@ -4359,7 +4463,8 @@
     "note": "内科・外科。提供英语・韩语・法语对应。就诊前建议先电话确认。",
     "noteEn": "Internal medicine and surgery. English, Korean and French supported. Call ahead to confirm.",
     "updated": "2026-07",
-    "searchKeys": "おざわクリニック Ozawa Clinic 箕面市 粟生間谷西 大阪 英文 韩语 法语 内科 外科"
+    "searchKeys": "おざわクリニック Ozawa Clinic 箕面市 粟生間谷西 大阪 英文 韩语 法语 内科 外科",
+    "slug": "ozawa-clinic"
   },
   {
     "name": "みほクリニック",
@@ -4383,7 +4488,8 @@
     "note": "儿科・牙科。提供英语对应。就诊前建议先电话确认。",
     "noteEn": "Pediatrics and dentistry. English supported. Call ahead to confirm.",
     "updated": "2026-07",
-    "searchKeys": "みほクリニック Miho Clinic 嵩美会 箕面市 粟生間谷東 大阪 英文 儿科 牙科"
+    "searchKeys": "みほクリニック Miho Clinic 嵩美会 箕面市 粟生間谷東 大阪 英文 儿科 牙科",
+    "slug": "miho-clinic"
   },
   {
     "name": "西野医院",
@@ -4407,7 +4513,8 @@
     "note": "内科。提供英语・德语对应。就诊前建议先电话确认。",
     "noteEn": "Internal medicine. English and German supported. Call ahead to confirm.",
     "updated": "2026-07",
-    "searchKeys": "西野医院 Nishino Clinic 吹田市 五月が丘東 大阪 英文 德语 内科"
+    "searchKeys": "西野医院 Nishino Clinic 吹田市 五月が丘東 大阪 英文 德语 内科",
+    "slug": "nishino-clinic"
   },
   {
     "name": "寺嶋・塚田こどもクリニック",
@@ -4432,7 +4539,8 @@
     "note": "内科・儿科・牙科。提供英语对应，并配有英语医疗通译。就诊前建议先电话确认。",
     "noteEn": "Internal medicine, pediatrics and dentistry. English supported with an English medical interpreter. Call ahead to confirm.",
     "updated": "2026-07",
-    "searchKeys": "寺嶋・塚田こどもクリニック Terashima Tsukada Children 交野市 天野が原町 大阪 英文 内科 儿科 牙科"
+    "searchKeys": "寺嶋・塚田こどもクリニック Terashima Tsukada Children 交野市 天野が原町 大阪 英文 内科 儿科 牙科",
+    "slug": "terashima-tsukada-childrens-clinic"
   },
   {
     "name": "立沢整形外科",
@@ -4456,7 +4564,8 @@
     "note": "骨科诊所。提供英语・泰语对应，并配有英语・泰语医疗通译。就诊前建议先电话确认。",
     "noteEn": "Orthopedic clinic. English and Thai supported with interpreters. Call ahead to confirm.",
     "updated": "2026-07",
-    "searchKeys": "立沢整形外科 Tatsuzawa Orthopedic 守口市 本町 大阪 英文 泰语 骨科"
+    "searchKeys": "立沢整形外科 Tatsuzawa Orthopedic 守口市 本町 大阪 英文 泰语 骨科",
+    "slug": "tatsuzawa-orthopedic-clinic"
   },
   {
     "name": "寺川クリニック",
@@ -4480,7 +4589,8 @@
     "note": "内科・泌尿科。提供中文对应，并配有中文医疗通译。就诊前建议先电话确认。",
     "noteEn": "Internal medicine and urology. Chinese supported with a Chinese medical interpreter. Call ahead to confirm.",
     "updated": "2026-07",
-    "searchKeys": "寺川クリニック Terakawa Clinic 大東市 寺川 大阪 中文 内科 泌尿科"
+    "searchKeys": "寺川クリニック Terakawa Clinic 大東市 寺川 大阪 中文 内科 泌尿科",
+    "slug": "terakawa-clinic"
   },
   {
     "name": "とうしんクリニック",
@@ -4505,7 +4615,8 @@
     "note": "内科・骨科。提供英语・德语对应。就诊前建议先电话确认。",
     "noteEn": "Internal medicine and orthopedics. English and German supported. Call ahead to confirm.",
     "updated": "2026-07",
-    "searchKeys": "とうしんクリニック Toshin Clinic 東大阪市 近江堂 大阪 英文 德语 内科 骨科"
+    "searchKeys": "とうしんクリニック Toshin Clinic 東大阪市 近江堂 大阪 英文 德语 内科 骨科",
+    "slug": "toshin-clinic"
   },
   {
     "name": "もとざわ医院",
@@ -4529,7 +4640,8 @@
     "note": "内科・儿科。提供中文对应，并配有中文医疗通译。就诊前建议先电话确认。",
     "noteEn": "Internal medicine and pediatrics. Chinese supported with a Chinese medical interpreter. Call ahead to confirm.",
     "updated": "2026-07",
-    "searchKeys": "もとざわ医院 Motozawa Clinic 弘代会 東大阪市 小若江 大阪 中文 内科 儿科"
+    "searchKeys": "もとざわ医院 Motozawa Clinic 弘代会 東大阪市 小若江 大阪 中文 内科 儿科",
+    "slug": "motozawa-clinic"
   },
   {
     "name": "原クリニック",
@@ -4554,7 +4666,8 @@
     "note": "内科・骨科・耳鼻喉科。提供中文对应，并配有中文医疗通译。就诊前建议先电话确认。",
     "noteEn": "Internal medicine, orthopedics and ENT. Chinese supported with a Chinese medical interpreter. Call ahead to confirm.",
     "updated": "2026-07",
-    "searchKeys": "原クリニック Hara Clinic 東大阪市 足代南 大阪 中文 内科 骨科 耳鼻喉科"
+    "searchKeys": "原クリニック Hara Clinic 東大阪市 足代南 大阪 中文 内科 骨科 耳鼻喉科",
+    "slug": "hara-clinic"
   },
   {
     "name": "半田クリニック",
@@ -4580,7 +4693,8 @@
     "note": "内科・外科。提供中文・印尼语・台湾语对应。就诊前建议先电话确认。",
     "noteEn": "Internal medicine and surgery. Chinese, Indonesian and Taiwanese supported. Call ahead to confirm.",
     "updated": "2026-07",
-    "searchKeys": "半田クリニック Handa Clinic 晃生会 八尾市 若林町 大阪 中文 印尼语 台湾语 内科 外科"
+    "searchKeys": "半田クリニック Handa Clinic 晃生会 八尾市 若林町 大阪 中文 印尼语 台湾语 内科 外科",
+    "slug": "handa-clinic"
   },
   {
     "name": "わたなべ皮フ科 形成外科",
@@ -4604,7 +4718,8 @@
     "note": "皮肤科・形成外科。提供英语对应。就诊前建议先电话确认。",
     "noteEn": "Dermatology and plastic surgery. English supported. Call ahead to confirm.",
     "updated": "2026-07",
-    "searchKeys": "わたなべ皮フ科 形成外科 Watanabe Dermatology Plastic あすなろ会 八尾市 北本町 大阪 英文 皮肤科 整形外科"
+    "searchKeys": "わたなべ皮フ科 形成外科 Watanabe Dermatology Plastic あすなろ会 八尾市 北本町 大阪 英文 皮肤科 整形外科",
+    "slug": "watanabe-dermatology-plastic-surgery"
   },
   {
     "name": "山口医院",
@@ -4630,7 +4745,8 @@
     "note": "内科・儿科・皮肤科。提供英语・法语对应。就诊前建议先电话确认。",
     "noteEn": "Internal medicine, pediatrics and dermatology. English and French supported. Call ahead to confirm.",
     "updated": "2026-07",
-    "searchKeys": "山口医院 Yamaguchi Clinic 山口会 堺市中区 土師町 大阪 英文 法语 内科 儿科 皮肤科"
+    "searchKeys": "山口医院 Yamaguchi Clinic 山口会 堺市中区 土師町 大阪 英文 法语 内科 儿科 皮肤科",
+    "slug": "yamaguchi-clinic"
   },
   {
     "name": "澤田整形外科医院",
@@ -4654,7 +4770,8 @@
     "note": "骨科诊所。提供英语・法语对应。就诊前建议先电话确认。",
     "noteEn": "Orthopedic clinic. English and French supported. Call ahead to confirm.",
     "updated": "2026-07",
-    "searchKeys": "澤田整形外科医院 Sawada Orthopedic 堺市南区 竹城台 大阪 英文 法语 骨科"
+    "searchKeys": "澤田整形外科医院 Sawada Orthopedic 堺市南区 竹城台 大阪 英文 法语 骨科",
+    "slug": "sawada-orthopedic-clinic"
   },
   {
     "name": "木本内科",
@@ -4677,7 +4794,8 @@
     "note": "内科。提供英语对应。就诊前建议先电话确认。",
     "noteEn": "Internal medicine. English supported. Call ahead to confirm.",
     "updated": "2026-07",
-    "searchKeys": "木本内科 Kimoto Internal Medicine 泉南郡 熊取町 和田 大阪 英文 内科"
+    "searchKeys": "木本内科 Kimoto Internal Medicine 泉南郡 熊取町 和田 大阪 英文 内科",
+    "slug": "kimoto-internal-medicine-clinic"
   },
   {
     "name": "谷口クリニック",
@@ -4701,7 +4819,8 @@
     "note": "内科・外科。提供英语对应。就诊前建议先电话确认。",
     "noteEn": "Internal medicine and surgery. English supported. Call ahead to confirm.",
     "updated": "2026-07",
-    "searchKeys": "谷口クリニック Taniguchi Clinic 阪南市 下出 大阪 英文 内科 外科"
+    "searchKeys": "谷口クリニック Taniguchi Clinic 阪南市 下出 大阪 英文 内科 外科",
+    "slug": "taniguchi-clinic"
   },
   {
     "name": "辻レディースクリニック",
@@ -4726,7 +4845,8 @@
     "note": "内科・产科・妇科（女性诊所）。提供英语对应，并配有英语医疗通译。就诊前建议先电话确认。",
     "noteEn": "Internal medicine, obstetrics and gynecology (ladies clinic). English supported with an English medical interpreter. Call ahead to confirm.",
     "updated": "2026-07",
-    "searchKeys": "辻レディースクリニック Tsuji Ladies 阪南市 黒田 大阪 英文 内科 产科 妇科 妇人科"
+    "searchKeys": "辻レディースクリニック Tsuji Ladies 阪南市 黒田 大阪 英文 内科 产科 妇科 妇人科",
+    "slug": "tsuji-ladies-clinic"
   },
   {
     "name": "日本橋耳鼻咽喉科医院",
@@ -4757,6 +4877,7 @@
     "note": "中国語・英語・韓国語员工常驻，另设有中文网站。耳鼻喉科专科（耳・鼻・喉）。地铁千日前线・堺筋线・近铁难波线「日本橋」站②号出口徒步1分。就诊前建议先电话或网上确认。",
     "noteEn": "Multilingual staff in Chinese, English and Korean, with a Chinese-language website. ENT clinic (ear, nose & throat). 1-min walk from Nippombashi Stn (Sennichimae / Sakaisuji / Kintetsu-Namba lines), exit 2. Call or book online ahead.",
     "updated": "2026-07",
-    "searchKeys": "日本橋耳鼻咽喉科医院 Nipponbashi ENT Clinic 中央区 日本橋 大阪 中文 英文 韩语 耳鼻喉科 耳鼻咽喉科"
+    "searchKeys": "日本橋耳鼻咽喉科医院 Nipponbashi ENT Clinic 中央区 日本橋 大阪 中文 英文 韩语 耳鼻喉科 耳鼻咽喉科",
+    "slug": "nipponbashi-ent-clinic"
   }
 ]
