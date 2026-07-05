@@ -28,7 +28,7 @@ const labels = {
 };
 ---
 <nav aria-label={locale === 'zh' ? '主导航' : 'Main navigation'}>
-  <a class="logo" href={homeHref}><span class="logo-dot"></span>81日本</a>
+  <a class="logo" href={homeHref} aria-label="81Japan"><span class="logo-badge">81</span><span class="logo-word">Japan</span></a>
   <div class="nav-links" role="menubar">
     {items.map(i => (
       <a href={i.href === '#' ? '#' : localizePath(i.href, locale)} class={active === i.key ? 'active' : ''}>
