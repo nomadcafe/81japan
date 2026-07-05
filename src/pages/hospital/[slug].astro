@@ -5,7 +5,7 @@ import Footer from '../../components/Footer.astro';
 import { loadHospitals, hospitalSlug, type Hospital } from '../../lib/hospitals.js';
 import { localizePath } from '../../lib/i18n';
 import { regionByKey } from '../../lib/regions';
-import { langCodes, langTokensOf, medicalType, splitPostal } from '../../lib/hospitalSeo';
+import { langCodes, langTokensOf, medicalType, splitPostal, cleanJpName, typeNoun, featuredLangLabel } from '../../lib/hospitalSeo';
 import '../../styles/page.css';
 import '../../styles/hospital.css';
 
@@ -54,6 +54,11 @@ const description = `${h.name}（${h.jpName || ''}）位于${h.region || '日本
 
 const { postalCode, streetAddress } = splitPostal(h.address);
 
+// 标题：按实际对应语言生成（避免把英文/越南语医院误称「中文医院」），并去掉 jpName 的法人后缀与重复
+const jpClean = cleanJpName(h.jpName);
+const showJp = jpClean && jpClean !== h.name;
+const pageTitle = `${h.name}${showJp ? '（' + jpClean + '）' : ''} · ${h.region || '日本'}${featuredLangLabel(h, 'zh')}对应${typeNoun(h, 'zh')} | 81日本`;
+
 const jsonLd = {
   '@context': 'https://schema.org',
   '@graph': [
@@ -90,7 +95,7 @@ const jsonLd = {
 };
 ---
 <Layout
-  title={`${h.name}${h.jpName && h.jpName !== h.name ? '（' + h.jpName + '）' : ''} · ${h.region || '日本'}中文医院 | 81日本`}
+  title={pageTitle}
   description={description}
   path={`/hospital/${slug}`}
   locale="zh"

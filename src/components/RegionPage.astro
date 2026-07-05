@@ -195,10 +195,10 @@ const langOptions = [
             <span class="filter-count">{regionList.length}</span>
           </a>
         ) : (
-          <div class="filter-option active" onclick="filterLang('全部', this)" data-lang-filter="全部">
+          <button type="button" class="filter-option active" onclick="filterLang('全部', this)" data-lang-filter="全部">
             <span>{t.langAll}</span>
             <span class="filter-count">{regionList.length}</span>
-          </div>
+          </button>
         )}
         {langOptions.map((o) => (
           comboLangs.has(o.key) ? (
@@ -213,10 +213,10 @@ const langOptions = [
               <span class="filter-count">{o.count}</span>
             </a>
           ) : (
-            <div class="filter-option" onclick={`filterLang('${o.key}', this)`} data-lang-filter={o.key}>
+            <button type="button" class="filter-option" onclick={`filterLang('${o.key}', this)`} data-lang-filter={o.key}>
               <span>{o.label}</span>
               <span class="filter-count">{o.count}</span>
-            </div>
+            </button>
           )
         ))}
       </div>
@@ -224,7 +224,7 @@ const langOptions = [
       <div class="filter-group">
         <div class="filter-title">{t.dept}</div>
         {t.depts.map(([kw, label]) => (
-          <div class="filter-option" onclick={`setSearch('${kw}')`}>{label}</div>
+          <button type="button" class="filter-option" onclick={`setSearch('${kw}')`}>{label}</button>
         ))}
       </div>
     </aside>

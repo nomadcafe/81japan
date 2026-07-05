@@ -5,7 +5,7 @@ import Footer from '../../../components/Footer.astro';
 import { loadHospitals, hospitalSlug, type Hospital } from '../../../lib/hospitals.js';
 import { deptLabel, hospitalName, regionLabel, badgeLabel, localizePath } from '../../../lib/i18n';
 import { regionByKey } from '../../../lib/regions';
-import { langCodes, langTokensOf, medicalType, splitPostal } from '../../../lib/hospitalSeo';
+import { langCodes, langTokensOf, medicalType, splitPostal, cleanJpName, typeNoun, featuredLangLabel } from '../../../lib/hospitalSeo';
 import '../../../styles/page.css';
 import '../../../styles/hospital.css';
 
@@ -69,6 +69,11 @@ const description = `${displayName}${h.jpName ? ` (${h.jpName})` : ''} in ${regi
 
 const { postalCode, streetAddress } = splitPostal(h.addressEn || h.address);
 
+// 标题：按实际对应语言生成，去掉 jpName 法人后缀
+const jpClean = cleanJpName(h.jpName);
+const showJp = jpClean && jpClean !== displayName;
+const pageTitle = `${displayName}${showJp ? ' (' + jpClean + ')' : ''} · ${featuredLangLabel(h, 'en')}-Speaking ${typeNoun(h, 'en')} in ${regionEn} | 81Japan`;
+
 const jsonLd = {
   '@context': 'https://schema.org',
   '@graph': [
@@ -105,7 +110,7 @@ const jsonLd = {
 };
 ---
 <Layout
-  title={`${displayName}${h.jpName && h.jpName !== displayName ? ' (' + h.jpName + ')' : ''} · Chinese-Speaking Hospital in ${regionEn} | 81Japan`}
+  title={pageTitle}
   description={description}
   path={`/en/hospital/${slug}`}
   locale="en"

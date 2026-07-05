@@ -107,33 +107,33 @@ const jsonLd = {
 
       <div class="filter-group">
         <div class="filter-title">服务语言</div>
-        <div class="filter-option active" onclick="filterLang('全部', this)" data-lang-filter="全部">
+        <button type="button" class="filter-option active" onclick="filterLang('全部', this)" data-lang-filter="全部">
           <span>全部</span>
           <span class="filter-count">{total}</span>
-        </div>
-        <div class="filter-option" onclick="filterLang('中文', this)" data-lang-filter="中文">
+        </button>
+        <button type="button" class="filter-option" onclick="filterLang('中文', this)" data-lang-filter="中文">
           <span>🇨🇳 中文对应</span>
           <span class="filter-count">{langCounts['中文']}</span>
-        </div>
-        <div class="filter-option" onclick="filterLang('英文', this)" data-lang-filter="英文">
+        </button>
+        <button type="button" class="filter-option" onclick="filterLang('英文', this)" data-lang-filter="英文">
           <span>🇺🇸 英文对应</span>
           <span class="filter-count">{langCounts['英文']}</span>
-        </div>
-        <div class="filter-option" onclick="filterLang('越南语', this)" data-lang-filter="越南语">
+        </button>
+        <button type="button" class="filter-option" onclick="filterLang('越南语', this)" data-lang-filter="越南语">
           <span>🇻🇳 越南语对应</span>
           <span class="filter-count">{langCounts['越南语']}</span>
-        </div>
+        </button>
       </div>
 
       <div class="filter-group">
         <div class="filter-title">科室</div>
-        <div class="filter-option" onclick="setSearch('内科')">内科</div>
-        <div class="filter-option" onclick="setSearch('外科')">外科</div>
-        <div class="filter-option" onclick="setSearch('产科')">产科・妇科</div>
-        <div class="filter-option" onclick="setSearch('儿科')">儿科</div>
-        <div class="filter-option" onclick="setSearch('皮肤科')">皮肤科</div>
-        <div class="filter-option" onclick="setSearch('精神科')">精神科・心理</div>
-        <div class="filter-option" onclick="setSearch('牙科')">牙科・口腔</div>
+        <button type="button" class="filter-option" onclick="setSearch('内科')">内科</button>
+        <button type="button" class="filter-option" onclick="setSearch('外科')">外科</button>
+        <button type="button" class="filter-option" onclick="setSearch('产科')">产科・妇科</button>
+        <button type="button" class="filter-option" onclick="setSearch('儿科')">儿科</button>
+        <button type="button" class="filter-option" onclick="setSearch('皮肤科')">皮肤科</button>
+        <button type="button" class="filter-option" onclick="setSearch('精神科')">精神科・心理</button>
+        <button type="button" class="filter-option" onclick="setSearch('牙科')">牙科・口腔</button>
       </div>
     </aside>
 
