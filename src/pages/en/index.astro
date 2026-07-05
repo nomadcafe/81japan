@@ -5,6 +5,7 @@ import Footer from '../../components/Footer.astro';
 import HospitalCard from '../../components/HospitalCard.astro';
 import RegionLinks from '../../components/RegionLinks.astro';
 import Faq from '../../components/Faq.astro';
+import Resources from '../../components/Resources.astro';
 import { loadHospitals, hospitalSlug } from '../../lib/hospitals.js';
 import { REGIONS } from '../../lib/regions';
 import '../../styles/index.css';
@@ -147,6 +148,8 @@ const jsonLd = {
   <RegionLinks locale="en" />
 
   <Faq locale="en" />
+
+  <Resources locale="en" />
 
   <section class="submit-section" id="submit">
     <div class="submit-banner">
