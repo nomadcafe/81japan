@@ -1,0 +1,49 @@
+---
+// 首页可见的「按地区浏览」板块：从首页向各地区落地页 + 高密度语言组合页建立内链。
+import { loadHospitals } from '../lib/hospitals.js';
+import { localizePath, langLabel, type Locale } from '../lib/i18n';
+import { REGIONS, regionLangCombos, LANG_SLUG } from '../lib/regions';
+
+interface Props { locale: Locale }
+const { locale } = Astro.props;
+const zh = locale === 'zh';
+
+const hospitals = await loadHospitals();
+const regionCounts: Record<string, number> = {};
+hospitals.forEach((h) => { if (h.region) regionCounts[h.region] = (regionCounts[h.region] || 0) + 1; });
+
+// 每个地区达阈值、可跳转的语言组合
+const combosByRegion: Record<string, string[]> = {};
+regionLangCombos(hospitals).forEach((c) => {
+  (combosByRegion[c.regionKey] ||= []).push(c.langKey);
+});
+
+const items = REGIONS.filter((r) => (regionCounts[r.key] || 0) > 0);
+
+const t = zh
+  ? { title: '按地区浏览医院・诊所', sub: '按所在地区查看可用中文・英文等外语就诊的医院与诊所。' }
+  : { title: 'Browse hospitals & clinics by region', sub: 'Find hospitals and clinics with Chinese, English and other language support by region.' };
+---
+<section class="region-links" aria-labelledby="regionLinksTitle">
+  <div class="region-links-head">
+    <h2 id="regionLinksTitle">{t.title}</h2>
+    <p>{t.sub}</p>
+  </div>
+  <div class="region-links-grid">
+    {items.map((r) => (
+      <div class="region-links-item">
+        <a class="region-links-main" href={localizePath(`/${r.slug}`, locale)}>
+          <span>{zh ? r.labelZh : r.labelEn}</span>
+          <span class="filter-count">{regionCounts[r.key]}</span>
+        </a>
+        {(combosByRegion[r.key] || []).length > 0 && (
+          <div class="region-links-sub">
+            {combosByRegion[r.key].map((lang) => (
+              <a href={localizePath(`/${r.slug}/${LANG_SLUG[lang]}`, locale)}>{langLabel(lang, locale)}</a>
+            ))}
+          </div>
+        )}
+      </div>
+    ))}
+  </div>
+</section>
