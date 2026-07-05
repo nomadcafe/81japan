@@ -1,0 +1,2178 @@
+{
+  "/hospital/神戸華僑同仁会病院": {
+    "status": 301,
+    "destination": "/hospital/kobe-kakyo-doujinkai-hospital"
+  },
+  "/hospital/%E7%A5%9E%E6%88%B8%E8%8F%AF%E5%83%91%E5%90%8C%E4%BB%81%E4%BC%9A%E7%97%85%E9%99%A2": {
+    "status": 301,
+    "destination": "/hospital/kobe-kakyo-doujinkai-hospital"
+  },
+  "/en/hospital/神戸華僑同仁会病院": {
+    "status": 301,
+    "destination": "/en/hospital/kobe-kakyo-doujinkai-hospital"
+  },
+  "/en/hospital/%E7%A5%9E%E6%88%B8%E8%8F%AF%E5%83%91%E5%90%8C%E4%BB%81%E4%BC%9A%E7%97%85%E9%99%A2": {
+    "status": 301,
+    "destination": "/en/hospital/kobe-kakyo-doujinkai-hospital"
+  },
+  "/hospital/東京科学大学病院": {
+    "status": 301,
+    "destination": "/hospital/institute-of-science-tokyo-hospital-international-medical-dept"
+  },
+  "/hospital/%E6%9D%B1%E4%BA%AC%E7%A7%91%E5%AD%A6%E5%A4%A7%E5%AD%A6%E7%97%85%E9%99%A2": {
+    "status": 301,
+    "destination": "/hospital/institute-of-science-tokyo-hospital-international-medical-dept"
+  },
+  "/en/hospital/東京科学大学病院": {
+    "status": 301,
+    "destination": "/en/hospital/institute-of-science-tokyo-hospital-international-medical-dept"
+  },
+  "/en/hospital/%E6%9D%B1%E4%BA%AC%E7%A7%91%E5%AD%A6%E5%A4%A7%E5%AD%A6%E7%97%85%E9%99%A2": {
+    "status": 301,
+    "destination": "/en/hospital/institute-of-science-tokyo-hospital-international-medical-dept"
+  },
+  "/hospital/東京都立駒込病院": {
+    "status": 301,
+    "destination": "/hospital/tokyo-metropolitan-komagome-hospital"
+  },
+  "/hospital/%E6%9D%B1%E4%BA%AC%E9%83%BD%E7%AB%8B%E9%A7%92%E8%BE%BC%E7%97%85%E9%99%A2": {
+    "status": 301,
+    "destination": "/hospital/tokyo-metropolitan-komagome-hospital"
+  },
+  "/en/hospital/東京都立駒込病院": {
+    "status": 301,
+    "destination": "/en/hospital/tokyo-metropolitan-komagome-hospital"
+  },
+  "/en/hospital/%E6%9D%B1%E4%BA%AC%E9%83%BD%E7%AB%8B%E9%A7%92%E8%BE%BC%E7%97%85%E9%99%A2": {
+    "status": 301,
+    "destination": "/en/hospital/tokyo-metropolitan-komagome-hospital"
+  },
+  "/hospital/東京大学医学部附属病院": {
+    "status": 301,
+    "destination": "/hospital/the-university-of-tokyo-hospital-international-department"
+  },
+  "/hospital/%E6%9D%B1%E4%BA%AC%E5%A4%A7%E5%AD%A6%E5%8C%BB%E5%AD%A6%E9%83%A8%E9%99%84%E5%B1%9E%E7%97%85%E9%99%A2": {
+    "status": 301,
+    "destination": "/hospital/the-university-of-tokyo-hospital-international-department"
+  },
+  "/en/hospital/東京大学医学部附属病院": {
+    "status": 301,
+    "destination": "/en/hospital/the-university-of-tokyo-hospital-international-department"
+  },
+  "/en/hospital/%E6%9D%B1%E4%BA%AC%E5%A4%A7%E5%AD%A6%E5%8C%BB%E5%AD%A6%E9%83%A8%E9%99%84%E5%B1%9E%E7%97%85%E9%99%A2": {
+    "status": 301,
+    "destination": "/en/hospital/the-university-of-tokyo-hospital-international-department"
+  },
+  "/hospital/東京医科大学病院-国際医療部": {
+    "status": 301,
+    "destination": "/hospital/tokyo-medical-university-hospital-international-medical-dept"
+  },
+  "/hospital/%E6%9D%B1%E4%BA%AC%E5%8C%BB%E7%A7%91%E5%A4%A7%E5%AD%A6%E7%97%85%E9%99%A2-%E5%9B%BD%E9%9A%9B%E5%8C%BB%E7%99%82%E9%83%A8": {
+    "status": 301,
+    "destination": "/hospital/tokyo-medical-university-hospital-international-medical-dept"
+  },
+  "/en/hospital/東京医科大学病院-国際医療部": {
+    "status": 301,
+    "destination": "/en/hospital/tokyo-medical-university-hospital-international-medical-dept"
+  },
+  "/en/hospital/%E6%9D%B1%E4%BA%AC%E5%8C%BB%E7%A7%91%E5%A4%A7%E5%AD%A6%E7%97%85%E9%99%A2-%E5%9B%BD%E9%9A%9B%E5%8C%BB%E7%99%82%E9%83%A8": {
+    "status": 301,
+    "destination": "/en/hospital/tokyo-medical-university-hospital-international-medical-dept"
+  },
+  "/hospital/東京ステーションインターナショナルクリニック": {
+    "status": 301,
+    "destination": "/hospital/tokyo-station-international-clinic"
+  },
+  "/hospital/%E6%9D%B1%E4%BA%AC%E3%82%B9%E3%83%86%E3%83%BC%E3%82%B7%E3%83%A7%E3%83%B3%E3%82%A4%E3%83%B3%E3%82%BF%E3%83%BC%E3%83%8A%E3%82%B7%E3%83%A7%E3%83%8A%E3%83%AB%E3%82%AF%E3%83%AA%E3%83%8B%E3%83%83%E3%82%AF": {
+    "status": 301,
+    "destination": "/hospital/tokyo-station-international-clinic"
+  },
+  "/en/hospital/東京ステーションインターナショナルクリニック": {
+    "status": 301,
+    "destination": "/en/hospital/tokyo-station-international-clinic"
+  },
+  "/en/hospital/%E6%9D%B1%E4%BA%AC%E3%82%B9%E3%83%86%E3%83%BC%E3%82%B7%E3%83%A7%E3%83%B3%E3%82%A4%E3%83%B3%E3%82%BF%E3%83%BC%E3%83%8A%E3%82%B7%E3%83%A7%E3%83%8A%E3%83%AB%E3%82%AF%E3%83%AA%E3%83%8B%E3%83%83%E3%82%AF": {
+    "status": 301,
+    "destination": "/en/hospital/tokyo-station-international-clinic"
+  },
+  "/hospital/医療法人社団-日中友好医院": {
+    "status": 301,
+    "destination": "/hospital/japan-china-friendship-clinic"
+  },
+  "/hospital/%E5%8C%BB%E7%99%82%E6%B3%95%E4%BA%BA%E7%A4%BE%E5%9B%A3-%E6%97%A5%E4%B8%AD%E5%8F%8B%E5%A5%BD%E5%8C%BB%E9%99%A2": {
+    "status": 301,
+    "destination": "/hospital/japan-china-friendship-clinic"
+  },
+  "/en/hospital/医療法人社団-日中友好医院": {
+    "status": 301,
+    "destination": "/en/hospital/japan-china-friendship-clinic"
+  },
+  "/en/hospital/%E5%8C%BB%E7%99%82%E6%B3%95%E4%BA%BA%E7%A4%BE%E5%9B%A3-%E6%97%A5%E4%B8%AD%E5%8F%8B%E5%A5%BD%E5%8C%BB%E9%99%A2": {
+    "status": 301,
+    "destination": "/en/hospital/japan-china-friendship-clinic"
+  },
+  "/hospital/宮田胃腸内科皮膚科クリニック": {
+    "status": 301,
+    "destination": "/hospital/miyata-gastroenterology-dermatology-clinic"
+  },
+  "/hospital/%E5%AE%AE%E7%94%B0%E8%83%83%E8%85%B8%E5%86%85%E7%A7%91%E7%9A%AE%E8%86%9A%E7%A7%91%E3%82%AF%E3%83%AA%E3%83%8B%E3%83%83%E3%82%AF": {
+    "status": 301,
+    "destination": "/hospital/miyata-gastroenterology-dermatology-clinic"
+  },
+  "/en/hospital/宮田胃腸内科皮膚科クリニック": {
+    "status": 301,
+    "destination": "/en/hospital/miyata-gastroenterology-dermatology-clinic"
+  },
+  "/en/hospital/%E5%AE%AE%E7%94%B0%E8%83%83%E8%85%B8%E5%86%85%E7%A7%91%E7%9A%AE%E8%86%9A%E7%A7%91%E3%82%AF%E3%83%AA%E3%83%8B%E3%83%83%E3%82%AF": {
+    "status": 301,
+    "destination": "/en/hospital/miyata-gastroenterology-dermatology-clinic"
+  },
+  "/hospital/大阪市立住友病院": {
+    "status": 301,
+    "destination": "/hospital/sumitomo-hospital"
+  },
+  "/hospital/%E5%A4%A7%E9%98%AA%E5%B8%82%E7%AB%8B%E4%BD%8F%E5%8F%8B%E7%97%85%E9%99%A2": {
+    "status": 301,
+    "destination": "/hospital/sumitomo-hospital"
+  },
+  "/en/hospital/大阪市立住友病院": {
+    "status": 301,
+    "destination": "/en/hospital/sumitomo-hospital"
+  },
+  "/en/hospital/%E5%A4%A7%E9%98%AA%E5%B8%82%E7%AB%8B%E4%BD%8F%E5%8F%8B%E7%97%85%E9%99%A2": {
+    "status": 301,
+    "destination": "/en/hospital/sumitomo-hospital"
+  },
+  "/hospital/福岡県立病院-国際部": {
+    "status": 301,
+    "destination": "/hospital/fukuoka-prefectural-hospital-international-dept"
+  },
+  "/hospital/%E7%A6%8F%E5%B2%A1%E7%9C%8C%E7%AB%8B%E7%97%85%E9%99%A2-%E5%9B%BD%E9%9A%9B%E9%83%A8": {
+    "status": 301,
+    "destination": "/hospital/fukuoka-prefectural-hospital-international-dept"
+  },
+  "/en/hospital/福岡県立病院-国際部": {
+    "status": 301,
+    "destination": "/en/hospital/fukuoka-prefectural-hospital-international-dept"
+  },
+  "/en/hospital/%E7%A6%8F%E5%B2%A1%E7%9C%8C%E7%AB%8B%E7%97%85%E9%99%A2-%E5%9B%BD%E9%9A%9B%E9%83%A8": {
+    "status": 301,
+    "destination": "/en/hospital/fukuoka-prefectural-hospital-international-dept"
+  },
+  "/hospital/札幌医科大学附属病院": {
+    "status": 301,
+    "destination": "/hospital/sapporo-medical-university-hospital"
+  },
+  "/hospital/%E6%9C%AD%E5%B9%8C%E5%8C%BB%E7%A7%91%E5%A4%A7%E5%AD%A6%E9%99%84%E5%B1%9E%E7%97%85%E9%99%A2": {
+    "status": 301,
+    "destination": "/hospital/sapporo-medical-university-hospital"
+  },
+  "/en/hospital/札幌医科大学附属病院": {
+    "status": 301,
+    "destination": "/en/hospital/sapporo-medical-university-hospital"
+  },
+  "/en/hospital/%E6%9C%AD%E5%B9%8C%E5%8C%BB%E7%A7%91%E5%A4%A7%E5%AD%A6%E9%99%84%E5%B1%9E%E7%97%85%E9%99%A2": {
+    "status": 301,
+    "destination": "/en/hospital/sapporo-medical-university-hospital"
+  },
+  "/hospital/希咲クリニック": {
+    "status": 301,
+    "destination": "/hospital/kisaki-clinic"
+  },
+  "/hospital/%E5%B8%8C%E5%92%B2%E3%82%AF%E3%83%AA%E3%83%8B%E3%83%83%E3%82%AF": {
+    "status": 301,
+    "destination": "/hospital/kisaki-clinic"
+  },
+  "/en/hospital/希咲クリニック": {
+    "status": 301,
+    "destination": "/en/hospital/kisaki-clinic"
+  },
+  "/en/hospital/%E5%B8%8C%E5%92%B2%E3%82%AF%E3%83%AA%E3%83%8B%E3%83%83%E3%82%AF": {
+    "status": 301,
+    "destination": "/en/hospital/kisaki-clinic"
+  },
+  "/hospital/こどもクリニックきじま": {
+    "status": 301,
+    "destination": "/hospital/kijima-childrens-clinic"
+  },
+  "/hospital/%E3%81%93%E3%81%A9%E3%82%82%E3%82%AF%E3%83%AA%E3%83%8B%E3%83%83%E3%82%AF%E3%81%8D%E3%81%98%E3%81%BE": {
+    "status": 301,
+    "destination": "/hospital/kijima-childrens-clinic"
+  },
+  "/en/hospital/こどもクリニックきじま": {
+    "status": 301,
+    "destination": "/en/hospital/kijima-childrens-clinic"
+  },
+  "/en/hospital/%E3%81%93%E3%81%A9%E3%82%82%E3%82%AF%E3%83%AA%E3%83%8B%E3%83%83%E3%82%AF%E3%81%8D%E3%81%98%E3%81%BE": {
+    "status": 301,
+    "destination": "/en/hospital/kijima-childrens-clinic"
+  },
+  "/hospital/春次医院": {
+    "status": 301,
+    "destination": "/hospital/harutsugu-clinic"
+  },
+  "/hospital/%E6%98%A5%E6%AC%A1%E5%8C%BB%E9%99%A2": {
+    "status": 301,
+    "destination": "/hospital/harutsugu-clinic"
+  },
+  "/en/hospital/春次医院": {
+    "status": 301,
+    "destination": "/en/hospital/harutsugu-clinic"
+  },
+  "/en/hospital/%E6%98%A5%E6%AC%A1%E5%8C%BB%E9%99%A2": {
+    "status": 301,
+    "destination": "/en/hospital/harutsugu-clinic"
+  },
+  "/hospital/琥珀クリニック": {
+    "status": 301,
+    "destination": "/hospital/kohaku-clinic"
+  },
+  "/hospital/%E7%90%A5%E7%8F%80%E3%82%AF%E3%83%AA%E3%83%8B%E3%83%83%E3%82%AF": {
+    "status": 301,
+    "destination": "/hospital/kohaku-clinic"
+  },
+  "/en/hospital/琥珀クリニック": {
+    "status": 301,
+    "destination": "/en/hospital/kohaku-clinic"
+  },
+  "/en/hospital/%E7%90%A5%E7%8F%80%E3%82%AF%E3%83%AA%E3%83%8B%E3%83%83%E3%82%AF": {
+    "status": 301,
+    "destination": "/en/hospital/kohaku-clinic"
+  },
+  "/hospital/茜道頓堀クリニック": {
+    "status": 301,
+    "destination": "/hospital/akane-dotonbori-clinic"
+  },
+  "/hospital/%E8%8C%9C%E9%81%93%E9%A0%93%E5%A0%80%E3%82%AF%E3%83%AA%E3%83%8B%E3%83%83%E3%82%AF": {
+    "status": 301,
+    "destination": "/hospital/akane-dotonbori-clinic"
+  },
+  "/en/hospital/茜道頓堀クリニック": {
+    "status": 301,
+    "destination": "/en/hospital/akane-dotonbori-clinic"
+  },
+  "/en/hospital/%E8%8C%9C%E9%81%93%E9%A0%93%E5%A0%80%E3%82%AF%E3%83%AA%E3%83%8B%E3%83%83%E3%82%AF": {
+    "status": 301,
+    "destination": "/en/hospital/akane-dotonbori-clinic"
+  },
+  "/hospital/医誠会国際総合病院": {
+    "status": 301,
+    "destination": "/hospital/iseikai-international-general-hospital"
+  },
+  "/hospital/%E5%8C%BB%E8%AA%A0%E4%BC%9A%E5%9B%BD%E9%9A%9B%E7%B7%8F%E5%90%88%E7%97%85%E9%99%A2": {
+    "status": 301,
+    "destination": "/hospital/iseikai-international-general-hospital"
+  },
+  "/en/hospital/医誠会国際総合病院": {
+    "status": 301,
+    "destination": "/en/hospital/iseikai-international-general-hospital"
+  },
+  "/en/hospital/%E5%8C%BB%E8%AA%A0%E4%BC%9A%E5%9B%BD%E9%9A%9B%E7%B7%8F%E5%90%88%E7%97%85%E9%99%A2": {
+    "status": 301,
+    "destination": "/en/hospital/iseikai-international-general-hospital"
+  },
+  "/hospital/みなと町歯科": {
+    "status": 301,
+    "destination": "/hospital/minato-cho-dental-clinic"
+  },
+  "/hospital/%E3%81%BF%E3%81%AA%E3%81%A8%E7%94%BA%E6%AD%AF%E7%A7%91": {
+    "status": 301,
+    "destination": "/hospital/minato-cho-dental-clinic"
+  },
+  "/en/hospital/みなと町歯科": {
+    "status": 301,
+    "destination": "/en/hospital/minato-cho-dental-clinic"
+  },
+  "/en/hospital/%E3%81%BF%E3%81%AA%E3%81%A8%E7%94%BA%E6%AD%AF%E7%A7%91": {
+    "status": 301,
+    "destination": "/en/hospital/minato-cho-dental-clinic"
+  },
+  "/hospital/なないろ歯科医院": {
+    "status": 301,
+    "destination": "/hospital/nanairo-dental-clinic"
+  },
+  "/hospital/%E3%81%AA%E3%81%AA%E3%81%84%E3%82%8D%E6%AD%AF%E7%A7%91%E5%8C%BB%E9%99%A2": {
+    "status": 301,
+    "destination": "/hospital/nanairo-dental-clinic"
+  },
+  "/en/hospital/なないろ歯科医院": {
+    "status": 301,
+    "destination": "/en/hospital/nanairo-dental-clinic"
+  },
+  "/en/hospital/%E3%81%AA%E3%81%AA%E3%81%84%E3%82%8D%E6%AD%AF%E7%A7%91%E5%8C%BB%E9%99%A2": {
+    "status": 301,
+    "destination": "/en/hospital/nanairo-dental-clinic"
+  },
+  "/hospital/大阪天満橋-yy歯科": {
+    "status": 301,
+    "destination": "/hospital/yy-dental-orthodontics-osaka-tenmabashi"
+  },
+  "/hospital/%E5%A4%A7%E9%98%AA%E5%A4%A9%E6%BA%80%E6%A9%8B-yy%E6%AD%AF%E7%A7%91": {
+    "status": 301,
+    "destination": "/hospital/yy-dental-orthodontics-osaka-tenmabashi"
+  },
+  "/en/hospital/大阪天満橋-yy歯科": {
+    "status": 301,
+    "destination": "/en/hospital/yy-dental-orthodontics-osaka-tenmabashi"
+  },
+  "/en/hospital/%E5%A4%A7%E9%98%AA%E5%A4%A9%E6%BA%80%E6%A9%8B-yy%E6%AD%AF%E7%A7%91": {
+    "status": 301,
+    "destination": "/en/hospital/yy-dental-orthodontics-osaka-tenmabashi"
+  },
+  "/hospital/名古屋第二赤十字病院": {
+    "status": 301,
+    "destination": "/hospital/japanese-red-cross-aichi-medical-center-nagoya-daini-hospital"
+  },
+  "/hospital/%E5%90%8D%E5%8F%A4%E5%B1%8B%E7%AC%AC%E4%BA%8C%E8%B5%A4%E5%8D%81%E5%AD%97%E7%97%85%E9%99%A2": {
+    "status": 301,
+    "destination": "/hospital/japanese-red-cross-aichi-medical-center-nagoya-daini-hospital"
+  },
+  "/en/hospital/名古屋第二赤十字病院": {
+    "status": 301,
+    "destination": "/en/hospital/japanese-red-cross-aichi-medical-center-nagoya-daini-hospital"
+  },
+  "/en/hospital/%E5%90%8D%E5%8F%A4%E5%B1%8B%E7%AC%AC%E4%BA%8C%E8%B5%A4%E5%8D%81%E5%AD%97%E7%97%85%E9%99%A2": {
+    "status": 301,
+    "destination": "/en/hospital/japanese-red-cross-aichi-medical-center-nagoya-daini-hospital"
+  },
+  "/hospital/福岡山王病院": {
+    "status": 301,
+    "destination": "/hospital/fukuoka-sanno-hospital"
+  },
+  "/hospital/%E7%A6%8F%E5%B2%A1%E5%B1%B1%E7%8E%8B%E7%97%85%E9%99%A2": {
+    "status": 301,
+    "destination": "/hospital/fukuoka-sanno-hospital"
+  },
+  "/en/hospital/福岡山王病院": {
+    "status": 301,
+    "destination": "/en/hospital/fukuoka-sanno-hospital"
+  },
+  "/en/hospital/%E7%A6%8F%E5%B2%A1%E5%B1%B1%E7%8E%8B%E7%97%85%E9%99%A2": {
+    "status": 301,
+    "destination": "/en/hospital/fukuoka-sanno-hospital"
+  },
+  "/hospital/福岡大学病院": {
+    "status": 301,
+    "destination": "/hospital/fukuoka-university-hospital"
+  },
+  "/hospital/%E7%A6%8F%E5%B2%A1%E5%A4%A7%E5%AD%A6%E7%97%85%E9%99%A2": {
+    "status": 301,
+    "destination": "/hospital/fukuoka-university-hospital"
+  },
+  "/en/hospital/福岡大学病院": {
+    "status": 301,
+    "destination": "/en/hospital/fukuoka-university-hospital"
+  },
+  "/en/hospital/%E7%A6%8F%E5%B2%A1%E5%A4%A7%E5%AD%A6%E7%97%85%E9%99%A2": {
+    "status": 301,
+    "destination": "/en/hospital/fukuoka-university-hospital"
+  },
+  "/hospital/聖マリア病院": {
+    "status": 301,
+    "destination": "/hospital/st-marys-hospital"
+  },
+  "/hospital/%E8%81%96%E3%83%9E%E3%83%AA%E3%82%A2%E7%97%85%E9%99%A2": {
+    "status": 301,
+    "destination": "/hospital/st-marys-hospital"
+  },
+  "/en/hospital/聖マリア病院": {
+    "status": 301,
+    "destination": "/en/hospital/st-marys-hospital"
+  },
+  "/en/hospital/%E8%81%96%E3%83%9E%E3%83%AA%E3%82%A2%E7%97%85%E9%99%A2": {
+    "status": 301,
+    "destination": "/en/hospital/st-marys-hospital"
+  },
+  "/hospital/医療法人-八女発心会-姫野病院": {
+    "status": 301,
+    "destination": "/hospital/himeno-hospital"
+  },
+  "/hospital/%E5%8C%BB%E7%99%82%E6%B3%95%E4%BA%BA-%E5%85%AB%E5%A5%B3%E7%99%BA%E5%BF%83%E4%BC%9A-%E5%A7%AB%E9%87%8E%E7%97%85%E9%99%A2": {
+    "status": 301,
+    "destination": "/hospital/himeno-hospital"
+  },
+  "/en/hospital/医療法人-八女発心会-姫野病院": {
+    "status": 301,
+    "destination": "/en/hospital/himeno-hospital"
+  },
+  "/en/hospital/%E5%8C%BB%E7%99%82%E6%B3%95%E4%BA%BA-%E5%85%AB%E5%A5%B3%E7%99%BA%E5%BF%83%E4%BC%9A-%E5%A7%AB%E9%87%8E%E7%97%85%E9%99%A2": {
+    "status": 301,
+    "destination": "/en/hospital/himeno-hospital"
+  },
+  "/hospital/博多ひのきクリニック": {
+    "status": 301,
+    "destination": "/hospital/hakata-hinoki-clinic"
+  },
+  "/hospital/%E5%8D%9A%E5%A4%9A%E3%81%B2%E3%81%AE%E3%81%8D%E3%82%AF%E3%83%AA%E3%83%8B%E3%83%83%E3%82%AF": {
+    "status": 301,
+    "destination": "/hospital/hakata-hinoki-clinic"
+  },
+  "/en/hospital/博多ひのきクリニック": {
+    "status": 301,
+    "destination": "/en/hospital/hakata-hinoki-clinic"
+  },
+  "/en/hospital/%E5%8D%9A%E5%A4%9A%E3%81%B2%E3%81%AE%E3%81%8D%E3%82%AF%E3%83%AA%E3%83%8B%E3%83%83%E3%82%AF": {
+    "status": 301,
+    "destination": "/en/hospital/hakata-hinoki-clinic"
+  },
+  "/hospital/福岡徳洲会病院-国際医療支援室": {
+    "status": 301,
+    "destination": "/hospital/fukuoka-tokushukai-hospital-international-medical-support"
+  },
+  "/hospital/%E7%A6%8F%E5%B2%A1%E5%BE%B3%E6%B4%B2%E4%BC%9A%E7%97%85%E9%99%A2-%E5%9B%BD%E9%9A%9B%E5%8C%BB%E7%99%82%E6%94%AF%E6%8F%B4%E5%AE%A4": {
+    "status": 301,
+    "destination": "/hospital/fukuoka-tokushukai-hospital-international-medical-support"
+  },
+  "/en/hospital/福岡徳洲会病院-国際医療支援室": {
+    "status": 301,
+    "destination": "/en/hospital/fukuoka-tokushukai-hospital-international-medical-support"
+  },
+  "/en/hospital/%E7%A6%8F%E5%B2%A1%E5%BE%B3%E6%B4%B2%E4%BC%9A%E7%97%85%E9%99%A2-%E5%9B%BD%E9%9A%9B%E5%8C%BB%E7%99%82%E6%94%AF%E6%8F%B4%E5%AE%A4": {
+    "status": 301,
+    "destination": "/en/hospital/fukuoka-tokushukai-hospital-international-medical-support"
+  },
+  "/hospital/九州大学病院-国際診療支援センター": {
+    "status": 301,
+    "destination": "/hospital/kyushu-university-hospital-ipac"
+  },
+  "/hospital/%E4%B9%9D%E5%B7%9E%E5%A4%A7%E5%AD%A6%E7%97%85%E9%99%A2-%E5%9B%BD%E9%9A%9B%E8%A8%BA%E7%99%82%E6%94%AF%E6%8F%B4%E3%82%BB%E3%83%B3%E3%82%BF%E3%83%BC": {
+    "status": 301,
+    "destination": "/hospital/kyushu-university-hospital-ipac"
+  },
+  "/en/hospital/九州大学病院-国際診療支援センター": {
+    "status": 301,
+    "destination": "/en/hospital/kyushu-university-hospital-ipac"
+  },
+  "/en/hospital/%E4%B9%9D%E5%B7%9E%E5%A4%A7%E5%AD%A6%E7%97%85%E9%99%A2-%E5%9B%BD%E9%9A%9B%E8%A8%BA%E7%99%82%E6%94%AF%E6%8F%B4%E3%82%BB%E3%83%B3%E3%82%BF%E3%83%BC": {
+    "status": 301,
+    "destination": "/en/hospital/kyushu-university-hospital-ipac"
+  },
+  "/hospital/京都市立病院": {
+    "status": 301,
+    "destination": "/hospital/kyoto-city-hospital"
+  },
+  "/hospital/%E4%BA%AC%E9%83%BD%E5%B8%82%E7%AB%8B%E7%97%85%E9%99%A2": {
+    "status": 301,
+    "destination": "/hospital/kyoto-city-hospital"
+  },
+  "/en/hospital/京都市立病院": {
+    "status": 301,
+    "destination": "/en/hospital/kyoto-city-hospital"
+  },
+  "/en/hospital/%E4%BA%AC%E9%83%BD%E5%B8%82%E7%AB%8B%E7%97%85%E9%99%A2": {
+    "status": 301,
+    "destination": "/en/hospital/kyoto-city-hospital"
+  },
+  "/hospital/医仁会-武田総合病院": {
+    "status": 301,
+    "destination": "/hospital/ijinkai-takeda-general-hospital"
+  },
+  "/hospital/%E5%8C%BB%E4%BB%81%E4%BC%9A-%E6%AD%A6%E7%94%B0%E7%B7%8F%E5%90%88%E7%97%85%E9%99%A2": {
+    "status": 301,
+    "destination": "/hospital/ijinkai-takeda-general-hospital"
+  },
+  "/en/hospital/医仁会-武田総合病院": {
+    "status": 301,
+    "destination": "/en/hospital/ijinkai-takeda-general-hospital"
+  },
+  "/en/hospital/%E5%8C%BB%E4%BB%81%E4%BC%9A-%E6%AD%A6%E7%94%B0%E7%B7%8F%E5%90%88%E7%97%85%E9%99%A2": {
+    "status": 301,
+    "destination": "/en/hospital/ijinkai-takeda-general-hospital"
+  },
+  "/hospital/医療法人財団康生会-武田病院": {
+    "status": 301,
+    "destination": "/hospital/koseikai-takeda-hospital"
+  },
+  "/hospital/%E5%8C%BB%E7%99%82%E6%B3%95%E4%BA%BA%E8%B2%A1%E5%9B%A3%E5%BA%B7%E7%94%9F%E4%BC%9A-%E6%AD%A6%E7%94%B0%E7%97%85%E9%99%A2": {
+    "status": 301,
+    "destination": "/hospital/koseikai-takeda-hospital"
+  },
+  "/en/hospital/医療法人財団康生会-武田病院": {
+    "status": 301,
+    "destination": "/en/hospital/koseikai-takeda-hospital"
+  },
+  "/en/hospital/%E5%8C%BB%E7%99%82%E6%B3%95%E4%BA%BA%E8%B2%A1%E5%9B%A3%E5%BA%B7%E7%94%9F%E4%BC%9A-%E6%AD%A6%E7%94%B0%E7%97%85%E9%99%A2": {
+    "status": 301,
+    "destination": "/en/hospital/koseikai-takeda-hospital"
+  },
+  "/hospital/医療法人社団-テイ医院": {
+    "status": 301,
+    "destination": "/hospital/tei-clinic"
+  },
+  "/hospital/%E5%8C%BB%E7%99%82%E6%B3%95%E4%BA%BA%E7%A4%BE%E5%9B%A3-%E3%83%86%E3%82%A4%E5%8C%BB%E9%99%A2": {
+    "status": 301,
+    "destination": "/hospital/tei-clinic"
+  },
+  "/en/hospital/医療法人社団-テイ医院": {
+    "status": 301,
+    "destination": "/en/hospital/tei-clinic"
+  },
+  "/en/hospital/%E5%8C%BB%E7%99%82%E6%B3%95%E4%BA%BA%E7%A4%BE%E5%9B%A3-%E3%83%86%E3%82%A4%E5%8C%BB%E9%99%A2": {
+    "status": 301,
+    "destination": "/en/hospital/tei-clinic"
+  },
+  "/hospital/医療法人-坂部医院": {
+    "status": 301,
+    "destination": "/hospital/sakabe-clinic"
+  },
+  "/hospital/%E5%8C%BB%E7%99%82%E6%B3%95%E4%BA%BA-%E5%9D%82%E9%83%A8%E5%8C%BB%E9%99%A2": {
+    "status": 301,
+    "destination": "/hospital/sakabe-clinic"
+  },
+  "/en/hospital/医療法人-坂部医院": {
+    "status": 301,
+    "destination": "/en/hospital/sakabe-clinic"
+  },
+  "/en/hospital/%E5%8C%BB%E7%99%82%E6%B3%95%E4%BA%BA-%E5%9D%82%E9%83%A8%E5%8C%BB%E9%99%A2": {
+    "status": 301,
+    "destination": "/en/hospital/sakabe-clinic"
+  },
+  "/hospital/医療法人健幸会-むかいじま病院": {
+    "status": 301,
+    "destination": "/hospital/mukaijima-hospital"
+  },
+  "/hospital/%E5%8C%BB%E7%99%82%E6%B3%95%E4%BA%BA%E5%81%A5%E5%B9%B8%E4%BC%9A-%E3%82%80%E3%81%8B%E3%81%84%E3%81%98%E3%81%BE%E7%97%85%E9%99%A2": {
+    "status": 301,
+    "destination": "/hospital/mukaijima-hospital"
+  },
+  "/en/hospital/医療法人健幸会-むかいじま病院": {
+    "status": 301,
+    "destination": "/en/hospital/mukaijima-hospital"
+  },
+  "/en/hospital/%E5%8C%BB%E7%99%82%E6%B3%95%E4%BA%BA%E5%81%A5%E5%B9%B8%E4%BC%9A-%E3%82%80%E3%81%8B%E3%81%84%E3%81%98%E3%81%BE%E7%97%85%E9%99%A2": {
+    "status": 301,
+    "destination": "/en/hospital/mukaijima-hospital"
+  },
+  "/hospital/洛和会-音羽記念病院": {
+    "status": 301,
+    "destination": "/hospital/rakuwakai-otowa-memorial-hospital"
+  },
+  "/hospital/%E6%B4%9B%E5%92%8C%E4%BC%9A-%E9%9F%B3%E7%BE%BD%E8%A8%98%E5%BF%B5%E7%97%85%E9%99%A2": {
+    "status": 301,
+    "destination": "/hospital/rakuwakai-otowa-memorial-hospital"
+  },
+  "/en/hospital/洛和会-音羽記念病院": {
+    "status": 301,
+    "destination": "/en/hospital/rakuwakai-otowa-memorial-hospital"
+  },
+  "/en/hospital/%E6%B4%9B%E5%92%8C%E4%BC%9A-%E9%9F%B3%E7%BE%BD%E8%A8%98%E5%BF%B5%E7%97%85%E9%99%A2": {
+    "status": 301,
+    "destination": "/en/hospital/rakuwakai-otowa-memorial-hospital"
+  },
+  "/hospital/横濱医院": {
+    "status": 301,
+    "destination": "/hospital/yokohama-clinic"
+  },
+  "/hospital/%E6%A8%AA%E6%BF%B1%E5%8C%BB%E9%99%A2": {
+    "status": 301,
+    "destination": "/hospital/yokohama-clinic"
+  },
+  "/en/hospital/横濱医院": {
+    "status": 301,
+    "destination": "/en/hospital/yokohama-clinic"
+  },
+  "/en/hospital/%E6%A8%AA%E6%BF%B1%E5%8C%BB%E9%99%A2": {
+    "status": 301,
+    "destination": "/en/hospital/yokohama-clinic"
+  },
+  "/hospital/医療法人-医健会-中華街医院": {
+    "status": 301,
+    "destination": "/hospital/chukagai-iin"
+  },
+  "/hospital/%E5%8C%BB%E7%99%82%E6%B3%95%E4%BA%BA-%E5%8C%BB%E5%81%A5%E4%BC%9A-%E4%B8%AD%E8%8F%AF%E8%A1%97%E5%8C%BB%E9%99%A2": {
+    "status": 301,
+    "destination": "/hospital/chukagai-iin"
+  },
+  "/en/hospital/医療法人-医健会-中華街医院": {
+    "status": 301,
+    "destination": "/en/hospital/chukagai-iin"
+  },
+  "/en/hospital/%E5%8C%BB%E7%99%82%E6%B3%95%E4%BA%BA-%E5%8C%BB%E5%81%A5%E4%BC%9A-%E4%B8%AD%E8%8F%AF%E8%A1%97%E5%8C%BB%E9%99%A2": {
+    "status": 301,
+    "destination": "/en/hospital/chukagai-iin"
+  },
+  "/hospital/横浜中華街雅デンタルクリニック": {
+    "status": 301,
+    "destination": "/hospital/yokohama-chinatown-miyabi-dental-clinic"
+  },
+  "/hospital/%E6%A8%AA%E6%B5%9C%E4%B8%AD%E8%8F%AF%E8%A1%97%E9%9B%85%E3%83%87%E3%83%B3%E3%82%BF%E3%83%AB%E3%82%AF%E3%83%AA%E3%83%8B%E3%83%83%E3%82%AF": {
+    "status": 301,
+    "destination": "/hospital/yokohama-chinatown-miyabi-dental-clinic"
+  },
+  "/en/hospital/横浜中華街雅デンタルクリニック": {
+    "status": 301,
+    "destination": "/en/hospital/yokohama-chinatown-miyabi-dental-clinic"
+  },
+  "/en/hospital/%E6%A8%AA%E6%B5%9C%E4%B8%AD%E8%8F%AF%E8%A1%97%E9%9B%85%E3%83%87%E3%83%B3%E3%82%BF%E3%83%AB%E3%82%AF%E3%83%AA%E3%83%8B%E3%83%83%E3%82%AF": {
+    "status": 301,
+    "destination": "/en/hospital/yokohama-chinatown-miyabi-dental-clinic"
+  },
+  "/hospital/檀クリニック": {
+    "status": 301,
+    "destination": "/hospital/tan-clinic-chinese-outpatient"
+  },
+  "/hospital/%E6%AA%80%E3%82%AF%E3%83%AA%E3%83%8B%E3%83%83%E3%82%AF": {
+    "status": 301,
+    "destination": "/hospital/tan-clinic-chinese-outpatient"
+  },
+  "/en/hospital/檀クリニック": {
+    "status": 301,
+    "destination": "/en/hospital/tan-clinic-chinese-outpatient"
+  },
+  "/en/hospital/%E6%AA%80%E3%82%AF%E3%83%AA%E3%83%8B%E3%83%83%E3%82%AF": {
+    "status": 301,
+    "destination": "/en/hospital/tan-clinic-chinese-outpatient"
+  },
+  "/hospital/脳神経内科leo葵クリニック": {
+    "status": 301,
+    "destination": "/hospital/leo-aoi-clinic"
+  },
+  "/hospital/%E8%84%B3%E7%A5%9E%E7%B5%8C%E5%86%85%E7%A7%91leo%E8%91%B5%E3%82%AF%E3%83%AA%E3%83%8B%E3%83%83%E3%82%AF": {
+    "status": 301,
+    "destination": "/hospital/leo-aoi-clinic"
+  },
+  "/en/hospital/脳神経内科leo葵クリニック": {
+    "status": 301,
+    "destination": "/en/hospital/leo-aoi-clinic"
+  },
+  "/en/hospital/%E8%84%B3%E7%A5%9E%E7%B5%8C%E5%86%85%E7%A7%91leo%E8%91%B5%E3%82%AF%E3%83%AA%E3%83%8B%E3%83%83%E3%82%AF": {
+    "status": 301,
+    "destination": "/en/hospital/leo-aoi-clinic"
+  },
+  "/hospital/医療法人偕行会-名古屋共立病院": {
+    "status": 301,
+    "destination": "/hospital/nagoya-kyoritsu-hospital"
+  },
+  "/hospital/%E5%8C%BB%E7%99%82%E6%B3%95%E4%BA%BA%E5%81%95%E8%A1%8C%E4%BC%9A-%E5%90%8D%E5%8F%A4%E5%B1%8B%E5%85%B1%E7%AB%8B%E7%97%85%E9%99%A2": {
+    "status": 301,
+    "destination": "/hospital/nagoya-kyoritsu-hospital"
+  },
+  "/en/hospital/医療法人偕行会-名古屋共立病院": {
+    "status": 301,
+    "destination": "/en/hospital/nagoya-kyoritsu-hospital"
+  },
+  "/en/hospital/%E5%8C%BB%E7%99%82%E6%B3%95%E4%BA%BA%E5%81%95%E8%A1%8C%E4%BC%9A-%E5%90%8D%E5%8F%A4%E5%B1%8B%E5%85%B1%E7%AB%8B%E7%97%85%E9%99%A2": {
+    "status": 301,
+    "destination": "/en/hospital/nagoya-kyoritsu-hospital"
+  },
+  "/hospital/藤田医科大学病院-国際医療センター": {
+    "status": 301,
+    "destination": "/hospital/fujita-health-university-hospital-international-medical-center"
+  },
+  "/hospital/%E8%97%A4%E7%94%B0%E5%8C%BB%E7%A7%91%E5%A4%A7%E5%AD%A6%E7%97%85%E9%99%A2-%E5%9B%BD%E9%9A%9B%E5%8C%BB%E7%99%82%E3%82%BB%E3%83%B3%E3%82%BF%E3%83%BC": {
+    "status": 301,
+    "destination": "/hospital/fujita-health-university-hospital-international-medical-center"
+  },
+  "/en/hospital/藤田医科大学病院-国際医療センター": {
+    "status": 301,
+    "destination": "/en/hospital/fujita-health-university-hospital-international-medical-center"
+  },
+  "/en/hospital/%E8%97%A4%E7%94%B0%E5%8C%BB%E7%A7%91%E5%A4%A7%E5%AD%A6%E7%97%85%E9%99%A2-%E5%9B%BD%E9%9A%9B%E5%8C%BB%E7%99%82%E3%82%BB%E3%83%B3%E3%82%BF%E3%83%BC": {
+    "status": 301,
+    "destination": "/en/hospital/fujita-health-university-hospital-international-medical-center"
+  },
+  "/hospital/名古屋掖済会病院": {
+    "status": 301,
+    "destination": "/hospital/nagoya-ekisaikai-hospital-chinese-patient-desk"
+  },
+  "/hospital/%E5%90%8D%E5%8F%A4%E5%B1%8B%E6%8E%96%E6%B8%88%E4%BC%9A%E7%97%85%E9%99%A2": {
+    "status": 301,
+    "destination": "/hospital/nagoya-ekisaikai-hospital-chinese-patient-desk"
+  },
+  "/en/hospital/名古屋掖済会病院": {
+    "status": 301,
+    "destination": "/en/hospital/nagoya-ekisaikai-hospital-chinese-patient-desk"
+  },
+  "/en/hospital/%E5%90%8D%E5%8F%A4%E5%B1%8B%E6%8E%96%E6%B8%88%E4%BC%9A%E7%97%85%E9%99%A2": {
+    "status": 301,
+    "destination": "/en/hospital/nagoya-ekisaikai-hospital-chinese-patient-desk"
+  },
+  "/hospital/医療法人徳洲会-札幌東徳洲会病院-国際医療支援室": {
+    "status": 301,
+    "destination": "/hospital/sapporo-higashi-tokushukai-hospital-international-support"
+  },
+  "/hospital/%E5%8C%BB%E7%99%82%E6%B3%95%E4%BA%BA%E5%BE%B3%E6%B4%B2%E4%BC%9A-%E6%9C%AD%E5%B9%8C%E6%9D%B1%E5%BE%B3%E6%B4%B2%E4%BC%9A%E7%97%85%E9%99%A2-%E5%9B%BD%E9%9A%9B%E5%8C%BB%E7%99%82%E6%94%AF%E6%8F%B4%E5%AE%A4": {
+    "status": 301,
+    "destination": "/hospital/sapporo-higashi-tokushukai-hospital-international-support"
+  },
+  "/en/hospital/医療法人徳洲会-札幌東徳洲会病院-国際医療支援室": {
+    "status": 301,
+    "destination": "/en/hospital/sapporo-higashi-tokushukai-hospital-international-support"
+  },
+  "/en/hospital/%E5%8C%BB%E7%99%82%E6%B3%95%E4%BA%BA%E5%BE%B3%E6%B4%B2%E4%BC%9A-%E6%9C%AD%E5%B9%8C%E6%9D%B1%E5%BE%B3%E6%B4%B2%E4%BC%9A%E7%97%85%E9%99%A2-%E5%9B%BD%E9%9A%9B%E5%8C%BB%E7%99%82%E6%94%AF%E6%8F%B4%E5%AE%A4": {
+    "status": 301,
+    "destination": "/en/hospital/sapporo-higashi-tokushukai-hospital-international-support"
+  },
+  "/hospital/医療法人社団同楽会-札幌西区ともメンタルクリニック": {
+    "status": 301,
+    "destination": "/hospital/sapporo-tomo-mental-clinic"
+  },
+  "/hospital/%E5%8C%BB%E7%99%82%E6%B3%95%E4%BA%BA%E7%A4%BE%E5%9B%A3%E5%90%8C%E6%A5%BD%E4%BC%9A-%E6%9C%AD%E5%B9%8C%E8%A5%BF%E5%8C%BA%E3%81%A8%E3%82%82%E3%83%A1%E3%83%B3%E3%82%BF%E3%83%AB%E3%82%AF%E3%83%AA%E3%83%8B%E3%83%83%E3%82%AF": {
+    "status": 301,
+    "destination": "/hospital/sapporo-tomo-mental-clinic"
+  },
+  "/en/hospital/医療法人社団同楽会-札幌西区ともメンタルクリニック": {
+    "status": 301,
+    "destination": "/en/hospital/sapporo-tomo-mental-clinic"
+  },
+  "/en/hospital/%E5%8C%BB%E7%99%82%E6%B3%95%E4%BA%BA%E7%A4%BE%E5%9B%A3%E5%90%8C%E6%A5%BD%E4%BC%9A-%E6%9C%AD%E5%B9%8C%E8%A5%BF%E5%8C%BA%E3%81%A8%E3%82%82%E3%83%A1%E3%83%B3%E3%82%BF%E3%83%AB%E3%82%AF%E3%83%AA%E3%83%8B%E3%83%83%E3%82%AF": {
+    "status": 301,
+    "destination": "/en/hospital/sapporo-tomo-mental-clinic"
+  },
+  "/hospital/広島大学病院-国際医療支援部": {
+    "status": 301,
+    "destination": "/hospital/hiroshima-university-hospital-international-medical-support-dept"
+  },
+  "/hospital/%E5%BA%83%E5%B3%B6%E5%A4%A7%E5%AD%A6%E7%97%85%E9%99%A2-%E5%9B%BD%E9%9A%9B%E5%8C%BB%E7%99%82%E6%94%AF%E6%8F%B4%E9%83%A8": {
+    "status": 301,
+    "destination": "/hospital/hiroshima-university-hospital-international-medical-support-dept"
+  },
+  "/en/hospital/広島大学病院-国際医療支援部": {
+    "status": 301,
+    "destination": "/en/hospital/hiroshima-university-hospital-international-medical-support-dept"
+  },
+  "/en/hospital/%E5%BA%83%E5%B3%B6%E5%A4%A7%E5%AD%A6%E7%97%85%E9%99%A2-%E5%9B%BD%E9%9A%9B%E5%8C%BB%E7%99%82%E6%94%AF%E6%8F%B4%E9%83%A8": {
+    "status": 301,
+    "destination": "/en/hospital/hiroshima-university-hospital-international-medical-support-dept"
+  },
+  "/hospital/岡山大学病院-国際診療支援センター": {
+    "status": 301,
+    "destination": "/hospital/okayama-university-hospital-international-medical-support-center"
+  },
+  "/hospital/%E5%B2%A1%E5%B1%B1%E5%A4%A7%E5%AD%A6%E7%97%85%E9%99%A2-%E5%9B%BD%E9%9A%9B%E8%A8%BA%E7%99%82%E6%94%AF%E6%8F%B4%E3%82%BB%E3%83%B3%E3%82%BF%E3%83%BC": {
+    "status": 301,
+    "destination": "/hospital/okayama-university-hospital-international-medical-support-center"
+  },
+  "/en/hospital/岡山大学病院-国際診療支援センター": {
+    "status": 301,
+    "destination": "/en/hospital/okayama-university-hospital-international-medical-support-center"
+  },
+  "/en/hospital/%E5%B2%A1%E5%B1%B1%E5%A4%A7%E5%AD%A6%E7%97%85%E9%99%A2-%E5%9B%BD%E9%9A%9B%E8%A8%BA%E7%99%82%E6%94%AF%E6%8F%B4%E3%82%BB%E3%83%B3%E3%82%BF%E3%83%BC": {
+    "status": 301,
+    "destination": "/en/hospital/okayama-university-hospital-international-medical-support-center"
+  },
+  "/hospital/神戸大学医学部附属病院-国際診療": {
+    "status": 301,
+    "destination": "/hospital/kobe-university-hospital-international-medical-communication-center"
+  },
+  "/hospital/%E7%A5%9E%E6%88%B8%E5%A4%A7%E5%AD%A6%E5%8C%BB%E5%AD%A6%E9%83%A8%E9%99%84%E5%B1%9E%E7%97%85%E9%99%A2-%E5%9B%BD%E9%9A%9B%E8%A8%BA%E7%99%82": {
+    "status": 301,
+    "destination": "/hospital/kobe-university-hospital-international-medical-communication-center"
+  },
+  "/en/hospital/神戸大学医学部附属病院-国際診療": {
+    "status": 301,
+    "destination": "/en/hospital/kobe-university-hospital-international-medical-communication-center"
+  },
+  "/en/hospital/%E7%A5%9E%E6%88%B8%E5%A4%A7%E5%AD%A6%E5%8C%BB%E5%AD%A6%E9%83%A8%E9%99%84%E5%B1%9E%E7%97%85%E9%99%A2-%E5%9B%BD%E9%9A%9B%E8%A8%BA%E7%99%82": {
+    "status": 301,
+    "destination": "/en/hospital/kobe-university-hospital-international-medical-communication-center"
+  },
+  "/hospital/那覇市立病院-国際医療支援室": {
+    "status": 301,
+    "destination": "/hospital/naha-city-hospital-international-medical-support-office"
+  },
+  "/hospital/%E9%82%A3%E8%A6%87%E5%B8%82%E7%AB%8B%E7%97%85%E9%99%A2-%E5%9B%BD%E9%9A%9B%E5%8C%BB%E7%99%82%E6%94%AF%E6%8F%B4%E5%AE%A4": {
+    "status": 301,
+    "destination": "/hospital/naha-city-hospital-international-medical-support-office"
+  },
+  "/en/hospital/那覇市立病院-国際医療支援室": {
+    "status": 301,
+    "destination": "/en/hospital/naha-city-hospital-international-medical-support-office"
+  },
+  "/en/hospital/%E9%82%A3%E8%A6%87%E5%B8%82%E7%AB%8B%E7%97%85%E9%99%A2-%E5%9B%BD%E9%9A%9B%E5%8C%BB%E7%99%82%E6%94%AF%E6%8F%B4%E5%AE%A4": {
+    "status": 301,
+    "destination": "/en/hospital/naha-city-hospital-international-medical-support-office"
+  },
+  "/hospital/聖隷浜松病院": {
+    "status": 301,
+    "destination": "/hospital/seirei-hamamatsu-general-hospital"
+  },
+  "/hospital/%E8%81%96%E9%9A%B7%E6%B5%9C%E6%9D%BE%E7%97%85%E9%99%A2": {
+    "status": 301,
+    "destination": "/hospital/seirei-hamamatsu-general-hospital"
+  },
+  "/en/hospital/聖隷浜松病院": {
+    "status": 301,
+    "destination": "/en/hospital/seirei-hamamatsu-general-hospital"
+  },
+  "/en/hospital/%E8%81%96%E9%9A%B7%E6%B5%9C%E6%9D%BE%E7%97%85%E9%99%A2": {
+    "status": 301,
+    "destination": "/en/hospital/seirei-hamamatsu-general-hospital"
+  },
+  "/hospital/亀田京橋クリニック": {
+    "status": 301,
+    "destination": "/hospital/kameda-kyobashi-clinic-chinese-outpatient"
+  },
+  "/hospital/%E4%BA%80%E7%94%B0%E4%BA%AC%E6%A9%8B%E3%82%AF%E3%83%AA%E3%83%8B%E3%83%83%E3%82%AF": {
+    "status": 301,
+    "destination": "/hospital/kameda-kyobashi-clinic-chinese-outpatient"
+  },
+  "/en/hospital/亀田京橋クリニック": {
+    "status": 301,
+    "destination": "/en/hospital/kameda-kyobashi-clinic-chinese-outpatient"
+  },
+  "/en/hospital/%E4%BA%80%E7%94%B0%E4%BA%AC%E6%A9%8B%E3%82%AF%E3%83%AA%E3%83%8B%E3%83%83%E3%82%AF": {
+    "status": 301,
+    "destination": "/en/hospital/kameda-kyobashi-clinic-chinese-outpatient"
+  },
+  "/hospital/平和記念医院": {
+    "status": 301,
+    "destination": "/hospital/heiwa-memorial-clinic-international-outpatient"
+  },
+  "/hospital/%E5%B9%B3%E5%92%8C%E8%A8%98%E5%BF%B5%E5%8C%BB%E9%99%A2": {
+    "status": 301,
+    "destination": "/hospital/heiwa-memorial-clinic-international-outpatient"
+  },
+  "/en/hospital/平和記念医院": {
+    "status": 301,
+    "destination": "/en/hospital/heiwa-memorial-clinic-international-outpatient"
+  },
+  "/en/hospital/%E5%B9%B3%E5%92%8C%E8%A8%98%E5%BF%B5%E5%8C%BB%E9%99%A2": {
+    "status": 301,
+    "destination": "/en/hospital/heiwa-memorial-clinic-international-outpatient"
+  },
+  "/hospital/ラッフルズメディカル大阪クリニック": {
+    "status": 301,
+    "destination": "/hospital/raffles-medical-osaka-clinic"
+  },
+  "/hospital/%E3%83%A9%E3%83%83%E3%83%95%E3%83%AB%E3%82%BA%E3%83%A1%E3%83%87%E3%82%A3%E3%82%AB%E3%83%AB%E5%A4%A7%E9%98%AA%E3%82%AF%E3%83%AA%E3%83%8B%E3%83%83%E3%82%AF": {
+    "status": 301,
+    "destination": "/hospital/raffles-medical-osaka-clinic"
+  },
+  "/en/hospital/ラッフルズメディカル大阪クリニック": {
+    "status": 301,
+    "destination": "/en/hospital/raffles-medical-osaka-clinic"
+  },
+  "/en/hospital/%E3%83%A9%E3%83%83%E3%83%95%E3%83%AB%E3%82%BA%E3%83%A1%E3%83%87%E3%82%A3%E3%82%AB%E3%83%AB%E5%A4%A7%E9%98%AA%E3%82%AF%E3%83%AA%E3%83%8B%E3%83%83%E3%82%AF": {
+    "status": 301,
+    "destination": "/en/hospital/raffles-medical-osaka-clinic"
+  },
+  "/hospital/うららか内科クリニック": {
+    "status": 301,
+    "destination": "/hospital/uraraka-internal-medicine-clinic"
+  },
+  "/hospital/%E3%81%86%E3%82%89%E3%82%89%E3%81%8B%E5%86%85%E7%A7%91%E3%82%AF%E3%83%AA%E3%83%8B%E3%83%83%E3%82%AF": {
+    "status": 301,
+    "destination": "/hospital/uraraka-internal-medicine-clinic"
+  },
+  "/en/hospital/うららか内科クリニック": {
+    "status": 301,
+    "destination": "/en/hospital/uraraka-internal-medicine-clinic"
+  },
+  "/en/hospital/%E3%81%86%E3%82%89%E3%82%89%E3%81%8B%E5%86%85%E7%A7%91%E3%82%AF%E3%83%AA%E3%83%8B%E3%83%83%E3%82%AF": {
+    "status": 301,
+    "destination": "/en/hospital/uraraka-internal-medicine-clinic"
+  },
+  "/hospital/東北大学病院-国際医療センター": {
+    "status": 301,
+    "destination": "/hospital/tohoku-university-hospital-international-medical-center"
+  },
+  "/hospital/%E6%9D%B1%E5%8C%97%E5%A4%A7%E5%AD%A6%E7%97%85%E9%99%A2-%E5%9B%BD%E9%9A%9B%E5%8C%BB%E7%99%82%E3%82%BB%E3%83%B3%E3%82%BF%E3%83%BC": {
+    "status": 301,
+    "destination": "/hospital/tohoku-university-hospital-international-medical-center"
+  },
+  "/en/hospital/東北大学病院-国際医療センター": {
+    "status": 301,
+    "destination": "/en/hospital/tohoku-university-hospital-international-medical-center"
+  },
+  "/en/hospital/%E6%9D%B1%E5%8C%97%E5%A4%A7%E5%AD%A6%E7%97%85%E9%99%A2-%E5%9B%BD%E9%9A%9B%E5%8C%BB%E7%99%82%E3%82%BB%E3%83%B3%E3%82%BF%E3%83%BC": {
+    "status": 301,
+    "destination": "/en/hospital/tohoku-university-hospital-international-medical-center"
+  },
+  "/hospital/りんくう総合医療センター-国際センター": {
+    "status": 301,
+    "destination": "/hospital/rinku-general-medical-center-international-center"
+  },
+  "/hospital/%E3%82%8A%E3%82%93%E3%81%8F%E3%81%86%E7%B7%8F%E5%90%88%E5%8C%BB%E7%99%82%E3%82%BB%E3%83%B3%E3%82%BF%E3%83%BC-%E5%9B%BD%E9%9A%9B%E3%82%BB%E3%83%B3%E3%82%BF%E3%83%BC": {
+    "status": 301,
+    "destination": "/hospital/rinku-general-medical-center-international-center"
+  },
+  "/en/hospital/りんくう総合医療センター-国際センター": {
+    "status": 301,
+    "destination": "/en/hospital/rinku-general-medical-center-international-center"
+  },
+  "/en/hospital/%E3%82%8A%E3%82%93%E3%81%8F%E3%81%86%E7%B7%8F%E5%90%88%E5%8C%BB%E7%99%82%E3%82%BB%E3%83%B3%E3%82%BF%E3%83%BC-%E5%9B%BD%E9%9A%9B%E3%82%BB%E3%83%B3%E3%82%BF%E3%83%BC": {
+    "status": 301,
+    "destination": "/en/hospital/rinku-general-medical-center-international-center"
+  },
+  "/hospital/侑生クリニック": {
+    "status": 301,
+    "destination": "/hospital/yusei-clinic"
+  },
+  "/hospital/%E4%BE%91%E7%94%9F%E3%82%AF%E3%83%AA%E3%83%8B%E3%83%83%E3%82%AF": {
+    "status": 301,
+    "destination": "/hospital/yusei-clinic"
+  },
+  "/en/hospital/侑生クリニック": {
+    "status": 301,
+    "destination": "/en/hospital/yusei-clinic"
+  },
+  "/en/hospital/%E4%BE%91%E7%94%9F%E3%82%AF%E3%83%AA%E3%83%8B%E3%83%83%E3%82%AF": {
+    "status": 301,
+    "destination": "/en/hospital/yusei-clinic"
+  },
+  "/hospital/亀岡内科": {
+    "status": 301,
+    "destination": "/hospital/kameoka-internal-medicine-clinic"
+  },
+  "/hospital/%E4%BA%80%E5%B2%A1%E5%86%85%E7%A7%91": {
+    "status": 301,
+    "destination": "/hospital/kameoka-internal-medicine-clinic"
+  },
+  "/en/hospital/亀岡内科": {
+    "status": 301,
+    "destination": "/en/hospital/kameoka-internal-medicine-clinic"
+  },
+  "/en/hospital/%E4%BA%80%E5%B2%A1%E5%86%85%E7%A7%91": {
+    "status": 301,
+    "destination": "/en/hospital/kameoka-internal-medicine-clinic"
+  },
+  "/hospital/国立国際医療研究センター病院": {
+    "status": 301,
+    "destination": "/hospital/ncgm-hospital-international-health-care-center"
+  },
+  "/hospital/%E5%9B%BD%E7%AB%8B%E5%9B%BD%E9%9A%9B%E5%8C%BB%E7%99%82%E7%A0%94%E7%A9%B6%E3%82%BB%E3%83%B3%E3%82%BF%E3%83%BC%E7%97%85%E9%99%A2": {
+    "status": 301,
+    "destination": "/hospital/ncgm-hospital-international-health-care-center"
+  },
+  "/en/hospital/国立国際医療研究センター病院": {
+    "status": 301,
+    "destination": "/en/hospital/ncgm-hospital-international-health-care-center"
+  },
+  "/en/hospital/%E5%9B%BD%E7%AB%8B%E5%9B%BD%E9%9A%9B%E5%8C%BB%E7%99%82%E7%A0%94%E7%A9%B6%E3%82%BB%E3%83%B3%E3%82%BF%E3%83%BC%E7%97%85%E9%99%A2": {
+    "status": 301,
+    "destination": "/en/hospital/ncgm-hospital-international-health-care-center"
+  },
+  "/hospital/埼玉医科大学国際医療センター": {
+    "status": 301,
+    "destination": "/hospital/saitama-medical-university-international-medical-center"
+  },
+  "/hospital/%E5%9F%BC%E7%8E%89%E5%8C%BB%E7%A7%91%E5%A4%A7%E5%AD%A6%E5%9B%BD%E9%9A%9B%E5%8C%BB%E7%99%82%E3%82%BB%E3%83%B3%E3%82%BF%E3%83%BC": {
+    "status": 301,
+    "destination": "/hospital/saitama-medical-university-international-medical-center"
+  },
+  "/en/hospital/埼玉医科大学国際医療センター": {
+    "status": 301,
+    "destination": "/en/hospital/saitama-medical-university-international-medical-center"
+  },
+  "/en/hospital/%E5%9F%BC%E7%8E%89%E5%8C%BB%E7%A7%91%E5%A4%A7%E5%AD%A6%E5%9B%BD%E9%9A%9B%E5%8C%BB%E7%99%82%E3%82%BB%E3%83%B3%E3%82%BF%E3%83%BC": {
+    "status": 301,
+    "destination": "/en/hospital/saitama-medical-university-international-medical-center"
+  },
+  "/hospital/亀田総合病院": {
+    "status": 301,
+    "destination": "/hospital/kameda-medical-center-kameda-general-hospital"
+  },
+  "/hospital/%E4%BA%80%E7%94%B0%E7%B7%8F%E5%90%88%E7%97%85%E9%99%A2": {
+    "status": 301,
+    "destination": "/hospital/kameda-medical-center-kameda-general-hospital"
+  },
+  "/en/hospital/亀田総合病院": {
+    "status": 301,
+    "destination": "/en/hospital/kameda-medical-center-kameda-general-hospital"
+  },
+  "/en/hospital/%E4%BA%80%E7%94%B0%E7%B7%8F%E5%90%88%E7%97%85%E9%99%A2": {
+    "status": 301,
+    "destination": "/en/hospital/kameda-medical-center-kameda-general-hospital"
+  },
+  "/hospital/シュシュ歯科クリニック": {
+    "status": 301,
+    "destination": "/hospital/shushu-dental-clinic"
+  },
+  "/hospital/%E3%82%B7%E3%83%A5%E3%82%B7%E3%83%A5%E6%AD%AF%E7%A7%91%E3%82%AF%E3%83%AA%E3%83%8B%E3%83%83%E3%82%AF": {
+    "status": 301,
+    "destination": "/hospital/shushu-dental-clinic"
+  },
+  "/en/hospital/シュシュ歯科クリニック": {
+    "status": 301,
+    "destination": "/en/hospital/shushu-dental-clinic"
+  },
+  "/en/hospital/%E3%82%B7%E3%83%A5%E3%82%B7%E3%83%A5%E6%AD%AF%E7%A7%91%E3%82%AF%E3%83%AA%E3%83%8B%E3%83%83%E3%82%AF": {
+    "status": 301,
+    "destination": "/en/hospital/shushu-dental-clinic"
+  },
+  "/hospital/横浜中央病院": {
+    "status": 301,
+    "destination": "/hospital/yokohama-central-hospital"
+  },
+  "/hospital/%E6%A8%AA%E6%B5%9C%E4%B8%AD%E5%A4%AE%E7%97%85%E9%99%A2": {
+    "status": 301,
+    "destination": "/hospital/yokohama-central-hospital"
+  },
+  "/en/hospital/横浜中央病院": {
+    "status": 301,
+    "destination": "/en/hospital/yokohama-central-hospital"
+  },
+  "/en/hospital/%E6%A8%AA%E6%B5%9C%E4%B8%AD%E5%A4%AE%E7%97%85%E9%99%A2": {
+    "status": 301,
+    "destination": "/en/hospital/yokohama-central-hospital"
+  },
+  "/hospital/協和医院": {
+    "status": 301,
+    "destination": "/hospital/kyowa-clinic"
+  },
+  "/hospital/%E5%8D%94%E5%92%8C%E5%8C%BB%E9%99%A2": {
+    "status": 301,
+    "destination": "/hospital/kyowa-clinic"
+  },
+  "/en/hospital/協和医院": {
+    "status": 301,
+    "destination": "/en/hospital/kyowa-clinic"
+  },
+  "/en/hospital/%E5%8D%94%E5%92%8C%E5%8C%BB%E9%99%A2": {
+    "status": 301,
+    "destination": "/en/hospital/kyowa-clinic"
+  },
+  "/hospital/林クリニック": {
+    "status": 301,
+    "destination": "/hospital/hayashi-clinic"
+  },
+  "/hospital/%E6%9E%97%E3%82%AF%E3%83%AA%E3%83%8B%E3%83%83%E3%82%AF": {
+    "status": 301,
+    "destination": "/hospital/hayashi-clinic"
+  },
+  "/en/hospital/林クリニック": {
+    "status": 301,
+    "destination": "/en/hospital/hayashi-clinic"
+  },
+  "/en/hospital/%E6%9E%97%E3%82%AF%E3%83%AA%E3%83%8B%E3%83%83%E3%82%AF": {
+    "status": 301,
+    "destination": "/en/hospital/hayashi-clinic"
+  },
+  "/hospital/東文中醫クリニック": {
+    "status": 301,
+    "destination": "/hospital/tobun-chinese-medicine-clinic-shimbashi"
+  },
+  "/hospital/%E6%9D%B1%E6%96%87%E4%B8%AD%E9%86%AB%E3%82%AF%E3%83%AA%E3%83%8B%E3%83%83%E3%82%AF": {
+    "status": 301,
+    "destination": "/hospital/tobun-chinese-medicine-clinic-shimbashi"
+  },
+  "/en/hospital/東文中醫クリニック": {
+    "status": 301,
+    "destination": "/en/hospital/tobun-chinese-medicine-clinic-shimbashi"
+  },
+  "/en/hospital/%E6%9D%B1%E6%96%87%E4%B8%AD%E9%86%AB%E3%82%AF%E3%83%AA%E3%83%8B%E3%83%83%E3%82%AF": {
+    "status": 301,
+    "destination": "/en/hospital/tobun-chinese-medicine-clinic-shimbashi"
+  },
+  "/hospital/ちば浜野総合診療クリニック": {
+    "status": 301,
+    "destination": "/hospital/chiba-hamano-general-clinic"
+  },
+  "/hospital/%E3%81%A1%E3%81%B0%E6%B5%9C%E9%87%8E%E7%B7%8F%E5%90%88%E8%A8%BA%E7%99%82%E3%82%AF%E3%83%AA%E3%83%8B%E3%83%83%E3%82%AF": {
+    "status": 301,
+    "destination": "/hospital/chiba-hamano-general-clinic"
+  },
+  "/en/hospital/ちば浜野総合診療クリニック": {
+    "status": 301,
+    "destination": "/en/hospital/chiba-hamano-general-clinic"
+  },
+  "/en/hospital/%E3%81%A1%E3%81%B0%E6%B5%9C%E9%87%8E%E7%B7%8F%E5%90%88%E8%A8%BA%E7%99%82%E3%82%AF%E3%83%AA%E3%83%8B%E3%83%83%E3%82%AF": {
+    "status": 301,
+    "destination": "/en/hospital/chiba-hamano-general-clinic"
+  },
+  "/hospital/柏東口駅前歯科-ジャパンデンタルクリニック": {
+    "status": 301,
+    "destination": "/hospital/kashiwa-japan-dental-clinic"
+  },
+  "/hospital/%E6%9F%8F%E6%9D%B1%E5%8F%A3%E9%A7%85%E5%89%8D%E6%AD%AF%E7%A7%91-%E3%82%B8%E3%83%A3%E3%83%91%E3%83%B3%E3%83%87%E3%83%B3%E3%82%BF%E3%83%AB%E3%82%AF%E3%83%AA%E3%83%8B%E3%83%83%E3%82%AF": {
+    "status": 301,
+    "destination": "/hospital/kashiwa-japan-dental-clinic"
+  },
+  "/en/hospital/柏東口駅前歯科-ジャパンデンタルクリニック": {
+    "status": 301,
+    "destination": "/en/hospital/kashiwa-japan-dental-clinic"
+  },
+  "/en/hospital/%E6%9F%8F%E6%9D%B1%E5%8F%A3%E9%A7%85%E5%89%8D%E6%AD%AF%E7%A7%91-%E3%82%B8%E3%83%A3%E3%83%91%E3%83%B3%E3%83%87%E3%83%B3%E3%82%BF%E3%83%AB%E3%82%AF%E3%83%AA%E3%83%8B%E3%83%83%E3%82%AF": {
+    "status": 301,
+    "destination": "/en/hospital/kashiwa-japan-dental-clinic"
+  },
+  "/hospital/オリエント歯科クリニック": {
+    "status": 301,
+    "destination": "/hospital/orient-dental-clinic"
+  },
+  "/hospital/%E3%82%AA%E3%83%AA%E3%82%A8%E3%83%B3%E3%83%88%E6%AD%AF%E7%A7%91%E3%82%AF%E3%83%AA%E3%83%8B%E3%83%83%E3%82%AF": {
+    "status": 301,
+    "destination": "/hospital/orient-dental-clinic"
+  },
+  "/en/hospital/オリエント歯科クリニック": {
+    "status": 301,
+    "destination": "/en/hospital/orient-dental-clinic"
+  },
+  "/en/hospital/%E3%82%AA%E3%83%AA%E3%82%A8%E3%83%B3%E3%83%88%E6%AD%AF%E7%A7%91%E3%82%AF%E3%83%AA%E3%83%8B%E3%83%83%E3%82%AF": {
+    "status": 301,
+    "destination": "/en/hospital/orient-dental-clinic"
+  },
+  "/hospital/わかば歯科クリニック": {
+    "status": 301,
+    "destination": "/hospital/wakaba-dental-clinic"
+  },
+  "/hospital/%E3%82%8F%E3%81%8B%E3%81%B0%E6%AD%AF%E7%A7%91%E3%82%AF%E3%83%AA%E3%83%8B%E3%83%83%E3%82%AF": {
+    "status": 301,
+    "destination": "/hospital/wakaba-dental-clinic"
+  },
+  "/en/hospital/わかば歯科クリニック": {
+    "status": 301,
+    "destination": "/en/hospital/wakaba-dental-clinic"
+  },
+  "/en/hospital/%E3%82%8F%E3%81%8B%E3%81%B0%E6%AD%AF%E7%A7%91%E3%82%AF%E3%83%AA%E3%83%8B%E3%83%83%E3%82%AF": {
+    "status": 301,
+    "destination": "/en/hospital/wakaba-dental-clinic"
+  },
+  "/hospital/松戸市立総合医療センター": {
+    "status": 301,
+    "destination": "/hospital/matsudo-city-general-hospital"
+  },
+  "/hospital/%E6%9D%BE%E6%88%B8%E5%B8%82%E7%AB%8B%E7%B7%8F%E5%90%88%E5%8C%BB%E7%99%82%E3%82%BB%E3%83%B3%E3%82%BF%E3%83%BC": {
+    "status": 301,
+    "destination": "/hospital/matsudo-city-general-hospital"
+  },
+  "/en/hospital/松戸市立総合医療センター": {
+    "status": 301,
+    "destination": "/en/hospital/matsudo-city-general-hospital"
+  },
+  "/en/hospital/%E6%9D%BE%E6%88%B8%E5%B8%82%E7%AB%8B%E7%B7%8F%E5%90%88%E5%8C%BB%E7%99%82%E3%82%BB%E3%83%B3%E3%82%BF%E3%83%BC": {
+    "status": 301,
+    "destination": "/en/hospital/matsudo-city-general-hospital"
+  },
+  "/hospital/船橋森谷歯科クリニック": {
+    "status": 301,
+    "destination": "/hospital/funabashi-moriya-dental-clinic"
+  },
+  "/hospital/%E8%88%B9%E6%A9%8B%E6%A3%AE%E8%B0%B7%E6%AD%AF%E7%A7%91%E3%82%AF%E3%83%AA%E3%83%8B%E3%83%83%E3%82%AF": {
+    "status": 301,
+    "destination": "/hospital/funabashi-moriya-dental-clinic"
+  },
+  "/en/hospital/船橋森谷歯科クリニック": {
+    "status": 301,
+    "destination": "/en/hospital/funabashi-moriya-dental-clinic"
+  },
+  "/en/hospital/%E8%88%B9%E6%A9%8B%E6%A3%AE%E8%B0%B7%E6%AD%AF%E7%A7%91%E3%82%AF%E3%83%AA%E3%83%8B%E3%83%83%E3%82%AF": {
+    "status": 301,
+    "destination": "/en/hospital/funabashi-moriya-dental-clinic"
+  },
+  "/hospital/ぜんり歯科内科クリニック": {
+    "status": 301,
+    "destination": "/hospital/zenri-dental-internal-medicine-clinic"
+  },
+  "/hospital/%E3%81%9C%E3%82%93%E3%82%8A%E6%AD%AF%E7%A7%91%E5%86%85%E7%A7%91%E3%82%AF%E3%83%AA%E3%83%8B%E3%83%83%E3%82%AF": {
+    "status": 301,
+    "destination": "/hospital/zenri-dental-internal-medicine-clinic"
+  },
+  "/en/hospital/ぜんり歯科内科クリニック": {
+    "status": 301,
+    "destination": "/en/hospital/zenri-dental-internal-medicine-clinic"
+  },
+  "/en/hospital/%E3%81%9C%E3%82%93%E3%82%8A%E6%AD%AF%E7%A7%91%E5%86%85%E7%A7%91%E3%82%AF%E3%83%AA%E3%83%8B%E3%83%83%E3%82%AF": {
+    "status": 301,
+    "destination": "/en/hospital/zenri-dental-internal-medicine-clinic"
+  },
+  "/hospital/千葉ニュータウンデンタルクリニック": {
+    "status": 301,
+    "destination": "/hospital/chiba-new-town-dental-clinic"
+  },
+  "/hospital/%E5%8D%83%E8%91%89%E3%83%8B%E3%83%A5%E3%83%BC%E3%82%BF%E3%82%A6%E3%83%B3%E3%83%87%E3%83%B3%E3%82%BF%E3%83%AB%E3%82%AF%E3%83%AA%E3%83%8B%E3%83%83%E3%82%AF": {
+    "status": 301,
+    "destination": "/hospital/chiba-new-town-dental-clinic"
+  },
+  "/en/hospital/千葉ニュータウンデンタルクリニック": {
+    "status": 301,
+    "destination": "/en/hospital/chiba-new-town-dental-clinic"
+  },
+  "/en/hospital/%E5%8D%83%E8%91%89%E3%83%8B%E3%83%A5%E3%83%BC%E3%82%BF%E3%82%A6%E3%83%B3%E3%83%87%E3%83%B3%E3%82%BF%E3%83%AB%E3%82%AF%E3%83%AA%E3%83%8B%E3%83%83%E3%82%AF": {
+    "status": 301,
+    "destination": "/en/hospital/chiba-new-town-dental-clinic"
+  },
+  "/hospital/新浦安u歯科": {
+    "status": 301,
+    "destination": "/hospital/shin-urayasu-u-dental"
+  },
+  "/hospital/%E6%96%B0%E6%B5%A6%E5%AE%89u%E6%AD%AF%E7%A7%91": {
+    "status": 301,
+    "destination": "/hospital/shin-urayasu-u-dental"
+  },
+  "/en/hospital/新浦安u歯科": {
+    "status": 301,
+    "destination": "/en/hospital/shin-urayasu-u-dental"
+  },
+  "/en/hospital/%E6%96%B0%E6%B5%A6%E5%AE%89u%E6%AD%AF%E7%A7%91": {
+    "status": 301,
+    "destination": "/en/hospital/shin-urayasu-u-dental"
+  },
+  "/hospital/ksファミリー歯科": {
+    "status": 301,
+    "destination": "/hospital/ks-family-dental"
+  },
+  "/hospital/ks%E3%83%95%E3%82%A1%E3%83%9F%E3%83%AA%E3%83%BC%E6%AD%AF%E7%A7%91": {
+    "status": 301,
+    "destination": "/hospital/ks-family-dental"
+  },
+  "/en/hospital/ksファミリー歯科": {
+    "status": 301,
+    "destination": "/en/hospital/ks-family-dental"
+  },
+  "/en/hospital/ks%E3%83%95%E3%82%A1%E3%83%9F%E3%83%AA%E3%83%BC%E6%AD%AF%E7%A7%91": {
+    "status": 301,
+    "destination": "/en/hospital/ks-family-dental"
+  },
+  "/hospital/地方独立行政法人東京都立病院機構-大久保病院": {
+    "status": 301,
+    "destination": "/hospital/tokyo-metropolitan-okubo-hospital-international-care-center"
+  },
+  "/hospital/%E5%9C%B0%E6%96%B9%E7%8B%AC%E7%AB%8B%E8%A1%8C%E6%94%BF%E6%B3%95%E4%BA%BA%E6%9D%B1%E4%BA%AC%E9%83%BD%E7%AB%8B%E7%97%85%E9%99%A2%E6%A9%9F%E6%A7%8B-%E5%A4%A7%E4%B9%85%E4%BF%9D%E7%97%85%E9%99%A2": {
+    "status": 301,
+    "destination": "/hospital/tokyo-metropolitan-okubo-hospital-international-care-center"
+  },
+  "/en/hospital/地方独立行政法人東京都立病院機構-大久保病院": {
+    "status": 301,
+    "destination": "/en/hospital/tokyo-metropolitan-okubo-hospital-international-care-center"
+  },
+  "/en/hospital/%E5%9C%B0%E6%96%B9%E7%8B%AC%E7%AB%8B%E8%A1%8C%E6%94%BF%E6%B3%95%E4%BA%BA%E6%9D%B1%E4%BA%AC%E9%83%BD%E7%AB%8B%E7%97%85%E9%99%A2%E6%A9%9F%E6%A7%8B-%E5%A4%A7%E4%B9%85%E4%BF%9D%E7%97%85%E9%99%A2": {
+    "status": 301,
+    "destination": "/en/hospital/tokyo-metropolitan-okubo-hospital-international-care-center"
+  },
+  "/hospital/医療法人社団スカイ-新宿nsビルスカイクリニック": {
+    "status": 301,
+    "destination": "/hospital/shinjuku-ns-building-sky-clinic"
+  },
+  "/hospital/%E5%8C%BB%E7%99%82%E6%B3%95%E4%BA%BA%E7%A4%BE%E5%9B%A3%E3%82%B9%E3%82%AB%E3%82%A4-%E6%96%B0%E5%AE%BFns%E3%83%93%E3%83%AB%E3%82%B9%E3%82%AB%E3%82%A4%E3%82%AF%E3%83%AA%E3%83%8B%E3%83%83%E3%82%AF": {
+    "status": 301,
+    "destination": "/hospital/shinjuku-ns-building-sky-clinic"
+  },
+  "/en/hospital/医療法人社団スカイ-新宿nsビルスカイクリニック": {
+    "status": 301,
+    "destination": "/en/hospital/shinjuku-ns-building-sky-clinic"
+  },
+  "/en/hospital/%E5%8C%BB%E7%99%82%E6%B3%95%E4%BA%BA%E7%A4%BE%E5%9B%A3%E3%82%B9%E3%82%AB%E3%82%A4-%E6%96%B0%E5%AE%BFns%E3%83%93%E3%83%AB%E3%82%B9%E3%82%AB%E3%82%A4%E3%82%AF%E3%83%AA%E3%83%8B%E3%83%83%E3%82%AF": {
+    "status": 301,
+    "destination": "/en/hospital/shinjuku-ns-building-sky-clinic"
+  },
+  "/hospital/杏林大学医学部付属杉並病院": {
+    "status": 301,
+    "destination": "/hospital/kyorin-university-suginami-hospital"
+  },
+  "/hospital/%E6%9D%8F%E6%9E%97%E5%A4%A7%E5%AD%A6%E5%8C%BB%E5%AD%A6%E9%83%A8%E4%BB%98%E5%B1%9E%E6%9D%89%E4%B8%A6%E7%97%85%E9%99%A2": {
+    "status": 301,
+    "destination": "/hospital/kyorin-university-suginami-hospital"
+  },
+  "/en/hospital/杏林大学医学部付属杉並病院": {
+    "status": 301,
+    "destination": "/en/hospital/kyorin-university-suginami-hospital"
+  },
+  "/en/hospital/%E6%9D%8F%E6%9E%97%E5%A4%A7%E5%AD%A6%E5%8C%BB%E5%AD%A6%E9%83%A8%E4%BB%98%E5%B1%9E%E6%9D%89%E4%B8%A6%E7%97%85%E9%99%A2": {
+    "status": 301,
+    "destination": "/en/hospital/kyorin-university-suginami-hospital"
+  },
+  "/hospital/医療法人社団ローズレディースクリニック": {
+    "status": 301,
+    "destination": "/hospital/rose-ladies-clinic"
+  },
+  "/hospital/%E5%8C%BB%E7%99%82%E6%B3%95%E4%BA%BA%E7%A4%BE%E5%9B%A3%E3%83%AD%E3%83%BC%E3%82%BA%E3%83%AC%E3%83%87%E3%82%A3%E3%83%BC%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%8B%E3%83%83%E3%82%AF": {
+    "status": 301,
+    "destination": "/hospital/rose-ladies-clinic"
+  },
+  "/en/hospital/医療法人社団ローズレディースクリニック": {
+    "status": 301,
+    "destination": "/en/hospital/rose-ladies-clinic"
+  },
+  "/en/hospital/%E5%8C%BB%E7%99%82%E6%B3%95%E4%BA%BA%E7%A4%BE%E5%9B%A3%E3%83%AD%E3%83%BC%E3%82%BA%E3%83%AC%E3%83%87%E3%82%A3%E3%83%BC%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%8B%E3%83%83%E3%82%AF": {
+    "status": 301,
+    "destination": "/en/hospital/rose-ladies-clinic"
+  },
+  "/hospital/地方独立行政法人東京都立病院機構-東京都立広尾病院": {
+    "status": 301,
+    "destination": "/hospital/tokyo-metropolitan-hiroo-hospital"
+  },
+  "/hospital/%E5%9C%B0%E6%96%B9%E7%8B%AC%E7%AB%8B%E8%A1%8C%E6%94%BF%E6%B3%95%E4%BA%BA%E6%9D%B1%E4%BA%AC%E9%83%BD%E7%AB%8B%E7%97%85%E9%99%A2%E6%A9%9F%E6%A7%8B-%E6%9D%B1%E4%BA%AC%E9%83%BD%E7%AB%8B%E5%BA%83%E5%B0%BE%E7%97%85%E9%99%A2": {
+    "status": 301,
+    "destination": "/hospital/tokyo-metropolitan-hiroo-hospital"
+  },
+  "/en/hospital/地方独立行政法人東京都立病院機構-東京都立広尾病院": {
+    "status": 301,
+    "destination": "/en/hospital/tokyo-metropolitan-hiroo-hospital"
+  },
+  "/en/hospital/%E5%9C%B0%E6%96%B9%E7%8B%AC%E7%AB%8B%E8%A1%8C%E6%94%BF%E6%B3%95%E4%BA%BA%E6%9D%B1%E4%BA%AC%E9%83%BD%E7%AB%8B%E7%97%85%E9%99%A2%E6%A9%9F%E6%A7%8B-%E6%9D%B1%E4%BA%AC%E9%83%BD%E7%AB%8B%E5%BA%83%E5%B0%BE%E7%97%85%E9%99%A2": {
+    "status": 301,
+    "destination": "/en/hospital/tokyo-metropolitan-hiroo-hospital"
+  },
+  "/hospital/ピンクリボンブレストケアクリニック表参道": {
+    "status": 301,
+    "destination": "/hospital/pink-ribbon-breast-care-clinic-omotesando"
+  },
+  "/hospital/%E3%83%94%E3%83%B3%E3%82%AF%E3%83%AA%E3%83%9C%E3%83%B3%E3%83%96%E3%83%AC%E3%82%B9%E3%83%88%E3%82%B1%E3%82%A2%E3%82%AF%E3%83%AA%E3%83%8B%E3%83%83%E3%82%AF%E8%A1%A8%E5%8F%82%E9%81%93": {
+    "status": 301,
+    "destination": "/hospital/pink-ribbon-breast-care-clinic-omotesando"
+  },
+  "/en/hospital/ピンクリボンブレストケアクリニック表参道": {
+    "status": 301,
+    "destination": "/en/hospital/pink-ribbon-breast-care-clinic-omotesando"
+  },
+  "/en/hospital/%E3%83%94%E3%83%B3%E3%82%AF%E3%83%AA%E3%83%9C%E3%83%B3%E3%83%96%E3%83%AC%E3%82%B9%E3%83%88%E3%82%B1%E3%82%A2%E3%82%AF%E3%83%AA%E3%83%8B%E3%83%83%E3%82%AF%E8%A1%A8%E5%8F%82%E9%81%93": {
+    "status": 301,
+    "destination": "/en/hospital/pink-ribbon-breast-care-clinic-omotesando"
+  },
+  "/hospital/あさひレディスクリニック": {
+    "status": 301,
+    "destination": "/hospital/asahi-ladies-clinic"
+  },
+  "/hospital/%E3%81%82%E3%81%95%E3%81%B2%E3%83%AC%E3%83%87%E3%82%A3%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%8B%E3%83%83%E3%82%AF": {
+    "status": 301,
+    "destination": "/hospital/asahi-ladies-clinic"
+  },
+  "/en/hospital/あさひレディスクリニック": {
+    "status": 301,
+    "destination": "/en/hospital/asahi-ladies-clinic"
+  },
+  "/en/hospital/%E3%81%82%E3%81%95%E3%81%B2%E3%83%AC%E3%83%87%E3%82%A3%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%8B%E3%83%83%E3%82%AF": {
+    "status": 301,
+    "destination": "/en/hospital/asahi-ladies-clinic"
+  },
+  "/hospital/乳腺外科": {
+    "status": 301,
+    "destination": "/hospital/mammaria-tsukiji"
+  },
+  "/hospital/%E4%B9%B3%E8%85%BA%E5%A4%96%E7%A7%91": {
+    "status": 301,
+    "destination": "/hospital/mammaria-tsukiji"
+  },
+  "/en/hospital/乳腺外科": {
+    "status": 301,
+    "destination": "/en/hospital/mammaria-tsukiji"
+  },
+  "/en/hospital/%E4%B9%B3%E8%85%BA%E5%A4%96%E7%A7%91": {
+    "status": 301,
+    "destination": "/en/hospital/mammaria-tsukiji"
+  },
+  "/hospital/三ノ輪-紀レディースクリニック": {
+    "status": 301,
+    "destination": "/hospital/minowa-kino-ladies-clinic"
+  },
+  "/hospital/%E4%B8%89%E3%83%8E%E8%BC%AA-%E7%B4%80%E3%83%AC%E3%83%87%E3%82%A3%E3%83%BC%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%8B%E3%83%83%E3%82%AF": {
+    "status": 301,
+    "destination": "/hospital/minowa-kino-ladies-clinic"
+  },
+  "/en/hospital/三ノ輪-紀レディースクリニック": {
+    "status": 301,
+    "destination": "/en/hospital/minowa-kino-ladies-clinic"
+  },
+  "/en/hospital/%E4%B8%89%E3%83%8E%E8%BC%AA-%E7%B4%80%E3%83%AC%E3%83%87%E3%82%A3%E3%83%BC%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%8B%E3%83%83%E3%82%AF": {
+    "status": 301,
+    "destination": "/en/hospital/minowa-kino-ladies-clinic"
+  },
+  "/hospital/ntt東日本関東病院": {
+    "status": 301,
+    "destination": "/hospital/ntt-medical-center-tokyo-international-department"
+  },
+  "/hospital/ntt%E6%9D%B1%E6%97%A5%E6%9C%AC%E9%96%A2%E6%9D%B1%E7%97%85%E9%99%A2": {
+    "status": 301,
+    "destination": "/hospital/ntt-medical-center-tokyo-international-department"
+  },
+  "/en/hospital/ntt東日本関東病院": {
+    "status": 301,
+    "destination": "/en/hospital/ntt-medical-center-tokyo-international-department"
+  },
+  "/en/hospital/ntt%E6%9D%B1%E6%97%A5%E6%9C%AC%E9%96%A2%E6%9D%B1%E7%97%85%E9%99%A2": {
+    "status": 301,
+    "destination": "/en/hospital/ntt-medical-center-tokyo-international-department"
+  },
+  "/hospital/独立行政法人労働者健康安全機構-東京労災病院": {
+    "status": 301,
+    "destination": "/hospital/tokyo-rosai-hospital"
+  },
+  "/hospital/%E7%8B%AC%E7%AB%8B%E8%A1%8C%E6%94%BF%E6%B3%95%E4%BA%BA%E5%8A%B4%E5%83%8D%E8%80%85%E5%81%A5%E5%BA%B7%E5%AE%89%E5%85%A8%E6%A9%9F%E6%A7%8B-%E6%9D%B1%E4%BA%AC%E5%8A%B4%E7%81%BD%E7%97%85%E9%99%A2": {
+    "status": 301,
+    "destination": "/hospital/tokyo-rosai-hospital"
+  },
+  "/en/hospital/独立行政法人労働者健康安全機構-東京労災病院": {
+    "status": 301,
+    "destination": "/en/hospital/tokyo-rosai-hospital"
+  },
+  "/en/hospital/%E7%8B%AC%E7%AB%8B%E8%A1%8C%E6%94%BF%E6%B3%95%E4%BA%BA%E5%8A%B4%E5%83%8D%E8%80%85%E5%81%A5%E5%BA%B7%E5%AE%89%E5%85%A8%E6%A9%9F%E6%A7%8B-%E6%9D%B1%E4%BA%AC%E5%8A%B4%E7%81%BD%E7%97%85%E9%99%A2": {
+    "status": 301,
+    "destination": "/en/hospital/tokyo-rosai-hospital"
+  },
+  "/hospital/地方独立行政法人東京都立病院機構-東京都立大塚病院": {
+    "status": 301,
+    "destination": "/hospital/tokyo-metropolitan-otsuka-hospital"
+  },
+  "/hospital/%E5%9C%B0%E6%96%B9%E7%8B%AC%E7%AB%8B%E8%A1%8C%E6%94%BF%E6%B3%95%E4%BA%BA%E6%9D%B1%E4%BA%AC%E9%83%BD%E7%AB%8B%E7%97%85%E9%99%A2%E6%A9%9F%E6%A7%8B-%E6%9D%B1%E4%BA%AC%E9%83%BD%E7%AB%8B%E5%A4%A7%E5%A1%9A%E7%97%85%E9%99%A2": {
+    "status": 301,
+    "destination": "/hospital/tokyo-metropolitan-otsuka-hospital"
+  },
+  "/en/hospital/地方独立行政法人東京都立病院機構-東京都立大塚病院": {
+    "status": 301,
+    "destination": "/en/hospital/tokyo-metropolitan-otsuka-hospital"
+  },
+  "/en/hospital/%E5%9C%B0%E6%96%B9%E7%8B%AC%E7%AB%8B%E8%A1%8C%E6%94%BF%E6%B3%95%E4%BA%BA%E6%9D%B1%E4%BA%AC%E9%83%BD%E7%AB%8B%E7%97%85%E9%99%A2%E6%A9%9F%E6%A7%8B-%E6%9D%B1%E4%BA%AC%E9%83%BD%E7%AB%8B%E5%A4%A7%E5%A1%9A%E7%97%85%E9%99%A2": {
+    "status": 301,
+    "destination": "/en/hospital/tokyo-metropolitan-otsuka-hospital"
+  },
+  "/hospital/独立行政法人地域医療機能推進機構-東京高輪病院": {
+    "status": 301,
+    "destination": "/hospital/jcho-tokyo-takanawa-hospital-international-dept"
+  },
+  "/hospital/%E7%8B%AC%E7%AB%8B%E8%A1%8C%E6%94%BF%E6%B3%95%E4%BA%BA%E5%9C%B0%E5%9F%9F%E5%8C%BB%E7%99%82%E6%A9%9F%E8%83%BD%E6%8E%A8%E9%80%B2%E6%A9%9F%E6%A7%8B-%E6%9D%B1%E4%BA%AC%E9%AB%98%E8%BC%AA%E7%97%85%E9%99%A2": {
+    "status": 301,
+    "destination": "/hospital/jcho-tokyo-takanawa-hospital-international-dept"
+  },
+  "/en/hospital/独立行政法人地域医療機能推進機構-東京高輪病院": {
+    "status": 301,
+    "destination": "/en/hospital/jcho-tokyo-takanawa-hospital-international-dept"
+  },
+  "/en/hospital/%E7%8B%AC%E7%AB%8B%E8%A1%8C%E6%94%BF%E6%B3%95%E4%BA%BA%E5%9C%B0%E5%9F%9F%E5%8C%BB%E7%99%82%E6%A9%9F%E8%83%BD%E6%8E%A8%E9%80%B2%E6%A9%9F%E6%A7%8B-%E6%9D%B1%E4%BA%AC%E9%AB%98%E8%BC%AA%E7%97%85%E9%99%A2": {
+    "status": 301,
+    "destination": "/en/hospital/jcho-tokyo-takanawa-hospital-international-dept"
+  },
+  "/hospital/国家公務員共済組合連合会-虎の門病院": {
+    "status": 301,
+    "destination": "/hospital/toranomon-hospital-international-office"
+  },
+  "/hospital/%E5%9B%BD%E5%AE%B6%E5%85%AC%E5%8B%99%E5%93%A1%E5%85%B1%E6%B8%88%E7%B5%84%E5%90%88%E9%80%A3%E5%90%88%E4%BC%9A-%E8%99%8E%E3%81%AE%E9%96%80%E7%97%85%E9%99%A2": {
+    "status": 301,
+    "destination": "/hospital/toranomon-hospital-international-office"
+  },
+  "/en/hospital/国家公務員共済組合連合会-虎の門病院": {
+    "status": 301,
+    "destination": "/en/hospital/toranomon-hospital-international-office"
+  },
+  "/en/hospital/%E5%9B%BD%E5%AE%B6%E5%85%AC%E5%8B%99%E5%93%A1%E5%85%B1%E6%B8%88%E7%B5%84%E5%90%88%E9%80%A3%E5%90%88%E4%BC%9A-%E8%99%8E%E3%81%AE%E9%96%80%E7%97%85%E9%99%A2": {
+    "status": 301,
+    "destination": "/en/hospital/toranomon-hospital-international-office"
+  },
+  "/hospital/東京都済生会中央病院": {
+    "status": 301,
+    "destination": "/hospital/tokyo-saiseikai-central-hospital-international-liaison"
+  },
+  "/hospital/%E6%9D%B1%E4%BA%AC%E9%83%BD%E6%B8%88%E7%94%9F%E4%BC%9A%E4%B8%AD%E5%A4%AE%E7%97%85%E9%99%A2": {
+    "status": 301,
+    "destination": "/hospital/tokyo-saiseikai-central-hospital-international-liaison"
+  },
+  "/en/hospital/東京都済生会中央病院": {
+    "status": 301,
+    "destination": "/en/hospital/tokyo-saiseikai-central-hospital-international-liaison"
+  },
+  "/en/hospital/%E6%9D%B1%E4%BA%AC%E9%83%BD%E6%B8%88%E7%94%9F%E4%BC%9A%E4%B8%AD%E5%A4%AE%E7%97%85%E9%99%A2": {
+    "status": 301,
+    "destination": "/en/hospital/tokyo-saiseikai-central-hospital-international-liaison"
+  },
+  "/hospital/エバーグリーンメディカルクリニック": {
+    "status": 301,
+    "destination": "/hospital/evergreen-medical-clinic"
+  },
+  "/hospital/%E3%82%A8%E3%83%90%E3%83%BC%E3%82%B0%E3%83%AA%E3%83%BC%E3%83%B3%E3%83%A1%E3%83%87%E3%82%A3%E3%82%AB%E3%83%AB%E3%82%AF%E3%83%AA%E3%83%8B%E3%83%83%E3%82%AF": {
+    "status": 301,
+    "destination": "/hospital/evergreen-medical-clinic"
+  },
+  "/en/hospital/エバーグリーンメディカルクリニック": {
+    "status": 301,
+    "destination": "/en/hospital/evergreen-medical-clinic"
+  },
+  "/en/hospital/%E3%82%A8%E3%83%90%E3%83%BC%E3%82%B0%E3%83%AA%E3%83%BC%E3%83%B3%E3%83%A1%E3%83%87%E3%82%A3%E3%82%AB%E3%83%AB%E3%82%AF%E3%83%AA%E3%83%8B%E3%83%83%E3%82%AF": {
+    "status": 301,
+    "destination": "/en/hospital/evergreen-medical-clinic"
+  },
+  "/hospital/さくらオンラインクリニック": {
+    "status": 301,
+    "destination": "/hospital/sakura-online-clinic"
+  },
+  "/hospital/%E3%81%95%E3%81%8F%E3%82%89%E3%82%AA%E3%83%B3%E3%83%A9%E3%82%A4%E3%83%B3%E3%82%AF%E3%83%AA%E3%83%8B%E3%83%83%E3%82%AF": {
+    "status": 301,
+    "destination": "/hospital/sakura-online-clinic"
+  },
+  "/en/hospital/さくらオンラインクリニック": {
+    "status": 301,
+    "destination": "/en/hospital/sakura-online-clinic"
+  },
+  "/en/hospital/%E3%81%95%E3%81%8F%E3%82%89%E3%82%AA%E3%83%B3%E3%83%A9%E3%82%A4%E3%83%B3%E3%82%AF%E3%83%AA%E3%83%8B%E3%83%83%E3%82%AF": {
+    "status": 301,
+    "destination": "/en/hospital/sakura-online-clinic"
+  },
+  "/hospital/中井駅前クリニック": {
+    "status": 301,
+    "destination": "/hospital/nakai-ekimae-clinic"
+  },
+  "/hospital/%E4%B8%AD%E4%BA%95%E9%A7%85%E5%89%8D%E3%82%AF%E3%83%AA%E3%83%8B%E3%83%83%E3%82%AF": {
+    "status": 301,
+    "destination": "/hospital/nakai-ekimae-clinic"
+  },
+  "/en/hospital/中井駅前クリニック": {
+    "status": 301,
+    "destination": "/en/hospital/nakai-ekimae-clinic"
+  },
+  "/en/hospital/%E4%B8%AD%E4%BA%95%E9%A7%85%E5%89%8D%E3%82%AF%E3%83%AA%E3%83%8B%E3%83%83%E3%82%AF": {
+    "status": 301,
+    "destination": "/en/hospital/nakai-ekimae-clinic"
+  },
+  "/hospital/高田馬場さくらクリニック": {
+    "status": 301,
+    "destination": "/hospital/takadanobaba-sakura-clinic"
+  },
+  "/hospital/%E9%AB%98%E7%94%B0%E9%A6%AC%E5%A0%B4%E3%81%95%E3%81%8F%E3%82%89%E3%82%AF%E3%83%AA%E3%83%8B%E3%83%83%E3%82%AF": {
+    "status": 301,
+    "destination": "/hospital/takadanobaba-sakura-clinic"
+  },
+  "/en/hospital/高田馬場さくらクリニック": {
+    "status": 301,
+    "destination": "/en/hospital/takadanobaba-sakura-clinic"
+  },
+  "/en/hospital/%E9%AB%98%E7%94%B0%E9%A6%AC%E5%A0%B4%E3%81%95%E3%81%8F%E3%82%89%E3%82%AF%E3%83%AA%E3%83%8B%E3%83%83%E3%82%AF": {
+    "status": 301,
+    "destination": "/en/hospital/takadanobaba-sakura-clinic"
+  },
+  "/hospital/t-松岡救急クリニック神田": {
+    "status": 301,
+    "destination": "/hospital/t-matsuoka-emergency-clinic-kanda"
+  },
+  "/hospital/t-%E6%9D%BE%E5%B2%A1%E6%95%91%E6%80%A5%E3%82%AF%E3%83%AA%E3%83%8B%E3%83%83%E3%82%AF%E7%A5%9E%E7%94%B0": {
+    "status": 301,
+    "destination": "/hospital/t-matsuoka-emergency-clinic-kanda"
+  },
+  "/en/hospital/t-松岡救急クリニック神田": {
+    "status": 301,
+    "destination": "/en/hospital/t-matsuoka-emergency-clinic-kanda"
+  },
+  "/en/hospital/t-%E6%9D%BE%E5%B2%A1%E6%95%91%E6%80%A5%E3%82%AF%E3%83%AA%E3%83%8B%E3%83%83%E3%82%AF%E7%A5%9E%E7%94%B0": {
+    "status": 301,
+    "destination": "/en/hospital/t-matsuoka-emergency-clinic-kanda"
+  },
+  "/hospital/ふくや皮フ科クリニック": {
+    "status": 301,
+    "destination": "/hospital/fukuya-dermatology-clinic"
+  },
+  "/hospital/%E3%81%B5%E3%81%8F%E3%82%84%E7%9A%AE%E3%83%95%E7%A7%91%E3%82%AF%E3%83%AA%E3%83%8B%E3%83%83%E3%82%AF": {
+    "status": 301,
+    "destination": "/hospital/fukuya-dermatology-clinic"
+  },
+  "/en/hospital/ふくや皮フ科クリニック": {
+    "status": 301,
+    "destination": "/en/hospital/fukuya-dermatology-clinic"
+  },
+  "/en/hospital/%E3%81%B5%E3%81%8F%E3%82%84%E7%9A%AE%E3%83%95%E7%A7%91%E3%82%AF%E3%83%AA%E3%83%8B%E3%83%83%E3%82%AF": {
+    "status": 301,
+    "destination": "/en/hospital/fukuya-dermatology-clinic"
+  },
+  "/hospital/梶歯科医院": {
+    "status": 301,
+    "destination": "/hospital/kaji-dental-clinic"
+  },
+  "/hospital/%E6%A2%B6%E6%AD%AF%E7%A7%91%E5%8C%BB%E9%99%A2": {
+    "status": 301,
+    "destination": "/hospital/kaji-dental-clinic"
+  },
+  "/en/hospital/梶歯科医院": {
+    "status": 301,
+    "destination": "/en/hospital/kaji-dental-clinic"
+  },
+  "/en/hospital/%E6%A2%B6%E6%AD%AF%E7%A7%91%E5%8C%BB%E9%99%A2": {
+    "status": 301,
+    "destination": "/en/hospital/kaji-dental-clinic"
+  },
+  "/hospital/さくら歯科医院": {
+    "status": 301,
+    "destination": "/hospital/sakura-dental-clinic"
+  },
+  "/hospital/%E3%81%95%E3%81%8F%E3%82%89%E6%AD%AF%E7%A7%91%E5%8C%BB%E9%99%A2": {
+    "status": 301,
+    "destination": "/hospital/sakura-dental-clinic"
+  },
+  "/en/hospital/さくら歯科医院": {
+    "status": 301,
+    "destination": "/en/hospital/sakura-dental-clinic"
+  },
+  "/en/hospital/%E3%81%95%E3%81%8F%E3%82%89%E6%AD%AF%E7%A7%91%E5%8C%BB%E9%99%A2": {
+    "status": 301,
+    "destination": "/en/hospital/sakura-dental-clinic"
+  },
+  "/hospital/その歯科クリニック": {
+    "status": 301,
+    "destination": "/hospital/sono-dental-clinic"
+  },
+  "/hospital/%E3%81%9D%E3%81%AE%E6%AD%AF%E7%A7%91%E3%82%AF%E3%83%AA%E3%83%8B%E3%83%83%E3%82%AF": {
+    "status": 301,
+    "destination": "/hospital/sono-dental-clinic"
+  },
+  "/en/hospital/その歯科クリニック": {
+    "status": 301,
+    "destination": "/en/hospital/sono-dental-clinic"
+  },
+  "/en/hospital/%E3%81%9D%E3%81%AE%E6%AD%AF%E7%A7%91%E3%82%AF%E3%83%AA%E3%83%8B%E3%83%83%E3%82%AF": {
+    "status": 301,
+    "destination": "/en/hospital/sono-dental-clinic"
+  },
+  "/hospital/愛染橋病院": {
+    "status": 301,
+    "destination": "/hospital/aizenbashi-hospital"
+  },
+  "/hospital/%E6%84%9B%E6%9F%93%E6%A9%8B%E7%97%85%E9%99%A2": {
+    "status": 301,
+    "destination": "/hospital/aizenbashi-hospital"
+  },
+  "/en/hospital/愛染橋病院": {
+    "status": 301,
+    "destination": "/en/hospital/aizenbashi-hospital"
+  },
+  "/en/hospital/%E6%84%9B%E6%9F%93%E6%A9%8B%E7%97%85%E9%99%A2": {
+    "status": 301,
+    "destination": "/en/hospital/aizenbashi-hospital"
+  },
+  "/hospital/南森町ふくしま内科": {
+    "status": 301,
+    "destination": "/hospital/minamimorimachi-fukushima-internal-medicine-cardiology-clinic"
+  },
+  "/hospital/%E5%8D%97%E6%A3%AE%E7%94%BA%E3%81%B5%E3%81%8F%E3%81%97%E3%81%BE%E5%86%85%E7%A7%91": {
+    "status": 301,
+    "destination": "/hospital/minamimorimachi-fukushima-internal-medicine-cardiology-clinic"
+  },
+  "/en/hospital/南森町ふくしま内科": {
+    "status": 301,
+    "destination": "/en/hospital/minamimorimachi-fukushima-internal-medicine-cardiology-clinic"
+  },
+  "/en/hospital/%E5%8D%97%E6%A3%AE%E7%94%BA%E3%81%B5%E3%81%8F%E3%81%97%E3%81%BE%E5%86%85%E7%A7%91": {
+    "status": 301,
+    "destination": "/en/hospital/minamimorimachi-fukushima-internal-medicine-cardiology-clinic"
+  },
+  "/hospital/前田整形外科": {
+    "status": 301,
+    "destination": "/hospital/maeda-orthopedic-clinic"
+  },
+  "/hospital/%E5%89%8D%E7%94%B0%E6%95%B4%E5%BD%A2%E5%A4%96%E7%A7%91": {
+    "status": 301,
+    "destination": "/hospital/maeda-orthopedic-clinic"
+  },
+  "/en/hospital/前田整形外科": {
+    "status": 301,
+    "destination": "/en/hospital/maeda-orthopedic-clinic"
+  },
+  "/en/hospital/%E5%89%8D%E7%94%B0%E6%95%B4%E5%BD%A2%E5%A4%96%E7%A7%91": {
+    "status": 301,
+    "destination": "/en/hospital/maeda-orthopedic-clinic"
+  },
+  "/hospital/藤本クリニック": {
+    "status": 301,
+    "destination": "/hospital/fujimoto-clinic"
+  },
+  "/hospital/%E8%97%A4%E6%9C%AC%E3%82%AF%E3%83%AA%E3%83%8B%E3%83%83%E3%82%AF": {
+    "status": 301,
+    "destination": "/hospital/fujimoto-clinic"
+  },
+  "/en/hospital/藤本クリニック": {
+    "status": 301,
+    "destination": "/en/hospital/fujimoto-clinic"
+  },
+  "/en/hospital/%E8%97%A4%E6%9C%AC%E3%82%AF%E3%83%AA%E3%83%8B%E3%83%83%E3%82%AF": {
+    "status": 301,
+    "destination": "/en/hospital/fujimoto-clinic"
+  },
+  "/hospital/なかえびえ整形外科": {
+    "status": 301,
+    "destination": "/hospital/nakaebie-orthopedic-clinic"
+  },
+  "/hospital/%E3%81%AA%E3%81%8B%E3%81%88%E3%81%B3%E3%81%88%E6%95%B4%E5%BD%A2%E5%A4%96%E7%A7%91": {
+    "status": 301,
+    "destination": "/hospital/nakaebie-orthopedic-clinic"
+  },
+  "/en/hospital/なかえびえ整形外科": {
+    "status": 301,
+    "destination": "/en/hospital/nakaebie-orthopedic-clinic"
+  },
+  "/en/hospital/%E3%81%AA%E3%81%8B%E3%81%88%E3%81%B3%E3%81%88%E6%95%B4%E5%BD%A2%E5%A4%96%E7%A7%91": {
+    "status": 301,
+    "destination": "/en/hospital/nakaebie-orthopedic-clinic"
+  },
+  "/hospital/中山整形外科": {
+    "status": 301,
+    "destination": "/hospital/nakayama-orthopedic-clinic"
+  },
+  "/hospital/%E4%B8%AD%E5%B1%B1%E6%95%B4%E5%BD%A2%E5%A4%96%E7%A7%91": {
+    "status": 301,
+    "destination": "/hospital/nakayama-orthopedic-clinic"
+  },
+  "/en/hospital/中山整形外科": {
+    "status": 301,
+    "destination": "/en/hospital/nakayama-orthopedic-clinic"
+  },
+  "/en/hospital/%E4%B8%AD%E5%B1%B1%E6%95%B4%E5%BD%A2%E5%A4%96%E7%A7%91": {
+    "status": 301,
+    "destination": "/en/hospital/nakayama-orthopedic-clinic"
+  },
+  "/hospital/クローバークリニック": {
+    "status": 301,
+    "destination": "/hospital/clover-clinic"
+  },
+  "/hospital/%E3%82%AF%E3%83%AD%E3%83%BC%E3%83%90%E3%83%BC%E3%82%AF%E3%83%AA%E3%83%8B%E3%83%83%E3%82%AF": {
+    "status": 301,
+    "destination": "/hospital/clover-clinic"
+  },
+  "/en/hospital/クローバークリニック": {
+    "status": 301,
+    "destination": "/en/hospital/clover-clinic"
+  },
+  "/en/hospital/%E3%82%AF%E3%83%AD%E3%83%BC%E3%83%90%E3%83%BC%E3%82%AF%E3%83%AA%E3%83%8B%E3%83%83%E3%82%AF": {
+    "status": 301,
+    "destination": "/en/hospital/clover-clinic"
+  },
+  "/hospital/任クリニック": {
+    "status": 301,
+    "destination": "/hospital/jin-clinic"
+  },
+  "/hospital/%E4%BB%BB%E3%82%AF%E3%83%AA%E3%83%8B%E3%83%83%E3%82%AF": {
+    "status": 301,
+    "destination": "/hospital/jin-clinic"
+  },
+  "/en/hospital/任クリニック": {
+    "status": 301,
+    "destination": "/en/hospital/jin-clinic"
+  },
+  "/en/hospital/%E4%BB%BB%E3%82%AF%E3%83%AA%E3%83%8B%E3%83%83%E3%82%AF": {
+    "status": 301,
+    "destination": "/en/hospital/jin-clinic"
+  },
+  "/hospital/ラ": {
+    "status": 301,
+    "destination": "/hospital/la-qual-honmachi-clinic"
+  },
+  "/hospital/%E3%83%A9": {
+    "status": 301,
+    "destination": "/hospital/la-qual-honmachi-clinic"
+  },
+  "/en/hospital/ラ": {
+    "status": 301,
+    "destination": "/en/hospital/la-qual-honmachi-clinic"
+  },
+  "/en/hospital/%E3%83%A9": {
+    "status": 301,
+    "destination": "/en/hospital/la-qual-honmachi-clinic"
+  },
+  "/hospital/くぼたこどもクリニック": {
+    "status": 301,
+    "destination": "/hospital/kubota-childrens-clinic"
+  },
+  "/hospital/%E3%81%8F%E3%81%BC%E3%81%9F%E3%81%93%E3%81%A9%E3%82%82%E3%82%AF%E3%83%AA%E3%83%8B%E3%83%83%E3%82%AF": {
+    "status": 301,
+    "destination": "/hospital/kubota-childrens-clinic"
+  },
+  "/en/hospital/くぼたこどもクリニック": {
+    "status": 301,
+    "destination": "/en/hospital/kubota-childrens-clinic"
+  },
+  "/en/hospital/%E3%81%8F%E3%81%BC%E3%81%9F%E3%81%93%E3%81%A9%E3%82%82%E3%82%AF%E3%83%AA%E3%83%8B%E3%83%83%E3%82%AF": {
+    "status": 301,
+    "destination": "/en/hospital/kubota-childrens-clinic"
+  },
+  "/hospital/北巽白鷺クリニック": {
+    "status": 301,
+    "destination": "/hospital/kitatatsumi-shirasagi-clinic"
+  },
+  "/hospital/%E5%8C%97%E5%B7%BD%E7%99%BD%E9%B7%BA%E3%82%AF%E3%83%AA%E3%83%8B%E3%83%83%E3%82%AF": {
+    "status": 301,
+    "destination": "/hospital/kitatatsumi-shirasagi-clinic"
+  },
+  "/en/hospital/北巽白鷺クリニック": {
+    "status": 301,
+    "destination": "/en/hospital/kitatatsumi-shirasagi-clinic"
+  },
+  "/en/hospital/%E5%8C%97%E5%B7%BD%E7%99%BD%E9%B7%BA%E3%82%AF%E3%83%AA%E3%83%8B%E3%83%83%E3%82%AF": {
+    "status": 301,
+    "destination": "/en/hospital/kitatatsumi-shirasagi-clinic"
+  },
+  "/hospital/宮原レディースクリニック": {
+    "status": 301,
+    "destination": "/hospital/miyahara-ladies-clinic"
+  },
+  "/hospital/%E5%AE%AE%E5%8E%9F%E3%83%AC%E3%83%87%E3%82%A3%E3%83%BC%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%8B%E3%83%83%E3%82%AF": {
+    "status": 301,
+    "destination": "/hospital/miyahara-ladies-clinic"
+  },
+  "/en/hospital/宮原レディースクリニック": {
+    "status": 301,
+    "destination": "/en/hospital/miyahara-ladies-clinic"
+  },
+  "/en/hospital/%E5%AE%AE%E5%8E%9F%E3%83%AC%E3%83%87%E3%82%A3%E3%83%BC%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%8B%E3%83%83%E3%82%AF": {
+    "status": 301,
+    "destination": "/en/hospital/miyahara-ladies-clinic"
+  },
+  "/hospital/ハルカス川崎クリニック": {
+    "status": 301,
+    "destination": "/hospital/harukas-kawasaki-clinic"
+  },
+  "/hospital/%E3%83%8F%E3%83%AB%E3%82%AB%E3%82%B9%E5%B7%9D%E5%B4%8E%E3%82%AF%E3%83%AA%E3%83%8B%E3%83%83%E3%82%AF": {
+    "status": 301,
+    "destination": "/hospital/harukas-kawasaki-clinic"
+  },
+  "/en/hospital/ハルカス川崎クリニック": {
+    "status": 301,
+    "destination": "/en/hospital/harukas-kawasaki-clinic"
+  },
+  "/en/hospital/%E3%83%8F%E3%83%AB%E3%82%AB%E3%82%B9%E5%B7%9D%E5%B4%8E%E3%82%AF%E3%83%AA%E3%83%8B%E3%83%83%E3%82%AF": {
+    "status": 301,
+    "destination": "/en/hospital/harukas-kawasaki-clinic"
+  },
+  "/hospital/天野整形外科": {
+    "status": 301,
+    "destination": "/hospital/amano-orthopedic-clinic"
+  },
+  "/hospital/%E5%A4%A9%E9%87%8E%E6%95%B4%E5%BD%A2%E5%A4%96%E7%A7%91": {
+    "status": 301,
+    "destination": "/hospital/amano-orthopedic-clinic"
+  },
+  "/en/hospital/天野整形外科": {
+    "status": 301,
+    "destination": "/en/hospital/amano-orthopedic-clinic"
+  },
+  "/en/hospital/%E5%A4%A9%E9%87%8E%E6%95%B4%E5%BD%A2%E5%A4%96%E7%A7%91": {
+    "status": 301,
+    "destination": "/en/hospital/amano-orthopedic-clinic"
+  },
+  "/hospital/白鷺診療所": {
+    "status": 301,
+    "destination": "/hospital/shirasagi-clinic"
+  },
+  "/hospital/%E7%99%BD%E9%B7%BA%E8%A8%BA%E7%99%82%E6%89%80": {
+    "status": 301,
+    "destination": "/hospital/shirasagi-clinic"
+  },
+  "/en/hospital/白鷺診療所": {
+    "status": 301,
+    "destination": "/en/hospital/shirasagi-clinic"
+  },
+  "/en/hospital/%E7%99%BD%E9%B7%BA%E8%A8%BA%E7%99%82%E6%89%80": {
+    "status": 301,
+    "destination": "/en/hospital/shirasagi-clinic"
+  },
+  "/hospital/みのりクリニック": {
+    "status": 301,
+    "destination": "/hospital/minori-clinic"
+  },
+  "/hospital/%E3%81%BF%E3%81%AE%E3%82%8A%E3%82%AF%E3%83%AA%E3%83%8B%E3%83%83%E3%82%AF": {
+    "status": 301,
+    "destination": "/hospital/minori-clinic"
+  },
+  "/en/hospital/みのりクリニック": {
+    "status": 301,
+    "destination": "/en/hospital/minori-clinic"
+  },
+  "/en/hospital/%E3%81%BF%E3%81%AE%E3%82%8A%E3%82%AF%E3%83%AA%E3%83%8B%E3%83%83%E3%82%AF": {
+    "status": 301,
+    "destination": "/en/hospital/minori-clinic"
+  },
+  "/hospital/かつらぎクリニック": {
+    "status": 301,
+    "destination": "/hospital/katsuragi-clinic"
+  },
+  "/hospital/%E3%81%8B%E3%81%A4%E3%82%89%E3%81%8E%E3%82%AF%E3%83%AA%E3%83%8B%E3%83%83%E3%82%AF": {
+    "status": 301,
+    "destination": "/hospital/katsuragi-clinic"
+  },
+  "/en/hospital/かつらぎクリニック": {
+    "status": 301,
+    "destination": "/en/hospital/katsuragi-clinic"
+  },
+  "/en/hospital/%E3%81%8B%E3%81%A4%E3%82%89%E3%81%8E%E3%82%AF%E3%83%AA%E3%83%8B%E3%83%83%E3%82%AF": {
+    "status": 301,
+    "destination": "/en/hospital/katsuragi-clinic"
+  },
+  "/hospital/小林医院": {
+    "status": 301,
+    "destination": "/hospital/kobayashi-clinic"
+  },
+  "/hospital/%E5%B0%8F%E6%9E%97%E5%8C%BB%E9%99%A2": {
+    "status": 301,
+    "destination": "/hospital/kobayashi-clinic"
+  },
+  "/en/hospital/小林医院": {
+    "status": 301,
+    "destination": "/en/hospital/kobayashi-clinic"
+  },
+  "/en/hospital/%E5%B0%8F%E6%9E%97%E5%8C%BB%E9%99%A2": {
+    "status": 301,
+    "destination": "/en/hospital/kobayashi-clinic"
+  },
+  "/hospital/まわたり内科": {
+    "status": 301,
+    "destination": "/hospital/mawatari-internal-medicine-clinic"
+  },
+  "/hospital/%E3%81%BE%E3%82%8F%E3%81%9F%E3%82%8A%E5%86%85%E7%A7%91": {
+    "status": 301,
+    "destination": "/hospital/mawatari-internal-medicine-clinic"
+  },
+  "/en/hospital/まわたり内科": {
+    "status": 301,
+    "destination": "/en/hospital/mawatari-internal-medicine-clinic"
+  },
+  "/en/hospital/%E3%81%BE%E3%82%8F%E3%81%9F%E3%82%8A%E5%86%85%E7%A7%91": {
+    "status": 301,
+    "destination": "/en/hospital/mawatari-internal-medicine-clinic"
+  },
+  "/hospital/おざわクリニック": {
+    "status": 301,
+    "destination": "/hospital/ozawa-clinic"
+  },
+  "/hospital/%E3%81%8A%E3%81%96%E3%82%8F%E3%82%AF%E3%83%AA%E3%83%8B%E3%83%83%E3%82%AF": {
+    "status": 301,
+    "destination": "/hospital/ozawa-clinic"
+  },
+  "/en/hospital/おざわクリニック": {
+    "status": 301,
+    "destination": "/en/hospital/ozawa-clinic"
+  },
+  "/en/hospital/%E3%81%8A%E3%81%96%E3%82%8F%E3%82%AF%E3%83%AA%E3%83%8B%E3%83%83%E3%82%AF": {
+    "status": 301,
+    "destination": "/en/hospital/ozawa-clinic"
+  },
+  "/hospital/みほクリニック": {
+    "status": 301,
+    "destination": "/hospital/miho-clinic"
+  },
+  "/hospital/%E3%81%BF%E3%81%BB%E3%82%AF%E3%83%AA%E3%83%8B%E3%83%83%E3%82%AF": {
+    "status": 301,
+    "destination": "/hospital/miho-clinic"
+  },
+  "/en/hospital/みほクリニック": {
+    "status": 301,
+    "destination": "/en/hospital/miho-clinic"
+  },
+  "/en/hospital/%E3%81%BF%E3%81%BB%E3%82%AF%E3%83%AA%E3%83%8B%E3%83%83%E3%82%AF": {
+    "status": 301,
+    "destination": "/en/hospital/miho-clinic"
+  },
+  "/hospital/西野医院": {
+    "status": 301,
+    "destination": "/hospital/nishino-clinic"
+  },
+  "/hospital/%E8%A5%BF%E9%87%8E%E5%8C%BB%E9%99%A2": {
+    "status": 301,
+    "destination": "/hospital/nishino-clinic"
+  },
+  "/en/hospital/西野医院": {
+    "status": 301,
+    "destination": "/en/hospital/nishino-clinic"
+  },
+  "/en/hospital/%E8%A5%BF%E9%87%8E%E5%8C%BB%E9%99%A2": {
+    "status": 301,
+    "destination": "/en/hospital/nishino-clinic"
+  },
+  "/hospital/寺嶋": {
+    "status": 301,
+    "destination": "/hospital/terashima-tsukada-childrens-clinic"
+  },
+  "/hospital/%E5%AF%BA%E5%B6%8B": {
+    "status": 301,
+    "destination": "/hospital/terashima-tsukada-childrens-clinic"
+  },
+  "/en/hospital/寺嶋": {
+    "status": 301,
+    "destination": "/en/hospital/terashima-tsukada-childrens-clinic"
+  },
+  "/en/hospital/%E5%AF%BA%E5%B6%8B": {
+    "status": 301,
+    "destination": "/en/hospital/terashima-tsukada-childrens-clinic"
+  },
+  "/hospital/立沢整形外科": {
+    "status": 301,
+    "destination": "/hospital/tatsuzawa-orthopedic-clinic"
+  },
+  "/hospital/%E7%AB%8B%E6%B2%A2%E6%95%B4%E5%BD%A2%E5%A4%96%E7%A7%91": {
+    "status": 301,
+    "destination": "/hospital/tatsuzawa-orthopedic-clinic"
+  },
+  "/en/hospital/立沢整形外科": {
+    "status": 301,
+    "destination": "/en/hospital/tatsuzawa-orthopedic-clinic"
+  },
+  "/en/hospital/%E7%AB%8B%E6%B2%A2%E6%95%B4%E5%BD%A2%E5%A4%96%E7%A7%91": {
+    "status": 301,
+    "destination": "/en/hospital/tatsuzawa-orthopedic-clinic"
+  },
+  "/hospital/寺川クリニック": {
+    "status": 301,
+    "destination": "/hospital/terakawa-clinic"
+  },
+  "/hospital/%E5%AF%BA%E5%B7%9D%E3%82%AF%E3%83%AA%E3%83%8B%E3%83%83%E3%82%AF": {
+    "status": 301,
+    "destination": "/hospital/terakawa-clinic"
+  },
+  "/en/hospital/寺川クリニック": {
+    "status": 301,
+    "destination": "/en/hospital/terakawa-clinic"
+  },
+  "/en/hospital/%E5%AF%BA%E5%B7%9D%E3%82%AF%E3%83%AA%E3%83%8B%E3%83%83%E3%82%AF": {
+    "status": 301,
+    "destination": "/en/hospital/terakawa-clinic"
+  },
+  "/hospital/とうしんクリニック": {
+    "status": 301,
+    "destination": "/hospital/toshin-clinic"
+  },
+  "/hospital/%E3%81%A8%E3%81%86%E3%81%97%E3%82%93%E3%82%AF%E3%83%AA%E3%83%8B%E3%83%83%E3%82%AF": {
+    "status": 301,
+    "destination": "/hospital/toshin-clinic"
+  },
+  "/en/hospital/とうしんクリニック": {
+    "status": 301,
+    "destination": "/en/hospital/toshin-clinic"
+  },
+  "/en/hospital/%E3%81%A8%E3%81%86%E3%81%97%E3%82%93%E3%82%AF%E3%83%AA%E3%83%8B%E3%83%83%E3%82%AF": {
+    "status": 301,
+    "destination": "/en/hospital/toshin-clinic"
+  },
+  "/hospital/もとざわ医院": {
+    "status": 301,
+    "destination": "/hospital/motozawa-clinic"
+  },
+  "/hospital/%E3%82%82%E3%81%A8%E3%81%96%E3%82%8F%E5%8C%BB%E9%99%A2": {
+    "status": 301,
+    "destination": "/hospital/motozawa-clinic"
+  },
+  "/en/hospital/もとざわ医院": {
+    "status": 301,
+    "destination": "/en/hospital/motozawa-clinic"
+  },
+  "/en/hospital/%E3%82%82%E3%81%A8%E3%81%96%E3%82%8F%E5%8C%BB%E9%99%A2": {
+    "status": 301,
+    "destination": "/en/hospital/motozawa-clinic"
+  },
+  "/hospital/原クリニック": {
+    "status": 301,
+    "destination": "/hospital/hara-clinic"
+  },
+  "/hospital/%E5%8E%9F%E3%82%AF%E3%83%AA%E3%83%8B%E3%83%83%E3%82%AF": {
+    "status": 301,
+    "destination": "/hospital/hara-clinic"
+  },
+  "/en/hospital/原クリニック": {
+    "status": 301,
+    "destination": "/en/hospital/hara-clinic"
+  },
+  "/en/hospital/%E5%8E%9F%E3%82%AF%E3%83%AA%E3%83%8B%E3%83%83%E3%82%AF": {
+    "status": 301,
+    "destination": "/en/hospital/hara-clinic"
+  },
+  "/hospital/半田クリニック": {
+    "status": 301,
+    "destination": "/hospital/handa-clinic"
+  },
+  "/hospital/%E5%8D%8A%E7%94%B0%E3%82%AF%E3%83%AA%E3%83%8B%E3%83%83%E3%82%AF": {
+    "status": 301,
+    "destination": "/hospital/handa-clinic"
+  },
+  "/en/hospital/半田クリニック": {
+    "status": 301,
+    "destination": "/en/hospital/handa-clinic"
+  },
+  "/en/hospital/%E5%8D%8A%E7%94%B0%E3%82%AF%E3%83%AA%E3%83%8B%E3%83%83%E3%82%AF": {
+    "status": 301,
+    "destination": "/en/hospital/handa-clinic"
+  },
+  "/hospital/わたなべ皮フ科-形成外科": {
+    "status": 301,
+    "destination": "/hospital/watanabe-dermatology-plastic-surgery"
+  },
+  "/hospital/%E3%82%8F%E3%81%9F%E3%81%AA%E3%81%B9%E7%9A%AE%E3%83%95%E7%A7%91-%E5%BD%A2%E6%88%90%E5%A4%96%E7%A7%91": {
+    "status": 301,
+    "destination": "/hospital/watanabe-dermatology-plastic-surgery"
+  },
+  "/en/hospital/わたなべ皮フ科-形成外科": {
+    "status": 301,
+    "destination": "/en/hospital/watanabe-dermatology-plastic-surgery"
+  },
+  "/en/hospital/%E3%82%8F%E3%81%9F%E3%81%AA%E3%81%B9%E7%9A%AE%E3%83%95%E7%A7%91-%E5%BD%A2%E6%88%90%E5%A4%96%E7%A7%91": {
+    "status": 301,
+    "destination": "/en/hospital/watanabe-dermatology-plastic-surgery"
+  },
+  "/hospital/山口医院": {
+    "status": 301,
+    "destination": "/hospital/yamaguchi-clinic"
+  },
+  "/hospital/%E5%B1%B1%E5%8F%A3%E5%8C%BB%E9%99%A2": {
+    "status": 301,
+    "destination": "/hospital/yamaguchi-clinic"
+  },
+  "/en/hospital/山口医院": {
+    "status": 301,
+    "destination": "/en/hospital/yamaguchi-clinic"
+  },
+  "/en/hospital/%E5%B1%B1%E5%8F%A3%E5%8C%BB%E9%99%A2": {
+    "status": 301,
+    "destination": "/en/hospital/yamaguchi-clinic"
+  },
+  "/hospital/澤田整形外科医院": {
+    "status": 301,
+    "destination": "/hospital/sawada-orthopedic-clinic"
+  },
+  "/hospital/%E6%BE%A4%E7%94%B0%E6%95%B4%E5%BD%A2%E5%A4%96%E7%A7%91%E5%8C%BB%E9%99%A2": {
+    "status": 301,
+    "destination": "/hospital/sawada-orthopedic-clinic"
+  },
+  "/en/hospital/澤田整形外科医院": {
+    "status": 301,
+    "destination": "/en/hospital/sawada-orthopedic-clinic"
+  },
+  "/en/hospital/%E6%BE%A4%E7%94%B0%E6%95%B4%E5%BD%A2%E5%A4%96%E7%A7%91%E5%8C%BB%E9%99%A2": {
+    "status": 301,
+    "destination": "/en/hospital/sawada-orthopedic-clinic"
+  },
+  "/hospital/木本内科": {
+    "status": 301,
+    "destination": "/hospital/kimoto-internal-medicine-clinic"
+  },
+  "/hospital/%E6%9C%A8%E6%9C%AC%E5%86%85%E7%A7%91": {
+    "status": 301,
+    "destination": "/hospital/kimoto-internal-medicine-clinic"
+  },
+  "/en/hospital/木本内科": {
+    "status": 301,
+    "destination": "/en/hospital/kimoto-internal-medicine-clinic"
+  },
+  "/en/hospital/%E6%9C%A8%E6%9C%AC%E5%86%85%E7%A7%91": {
+    "status": 301,
+    "destination": "/en/hospital/kimoto-internal-medicine-clinic"
+  },
+  "/hospital/谷口クリニック": {
+    "status": 301,
+    "destination": "/hospital/taniguchi-clinic"
+  },
+  "/hospital/%E8%B0%B7%E5%8F%A3%E3%82%AF%E3%83%AA%E3%83%8B%E3%83%83%E3%82%AF": {
+    "status": 301,
+    "destination": "/hospital/taniguchi-clinic"
+  },
+  "/en/hospital/谷口クリニック": {
+    "status": 301,
+    "destination": "/en/hospital/taniguchi-clinic"
+  },
+  "/en/hospital/%E8%B0%B7%E5%8F%A3%E3%82%AF%E3%83%AA%E3%83%8B%E3%83%83%E3%82%AF": {
+    "status": 301,
+    "destination": "/en/hospital/taniguchi-clinic"
+  },
+  "/hospital/辻レディースクリニック": {
+    "status": 301,
+    "destination": "/hospital/tsuji-ladies-clinic"
+  },
+  "/hospital/%E8%BE%BB%E3%83%AC%E3%83%87%E3%82%A3%E3%83%BC%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%8B%E3%83%83%E3%82%AF": {
+    "status": 301,
+    "destination": "/hospital/tsuji-ladies-clinic"
+  },
+  "/en/hospital/辻レディースクリニック": {
+    "status": 301,
+    "destination": "/en/hospital/tsuji-ladies-clinic"
+  },
+  "/en/hospital/%E8%BE%BB%E3%83%AC%E3%83%87%E3%82%A3%E3%83%BC%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%8B%E3%83%83%E3%82%AF": {
+    "status": 301,
+    "destination": "/en/hospital/tsuji-ladies-clinic"
+  },
+  "/hospital/日本橋耳鼻咽喉科医院": {
+    "status": 301,
+    "destination": "/hospital/nipponbashi-ent-clinic"
+  },
+  "/hospital/%E6%97%A5%E6%9C%AC%E6%A9%8B%E8%80%B3%E9%BC%BB%E5%92%BD%E5%96%89%E7%A7%91%E5%8C%BB%E9%99%A2": {
+    "status": 301,
+    "destination": "/hospital/nipponbashi-ent-clinic"
+  },
+  "/en/hospital/日本橋耳鼻咽喉科医院": {
+    "status": 301,
+    "destination": "/en/hospital/nipponbashi-ent-clinic"
+  },
+  "/en/hospital/%E6%97%A5%E6%9C%AC%E6%A9%8B%E8%80%B3%E9%BC%BB%E5%92%BD%E5%96%89%E7%A7%91%E5%8C%BB%E9%99%A2": {
+    "status": 301,
+    "destination": "/en/hospital/nipponbashi-ent-clinic"
+  }
+}
