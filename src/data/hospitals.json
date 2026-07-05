@@ -4913,5 +4913,69 @@
     "noteEn": "On the 6th floor of KITTE Osaka, directly connected to JR Osaka Stn west exit. Chinese and English websites; caters to international and medical-tourism patients. Gynecology (incl. gyn-oncology), internal/GI medicine, and cosmetic dermatology. Hours differ by department — call or book online ahead and confirm Chinese-support arrangements.",
     "updated": "2026-07",
     "searchKeys": "ポネレクリニック大阪 Ponere Clinic Osaka 北区 梅田 KITTE大阪 大阪 中文 英文 妇科 内科 消化内科 美容皮肤科 医疗旅游"
+  },
+  {
+    "name": "ひとひとケアクリニック",
+    "nameEn": "Hitohito Care Clinic",
+    "jpName": "ひとひとケアクリニック",
+    "slug": "hitohito-care-clinic",
+    "region": "大阪",
+    "address": "〒544-0033 大阪府大阪市生野区勝山北1-2-6 三好ビル1F",
+    "addressEn": "Miyoshi Bldg 1F, 1-2-6 Katsuyama-kita, Ikuno-ku, Osaka 544-0033",
+    "addressShort": "大阪府 生野区 勝山北（桃谷駅 徒步1分）",
+    "addressShortEn": "Katsuyama-kita, Ikuno-ku, Osaka (1-min walk from Momodani Stn)",
+    "phone": "06-4301-5511",
+    "langs": [
+      "英文",
+      "韩文"
+    ],
+    "langDetail": "英文 韩语（英语・韩语员工对应；另配翻译机 Pocketalk 可多语言）",
+    "langDetailEn": "English, Korean (English/Korean-speaking staff; Pocketalk device for other languages)",
+    "depts": [
+      "脑神经外科",
+      "骨科",
+      "内科"
+    ],
+    "hours": "上午 9:00–12:30 / 下午 14:00–17:30（周四上午・周六下午休）",
+    "hoursEn": "Morning 9:00–12:30 / Afternoon 14:00–17:30 (closed Thu AM & Sat PM)",
+    "hoursShort": "9:00–12:30 / 14:00–17:30（周四上午・周六下午休）",
+    "hoursShortEn": "9:00–12:30 / 14:00–17:30 (no Thu AM / Sat PM)",
+    "closed": "周四上午・周六下午・周日・节假日",
+    "closedEn": "Thu morning, Sat afternoon, Sun & holidays",
+    "note": "脑神经外科・骨科・内科（配备MRI）。英语・韩语员工对应，另备翻译机 Pocketalk 可多语言沟通（含中文可经翻译）。JR大阪环状线「桃谷」站徒步1分。就诊前建议先电话确认。",
+    "noteEn": "Neurosurgery, orthopedics and internal medicine (MRI on site). English- and Korean-speaking staff, plus a Pocketalk device for other languages (Chinese possible via translation). 1-min walk from Momodani Stn (JR Loop Line). Call ahead to confirm.",
+    "updated": "2026-07",
+    "searchKeys": "ひとひとケアクリニック Hitohito Care Clinic 生野区 勝山北 桃谷 大阪 英文 韩语 脑神经外科 骨科 内科 MRI"
+  },
+  {
+    "name": "福川内科クリニック",
+    "nameEn": "Fukukawa Internal Medicine Clinic",
+    "jpName": "福川内科クリニック（医療法人隆福会）",
+    "slug": "fukukawa-internal-medicine-clinic",
+    "region": "大阪",
+    "address": "〒537-0024 大阪府大阪市東成区東小橋3-17-7",
+    "addressEn": "3-17-7 Higashiobase, Higashinari-ku, Osaka 537-0024",
+    "addressShort": "大阪府 东成区 东小桥（鹤桥駅 徒步2分）",
+    "addressShortEn": "Higashiobase, Higashinari-ku, Osaka (2-min walk from Tsuruhashi Stn)",
+    "phone": "06-6974-2338",
+    "langs": [
+      "英文"
+    ],
+    "langDetail": "英文（设有面向海外患者的英文页 “For from abroad”）",
+    "langDetailEn": "English (an English page for overseas patients)",
+    "depts": [
+      "内科",
+      "康复科"
+    ],
+    "hours": "9:30–12:00 / 16:00–18:30（周六下午13:30–15:00 仅在线诊疗）",
+    "hoursEn": "9:30–12:00 / 16:00–18:30 (Sat afternoon 13:30–15:00 online only)",
+    "hoursShort": "9:30–12:00 / 16:00–18:30",
+    "hoursShortEn": "9:30–12:00 / 16:00–18:30",
+    "closed": "周四下午・周日・节假日",
+    "closedEn": "Thu afternoon, Sun & holidays",
+    "note": "内科全般・康复。设有面向海外患者的英文页（For from abroad）。JR大阪环状线・近铁「鹤桥」站徒步2分。周六下午提供在线诊疗。就诊前建议先电话确认。",
+    "noteEn": "General internal medicine and rehabilitation. Provides an English page for overseas patients (\"For from abroad\"). 2-min walk from Tsuruhashi Stn (JR Loop / Kintetsu). Online consultation on Saturday afternoons. Call ahead to confirm.",
+    "updated": "2026-07",
+    "searchKeys": "福川内科クリニック Fukukawa Internal Medicine 隆福会 东成区 东小桥 鹤桥 大阪 英文 内科 康复"
   }
 ]
