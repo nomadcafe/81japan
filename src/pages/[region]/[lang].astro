@@ -1,0 +1,16 @@
+---
+import RegionPage from '../../components/RegionPage.astro';
+import { loadHospitals } from '../../lib/hospitals.js';
+import { regionLangCombos, regionByKey, LANG_SLUG } from '../../lib/regions';
+
+export async function getStaticPaths() {
+  const hospitals = await loadHospitals();
+  return regionLangCombos(hospitals).map((c) => ({
+    params: { region: regionByKey(c.regionKey)!.slug, lang: LANG_SLUG[c.langKey] },
+    props: { regionKey: c.regionKey, langKey: c.langKey },
+  }));
+}
+
+const { regionKey, langKey } = Astro.props;
+---
+<RegionPage regionKey={regionKey} langKey={langKey} locale="zh" />

@@ -36,3 +36,47 @@ export function regionByKey(key: string): RegionMeta | undefined {
 export function regionBySlug(slug: string): RegionMeta | undefined {
   return REGIONS.find((r) => r.slug === slug);
 }
+
+// ── 地区 × 语言 组合页 ──
+// 只为「同一地区内该语言家数 ≥ 阈值」的组合建独立落地页，避免内容过薄被判为门口页。
+export const REGION_LANG_MIN = 8;
+
+// 可建组合页的语言 → URL slug
+export const LANG_SLUG: Record<string, string> = {
+  '中文': 'chinese',
+  '英文': 'english',
+  '越南语': 'vietnamese',
+};
+
+export function langBySlug(slug: string): string | undefined {
+  return Object.keys(LANG_SLUG).find((k) => LANG_SLUG[k] === slug);
+}
+
+export interface RegionLangCombo {
+  regionKey: string;
+  langKey: string;
+  count: number;
+}
+
+// 统计达到阈值的 地区×语言 组合。传入 loadHospitals() 的结果。
+export function regionLangCombos(
+  hospitals: Array<{ region?: string; langs?: string[] }>,
+): RegionLangCombo[] {
+  const counts: Record<string, number> = {};
+  for (const h of hospitals) {
+    if (!h.region) continue;
+    for (const l of h.langs || []) {
+      if (l in LANG_SLUG) {
+        counts[`${h.region}|${l}`] = (counts[`${h.region}|${l}`] || 0) + 1;
+      }
+    }
+  }
+  const out: RegionLangCombo[] = [];
+  for (const [k, count] of Object.entries(counts)) {
+    if (count < REGION_LANG_MIN) continue;
+    const [regionKey, langKey] = k.split('|');
+    if (!regionByKey(regionKey)) continue;
+    out.push({ regionKey, langKey, count });
+  }
+  return out;
+}
