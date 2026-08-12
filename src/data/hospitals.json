@@ -5168,5 +5168,296 @@
     "noteEn": "Internal medicine, pediatrics and dermatology. Chinese supported. Please call ahead.",
     "updated": "2026-07",
     "searchKeys": "吉本診療所 Yoshimoto Clinic 箕面市 瀬川 大阪 中文 内科 儿科 皮肤科"
+  },
+  {
+    "name": "城山国際医院",
+    "nameEn": "Joyama International Clinic",
+    "jpName": "医療法人弘照会 城山国際医院",
+    "slug": "joyama-international-clinic",
+    "region": "福冈",
+    "address": "福冈县福冈市博多区住吉4-8-24 住吉メディカルビル5F",
+    "addressEn": "Sumiyoshi Medical Bldg 5F, 4-8-24 Sumiyoshi, Hakata-ku, Fukuoka, Fukuoka",
+    "addressShort": "福冈县 福冈市博多区 住吉",
+    "addressShortEn": "Sumiyoshi, Hakata-ku, Fukuoka, Fukuoka",
+    "phone": "092-411-2177",
+    "langs": [
+      "中文",
+      "英文"
+    ],
+    "langDetail": "官网明示中文・英文诊疗，院长有中日两国医学背景",
+    "langDetailEn": "Site states consultations in Chinese and English; the director trained in both China and Japan",
+    "depts": [
+      "内科",
+      "消化内科",
+      "汉方内科",
+      "疫苗接种",
+      "渡航外来"
+    ],
+    "hours": "周一至周五 9:00–12:00 / 13:00–18:00 / 周六 9:00–12:00",
+    "hoursEn": "Mon–Fri 9:00–12:00 / 13:00–18:00; Sat 9:00–12:00",
+    "hoursShort": "周一至周五 9:00–18:00",
+    "hoursShortEn": "Mon–Fri 9:00–18:00",
+    "closed": "周四下午・周六下午・周日・节假日",
+    "closedEn": "Thu afternoon, Sat afternoon, Sun & public holidays",
+    "note": "博多站附近的国际诊所，以内科・消化内科为主，也做汉方诊疗、疫苗接种与出国前体检。官网写明可用中文・英文就诊，院长在中国与日本均受过医学训练。福冈县「外国人患者受入拠点医療機関」之一。",
+    "noteEn": "An international clinic near Hakata Station focused on internal medicine and gastroenterology, also offering Kampo care, vaccinations and pre-travel checkups. The site states consultations are available in Chinese and English; the director trained in both China and Japan. Listed among Fukuoka Prefecture's hub facilities for foreign patients.",
+    "updated": "2026-08",
+    "searchKeys": "城山国際医院 城山国际医院 Joyama 博多区 住吉 福冈 中文 内科 消化内科 汉方",
+    "extraBadges": [
+      {
+        "label": "中文诊疗"
+      },
+      {
+        "label": "拠点病院"
+      }
+    ]
+  },
+  {
+    "name": "ファン整形外科",
+    "nameEn": "Fan Orthopedic Clinic",
+    "jpName": "ファン整形外科",
+    "slug": "fan-orthopedic-clinic",
+    "region": "福冈",
+    "address": "福冈县福冈市早良区重留1-5-22",
+    "addressEn": "1-5-22 Shigetome, Sawara-ku, Fukuoka, Fukuoka",
+    "addressShort": "福冈县 福冈市早良区 重留",
+    "addressShortEn": "Shigetome, Sawara-ku, Fukuoka, Fukuoka",
+    "phone": "092-872-8880",
+    "langs": [
+      "中文",
+      "英文"
+    ],
+    "langDetail": "官网标注简体中文・繁体中文・英文对应",
+    "langDetailEn": "Site lists Simplified Chinese, Traditional Chinese and English support",
+    "depts": [
+      "骨科",
+      "康复科"
+    ],
+    "hours": "周一至周六 9:00–13:00 / 周一・二・四・五 14:00–18:00",
+    "hoursEn": "Mon–Sat 9:00–13:00; Mon, Tue, Thu, Fri 14:00–18:00",
+    "hoursShort": "周一至周六 9:00–13:00",
+    "hoursShortEn": "Mon–Sat 9:00–13:00",
+    "closed": "周三下午・周六下午・周日・节假日",
+    "closedEn": "Wed afternoon, Sat afternoon, Sun & public holidays",
+    "note": "早良区重留的骨科・康复科诊所，2023 年开业，看运动损伤、腰颈痛、骨质疏松等。官网标注简体中文・繁体中文・英文对应（福冈县名单记为北京语・台语）。备 33 个免费停车位，需自驾或巴士前往。",
+    "noteEn": "An orthopedics and rehabilitation clinic in Shigetome, Sawara-ku, opened in 2023, covering sports injuries, back and neck pain, and osteoporosis. Its site lists Simplified Chinese, Traditional Chinese and English support (the prefectural directory records Mandarin and Taiwanese). 33 free parking spaces; reach it by car or bus.",
+    "updated": "2026-08",
+    "searchKeys": "ファン整形外科 黄 早良区 重留 福冈 中文 骨科 整形外科 康复 复健",
+    "extraBadges": [
+      {
+        "label": "中文诊疗"
+      },
+      {
+        "label": "拠点病院"
+      }
+    ]
+  },
+  {
+    "name": "よしだ内科・外科・足クリニック",
+    "nameEn": "Yoshida Internal Medicine, Surgery & Foot Clinic",
+    "jpName": "よしだ内科・外科・足クリニック",
+    "slug": "yoshida-naika-geka-ashi-clinic",
+    "region": "福冈",
+    "address": "福冈县福冈市東区千早3-6-37 GARDENS CHIHAYA 2F",
+    "addressEn": "GARDENS CHIHAYA 2F, 3-6-37 Chihaya, Higashi-ku, Fukuoka, Fukuoka",
+    "addressShort": "福冈县 福冈市東区 千早",
+    "addressShortEn": "Chihaya, Higashi-ku, Fukuoka, Fukuoka",
+    "phone": "092-692-5515",
+    "langs": [
+      "中文",
+      "英文"
+    ],
+    "langDetail": "福冈县官方名单记为中文・英文・韩文・西班牙语对应",
+    "langDetailEn": "Prefectural directory lists Chinese, English, Korean and Spanish",
+    "depts": [
+      "内科",
+      "外科",
+      "足病",
+      "汉方"
+    ],
+    "hours": "周一・二・四・五 9:00–13:30 / 15:30–19:00 / 周六 10:00–13:30 / 15:30–18:00",
+    "hoursEn": "Mon, Tue, Thu, Fri 9:00–13:30 / 15:30–19:00; Sat 10:00–13:30 / 15:30–18:00",
+    "hoursShort": "周一・二・四・五 9:00–19:00",
+    "hoursShortEn": "Mon, Tue, Thu, Fri 9:00–19:00",
+    "closed": "周三・周日・节假日",
+    "closedEn": "Wed, Sun & public holidays",
+    "note": "千早站附近的内科・外科诊所，特色是足部・趾甲诊疗（嵌甲、糖尿病足等），另设汉方门诊、戒烟门诊、睡眠呼吸暂停与各类体检・疫苗。备 300 个免费停车位。",
+    "noteEn": "An internal medicine and surgery clinic near Chihaya Station, known for foot and nail care (ingrown nails, diabetic foot), plus Kampo, smoking-cessation and sleep-apnea clinics, checkups and vaccinations. 300 free parking spaces.",
+    "warning": "中文对应依据福冈县「外国人患者受入拠点医療機関」名单，诊所官网未单独说明，就诊前请先电话确认。",
+    "warningEn": "Chinese support is listed in Fukuoka Prefecture's official directory of hospitals accepting foreign patients, but is not stated on the clinic's own site — please call ahead to confirm.",
+    "updated": "2026-08",
+    "searchKeys": "よしだ内科 外科 足クリニック 吉田 東区 千早 福冈 中文 内科 外科 足病",
+    "extraBadges": [
+      {
+        "label": "拠点病院"
+      }
+    ]
+  },
+  {
+    "name": "薬院天神南さくらクリニック",
+    "nameEn": "Yakuin Tenjin-minami Sakura Clinic",
+    "jpName": "薬院天神南さくらクリニック",
+    "slug": "yakuin-tenjinminami-sakura-clinic",
+    "region": "福冈",
+    "address": "福冈县福冈市中央区高砂1-8-8 サンクス渡辺通2F",
+    "addressEn": "Thanks Watanabe-dori 2F, 1-8-8 Takasago, Chuo-ku, Fukuoka, Fukuoka",
+    "addressShort": "福冈县 福冈市中央区 高砂",
+    "addressShortEn": "Takasago, Chuo-ku, Fukuoka, Fukuoka",
+    "phone": "092-401-9202",
+    "langs": [
+      "中文",
+      "英文"
+    ],
+    "langDetail": "福冈县官方名单记为中文・英文对应",
+    "langDetailEn": "Prefectural directory lists Chinese and English",
+    "depts": [
+      "内科",
+      "儿科",
+      "呼吸内科",
+      "神经内科",
+      "美容皮肤科"
+    ],
+    "hours": "全年无休 10:00–14:00 / 15:00–19:00",
+    "hoursEn": "Open year-round 10:00–14:00 / 15:00–19:00",
+    "hoursShort": "每日 10:00–19:00",
+    "hoursShortEn": "Daily 10:00–19:00",
+    "closed": "无固定休诊日",
+    "closedEn": "No regular closing days",
+    "note": "渡辺通・药院一带的内科・儿科诊所（原はたえ桜クリニック），全年无休、周末也开诊，适合上班族与带孩子就诊。另设美容皮肤科。最晚受理 18:45。",
+    "noteEn": "An internal medicine and pediatrics clinic near Watanabe-dori and Yakuin (formerly Hatae Sakura Clinic), open year-round including weekends — convenient for workers and families. Cosmetic dermatology also available. Last reception 18:45.",
+    "warning": "中文对应依据福冈县「外国人患者受入拠点医療機関」名单，诊所官网未单独说明，就诊前请先电话确认。",
+    "warningEn": "Chinese support is listed in Fukuoka Prefecture's official directory of hospitals accepting foreign patients, but is not stated on the clinic's own site — please call ahead to confirm.",
+    "updated": "2026-08",
+    "searchKeys": "薬院天神南さくらクリニック 药院天神南樱 はたえ桜 中央区 高砂 渡辺通 福冈 中文 内科 儿科 年中无休",
+    "extraBadges": [
+      {
+        "label": "年中无休"
+      },
+      {
+        "label": "拠点病院"
+      }
+    ]
+  },
+  {
+    "name": "ジェネラルクリニック福岡",
+    "nameEn": "General Clinic Fukuoka",
+    "jpName": "医療法人統 ジェネラルクリニック福岡",
+    "slug": "general-clinic-fukuoka",
+    "region": "福冈",
+    "address": "福冈县福冈市中央区薬院4-1-4 The Cat 2F",
+    "addressEn": "The Cat 2F, 4-1-4 Yakuin, Chuo-ku, Fukuoka, Fukuoka",
+    "addressShort": "福冈县 福冈市中央区 薬院",
+    "addressShortEn": "Yakuin, Chuo-ku, Fukuoka, Fukuoka",
+    "phone": "092-526-0055",
+    "langs": [
+      "中文",
+      "英文"
+    ],
+    "langDetail": "福冈县官方名单记为英文・中文・法语・尼泊尔语・泰语・荷兰语・德语等多语言对应",
+    "langDetailEn": "Prefectural directory lists English, Chinese, French, Nepali, Thai, Dutch, German and more",
+    "depts": [
+      "内科",
+      "消化内科",
+      "过敏科"
+    ],
+    "hours": "周一・二・四・五・六 10:00–14:00 / 15:00–18:00",
+    "hoursEn": "Mon, Tue, Thu, Fri, Sat 10:00–14:00 / 15:00–18:00",
+    "hoursShort": "周一至周六 10:00–18:00（周三休）",
+    "hoursShortEn": "Mon–Sat 10:00–18:00 (closed Wed)",
+    "closed": "周三・周日・节假日",
+    "closedEn": "Wed, Sun & public holidays",
+    "note": "药院大通一带的内科诊所，福冈县名单中登记的对应语言最多的一家诊所。受理截止为各时段开始后 10 分钟前，偶有临时休诊，建议先电话确认。",
+    "noteEn": "An internal medicine clinic near Yakuin-odori; among Fukuoka's listed clinics it registers the widest range of languages. Reception closes 10 minutes into each session and ad-hoc closures happen, so call ahead.",
+    "warning": "中文对应依据福冈县「外国人患者受入拠点医療機関」名单，诊所官网未单独说明，就诊前请先电话确认。",
+    "warningEn": "Chinese support is listed in Fukuoka Prefecture's official directory of hospitals accepting foreign patients, but is not stated on the clinic's own site — please call ahead to confirm.",
+    "updated": "2026-08",
+    "searchKeys": "ジェネラルクリニック福岡 General Clinic 中央区 薬院 福冈 中文 内科 消化内科 多语言",
+    "extraBadges": [
+      {
+        "label": "多语言对应"
+      },
+      {
+        "label": "拠点病院"
+      }
+    ]
+  },
+  {
+    "name": "あきもとこどもクリニック",
+    "nameEn": "Akimoto Children's Clinic",
+    "jpName": "医療法人 あきもとこどもクリニック",
+    "slug": "akimoto-kodomo-clinic",
+    "region": "福冈",
+    "address": "福冈县福冈市早良区高取1-28-24",
+    "addressEn": "1-28-24 Takatori, Sawara-ku, Fukuoka, Fukuoka",
+    "addressShort": "福冈县 福冈市早良区 高取",
+    "addressShortEn": "Takatori, Sawara-ku, Fukuoka, Fukuoka",
+    "phone": "092-852-2570",
+    "langs": [
+      "中文",
+      "英文"
+    ],
+    "langDetail": "福冈县官方名单记为中文・英文・韩文对应",
+    "langDetailEn": "Prefectural directory lists Chinese, English and Korean",
+    "depts": [
+      "儿科",
+      "过敏科",
+      "儿童心理"
+    ],
+    "hours": "周一至周五 8:30–12:30 / 14:00–18:00 / 周六 8:30–13:00",
+    "hoursEn": "Mon–Fri 8:30–12:30 / 14:00–18:00; Sat 8:30–13:00",
+    "hoursShort": "周一至周五 8:30–18:00",
+    "hoursShortEn": "Mon–Fri 8:30–18:00",
+    "closed": "周日・节假日",
+    "closedEn": "Sun & public holidays",
+    "note": "藤崎站附近的儿科诊所，7 名儿科医生，设过敏门诊、儿童心理咨询与婴幼儿健诊。可网上预约，支持信用卡・电子钱包。受理截止为闭诊前 15 分钟。",
+    "noteEn": "A pediatric clinic near Fujisaki Station with seven pediatricians, offering allergy clinics, child-psychology consultations and infant checkups. Online booking; credit cards and e-money accepted. Reception closes 15 minutes before the end of each session.",
+    "warning": "中文对应依据福冈县「外国人患者受入拠点医療機関」名单，诊所官网未单独说明，就诊前请先电话确认。",
+    "warningEn": "Chinese support is listed in Fukuoka Prefecture's official directory of hospitals accepting foreign patients, but is not stated on the clinic's own site — please call ahead to confirm.",
+    "updated": "2026-08",
+    "searchKeys": "あきもとこどもクリニック 秋本儿童 早良区 高取 藤崎 福冈 中文 儿科 小儿科 过敏",
+    "extraBadges": [
+      {
+        "label": "拠点病院"
+      }
+    ]
+  },
+  {
+    "name": "下条歯科医院",
+    "nameEn": "Shimojo Dental Clinic",
+    "jpName": "下条歯科医院",
+    "slug": "shimojo-dental-clinic",
+    "region": "福冈",
+    "address": "福冈县福冈市博多区博多駅南4-9-23",
+    "addressEn": "4-9-23 Hakata-eki-Minami, Hakata-ku, Fukuoka, Fukuoka",
+    "addressShort": "福冈县 福冈市博多区 博多駅南",
+    "addressShortEn": "Hakata-eki-Minami, Hakata-ku, Fukuoka, Fukuoka",
+    "phone": "092-414-0082",
+    "langs": [
+      "中文",
+      "英文"
+    ],
+    "langDetail": "福冈县官方名单记为中文・英文・韩文对应",
+    "langDetailEn": "Prefectural directory lists Chinese, English and Korean",
+    "depts": [
+      "牙科",
+      "儿童牙科"
+    ],
+    "hours": "周一至周五 9:00–13:00 / 14:30–18:30 / 周六 9:00–13:00",
+    "hoursEn": "Mon–Fri 9:00–13:00 / 14:30–18:30; Sat 9:00–13:00",
+    "hoursShort": "周一至周五 9:00–18:30",
+    "hoursShortEn": "Mon–Fri 9:00–18:30",
+    "closed": "周日・节假日",
+    "closedEn": "Sun & public holidays",
+    "note": "博多站南侧的牙科・儿童牙科诊所，距东比惠站车程约 4 分钟。福冈县名单中少数登记中文对应的牙科。",
+    "noteEn": "A dental and pediatric-dental clinic south of Hakata Station, about 4 minutes by car from Higashi-Hie Station. One of the few dental clinics in the prefectural directory that registers Chinese support.",
+    "warning": "中文对应依据福冈县「外国人患者受入拠点医療機関」名单，诊所官网未单独说明，就诊前请先电话确认。",
+    "warningEn": "Chinese support is listed in Fukuoka Prefecture's official directory of hospitals accepting foreign patients, but is not stated on the clinic's own site — please call ahead to confirm.",
+    "updated": "2026-08",
+    "searchKeys": "下条歯科医院 下条齿科 牙科 博多区 博多駅南 东比惠 福冈 中文 牙医",
+    "extraBadges": [
+      {
+        "label": "拠点病院"
+      }
+    ]
   }
 ]
