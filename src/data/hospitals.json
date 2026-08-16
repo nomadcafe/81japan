@@ -368,73 +368,6 @@
     "slug": "miyata-gastroenterology-dermatology-clinic"
   },
   {
-    "name": "大阪市立住友病院",
-    "nameEn": "Sumitomo Hospital",
-    "jpName": "大阪市立住友病院",
-    "region": "大阪",
-    "addressShort": "大阪府 大阪市北区",
-    "addressShortEn": "Kita-ku, Osaka, Osaka",
-    "langs": [
-      "中文"
-    ],
-    "depts": [
-      "内科",
-      "外科",
-      "皮肤科",
-      "耳鼻喉科"
-    ],
-    "hoursShort": "周一至周六 8:30–17:00",
-    "hoursShortEn": "Mon–Sat 8:30–17:00",
-    "updated": "2025-11",
-    "searchKeys": "大阪市立住友病院",
-    "slug": "sumitomo-hospital"
-  },
-  {
-    "name": "福冈县立病院 国际部",
-    "nameEn": "Fukuoka Prefectural Hospital · International Dept",
-    "jpName": "福岡県立病院 国際部",
-    "region": "福冈",
-    "addressShort": "福冈县 福冈市博多区",
-    "addressShortEn": "Hakata-ku, Fukuoka, Fukuoka",
-    "langs": [
-      "中文",
-      "英文"
-    ],
-    "depts": [
-      "内科",
-      "外科",
-      "儿科",
-      "产科"
-    ],
-    "hoursShort": "周一至周五 9:00–18:00",
-    "hoursShortEn": "Mon–Fri 9:00–18:00",
-    "updated": "2025-10",
-    "searchKeys": "福冈县立病院 国际部",
-    "slug": "fukuoka-prefectural-hospital-international-dept"
-  },
-  {
-    "name": "札幌医科大学附属病院",
-    "nameEn": "Sapporo Medical University Hospital",
-    "jpName": "札幌医科大学附属病院",
-    "region": "札幌",
-    "addressShort": "北海道 札幌市中央区",
-    "addressShortEn": "Chuo-ku, Sapporo, Hokkaido",
-    "langs": [
-      "中文"
-    ],
-    "depts": [
-      "内科",
-      "外科",
-      "骨科",
-      "神经科"
-    ],
-    "hoursShort": "周一至周五 8:30–16:30",
-    "hoursShortEn": "Mon–Fri 8:30–16:30",
-    "updated": "2025-09",
-    "searchKeys": "札幌医科大学附属病院",
-    "slug": "sapporo-medical-university-hospital"
-  },
-  {
     "name": "希咲クリニック",
     "nameEn": "Kisaki Clinic",
     "jpName": "希咲クリニック",
@@ -786,29 +719,6 @@
       }
     ],
     "slug": "yy-dental-orthodontics-osaka-tenmabashi"
-  },
-  {
-    "name": "名古屋第二赤十字病院",
-    "nameEn": "Japanese Red Cross Aichi Medical Center Nagoya Daini Hospital",
-    "jpName": "名古屋第二赤十字病院",
-    "region": "名古屋",
-    "addressShort": "爱知县 名古屋市昭和区",
-    "addressShortEn": "Showa-ku, Nagoya, Aichi",
-    "langs": [
-      "中文",
-      "英文"
-    ],
-    "depts": [
-      "内科",
-      "急诊",
-      "妇科",
-      "精神科"
-    ],
-    "hoursShort": "24小时急诊 / 门诊 8:30–17:00",
-    "hoursShortEn": "24h ER / Outpatient 8:30–17:00",
-    "updated": "2026-01",
-    "searchKeys": "名古屋第二赤十字病院",
-    "slug": "japanese-red-cross-aichi-medical-center-nagoya-daini-hospital"
   },
   {
     "name": "福冈山王医院",
