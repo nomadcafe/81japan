@@ -46,6 +46,12 @@ const deptsDataAttr = (h.depts || []).flatMap((d) => {
   return en === d ? [d] : [d, en];
 }).join(' ');
 
+// 搜索索引：中文名・英文名・日文名・searchKeys 全部拼进去，
+// 否则 searchKeys 会把医院名整个顶掉（英文名就搜不到了）
+const nameDataAttr = [h.name, h.nameEn, h.jpName, h.searchKeys]
+  .filter(Boolean)
+  .join(' ');
+
 const displayName = hospitalName(h, locale);
 const labels = locale === 'zh'
   ? { call: '电话', map: '地图', callAria: `拨打 ${displayName}`, mapAria: `在地图查看 ${displayName}` }
@@ -54,7 +60,7 @@ const labels = locale === 'zh'
 <article
   class="hospital-card fade-in"
   role="listitem"
-  data-name={h.searchKeys || h.name}
+  data-name={nameDataAttr}
   data-region={h.region || ''}
   data-lang={langDataAttr}
   data-depts={deptsDataAttr}

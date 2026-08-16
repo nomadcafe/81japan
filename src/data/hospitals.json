@@ -1958,8 +1958,8 @@
       "中文",
       "英文"
     ],
-    "langDetail": "中文门诊（中文医生应诊）+ 中文官网",
-    "langDetailEn": "Chinese clinic (Chinese-speaking doctors) + Chinese website",
+    "langDetail": "中文门诊（中文医生应诊，需提前预约）+ 中文官网",
+    "langDetailEn": "Chinese clinic (Chinese-speaking doctors, by appointment only) + Chinese website",
     "depts": [
       "内科",
       "风湿科",
@@ -1971,9 +1971,11 @@
     "hoursShortEn": "Mon–Sat 8:30–17:00",
     "closed": "周日・节假日",
     "closedEn": "Sun & public holidays",
-    "note": "亀田综合医院（千叶鴨川）旗下东京京橋的卫星诊所，持JCI及ISO 7101国际认证。2020年3月起开设中文门诊（中国人外来），由内科・风湿科等专科医生应诊，邮箱 kyobashi.international@kameda.jp 可中文咨询。京橋駅3番出口直结。",
-    "noteEn": "A Tokyo (Kyobashi) satellite clinic of Kameda Medical Center (Kamogawa, Chiba), holding JCI and ISO 7101 accreditation. Since March 2020 it has run a Chinese clinic staffed by specialists in internal medicine, rheumatology and more; email kyobashi.international@kameda.jp for Chinese-language enquiries. Directly connected to Exit 3 of Kyobashi Stn.",
-    "updated": "2026-06",
+    "note": "亀田综合医院（千叶鴨川）旗下东京京橋的卫星诊所，持JCI及ISO 7101国际认证。2020年3月起开设中文门诊（中国人外来），由内科・风湿科等专科医生应诊。中文诊疗采完全预约制，请提前预约以便院方安排中文对应人员；邮箱 kyobashi.international@kameda.jp 可中文咨询。京橋駅3番出口直结。",
+    "noteEn": "A Tokyo (Kyobashi) satellite clinic of Kameda Medical Center (Kamogawa, Chiba), holding JCI and ISO 7101 accreditation. Since March 2020 it has run a Chinese clinic staffed by specialists in internal medicine, rheumatology and more; Chinese-language consultations are available by appointment only, so that the clinic can arrange Chinese-speaking staff in advance; email kyobashi.international@kameda.jp to book or for Chinese-language enquiries. Directly connected to Exit 3 of Kyobashi Stn.",
+    "warning": "中文诊疗为预约制，请务必提前预约（院方需事先安排中文对应人员）",
+    "warningEn": "Chinese-language consultations are by appointment only — book ahead so the clinic can arrange Chinese-speaking staff",
+    "updated": "2026-08",
     "searchKeys": "亀田京橋クリニック 中国人外来 中文门诊 JCI 东京 京橋",
     "extraBadges": [
       {
