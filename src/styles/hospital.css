@@ -167,13 +167,14 @@
   border: 1px solid var(--paper-3);
 }
 
+/* 补充说明：装的是交通・支付・医生背景这类介绍性内容，不是警示。
+   刻意不用红色边框，把红色留给 .h-warning。 */
 .h-note {
   font-size: 14px;
   color: var(--ink-2);
   line-height: 1.7;
   padding: 14px 16px;
   background: var(--paper-2);
-  border-left: 3px solid var(--red-mid);
   border-radius: var(--radius-sm);
 }
 
