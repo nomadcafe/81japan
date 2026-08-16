@@ -129,51 +129,51 @@
   },
   "/hospital/大阪市立住友病院": {
     "status": 301,
-    "destination": "/hospital/sumitomo-hospital"
+    "destination": "/osaka"
   },
   "/hospital/%E5%A4%A7%E9%98%AA%E5%B8%82%E7%AB%8B%E4%BD%8F%E5%8F%8B%E7%97%85%E9%99%A2": {
     "status": 301,
-    "destination": "/hospital/sumitomo-hospital"
+    "destination": "/osaka"
   },
   "/en/hospital/大阪市立住友病院": {
     "status": 301,
-    "destination": "/en/hospital/sumitomo-hospital"
+    "destination": "/en/osaka"
   },
   "/en/hospital/%E5%A4%A7%E9%98%AA%E5%B8%82%E7%AB%8B%E4%BD%8F%E5%8F%8B%E7%97%85%E9%99%A2": {
     "status": 301,
-    "destination": "/en/hospital/sumitomo-hospital"
+    "destination": "/en/osaka"
   },
   "/hospital/福岡県立病院-国際部": {
     "status": 301,
-    "destination": "/hospital/fukuoka-prefectural-hospital-international-dept"
+    "destination": "/fukuoka"
   },
   "/hospital/%E7%A6%8F%E5%B2%A1%E7%9C%8C%E7%AB%8B%E7%97%85%E9%99%A2-%E5%9B%BD%E9%9A%9B%E9%83%A8": {
     "status": 301,
-    "destination": "/hospital/fukuoka-prefectural-hospital-international-dept"
+    "destination": "/fukuoka"
   },
   "/en/hospital/福岡県立病院-国際部": {
     "status": 301,
-    "destination": "/en/hospital/fukuoka-prefectural-hospital-international-dept"
+    "destination": "/en/fukuoka"
   },
   "/en/hospital/%E7%A6%8F%E5%B2%A1%E7%9C%8C%E7%AB%8B%E7%97%85%E9%99%A2-%E5%9B%BD%E9%9A%9B%E9%83%A8": {
     "status": 301,
-    "destination": "/en/hospital/fukuoka-prefectural-hospital-international-dept"
+    "destination": "/en/fukuoka"
   },
   "/hospital/札幌医科大学附属病院": {
     "status": 301,
-    "destination": "/hospital/sapporo-medical-university-hospital"
+    "destination": "/hokkaido"
   },
   "/hospital/%E6%9C%AD%E5%B9%8C%E5%8C%BB%E7%A7%91%E5%A4%A7%E5%AD%A6%E9%99%84%E5%B1%9E%E7%97%85%E9%99%A2": {
     "status": 301,
-    "destination": "/hospital/sapporo-medical-university-hospital"
+    "destination": "/hokkaido"
   },
   "/en/hospital/札幌医科大学附属病院": {
     "status": 301,
-    "destination": "/en/hospital/sapporo-medical-university-hospital"
+    "destination": "/en/hokkaido"
   },
   "/en/hospital/%E6%9C%AD%E5%B9%8C%E5%8C%BB%E7%A7%91%E5%A4%A7%E5%AD%A6%E9%99%84%E5%B1%9E%E7%97%85%E9%99%A2": {
     "status": 301,
-    "destination": "/en/hospital/sapporo-medical-university-hospital"
+    "destination": "/en/hokkaido"
   },
   "/hospital/希咲クリニック": {
     "status": 301,
@@ -321,19 +321,19 @@
   },
   "/hospital/名古屋第二赤十字病院": {
     "status": 301,
-    "destination": "/hospital/japanese-red-cross-aichi-medical-center-nagoya-daini-hospital"
+    "destination": "/nagoya"
   },
   "/hospital/%E5%90%8D%E5%8F%A4%E5%B1%8B%E7%AC%AC%E4%BA%8C%E8%B5%A4%E5%8D%81%E5%AD%97%E7%97%85%E9%99%A2": {
     "status": 301,
-    "destination": "/hospital/japanese-red-cross-aichi-medical-center-nagoya-daini-hospital"
+    "destination": "/nagoya"
   },
   "/en/hospital/名古屋第二赤十字病院": {
     "status": 301,
-    "destination": "/en/hospital/japanese-red-cross-aichi-medical-center-nagoya-daini-hospital"
+    "destination": "/en/nagoya"
   },
   "/en/hospital/%E5%90%8D%E5%8F%A4%E5%B1%8B%E7%AC%AC%E4%BA%8C%E8%B5%A4%E5%8D%81%E5%AD%97%E7%97%85%E9%99%A2": {
     "status": 301,
-    "destination": "/en/hospital/japanese-red-cross-aichi-medical-center-nagoya-daini-hospital"
+    "destination": "/en/nagoya"
   },
   "/hospital/福岡山王病院": {
     "status": 301,
@@ -2174,5 +2174,37 @@
   "/en/hospital/%E6%97%A5%E6%9C%AC%E6%A9%8B%E8%80%B3%E9%BC%BB%E5%92%BD%E5%96%89%E7%A7%91%E5%8C%BB%E9%99%A2": {
     "status": 301,
     "destination": "/en/hospital/nipponbashi-ent-clinic"
+  },
+  "/hospital/sumitomo-hospital": {
+    "status": 301,
+    "destination": "/osaka"
+  },
+  "/en/hospital/sumitomo-hospital": {
+    "status": 301,
+    "destination": "/en/osaka"
+  },
+  "/hospital/fukuoka-prefectural-hospital-international-dept": {
+    "status": 301,
+    "destination": "/fukuoka"
+  },
+  "/en/hospital/fukuoka-prefectural-hospital-international-dept": {
+    "status": 301,
+    "destination": "/en/fukuoka"
+  },
+  "/hospital/sapporo-medical-university-hospital": {
+    "status": 301,
+    "destination": "/hokkaido"
+  },
+  "/en/hospital/sapporo-medical-university-hospital": {
+    "status": 301,
+    "destination": "/en/hokkaido"
+  },
+  "/hospital/japanese-red-cross-aichi-medical-center-nagoya-daini-hospital": {
+    "status": 301,
+    "destination": "/nagoya"
+  },
+  "/en/hospital/japanese-red-cross-aichi-medical-center-nagoya-daini-hospital": {
+    "status": 301,
+    "destination": "/en/nagoya"
   }
 }
