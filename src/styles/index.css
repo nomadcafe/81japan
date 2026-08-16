@@ -978,9 +978,13 @@
       gap: 8px;
       min-width: 0;
       margin-bottom: 10px;
-      padding: 0 16px 4px;
+      /* 右侧留出渐隐区的宽度，滑到底时最后一枚 chip 正好走出淡出范围 */
+      padding: 0 28px 4px 16px;
       overflow-x: auto;
       scrollbar-width: none;
+      /* 横向滚动的可见提示：右缘淡出，避免 chip 被硬切成「布局坏了」的样子 */
+      -webkit-mask-image: linear-gradient(to right, #000 calc(100% - 28px), transparent 100%);
+      mask-image: linear-gradient(to right, #000 calc(100% - 28px), transparent 100%);
     }
     .filter-group:last-child { margin-bottom: 0; }
     .filter-group::-webkit-scrollbar { display: none; }
@@ -991,6 +995,10 @@
     }
     .filter-group .filter-option {
       flex: 0 0 auto;
+      /* 覆盖桌面侧栏的 button.filter-option{width:100%}，
+         否则语言・科室两行的每个按钮都撑满一屏，一次只看得见一个选项 */
+      width: auto;
+      gap: 6px;
       padding: 7px 14px;
       border-radius: 999px;
       background: var(--white);

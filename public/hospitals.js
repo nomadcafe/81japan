@@ -123,6 +123,19 @@ function onSearchInput() {
   syncUrl();
 }
 
+// 「搜索」按钮与回车键：输入本身已是实时过滤，这里负责把视口带到结果区
+// （移动端顺便收起键盘），否则按钮点了没有任何反馈。
+function onSearchSubmit() {
+  const input = document.getElementById('searchInput');
+  if (!input) return;
+  filterState.query = input.value;
+  resetPaging();
+  applyFilters();
+  syncUrl();
+  input.blur();
+  scrollToResults();
+}
+
 function setSearch(val) {
   document.getElementById('searchInput').value = val;
   filterState.query = val;
@@ -198,5 +211,14 @@ document.addEventListener('DOMContentLoaded', () => {
     list.insertAdjacentElement('afterend', btn);
     readUrl();
     applyFilters();
+  }
+
+  const searchInput = document.getElementById('searchInput');
+  const searchBtn = document.querySelector('.search-btn');
+  if (searchBtn) searchBtn.addEventListener('click', onSearchSubmit);
+  if (searchInput) {
+    searchInput.addEventListener('keydown', (e) => {
+      if (e.key === 'Enter') { e.preventDefault(); onSearchSubmit(); }
+    });
   }
 });
