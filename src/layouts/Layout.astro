@@ -58,16 +58,18 @@ const htmlLang = HTML_LANG[locale];
           return;
         }
         var onRoot = path === '/' || path === '';
+        // 跳转到 /en 时带上查询串与锚点，否则 /?q=... 这类搜索链接会被丢掉
+        var enUrl = '/en' + location.search + location.hash;
         var stored = localStorage.getItem('preferredLang');
         if (stored === 'en' && onRoot) {
-          location.replace('/en');
+          location.replace(enUrl);
           return;
         }
         if (!stored && onRoot) {
           var lang = (navigator.language || '').toLowerCase();
           if (lang.indexOf('en') === 0 && lang.indexOf('zh') === -1) {
             localStorage.setItem('preferredLang', 'en');
-            location.replace('/en');
+            location.replace(enUrl);
             return;
           }
           localStorage.setItem('preferredLang', 'zh');
