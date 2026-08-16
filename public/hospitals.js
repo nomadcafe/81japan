@@ -1,6 +1,50 @@
 // ── 筛选状态 ──
 const filterState = { region: '', lang: '', query: '' };
 
+// ── URL 同步 ──
+// 首页 JSON-LD 里声明了 SearchAction → /?q={search_term_string}，这里负责消费它；
+// 顺带把语言筛选也写进 URL，结果可以直接分享。
+// 地区不进 URL —— 地区本身就是独立页面（/osaka 等）。
+// canonical 始终是无参数的，所以带参 URL 不会造成重复内容。
+const LANG_PARAM = { '中文': 'chinese', '英文': 'english', '越南语': 'vietnamese' };
+const LANG_FROM_PARAM = Object.fromEntries(
+  Object.entries(LANG_PARAM).map(([zh, en]) => [en, zh])
+);
+
+// 把当前搜索词与语言筛选写回地址栏（用 replaceState，避免每敲一个字就多一条历史）
+function syncUrl() {
+  if (!window.history || !history.replaceState) return;
+  const p = new URLSearchParams();
+  if (filterState.query.trim()) p.set('q', filterState.query.trim());
+  if (filterState.lang) p.set('lang', LANG_PARAM[filterState.lang] || filterState.lang);
+  const qs = p.toString();
+  history.replaceState(null, '', qs ? `${location.pathname}?${qs}` : location.pathname);
+}
+
+// 从地址栏恢复筛选状态（页面加载时调用一次）
+function readUrl() {
+  const p = new URLSearchParams(location.search);
+  const q = p.get('q') || '';
+  const langParam = p.get('lang') || '';
+  const lang = LANG_FROM_PARAM[langParam] || (langParam in LANG_PARAM ? langParam : '');
+
+  if (q) {
+    filterState.query = q;
+    const input = document.getElementById('searchInput');
+    if (input) input.value = q;
+  }
+  if (lang) {
+    filterState.lang = lang;
+    // 同步侧栏高亮：本页可能没有该语言的选项（如地区页语言不足），此时只保留筛选
+    const opts = document.querySelectorAll('[data-lang-filter]');
+    const target = document.querySelector(`[data-lang-filter="${lang}"]`);
+    if (target) {
+      opts.forEach((o) => o.classList.remove('active'));
+      target.classList.add('active');
+    }
+  }
+}
+
 // ── 分页（“加载更多”）──
 const PAGE_SIZE = 12;
 let visibleCount = PAGE_SIZE;
@@ -76,6 +120,7 @@ function onSearchInput() {
   filterState.query = document.getElementById('searchInput').value;
   resetPaging();
   applyFilters();
+  syncUrl();
 }
 
 function setSearch(val) {
@@ -83,6 +128,7 @@ function setSearch(val) {
   filterState.query = val;
   resetPaging();
   applyFilters();
+  syncUrl();
   scrollToResults();
 }
 
@@ -101,6 +147,7 @@ function filterLang(lang, el) {
   filterState.lang = lang === '全部' ? '' : lang;
   resetPaging();
   applyFilters();
+  syncUrl();
   scrollToResults();
 }
 
@@ -149,6 +196,7 @@ document.addEventListener('DOMContentLoaded', () => {
     btn.onclick = loadMore;
     btn.style.display = 'none';
     list.insertAdjacentElement('afterend', btn);
+    readUrl();
     applyFilters();
   }
 });
