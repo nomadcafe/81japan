@@ -186,6 +186,12 @@
   border-left: 3px solid var(--red);
 }
 
+/* 置顶在 CTA 之上：紹介状・预约制这类信息要在用户拨号前看到 */
+.h-warning-top {
+  margin: 16px 0 4px;
+  line-height: 1.6;
+}
+
 .h-meta {
   display: flex;
   align-items: center;
