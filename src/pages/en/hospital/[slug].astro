@@ -3,7 +3,7 @@ import Layout from '../../../layouts/Layout.astro';
 import Nav from '../../../components/Nav.astro';
 import Footer from '../../../components/Footer.astro';
 import { loadHospitals, hospitalSlug, type Hospital } from '../../../lib/hospitals.js';
-import { deptLabel, hospitalName, regionLabel, badgeLabel, localizePath } from '../../../lib/i18n';
+import { deptLabel, hospitalName, regionLabel, badgeLabel, langLabel, localizePath } from '../../../lib/i18n';
 import { regionByKey } from '../../../lib/regions';
 import { primaryTel } from '../../../lib/phone';
 import { langCodes, langTokensOf, medicalType, splitPostal, cleanJpName, typeNoun, featuredLangLabel } from '../../../lib/hospitalSeo';
@@ -194,7 +194,7 @@ const jsonLd = {
     {langTokens.length > 0 && (
       <section class="h-section">
         <h2 class="h-section-title">Languages</h2>
-        {langDetailEn && <p class="h-lang-detail">{langDetailEn}</p>}
+        <p class="h-lang-detail">{langDetailEn || langTokens.map((t) => langLabel(t, 'en')).join(' · ')}</p>
       </section>
     )}
 
