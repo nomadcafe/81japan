@@ -5,6 +5,7 @@ import Footer from '../../../components/Footer.astro';
 import { loadHospitals, hospitalSlug, type Hospital } from '../../../lib/hospitals.js';
 import { deptLabel, hospitalName, regionLabel, badgeLabel, localizePath } from '../../../lib/i18n';
 import { regionByKey } from '../../../lib/regions';
+import { primaryTel } from '../../../lib/phone';
 import { langCodes, langTokensOf, medicalType, splitPostal, cleanJpName, typeNoun, featuredLangLabel } from '../../../lib/hospitalSeo';
 import '../../../styles/page.css';
 import '../../../styles/hospital.css';
@@ -22,8 +23,8 @@ const slug = hospitalSlug(h);
 const url = `https://www.81japan.com/en/hospital/${encodeURIComponent(slug)}`;
 const displayName = hospitalName(h, 'en');
 
-const telDigits = (h.phone || '').replace(/[^\d+]/g, '');
-const hasPhone = telDigits.length >= 9;
+const telDigits = primaryTel(h.phone);
+const hasPhone = telDigits !== null;
 
 // English content with fallback to the original (Chinese) value.
 const addressEn = h.addressEn || h.address;
@@ -142,6 +143,8 @@ const jsonLd = {
       <h1 class="h-name">{displayName}</h1>
       {h.jpName && h.jpName !== displayName && <p class="h-name-ja">{h.jpName}{h.name !== displayName ? ` · ${h.name}` : ''}</p>}
 
+      {warningEn && <div class="h-warning h-warning-top">⚠️ {warningEn}</div>}
+
       <div class="h-cta">
         {hasPhone && (
           <a class="h-cta-btn h-cta-primary" href={`tel:${telDigits}`}>
@@ -208,12 +211,6 @@ const jsonLd = {
       <section class="h-section">
         <h2 class="h-section-title">Notes</h2>
         <p class="h-note">{noteEn}</p>
-      </section>
-    )}
-
-    {warningEn && (
-      <section class="h-section">
-        <div class="h-warning">⚠️ {warningEn}</div>
       </section>
     )}
 

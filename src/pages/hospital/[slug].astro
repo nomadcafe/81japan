@@ -5,6 +5,7 @@ import Footer from '../../components/Footer.astro';
 import { loadHospitals, hospitalSlug, type Hospital } from '../../lib/hospitals.js';
 import { localizePath } from '../../lib/i18n';
 import { regionByKey } from '../../lib/regions';
+import { primaryTel } from '../../lib/phone';
 import { langCodes, langTokensOf, medicalType, splitPostal, cleanJpName, typeNoun, featuredLangLabel } from '../../lib/hospitalSeo';
 import '../../styles/page.css';
 import '../../styles/hospital.css';
@@ -21,8 +22,8 @@ const { hospital: h } = Astro.props as { hospital: Hospital };
 const slug = hospitalSlug(h);
 const url = `https://www.81japan.com/hospital/${encodeURIComponent(slug)}`;
 
-const telDigits = (h.phone || '').replace(/[^\d+]/g, '');
-const hasPhone = telDigits.length >= 9;
+const telDigits = primaryTel(h.phone);
+const hasPhone = telDigits !== null;
 
 const mapAddr = h.address || h.addressShort;
 const mapHref = mapAddr
@@ -127,6 +128,8 @@ const jsonLd = {
       <h1 class="h-name">{h.name}</h1>
       {h.jpName && h.jpName !== h.name && <p class="h-name-ja">{h.jpName}</p>}
 
+      {h.warning && <div class="h-warning h-warning-top">⚠️ {h.warning}</div>}
+
       <div class="h-cta">
         {hasPhone && (
           <a class="h-cta-btn h-cta-primary" href={`tel:${telDigits}`}>
@@ -193,12 +196,6 @@ const jsonLd = {
       <section class="h-section">
         <h2 class="h-section-title">注意事项</h2>
         <p class="h-note">{h.note}</p>
-      </section>
-    )}
-
-    {h.warning && (
-      <section class="h-section">
-        <div class="h-warning">⚠️ {h.warning}</div>
       </section>
     )}
 

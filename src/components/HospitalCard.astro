@@ -1,6 +1,7 @@
 ---
 import { hospitalSlug, type Hospital } from '../lib/hospitals.js';
 import { localizePath, detectLocale, deptLabel, regionLabel, hospitalName, badgeLabel, type Locale } from '../lib/i18n';
+import { primaryTel } from '../lib/phone';
 
 interface Props {
   hospital: Hospital;
@@ -31,8 +32,8 @@ const updatedFmt = (() => {
     : `${m[1]}-${m[2].padStart(2, '0')}`;
 })();
 
-const telDigits = (h.phone || '').replace(/[^\d+]/g, '');
-const hasPhone = telDigits.length >= 9;
+const telDigits = primaryTel(h.phone);
+const hasPhone = telDigits !== null;
 
 const mapAddr = h.address || h.addressShort;
 const mapHref = mapAddr
