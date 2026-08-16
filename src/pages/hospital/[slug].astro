@@ -47,7 +47,11 @@ const regionMeta = h.region ? regionByKey(h.region) : undefined;
 const regionHref = regionMeta ? localizePath(`/${regionMeta.slug}`, 'zh') : null;
 const regionUrl = regionMeta ? `https://www.81japan.com${regionHref}` : null;
 
-const description = `${h.name}（${h.jpName || ''}）位于${h.region || '日本'}${h.addressShort ? '・' + h.addressShort : ''}。${
+// 标题：按实际对应语言生成（避免把英文/越南语医院误称「中文医院」），并去掉 jpName 的法人后缀与重复
+const jpClean = cleanJpName(h.jpName);
+const showJp = jpClean && jpClean !== h.name;
+
+const description = `${h.name}${showJp ? '（' + jpClean + '）' : ''}位于${h.region || '日本'}${h.addressShort ? '・' + h.addressShort : ''}。${
   isCN ? '提供中文医疗服务，' : ''
 }${(h.depts && h.depts.length) ? '科室包括' + h.depts.slice(0, 4).join('、') + '等。' : ''}${
   h.phone ? '电话：' + h.phone + '。' : ''
@@ -55,9 +59,6 @@ const description = `${h.name}（${h.jpName || ''}）位于${h.region || '日本
 
 const { postalCode, streetAddress } = splitPostal(h.address);
 
-// 标题：按实际对应语言生成（避免把英文/越南语医院误称「中文医院」），并去掉 jpName 的法人后缀与重复
-const jpClean = cleanJpName(h.jpName);
-const showJp = jpClean && jpClean !== h.name;
 const pageTitle = `${h.name}${showJp ? '（' + jpClean + '）' : ''} · ${h.region || '日本'}${featuredLangLabel(h, 'zh')}对应${typeNoun(h, 'zh')} | 81Japan`;
 
 const jsonLd = {
@@ -179,7 +180,7 @@ const jsonLd = {
     {langTokens.length > 0 && (
       <section class="h-section">
         <h2 class="h-section-title">服务语言</h2>
-        {h.langDetail && <p class="h-lang-detail">{h.langDetail}</p>}
+        <p class="h-lang-detail">{h.langDetail || langTokens.join('・')}</p>
       </section>
     )}
 
