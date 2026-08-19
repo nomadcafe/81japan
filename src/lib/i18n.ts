@@ -67,6 +67,7 @@ const DEPT_EN: Record<string, string> = {
   '渡航外来': 'Travel Clinic',
   '渡航医学': 'Travel Medicine',
   '预防医学': 'Preventive Medicine',
+  '访问诊疗': 'Home Visit Care',
   '综合内科': 'General Internal Medicine',
   '小儿科': 'Pediatrics',
   '心脏科': 'Cardiology',
