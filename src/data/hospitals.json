@@ -5371,5 +5371,44 @@
         "label": "拠点病院"
       }
     ]
+  },
+  {
+    "name": "スマイル立花クリニック",
+    "nameEn": "Smile Tachibana Clinic",
+    "jpName": "医療法人社団 優凛会 スマイル立花クリニック",
+    "slug": "smile-tachibana-clinic",
+    "region": "神户",
+    "address": "〒661-0026 兵库县尼崎市水堂町1-1-6",
+    "addressEn": "1-1-6 Mizudocho, Amagasaki, Hyogo 661-0026",
+    "addressShort": "兵库县 尼崎市 水堂町（JR立花站 徒步5分）",
+    "addressShortEn": "Mizudocho, Amagasaki, Hyogo (5-min walk from JR Tachibana Stn)",
+    "phone": "06-6436-5500",
+    "langs": [
+      "中文",
+      "粤语",
+      "英文"
+    ],
+    "langDetail": "中文（普通话）・粤语・英文 — 厚労省官方名单记为院内职员对应（周一・周三）",
+    "langDetailEn": "Chinese (Mandarin), Cantonese and English — ministry directory lists in-house staff (Mon & Wed)",
+    "depts": [
+      "内科",
+      "循环器内科",
+      "糖尿病内科",
+      "消化器内科",
+      "汉方",
+      "访问诊疗"
+    ],
+    "hours": "周一・周二・周四・周五 9:00–12:00 / 16:00–19:00 / 周六 9:00–12:00",
+    "hoursEn": "Mon, Tue, Thu, Fri 9:00–12:00 / 16:00–19:00; Sat 9:00–12:00",
+    "hoursShort": "平日 9:00–12:00 / 16:00–19:00",
+    "hoursShortEn": "Weekdays 9:00–12:00 / 16:00–19:00",
+    "closed": "周三（外来休诊，仅出诊）・周日・节假日",
+    "closedEn": "Wed (no outpatient — home visits only), Sun & public holidays",
+    "note": "JR 立花站步行约 5 分钟的内科・循环器内科诊所，另设汉方、生活习惯病门诊与访问诊疗。厚生劳动省「医疗信息网」登记为英文・普通话・广东话可由院内职员直接对应，登记时段为周一・周三 9:00–12:00 / 16:00–19:00，并另备多语言语音翻译设备。受理截止：平日午前诊 11:50、午后诊 18:50，周六 11:50。",
+    "noteEn": "An internal-medicine and cardiology clinic about a 5-minute walk from JR Tachibana Station, also offering Kampo, lifestyle-disease care and home visits. The Ministry of Health's official directory records English, Mandarin and Cantonese as handled directly by in-house staff, listed for Mon & Wed 9:00–12:00 / 16:00–19:00, with a multilingual voice translation device also available. Reception closes 11:50 (morning) and 18:50 (afternoon) on weekdays, 11:50 on Saturday.",
+    "warning": "中文对应依据厚生劳动省「医疗信息网」的医疗机能信息登记，诊所官网未单独说明；且登记的对应日之一（周三）为外来休诊日，实际以周一为主。就诊前请务必电话确认中文职员在岗时段。",
+    "warningEn": "Chinese support comes from the clinic's official filing in the Ministry of Health's medical information directory, not from the clinic's own site; one of the listed days (Wed) is an outpatient-closed day, so Monday is the practical option. Please call ahead to confirm when Chinese-speaking staff are on duty.",
+    "updated": "2026-08",
+    "searchKeys": "スマイル立花クリニック 微笑立花诊所 尼崎 水堂町 立花 兵库 关西 中文 粤语 广东话 内科 循环器 汉方"
   }
 ]
