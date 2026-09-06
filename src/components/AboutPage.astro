@@ -1,0 +1,73 @@
+---
+// 关于页版式（中英共用）。正文属于译文，放在 pageCopy.ts 里。
+import Layout from '../layouts/Layout.astro';
+import Nav from './Nav.astro';
+import Footer from './Footer.astro';
+import { localizePath, type Locale } from '../lib/i18n';
+import { ABOUT_COPY, SITE, homeCrumbItem } from '../lib/pageCopy';
+import '../styles/page.css';
+
+interface Props { locale: Locale }
+const { locale } = Astro.props;
+const zh = locale === 'zh';
+const copy = ABOUT_COPY[locale];
+const path = localizePath('/about', locale);
+
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@graph': [
+    {
+      '@type': 'AboutPage',
+      'name': copy.ldName,
+      'url': `${SITE}${path}`,
+      'description': copy.ldDescription,
+    },
+    {
+      '@type': 'BreadcrumbList',
+      'itemListElement': [
+        { '@type': 'ListItem', 'position': 1, 'name': zh ? '首页' : 'Home', 'item': homeCrumbItem(locale) },
+        { '@type': 'ListItem', 'position': 2, 'name': copy.crumb },
+      ],
+    },
+  ],
+};
+---
+<Layout title={copy.title} description={copy.description} path={path} locale={locale}>
+  <Fragment slot="head">
+    <script type="application/ld+json" set:html={JSON.stringify(jsonLd)} />
+  </Fragment>
+
+  <Nav active="about" locale={locale} />
+
+  <section class="page-hero">
+    <div class="eyebrow">{copy.eyebrow}</div>
+    <h1 set:html={copy.h1} />
+    <p>{copy.intro}</p>
+  </section>
+
+  <main class="page-main">
+    <div class="about-body">
+      {copy.sections.map((s) => (
+        <Fragment>
+          <h2>{s.h2}</h2>
+          {s.list && (
+            <ul>
+              {s.list.map((item) => (
+                <li>{item.href ? <a href={item.href}>{item.label}</a> : item.label}{item.tail}</li>
+              ))}
+            </ul>
+          )}
+          {s.paragraphs?.map((p) => <p set:html={p} />)}
+        </Fragment>
+      ))}
+
+      <div class="about-cta">
+        <div class="cta-text" set:html={copy.cta.html} />
+        <a href={copy.cta.href}>{copy.cta.label}</a>
+      </div>
+    </div>
+  </main>
+
+  <Footer locale={locale} />
+
+</Layout>

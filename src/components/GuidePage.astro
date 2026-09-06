@@ -1,0 +1,130 @@
+---
+// rules / admin / tax / rent 共用的版式。
+// 这四页的数据都是 src/data/*.json 里同一套字段，差别只有：走网格还是单篇、以及文案。
+import Layout from '../layouts/Layout.astro';
+import Nav from './Nav.astro';
+import Footer from './Footer.astro';
+import { localizePath, type Locale } from '../lib/i18n';
+import { GUIDE_COPY, SITE, homeCrumbItem, type GuideKey } from '../lib/pageCopy';
+import '../styles/page.css';
+
+export interface GuideEntry {
+  id: string;
+  icon: string;
+  titleZh: string;
+  titleEn: string;
+  summaryZh: string;
+  summaryEn: string;
+  pointsZh: string[];
+  pointsEn: string[];
+  tipZh?: string;
+  tipEn?: string;
+}
+
+interface Props {
+  page: GuideKey;
+  locale: Locale;
+  entries: GuideEntry[];
+  nav: 'rules' | 'admin' | 'tax' | 'rent';
+  variant?: 'grid' | 'single';
+}
+
+const { page, locale, entries, nav, variant = 'grid' } = Astro.props;
+const zh = locale === 'zh';
+const copy = GUIDE_COPY[page][locale];
+
+// 主标题用当前语言，副标题用另一种语言（原版式如此：中文站副标题是英文，反之亦然）
+const title = (e: GuideEntry) => (zh ? e.titleZh : e.titleEn);
+const subtitle = (e: GuideEntry) => (zh ? e.titleEn : e.titleZh);
+const summary = (e: GuideEntry) => (zh ? e.summaryZh : e.summaryEn);
+const points = (e: GuideEntry) => (zh ? e.pointsZh : e.pointsEn);
+const tip = (e: GuideEntry) => (zh ? e.tipZh : e.tipEn);
+
+// 条目正文允许内嵌 HTML，并支持 [tip] 前缀标出提示行
+const renderPoint = (p: string) => {
+  const m = p.match(/^\[tip\]\s*(.+)$/);
+  return m ? { cls: 'tip', html: m[1] } : { cls: undefined, html: p };
+};
+
+const path = localizePath(`/${page}`, locale);
+const single = variant === 'single';
+const first = entries[0];
+const intro = copy.intro ?? (single ? summary(first) : undefined);
+
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@graph': [
+    single
+      ? { '@type': 'Article', 'name': title(first), 'description': summary(first) }
+      : {
+          '@type': 'ItemList',
+          'name': copy.listName,
+          'itemListElement': entries.map((e, i) => ({
+            '@type': 'ListItem',
+            'position': i + 1,
+            'name': title(e),
+          })),
+        },
+    {
+      '@type': 'BreadcrumbList',
+      'itemListElement': [
+        { '@type': 'ListItem', 'position': 1, 'name': zh ? '首页' : 'Home', 'item': homeCrumbItem(locale) },
+        { '@type': 'ListItem', 'position': 2, 'name': copy.crumb },
+      ],
+    },
+  ],
+};
+---
+<Layout title={copy.title} description={copy.description} path={path} locale={locale}>
+  <Fragment slot="head">
+    {copy.keywords && <meta name="keywords" content={copy.keywords} />}
+    <script type="application/ld+json" set:html={JSON.stringify(jsonLd)} />
+  </Fragment>
+
+  <Nav active={nav} locale={locale} />
+
+  <section class="page-hero">
+    <div class="eyebrow">{copy.eyebrow}</div>
+    <h1 set:html={copy.h1} />
+    {intro && <p>{intro}</p>}
+  </section>
+
+  <main class="page-main">
+    {single ? (
+      <div class="about-body">
+        <ul class="rule-points">
+          {points(first).map((p) => {
+            const { cls, html } = renderPoint(p);
+            return <li class={cls} set:html={html} />;
+          })}
+        </ul>
+        {tip(first) && <div class="rule-tip">💡 {tip(first)}</div>}
+      </div>
+    ) : (
+      <div class="rules-grid">
+        {entries.map((e) => (
+          <article class="rule-card" id={e.id}>
+            <div class="rule-card-head">
+              <div class="rule-icon" aria-hidden="true">{e.icon}</div>
+              <div>
+                <div class="rule-title">{title(e)}</div>
+                <div class="rule-title-en">{subtitle(e)}</div>
+              </div>
+            </div>
+            <p class="rule-summary">{summary(e)}</p>
+            <ul class="rule-points">
+              {points(e).map((p) => {
+                const { cls, html } = renderPoint(p);
+                return <li class={cls} set:html={html} />;
+              })}
+            </ul>
+            {tip(e) && <div class="rule-tip">💡 {tip(e)}</div>}
+          </article>
+        ))}
+      </div>
+    )}
+  </main>
+
+  <Footer locale={locale} />
+
+</Layout>

@@ -1,0 +1,162 @@
+---
+// 投稿页版式（中英共用）。表单结构两版完全一致，差别只有界面文案。
+import Layout from '../layouts/Layout.astro';
+import NavSimple from './NavSimple.astro';
+import { localizePath, type Locale } from '../lib/i18n';
+import { SUBMIT_COPY } from '../lib/pageCopy';
+import '../styles/submit.css';
+
+interface Props { locale: Locale }
+const { locale } = Astro.props;
+const c = SUBMIT_COPY[locale];
+const homeHref = localizePath('/', locale);
+const year = new Date().getFullYear();
+---
+<Layout
+  title={c.title}
+  description={c.description}
+  path={localizePath('/submit', locale)}
+  noindex={true}
+  locale={locale}
+>
+  <NavSimple locale={locale} backLabelZh={c.navBack} backLabelEn={c.navBack} />
+
+  <div class="page-hero">
+    <div class="eyebrow">{c.eyebrow}</div>
+    <h1 set:html={c.h1} />
+    <p>{c.intro}</p>
+  </div>
+
+  <div class="page-main">
+    <aside class="side-info">
+      <h3>{c.stepsHeading}</h3>
+      <div class="steps">
+        {c.steps.map((s, i) => (
+          <div class="step">
+            <div class="step-num">{i + 1}</div>
+            <div class="step-body">
+              <div class="step-title">{s.title}</div>
+              <div class="step-desc">{s.desc}</div>
+            </div>
+          </div>
+        ))}
+      </div>
+      <div class="side-note">{c.sideNote}</div>
+    </aside>
+
+    <div>
+      <div class="form-card" id="formCard">
+        <div class="type-row">
+          <button class="type-btn active" onclick="switchType('new', this)">＋ {c.types.new}</button>
+          <button class="type-btn" onclick="switchType('fix', this)">✎ {c.types.fix}</button>
+          <button class="type-btn" onclick="switchType('other', this)">⊙ {c.types.other}</button>
+        </div>
+
+        <form class="form" id="submitForm" action="/api/submit" method="POST">
+          <input type="hidden" name="投稿类型" id="typeHidden" value="新增医院" />
+          <input type="text" name="_honey" tabindex="-1" autocomplete="off" aria-hidden="true" style="position:absolute; left:-9999px; opacity:0" />
+
+          <div id="fields-new">
+            <div class="form-row">
+              <div class="form-field">
+                <label class="form-label">{c.labels.name} <span class="req">*</span></label>
+                <input class="form-input" type="text" name="医院名称" id="f-name" placeholder={c.placeholders.name} />
+              </div>
+              <div class="form-field">
+                <label class="form-label">{c.labels.location} <span class="req">*</span></label>
+                <input class="form-input" type="text" name="所在地" id="f-location" placeholder={c.placeholders.location} />
+              </div>
+            </div>
+            <div class="form-row" style="margin-top:0">
+              <div class="form-field">
+                <label class="form-label">{c.labels.lang} <span class="req">*</span></label>
+                <select class="form-input form-select" name="语言服务" id="f-lang">
+                  {c.langOptions.map((o) => <option value={o.value}>{o.label}</option>)}
+                </select>
+              </div>
+              <div class="form-field">
+                <label class="form-label">{c.labels.dept}</label>
+                <input class="form-input" type="text" name="科室" placeholder={c.placeholders.dept} />
+              </div>
+            </div>
+            <div class="form-row" style="margin-top:0">
+              <div class="form-field">
+                <label class="form-label">{c.labels.phone}</label>
+                <input class="form-input" type="text" name="电话" placeholder={c.placeholders.phone} />
+              </div>
+              <div class="form-field">
+                <label class="form-label">{c.labels.site}</label>
+                <input class="form-input" type="text" name="网址" placeholder={c.placeholders.site} />
+              </div>
+            </div>
+            <div class="form-field">
+              <label class="form-label">{c.labels.hours}</label>
+              <input class="form-input" type="text" name="营业时间"
+                placeholder={c.placeholders.hours} />
+            </div>
+            <div class="form-field">
+              <label class="form-label">{c.labels.note}</label>
+              <textarea class="form-input form-textarea" name="备注" id="f-note"
+                placeholder={c.placeholders.note}
+                oninput="updateChar(this,'c1')"></textarea>
+              <div class="char-count" id="c1">0 / 300</div>
+            </div>
+          </div>
+
+          <div id="fields-fix" style="display:none">
+            <div class="form-field">
+              <label class="form-label">{c.labels.fixName} <span class="req">*</span></label>
+              <input class="form-input" type="text" name="纠错-医院名称" id="f-fix-name" placeholder={c.placeholders.fixName} />
+            </div>
+            <div class="form-field">
+              <label class="form-label">{c.labels.fixDesc} <span class="req">*</span></label>
+              <textarea class="form-input form-textarea" name="纠错-问题描述" id="f-fix-desc"
+                placeholder={c.placeholders.fixDesc}
+                style="min-height:110px" oninput="updateChar(this,'c2')"></textarea>
+              <div class="char-count" id="c2">0 / 300</div>
+            </div>
+          </div>
+
+          <div id="fields-other" style="display:none">
+            <div class="form-field">
+              <label class="form-label">{c.labels.other} <span class="req">*</span></label>
+              <textarea class="form-input form-textarea" name="建议内容" id="f-other"
+                placeholder={c.placeholders.other}
+                style="min-height:110px" oninput="updateChar(this,'c3')"></textarea>
+              <div class="char-count" id="c3">0 / 300</div>
+            </div>
+          </div>
+
+          <div class="form-divider"></div>
+
+          <div class="form-field">
+            <label class="form-label">{c.labels.contact}</label>
+            <input class="form-input" type="text" name="联系方式" placeholder={c.placeholders.contact} />
+          </div>
+
+          <button class="submit-btn" type="submit" id="submitBtn">
+            <span id="btnText">{c.submitBtn}</span>
+          </button>
+          <p class="form-note">{c.formNote}</p>
+        </form>
+      </div>
+
+      <div class="success-card" id="successCard">
+        <div class="success-icon">✓</div>
+        <h3>{c.success.heading}</h3>
+        <p set:html={c.success.body} />
+        <div class="success-actions">
+          <button class="success-btn success-btn-primary" onclick="resetForm()">{c.success.again}</button>
+          <a href={homeHref} class="success-btn success-btn-secondary">{c.success.home}</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <div>© {year} 81Japan</div>
+    <a href={homeHref} style="color:var(--ink-3); text-decoration:none; font-size:12px;">{c.footerHome}</a>
+  </footer>
+
+  <script is:inline src="/submit.js" defer></script>
+</Layout>
