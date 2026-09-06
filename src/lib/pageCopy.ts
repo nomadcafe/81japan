@@ -212,8 +212,7 @@ export const ABOUT_COPY: Record<Locale, AboutCopy> = {
       {
         h2: "What's here",
         list: [
-          // 注：这里保留原稿的 /en/（带斜杠），与改造前输出一致
-          { href: '/en/',      label: 'Hospitals & Clinics', tail: ' — places across Japan where you can be seen in Chinese' },
+          { href: '/en',       label: 'Hospitals & Clinics', tail: ' — places across Japan where you can be seen in Chinese' },
           { href: '/en/rules', label: 'Living in Japan',     tail: ' — the everyday etiquette newcomers most often miss' },
           { href: '/en/admin', label: 'Administration',      tail: ' — residence registration, residence card, health insurance, banking' },
           { href: '/en/tax',   label: 'Taxes',               tail: ' — income tax, resident tax, final filing, Furusato Nozei' },

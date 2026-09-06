@@ -13,6 +13,9 @@ function toSlug(name: string): string {
     .replace(/\s+/g, '-');
 }
 
+const PLACEHOLDER_MSG = 'phone 不能是占位号码（如 03-1234-XXXX）；未核实就删掉该字段';
+const noPlaceholderDigits = (v: string) => !/[xX]{2,}/.test(v);
+
 const hospitals = defineCollection({
   loader: file('src/data/hospitals.json', {
     parser: (text) => {
@@ -33,8 +36,11 @@ const hospitals = defineCollection({
     addressEn: z.string().optional(),
     addressShort: z.string().optional(),
     addressShortEn: z.string().optional(),
-    phone: z.string().optional(),
-    phoneEn: z.string().optional(),
+    // 占位号码（03-1234-XXXX 之类）此前会照原样显示，还会进 JSON-LD 的
+    // telephone —— 等于把编出来的号码当真号发布。号码没核实就整个留空，
+    // 详情页与卡片都已经会跳过缺失的 phone。
+    phone: z.string().refine(noPlaceholderDigits, PLACEHOLDER_MSG).optional(),
+    phoneEn: z.string().refine(noPlaceholderDigits, PLACEHOLDER_MSG).optional(),
     langs: z.array(z.string()).optional(),
     langDetail: z.string().optional(),
     langDetailEn: z.string().optional(),

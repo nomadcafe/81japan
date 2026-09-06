@@ -13,6 +13,20 @@ const STR = isEn ? {
   networkError: '网络错误，请重试',
 };
 
+// /api/submit 会带回稳定的 code。此前所有失败都显示同一句「提交失败，请重试」——
+// 被限流的人照着提示继续点，只会一直失败。
+const ERR = isEn ? {
+  rate_limited: 'Too many submissions — please wait a minute',
+  empty: 'Please fill in at least one field',
+  not_configured: 'Submissions are temporarily unavailable',
+  upstream: "Couldn't deliver your submission — please try again later",
+} : {
+  rate_limited: '提交太频繁了，请等一分钟再试',
+  empty: '内容不能为空',
+  not_configured: '投稿服务暂时不可用',
+  upstream: '投稿没能送达，请稍后再试',
+};
+
 function switchType(type, btn) {
   currentType = type;
   document.querySelectorAll('.type-btn').forEach(b => b.classList.remove('active'));
@@ -57,7 +71,9 @@ document.getElementById('submitForm').addEventListener('submit', async function(
       document.getElementById('formCard').style.display = 'none';
       document.getElementById('successCard').style.display = 'block';
     } else {
-      btnText.textContent = STR.failed;
+      let code = '';
+      try { code = (await res.json()).code || ''; } catch {}
+      btnText.textContent = ERR[code] || STR.failed;
       btn.disabled = false;
     }
   } catch {

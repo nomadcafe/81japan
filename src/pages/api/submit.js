@@ -8,15 +8,24 @@ const MAX_TOTAL = 4096;
 
 const ALLOWED_ORIGINS = ['https://www.81japan.com', 'https://81japan.com'];
 
+// 注意：这是进程内计数。Vercel serverless 每个实例各算各的，
+// 所以它挡的是「同一实例上的连续猛点」，不是全局配额。
+// 真要全局限流得接外部存储（KV/Redis），当前投稿量还用不上。
 const RATE_WINDOW_MS = 60_000;
 const RATE_LIMIT = 5;
 const ipBuckets = new Map();
+let lastSweep = 0;
 
 function json(data, status = 200) {
   return new Response(JSON.stringify(data), {
     status,
     headers: { 'content-type': 'application/json; charset=utf-8' },
   });
+}
+
+// code 是稳定标识，由前端翻成对应语言（error 仅留作日志/直接调用者可读）
+function fail(code, error, status) {
+  return json({ ok: false, code, error }, status);
 }
 
 function isAllowedOrigin(request) {
@@ -33,8 +42,19 @@ function getClientIp(request, clientAddress) {
   return clientAddress || 'unknown';
 }
 
+// 清掉整窗都没再出现的 IP。只清时间戳不清 key 的话，
+// 实例活得越久 Map 越大，永远不会缩回去。
+function sweep(now) {
+  if (now - lastSweep < RATE_WINDOW_MS) return;
+  lastSweep = now;
+  for (const [ip, hits] of ipBuckets) {
+    if (!hits.length || now - hits[hits.length - 1] >= RATE_WINDOW_MS) ipBuckets.delete(ip);
+  }
+}
+
 function isRateLimited(ip) {
   const now = Date.now();
+  sweep(now);
   const recent = (ipBuckets.get(ip) || []).filter(t => now - t < RATE_WINDOW_MS);
   if (recent.length >= RATE_LIMIT) {
     ipBuckets.set(ip, recent);
@@ -125,27 +145,27 @@ function buildHospitalSnippet(data) {
 
 export async function POST({ request, clientAddress }) {
   if (!isAllowedOrigin(request)) {
-    return json({ ok: false, error: '禁止访问' }, 403);
+    return fail('forbidden', '禁止访问', 403);
   }
 
   const ip = getClientIp(request, clientAddress);
   if (isRateLimited(ip)) {
-    return json({ ok: false, error: '请求过于频繁，请稍后再试' }, 429);
+    return fail('rate_limited', '请求过于频繁，请稍后再试', 429);
   }
 
   if (!TG_TOKEN || !TG_CHAT) {
     console.error('Missing TELEGRAM_BOT_TOKEN or TELEGRAM_CHAT_ID');
-    return json({ ok: false, error: '服务未配置' }, 500);
+    return fail('not_configured', '服务未配置', 500);
   }
 
   let data;
   try {
     data = await request.json();
   } catch {
-    return json({ ok: false, error: '无法解析表单' }, 400);
+    return fail('bad_request', '无法解析表单', 400);
   }
   if (!data || typeof data !== 'object') {
-    return json({ ok: false, error: '无法解析表单' }, 400);
+    return fail('bad_request', '无法解析表单', 400);
   }
 
   // Honeypot: 机器人通常会填所有字段
@@ -175,7 +195,7 @@ export async function POST({ request, clientAddress }) {
 
   // 基础校验：除类型外至少有一个字段
   if (lines.length <= 2) {
-    return json({ ok: false, error: '内容不能为空' }, 400);
+    return fail('empty', '内容不能为空', 400);
   }
 
   lines.push('');
@@ -204,11 +224,11 @@ export async function POST({ request, clientAddress }) {
     if (!res.ok) {
       const body = await res.text();
       console.error('Telegram error', res.status, body);
-      return json({ ok: false, error: '通知发送失败' }, 502);
+      return fail('upstream', '通知发送失败', 502);
     }
   } catch (err) {
     console.error('Telegram fetch failed', err);
-    return json({ ok: false, error: '通知发送失败' }, 502);
+    return fail('upstream', '通知发送失败', 502);
   }
 
   return json({ ok: true });
