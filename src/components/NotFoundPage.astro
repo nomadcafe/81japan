@@ -1,0 +1,79 @@
+---
+// 404 版式（中英共用）。样式此前在两份页面里各写了一遍。
+import Layout from '../layouts/Layout.astro';
+import NavSimple from './NavSimple.astro';
+import { localizePath, type Locale } from '../lib/i18n';
+import { NOTFOUND_COPY } from '../lib/pageCopy';
+import '../styles/submit.css';
+
+interface Props { locale: Locale }
+const { locale } = Astro.props;
+const copy = NOTFOUND_COPY[locale];
+const homeHref = localizePath('/', locale);
+const submitHref = localizePath('/submit', locale);
+const path = locale === 'zh' ? '/404.html' : '/en/404.html';
+---
+<Layout title={copy.title} description={copy.description} path={path} noindex={true} locale={locale}>
+  <Fragment slot="head">
+    {locale === 'zh' && (
+      <script is:inline>
+        // Vercel serves /404.html for any unmatched URL including /en/<bad>.
+        // Redirect EN visitors to the EN 404 page.
+        if (location.pathname.indexOf('/en/') === 0 && location.pathname !== '/en/404') {
+          location.replace('/en/404');
+        }
+      </script>
+    )}
+    <style is:global>
+      .nf-wrap {
+        flex: 1;
+        display: flex; flex-direction: column; align-items: center; justify-content: center;
+        padding: 80px 24px;
+        text-align: center;
+      }
+      .nf-code {
+        font-family: var(--serif);
+        font-size: clamp(96px, 18vw, 180px);
+        line-height: 1;
+        color: var(--red);
+        letter-spacing: 0.02em;
+        margin-bottom: 16px;
+      }
+      .nf-title {
+        font-family: var(--serif);
+        font-size: 28px;
+        font-weight: 600;
+        color: var(--ink);
+        margin-bottom: 12px;
+      }
+      .nf-desc {
+        color: var(--ink-2);
+        max-width: 480px;
+        margin-bottom: 32px;
+      }
+      .nf-actions { display: flex; gap: 12px; flex-wrap: wrap; justify-content: center; }
+      .nf-btn {
+        display: inline-flex; align-items: center; gap: 6px;
+        padding: 10px 20px; border-radius: var(--radius-sm);
+        font-size: 14px; text-decoration: none;
+        transition: all 0.15s;
+      }
+      .nf-btn-primary { background: var(--red); color: var(--white); }
+      .nf-btn-primary:hover { background: #A83224; }
+      .nf-btn-ghost { border: 1px solid var(--paper-3); color: var(--ink-2); }
+      .nf-btn-ghost:hover { background: var(--paper-2); color: var(--ink); }
+    </style>
+  </Fragment>
+
+  <NavSimple showLang={false} locale={locale} backLabelZh={copy.back} backLabelEn={copy.back} />
+
+  <main class="nf-wrap">
+    <div class="nf-code">404</div>
+    <div class="nf-title">{copy.heading}</div>
+    <p class="nf-desc">{copy.desc}</p>
+    <div class="nf-actions">
+      <a href={homeHref} class="nf-btn nf-btn-primary">{copy.home}</a>
+      <a href={submitHref} class="nf-btn nf-btn-ghost">{copy.submit}</a>
+    </div>
+  </main>
+</Layout>

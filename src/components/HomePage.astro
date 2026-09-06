@@ -1,0 +1,201 @@
+---
+// 首页版式（中英共用）。
+import Layout from '../layouts/Layout.astro';
+import Nav from './Nav.astro';
+import Footer from './Footer.astro';
+import HospitalCard from './HospitalCard.astro';
+import RegionLinks from './RegionLinks.astro';
+import Faq from './Faq.astro';
+import Resources from './Resources.astro';
+import { loadHospitals, hospitalSlug } from '../lib/hospitals.js';
+import { localizePath, type Locale } from '../lib/i18n';
+import { REGIONS } from '../lib/regions';
+import { HOME_COPY, SITE } from '../lib/pageCopy';
+import '../styles/index.css';
+
+interface Props { locale: Locale }
+const { locale } = Astro.props;
+const zh = locale === 'zh';
+const c = HOME_COPY[locale];
+
+const hospitals = await loadHospitals();
+const total = hospitals.length;
+
+const regionCounts: Record<string, number> = {};
+const langCounts: Record<string, number> = { '中文': 0, '英文': 0, '越南语': 0 };
+hospitals.forEach((h) => {
+  if (h.region) regionCounts[h.region] = (regionCounts[h.region] || 0) + 1;
+  (h.langs || []).forEach((l) => {
+    if (l in langCounts) langCounts[l]++;
+  });
+});
+
+const homeHref = localizePath('/', locale);
+const submitHref = localizePath('/submit', locale);
+const homeUrl = zh ? `${SITE}/` : `${SITE}/en`;
+
+// 中文站额外声明 SearchAction（/?q= 由 hospitals.js 消费）与 Organization；
+// 英文站沿用原有的精简图谱。
+const website = {
+  '@type': 'WebSite',
+  '@id': `${zh ? `${SITE}/` : `${SITE}/en`}#website`,
+  'url': homeUrl,
+  'name': '81Japan',
+  'description': c.ldSiteDescription,
+  'inLanguage': zh ? ['zh-Hans', 'en'] : ['en', 'zh-Hans'],
+  ...(zh ? {
+    'potentialAction': {
+      '@type': 'SearchAction',
+      'target': { '@type': 'EntryPoint', 'urlTemplate': `${SITE}/?q={search_term_string}` },
+      'query-input': 'required name=search_term_string',
+    },
+  } : {}),
+};
+
+const itemList = {
+  '@type': 'ItemList',
+  ...(zh ? { '@id': `${SITE}/#hospital-list` } : {}),
+  'name': c.ldListName,
+  'numberOfItems': total,
+  'itemListElement': hospitals.map((h, i) => ({
+    '@type': 'ListItem',
+    'position': i + 1,
+    'name': h.name,
+    'url': `${SITE}${localizePath(`/hospital/${encodeURIComponent(hospitalSlug(h))}`, locale)}`,
+  })),
+};
+
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@graph': zh
+    ? [
+        website,
+        {
+          '@type': 'Organization',
+          '@id': `${SITE}/#organization`,
+          'name': '81Japan',
+          'url': `${SITE}/`,
+          'description': '在日中文医疗信息',
+        },
+        itemList,
+      ]
+    : [website, itemList],
+};
+---
+<Layout title={c.title} description={c.description} path={homeHref === '/' ? '/' : homeHref} locale={locale}>
+  <Fragment slot="head">
+    <meta name="keywords" content={c.keywords} />
+    <meta name="author" content="81Japan" />
+    <script type="application/ld+json" set:html={JSON.stringify(jsonLd)} />
+    <script is:inline>
+      // 先按分页收起多余卡片，否则浏览器会把整份列表渲染出来、再被 hospitals.js 折叠回 12 张（见 index.css）。
+      // 脚本接管后会移除这个 class；万一 hospitals.js 没加载成功，load 时兜底移除，卡片不会被永久藏住。
+      document.documentElement.classList.add('cards-prepaged');
+      addEventListener('load', function () {
+        if (typeof applyFilters !== 'function') document.documentElement.classList.remove('cards-prepaged');
+      });
+    </script>
+  </Fragment>
+
+  <Nav active="hospitals" locale={locale} />
+
+  <section class="hero" aria-labelledby="heroTitle">
+    <div class="hero-card">
+      <div class="hero-eyebrow" id="heroTitle">{c.eyebrow}</div>
+      <h1 class="visually-hidden">{c.h1}</h1>
+      <p class="hero-sub">{c.sub}</p>
+
+      <div class="search-wrap" role="search" aria-label={c.searchAria}>
+        <input class="search-input" placeholder={c.searchPlaceholder} id="searchInput" oninput="onSearchInput()" />
+        <button class="search-btn">{c.searchBtn}</button>
+      </div>
+      <p class="hero-coverage">{c.coverage}</p>
+    </div>
+  </section>
+
+  <div class="main-layout">
+    <aside class="sidebar" aria-label={c.filtersAria}>
+      <div class="filter-group">
+        <div class="filter-title">{c.regionTitle}</div>
+        <button type="button" class="filter-option active" onclick="filterRegion('全部', this)" data-region-filter="全部">
+          <span>{c.regionAll}</span>
+          <span class="filter-count">{total}</span>
+        </button>
+        {REGIONS.filter(r => (regionCounts[r.key] || 0) > 0).map(r => (
+          <a class="filter-option" href={localizePath(`/${r.slug}`, locale)}>
+            <span>{zh ? r.labelZh : r.labelEn}</span>
+            <span class="filter-count">{regionCounts[r.key]}</span>
+          </a>
+        ))}
+      </div>
+
+      <div class="filter-group">
+        <div class="filter-title">{c.langTitle}</div>
+        <button type="button" class="filter-option active" onclick="filterLang('全部', this)" data-lang-filter="全部">
+          <span>{c.langAll}</span>
+          <span class="filter-count">{total}</span>
+        </button>
+        <button type="button" class="filter-option" onclick="filterLang('中文', this)" data-lang-filter="中文">
+          <span>{c.langCn}</span>
+          <span class="filter-count">{langCounts['中文']}</span>
+        </button>
+        <button type="button" class="filter-option" onclick="filterLang('英文', this)" data-lang-filter="英文">
+          <span>{c.langEn}</span>
+          <span class="filter-count">{langCounts['英文']}</span>
+        </button>
+        <button type="button" class="filter-option" onclick="filterLang('越南语', this)" data-lang-filter="越南语">
+          <span>{c.langVi}</span>
+          <span class="filter-count">{langCounts['越南语']}</span>
+        </button>
+      </div>
+
+      <div class="filter-group">
+        <div class="filter-title">{c.deptTitle}</div>
+        {c.depts.map(([kw, label]) => (
+          <button type="button" class="filter-option" onclick={`setSearch('${kw}')`}>{label}</button>
+        ))}
+      </div>
+    </aside>
+
+    <main>
+      <div class="list-header">
+        <div class="list-title">{c.foundPre}<strong id="shownCount">{total}</strong>{c.foundPost}</div>
+        <select class="sort-select" id="sortSelect" onchange="sortCards(this.value)">
+          <option value="date">{c.sortDate}</option>
+          <option value="region">{c.sortRegion}</option>
+          <option value="dept">{c.sortDept}</option>
+        </select>
+      </div>
+
+      <div id="cardList" role="list" aria-label={c.listAria}>
+        {hospitals.map((h) => <HospitalCard hospital={h} locale={locale} />)}
+      </div>
+
+      <div id="emptyState" style="display:none; text-align:center; padding:60px 20px; color:var(--ink-3);">
+        <div style="font-size:32px; margin-bottom:12px;">🔍</div>
+        <div style="font-size:15px; margin-bottom:6px;">{c.emptyTitle}</div>
+        <div style="font-size:13px;">{c.emptyHint} <a href={submitHref} style="color:var(--red);">{c.emptyLink}</a></div>
+      </div>
+    </main>
+  </div>
+
+  <RegionLinks locale={locale} />
+
+  <Faq locale={locale} />
+
+  <Resources locale={locale} />
+
+  <section class="submit-section" id="submit">
+    <div class="submit-banner">
+      <div class="submit-banner-text">
+        <h2 set:html={c.bannerH1} />
+        <p>{c.bannerText}</p>
+      </div>
+      <a href={submitHref} class="submit-banner-btn">{c.bannerBtn}</a>
+    </div>
+  </section>
+
+  <Footer locale={locale} />
+
+  <script is:inline src="/hospitals.js" defer></script>
+</Layout>

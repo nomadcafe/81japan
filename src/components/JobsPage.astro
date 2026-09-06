@@ -1,0 +1,94 @@
+---
+// 找工作页版式（中英共用）。数据来自 src/data/jobs.json。
+import Layout from '../layouts/Layout.astro';
+import Nav from './Nav.astro';
+import Footer from './Footer.astro';
+import { localizePath, type Locale } from '../lib/i18n';
+import { JOBS_COPY, homeCrumbItem } from '../lib/pageCopy';
+import '../styles/page.css';
+
+interface JobSite { name: string; url: string; domain?: string; descZh: string; descEn: string }
+interface JobCategory { id: string; icon: string; titleZh: string; titleEn: string; descZh: string; descEn: string; sites: JobSite[] }
+
+interface Props {
+  locale: Locale;
+  categories: JobCategory[];
+}
+
+const { locale, categories } = Astro.props;
+const zh = locale === 'zh';
+const copy = JOBS_COPY[locale];
+
+const domain = (url: string) => {
+  try { return new URL(url).hostname.replace(/^www\./, ''); }
+  catch { return url; }
+};
+
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@graph': [
+    {
+      '@type': 'ItemList',
+      'name': copy.listName,
+      'itemListElement': categories.flatMap((c) => c.sites).map((s, i) => ({
+        '@type': 'ListItem',
+        'position': i + 1,
+        'name': s.name,
+        'url': s.url,
+      })),
+    },
+    {
+      '@type': 'BreadcrumbList',
+      'itemListElement': [
+        { '@type': 'ListItem', 'position': 1, 'name': zh ? '首页' : 'Home', 'item': homeCrumbItem(locale) },
+        { '@type': 'ListItem', 'position': 2, 'name': copy.crumb },
+      ],
+    },
+  ],
+};
+---
+<Layout title={copy.title} description={copy.description} path={localizePath('/jobs', locale)} locale={locale}>
+  <Fragment slot="head">
+    <meta name="keywords" content={copy.keywords} />
+    <script type="application/ld+json" set:html={JSON.stringify(jsonLd)} />
+  </Fragment>
+
+  <Nav active="jobs" locale={locale} />
+
+  <section class="page-hero">
+    <div class="eyebrow">{copy.eyebrow}</div>
+    <h1 set:html={copy.h1} />
+    <p>{copy.intro}</p>
+  </section>
+
+  <main class="page-main">
+    {categories.map((cat) => (
+      <section class="jobs-section" id={cat.id}>
+        <div class="jobs-section-head">
+          <div class="jobs-section-icon" aria-hidden="true">{cat.icon}</div>
+          <div>
+            <div class="jobs-section-title">{zh ? cat.titleZh : cat.titleEn}</div>
+            <div class="jobs-section-desc">{zh ? cat.descZh : cat.descEn}</div>
+          </div>
+        </div>
+        <div class="links-grid">
+          {cat.sites.map((s) => (
+            <a class="link-card" href={s.url} target="_blank" rel="noopener noreferrer">
+              <div class="link-card-top">
+                <span class="link-name">{s.name}</span>
+                <span class="link-arrow" aria-hidden="true">↗</span>
+              </div>
+              <div class="link-domain">{s.domain ?? domain(s.url)}</div>
+              <p class="link-desc">{zh ? s.descZh : s.descEn}</p>
+            </a>
+          ))}
+        </div>
+      </section>
+    ))}
+
+    <p class="jobs-note">{copy.note}</p>
+  </main>
+
+  <Footer locale={locale} />
+
+</Layout>
