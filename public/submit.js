@@ -75,7 +75,3 @@ function resetForm() {
   switchType('new', document.querySelector('.type-btn'));
   ['c1','c2','c3'].forEach(id => { const el = document.getElementById(id); if(el) el.textContent = '0 / 300'; });
 }
-
-document.addEventListener('DOMContentLoaded', () => {
-  document.querySelectorAll('.copy-year').forEach(el => el.textContent = new Date().getFullYear());
-});
