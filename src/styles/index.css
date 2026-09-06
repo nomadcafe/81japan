@@ -574,6 +574,12 @@
     margin-top: 2px;
   }
 
+  /* 首屏只画前 12 张卡。hospitals.js 会在 DOMContentLoaded 之后接管分页，
+     若不先收起来，浏览器会把全部卡片渲染出来再被 JS 折叠回 12 张——肉眼可见地跳一下。
+     class 由 <head> 里的内联脚本加上，脚本接管后移除；没有 JS 时不加，全部照常显示。
+     数量需与 hospitals.js 的 PAGE_SIZE 一致。 */
+  html.cards-prepaged #cardList > .hospital-card:nth-child(n+13) { display: none; }
+
   .hospital-card {
     background: var(--white);
     border: 1px solid var(--paper-3);

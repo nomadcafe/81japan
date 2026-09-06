@@ -122,6 +122,13 @@ const DEPT_EN: Record<string, string> = {
   '呼吸器内科': 'Respiratory Medicine',
   '急诊科': 'Emergency',
   '美容皮肤科': 'Cosmetic Dermatology',
+  '儿童外科': 'Pediatric Surgery',
+  '儿童心理': 'Child Psychology',
+  '麻醉科': 'Anesthesiology',
+  '血液透析': 'Hemodialysis',
+  '整形外科（形成）': 'Plastic Surgery',
+  '疫苗接种': 'Vaccination',
+  '足病': 'Podiatry',
 };
 
 export function deptLabel(dept: string, locale: Locale): string {
@@ -221,6 +228,7 @@ const BADGE_EN: Record<string, string> = {
   '医疗翻译': 'Medical interpreter',
   '中文诊疗': 'Chinese care',
   '在线诊疗': 'Telemedicine',
+  '多语言对应': 'Multilingual',
 };
 
 export function badgeLabel(label: string, locale: Locale): string {

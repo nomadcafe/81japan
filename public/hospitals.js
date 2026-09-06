@@ -198,10 +198,11 @@ function sortCards(method) {
 
 // ── 注入“加载更多”按钮 + 初始分页 ──
 document.addEventListener('DOMContentLoaded', () => {
-  document.querySelectorAll('.copy-year').forEach(el => el.textContent = new Date().getFullYear());
-
   const list = document.getElementById('cardList');
   if (list) {
+    // 从 CSS 预分页接手：applyFilters 从这里起用内联 display 控制每张卡，
+    // 再留着 .cards-prepaged 会让「加载更多」放出来的卡片仍被规则挡住。
+    document.documentElement.classList.remove('cards-prepaged');
     const btn = document.createElement('button');
     btn.id = 'loadMoreBtn';
     btn.className = 'load-more-btn';

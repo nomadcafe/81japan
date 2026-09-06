@@ -144,6 +144,14 @@ const langOptions = [
 <Layout title={pageTitle} description={pageDesc} path={path} locale={locale}>
   <Fragment slot="head">
     <script type="application/ld+json" set:html={JSON.stringify(jsonLd)} />
+    <script is:inline>
+      // 先按分页收起多余卡片，否则浏览器会把整份列表渲染出来、再被 hospitals.js 折叠回 12 张（见 index.css）。
+      // 脚本接管后会移除这个 class；万一 hospitals.js 没加载成功，load 时兜底移除，卡片不会被永久藏住。
+      document.documentElement.classList.add('cards-prepaged');
+      addEventListener('load', function () {
+        if (typeof applyFilters !== 'function') document.documentElement.classList.remove('cards-prepaged');
+      });
+    </script>
   </Fragment>
 
   <Nav active="hospitals" locale={locale} />
