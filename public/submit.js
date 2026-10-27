@@ -17,11 +17,13 @@ const STR = isEn ? {
 // 被限流的人照着提示继续点，只会一直失败。
 const ERR = isEn ? {
   rate_limited: 'Too many submissions — please wait a minute',
+  too_large: 'Submission is too long — please shorten it',
   empty: 'Please fill in at least one field',
   not_configured: 'Submissions are temporarily unavailable',
   upstream: "Couldn't deliver your submission — please try again later",
 } : {
   rate_limited: '提交太频繁了，请等一分钟再试',
+  too_large: '内容太长了，请精简一下',
   empty: '内容不能为空',
   not_configured: '投稿服务暂时不可用',
   upstream: '投稿没能送达，请稍后再试',

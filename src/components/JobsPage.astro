@@ -6,6 +6,7 @@ import Footer from './Footer.astro';
 import { localizePath, type Locale } from '../lib/i18n';
 import { JOBS_COPY, homeCrumbItem } from '../lib/pageCopy';
 import '../styles/page.css';
+import JsonLd from './JsonLd.astro';
 
 interface JobSite { name: string; url: string; domain?: string; descZh: string; descEn: string }
 interface JobCategory { id: string; icon: string; titleZh: string; titleEn: string; descZh: string; descEn: string; sites: JobSite[] }
@@ -50,7 +51,7 @@ const jsonLd = {
 <Layout title={copy.title} description={copy.description} path={localizePath('/jobs', locale)} locale={locale}>
   <Fragment slot="head">
     <meta name="keywords" content={copy.keywords} />
-    <script type="application/ld+json" set:html={JSON.stringify(jsonLd)} />
+    <JsonLd data={jsonLd} />
   </Fragment>
 
   <Nav active="jobs" locale={locale} />

@@ -6,6 +6,7 @@ import Footer from './Footer.astro';
 import { localizePath, type Locale } from '../lib/i18n';
 import { ABOUT_COPY, SITE, homeCrumbItem } from '../lib/pageCopy';
 import '../styles/page.css';
+import JsonLd from './JsonLd.astro';
 
 interface Props { locale: Locale }
 const { locale } = Astro.props;
@@ -34,7 +35,7 @@ const jsonLd = {
 ---
 <Layout title={copy.title} description={copy.description} path={path} locale={locale}>
   <Fragment slot="head">
-    <script type="application/ld+json" set:html={JSON.stringify(jsonLd)} />
+    <JsonLd data={jsonLd} />
   </Fragment>
 
   <Nav active="about" locale={locale} />

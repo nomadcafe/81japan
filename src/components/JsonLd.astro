@@ -1,0 +1,9 @@
+---
+// 结构化数据输出。JSON.stringify 不转义 `<`，数据里一旦出现 `</script>`
+// （比如投稿片段原样粘进 hospitals.json）就会提前闭合标签、后面的内容按 HTML 执行。
+// 统一转成 <，JSON 语义不变。
+interface Props { data: unknown }
+const { data } = Astro.props;
+const json = JSON.stringify(data).replace(/</g, '\\u003c');
+---
+<script type="application/ld+json" set:html={json} />
