@@ -3,8 +3,12 @@ export const prerender = false;
 const TG_TOKEN = import.meta.env.TELEGRAM_BOT_TOKEN;
 const TG_CHAT = import.meta.env.TELEGRAM_CHAT_ID;
 
-const MAX_FIELD = 1000;
-const MAX_TOTAL = 4096;
+// Telegram 单条上限 4096 字（按解析掉 HTML 标签后的正文算）。
+// 新增医院最多 9 个字段，每个 400 字以内，主消息就不会超限；JSON 片段另发一条。
+const MAX_FIELD = 400;
+const TG_LIMIT = 4096;
+// 正常投稿不到 10KB；先看 content-length，免得把超大请求体整个读进内存再解析
+const MAX_BODY = 32 * 1024;
 
 const ALLOWED_ORIGINS = ['https://www.81japan.com', 'https://81japan.com'];
 
@@ -36,10 +40,13 @@ function isAllowedOrigin(request) {
   return ALLOWED_ORIGINS.some(o => referer === o || referer.startsWith(o + '/'));
 }
 
+// x-real-ip 由 Vercel 边缘写入，客户端伪造不了；x-forwarded-for 的第一段
+// 在别的代理链路上可能是客户端自己填的，随便换个值就能绕过限流，只作兜底。
 function getClientIp(request, clientAddress) {
-  const fwd = request.headers.get('x-forwarded-for');
-  if (fwd) return fwd.split(',')[0].trim();
-  return clientAddress || 'unknown';
+  const real = request.headers.get('x-real-ip');
+  if (real) return real.trim();
+  const fwd = request.headers.get('x-forwarded-for') || clientAddress || '';
+  return fwd.split(',')[0].trim() || 'unknown';
 }
 
 // 清掉整窗都没再出现的 IP。只清时间戳不清 key 的话，
@@ -158,13 +165,20 @@ export async function POST({ request, clientAddress }) {
     return fail('not_configured', '服务未配置', 500);
   }
 
+  const declared = Number(request.headers.get('content-length') || 0);
+  if (declared > MAX_BODY) {
+    return fail('too_large', '内容过长', 413);
+  }
+
   let data;
   try {
-    data = await request.json();
+    const raw = await request.text();
+    if (raw.length > MAX_BODY) return fail('too_large', '内容过长', 413);
+    data = JSON.parse(raw);
   } catch {
     return fail('bad_request', '无法解析表单', 400);
   }
-  if (!data || typeof data !== 'object') {
+  if (!data || typeof data !== 'object' || Array.isArray(data)) {
     return fail('bad_request', '无法解析表单', 400);
   }
 
@@ -201,35 +215,40 @@ export async function POST({ request, clientAddress }) {
   lines.push('');
   lines.push(`<i>${new Date().toISOString()}</i>`);
 
+  // 以前是拼成一条再按字数硬截断：一截就截在 <pre><code> 中间，
+  // Telegram 解析不了 HTML 整条拒收，投稿方看到的是「送达失败」。
+  // 现在 JSON 片段单独一条，过长就不发片段，主消息照常送达。
+  const messages = [lines.join('\n')];
   if (type.includes('新增')) {
-    lines.push('');
-    lines.push('📋 <b>JSON 片段</b>（点右上角 COPY，粘贴到 src/data/hospitals.json 末尾 <code>]</code> 之前）');
-    lines.push(`<pre><code class="language-json">${escapeHtml(buildHospitalSnippet(data))}</code></pre>`);
+    const snippet = buildHospitalSnippet(data);
+    messages.push(
+      snippet.length < TG_LIMIT - 200
+        ? `📋 <b>JSON 片段</b>（点右上角 COPY，粘贴到 src/data/hospitals.json 末尾 <code>]</code> 之前）\n<pre><code class="language-json">${escapeHtml(snippet)}</code></pre>`
+        : '📋 字段太长，没生成 JSON 片段，请按上一条手动整理',
+    );
   }
 
-  let text = lines.join('\n');
-  if (text.length > MAX_TOTAL) text = text.slice(0, MAX_TOTAL - 1) + '…';
-
   try {
-    const res = await fetch(`https://api.telegram.org/bot${TG_TOKEN}/sendMessage`, {
-      method: 'POST',
-      headers: { 'content-type': 'application/json' },
-      body: JSON.stringify({
-        chat_id: TG_CHAT,
-        text,
-        parse_mode: 'HTML',
-        disable_web_page_preview: true,
-      }),
-    });
-    if (!res.ok) {
-      const body = await res.text();
-      console.error('Telegram error', res.status, body);
-      return fail('upstream', '通知发送失败', 502);
-    }
+    for (const text of messages) await sendTelegram(text);
   } catch (err) {
-    console.error('Telegram fetch failed', err);
+    console.error('Telegram send failed', err);
     return fail('upstream', '通知发送失败', 502);
   }
 
   return json({ ok: true });
+}
+
+async function sendTelegram(text) {
+  const res = await fetch(`https://api.telegram.org/bot${TG_TOKEN}/sendMessage`, {
+    method: 'POST',
+    headers: { 'content-type': 'application/json' },
+    signal: AbortSignal.timeout(8000),
+    body: JSON.stringify({
+      chat_id: TG_CHAT,
+      text,
+      parse_mode: 'HTML',
+      disable_web_page_preview: true,
+    }),
+  });
+  if (!res.ok) throw new Error(`Telegram ${res.status}: ${await res.text()}`);
 }

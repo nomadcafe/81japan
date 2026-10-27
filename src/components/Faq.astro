@@ -1,6 +1,7 @@
 ---
 // 首页 FAQ 板块 + FAQPage 结构化数据。内容以「如何使用本站 + 就医实务」为主，避免医疗建议。
 import type { Locale } from '../lib/i18n';
+import JsonLd from './JsonLd.astro';
 
 interface Props { locale: Locale }
 const { locale } = Astro.props;
@@ -55,5 +56,5 @@ const jsonLd = {
       </details>
     ))}
   </div>
-  <script type="application/ld+json" set:html={JSON.stringify(jsonLd)} />
+  <JsonLd data={jsonLd} />
 </section>

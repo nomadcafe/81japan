@@ -7,6 +7,7 @@ import Footer from './Footer.astro';
 import { localizePath, type Locale } from '../lib/i18n';
 import { GUIDE_COPY, SITE, homeCrumbItem, type GuideKey } from '../lib/pageCopy';
 import '../styles/page.css';
+import JsonLd from './JsonLd.astro';
 
 export interface GuideEntry {
   id: string;
@@ -78,7 +79,7 @@ const jsonLd = {
 <Layout title={copy.title} description={copy.description} path={path} locale={locale}>
   <Fragment slot="head">
     {copy.keywords && <meta name="keywords" content={copy.keywords} />}
-    <script type="application/ld+json" set:html={JSON.stringify(jsonLd)} />
+    <JsonLd data={jsonLd} />
   </Fragment>
 
   <Nav active={nav} locale={locale} />

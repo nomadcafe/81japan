@@ -60,11 +60,11 @@ const year = new Date().getFullYear();
             <div class="form-row">
               <div class="form-field">
                 <label class="form-label">{c.labels.name} <span class="req">*</span></label>
-                <input class="form-input" type="text" name="医院名称" id="f-name" placeholder={c.placeholders.name} />
+                <input class="form-input" type="text" maxlength="200" name="医院名称" id="f-name" placeholder={c.placeholders.name} />
               </div>
               <div class="form-field">
                 <label class="form-label">{c.labels.location} <span class="req">*</span></label>
-                <input class="form-input" type="text" name="所在地" id="f-location" placeholder={c.placeholders.location} />
+                <input class="form-input" type="text" maxlength="200" name="所在地" id="f-location" placeholder={c.placeholders.location} />
               </div>
             </div>
             <div class="form-row" style="margin-top:0">
@@ -76,27 +76,27 @@ const year = new Date().getFullYear();
               </div>
               <div class="form-field">
                 <label class="form-label">{c.labels.dept}</label>
-                <input class="form-input" type="text" name="科室" placeholder={c.placeholders.dept} />
+                <input class="form-input" type="text" maxlength="200" name="科室" placeholder={c.placeholders.dept} />
               </div>
             </div>
             <div class="form-row" style="margin-top:0">
               <div class="form-field">
                 <label class="form-label">{c.labels.phone}</label>
-                <input class="form-input" type="text" name="电话" placeholder={c.placeholders.phone} />
+                <input class="form-input" type="text" maxlength="200" name="电话" placeholder={c.placeholders.phone} />
               </div>
               <div class="form-field">
                 <label class="form-label">{c.labels.site}</label>
-                <input class="form-input" type="text" name="网址" placeholder={c.placeholders.site} />
+                <input class="form-input" type="text" maxlength="200" name="网址" placeholder={c.placeholders.site} />
               </div>
             </div>
             <div class="form-field">
               <label class="form-label">{c.labels.hours}</label>
-              <input class="form-input" type="text" name="营业时间"
+              <input class="form-input" type="text" maxlength="200" name="营业时间"
                 placeholder={c.placeholders.hours} />
             </div>
             <div class="form-field">
               <label class="form-label">{c.labels.note}</label>
-              <textarea class="form-input form-textarea" name="备注" id="f-note"
+              <textarea class="form-input form-textarea" maxlength="300" name="备注" id="f-note"
                 placeholder={c.placeholders.note}
                 oninput="updateChar(this,'c1')"></textarea>
               <div class="char-count" id="c1">0 / 300</div>
@@ -106,11 +106,11 @@ const year = new Date().getFullYear();
           <div id="fields-fix" style="display:none">
             <div class="form-field">
               <label class="form-label">{c.labels.fixName} <span class="req">*</span></label>
-              <input class="form-input" type="text" name="纠错-医院名称" id="f-fix-name" placeholder={c.placeholders.fixName} />
+              <input class="form-input" type="text" maxlength="200" name="纠错-医院名称" id="f-fix-name" placeholder={c.placeholders.fixName} />
             </div>
             <div class="form-field">
               <label class="form-label">{c.labels.fixDesc} <span class="req">*</span></label>
-              <textarea class="form-input form-textarea" name="纠错-问题描述" id="f-fix-desc"
+              <textarea class="form-input form-textarea" maxlength="300" name="纠错-问题描述" id="f-fix-desc"
                 placeholder={c.placeholders.fixDesc}
                 style="min-height:110px" oninput="updateChar(this,'c2')"></textarea>
               <div class="char-count" id="c2">0 / 300</div>
@@ -120,7 +120,7 @@ const year = new Date().getFullYear();
           <div id="fields-other" style="display:none">
             <div class="form-field">
               <label class="form-label">{c.labels.other} <span class="req">*</span></label>
-              <textarea class="form-input form-textarea" name="建议内容" id="f-other"
+              <textarea class="form-input form-textarea" maxlength="300" name="建议内容" id="f-other"
                 placeholder={c.placeholders.other}
                 style="min-height:110px" oninput="updateChar(this,'c3')"></textarea>
               <div class="char-count" id="c3">0 / 300</div>
@@ -131,7 +131,7 @@ const year = new Date().getFullYear();
 
           <div class="form-field">
             <label class="form-label">{c.labels.contact}</label>
-            <input class="form-input" type="text" name="联系方式" placeholder={c.placeholders.contact} />
+            <input class="form-input" type="text" maxlength="200" name="联系方式" placeholder={c.placeholders.contact} />
           </div>
 
           <button class="submit-btn" type="submit" id="submitBtn">

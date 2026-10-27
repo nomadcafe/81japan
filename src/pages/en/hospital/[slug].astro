@@ -9,6 +9,7 @@ import { primaryTel } from '../../../lib/phone';
 import { langCodes, langTokensOf, medicalType, splitPostal, cleanJpName, typeNoun, featuredLangLabel } from '../../../lib/hospitalSeo';
 import '../../../styles/page.css';
 import '../../../styles/hospital.css';
+import JsonLd from '../../../components/JsonLd.astro';
 
 export async function getStaticPaths() {
   const data = await loadHospitals();
@@ -117,7 +118,7 @@ const jsonLd = {
   locale="en"
 >
   <Fragment slot="head">
-    <script type="application/ld+json" set:html={JSON.stringify(jsonLd)} />
+    <JsonLd data={jsonLd} />
   </Fragment>
 
   <Nav active="hospitals" locale="en" />

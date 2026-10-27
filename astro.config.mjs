@@ -1,4 +1,4 @@
-import { readFileSync } from 'node:fs';
+import { readFileSync, writeFileSync } from 'node:fs';
 import { defineConfig } from 'astro/config';
 import sitemap from '@astrojs/sitemap';
 import vercel from '@astrojs/vercel';
@@ -28,6 +28,29 @@ const EXCLUDED = new Set([
 
 const BUILD_TIME = new Date().toISOString();
 
+// 全站安全响应头。静态页不经过 middleware，所以在构建末尾直接写进
+// .vercel/output/config.json 的路由表（排在最前，continue 让后续路由照常匹配）。
+// 页面里有大量内联脚本和 onclick，暂不上 script-src；先把不影响现有功能的几项收紧。
+const SECURITY_HEADERS = {
+  'X-Content-Type-Options': 'nosniff',
+  'X-Frame-Options': 'DENY',
+  'Referrer-Policy': 'strict-origin-when-cross-origin',
+  'Permissions-Policy': 'camera=(), microphone=(), geolocation=(), payment=(), usb=()',
+  'Content-Security-Policy': "frame-ancestors 'none'; base-uri 'self'; form-action 'self'; object-src 'none'",
+};
+
+const securityHeaders = {
+  name: 'security-headers',
+  hooks: {
+    'astro:build:done': () => {
+      const configUrl = new URL('./.vercel/output/config.json', import.meta.url);
+      const config = JSON.parse(readFileSync(configUrl, 'utf-8'));
+      config.routes = [{ src: '/(.*)', headers: SECURITY_HEADERS, continue: true }, ...(config.routes ?? [])];
+      writeFileSync(configUrl, JSON.stringify(config, null, 2));
+    },
+  },
+};
+
 export default defineConfig({
   site: SITE,
   adapter: vercel(),
@@ -37,6 +60,7 @@ export default defineConfig({
     ...hospitalRedirects,
   },
   integrations: [
+    securityHeaders,
     sitemap({
       filter: (page) => !EXCLUDED.has(page.replace(/\/$/, '')),
       serialize(item) {
