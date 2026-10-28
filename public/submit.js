@@ -31,8 +31,10 @@ const ERR = isEn ? {
 
 function switchType(type, btn) {
   currentType = type;
-  document.querySelectorAll('.type-btn').forEach(b => b.classList.remove('active'));
-  btn.classList.add('active');
+  document.querySelectorAll('.type-btn').forEach(b => {
+    b.classList.toggle('active', b === btn);
+    b.setAttribute('aria-pressed', b === btn ? 'true' : 'false');
+  });
   document.getElementById('fields-new').style.display = type === 'new' ? '' : 'none';
   document.getElementById('fields-fix').style.display = type === 'fix' ? '' : 'none';
   document.getElementById('fields-other').style.display = type === 'other' ? '' : 'none';
@@ -52,8 +54,12 @@ document.getElementById('submitForm').addEventListener('submit', async function(
   let valid = true;
   required[currentType].forEach(id => {
     const el = document.getElementById(id);
-    if (!el || !el.value.trim()) { el && el.classList.add('error'); valid = false; }
-    else el && el.classList.remove('error');
+    if (!el) return;
+    const bad = !el.value.trim();
+    el.classList.toggle('error', bad);
+    el.setAttribute('aria-invalid', bad ? 'true' : 'false');
+    if (bad && valid) el.focus();
+    if (bad) valid = false;
   });
   if (!valid) return;
 

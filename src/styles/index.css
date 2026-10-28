@@ -137,6 +137,7 @@
     cursor: pointer;
     font-family: var(--sans);
     transition: all 0.15s;
+    display: inline-block; line-height: normal; text-decoration: none;
   }
   .submit-nav-btn:hover { background: var(--red); color: white; }
   .nav-toggle {

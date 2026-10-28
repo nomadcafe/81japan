@@ -42,7 +42,7 @@ const labels = {
       <span class="lang-sep">/</span>
       <a class={`lang-opt${locale === 'en' ? ' active' : ''}`} href={locale === 'en' ? Astro.url.pathname : altUrl} onclick="try{localStorage.setItem('preferredLang','en')}catch(e){}">EN</a>
     </div>
-    <button class="submit-nav-btn" onclick={`window.location='${submitHref}'`}>{labels.contribute}</button>
+    <a class="submit-nav-btn" href={submitHref}>{labels.contribute}</a>
     <button class="nav-toggle" aria-label={labels.menu} aria-expanded="false" onclick="(function(b){var n=b.closest('nav');var open=n.classList.toggle('open');b.setAttribute('aria-expanded',open);})(this)">
       <span></span><span></span><span></span>
     </button>
