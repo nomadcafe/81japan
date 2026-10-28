@@ -18,7 +18,7 @@ const locale: Locale = localeProp ?? detectLocale(Astro.url.pathname);
 const homeHref = localizePath('/', locale);
 const altUrl = alternatePath(Astro.url.pathname, locale);
 ---
-<nav>
+<nav class="site-nav">
   <a class="logo" href={homeHref} aria-label="81Japan"><span class="logo-badge">81</span><span class="logo-word">Japan</span></a>
   {showLang && (
     <div class="lang-switcher">

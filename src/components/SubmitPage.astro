@@ -56,7 +56,7 @@ const year = new Date().getFullYear();
           <input type="hidden" name="投稿类型" id="typeHidden" value="新增医院" />
           <input type="text" name="_honey" tabindex="-1" autocomplete="off" aria-hidden="true" style="position:absolute; left:-9999px; opacity:0" />
 
-          <div id="fields-new">
+          <div class="field-group" id="fields-new">
             <div class="form-row">
               <div class="form-field">
                 <label class="form-label" for="f-name">{c.labels.name} <span class="req">*</span></label>
@@ -67,7 +67,7 @@ const year = new Date().getFullYear();
                 <input class="form-input" type="text" maxlength="200" name="所在地" id="f-location" aria-required="true" placeholder={c.placeholders.location} />
               </div>
             </div>
-            <div class="form-row" style="margin-top:0">
+            <div class="form-row">
               <div class="form-field">
                 <label class="form-label" for="f-lang">{c.labels.lang} <span class="req">*</span></label>
                 <select class="form-input form-select" name="语言服务" id="f-lang" aria-required="true">
@@ -79,7 +79,7 @@ const year = new Date().getFullYear();
                 <input class="form-input" type="text" maxlength="200" name="科室" id="f-dept" placeholder={c.placeholders.dept} />
               </div>
             </div>
-            <div class="form-row" style="margin-top:0">
+            <div class="form-row">
               <div class="form-field">
                 <label class="form-label" for="f-phone">{c.labels.phone}</label>
                 <input class="form-input" type="text" maxlength="200" name="电话" id="f-phone" placeholder={c.placeholders.phone} />
@@ -103,7 +103,7 @@ const year = new Date().getFullYear();
             </div>
           </div>
 
-          <div id="fields-fix" style="display:none">
+          <div class="field-group" id="fields-fix" style="display:none">
             <div class="form-field">
               <label class="form-label" for="f-fix-name">{c.labels.fixName} <span class="req">*</span></label>
               <input class="form-input" type="text" maxlength="200" name="纠错-医院名称" id="f-fix-name" aria-required="true" placeholder={c.placeholders.fixName} />
@@ -117,7 +117,7 @@ const year = new Date().getFullYear();
             </div>
           </div>
 
-          <div id="fields-other" style="display:none">
+          <div class="field-group" id="fields-other" style="display:none">
             <div class="form-field">
               <label class="form-label" for="f-other">{c.labels.other} <span class="req">*</span></label>
               <textarea class="form-input form-textarea" maxlength="300" name="建议内容" id="f-other" aria-required="true"

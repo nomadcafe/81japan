@@ -110,7 +110,7 @@ function resetPaging() { visibleCount = PAGE_SIZE; }
 function scrollToResults() {
   const layout = document.querySelector('.main-layout');
   if (!layout) return;
-  const nav = document.querySelector('nav');
+  const nav = document.querySelector('.site-nav');
   const offset = nav ? nav.offsetHeight + 8 : 0;
   const top = layout.getBoundingClientRect().top + window.scrollY - offset;
   window.scrollTo({ top: Math.max(0, top), behavior: 'smooth' });
