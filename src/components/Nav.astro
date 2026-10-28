@@ -27,7 +27,7 @@ const labels = {
   menu: locale === 'zh' ? '菜单' : 'Menu',
 };
 ---
-<nav aria-label={locale === 'zh' ? '主导航' : 'Main navigation'}>
+<nav class="site-nav" aria-label={locale === 'zh' ? '主导航' : 'Main navigation'}>
   <a class="logo" href={homeHref} aria-label="81Japan"><span class="logo-badge">81</span><span class="logo-word">Japan</span></a>
   <div class="nav-links" role="menubar">
     {items.map(i => (
