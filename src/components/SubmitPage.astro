@@ -47,9 +47,9 @@ const year = new Date().getFullYear();
     <div>
       <div class="form-card" id="formCard">
         <div class="type-row">
-          <button class="type-btn active" onclick="switchType('new', this)">＋ {c.types.new}</button>
-          <button class="type-btn" onclick="switchType('fix', this)">✎ {c.types.fix}</button>
-          <button class="type-btn" onclick="switchType('other', this)">⊙ {c.types.other}</button>
+          <button type="button" class="type-btn active" aria-pressed="true" onclick="switchType('new', this)">＋ {c.types.new}</button>
+          <button type="button" class="type-btn" aria-pressed="false" onclick="switchType('fix', this)">✎ {c.types.fix}</button>
+          <button type="button" class="type-btn" aria-pressed="false" onclick="switchType('other', this)">⊙ {c.types.other}</button>
         </div>
 
         <form class="form" id="submitForm" action="/api/submit" method="POST">
@@ -59,43 +59,43 @@ const year = new Date().getFullYear();
           <div id="fields-new">
             <div class="form-row">
               <div class="form-field">
-                <label class="form-label">{c.labels.name} <span class="req">*</span></label>
-                <input class="form-input" type="text" maxlength="200" name="医院名称" id="f-name" placeholder={c.placeholders.name} />
+                <label class="form-label" for="f-name">{c.labels.name} <span class="req">*</span></label>
+                <input class="form-input" type="text" maxlength="200" name="医院名称" id="f-name" aria-required="true" placeholder={c.placeholders.name} />
               </div>
               <div class="form-field">
-                <label class="form-label">{c.labels.location} <span class="req">*</span></label>
-                <input class="form-input" type="text" maxlength="200" name="所在地" id="f-location" placeholder={c.placeholders.location} />
+                <label class="form-label" for="f-location">{c.labels.location} <span class="req">*</span></label>
+                <input class="form-input" type="text" maxlength="200" name="所在地" id="f-location" aria-required="true" placeholder={c.placeholders.location} />
               </div>
             </div>
             <div class="form-row" style="margin-top:0">
               <div class="form-field">
-                <label class="form-label">{c.labels.lang} <span class="req">*</span></label>
-                <select class="form-input form-select" name="语言服务" id="f-lang">
+                <label class="form-label" for="f-lang">{c.labels.lang} <span class="req">*</span></label>
+                <select class="form-input form-select" name="语言服务" id="f-lang" aria-required="true">
                   {c.langOptions.map((o) => <option value={o.value}>{o.label}</option>)}
                 </select>
               </div>
               <div class="form-field">
-                <label class="form-label">{c.labels.dept}</label>
-                <input class="form-input" type="text" maxlength="200" name="科室" placeholder={c.placeholders.dept} />
+                <label class="form-label" for="f-dept">{c.labels.dept}</label>
+                <input class="form-input" type="text" maxlength="200" name="科室" id="f-dept" placeholder={c.placeholders.dept} />
               </div>
             </div>
             <div class="form-row" style="margin-top:0">
               <div class="form-field">
-                <label class="form-label">{c.labels.phone}</label>
-                <input class="form-input" type="text" maxlength="200" name="电话" placeholder={c.placeholders.phone} />
+                <label class="form-label" for="f-phone">{c.labels.phone}</label>
+                <input class="form-input" type="text" maxlength="200" name="电话" id="f-phone" placeholder={c.placeholders.phone} />
               </div>
               <div class="form-field">
-                <label class="form-label">{c.labels.site}</label>
-                <input class="form-input" type="text" maxlength="200" name="网址" placeholder={c.placeholders.site} />
+                <label class="form-label" for="f-site">{c.labels.site}</label>
+                <input class="form-input" type="text" maxlength="200" name="网址" id="f-site" placeholder={c.placeholders.site} />
               </div>
             </div>
             <div class="form-field">
-              <label class="form-label">{c.labels.hours}</label>
-              <input class="form-input" type="text" maxlength="200" name="营业时间"
+              <label class="form-label" for="f-hours">{c.labels.hours}</label>
+              <input class="form-input" type="text" maxlength="200" name="营业时间" id="f-hours"
                 placeholder={c.placeholders.hours} />
             </div>
             <div class="form-field">
-              <label class="form-label">{c.labels.note}</label>
+              <label class="form-label" for="f-note">{c.labels.note}</label>
               <textarea class="form-input form-textarea" maxlength="300" name="备注" id="f-note"
                 placeholder={c.placeholders.note}
                 oninput="updateChar(this,'c1')"></textarea>
@@ -105,12 +105,12 @@ const year = new Date().getFullYear();
 
           <div id="fields-fix" style="display:none">
             <div class="form-field">
-              <label class="form-label">{c.labels.fixName} <span class="req">*</span></label>
-              <input class="form-input" type="text" maxlength="200" name="纠错-医院名称" id="f-fix-name" placeholder={c.placeholders.fixName} />
+              <label class="form-label" for="f-fix-name">{c.labels.fixName} <span class="req">*</span></label>
+              <input class="form-input" type="text" maxlength="200" name="纠错-医院名称" id="f-fix-name" aria-required="true" placeholder={c.placeholders.fixName} />
             </div>
             <div class="form-field">
-              <label class="form-label">{c.labels.fixDesc} <span class="req">*</span></label>
-              <textarea class="form-input form-textarea" maxlength="300" name="纠错-问题描述" id="f-fix-desc"
+              <label class="form-label" for="f-fix-desc">{c.labels.fixDesc} <span class="req">*</span></label>
+              <textarea class="form-input form-textarea" maxlength="300" name="纠错-问题描述" id="f-fix-desc" aria-required="true"
                 placeholder={c.placeholders.fixDesc}
                 style="min-height:110px" oninput="updateChar(this,'c2')"></textarea>
               <div class="char-count" id="c2">0 / 300</div>
@@ -119,8 +119,8 @@ const year = new Date().getFullYear();
 
           <div id="fields-other" style="display:none">
             <div class="form-field">
-              <label class="form-label">{c.labels.other} <span class="req">*</span></label>
-              <textarea class="form-input form-textarea" maxlength="300" name="建议内容" id="f-other"
+              <label class="form-label" for="f-other">{c.labels.other} <span class="req">*</span></label>
+              <textarea class="form-input form-textarea" maxlength="300" name="建议内容" id="f-other" aria-required="true"
                 placeholder={c.placeholders.other}
                 style="min-height:110px" oninput="updateChar(this,'c3')"></textarea>
               <div class="char-count" id="c3">0 / 300</div>
@@ -130,12 +130,12 @@ const year = new Date().getFullYear();
           <div class="form-divider"></div>
 
           <div class="form-field">
-            <label class="form-label">{c.labels.contact}</label>
-            <input class="form-input" type="text" maxlength="200" name="联系方式" placeholder={c.placeholders.contact} />
+            <label class="form-label" for="f-contact">{c.labels.contact}</label>
+            <input class="form-input" type="text" maxlength="200" name="联系方式" id="f-contact" placeholder={c.placeholders.contact} />
           </div>
 
           <button class="submit-btn" type="submit" id="submitBtn">
-            <span id="btnText">{c.submitBtn}</span>
+            <span id="btnText" aria-live="polite">{c.submitBtn}</span>
           </button>
           <p class="form-note">{c.formNote}</p>
         </form>
